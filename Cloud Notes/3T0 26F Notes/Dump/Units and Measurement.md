@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-06T18:55:35.440-04:00
-edited_seconds: 560
+updated_at: 2026-09-06T19:07:31.356-04:00
+edited_seconds: 570
 course: PHY180H1
 tags:
   - PHY180H1
@@ -82,3 +82,4 @@ The importance of physical Dimensions within an equation gives arise to the conc
 	1. Conversely; this is extended to both sides of the equality needing to resolve to the same dimensions. 
 2. Any arguments in standard mathematical expressions (the Trigonometric expressions; exponentials ($b^x$); and logarithms) must be pure numbers. 
 	1. These functions also return pure numbers as outputs. 
+### Significant Figures and Precision
