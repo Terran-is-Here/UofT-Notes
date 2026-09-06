@@ -1,8 +1,9 @@
 ---
-updated_at: 2026-08-25T22:19:13.527-04:00
-edited_seconds: 60
+updated_at: 2026-09-05T22:34:20.725-04:00
+edited_seconds: 70
 course:
 tags:
+"Lecture #": 0
 ---
 Previous: 
 Next:
