@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-05T23:35:51.808-04:00
-edited_seconds: 330
+updated_at: 2026-09-05T23:43:20.232-04:00
+edited_seconds: 430
 course: PHY180H1
 tags:
   - PHY180H1
@@ -48,7 +48,16 @@ The SI (Système Internationale d'Unités) System (otherwise known as the Metric
 > Amount of Substance (mol)
 > Luminous Intensity (cd)
 
+#### Time (s)
+The SI dimension of Time is currently defined by the application of an atomic clock. Specifically; 1 *second* is defined as the time required for 9,192,631,770 vibrations to occur within a Cesium atom. 
 
+#### Distance (m)
+The SI dimension of Distance is currently defined as the distance light travels within $1/{299792458}$s (due to the speed of light being $299,792,458 \frac ms$), defined in 1983.
 
+This is an improvement over the following past definitions: 
+* 1/10,000,000 of the distance from the Equator to the North Pole (1791) 
+* A literal meter stick of metal being used to define the Meter (1889) 
+* 1,650,763.73 wavelengths of orange light emitted by Krypton atoms (1960) 
 
-
+#### Mass (kg) 
+The SI dimension of Mass is currently defined by
