@@ -1,5 +1,8 @@
 # Engineering Mathematics and Computation Hub 
 The Linear Algebra course basically; with a dash of Matlab added in.
+### Materials: 
+None mandatory; however the following are reccomended: 
+
 ### ESC103 Note Hubs
 ```query
 tag:SCH3U tag:Hub

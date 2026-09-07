@@ -2,7 +2,8 @@
 The art of designing engineering projects; and making sure people actually care about the projects you create.
 
 ### Materials: 
-
+* Writing in Engineering: [[WritingInEngineering.pdf]]
+* Syllabus: 
 ### Praxis I Note Hubs
 ```query
 tag:#ESC101H1 tag:Hub
