@@ -3,7 +3,7 @@ The art of designing engineering projects; and making sure people actually care 
 
 ### Materials: 
 * Writing in Engineering: [[WritingInEngineering.pdf]]
-* Syllabus: 
+* Syllabus: [[ESC101 20269 Syllabus.pdf]]
 ### Praxis I Note Hubs
 ```query
 tag:#ESC101H1 tag:Hub
