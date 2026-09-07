@@ -1,10 +1,11 @@
 ---
-updated_at: 2026-09-05T22:36:34.946-04:00
-edited_seconds: 90
+updated_at: 2026-09-07T10:58:13.841-04:00
+edited_seconds:
 course:
 tags:
 "Lecture #": 0
-Date': 2026-09-10
+Date: 2026-09-10
+Week:
 ---
 Previous: 
 Next:
