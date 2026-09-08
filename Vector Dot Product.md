@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-08T17:46:36.227-04:00
-edited_seconds: 200
+updated_at: 2026-09-08T17:51:28.233-04:00
+edited_seconds: 320
 course: ESC103H1
 tags:
   - ESC103H1
@@ -37,8 +37,13 @@ Note that if $\vec{a} = \vec{b}$; this simplifies to $\vec{a}\cdot \vec{a}=||\ve
 ## Triangle Inequality 
 The Triangle Inequality is a useful identity that arises out of the way Vector addition operates. Given two vectors $\vec{a}$ and $\vec{b}$; $\vec{a} + \vec{b}$ effectively creates the third side of a triangle. 
 
-> [!note]
-> sd
+> [!abstract] Triangle Inequality Theorem
+> Let $a$, $b$ and $c$ denote the side lengths of the 3 distinct sides of a triangle. The sum of two sides of the triangle will always be greater than or equal to the last remaining side.
+> Can be mathematically expressed as: 
+> $$a + b \geq c$$
 
+For the case of our vectors; we can adapt this to instead take the vectors present. Note that $\vec{c} = \vec{a} + \vec{b}$; ergo:
+> [!abstract] Triangle Inequality Theorem
+> Let $\vec{a}$ and $\vec{b}$ denote two vectors; whose sum is $\vec{a} + \vec{b} = \vec{c}$. Ergo: 
+> $$||\vec{a}|| + ||\vec{b}|| \geq ||\vec{a} + \vec{b}||$$
 
-### 
