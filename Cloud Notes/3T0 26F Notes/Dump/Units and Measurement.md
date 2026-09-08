@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-07T08:04:09.105-04:00
-edited_seconds: 580
+updated_at: 2026-09-08T10:17:49.188-04:00
+edited_seconds: 610
 course: PHY180H1
 tags:
   - PHY180H1
@@ -82,5 +82,8 @@ The importance of physical Dimensions within an equation gives arise to the conc
 1. All terms in an expression must have the same dimensions in their corresponding operations. You cannot add a term with the dimensions of $LT$ with the dimensions of $L\Theta$. 
 	1. Conversely; this is extended to both sides of the equality needing to resolve to the same dimensions. 
 2. Any arguments in standard mathematical expressions (the Trigonometric expressions; exponentials ($b^x$); and logarithms) must be pure numbers. 
-	1. These functions also return pure numbers as outputs. 
+	1. These functions also return pure numbers as outputs; i.e. Dimensionless IN - Dimensionless OUT 
 ### Significant Figures and Precision
+
+Recall from our previous classes on the difference between Accuracy and Precision: 
+* Accuracy is the relative difference between measurements; 
