@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-08T15:24:58.217-04:00
-edited_seconds: 360
+updated_at: 2026-09-08T15:29:00.191-04:00
+edited_seconds: 400
 course: ESC103H1
 tags:
   - ESC103H1
@@ -9,7 +9,7 @@ Date: 2026-09-10
 Week: 0
 ---
 Previous: N/A
-Next: N/A 
+Next: [[Vector Dot Product]]
 
 --- 
 
@@ -48,9 +48,10 @@ Where $\vec{a}$ and $\vec{b}$ are vectors.
 Vector operations are generally defined under the following concepts below: 
 
 ### Addition & Subtraction
-> Given $\vec{a}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$ and $\vec{b} = \begin{pmatrix}b_{1}\\b_{2}\end{pmatrix}$, Addition and subtraction are defined as the following lines below: 
+> Given $\vec{a}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$ and $\vec{b} = \begin{pmatrix}b_{1}\\b_{2}\end{pmatrix}$, Addition and subtraction are algebraically defined as the following lines below: 
 >  $$\vec{a} + \vec{b} = \begin{pmatrix}a_{1}+b_{1}\\a_{2}+b_{2}\end{pmatrix}$$
 >   $$\vec{a} - \vec{b} = \begin{pmatrix}a_{1}-b_{1}\\a_{2}-b_{2}\end{pmatrix}$$
+>   Geometrically; these are defined by the Parallelogram Model (or whatever; you should remember this). 
 
 ### Scalar Multiplication & Division
 > Given $\vec{a} = \begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$, and $b$ is a scalar value; then Scalar Multiplication is defined as the following: 
