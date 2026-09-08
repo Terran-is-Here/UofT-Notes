@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-08T15:45:30.645-04:00
-edited_seconds: 190
+updated_at: 2026-09-08T17:46:36.227-04:00
+edited_seconds: 200
 course: ESC103H1
 tags:
   - ESC103H1
@@ -35,10 +35,10 @@ $$
 $$
 Note that if $\vec{a} = \vec{b}$; this simplifies to $\vec{a}\cdot \vec{a}=||\vec{a}||^2$. 
 ## Triangle Inequality 
-The Triangle Inequality is generally defined as the following. 
-> Given a triangle with sides $a,b,c$; For any two sides; the sum must be greater than the remaining must be greater than or equal to the remaining side; that is: 
-> $a+b \geq c$
-> 
-> TO BE FINISHED
+The Triangle Inequality is a useful identity that arises out of the way Vector addition operates. Given two vectors $\vec{a}$ and $\vec{b}$; $\vec{a} + \vec{b}$ effectively creates the third side of a triangle. 
+
+> [!note]
+> sd
+
 
 ### 

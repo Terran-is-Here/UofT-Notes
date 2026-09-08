@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-08T15:29:00.191-04:00
-edited_seconds: 400
+updated_at: 2026-09-08T17:44:39.626-04:00
+edited_seconds: 450
 course: ESC103H1
 tags:
   - ESC103H1
@@ -14,6 +14,8 @@ Next: [[Vector Dot Product]]
 --- 
 
 ## Vectors & Scalars
+> We only have the unit definition; as we *are* in engineering; and any physical quantity should have dimensions/units. 
+
 Recall that Scalars are defined as a value with magnitude; a **sign** and units—whilst vectors are defined as values with magnitude, **direction** and units. 
 
 * Scalars can be represented as simple values such as $2$.
@@ -30,7 +32,9 @@ $$
 1&2&3
 \end{pmatrix}
 $$
-In this case; $\vec{AB}$ is a 2d vector; while as $\vec{CD}$ is a 3d vector. Note that $\vec{AB}$ is a *column vector* and $\vec{CD}$ is a row vector.
+In this case; $\vec{AB}$ is a 2d vector; while as $\vec{CD}$ is a 3d vector. Note that $\vec{AB}$ is a *column vector* and $\vec{CD}$ is a row vector. **These are distinct with eachother** (more accurately being the Transpose of each other.)
+> Let $\vec{AB}$ be a row vector; $$\vec{AB} = \begin{pmatrix}a_{1}&a_{2}\end{pmatrix}$$
+> We can find it's corresponding Column vector by taking it's transpose (swapping all rows with columns): $$\vec{AB}^T = \begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$$
 ### Special Vectors
 * The Zero Vector (denoted as $\vec{0}$) is defined as having all of it's components be equal to 0. 
 * A unit vector (defined as $\hat{a}$; generally a letter with a "hat" is a unit vector) is defined as a vector with it's magnitude set to 1. Recall how we can find this. 
