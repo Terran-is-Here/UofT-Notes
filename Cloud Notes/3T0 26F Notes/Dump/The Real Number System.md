@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-08T22:14:38.435-04:00
-edited_seconds: 280
+updated_at: 2026-09-09T10:52:11.821-04:00
+edited_seconds: 460
 course: ESC194H1
 tags:
   - ESC194H1
@@ -32,7 +32,7 @@ $\mathbb{R}$ will have two main arithmetic operations; that being *addition* and
 
 > [!axiom] Axiom 3
 > **Distributive Law**: For each triple $x,y,z\in \mathbb{R}$: 
-> $$a(b+c) = ab + bc \text{ and } (a+b)c = ac + bc $$
+> $$a(b+c) = ab + ac \text{ and } (a+b)c = ac + bc $$
 
 > [!axiom] Axiom 4
 > **Identities**: There exists two distinct real numbers with the following identities: 
@@ -40,4 +40,31 @@ $\mathbb{R}$ will have two main arithmetic operations; that being *addition* and
 > $$1*x = x * 1 = x$$
 
 > [!axiom] Axiom 5
- 
+> **Inverses**: For each $x\in \mathbb{R}$; there exists a unique additive inverse denoted by $-x$, such as to allow the following: $$x + (-x) = (-x) + x = 0$$
+> For each $x\in \mathbb{R},x \neq 0$; there exists a **unique** multiplicative inverse denoted by $\frac{1}{x}$ or $x^-1$; for which $$x * x^{-1} = x^{-1}*x = 1$$
+
+### Axiom 5.1 - Exclusion of 0
+Note that Axiom 5 explicitly denies the inclusion of a multiplicative inverse (or; division) by zero. If we attempt to do so; we end up with some difficulties. 
+
+Take Axiom 5; essentially stating that for every number in $\mathbb{R}$; there must exist a means for it to equal $1$; or in other words; $ab=1$, $a,b\in \mathbb{R}$ has a solution. 
+
+To show that we can't include $0$ in this Axiom; let's take Axiom 3 and 4. Let $a,b,c,x \in\mathbb{R}$
+$$
+a(b+c) = ab + ac 
+$$
+$$
+0+x = x + 0 = x 
+$$
+If we let $x=0$ and sub it in as $b+c$ then: 
+$$
+a(0+0) = a*0+ a*0  = a*0
+$$
+Apply Axiom 5 by adding the inverse of $a*0$ into both sides: 
+$$
+a*0+ a*0 + (-(a*0))  = a*0 + (-(a*0))
+$$
+By definition from Axiom 5: 
+$$
+a*0= 0
+$$
+For any $a\in \mathbb{R}$; there does not exist any means to multiply $0$ to obtain 1; thus requiring it's exclusion from the definition of Axiom 5 and $\mathbb{R}$. 
