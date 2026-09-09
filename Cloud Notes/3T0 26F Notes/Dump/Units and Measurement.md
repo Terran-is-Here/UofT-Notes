@@ -1,11 +1,12 @@
 ---
-updated_at: 2026-09-08T10:20:16.197-04:00
-edited_seconds: 650
+updated_at: 2026-09-09T14:04:11.925-04:00
+edited_seconds: 680
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 0
 Date': 2026-09-10
+custom-width: 30
 ---
 Hub: [[PHY180 Hub]]
 Previous: N/A
