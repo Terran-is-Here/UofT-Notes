@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T10:52:11.821-04:00
-edited_seconds: 460
+updated_at: 2026-09-09T11:11:00.712-04:00
+edited_seconds: 700
 course: ESC194H1
 tags:
   - ESC194H1
@@ -9,10 +9,12 @@ Date: 2026-09-10
 Week: 1
 ---
 To Hub: [[ESC194 Hub]]
-Previous: 
-Next:
-* This note was primarily based on the Supplemental (Sections 1; and 2.1-2.7.)
-* A good amount of it *was* transcribed from the actual like; document; although it's now here in obsidian so it should be easier to work with.
+Previous: N/A
+Next: 
+> [!warning] Note
+> This note was primarily based on the Supplemental (Sections 1; and 2.1-2.7.)
+> A good amount of it *was* transcribed from the actual like; document; although it's now here in obsidian so it should be easier to work with.
+> **This note is generally meant to be a quick refresher on the axioms and general definitions of $\mathbb{R}$ for this course.**
 --- 
 
 # The Real Number System
@@ -43,28 +45,40 @@ $\mathbb{R}$ will have two main arithmetic operations; that being *addition* and
 > **Inverses**: For each $x\in \mathbb{R}$; there exists a unique additive inverse denoted by $-x$, such as to allow the following: $$x + (-x) = (-x) + x = 0$$
 > For each $x\in \mathbb{R},x \neq 0$; there exists a **unique** multiplicative inverse denoted by $\frac{1}{x}$ or $x^-1$; for which $$x * x^{-1} = x^{-1}*x = 1$$
 
+> [!note] Note
+> From Axiom 5; we can easily define subtraction ($a-b = a+(-b)$) and division ($a\div b = a * (\frac{1}{b})$)
+
+> [!note] Note 2
+> Axiom 5 also let's us define exponentials trivially. 
 ### Axiom 5.1 - Exclusion of 0
 Note that Axiom 5 explicitly denies the inclusion of a multiplicative inverse (or; division) by zero. If we attempt to do so; we end up with some difficulties. 
 
-Take Axiom 5; essentially stating that for every number in $\mathbb{R}$; there must exist a means for it to equal $1$; or in other words; $ab=1$, $a,b\in \mathbb{R}$ has a solution. 
+For the purposes of this to leave it as an exercise; try to prove how $a*0 = 0$. 
 
-To show that we can't include $0$ in this Axiom; let's take Axiom 3 and 4. Let $a,b,c,x \in\mathbb{R}$
-$$
-a(b+c) = ab + ac 
-$$
-$$
-0+x = x + 0 = x 
-$$
-If we let $x=0$ and sub it in as $b+c$ then: 
-$$
-a(0+0) = a*0+ a*0  = a*0
-$$
-Apply Axiom 5 by adding the inverse of $a*0$ into both sides: 
-$$
-a*0+ a*0 + (-(a*0))  = a*0 + (-(a*0))
-$$
-By definition from Axiom 5: 
-$$
-a*0= 0
-$$
-For any $a\in \mathbb{R}$; there does not exist any means to multiply $0$ to obtain 1; thus requiring it's exclusion from the definition of Axiom 5 and $\mathbb{R}$. 
+> [!axiom]- Proof 
+> Take Axiom 5; essentially stating that for every number in $\mathbb{R}$; there must exist a means for it to equal $1$; or in other words; $ab=1$, $a,b\in \mathbb{R}$ has a solution. 
+> To show that we can't include $0$ in this Axiom; let's take Axiom 3 and 4. Let $a,b,c,x \in\mathbb{R}$
+> $$a(b+c) = ab + ac $$
+> $$0+x = x + 0 = x $$
+> If we let $x=0$ and sub it in as $b+c$ then: 
+> $$a(0+0) = a*0+ a*0  = a*0$$
+> Apply Axiom 5 by adding the inverse of $a*0$ into both sides: $$a*0+ a*0 + (-(a*0))  = a*0 + (-(a*0))$$
+> By definition from Axiom 5: 
+> $$a*0= 0$$
+> For any $a\in \mathbb{R}$; there does not exist any means to multiply $0$ to obtain 1; thus requiring it's exclusion from the definition of Axiom 5 and $\mathbb{R}$. 
+## Order Axioms
+There exists 3 main Order Axioms within $\mathbb{R}$. For the sake of brevity, assume $a,b,c \in \mathbb{R}$. 
+> [!axiom] Axiom 6
+> **Trichotomy Law** - $a\neq b$: 
+> $$a<b \text{ or } b < a$$ 
+> only **one** of these can be true at any given time. 
+
+> [!axiom] Axiom 7
+> **Transitivity**
+> $$a<b \cap b<c \implies a <c$$
+
+> [!axiom] Axiom 8 & 9 
+> 
+> $$a < b \implies a+c < b + c$$
+> $$0<c, a < b, ac < bc$$
+
