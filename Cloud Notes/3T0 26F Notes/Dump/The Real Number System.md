@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T12:52:05.206-04:00
-edited_seconds: 1250
+updated_at: 2026-09-09T13:11:57.741-04:00
+edited_seconds: 1570
 course: ESC194H1
 tags:
   - ESC194H1
@@ -82,6 +82,7 @@ There exists 3 main Order Axioms within $\mathbb{R}$. For the sake of brevity, a
 > $$a < b \implies a+c < b + c$$
 > Preservation of the Multiplication Operation
 > $$0<c, a < b, ac < bc$$
+> (Can be derived from the other axioms but it's fundamental enough as is; see Theorem 1.5)
 
 From here we can generally define our other inequality symbols (Definitions O.1 to O.3 respectively).
 * $a > b$ if $b < a$
@@ -101,7 +102,7 @@ Template:
 > [!theorem] Theorem 1.1
 > $$a \leq b \iff b-a \geq 0$$ 
 > Hint: Directionality. 
-> > [!axiom] Proof
+> > [!axiom]- Proof
 > > Using definition O.3, reverse the direction: 
 > > $$b \geq a $$
 > > Use Axiom O.3, F.5 to add $(-a)$ to both sides: 
@@ -111,7 +112,7 @@ Template:
 > [!theorem] Theorem 1.2 
 > $$a=b \iff a\leq b \land b \leq a$$
 > Hint: It can't be both. 
-> > [!axiom] Proof
+> > [!axiom]- Proof
 > > For this case, we will use Definition O.2 for this (though Theorem O.1 also applies)
 > > $$a\leq b \implies a = b \lor a < b $$
 > > $$b\leq a \implies b = a \lor b < a $$
@@ -120,7 +121,7 @@ Template:
 > [!theorem] Theorem 1.3
 > $$a \leq b \land c \leq d \implies a+c \leq b+d$$
 > Hint: How can you combine the bounds of two inequalities? 
-> > [!axiom] Proof
+> > [!axiom]- Proof
 > > For this case; we shall separately apply Axiom O.3 separately across both: 
 > > $$a +c\leq b+ c$$
 > > $$c +b \leq d + b$$
@@ -128,6 +129,56 @@ Template:
 > > $$a+c \leq b+c \land c+b \leq d+b \implies a+c \leq d+b$$
  
 > [!theorem] Theorem 1.4
-> $$a \leq b$$
+> $$a \leq b \implies -b \leq a$$
+> Hint: Adding things...
+> > [!axiom]- Proof
+> > Use Axiom O.3 and F.5. 
+> > $$a + (-b) + (-a)\leq b + (-b) + (-a)$$
+> > $$-b \leq -a $$
+> > This theorem is useful for proving other theorems. 
+> 
+
+> [!theorem] Theorem 1.5
+> $$a \leq b \land c > 0 \implies ca \leq cb$$
+> Hint: Signs. 
+> > [!axiom]- Proof
+> > Use Theorem 1.1: 
+> > > Using definition O.3, reverse the direction: 
+> > > $$b \geq a $$
+> > > Use Axiom O.3, F.5 to add $(-a)$ to both sides: 
+> > > $$b+(-a) \geq a + (-a)$$
+> > > $$b-a \geq 0$$ 
+> > 
+> > Since $(b-a)$ must be positive; and $c$ is positive; signs are preserved; ergo..????
+> > $$cb -ca \geq 0$$
+> > Using Axiom O.3 again we get
+> > $$cb \geq ca$$
+> > Reversing the direction; then: 
+> > $$ca \geq cb$$
+> 
+
+> [!theorem] Theorem 1.6 
+> $$a \leq b \land c < 0 \implies ca \geq cb$$
+> Hint: 1.5. 
+> > [!axiom]- Proof
+> > Use Axiom O.3 on our c term: 
+> > $$c + (-c) < (-c)$$
+> > $$0< -c$$
+> > Reverse the direction of the inequality:
+> > $$-c > 0$$
+> > Use Theorem 1.5 (with a different sign): 
+> > > Using definition O.3, reverse the direction: 
+> > > $$b \geq a $$
+> > > Use Axiom O.3, F.5 to add $(-a)$ to both sides: 
+> > > $$b+(-a) \geq a + (-a)$$
+> > > $$b-a \geq 0$$ 
+> > 
+> > Distribute $(-c)$ across our terms: 
+> > $$-cb + ca \geq 0$$
+> > Using Axiom O.3 again we get: 
+> > $$ca \geq ^{3}$$
+
+> [!theorem] Theorem 1.7
+> $$0 < a \leq b \implies 0 < \frac{1}{b} \leq \frac{1}{a}$$
 > > [!axiom] ...
 > > $$$$
