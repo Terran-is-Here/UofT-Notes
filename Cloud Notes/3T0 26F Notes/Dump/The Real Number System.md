@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T15:42:29.590-04:00
-edited_seconds: 1640
+updated_at: 2026-09-09T16:09:49.223-04:00
+edited_seconds: 1900
 course: ESC194H1
 tags:
   - ESC194H1
@@ -50,7 +50,7 @@ $\mathbb{R}$ will have two main arithmetic operations; that being *addition* and
 
 > [!note] Definition F.2
 > Axiom 5 also let's us define exponentials trivially. 
-### Axiom 5.1 - Exclusion of 0
+### Theorem 1.1 - Exclusion of 0
 Note that Axiom 5 explicitly denies the inclusion of a multiplicative inverse (or; division) by zero. If we attempt to do so; we end up with some difficulties. 
 
 For the purposes of this to leave it as an exercise; try to prove how $a*0 = 0$. 
@@ -66,6 +66,26 @@ For the purposes of this to leave it as an exercise; try to prove how $a*0 = 0$.
 > By definition from Axiom 5: 
 > $$a*0= 0$$
 > For any $a\in \mathbb{R}$; there does not exist any means to multiply $0$ to obtain 1; thus requiring it's exclusion from the definition of Axiom 5 and $\mathbb{R}$. 
+
+### Theorem 1.2 - Negative Numbers and Multiplication
+Note that the system above does not explicitly define the concept of negative numbers and their role in multiplication; or more accurately; the effects of the additive inverse with the multiplication operation. 
+
+As an exercise to future me; solve what a $PN$ and $NN$ result (Positive * Negative & Negative * Negative )
+> [!note]- Lemma 1- Positive & Negative
+> Take Theorem 1.1, let $a \in \mathbb{R}, a \geq 0$
+> $$a 0 = 0$$
+> Use Axiom F.4 and F.3 to break up $0$ into some value $(b - b)$; where $b \in \mathbb{R}$: 
+> $$a(b+(-b)) = 0$$
+> $$ab+ a * (-b) = 0$$
+> We know from Axiom F.5 that for the above statement to be true ($n-k=0$); $k$ must be the additive inverse of $n$; or in other words $a*b = (-ab)$. 
+
+> [!theorem]- Negative Multiplication / Theorem 1.2
+> Take Theorem 1.1 again; let $a\in \mathbb{R}, a \geq 0$: 
+> $$(-a)0 = 0$$
+> Use Axiom F.4 and F.3 to break up $0$ to some value $(b + (-b))$; where $b\in \mathbb{R}, b\geq 0$: 
+> $$(-a)(b+(-b)) = 0$$
+> $$(-ab) + (-a) * (-b) = 0$$
+> We know once again from Axiom F.5 that for the above statement to be true ($n-k = 0$);  $k$ must be the additive inverse of n; or in other words $-a * -b = ab$. 
 ## Order Axioms
 There exists 3 main Order Axioms within $\mathbb{R}$. For the sake of brevity, assume $a,b,c \in \mathbb{R}$. 
 > [!axiom] Axiom O.1
@@ -99,7 +119,7 @@ Template:
 > > $$$$
 ```
 
-> [!theorem] Theorem 1.1
+> [!note] Corollary 1.1
 > $$a \leq b \iff b-a \geq 0$$ 
 > Hint: Directionality. 
 > > [!axiom]- Proof
@@ -109,7 +129,7 @@ Template:
 > > $$b+(-a) \geq a + (-a)$$
 > > $$b-a \geq 0$$ Q.E.D
 
-> [!theorem] Theorem 1.2 
+> [!theorem] Corollary 1.2 
 > $$a=b \iff a\leq b \land b \leq a$$
 > Hint: It can't be both. 
 > > [!axiom]- Proof
@@ -118,7 +138,7 @@ Template:
 > > $$b\leq a \implies b = a \lor b < a $$
 > > Both states of $b<a$ and $a<b$ cannot be true at the same time. Therefore $a=b$. 
 
-> [!theorem] Theorem 1.3
+> [!theorem] Corollary 1.3
 > $$a \leq b \land c \leq d \implies a+c \leq b+d$$
 > Hint: How can you combine the bounds of two inequalities? 
 > > [!axiom]- Proof
@@ -128,7 +148,7 @@ Template:
 > > Note that we can now use Axiom O.2 on this: 
 > > $$a+c \leq b+c \land c+b \leq d+b \implies a+c \leq d+b$$
  
-> [!theorem] Theorem 1.4
+> [!theorem] Corollary 1.4
 > $$a \leq b \implies -b \leq -a$$
 > Hint: Adding things...
 > > [!axiom]- Proof
@@ -138,7 +158,7 @@ Template:
 > > This theorem is useful for proving other theorems. 
 > 
 
-> [!theorem] Theorem 1.5
+> [!theorem] Corollary 1.5
 > $$a \leq b \land c > 0 \implies ca \leq cb$$
 > Hint: Signs. 
 > > [!axiom]- Proof
@@ -157,7 +177,7 @@ Template:
 > > $$ca \geq cb$$
 > 
 
-> [!theorem] Theorem 1.6 
+> [!theorem] Corollary 1.6 
 > $$a \leq b \land c < 0 \implies ca \geq cb$$
 > Hint: 1.5. 
 > > [!axiom]- Proof
@@ -178,13 +198,12 @@ Template:
 > > Using Axiom O.3 again we get: 
 > > $$ca \geq cb$$
 
-> [!theorem] Theorem 1.7
+> [!theorem] Corollary 1.7
 > $$0 < a \leq b \implies 0 < \frac{1}{b} \leq \frac{1}{a}$$
-> > [!axiom] Proof
+> > [!axiom]- Proof
 > > We can safely ascertain that $a$ and $b$ are above 0; as $0<a$ and $a\leq b \implies 0<b$. Ergo we can safely divide across all terms. 
 > > $$0 < a \leq b$$
 > > Using F.5 & Theorem 1.5 (generally O.4) 
 > > $$0 < a(a^{-1})(b^{-1}) \leq b(a^{-1})(b^{-1})$$ 
 > > $$0 < \frac{1}{b} \leq \frac{1}{a}$$
-> 
-> 
+
