@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T11:11:00.712-04:00
-edited_seconds: 700
+updated_at: 2026-09-09T11:18:41.963-04:00
+edited_seconds: 800
 course: ESC194H1
 tags:
   - ESC194H1
@@ -75,10 +75,20 @@ There exists 3 main Order Axioms within $\mathbb{R}$. For the sake of brevity, a
 
 > [!axiom] Axiom 7
 > **Transitivity**
-> $$a<b \cap b<c \implies a <c$$
+> $$a<b \land b<c \implies a <c$$
 
 > [!axiom] Axiom 8 & 9 
 > 
 > $$a < b \implies a+c < b + c$$
 > $$0<c, a < b, ac < bc$$
 
+From here we can generally define our other inequality symbols: 
+* $a > b$ if $b < a$
+* $a \geq b$ if $b < a \lor b=a$
+* $a \leq b$ if $b \geq a$
+## Inequalities
+The following are useful inequality properties to know. Proofs are attached. 
+
+1. $a \leq b \iff b-a \geq 0$
+2. $a=b \iff a\leq b \land b \leq a$
+3. 
