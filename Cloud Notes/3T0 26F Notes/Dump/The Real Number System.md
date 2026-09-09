@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T16:09:49.223-04:00
-edited_seconds: 1900
+updated_at: 2026-09-09T16:34:22.636-04:00
+edited_seconds: 2010
 course: ESC194H1
 tags:
   - ESC194H1
@@ -207,3 +207,21 @@ Template:
 > > $$0 < a(a^{-1})(b^{-1}) \leq b(a^{-1})(b^{-1})$$ 
 > > $$0 < \frac{1}{b} \leq \frac{1}{a}$$
 
+> [!theorem] Corollary 1.8
+> $$\forall x \in \mathbb{R},x^2 \geq 0$$
+> > [!axiom]- Proof
+> > We can prove this by breaking this up into three parts. We can take the trivial case using Theorem 1.1: 
+> > $$x = 0; x^2 \geq 0 \to 0*0 \geq 0 \to 0\geq 0$$
+> > For positive numbers; this is also trivial: 
+> > $$x > 0; x^2 \geq 0 $$
+> > For negative numbers; we can use Theorem 1.2. to show that this is also true: 
+> > $$x < 0; -x > 0; (-x)^2 \geq 0 \to (-x)(-x) \geq 0 \to x^2 \geq 0$$. 
+
+
+> [!theorem] Corollary 1.9
+> $$a,b \in \mathbb{R}, 0 \leq ab$$
+> $$a<b \iff a^2 < b^2$$
+> $$a<b \iff \sqrt{ a } < \sqrt{ b }$$
+> > [!axiom] Proof..? Still needs to be checked. 
+> > Taking the first one; we can use Axiom O.3 to rearrange it to a difference of squares: 
+> > $$
