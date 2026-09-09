@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T15:25:40.389-04:00
-edited_seconds: 1630
+updated_at: 2026-09-09T15:42:29.590-04:00
+edited_seconds: 1640
 course: ESC194H1
 tags:
   - ESC194H1
@@ -71,7 +71,7 @@ There exists 3 main Order Axioms within $\mathbb{R}$. For the sake of brevity, a
 > [!axiom] Axiom O.1
 > **Trichotomy Law** - $a\neq b$: 
 > $$a<b \text{ or } b < a$$ 
-> only **one** of these can be true at any given time. 
+> only **one** of these can be true at any given time. (That being that it is *equal to*, *less than*, or *greater than*)
 
 > [!axiom] Axiom O.2
 > **Transitivity**
