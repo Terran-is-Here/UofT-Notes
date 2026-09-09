@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T11:59:16.907-04:00
-edited_seconds: 830
+updated_at: 2026-09-09T12:27:55.471-04:00
+edited_seconds: 840
 course: ESC194H1
 tags:
   - ESC194H1
@@ -78,8 +78,9 @@ There exists 3 main Order Axioms within $\mathbb{R}$. For the sake of brevity, a
 > $$a<b \land b<c \implies a <c$$
 
 > [!axiom] Axiom 8 & 9 
-> 
+> Preserving operations: Addition
 > $$a < b \implies a+c < b + c$$
+> Multiplication
 > $$0<c, a < b, ac < bc$$
 
 From here we can generally define our other inequality symbols: 
