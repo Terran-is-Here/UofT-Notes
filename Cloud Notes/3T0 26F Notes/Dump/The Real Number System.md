@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T16:34:22.636-04:00
-edited_seconds: 2010
+updated_at: 2026-09-09T16:38:55.212-04:00
+edited_seconds: 2130
 course: ESC194H1
 tags:
   - ESC194H1
@@ -222,6 +222,21 @@ Template:
 > $$a,b \in \mathbb{R}, 0 \leq ab$$
 > $$a<b \iff a^2 < b^2$$
 > $$a<b \iff \sqrt{ a } < \sqrt{ b }$$
-> > [!axiom] Proof..? Still needs to be checked. 
+> > [!axiom]- Proof (1) 
 > > Taking the first one; we can use Axiom O.3 to rearrange it to a difference of squares: 
-> > $$
+> > $$0 < b^2 - a^2$$
+> > $$0 < (b-a)(b+a)$$
+> > Using Corollary 1.6; we can cancel out our $(b+a)$ term. 
+> > $$0 < (b-a)$$
+> > Using Axiom F.5 and O.3: 
+> > $$a < b$$
+> 
+> > [!axiom]- Proof (2)
+> > Taking the second one; we can use Axiom O.3 to rearrange it 
+> > $$0 < \sqrt{ b } - \sqrt{ a }$$
+> > Note that $(\sqrt{ b } - \sqrt{ a }) = \frac{b-a}{(\sqrt{ b } + \sqrt{ a })}$; thus: 
+> > $$0 <  \frac{b-a}{(\sqrt{ b } + \sqrt{ a })}$$
+> > Using Corollary 1.6; we can cancel out our denominator term. 
+> > $$0 < (b-a)$$
+> > Using Axiom F.5 and O.3: 
+> > $$a < b$$
