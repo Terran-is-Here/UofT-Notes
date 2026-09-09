@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T13:11:57.741-04:00
-edited_seconds: 1570
+updated_at: 2026-09-09T15:25:40.389-04:00
+edited_seconds: 1630
 course: ESC194H1
 tags:
   - ESC194H1
@@ -129,7 +129,7 @@ Template:
 > > $$a+c \leq b+c \land c+b \leq d+b \implies a+c \leq d+b$$
  
 > [!theorem] Theorem 1.4
-> $$a \leq b \implies -b \leq a$$
+> $$a \leq b \implies -b \leq -a$$
 > Hint: Adding things...
 > > [!axiom]- Proof
 > > Use Axiom O.3 and F.5. 
@@ -176,9 +176,15 @@ Template:
 > > Distribute $(-c)$ across our terms: 
 > > $$-cb + ca \geq 0$$
 > > Using Axiom O.3 again we get: 
-> > $$ca \geq ^{3}$$
+> > $$ca \geq cb$$
 
 > [!theorem] Theorem 1.7
 > $$0 < a \leq b \implies 0 < \frac{1}{b} \leq \frac{1}{a}$$
-> > [!axiom] ...
-> > $$$$
+> > [!axiom] Proof
+> > We can safely ascertain that $a$ and $b$ are above 0; as $0<a$ and $a\leq b \implies 0<b$. Ergo we can safely divide across all terms. 
+> > $$0 < a \leq b$$
+> > Using F.5 & Theorem 1.5 (generally O.4) 
+> > $$0 < a(a^{-1})(b^{-1}) \leq b(a^{-1})(b^{-1})$$ 
+> > $$0 < \frac{1}{b} \leq \frac{1}{a}$$
+> 
+> 
