@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T11:18:41.963-04:00
-edited_seconds: 800
+updated_at: 2026-09-09T11:59:16.907-04:00
+edited_seconds: 830
 course: ESC194H1
 tags:
   - ESC194H1
@@ -84,8 +84,8 @@ There exists 3 main Order Axioms within $\mathbb{R}$. For the sake of brevity, a
 
 From here we can generally define our other inequality symbols: 
 * $a > b$ if $b < a$
-* $a \geq b$ if $b < a \lor b=a$
-* $a \leq b$ if $b \geq a$
+* $a \leq b$ if $a<b \lor b=a$
+* $a \geq b$ if $b \leq a$
 ## Inequalities
 The following are useful inequality properties to know. Proofs are attached. 
 
