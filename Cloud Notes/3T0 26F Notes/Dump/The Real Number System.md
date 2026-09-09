@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T16:38:55.212-04:00
-edited_seconds: 2130
+updated_at: 2026-09-09T17:38:14.179-04:00
+edited_seconds: 2210
 course: ESC194H1
 tags:
   - ESC194H1
@@ -240,3 +240,10 @@ Template:
 > > $$0 < (b-a)$$
 > > Using Axiom F.5 and O.3: 
 > > $$a < b$$
+
+> [!theorem] Corollary 1.10
+> $$u,v \in \mathbb{R}, u\neq v, u<v$$
+> $$0 < (x-u)(x-v) \iff x < u \lor x >v$$
+> $$ 0 >(x-u)(x-v) \iff u<x<v$$
+> > [!axiom] ...
+> > $$$$ 

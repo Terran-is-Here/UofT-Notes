@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-08T15:45:44.223-04:00
-edited_seconds: 90
+updated_at: 2026-09-09T17:26:49.655-04:00
+edited_seconds: 100
 course: ESC103
 tags:
   - ESC103H1
@@ -8,6 +8,7 @@ tags:
 Date: 2026-09-07
 Week: 0
 ---
+Hub: [[ESC103 Hub]]
 Previous: N/A
 Next: N/A
 

@@ -16,9 +16,9 @@ Other supplementary resources:
 
 ### ESC180 Note Hubs
 ```query
-tag:SCH3U tag:Hub
+tag:#ESC180H1 tag:Hub
 ```
 ### All ESC180 Notes
 ```query
-tag:SCH3U -tag:Hub
+tag:#ESC180H1 -tag:Hub
 ```
