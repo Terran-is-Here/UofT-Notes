@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T21:52:49.825-04:00
-edited_seconds: 650
+updated_at: 2026-09-10T12:48:51.731-04:00
+edited_seconds: 780
 course: PHY180H1
 tags:
   - PHY180H1
@@ -9,14 +9,17 @@ Date: 2026-09-10
 Week: 1
 ---
 Hub: [[PHY180 Hub]]
-Previous: 
-Next:
+Previous: [[Units and Measurement]]
+Next: N/A 
 > [!note] Recommended Reading: 
 > [[Vector Review| Vector Review (ESC103H1)]] (has more of a formal definition of the concept of vectors overall)
-> **This note will be more focused on the physics-focused elements of Vectors**
+> [[Vector Dot Product| Dot Product (ESC103H1)]] (has more formal definitions of the concept of Dot Products)
+ > **This note will be more focused on the physics-focused elements of Vectors**
 
 --- 
-
+> [!Quote] Textbook Chapters Discussed
+> Chapters 2.1-2.4
+> (p53-96) 
 ## Scalars & Vectors 
 * A Scalar is generally defined as a quantity with units, magnitude (and a sign).
 * A Vector is generally defined as a quantity with units, magnitude, **and a direction**. 
@@ -61,16 +64,20 @@ Where $\vec{A}_{}x$ and $\vec{A}_{y}$ are the vector's orthogonal projections on
 * z = $\hat{k}$
 
 Thus we can define the equation above as: 
-$$
-\vec{A} = A_{x}\hat{i}+ A_{y}\hat{j}
-$$
-Where $A_{x}$ and $A_{y}$ are the scalar components of $\vec{A}$. We can also define $A_{x}$ and $A_{y}$ through the difference of the points present at the origin ($x_{0},y_{0}$) and it's endpoint $x_{a}, y_{a}$: 
+> [!axiom] Vector Equation (Component) 
+> $$\vec{A} = A_{x}\hat{i}+ A_{y}\hat{j}$$
+Where $A_{x}$ and $A_{y}$ are the scalar components of $\vec{A}$. 
+
+We can also define $A_{x}$ and $A_{y}$ through the difference of the points present at the origin ($x_{0},y_{0}$) and it's endpoint $x_{a}, y_{a}$: 
 $$
 A_{x} = x_{a} - x_{0}
 $$
 $$
 A_{y} = y_{a} - y_{0}
 $$
+
+Adding two vectors together in this format is equivalent to adding up their respective components in the same axis: 
+
 ### Generalized Dimensions
 For a $3D$ vector; we also have to account for the $z$ axis of the vector. We can define our vector in component form by extending it to our third dimension; letting $\hat{k}$ be the unit vector in the positive $z$ axis: 
 $$
@@ -100,15 +107,28 @@ Polar Coordinates are an alternate means of describing a vector/point. We normal
 
 Unlike the cartesian coordinate system; the Polar Coordinate System is defined by two values: $r$ (the distance of a point from the origin) and $\theta$ represents the angle it makes from a certain baseline (normally $+x$). 
 
-Given a point $P = (P_{x}, P_{y})$; we can define it in a polar coordinate system as: 
-$$
-P=\begin{cases}
-x = r\cos\theta \\
-y=r\sin \theta
-\end{cases} = (r,\theta)
-$$
-The *radial* vector (notated $\hat{r}$) is the unit vector directly pointed to our point; whilst another vector $\hat{t}$ is orthogonal to $\hat{r}$ in the counter-clockwise direction; essentially a positive direction of rotation for the $\theta$ value of our point. 
+> [!axiom] Polar Coordinate representation of a Vector 
+> Given a point $P = (x,y)$; we can define it in a polar coordinate system as: 
+$$P=\begin{cases}x = r\cos\theta \\y=r\sin \theta\end{cases} = (r,\theta)$$
+> The *radial* vector (notated $\hat{r}$) is the unit vector directly pointed to our point; whilst another vector $\hat{t}$ is orthogonal to $\hat{r}$ in the counter-clockwise direction; essentially a positive direction of rotation for the $\theta$ value of our point. 
 
 **Note that for Polar Coordinates, $\theta$ is solely defined in Radians.**
-## Vector Operations
+## Vector Operations & Algebra
+Recall earlier how we described that we can actually manipulate vectors with scalars; we can extend this towards their vector component representations. For some scalar $S$: 
+$$
+S\vec{A} = SA_{x}\hat{i}+ SA_{y}\hat{j} + SA_{z}\hat{k}
+$$
+Note that we can also actually modify this some more; a vector can be mathematically be defined to be antiparallel if it is equivalent to it's negative version (or; it's additive inverse where $\vec{A} + (-\vec{A}) = \vec{0}$): 
+$$
+-\vec{A} = -A_{x}\hat{i}- A_{y}\hat{j} - A_{z}\hat{k}
+$$
+
+> [!axiom] Definition of $\vec{0}$: 
+> Given $\vec{a}$ and $-\vec{a}$: 
+> $$\vec{a} = a_{x}\hat{i} + a_{y}\hat{j} + a_{z}\hat{k}$$
+> $$-\vec{a} = -a_{x}\hat{i} - a_{y}\hat{j} - a_{z}\hat{k}$$
+> Summing these together: 
+> $$\vec{a}-\vec{a} = -a_{x}\hat{i} - a_{y}\hat{j} - a_{z}\hat{k} + a_{x}\hat{i} + a_{y}\hat{j} + a_{z}\hat{k}$$
+> All these terms cancel out, leading us to the definition o t
+> $$ \vec{0} = 0\hat{i} + 0\hat{j} + 0\hat{k}$$
 
