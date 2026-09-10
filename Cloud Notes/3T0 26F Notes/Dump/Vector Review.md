@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T21:22:33.724-04:00
-edited_seconds: 540
+updated_at: 2026-09-09T21:51:11.854-04:00
+edited_seconds: 550
 course: ESC103H1
 tags:
   - ESC103H1
@@ -81,4 +81,4 @@ Vector operations are generally defined under the following concepts below:
 > Recall that a vector's magnitude can be calculated through the Pythagorean Theorem. Let $\vec{a} \in\mathbb{R}^3$, $\vec{a} = \begin{pmatrix}a_{1}&a_{2}&a_{3}\end{pmatrix}$, then $||\vec{a}|$ is represented as: 
 > $$||\vec{a}|| = \sqrt{  a_{1}^2+a_{2}^2+a_{3}^3}$$
 > In general for any $n$ dimensional vector in R; that is $\vec{b} \in \mathbb{R}^n$; and $\vec{a} = \begin{pmatrix}a_{1}&a_{2}&\dots&a_{n}\end{pmatrix}$: 
-> $$||\vec{a}|| = \sqrt{ \sum^n_{{i=0}}a_{i}^2 }$$
+> $$||\vec{a}|| = \sqrt{ \sum^n_{{i=1}}a_{i}^2 }$$
