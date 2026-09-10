@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T21:50:47.926-04:00
-edited_seconds: 640
+updated_at: 2026-09-09T21:52:49.825-04:00
+edited_seconds: 650
 course: PHY180H1
 tags:
   - PHY180H1
@@ -110,4 +110,5 @@ $$
 The *radial* vector (notated $\hat{r}$) is the unit vector directly pointed to our point; whilst another vector $\hat{t}$ is orthogonal to $\hat{r}$ in the counter-clockwise direction; essentially a positive direction of rotation for the $\theta$ value of our point. 
 
 **Note that for Polar Coordinates, $\theta$ is solely defined in Radians.**
+## Vector Operations
 
