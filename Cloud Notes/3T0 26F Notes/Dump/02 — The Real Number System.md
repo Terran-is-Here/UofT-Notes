@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T13:05:56.722-04:00
-edited_seconds: 3010
+updated_at: 2026-09-10T13:50:36.560-04:00
+edited_seconds: 3120
 course: ESC194H1
 tags:
   - ESC194H1
@@ -17,7 +17,7 @@ Next:
 > **This note is generally meant to be a quick refresher on the axioms and general definitions of $\mathbb{R}$ for this course.**
 --- 
 
-# The Real Number System
+# The Real Number System (Pre-Lecture Notes)
 The Real Number System (otherwise known as $\mathbb{R}$) is the primary* (excluding $\mathbb{C}$) number system that we will be using for the purposes of ESC194H1. Before performing Calculus however; we should have a rigorous understanding for the underlying principles of $\mathbb{R}$. 
 ## Field Axioms 
 > This section and the following one are meant to be skimmed; but they also should give you an understanding for why some identities don't really exist within $\mathbb{R}$; such as $\infty$ and $\frac{1}{0}$. 
@@ -330,3 +330,20 @@ Template:
 > > $$av = bu$$
 > > $$aw=cu$$
 > > $$bw=cv$$
+
+## Absolute Value 
+The concept of the Absolute Value is not inherently part of our Axioms; rather it is defined under the following definition: 
+
+> [!theorem] Definition of Absolute Value 
+>  $$x\in \mathbb{R}\text{ then }|x| = \begin{cases}
+> x : x\geq 0\\
+> -x : x < 0 \\
+> \end{cases}$$
+
+It thus also follows these following base properties (proofs included if required)
+
+> $$\forall x\in \mathbb{R}, |x| \geq 0$$
+> In cases where $x \geq 0$; it simply returns a positive number. 
+> In cases where $x < 0$; it returns the additive inverse of $x$ (with it being a negative number; then this is returns a positive number)
+
+> $$-|x| \leq
