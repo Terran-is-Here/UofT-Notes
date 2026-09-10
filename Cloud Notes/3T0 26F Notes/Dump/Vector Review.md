@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-08T17:44:39.626-04:00
-edited_seconds: 450
+updated_at: 2026-09-09T20:52:59.545-04:00
+edited_seconds: 460
 course: ESC103H1
 tags:
   - ESC103H1
@@ -8,8 +8,10 @@ tags:
 Date: 2026-09-10
 Week: 0
 ---
+
 Previous: N/A
 Next: [[Vector Dot Product]]
+See also: [[Vectors (Physics)]]
 
 --- 
 

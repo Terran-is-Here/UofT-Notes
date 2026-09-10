@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T20:45:21.215-04:00
-edited_seconds: 760
+updated_at: 2026-09-09T20:51:36.074-04:00
+edited_seconds: 770
 course: PHY180H1
 tags:
   - PHY180H1
@@ -10,7 +10,7 @@ custom-width: 30
 ---
 Hub: [[PHY180 Hub]]
 Previous: N/A
-Next: N/A
+Next: [[Vectors (Physics)]]
 
 --- 
 > [!Quote] Textbook Chapters Discussed
