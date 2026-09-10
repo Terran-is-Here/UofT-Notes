@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T08:19:36.711-04:00
-edited_seconds: 2440
+updated_at: 2026-09-10T08:38:18.346-04:00
+edited_seconds: 2700
 course: ESC194H1
 tags:
   - ESC194H1
@@ -86,6 +86,10 @@ As an exercise to future me; solve what a $PN$ and $NN$ result (Positive * Negat
 > $$(-a)(b+(-b)) = 0$$
 > $$(-ab) + (-a) * (-b) = 0$$
 > We know once again from Axiom F.5 that for the above statement to be true ($n-k = 0$);  $k$ must be the additive inverse of n; or in other words $-a * -b = ab$. 
+
+### Square Root Definition
+> [!axiom] Square Root
+> Let $x\geq 0$. $\sqrt{ x }$ is a non-negative number $u$ such that $u^2=x$ (thus since $x\geq {0}$, $\sqrt{ x }\geq 0$). 
 ## Order Axioms
 There exists 3 main Order Axioms within $\mathbb{R}$. For the sake of brevity, assume $a,b,c \in \mathbb{R}$. 
 > [!axiom] Axiom O.1
@@ -113,7 +117,7 @@ The following are useful inequality theorems to know.
 
 Template: 
 ```
-> [!theorem] ...
+> [!theorem] Corollary...
 > $$$$
 > > [!axiom] ...
 > > $$$$
@@ -276,3 +280,30 @@ Template:
 > >  $$0<x-u$$
 > >  $$x-v < 0$$
 > >  The first line implies that $(x-u)$ will be positive; whilst the second line implies that $(x-v)$ will be negative; hence this statement holds. 
+
+> [!theorem] Corollary 1.11 (The Arithmetic-Geometric Means Inequality)
+> $$a,b\in \mathbb{R} \land a,b \geq 0$$
+> $$\sqrt{ ab } \leq \frac{a+b}{2}$$
+> $$\sqrt{ ab } = \frac{a+b}{2}\iff a=b$$
+> > [!axiom]- Proof
+> > For the proof of this; we shall derive it. Since $a,b\geq 0$; then the following is also true (derived from Corollary 1.8): 
+> > $$(a-b)^2\geq 0$$ 
+> > Expand and collect like terms as per Theorem 1.2 : 
+> > $$a^2 - 2ab + b^2 \geq 0$$
+> > Use Axiom O.3 to add a term of $+4ab$ to both sides: 
+> > $$a^2 + 2ab + b^2 \geq 4ab$$
+> > Factor the left side: 
+> > $$(a+b)^2 \geq 4ab$$
+> > Take the square root of both sides (as per following our definition of a square root )
+> > $$(a+b) \geq 2\sqrt{ ab }$$
+> > Divide by 2 then reverse the inequality's direction: 
+> > $$\frac{a+b}{2} \geq \sqrt{ ab }$$
+> > $$\sqrt{ ab } \leq \frac{a+b}{2} $$
+> > For the case when $a=b$; this simplifies down into a trivial case and is thus left to the reader. 
+
+> [!theorem] Corollary 1.12 (The Cauchy-Schwarz Inequality)
+> Let $a,b,c,u,v,w \in \mathbb{R}$ such that: 
+> $$au + bv + cw \leq \sqrt{ a^2 + b^2 + c^2 } * \sqrt{ u^2 +v^2+w^2}$$
+> This becomes an equality if and only if $a:b:c = u:v:w$. 
+> > [!axiom] ...
+> > $$$$
