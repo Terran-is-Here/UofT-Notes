@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T12:48:51.731-04:00
-edited_seconds: 780
+updated_at: 2026-09-10T12:50:20.711-04:00
+edited_seconds: 790
 course: PHY180H1
 tags:
   - PHY180H1
@@ -129,6 +129,6 @@ $$
 > $$-\vec{a} = -a_{x}\hat{i} - a_{y}\hat{j} - a_{z}\hat{k}$$
 > Summing these together: 
 > $$\vec{a}-\vec{a} = -a_{x}\hat{i} - a_{y}\hat{j} - a_{z}\hat{k} + a_{x}\hat{i} + a_{y}\hat{j} + a_{z}\hat{k}$$
-> All these terms cancel out, leading us to the definition o t
+> All these terms cancel out, leading us to the definition of the 0 vector. 
 > $$ \vec{0} = 0\hat{i} + 0\hat{j} + 0\hat{k}$$
 

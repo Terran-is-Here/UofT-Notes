@@ -6,11 +6,17 @@
 * Supplementary:
 	* Complex Numbers: [[esc194 complex number solutions.pdf]]
 	* Supplemental (General): [[ESC194F Supplement 1 Sept 2026.pdf]]
-### ESC194 Note Hubs
-```query
-tag:#ESC194 tag:Hub
-```
+
+### Course Info
+Marking Scheme: 
+
+| Effective Marking Weight |     |
+| ------------------------ | --- |
+|                          |     |
+|                          |     |
+|                          |     |
+
 ### All ESC194 Notes
 ```query
-tag:#ESC194 -tag:Hub
+tag:#ESC194H1 -tag:Hub
 ```
