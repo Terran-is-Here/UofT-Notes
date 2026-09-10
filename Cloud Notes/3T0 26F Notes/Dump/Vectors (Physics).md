@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T21:09:56.228-04:00
-edited_seconds: 170
+updated_at: 2026-09-09T21:31:12.809-04:00
+edited_seconds: 320
 course: PHY180H1
 tags:
   - PHY180H1
@@ -33,4 +33,26 @@ $$
 |\vec{D}| = D
 $$
 ## 1D Vector Algebra
-Define two vectors as $\vec{a}$ and $\vec{b}$; whose magnitudes are defined by $A$ and $B$
+Define two vectors as $\vec{a}$ and $\vec{b}$; whose magnitudes are defined by $A$ and $B$ respectively: 
+$$
+A = |\vec{a}|
+$$
+$$
+B = |\vec{b}|
+$$
+Vectors can be scaled off each other via scalars; for instance: $\vec{a} = 0.75\vec{b}$. This equation is considered a *vector equation*; as both sides of the equation are vectors. Note that $\vec{a}$ would be parallel to $\vec{b}$ in this case; with their magnitude appropriately scaled: 
+$$
+A = |b|B
+$$
+The sum of a series of vectors is normally notated as the Resultant (normally notated by $\vec{r}$ and $R=|\vec{r}|$). 
+
+Note that for $n$ dimensional vectors; it may be more apt to define a *direction* with a magnitude rather than a pure vector. Recall that unit vectors are vectors with a magnitude of $1$; and are notated with a little hat symbol (e.g. $\hat{l}$). 
+
+## Coordinate Systems 
+In general; we have used a rectangular (cartesian) $xy$ ($\mathbb{R}^2$) system. Points can be defined using two values $(x,y)$. 
+
+Vectors can also use the Cartesian system in order to define their own magnitude; with each value in the respective pair representing one of their dimensional components. We can also represent them as a vector *sum* of their components. 
+$$
+\vec{A} = \vec{A}_{x}+ \vec{A}_{y}
+$$
+Where $\vec{A}_{}x$ and $\vec{A}_{y}$ are the vector's orthogonal projections onto their respective axis. We can notate these using the unit vectors of the axises 

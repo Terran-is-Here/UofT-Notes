@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T20:52:59.545-04:00
-edited_seconds: 460
+updated_at: 2026-09-09T21:22:33.724-04:00
+edited_seconds: 540
 course: ESC103H1
 tags:
   - ESC103H1
@@ -50,6 +50,18 @@ $$
 Where $\vec{a}$ and $\vec{b}$ are vectors. 
 > [!info] Definition
 > A Vector Space is defined as the set of all possible linear combinations of a set of vectors. 
+### Vector Properties
+Vectors follow the same three main principles present with the [[The Real Number System|field axioms of the real number system]], that being Commutativity, Associativity, and (Scalar) Distributivity:
+
+> [!theorem] Commutativity
+> $$\vec{a}+\vec{b} = \vec{b} + \vec{a}$$
+
+> [!theorem] Associativity
+> $$(\vec{a} + \vec{b}) + \vec{c} = \vec{a} + ()\vec{b} + \vec{c})$$
+
+> [!theorem] Scalar Distribution
+> $$a_{1}\vec{C} = a_{2}\vec{C} = (a_{1}+a_{2})\vec{C}$$
+
 ## Simple Vector Operations
 Vector operations are generally defined under the following concepts below: 
 
@@ -57,7 +69,7 @@ Vector operations are generally defined under the following concepts below:
 > Given $\vec{a}=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$ and $\vec{b} = \begin{pmatrix}b_{1}\\b_{2}\end{pmatrix}$, Addition and subtraction are algebraically defined as the following lines below: 
 >  $$\vec{a} + \vec{b} = \begin{pmatrix}a_{1}+b_{1}\\a_{2}+b_{2}\end{pmatrix}$$
 >   $$\vec{a} - \vec{b} = \begin{pmatrix}a_{1}-b_{1}\\a_{2}-b_{2}\end{pmatrix}$$
->   Geometrically; these are defined by the Parallelogram Model (or whatever; you should remember this). 
+>   Geometrically; these are defined by the Parallelogram Model (or whatever; you should remember this). **Vector Addition and Subtraction is always Tail to Head**. 
 
 ### Scalar Multiplication & Division
 > Given $\vec{a} = \begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$, and $b$ is a scalar value; then Scalar Multiplication is defined as the following: 
