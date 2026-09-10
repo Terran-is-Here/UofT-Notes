@@ -9,7 +9,7 @@ Date: 2026-09-10
 Week: 1
 ---
 To Hub: [[ESC194 Hub]]
-Previous: [[Introduction — Tangent and Velocity]]
+Previous: [[01 — Introduction — Tangent and Velocity]]
 Next: 
 > [!warning] Note
 > This note was primarily based on the Supplemental (Sections 1; and 2.1-2.7.)

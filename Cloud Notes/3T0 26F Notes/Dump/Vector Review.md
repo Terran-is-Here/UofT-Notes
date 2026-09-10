@@ -51,7 +51,7 @@ Where $\vec{a}$ and $\vec{b}$ are vectors.
 > [!info] Definition
 > A Vector Space is defined as the set of all possible linear combinations of a set of vectors. 
 ### Vector Properties
-Vectors follow the same three main principles present with the [[The Real Number System|field axioms of the real number system]], that being Commutativity, Associativity, and (Scalar) Distributivity:
+Vectors follow the same three main principles present with the [[02 — The Real Number System|field axioms of the real number system]], that being Commutativity, Associativity, and (Scalar) Distributivity:
 
 > [!theorem] Commutativity
 > $$\vec{a}+\vec{b} = \vec{b} + \vec{a}$$
