@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T13:50:36.560-04:00
-edited_seconds: 3120
+updated_at: 2026-09-10T13:56:40.486-04:00
+edited_seconds: 3180
 course: ESC194H1
 tags:
   - ESC194H1
@@ -342,8 +342,13 @@ The concept of the Absolute Value is not inherently part of our Axioms; rather i
 
 It thus also follows these following base properties (proofs included if required)
 
+> [!theorem] Property A.1
 > $$\forall x\in \mathbb{R}, |x| \geq 0$$
 > In cases where $x \geq 0$; it simply returns a positive number. 
 > In cases where $x < 0$; it returns the additive inverse of $x$ (with it being a negative number; then this is returns a positive number)
 
-> $$-|x| \leq
+> [!theorem] Property A.2
+> $$\forall x\in \mathbb{R}, -|x| \leq x \leq|x|$$
+> Taking Property A.1; we know that $\forall x \in \mathbb{R}, |x| \geq_{0}$ From Corollary 1.5; we can multiply this by -1 to get the following inequality: 
+> $$-|x| \leq 0$$
+> 
