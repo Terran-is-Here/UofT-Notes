@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T14:04:11.925-04:00
-edited_seconds: 680
+updated_at: 2026-09-09T20:45:21.215-04:00
+edited_seconds: 760
 course: PHY180H1
 tags:
   - PHY180H1
@@ -20,6 +20,9 @@ Next: N/A
 > [!note]
 > These sections have been written in the order of their respective chapters. The summary is located at the bottom. 
 
+
+### Overview of Physics   
+Physics (the field) deals with describing the interactions of energy, matter, space, and time to uncover the mechanisms behind every phenomenon. Physics deals with scales as small as a particle; to galaxies. In general; physics governs everything in the observable universe at all measurable scales of length. 
 ### Order of Magnitude
 Source: pg. 8 (1.1)
 > Let $x$ be a measured value; then it's corresponding Order of Magnitude is defined by the equation below. 
@@ -33,9 +36,6 @@ This can also be simplified by noting that $\sqrt{ 10 } = 10^{0.5}$. Since $\sqr
 > 
 > If $M > \sqrt{ 10 }$ or $M > 3$; $x$'s OoM is defined as $1 + n$. 
 > If $M <  \sqrt{ 10 }$ or $M < 3$; $x$'s OoM is defined as $n$. 
-
-
-[[Units and Measuremen|asd]]
 ### The SI Unit System
 Source: [[university-physics-volume-1_-_WEB.pdf#page=25|university-physics-volume-1_-_WEB, p.25]]
 
