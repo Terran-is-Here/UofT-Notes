@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T08:59:01.256-04:00
-edited_seconds: 2890
+updated_at: 2026-09-10T09:06:20.756-04:00
+edited_seconds: 2990
 course: ESC194H1
 tags:
   - ESC194H1
@@ -312,7 +312,7 @@ Template:
 > Let $a,b,c,u,v,w \in \mathbb{R}$ such that: 
 > $$au + bv + cw \leq \sqrt{ a^2 + b^2 + c^2 } * \sqrt{ u^2 +v^2+w^2}$$
 > This becomes an equality if and only if $a:b:c = u:v:w$. 
-> > [!axiom] Proof
+> > [!axiom]- Proof
 > > I *did* get spoiled by this a bit so :shrugs: 
 > > Square both sides: 
 > > $$(au+bv+cw)^2 \leq(a^2+b^2+c^2)(u^2+v^2+w^2)$$
@@ -323,4 +323,10 @@ Template:
 > > $$a^2v^2 + a^2w^2 + b^2u^2 + b^2w^2 + c^2u^2 + c^2v^2 + -(2aubv + 2aucw + 2bvcw)$$
 > > $$a^2v^2 + a^2w^2 + b^2u^2 + b^2w^2 + c^2u^2 + c^2v^2 -2aubv - 2aucw - 2bvcw$$
 > > Rearrange:
-> > $$a^2v^2 + a^2w^2 + b^2u^2 + b^2w^2 + c^2u^2 + c^2v^2 -2aubv - 2aucw - 2bvcw$$
+> > $$(a^2v^2 -2aubv+ b^2u^2)+ (a^2w^2 - 2aucw+  c^2u^2)+ (b^2w^2  - 2bvcw+ c^2v^2)$$
+> > Factor all 3 trinomials present within: 
+> > $$0\leq(av-bu)^2 + (aw-cu)^2 + (bw -cv)^2$$
+> > Thus the equality can only be true if and only if: 
+> > $$av = bu$$
+> > $$aw=cu$$
+> > $$bw=cv$$
