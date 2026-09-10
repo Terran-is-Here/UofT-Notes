@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T20:51:36.074-04:00
-edited_seconds: 770
+updated_at: 2026-09-10T16:46:48.701-04:00
+edited_seconds: 780
 course: PHY180H1
 tags:
   - PHY180H1
@@ -88,5 +88,5 @@ The importance of physical Dimensions within an equation gives arise to the conc
 
 Recall from our previous classes on the difference between Accuracy and Precision: 
 * Accuracy is the relative difference between measurements; the average difference between measurements is termed as their **uncertainty**
-* Precision is the relative difference between measurements and the accepted value; where this difference is denoted as their **discrepancy**. 
+* Precision is the relative difference a measurement and the accepted value; where this difference is denoted as their **discrepancy**. 
 

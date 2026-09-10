@@ -8,24 +8,26 @@
 
 Harlow's Office Hours: 
 
-| Day    | Availability  | Type     |
-| ------ | ------------- | -------- |
-| Monday | 9:30-10:30 AM | via Zoom |
-|        |               |          |
-|        |               |          |
+| Day        | Availability     | Type               |
+| ---------- | ---------------- | ------------------ |
+| Monday     | 9:30-10:30 AM    | via Zoom           |
+| Tuesdays   | 10:10-11:00 AM   | in Person, @MP125B |
+| Wednesdays | 12:10PM - 1:00PM | in Person, @MP125B |
+| Thursdays  | 5:00-5:30PM      | in Person, @MP103  |
+| Fridays    | 5:00 - 5:30PM    | in Person, @MP203  |
 
 ### Course Info
 Mark Breakdown: 
 
-| Assessment / Deliverable       | Weight | Dates                               |
-| ------------------------------ | ------ | ----------------------------------- |
-| In-Class Quizzes               | 5%     | During LEC (1/2 per week)           |
-| Homework Assignments (10x)     | 5%     | Every Monday,right before midnight. |
-| Practical Activities / Surveys | 10%    | During PRA (1/week)                 |
-|                                |        |                                     |
-|                                |        |                                     |
-|                                |        |                                     |
-|                                |        |                                     |
+| Assessment / Deliverable       | Weight | Dates                                                     |
+| ------------------------------ | ------ | --------------------------------------------------------- |
+| In-Class Quizzes               | 5%     | During LEC (1/2 per week)                                 |
+| Homework Assignments (10x)     | 5%     | Every Monday,right before midnight.                       |
+| Practical Activities / Surveys | 10%    | During PRA (1/week)                                       |
+| Term Tests                     | 40%    | Oct 8 (6pm) for TT1<br>Nov 16 (9am) for TT2               |
+| Group Presentations            | 5%     | During PRAs on the following dates:<br>Nov 17, 18, 24, 25 |
+| Final Exam                     | 35%    | TBD                                                       |
+
 
 ### Materials 
 * Syllabus: [[PHY180_Syllabus_Fall 2026.pdf]]
