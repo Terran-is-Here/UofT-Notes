@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T13:56:40.486-04:00
-edited_seconds: 3180
+updated_at: 2026-09-10T15:08:32.003-04:00
+edited_seconds: 3190
 course: ESC194H1
 tags:
   - ESC194H1
@@ -330,6 +330,9 @@ Template:
 > > $$av = bu$$
 > > $$aw=cu$$
 > > $$bw=cv$$
+
+### Inequalities with X and Y 
+When considering inequalities with terms of both $x$ and $y$, we have to consider that we are now trying to find an inequality of a graph / slope (or in other words; the bounds are defined by functions in this instance and not pure static numbers )
 
 ## Absolute Value 
 The concept of the Absolute Value is not inherently part of our Axioms; rather it is defined under the following definition: 
