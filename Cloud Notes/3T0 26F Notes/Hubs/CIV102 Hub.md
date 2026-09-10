@@ -39,7 +39,7 @@ The __art__ & **science** of **designing** and making structures with economy an
 ### Course Information
 * Final exam and quizzes are open book.
 	* As usual no electronic devices again.
-* Quizzes on Tutorials: 
+* Quizzes on Tutorials on a weekly** basis. 
 
 
 | Assessment / Deliverables                                   | Marking Amounts | Times                                   |
