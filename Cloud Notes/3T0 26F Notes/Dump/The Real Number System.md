@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T17:38:14.179-04:00
-edited_seconds: 2210
+updated_at: 2026-09-09T23:10:03.602-04:00
+edited_seconds: 2430
 course: ESC194H1
 tags:
   - ESC194H1
@@ -200,6 +200,7 @@ Template:
 
 > [!theorem] Corollary 1.7
 > $$0 < a \leq b \implies 0 < \frac{1}{b} \leq \frac{1}{a}$$
+> Hint: Communicative Law 
 > > [!axiom]- Proof
 > > We can safely ascertain that $a$ and $b$ are above 0; as $0<a$ and $a\leq b \implies 0<b$. Ergo we can safely divide across all terms. 
 > > $$0 < a \leq b$$
@@ -209,6 +210,7 @@ Template:
 
 > [!theorem] Corollary 1.8
 > $$\forall x \in \mathbb{R},x^2 \geq 0$$
+> Hint: Negative Number Multiplication
 > > [!axiom]- Proof
 > > We can prove this by breaking this up into three parts. We can take the trivial case using Theorem 1.1: 
 > > $$x = 0; x^2 \geq 0 \to 0*0 \geq 0 \to 0\geq 0$$
@@ -222,6 +224,7 @@ Template:
 > $$a,b \in \mathbb{R}, 0 \leq ab$$
 > $$a<b \iff a^2 < b^2$$
 > $$a<b \iff \sqrt{ a } < \sqrt{ b }$$
+> Hint: Break up and cancel out terms. 
 > > [!axiom]- Proof (1) 
 > > Taking the first one; we can use Axiom O.3 to rearrange it to a difference of squares: 
 > > $$0 < b^2 - a^2$$
@@ -245,5 +248,31 @@ Template:
 > $$u,v \in \mathbb{R}, u\neq v, u<v$$
 > $$0 < (x-u)(x-v) \iff x < u \lor x >v$$
 > $$ 0 >(x-u)(x-v) \iff u<x<v$$
-> > [!axiom] ...
-> > $$$$ 
+> Hint: How many cases are there? Divide and conquer. 
+> > [!axiom]- Statement 1 Proof
+> > Break up this section ($0 < (x-u)(x-v) \iff x < u \lor x >v$) into two lines; one for each inequality case: 
+> > > If $x < u$: 
+> > > $$0 < (x-u)(x-v) \iff x < u$$
+> > > We can rearrange our base condition inequality into (via Axiom O.3): 
+> > > $$x-u < 0 \implies (x-u) \text{ is -'ve}$$
+> > > 
+> > > 
+> > > We can combine $x<u$ with $u<v$ using Axiom O.2: 
+> > > $$x<v$$
+> > > We can rearrange our base condition inequality into (via Axiom O.3): 
+> > > $$x-v < 0 \implies (x-v)\text{ is -'ve}$$
+> > 
+> > > If $x > v$; we can follow the same logic as we did for the previous statement: 
+> > > $$0 < (x-u)(x-v) \iff x >v$$
+> > > $$x-v>0 \implies (x-v) \text{ is +'ve}$$
+> > > $$x>v \to v < x \to\text{via O.2 }\to u < x \to 0<x-u \implies (x-u) \text{ is +'ve}$$
+> 
+> > [!axiom]- Statement 2 Proof 
+> >  $$0 >(x-u)(x-v) \iff u<x<v$$
+> >  The key here is to break up that triple inequality into two inequalities (using O.2): 
+> >  $$u<x$$
+> >  $$x < v$$
+> >  We can rearrange these into our binomials: 
+> >  $$0<x-u$$
+> >  $$x-v < 0$$
+> >  The first line implies that $(x-u)$ will be positive; whilst the second line implies that $(x-v)$ will be negative; hence this statement holds. 
