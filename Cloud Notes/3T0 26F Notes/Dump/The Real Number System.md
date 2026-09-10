@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T08:38:18.346-04:00
-edited_seconds: 2700
+updated_at: 2026-09-10T08:59:01.256-04:00
+edited_seconds: 2890
 course: ESC194H1
 tags:
   - ESC194H1
@@ -90,6 +90,7 @@ As an exercise to future me; solve what a $PN$ and $NN$ result (Positive * Negat
 ### Square Root Definition
 > [!axiom] Square Root
 > Let $x\geq 0$. $\sqrt{ x }$ is a non-negative number $u$ such that $u^2=x$ (thus since $x\geq {0}$, $\sqrt{ x }\geq 0$). 
+
 ## Order Axioms
 There exists 3 main Order Axioms within $\mathbb{R}$. For the sake of brevity, assume $a,b,c \in \mathbb{R}$. 
 > [!axiom] Axiom O.1
@@ -112,6 +113,12 @@ From here we can generally define our other inequality symbols (Definitions O.1 
 * $a > b$ if $b < a$
 * $a \leq b$ if $a<b \lor b=a$
 * $a \geq b$ if $b \leq a$
+### Intervals
+From here; we can also define the concept of an interval in $\mathbb{R}$: 
+* $[a,b] = \{x:a\leq x\leq b\}$ (Closed / *Inclusive* interval)
+* $(a,b) = \{x:a < x < b\}$ (Open / *Exclusive* interval)
+* $[a, +\infty] = \{x: a\leq x\}$ (undefined bound intervals)
+Different combinations of these exist and should be trivial to derive. 
 ## Inequalities
 The following are useful inequality theorems to know. 
 
@@ -305,5 +312,15 @@ Template:
 > Let $a,b,c,u,v,w \in \mathbb{R}$ such that: 
 > $$au + bv + cw \leq \sqrt{ a^2 + b^2 + c^2 } * \sqrt{ u^2 +v^2+w^2}$$
 > This becomes an equality if and only if $a:b:c = u:v:w$. 
-> > [!axiom] ...
-> > $$$$
+> > [!axiom] Proof
+> > I *did* get spoiled by this a bit so :shrugs: 
+> > Square both sides: 
+> > $$(au+bv+cw)^2 \leq(a^2+b^2+c^2)(u^2+v^2+w^2)$$
+> > Move $(au+bv+cw)$ to the right via O.3: 
+> > $$0 \leq (a^2+b^2+c^2)(u^2+v^2+w^2)-(au+bv+cw)^2 $$
+> > Expand and collect like terms. Painfully.
+> > $$a^2u^2+a^2v^2 + a^2w^2 + b^2u^2 + b^2v^2 + b^2w^2 + c^2u^2 + c^2v^2 + c^2 w^2 -(a^2u^2 + 2aubv + 2aucw +b^2v^2 + 2bvcw + c^2w^2  )$$
+> > $$a^2v^2 + a^2w^2 + b^2u^2 + b^2w^2 + c^2u^2 + c^2v^2 + -(2aubv + 2aucw + 2bvcw)$$
+> > $$a^2v^2 + a^2w^2 + b^2u^2 + b^2w^2 + c^2u^2 + c^2v^2 -2aubv - 2aucw - 2bvcw$$
+> > Rearrange:
+> > $$a^2v^2 + a^2w^2 + b^2u^2 + b^2w^2 + c^2u^2 + c^2v^2 -2aubv - 2aucw - 2bvcw$$
