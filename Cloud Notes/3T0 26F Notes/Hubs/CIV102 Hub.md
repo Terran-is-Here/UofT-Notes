@@ -1,7 +1,12 @@
 # Structural Engineering
 The __art__ & **science** of **designing** and making structures with economy and elegance; so that they can **safely** **resist** the forces which they **may be** subjected to. 
 
-> [!note]+ Definitions
+> [!caution] Note
+> **These notes will be mainly for **
+
+
+
+> [!note]- Definitions
 > **Art:** 
 > The intuition one has to design a cool thing; or rather an innovative thing. 
 > 
@@ -22,9 +27,6 @@ The __art__ & **science** of **designing** and making structures with economy an
 > This is mainly gravity, but could include wind; thermal; etc. 
 > **May be:** 
 > Sometimes we can't fully plan out everything; we need to balance out what topics to prioritize and focus on.
-\
-
-
 ### Resources: 
 * Online Textbook: https://engineeringstatics.org/Chapter_01.html 
 
@@ -35,7 +37,18 @@ The __art__ & **science** of **designing** and making structures with economy an
 	* Teams Chat (..?)
 		* evan.bentz@utoronto.ca 
 ### Course Information
-* Final exam is open book.
+* Final exam and quizzes are open book.
+	* As usual no electronic devices again.
+* Quizzes on Tutorials: 
+
+
+| Assessment / Deliverables                                   | Marking Amounts | Times                                   |
+| ----------------------------------------------------------- | --------------- | --------------------------------------- |
+| Quizzes <br>(~10x, 3% each)                                 | 30%             | Last 30m of Tutorials                   |
+| Assignments <br>(~8x, 1% each)<br>(same as the assignments) | 8%              | Normally every week (not always though) |
+| Bridge Project!<br>(Design Report & Construction)           | 12%             |                                         |
+| Final Exam                                                  | 50%             | TBD                                     |
+
 
 ### All CIV102 Notes
 ```query
