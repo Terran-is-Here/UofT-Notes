@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T14:43:49.323-04:00
-edited_seconds: 4120
+updated_at: 2026-09-11T14:53:45.228-04:00
+edited_seconds: 4210
 course: ESC194H1
 tags:
   - ESC194H1
@@ -368,7 +368,8 @@ It thus also follows these following base properties (proofs included if require
 > We can also define this in the other direction by simply multiplying our entire inequalities by a term of $-1$. 
 > **This is also another useful property re-applicable for other identities.**
 
-> [!theorem] The Triangle Inequality Theorem (Theorem A.1 / Property A.4)
+### Triangle Inequality Theorem
+> [!theorem]  The Triangle Inequality Theorem (Theorem A.1 / Property A.4)
 > $$|a+b| \leq |a| + |b|$$
 > We can use Property A.2 and A.3 for solving this. Note how we can define $a$ and $b$ as: 
 > $$-|a| \leq a \leq |a|$$
@@ -378,13 +379,7 @@ It thus also follows these following base properties (proofs included if require
 > From A.3 we can simplify this into: 
 > $$|a + b| \leq |a| + |b|$$
 > (Using the first identity; that is the $|x| \leq c$)
-> > Extension into $|a-b| \geq |a| - |b|$
-> > We can also re-apply this same logic into our previous expressions: 
-> > $$-|a| \leq a \leq |a|$$
-> > $$-|b| \leq (-b) \leq |b|$$
-> > $$ |b| \geq b \geq -|b|$$
-> > Add these two terms together as per previously:
-> > $$|b| - |a| \leq $$
+
 
 > [!theorem] Property A.4
 > $$\forall a,b\in \mathbb{R}, |ab| = |a| |b|$$
@@ -414,12 +409,12 @@ It is generally defined as:
 > $x\leq M,\forall x \in S$; where $M$ is an "upper bound" for $s$. 
 > 
 > Or, briefly: 
->  $$s\in \mathbb{R} \text{ has an upper bound if } \exists M \text{ s.t. } \forall x \in S, x \leq M$$
+>  $$s\subset \mathbb{R} \text{ has an upper bound if } \exists M \text{ s.t. } \forall x \in S, x \leq M$$
 
-> Definition of a least upper bound: 
-> "The Least Upper Bound" for a set $s$ is the smallest of all possible upper bounds; notated $lub(s)$; that is inherently $M >s$ or $s < M$. 
-
-This has implications for what kind of numbers we can *include* in the $\mathbb{R}$ system; retake the definitions that we have for some number systems: 
+> [!axiom] Definition of a least upper bound: 
+> A Least Upper Bound (or a lub, notated as $lub(s)$) is the smallest of all possible upper bounds. A Least Upper Bound (often notated m) exists if: 
+> $$\exists m \text{ s.t. } \forall M, m\leq M$$
+This has implications for what kind of numbers we can *include* in the $\mathbb{R}$ system; retake the definitions that we have for some number systems. 
 
 ### Rational Numbers
 Rational numbers are defined as: 
@@ -456,4 +451,4 @@ $$x^2 = 2 $$
 
 Since no rational $x$ can satisfy this condition; we can construct the following set: 
 $$s = \{ x:x^2\geq 2, x\in\text{Rational Numbers} \}$$
-Now, retake Axiom 9 / CORA; then we notice that since $\sqrt{ 2 }\not\in \text{ Rational Numbers}$; 
+Now, retake Axiom 9 / CORA; then we notice that since $\sqrt{ 2 }\not\in \text{ Rational Numbers}$; then the set above does not have a Least Upper Bound. The set of Rational Numbers do not conform to our Axiom 9; thus requiring us to include the Irrational Numbers within $\mathbb{R}$. 

@@ -10,7 +10,7 @@ custom-width: 30
 ---
 Hub: [[PHY180 Hub]]
 Previous: N/A
-Next: [[Vectors (Physics)]]
+Next: [[2 — Vectors (Physics)]]
 
 --- 
 > [!Quote] Textbook Chapters Discussed

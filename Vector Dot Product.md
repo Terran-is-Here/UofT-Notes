@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-08T17:51:28.233-04:00
-edited_seconds: 320
+updated_at: 2026-09-11T15:38:07.093-04:00
+edited_seconds: 340
 course: ESC103H1
 tags:
   - ESC103H1
@@ -47,3 +47,4 @@ For the case of our vectors; we can adapt this to instead take the vectors prese
 > Let $\vec{a}$ and $\vec{b}$ denote two vectors; whose sum is $\vec{a} + \vec{b} = \vec{c}$. Ergo: 
 > $$||\vec{a}|| + ||\vec{b}|| \geq ||\vec{a} + \vec{b}||$$
 
+A proof of this is available on [[02 — The Real Number System#Triangle Inequality Theorem| The Calculus Page that Proves it ]]
