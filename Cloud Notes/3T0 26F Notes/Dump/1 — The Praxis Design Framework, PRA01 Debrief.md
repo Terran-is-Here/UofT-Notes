@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T11:53:23.133-04:00
-edited_seconds: 290
+updated_at: 2026-09-11T11:57:36.832-04:00
+edited_seconds: 340
 course: ELC101
 tags:
   - ESC101H1
@@ -11,6 +11,8 @@ Week: 1
 Hub: [[ESC101 Hub]]
 Previous: N/A
 Next: ..? 
+Writing To Think: [[1.1 — Supplemental (Praxis)]]
+
 
 --- 
 # Lecture Notes
@@ -51,8 +53,11 @@ Also see: [[1 — Lecture Stuff | Lecture 01 (CIV102)]]
 3. Some models are *predictive* (i.e. risk assessment), some are explanatory. 
 
 The goal of praxis is to *use these models* to inform and improve our actions within the world; especially with the projects that we build to affect the greater community. 
-**Engineers create and justify decisions.**
+**Engineers create and justify decisions. We recommend the best designs.**
 ### Black-Box Model
+> It's termed as a Black-Box model; as you are breaking down a complex system into smaller parts. 
+> Recall that black-boxes are generally defined as something that does something inside; and you don't really know the details of it's internals.
+
 Given two sets of objects: The World as it Is; and the world as we perceive it ($W_{G}$ and $W_{I}$): 
 * A Model maps $W_{G}\mapsto W_{I}$; or it maps the global world and the perceived world. 
 * The world that we dream of ($W_{D}$) is inherently solely related with $W_{I}$. 
@@ -75,3 +80,6 @@ Or; in summary:
 * $W_{D}, W_{I} \in \text{ Theory}$
 	
 Or; The world is perceived by us as models into our imagined world; we dream change in our imagined world by design; we put this change into the world by building; and this leaves an impact into the global world. 
+
+## For Studios 
+The main thing for Teardown is to examine the *design decisions* for our device. Not the actual function of the device. 
