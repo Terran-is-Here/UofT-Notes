@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T12:53:58.971-04:00
-edited_seconds: 3740
+updated_at: 2026-09-11T12:56:07.425-04:00
+edited_seconds: 3780
 course: ESC194H1
 tags:
   - ESC194H1
@@ -389,7 +389,14 @@ It thus also follows these following base properties (proofs included if require
 > [!theorem] Property A.4
 > $$\forall a,b\in \mathbb{R}, |ab| = |a| |b|$$
 > We can solve this by breaking whatever the sign of the $ab$ expression inside is. Take the following cases: 
+> > Case 1: 
 > > $$a\geq 0, b<0$$
-> > Then; $$ab< 0$$
-> > which means that $|ab| = -ab$: 
-> > $-ab = (a)(-b) = |a||b|$
+> > Then:
+> > $$ab< 0 \implies |ab| = -ab$$
+> > which means that:
+> > $$-ab = (a)(-b) = |a||b|$$
+> 
+> > Case 2:
+> > $$ a < 0, b < 0$$
+> > Then: 
+> > $ab > 0 \implies |ab|=ab \implies ab=|a||b|=|ab|$

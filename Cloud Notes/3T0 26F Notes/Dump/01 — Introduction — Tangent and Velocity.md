@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T13:43:34.739-04:00
-edited_seconds: 260
+updated_at: 2026-09-11T13:12:54.237-04:00
+edited_seconds: 290
 course: ESC194H1
 tags:
   - ESC194H1
@@ -58,4 +58,11 @@ Since $h$ is the effective distance between our two measurements / points; takin
 $$
 m=\lim_{ h \to 0 } \frac{s(t_{1} + h)-s(t_{1})}{h}
 $$
-Which is basically equivalently formed as the Limit Definition of a Derivative. 
+Which is basically equivalently formed as the Limit Definition of a Derivative.
+
+## Horizontal Asymptotes
+Horizontal Asymptotes display a special case; given the following: 
+$$
+g(x) = 1 + \frac{1}{x^2} \text{ s.t. } \frac{1}{x^2} > 0
+$$
+We know that for $\forall x\in \mathbb{R}, \frac{1}{x} >0 \iff x\neq{0}$
