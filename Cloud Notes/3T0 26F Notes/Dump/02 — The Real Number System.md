@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T13:51:46.603-04:00
-edited_seconds: 3960
+updated_at: 2026-09-11T14:43:49.323-04:00
+edited_seconds: 4120
 course: ESC194H1
 tags:
   - ESC194H1
@@ -409,9 +409,12 @@ The Completeness of the Reals Axiom is a necessary Axiom to ensure the existence
 It is generally defined as: 
 > "Every non-empty set of real numbers which has an upper bound, has a least upper bound."
 
-> Definition of an Upper Bound
-* A set of $\mathbb{R}$ defined by $s$ is *bounded above* if $\exists$ some number $m$ such that: 
-* $x\leq M,\forall x \in S$; where $M$ is an "upper bound" for $s$. 
+> [!theorem] Definition of an Upper Bound
+> A set of $\mathbb{R}$ defined by $s$ is *bounded above* if $\exists$ some number $M$ such that: 
+> $x\leq M,\forall x \in S$; where $M$ is an "upper bound" for $s$. 
+> 
+> Or, briefly: 
+>  $$s\in \mathbb{R} \text{ has an upper bound if } \exists M \text{ s.t. } \forall x \in S, x \leq M$$
 
 > Definition of a least upper bound: 
 > "The Least Upper Bound" for a set $s$ is the smallest of all possible upper bounds; notated $lub(s)$; that is inherently $M >s$ or $s < M$. 
@@ -431,3 +434,26 @@ $$
 a_{n}x^n + a_{n-1}x^{n-1}\dots a_{1}x + a_{0} = 0
 $$
 Where $a_{n\dots}\in \mathbb{R}$. This include the solution of $x^2 = 2$ for instance. 
+
+### Irrational Numbers
+Something interesting occurs when we include the Algebraic numbers into the Real Number System; as well as using our CORA: Consider the following case: 
+$$
+x^2 = 2
+$$
+The solution of this equation is an *algebraic number*; but we can easily prove and show that no rational $x$ exists which can satisfy this condition.
+>[!proof]-
+$$x^2 = 2 $$
+> Let's assume that $x$ is some rational number meaning that for $a,b\in \mathbb{Z}$, and $a,b$ in their lowest forms: 
+> $$\frac{a}{b} = x$$
+> Where $b\neq0$, then we can sub this in: 
+> $$\left(\frac{a}{b}\right)^2 = 2$$
+> $$\left(\frac{a^2}{b^2}\right) = 2$$
+> $$ a^2 = 2b^2$$
+> Since $a^2$ equals to some value multiplied by two; this implies that $a$ itself is some even numbers. Even numbers can be defined as being some value $2k$ where $k\in \mathbb{Z}$; then: 
+> $$4k^2 = 2b^2$$
+> $$2k^2 = b^2$$
+> This then also implies that $b$ itself is some even number. If both $a$ and $b$ are even numbers; they must share a factor at minimum of $2$, meaning that we have reached a contradiction. $x^2=2$ therefore has no rational solutions. 
+
+Since no rational $x$ can satisfy this condition; we can construct the following set: 
+$$s = \{ x:x^2\geq 2, x\in\text{Rational Numbers} \}$$
+Now, retake Axiom 9 / CORA; then we notice that since $\sqrt{ 2 }\not\in \text{ Rational Numbers}$; 
