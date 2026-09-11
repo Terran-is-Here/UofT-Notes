@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T12:09:07.750-04:00
-edited_seconds: 3620
+updated_at: 2026-09-11T12:32:23.112-04:00
+edited_seconds: 3640
 course: ESC194H1
 tags:
   - ESC194H1
@@ -377,6 +377,7 @@ It thus also follows these following base properties (proofs included if require
 > $$-(|a| + |b|) \leq a+b \leq |a| + |b|$$
 > From A.3 we can simplify this into: 
 > $$|a + b| \leq |a| + |b|$$
+> (Using the first identity; that is the $|x| \leq c$)
 > > Extension into $|a-b| \geq |a| - |b|$
 > > We can also re-apply this same logic into our previous expressions: 
 > > $$-|a| \leq a \leq |a|$$
@@ -384,4 +385,5 @@ It thus also follows these following base properties (proofs included if require
 > > $$ |b| \geq b \geq -|b|$$
 > > Add these two terms together as per previously:
 > > $$|b| - |a| \leq $$
-> > 
+
+> [!theorem] 
