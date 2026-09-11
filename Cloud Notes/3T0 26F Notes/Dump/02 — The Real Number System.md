@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T21:44:35.539-04:00
-edited_seconds: 3360
+updated_at: 2026-09-10T21:55:58.679-04:00
+edited_seconds: 3540
 course: ESC194H1
 tags:
   - ESC194H1
@@ -370,4 +370,23 @@ It thus also follows these following base properties (proofs included if require
 > > Therefore: 
 > > $$-c \leq 0\leq -x= |x|\leq c$$
 > 
-> We 
+> We can also define this in the other direction by simply multiplying our entire inequalities by a term of $-1$. 
+> **This is also another useful property re-applicable for other identities.**
+
+> [!theorem] The Triangle Inequality Theorem (Theorem A.1 / Property A.4)
+> $$|a+b| \leq |a| + |b|$$
+> We can use Property A.2 and A.3 for solving this. Note how we can define $a$ and $b$ as: 
+> $$-|a| \leq a \leq |a|$$
+> $$-|b| \leq b \leq |b|$$
+> We can add / combine these inequalities together; giving us: 
+> $$-(|a| + |b|) \leq a+b \leq |a| + |b|$$
+> From A.3 we can simplify this into: 
+> $$|a + b| \leq |a| + |b|$$
+> > Extension into $|a-b| \geq |a| - |b|$
+> > We can also re-apply this same logic into our previous expressions: 
+> > $$-|a| \leq a \leq |a|$$
+> > $$-|b| \leq (-b) \leq |b|$$
+> > $$ |b| \geq b \geq -|b|$$
+> > Add these two terms together as per previously:
+> > $$|b| - |a| \leq $$
+> > 
