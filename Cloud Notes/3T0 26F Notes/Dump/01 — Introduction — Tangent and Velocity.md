@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T13:12:54.237-04:00
-edited_seconds: 290
+updated_at: 2026-09-11T13:19:25.666-04:00
+edited_seconds: 400
 course: ESC194H1
 tags:
   - ESC194H1
@@ -66,3 +66,12 @@ $$
 g(x) = 1 + \frac{1}{x^2} \text{ s.t. } \frac{1}{x^2} > 0
 $$
 We know that for $\forall x\in \mathbb{R}, \frac{1}{x} >0 \iff x\neq{0}$
+
+Note that we can "bound" whatever value $g(x)$ takes as $x$ gets increasingly larger. With an asymptote of 1. 
+
+## Constraining Function Behavior
+In general; we can bound a function within a certain range with the following identity: 
+$$
+g(x_{0})-\epsilon < g(x) < g(x_{0}) + \epsilon
+$$
+This is close to the Epsilon-Delta definition of a limit; which we will take in more detail later on. 
