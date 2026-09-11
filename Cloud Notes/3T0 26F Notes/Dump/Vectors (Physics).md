@@ -9,7 +9,7 @@ Date: 2026-09-10
 Week: 1
 ---
 Hub: [[PHY180 Hub]]
-Previous: [[Units and Measurement]]
+Previous: [[1 — Units and Measurement]]
 Next: N/A 
 > [!note] Recommended Reading: 
 > [[Vector Review| Vector Review (ESC103H1)]] (has more of a formal definition of the concept of vectors overall)

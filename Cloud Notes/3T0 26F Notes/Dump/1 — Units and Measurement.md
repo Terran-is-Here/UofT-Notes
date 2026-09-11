@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T16:46:48.701-04:00
-edited_seconds: 780
+updated_at: 2026-09-10T16:57:05.838-04:00
+edited_seconds: 800
 course: PHY180H1
 tags:
   - PHY180H1
@@ -90,3 +90,8 @@ Recall from our previous classes on the difference between Accuracy and Precisio
 * Accuracy is the relative difference between measurements; the average difference between measurements is termed as their **uncertainty**
 * Precision is the relative difference a measurement and the accepted value; where this difference is denoted as their **discrepancy**. 
 
+Generally: 
+* Leading zeros do not count as S.Fs. 
+* Enclosed Zeros do count as SFs. 
+* Trailing Zeros do not *normally* count as SFs.
+	* With a decimal point; Trailing Zeros DO count. 
