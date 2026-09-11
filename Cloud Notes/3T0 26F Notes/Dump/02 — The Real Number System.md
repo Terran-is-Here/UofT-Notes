@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T12:32:23.112-04:00
-edited_seconds: 3640
+updated_at: 2026-09-11T12:53:58.971-04:00
+edited_seconds: 3740
 course: ESC194H1
 tags:
   - ESC194H1
@@ -386,4 +386,10 @@ It thus also follows these following base properties (proofs included if require
 > > Add these two terms together as per previously:
 > > $$|b| - |a| \leq $$
 
-> [!theorem] 
+> [!theorem] Property A.4
+> $$\forall a,b\in \mathbb{R}, |ab| = |a| |b|$$
+> We can solve this by breaking whatever the sign of the $ab$ expression inside is. Take the following cases: 
+> > $$a\geq 0, b<0$$
+> > Then; $$ab< 0$$
+> > which means that $|ab| = -ab$: 
+> > $-ab = (a)(-b) = |a||b|$
