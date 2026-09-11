@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T21:55:58.679-04:00
-edited_seconds: 3540
+updated_at: 2026-09-10T23:47:32.371-04:00
+edited_seconds: 3610
 course: ESC194H1
 tags:
   - ESC194H1
@@ -359,16 +359,11 @@ It thus also follows these following base properties (proofs included if require
 
 > [!theorem] Property A.3
 > $$c>0, |x| \leq c \iff -c \leq x\leq c$$
-> We can break this problem up into two segments: 
-> > $$x \geq 0$$
-> > $$0 \leq x \land |x| = x$$
-> > Therefore: 
-> > $$-c \leq 0\leq x= |x|\leq c$$
-> 
-> > $$x > 0$$
-> > $$0 < -x \land -x = |x|$$
-> > Therefore: 
-> > $$-c \leq 0\leq -x= |x|\leq c$$
+> We can break this problem up into two segments: solving Left to Right, and Right to Left: 
+> > Assume that $|x| \leq c$ is true; then: 
+> > $$x \leq c$$
+> > $$-x \leq c \to -c \leq x$$
+> > $$-c \leq x \leq c$$
 > 
 > We can also define this in the other direction by simply multiplying our entire inequalities by a term of $-1$. 
 > **This is also another useful property re-applicable for other identities.**
