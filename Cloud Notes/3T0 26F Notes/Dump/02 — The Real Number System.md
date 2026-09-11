@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T15:08:32.003-04:00
-edited_seconds: 3190
+updated_at: 2026-09-10T21:07:08.202-04:00
+edited_seconds: 3240
 course: ESC194H1
 tags:
   - ESC194H1
@@ -352,6 +352,10 @@ It thus also follows these following base properties (proofs included if require
 
 > [!theorem] Property A.2
 > $$\forall x\in \mathbb{R}, -|x| \leq x \leq|x|$$
-> Taking Property A.1; we know that $\forall x \in \mathbb{R}, |x| \geq_{0}$ From Corollary 1.5; we can multiply this by -1 to get the following inequality: 
+> Taking Property A.1; we know that $\forall x \in \mathbb{R}, |x| \geq {0}$ From Corollary 1.5; we can multiply this by -1 to get the following inequality: 
 > $$-|x| \leq 0$$
-> 
+> We can also reuse Property A.1; and we get the conclusion that $\forall x\in \mathbb{R}$ this holds true. 
+
+> [!theorem] Property A.3
+> $$c>0, |x| \leq c \iff -c \leq x\leq c$$
+> We can break this problem up into two segments 
