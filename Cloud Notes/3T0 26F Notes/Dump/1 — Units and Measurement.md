@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T16:49:04.604-04:00
-edited_seconds: 1200
+updated_at: 2026-09-11T16:59:26.312-04:00
+edited_seconds: 1280
 course: PHY180H1
 tags:
   - PHY180H1
@@ -126,7 +126,7 @@ These rules are already written within another document; but are left here. For 
 > $$z = x+y \lor z=x-y$$
 > With this, uncertainty of $z$ is defined by: 
 > $$u_{z} = \sqrt{ u_{x}^2 + u_{y}^2  }$$
-> We linearly add our uncertainties..
+> We linearly add our uncertainties. 
 
 > [!axiom] Multiplication / Division
 > $$z=xy \lor z=\frac{x}{y}$$
@@ -139,12 +139,12 @@ These rules are already written within another document; but are left here. For 
 > $$\frac{u_{z}}{z} = n* \frac{u_{x}}{x}$$
 > Or that is; you multiply the fractional uncertainty of the term being exponentiated by the degree of the exponent. 
 
-In terms of uncertainty of the *mean* with the same uncertainty: 
+In terms of uncertainty of the *mean* with the same uncertainty (that is, it is always represented by the same $u_{x}$): 
 $$\bar{x} = \frac{\sum^n_{i=1}x_{1}}{N} = \frac{x_{sum}}{N} = \frac{1}{N} * x_{sum}$$
 
 In general, you can describe the uncertainty of the sum as: 
-$$u_{\bar{x}} = \sqrt{ \sum^N_{i=1} u_{xi}^2  } = \sqrt{ Nu_{x}^2 }$$
-
+$$u_{sum} = \sqrt{ \sum^N_{i=1} u_{xi}^2  } = \sqrt{ Nu_{x}^2 } = \sqrt{ N } * u_{x}$$ 
+And the mean can be appropriately scaled as dividing the above equation by $\frac{1}{N}$ as defined by our multiplication rules. 
 ### Significant Figure Rules 
 For this course: 
 1. No rounding before the final answer. 
