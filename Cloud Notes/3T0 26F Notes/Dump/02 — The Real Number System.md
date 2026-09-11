@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T21:07:08.202-04:00
-edited_seconds: 3240
+updated_at: 2026-09-10T21:28:23.348-04:00
+edited_seconds: 3260
 course: ESC194H1
 tags:
   - ESC194H1
@@ -355,7 +355,8 @@ It thus also follows these following base properties (proofs included if require
 > Taking Property A.1; we know that $\forall x \in \mathbb{R}, |x| \geq {0}$ From Corollary 1.5; we can multiply this by -1 to get the following inequality: 
 > $$-|x| \leq 0$$
 > We can also reuse Property A.1; and we get the conclusion that $\forall x\in \mathbb{R}$ this holds true. 
+> **This is a very useful property re-applicable for other identities**. 
 
 > [!theorem] Property A.3
 > $$c>0, |x| \leq c \iff -c \leq x\leq c$$
-> We can break this problem up into two segments 
+> We can break this problem up into two segments: 
