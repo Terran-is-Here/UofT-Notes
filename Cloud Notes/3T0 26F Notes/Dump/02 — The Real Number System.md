@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T21:28:23.348-04:00
-edited_seconds: 3260
+updated_at: 2026-09-10T21:44:35.539-04:00
+edited_seconds: 3360
 course: ESC194H1
 tags:
   - ESC194H1
@@ -360,3 +360,14 @@ It thus also follows these following base properties (proofs included if require
 > [!theorem] Property A.3
 > $$c>0, |x| \leq c \iff -c \leq x\leq c$$
 > We can break this problem up into two segments: 
+> > $$x \geq 0$$
+> > $$0 \leq x \land |x| = x$$
+> > Therefore: 
+> > $$-c \leq 0\leq x= |x|\leq c$$
+> 
+> > $$x > 0$$
+> > $$0 < -x \land -x = |x|$$
+> > Therefore: 
+> > $$-c \leq 0\leq -x= |x|\leq c$$
+> 
+> We 
