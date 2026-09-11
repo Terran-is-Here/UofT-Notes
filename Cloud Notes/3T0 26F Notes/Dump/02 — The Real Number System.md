@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T13:22:18.754-04:00
-edited_seconds: 3790
+updated_at: 2026-09-11T13:51:46.603-04:00
+edited_seconds: 3960
 course: ESC194H1
 tags:
   - ESC194H1
@@ -65,7 +65,7 @@ For the purposes of this to leave it as an exercise; try to prove how $a*0 = 0$.
 > Apply Axiom 5 by adding the inverse of $a*0$ into both sides: $$a*0+ a*0 + (-(a*0))  = a*0 + (-(a*0))$$
 > By definition from Axiom 5: 
 > $$a*0= 0$$
-> For any $a\in \mathbb{R}$; there does not exist any means to multiply $0$ to obtain 1; thus requiring it's exclusion from the definition of Axiom 5 and $\mathbb{R}$. 
+> For any $a\in \mathbb{R}$; there does not exist any means to multiply $0$ to obtain 1 ; thus requiring it's exclusion from the definition of Axiom 5 and $\mathbb{R}$. 
 
 ### Theorem 1.2 - Negative Numbers and Multiplication
 Note that the system above does not explicitly define the concept of negative numbers and their role in multiplication; or more accurately; the effects of the additive inverse with the multiplication operation. 
@@ -400,3 +400,34 @@ It thus also follows these following base properties (proofs included if require
 > > $$ a < 0, b < 0$$
 > > Then: 
 > > $ab > 0 \implies |ab|=ab \implies ab=|a||b|=|ab|$
+
+## Other Axioms 
+> [!axiom] Axiom Add.1
+> $$p>0, \exists n\in \mathbb{Z} \text{ s.t. }pn > r, \text{ where } r\in \mathbb{R} $$
+## Completeness of the Reals Axiom (CORA)
+The Completeness of the Reals Axiom is a necessary Axiom to ensure the existence of a *continuum* of numbers. 
+It is generally defined as: 
+> "Every non-empty set of real numbers which has an upper bound, has a least upper bound."
+
+> Definition of an Upper Bound
+* A set of $\mathbb{R}$ defined by $s$ is *bounded above* if $\exists$ some number $m$ such that: 
+* $x\leq M,\forall x \in S$; where $M$ is an "upper bound" for $s$. 
+
+> Definition of a least upper bound: 
+> "The Least Upper Bound" for a set $s$ is the smallest of all possible upper bounds; notated $lub(s)$; that is inherently $M >s$ or $s < M$. 
+
+This has implications for what kind of numbers we can *include* in the $\mathbb{R}$ system; retake the definitions that we have for some number systems: 
+
+### Rational Numbers
+Rational numbers are defined as: 
+$$
+p,q \in \mathbb{Z}, q\neq0,\frac{p}{q}
+$$
+Or; a rational number by definition can be expressed as a ratio of two integers. 
+
+### Algebraic Numbers
+Algebraic Numbers are defined as any numbers that are a solution to a polynomial equation: 
+$$
+a_{n}x^n + a_{n-1}x^{n-1}\dots a_{1}x + a_{0} = 0
+$$
+Where $a_{n\dots}\in \mathbb{R}$. This include the solution of $x^2 = 2$ for instance. 
