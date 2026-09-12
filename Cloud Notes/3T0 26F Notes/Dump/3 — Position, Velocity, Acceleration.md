@@ -1,14 +1,15 @@
 ---
-updated_at: 2026-09-11T22:22:17.224-04:00
-edited_seconds: 300
-course:
+updated_at: 2026-09-11T22:41:22.996-04:00
+edited_seconds: 490
+course: PHY180H1
 tags:
-"Lecture #": 0
-Date: 2026-09-10
+  - PHY180H1
+"Lecture #": 3
+Date: 2026-09-11
 Week:
 ---
 Previous: [[2 — Vectors (Physics)]]
-Next: N/A
+Next: [[4 — 1D Kinematics]]
 
 > [!Quote] Textbook Chapters Discussed
 > Chapters 3.1-3.3
@@ -39,5 +40,17 @@ Where total displacement is equivalent to the sum of all individual displacement
 
 >[!theorem] Speed and Instantaneous Speed
 >Speed is a scalar value; and is calculated by dividing the total distance by the total time elapsed to travel that distance: 
->$$\bar{s} = \frac{\text{Total Distance}}{\Delta t}$$
->The instantaneous speed is defined by taking the magni
+>$$\bar{\text{Average Speed}} = \frac{\text{Total Distance}}{\Delta t}$$
+>The instantaneous speed is defined by taking the magnitude of our instantaneous velocity: 
+>$$\text{Instantaneous Speed } = |v(t)|$$
+## Acceleration
+> [!theorem] Average Acceleration
+> Average Velocity is defined by the rate of change of velocity: take $v_{t}, v_{0}, t_{t}, t_{0}$ where the corresponding subscripts represent the term that they are related to; then the average acceleration of an object is defined by: 
+> $$\bar{a} = \frac{\Delta v}{\Delta t} = \frac{v_{t}-v_{0}}{t_{t}-t_{0}}$$
+
+> [!theorem] Instantaneous Acceleration
+> Instantaneous Acceleration is also defined similarly to how we found Instantaneous Velocity: 
+> $$\Delta t > 0, \bar{a} = \frac{\Delta v}{\Delta t} = \frac{v(t_{t} + \Delta t) - v(t)}{\Delta t}$$
+> $$a(t) = \lim_{ \Delta t \to 0 } \frac{v(t_{t} + \Delta t) - v(t)}{\Delta t} = \frac{d}{dt}v(t)$$
+
+Note that acceleration is also a vector; however it must not share a direction with velocity. It may not also change the magnitude of the velocity of an object; and could also simply be inducing a turning motion on our object. 
