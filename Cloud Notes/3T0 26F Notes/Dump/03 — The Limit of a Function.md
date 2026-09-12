@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-12T12:07:37.713-04:00
-edited_seconds: 370
+updated_at: 2026-09-12T12:19:28.838-04:00
+edited_seconds: 450
 course: ESC194H1
 tags:
   - ESC194H1
@@ -42,11 +42,12 @@ From here we can also glean another property with limits:
 > $$\lim_{ x \to a }f(x) = L \iff \lim_{ x \to ^+a }f(x) = \lim_{ x \to ^-a }f(x) = L  $$
 > Or in other words; our Limit only exists if and only if both one-sided limits share the same value $L$. 
 
-### Non-Existent and Infinite Limits
+## Limits that Don't Exist
 Recall our two main means that we determine if a limit exists: 
 * Our one-sided limits do not agree on a value; that is they do not have equality. 
 * Our limits do not have convergence: 
-	* The
+	* They either diverge into infinity
+	* Or they diverge on a range of numbers. 
 
 > [!theorem]+ Heaviside Function
 > $$f(x) = \begin{cases}1 : x\geq0\\-1: x < 0 \\ \end{cases}$$
@@ -60,4 +61,13 @@ Recall our two main means that we determine if a limit exists:
 > $$\lim_{  x \to ^+0 }f(x) = +1 $$
 > Therefore, our limit does not exist. 
 
-For divergent limits; we generally have two cases in which they diverge: 
+We shall take the divergent cases separately in order to develop our definitions for them: 
+
+### Infinite Limits
+Take the following function: 
+$$
+f(x) = \frac{1}{x^2}, \lim_{ x \to 0 }f(x) = ? 
+$$
+To find the limit of this; let's try testing this function for values approaching $0$. We find that our values for both sides of the function explode into incredibly larger and larger numbers.
+
+The value of this function does not exist; ergo we describe this as an infinite limit 
