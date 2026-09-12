@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T16:59:26.312-04:00
-edited_seconds: 1280
+updated_at: 2026-09-11T20:21:17.134-04:00
+edited_seconds: 1290
 course: PHY180H1
 tags:
   - PHY180H1
@@ -145,6 +145,7 @@ $$\bar{x} = \frac{\sum^n_{i=1}x_{1}}{N} = \frac{x_{sum}}{N} = \frac{1}{N} * x_{s
 In general, you can describe the uncertainty of the sum as: 
 $$u_{sum} = \sqrt{ \sum^N_{i=1} u_{xi}^2  } = \sqrt{ Nu_{x}^2 } = \sqrt{ N } * u_{x}$$ 
 And the mean can be appropriately scaled as dividing the above equation by $\frac{1}{N}$ as defined by our multiplication rules. 
+$$\bar{x} = \frac{x_{sum}}{N} \implies u_{\bar{x}} = \frac{\sqrt{ N }u_{x}}{N} = u_{\bar{x}} = \frac{u_{x}}{\sqrt{ N }}$$
 ### Significant Figure Rules 
 For this course: 
 1. No rounding before the final answer. 
