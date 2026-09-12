@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-10T12:50:20.711-04:00
-edited_seconds: 790
+updated_at: 2026-09-11T21:56:05.361-04:00
+edited_seconds: 800
 course: PHY180H1
 tags:
   - PHY180H1
@@ -10,7 +10,7 @@ Week: 1
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[1 — Units and Measurement]]
-Next: N/A 
+Next: [[3 — Position, Velocity, Acceleration]]
 > [!note] Recommended Reading: 
 > [[Vector Review| Vector Review (ESC103H1)]] (has more of a formal definition of the concept of vectors overall)
 > [[Vector Dot Product| Dot Product (ESC103H1)]] (has more formal definitions of the concept of Dot Products)
