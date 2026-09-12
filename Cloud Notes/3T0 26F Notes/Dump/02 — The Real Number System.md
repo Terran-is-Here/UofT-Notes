@@ -1,12 +1,13 @@
 ---
-updated_at: 2026-09-11T14:53:45.228-04:00
-edited_seconds: 4210
+updated_at: 2026-09-11T22:47:10.543-04:00
+edited_seconds: 4230
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 1
 Date: 2026-09-10
 Week: 1
+Created: September 8th 2026, 6:35:37 pm
 ---
 To Hub: [[ESC194 Hub]]
 Previous: [[01 — Introduction — Tangent and Velocity]]

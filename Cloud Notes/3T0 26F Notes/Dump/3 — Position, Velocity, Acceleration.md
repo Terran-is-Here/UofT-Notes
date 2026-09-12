@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T22:41:22.996-04:00
-edited_seconds: 490
+updated_at: 2026-09-11T22:49:09.482-04:00
+edited_seconds: 500
 course: PHY180H1
 tags:
   - PHY180H1
@@ -8,6 +8,7 @@ tags:
 Date: 2026-09-11
 Week:
 ---
+Hub: [[PHY180 Hub]]
 Previous: [[2 — Vectors (Physics)]]
 Next: [[4 — 1D Kinematics]]
 

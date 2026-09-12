@@ -1,15 +1,18 @@
 ---
-updated_at: 2026-09-11T22:41:29.515-04:00
-edited_seconds: 20
-course:
+updated_at: 2026-09-11T22:49:38.403-04:00
+edited_seconds: 70
+course: PHY180H1
 tags:
-"Lecture #": 0
+  - PHY180H1
+"Lecture #": 4
 date: 2026-09-11
 Week:
+Created: September 11th 2026, 10:41:21 pm
 ---
-Previous: 
-Next:
+Hub: [[PHY180 Hub]]
+Previous: [[3 — Position, Velocity, Acceleration]]
+Next: N/A
 
 --- 
-
-Lorem Ipsum here
+# In-Lecture Notes
+# Pre-Lecture Notes
