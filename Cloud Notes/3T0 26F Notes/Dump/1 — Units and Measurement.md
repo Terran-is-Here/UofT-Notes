@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T20:21:17.134-04:00
-edited_seconds: 1290
+updated_at: 2026-09-11T20:24:27.360-04:00
+edited_seconds: 1330
 course: PHY180H1
 tags:
   - PHY180H1
@@ -107,10 +107,11 @@ A distribution can be generally defined by the Gaussian Distribution:
 $$Ae^{\frac{-(x-\bar{x})^2}{2\rho}}$$
 Where $\bar{x}$ is the mean, and $\rho$ is the standard deviation.
 
-The mean can be found by: 
-$$
-\bar{x}=\frac{1}{N}\sum^n_{{i=1}} x_{i}
-$$
+> The mean can be found by: 
+$$\bar{x}=\frac{1}{N}\sum^n_{{i=1}} x_{i}$$
+> Or in other words: the mean is defined as the average of the entire dataset. 
+
+
 While the standard deviation can be found by: 
 $$
 \sigma = \sqrt{ \frac{1}{N-1}\sum^n_{i=1}\left(x_{i}-\bar{x}_{est}\right)^2 }
