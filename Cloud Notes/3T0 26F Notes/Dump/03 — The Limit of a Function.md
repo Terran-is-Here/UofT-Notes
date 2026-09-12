@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-12T11:43:49.748-04:00
-edited_seconds: 140
+updated_at: 2026-09-12T12:07:37.713-04:00
+edited_seconds: 370
 course: ESC194H1
 tags:
   - ESC194H1
@@ -27,5 +27,37 @@ Intuitively, we can define the limit as the following:
 > $$\lim_{ x \to a} f(x) = L $$
 > That is, the limit of $f(x)$ as it approaches $a$ is some value $L$. 
 > Or: $$x \to a \implies f(x) \to L$$
-> Note that $x$ does not need to equal $a$; we simply wish to determine what (or if) there is a value that our function converges onto as we approach our value $a$. 
+> Note that $x$ does not need to equal $a$; we simply wish to determine what (or if) there is a value that our function **converges** onto as we approach our value $a$. 
+> **A more formal definition will come in a later note (future me, please link it here)**
 
+Recall that in general, a limit is solely concerned with the state of the function at a locality around a point. Also recall the intuitive definition of the concept of a one-sided limit: 
+> [!theorem] Intuitive One-Sided Limit Definition: 
+> Let us define our one-sided limits: 
+> $$\lim_{ x \to ^-a } f(x) = L$$
+> The limit $L$ exists if we can make $f(x)$ arbitrarily close to $L$ while ensuring $x$ is sufficiently close to and also less than $a$. 
+> $$\lim_{ x \to ^+a }f(x) = L $$
+> The limit $L$ exists if we can make $f(x)$ arbitrarily close to $L$ while ensuring that $x$ is sufficiently close to, and also greater than $a$.
+
+From here we can also glean another property with limits: 
+> $$\lim_{ x \to a }f(x) = L \iff \lim_{ x \to ^+a }f(x) = \lim_{ x \to ^-a }f(x) = L  $$
+> Or in other words; our Limit only exists if and only if both one-sided limits share the same value $L$. 
+
+### Non-Existent and Infinite Limits
+Recall our two main means that we determine if a limit exists: 
+* Our one-sided limits do not agree on a value; that is they do not have equality. 
+* Our limits do not have convergence: 
+	* The
+
+> [!theorem]+ Heaviside Function
+> $$f(x) = \begin{cases}1 : x\geq0\\-1: x < 0 \\ \end{cases}$$
+> Let's attempt to find the limit of this function at 0; that is: 
+> $$\lim_{ x \to 0 }f(x) = ?$$
+> Let's try approaching from the left; then: 
+> $$\lim_{  x \to ^-0 }f(x) = ? $$
+> Since $x < 0$ as we are approaching from the right, then: 
+> $$\lim_{  x \to ^-0 }f(x) = -1 $$
+> Conversely we can also find our corresponding right-sided limit using the same logic: 
+> $$\lim_{  x \to ^+0 }f(x) = +1 $$
+> Therefore, our limit does not exist. 
+
+For divergent limits; we generally have two cases in which they diverge: 
