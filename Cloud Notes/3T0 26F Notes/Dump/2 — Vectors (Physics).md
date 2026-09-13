@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-13T18:24:23.267-04:00
-edited_seconds: 930
+updated_at: 2026-09-13T18:28:42.989-04:00
+edited_seconds: 980
 course: PHY180H1
 tags:
   - PHY180H1
@@ -153,7 +153,7 @@ a_{x} & a_{y} & a_{z} \\
 b_{x} & b_{y} & b_{z}
 \end{bmatrix}
 $$
-This derives the normal definition of a Cross Product while keeping it memorable. This can be broken up via Cofactor expansion: 
+This derives the normal definition of a Cross Product while keeping it memorable. This can be broken up via Cofactor expansion (laplace expansion) 
 $$
 \vec{a}\times \vec{b} = \hat{i} \det \begin{bmatrix}
 a_{y} & a_{z} \\
@@ -169,3 +169,13 @@ b_{x} & b_{y}
 \end{bmatrix}
 $$
 
+Or; even shorter: 
+$$
+\vec{a}\times \vec{b} = \hat{i}\text{ minor}(1,1) - \hat{j} \text{ minor}(1,2) + \hat{k}\text{ minor}(1,3)
+$$
+Recall that a determinant of a 2x2 matrix is calculated from the following: 
+$$\det\begin{bmatrix}
+a & b\\
+c & d
+\end{bmatrix} =ad-bc$$
+**Note however that cross products are ANTI-Communicative.**
