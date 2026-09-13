@@ -1,12 +1,12 @@
 ---
-updated_at: 2026-09-13T18:40:28.398-04:00
-edited_seconds: 230
+updated_at: 2026-09-13T19:04:39.262-04:00
+edited_seconds: 270
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 4
 date: 2026-09-11
-Week:
+Week: 2
 Created: September 11th 2026, 10:41:21 pm
 ---
 Hub: [[PHY180 Hub]]
@@ -37,4 +37,10 @@ $$
 Also, since $\bar{a} = a$, then: 
 $$\bar{a} = \frac{\Delta v}{\Delta t}=\frac{v_{t} - v_{0}}{t}$$
 Which can be rearranged into: 
-$$v_{f}=\bar{a}t + v_{0}\tag{3.1}$$
+$$v=\bar{a}t + v_{0}\tag{3.1}$$
+
+--- 
+Now we will try to derive the other popularly known kinematics equations: 
+
+> Displacement Equation 1
+> Take equation 
