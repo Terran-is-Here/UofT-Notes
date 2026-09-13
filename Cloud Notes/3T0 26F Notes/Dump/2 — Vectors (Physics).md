@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T21:56:05.361-04:00
-edited_seconds: 800
+updated_at: 2026-09-13T18:24:23.267-04:00
+edited_seconds: 930
 course: PHY180H1
 tags:
   - PHY180H1
@@ -14,6 +14,7 @@ Next: [[3 — Position, Velocity, Acceleration]]
 > [!note] Recommended Reading: 
 > [[Vector Review| Vector Review (ESC103H1)]] (has more of a formal definition of the concept of vectors overall)
 > [[Vector Dot Product| Dot Product (ESC103H1)]] (has more formal definitions of the concept of Dot Products)
+> 
  > **This note will be more focused on the physics-focused elements of Vectors**
 
 --- 
@@ -131,4 +132,40 @@ $$
 > $$\vec{a}-\vec{a} = -a_{x}\hat{i} - a_{y}\hat{j} - a_{z}\hat{k} + a_{x}\hat{i} + a_{y}\hat{j} + a_{z}\hat{k}$$
 > All these terms cancel out, leading us to the definition of the 0 vector. 
 > $$ \vec{0} = 0\hat{i} + 0\hat{j} + 0\hat{k}$$
+
+### Dot Product
+Definitions for a Dot Product have been left here for brevity; let $\theta$ be the angle between our vectors; ergo: 
+$$\vec{a}\cdot \vec{b} = |\vec{a}||\vec{b}|\cos \theta$$
+In component form: 
+$$\vec{a} = a_{x}\hat{i} + a_{y}\hat{j} + a_{z}\hat{k}$$
+$$\vec{b} = b_{x}\hat{i} + b_{y}\hat{j} + b_{z}\hat{k}$$
+$$\vec{a}\cdot \vec{b} = a_{x}b_{x} + a_{y}b_{y} + a_{z}b_{z}$$
+
+### Cross Product
+The brief definitions of a Cross Product have been left here for brevity; once again let $\theta$ be the angle between our vectors: 
+$$|\vec{a} \times \vec{b}| = |\vec{a}||\vec{b}|\sin \theta$$
+
+In terms of a component form; there's many different definitions; however we can use the following: 
+$$
+\vec{a} \times \vec{b} = \det\begin{bmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+a_{x} & a_{y} & a_{z} \\
+b_{x} & b_{y} & b_{z}
+\end{bmatrix}
+$$
+This derives the normal definition of a Cross Product while keeping it memorable. This can be broken up via Cofactor expansion: 
+$$
+\vec{a}\times \vec{b} = \hat{i} \det \begin{bmatrix}
+a_{y} & a_{z} \\
+b_{y} & b_{z}
+\end{bmatrix}-
+\hat{j}\det \begin{bmatrix}
+a_{x}& a_{z} \\
+b_{x}& b_{z}
+\end{bmatrix}
++ \hat{k} \det \begin{bmatrix}
+a_{x} & a_{y} \\
+b_{x} & b_{y}
+\end{bmatrix}
+$$
 
