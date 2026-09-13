@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-12T12:19:28.838-04:00
-edited_seconds: 450
+updated_at: 2026-09-13T19:15:15.972-04:00
+edited_seconds: 460
 course: ESC194H1
 tags:
   - ESC194H1
@@ -70,4 +70,4 @@ f(x) = \frac{1}{x^2}, \lim_{ x \to 0 }f(x) = ?
 $$
 To find the limit of this; let's try testing this function for values approaching $0$. We find that our values for both sides of the function explode into incredibly larger and larger numbers.
 
-The value of this function does not exist; ergo we describe this as an infinite limit 
+The value of this function does not exist; ergo we describe this as an infinite limit. 

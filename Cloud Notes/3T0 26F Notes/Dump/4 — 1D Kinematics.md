@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-13T19:04:39.262-04:00
-edited_seconds: 270
+updated_at: 2026-09-13T19:13:28.453-04:00
+edited_seconds: 380
 course: PHY180H1
 tags:
   - PHY180H1
@@ -43,4 +43,17 @@ $$v=\bar{a}t + v_{0}\tag{3.1}$$
 Now we will try to derive the other popularly known kinematics equations: 
 
 > Displacement Equation 1
-> Take equation 
+> $$x=\frac{1}{2}at^2 + v_{0}t + x_{0} \tag{k.1}$$
+> > [!theorem]- Derivation
+> > Take equation (3.1) and add a term of $v_{0}$ onto both sides, giving us: 
+> > $$v+v_{0}=at + 2v_{0}$$
+> > Divide by two on both sides: 
+> > $$\frac{v+v_{0}}{2} = \frac{at}{2} + v_{0}$$
+> > From $(1.2)$; we can sub in our term of $\bar{v}$: 
+> > $$\bar{v} = \frac{at}{2} + v_{0}$$
+> > Sub into $(2.1)$: 
+> > $$x_{t} = \left(\frac{at}{2} + v_{0}\right)t + x_{0} $$
+> > And we get our final answer: 
+> > $$x=\frac{1}{2}at^2 + v_{0}t + x_{0}$$
+
+> 
