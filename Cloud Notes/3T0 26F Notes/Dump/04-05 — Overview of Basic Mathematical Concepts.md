@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T11:44:28.565-04:00
-edited_seconds: 420
+updated_at: 2026-09-14T11:57:38.395-04:00
+edited_seconds: 490
 course:
 tags:
   - ESC194H1
@@ -105,9 +105,22 @@ We can notate function composition as:
 $$f \circ g(x) = f(g(x))$$
 That is; $g(x) = y$ for some $f(y) = z$ for instance. Whatever that *nested* function inside is equivalent to is plugged in as it's respective domain into the other function. 
 
-> Note that for $f \circ g(x)$: The Domain of $g(x)$
+> Note that for $f \circ g(x)$: the *range* of $g(x)$ is plugged as the *domain* of $f(x)$. 
 
+### Inequalities and Equalities 
+For more info on these, see [[02 — The Real Number System]]. 
 
+> [!theorem] Basic Arithmetical Theorem (BAT) 
+> One can Add, Subtract, Multiply and Divide both sides of a **true** statement by the same factor (except $\frac{1}{0}$) and obtain another **true** statement. 
+> 
+> This effectively preserves our operations mainly for Inequalities. 
+> > Note that multiplying / dividing by a negative number requires us to reverse the "direction" of our inequalities. 
+
+The BAT is equivalent to Theorems O.3 and O.4. 
+#### Statements 
+Statements resolve into a true/false statement: such as $1+3=4$ and $2 <6$ are statements. 
+
+Statements do not include *specifications* for values; such as a set of values or a singular value for a variable.
 
 
 
