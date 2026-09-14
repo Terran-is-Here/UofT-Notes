@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T09:17:22.222-04:00
-edited_seconds: 510
+updated_at: 2026-09-14T09:22:26.539-04:00
+edited_seconds: 610
 course: PHY180H1
 tags:
   - PHY180H1
@@ -40,7 +40,10 @@ Which can be rearranged into:
 $$v=\bar{a}t + v_{0}\tag{3.1}$$
 
 --- 
-Now we will try to derive the other popularly known kinematics equations: 
+Now we will try to derive the other popularly known kinematics equations; the others are put here for reference; 
+* $\bar{v} =\frac{v_{t} + v_{0}}{2}$
+* $v = \bar{a}t + v_{0}$
+* $x = x_{0} + \bar{v}t$
 
 > [!axiom] Displacement Equation 1
 > $$x=\frac{1}{2}at^2 + v_{0}t + x_{0} \tag{k.1}$$
@@ -57,11 +60,19 @@ Now we will try to derive the other popularly known kinematics equations:
 > > $$x=\frac{1}{2}at^2 + v_{0}t + x_{0}$$
 
 >[!axiom] Time-Independent Velocity
->$$v^2 = v_{0} + 2a\Delta x$$
->> [!theorem] Proof 
+>$$v^2 = v_{0}^2 + 2a\Delta x \tag{k.2}$$
+>> [!theorem]- Proof 
 >> Let's take equations $(3.1)$ and $(1.2)$ into the equation for $(2.1)$; that is: 
 >> $$v=at + v_{0} \text{ and } \bar{v} = \frac{v + v_{0}}{2} \to x_{t} = \bar{v}t + x_{0}$$
 >> We can solve our first equation into a term of time: 
 >> $$\frac{v-v_{0}}{a} = t$$
 >> Subbing both of these into equation $(2.1)$ then: 
->> $$x_{t} = \frac{v + v_{0}}{2}*\frac{v-v_{0}}{a} + 
+>> $$x_{t} = \frac{v + v_{0}}{2}*\frac{v-v_{0}}{a} + x_{0}$$
+>> $$(x_{t}-x_{0}) = \frac{v^2-v_{0}^2}{2a}$$
+>> $$2a(x_{t}-x_{0}) = v^2-v_{0}^2$$
+>> $$2a(x_{t}-x_{0}) + v_{0}^2 = v^2$$
+>> $$v^2 = 2a\Delta x + v_{0}^2$$
+
+Just like in SPH4U / SPH3U, we can utilize these equations to solve a Kinematics problem with respects to one dimension.
+## Free-Fall 
+Free-fall
