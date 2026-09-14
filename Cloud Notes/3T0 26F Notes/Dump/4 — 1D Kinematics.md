@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T16:47:55.509-04:00
-edited_seconds: 870
+updated_at: 2026-09-14T16:58:27.829-04:00
+edited_seconds: 950
 course: PHY180H1
 tags:
   - PHY180H1
@@ -11,7 +11,7 @@ Created: September 11th 2026, 10:41:21 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[3 — Position, Velocity, Acceleration]]
-Next: N/A
+Next: [[5 —]]
 
 > [!quote] Textbook Chapters Discussed; 
 > 3.4-3.6
@@ -103,5 +103,22 @@ That is, velocity is the derivative of our function of displacement, and acceler
 $$v(t) = \int \frac{d}{dt}v(t) dt \implies v(t) = \int a(t)dt +C_{1} $$
 Where $C_{1}$ is some constant of integration. We can use the same logic using our equation for displacement: 
 $$
-
+\frac{d}{dt}x(t) = v(t) \implies x(t) = \int v(t)dt + C_{2}
 $$
+Where $C_2$ is another constant of acceleration. If $\bar{a}=a$, then $a(t)$ is some constant; therefore: 
+$$v(t) = \int a \ dt + C_{1} \implies v(t) = at + C_{1}$$
+If we take $t =0$, then $C_{1} = v_{0}$: 
+$$v(t) = at + v_{0}$$
+We can plug this into our earlier term for $x(t)$: 
+$$
+x(t) = \int at + v_{0} \ dt + C_{2}
+$$
+Using reverse power rules; we get: 
+$$
+x(t) = \frac{1}{2}at^2 + v_{0}t + C_{2}
+$$
+If $t=0, x(t) =C_{2} \implies C_{2}=x_{0}$, then: 
+$$
+x(t) = \frac{1}{2}at^2 + v_{0}t + x_{0}
+$$
+Which means we have arrived at one of our earlier kinematic equations. 
