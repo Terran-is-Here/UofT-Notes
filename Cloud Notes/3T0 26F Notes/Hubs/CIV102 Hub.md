@@ -2,7 +2,7 @@
 The __art__ & **science** of **designing** and making structures with economy and elegance; so that they can **safely** **resist** the forces which they **may be** subjected to. 
 
 > [!caution] Note
-> **These notes will be mainly for **
+> **These notes will be mainly for long-term reference; as most of the notes within this course will be maintianed and kept on a written medium.**
 
 
 

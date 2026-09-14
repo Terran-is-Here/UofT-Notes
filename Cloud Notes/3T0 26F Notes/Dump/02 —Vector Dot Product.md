@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T13:07:22.981-04:00
-edited_seconds: 680
+updated_at: 2026-09-14T13:09:23.037-04:00
+edited_seconds: 700
 course: ESC103H1
 tags:
   - ESC103H1
@@ -68,7 +68,8 @@ $$\vec{a} \cdot \vec{b} = |\vec{a}||\vec{b}|\cos\theta$$
 
 ### Implications
 * $\vec{a}\cdot \vec{b} >0$ implies $0<\theta<90$
-* $a$
+* $\vec{a} \cdot \vec{b} = 0$ implies $\theta = 90$ (Vectors are Orthogonal to each other) 
+* $\vec{a}\cdot \vec{b} <0$ implies $90 < \theta < 180$
 ## Triangle Inequality 
 The Triangle Inequality is a useful identity that arises out of the way Vector addition operates. Given two vectors $\vec{a}$ and $\vec{b}$; $\vec{a} + \vec{b}$ effectively creates the third side of a triangle. 
 

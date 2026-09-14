@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T11:57:36.832-04:00
-edited_seconds: 340
+updated_at: 2026-09-14T13:22:57.600-04:00
+edited_seconds: 380
 course: ELC101
 tags:
   - ESC101H1
@@ -8,9 +8,9 @@ tags:
 Date: 2026-09-11
 Week: 1
 ---
-Hub: [[ESC101 Hub]]
+Hub: [[ESC101 Hub (Praxis)]]
 Previous: N/A
-Next: ..? 
+Next: [[2 — Engineering Arguments]]
 Writing To Think: [[1.1 — Supplemental (Praxis)]]
 
 
@@ -54,7 +54,7 @@ Also see: [[1 — Lecture Stuff | Lecture 01 (CIV102)]]
 
 The goal of praxis is to *use these models* to inform and improve our actions within the world; especially with the projects that we build to affect the greater community. 
 **Engineers create and justify decisions. We recommend the best designs.**
-### Black-Box Model
+### Black-Box Model / "Dam" Model
 > It's termed as a Black-Box model; as you are breaking down a complex system into smaller parts. 
 > Recall that black-boxes are generally defined as something that does something inside; and you don't really know the details of it's internals.
 
@@ -83,3 +83,4 @@ Or; The world is perceived by us as models into our imagined world; we dream cha
 
 ## For Studios 
 The main thing for Teardown is to examine the *design decisions* for our device. Not the actual function of the device. 
+> Future Elise here: We found a toaster for it! 
