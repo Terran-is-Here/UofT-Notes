@@ -12,8 +12,8 @@ Hub: [[PHY180 Hub]]
 Previous: [[1 — Units and Measurement]]
 Next: [[3 — Position, Velocity, Acceleration]]
 > [!note] Recommended Reading: 
-> [[Vector Review| Vector Review (ESC103H1)]] (has more of a formal definition of the concept of vectors overall)
-> [[Vector Dot Product| Dot Product (ESC103H1)]] (has more formal definitions of the concept of Dot Products)
+> [[01 — Vector Review| Vector Review (ESC103H1)]] (has more of a formal definition of the concept of vectors overall)
+> [[02 —Vector Dot Product| Dot Product (ESC103H1)]] (has more formal definitions of the concept of Dot Products)
 > 
  > **This note will be more focused on the physics-focused elements of Vectors**
 

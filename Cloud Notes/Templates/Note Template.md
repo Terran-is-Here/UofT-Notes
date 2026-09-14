@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T22:43:33.992-04:00
-edited_seconds: 40
+updated_at: 2026-09-14T11:10:30.584-04:00
+edited_seconds: 50
 course:
 tags:
 "Lecture #": 0
@@ -8,9 +8,11 @@ Lecture Date: "{{date}}"
 Week:
 created:
 ---
+Hub: 
 Previous: 
 Next:
 
 --- 
 
-Lorem Ipsum here
+# Lecture Notes
+# Pre-Lecture Notes

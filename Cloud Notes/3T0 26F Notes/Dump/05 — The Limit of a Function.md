@@ -1,10 +1,10 @@
 ---
-updated_at: 2026-09-13T19:15:15.972-04:00
-edited_seconds: 460
+updated_at: 2026-09-14T11:04:49.525-04:00
+edited_seconds: 470
 course: ESC194H1
 tags:
   - ESC194H1
-"Lecture #": 3
+"Lecture #": 5
 Lecture Date: 2026-09-12
 Week: 2
 created:

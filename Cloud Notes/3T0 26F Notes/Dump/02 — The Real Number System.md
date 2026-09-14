@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-12T11:37:57.405-04:00
-edited_seconds: 4240
+updated_at: 2026-09-14T11:05:16.847-04:00
+edited_seconds: 4250
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,7 +11,7 @@ Created: September 8th 2026, 6:35:37 pm
 ---
 To Hub: [[ESC194 Hub]]
 Previous: [[01 — Introduction — Tangent and Velocity]]
-Next: [[03 — The Limit of a Function]]
+Next: [[04-05 — Overview of Basic Mathematical Concepts]], [[05 — The Limit of a Function]]
 > [!warning] Note
 > This note was primarily based on the Supplemental (Sections 1; and 2.1-2.7.)
 > A good amount of it *was* transcribed from the actual like; document; although it's now here in obsidian so it should be easier to work with.

@@ -1,16 +1,16 @@
 ---
-updated_at: 2026-09-09T21:51:11.854-04:00
-edited_seconds: 550
+updated_at: 2026-09-14T11:09:43.699-04:00
+edited_seconds: 570
 course: ESC103H1
 tags:
   - ESC103H1
 "Lecture #": 1
 Date: 2026-09-10
 Week: 0
+Created: September 8th 2026, 2:57:08 pm
 ---
-
-Previous: N/A
-Next: [[Vector Dot Product]]
+Hub: [[ESC103 Hub]]
+Next: [[02 —Vector Dot Product]]
 See also: [[2 — Vectors (Physics)]]
 
 --- 

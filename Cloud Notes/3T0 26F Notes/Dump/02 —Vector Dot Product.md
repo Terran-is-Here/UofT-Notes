@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T22:00:55.853-04:00
-edited_seconds: 360
+updated_at: 2026-09-14T11:10:11.745-04:00
+edited_seconds: 380
 course: ESC103H1
 tags:
   - ESC103H1
@@ -9,10 +9,13 @@ tags:
 Date: 2026-09-10
 Week: 2
 ---
-Previous: [[Vector Review]]
-Next: N/A 
+Hub: [[ESC103 Hub]]
+Previous: [[01 — Vector Review]]
+Next: [[03 — Vector Projection]]
 
 --- 
+# Lecture Notes
+# Pre-Lecture Notes
 
 ## Dot Product
 The Dot Product of two vectors is defined as the following equation below. Let $\vec{a}$ and $\vec{b}$ be vectors; their dot product is defined as: 
