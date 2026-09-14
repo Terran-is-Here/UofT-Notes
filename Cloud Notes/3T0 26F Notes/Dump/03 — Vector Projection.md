@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T12:12:13.609-04:00
-edited_seconds: 90
+updated_at: 2026-09-14T12:43:56.833-04:00
+edited_seconds: 100
 course: ESC103H1
 tags:
   - ESC103H1
@@ -16,8 +16,9 @@ Next: N/A
 --- 
 # Lecture Notes
 # Pre-Lecture Notes
-For the purposes of this note; 
+For the purposes of this note; let $\vec{a}$ and $\vec{b}$ be two vectors; with the angle between them in tail-to-tail being notated as $\theta$
 ## Scalar Projection
+
 
 ## Vector Projection
 Vector projection is generally defined as: 

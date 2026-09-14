@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T12:28:36.020-04:00
-edited_seconds: 680
+updated_at: 2026-09-14T12:40:55.308-04:00
+edited_seconds: 740
 course: ESC103H1
 tags:
   - ESC103H1
@@ -38,22 +38,27 @@ In this case; $\vec{AB}$ is a 2d vector; while as $\vec{CD}$ is a 3d vector. Not
 > Let $\vec{AB}$ be a row vector; $$\vec{AB} = \begin{pmatrix}a_{1}&a_{2}\end{pmatrix}$$
 > We can find it's corresponding Column vector by taking it's transpose (swapping all rows with columns): $$\vec{AB}^T = \begin{pmatrix}a_{1} & a_{2}\end{pmatrix}^T=\begin{pmatrix}a_{1}\\a_{2}\end{pmatrix}$$
 ### Special Vectors
-* The Zero Vector (denoted as $\vec{0}$) is defined as having all of it's components be equal to 0: 
-	* $$\vec{a} = \vec{v} - \vec{v} = \begin{pmatrix}
-	0\\0
-	\end{pmatrix}$$
-* A unit vector (defined as $\hat{a}$; generally a letter with a "hat" is a unit vector) is defined as a vector with it's magnitude set to 1. Recall how we can find this. 
-	* Let $\vec{a}$ be a vector in $\mathbb{R}$; then $$\hat{a} = \frac{\vec{a}}{||\vec{a}||}$$
+> [!theorem] $\vec{0}$
+> The Zero Vector (denoted as $\vec{0}$) is defined as having all of it's components be equal to 0: 
+> $$\vec{a} = \vec{v} - \vec{v} = \begin{pmatrix}0\\0\end{pmatrix}$$
+
+> [!theorem] Unit Vectors
+> A unit vector (defined as $\hat{a}$; generally a letter with a "hat" is a unit vector) is defined as a vector with it's magnitude set to 1. Recall how we can find this. 
+> Let $\vec{a}$ be a vector in $\mathbb{R}$; then $$\hat{a} = \frac{\vec{a}}{||\vec{a}||}$$
 
 ## Linear Combinations
 A Linear Combination is defined as the well; linear combinations of two vectors which can describe another vector; generally of the form of: 
 $$
 c\vec{a} + d\vec{b} = \vec{R}
 $$
-Where $\vec{a}$ and $\vec{b}$ are vectors, and $c,d\in \mathbb{R}$
-> [!info] Definition
-> A Vector Space is defined as the set of all possible linear combinations of a set of vectors. 
+Where $\vec{a}$ and $\vec{b}$ are vectors, and $c,d\in \mathbb{R}$. 
+
+> [!theorem] Vector Spaces
+> A Vector Space is defined as the set of **all possible linear combinations of a set of vectors.** 
 > Essentially; all vectors that could be *expressed* as *any* linear combinations of *these* vectors.
+> 
+> Note that not all vector spaces can map to any vector; these are defined per every vector. This mainly applies to if both $\vec{a}$ and $\vec{b}$ can be expressed as a term of each other (e.g. $\vec{a} = 2\vec{b}$); in which case your vector space would be a line. 
+> 
 
 Note that a Linear Combination can be fully extended to any number of vectors; simply by adding another vector term and a corresponding scalar term. 
 ### Vector Properties
@@ -65,6 +70,7 @@ Vectors follow the same three main principles present with the [[02 — The Real
 
 > [!theorem] Associativity
 > $$(\vec{a} + \vec{b}) + \vec{c} = \vec{a} + (\vec{b} + \vec{c})$$
+> 
 
 > [!theorem] Scalar Distribution*
 > $$a_{1}\vec{C} = a_{2}\vec{C} = (a_{1}+a_{2})\vec{C}$$
