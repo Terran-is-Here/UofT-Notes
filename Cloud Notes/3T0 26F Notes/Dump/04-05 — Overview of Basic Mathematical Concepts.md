@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T11:23:42.921-04:00
-edited_seconds: 250
+updated_at: 2026-09-14T11:44:28.565-04:00
+edited_seconds: 420
 course:
 tags:
   - ESC194H1
@@ -61,10 +61,56 @@ We can define a general set of Intervals:
 > Note for infinity; all $\infty$-based bounds will have an *open* interval / bracket; as we cannot directly include it within $\mathbb{R}$. 
 
 ## Functions
-Generally; a function is a *rule*; which assigns a number in a set (the "domain") to a unique number in another set (the "range") 
+Generally; a function is a *rule*; which assigns a number in a set (the "domain") to a **unique number in another set** (the "range"): That is; while multiple numbers can map to the same number in the range, the reverse cannot be true. 
 
 > [!theorem] Algebraic Functions
-> An algebraic function is a function that generally maps a set of inputs (notated as the domain) to a set of outputs (the outputs). For algebraic functions; these are defined by our familia
+> An algebraic function is a function that generally maps a set of inputs (notated as the domain) to a set of outputs (the outputs). For algebraic functions; these are defined by our familiar equations: 
+> $$f(x) = x^2 +1$$
+> Let our input set be defined as $A$, and our output set be defined as $B$; functions therefore generally: 
+> $$f(A)  \mapsto B$$
+> Where the set $A$ is defined as the domain, and the set $B$ is defined as the range. $A$ defines the valid values that our function can input; and $B$ defines the valid outputs that our function can provide. 
+> 
+> Note that the normal notation is to often refer to $y$ as the dependent, and $x$ as the independent variable. 
+
+Note that functions do not need to be inherently *well-behaved* to be considered as a function, such as piecewise functions: 
+$$f(x) = \begin{cases}
+x^2 : x \neq 3\\
+0: x =3
+\end{cases}$$
+Where this causes a *hole* at $x=3$; where our function jumps to $0$. 
+
+### Expressions
+Note that *some* algebraic expressions may not be considered as a function: 
+$$\frac{x^2}{a^2} + \frac{y^2}{b^2}=1$$
+Where one can get two answers for the respective value of the function; thus not giving us a function
+
+In general; we can test this by using the *vertical-line test*. You should know how this works anyways. 
+### Intervals 
+We can define a function as *increasing* on an interval $I$, if:
+$$f(x_{1}) < f(x_{2}) \land x_{1} < x_{2} \land x_{1},x_{2} \in I$$
+Conversely; we can also define a function as decreasing if: 
+$$f(x_{1}) > f(x_{2}) \land x_{1} > x_{2} \land x_{1},x_{2} \in I$$
+
+Note that functions can only increase or decrease over an interval. 
+### Even and Odd
+> [!theorem] Even Functions
+> $$\forall x \in A, f(x): A \mapsto B \to f(x) = f(-x)$$
+>  A function is only even if $f(x) = f(-x)$, i.e. functions symmetric over $y$-axis. 
+
+> [!theorem] Odd Functions
+> $$\forall x \in A, f(x): A \mapsto B \to f(x) = -f(x)$$
+> A function is only odd if $f(x) = -f(x)$, i.e. the function is symmetric over the $x$-axis. 
+### Function Composition
+We can notate function composition as: 
+$$f \circ g(x) = f(g(x))$$
+That is; $g(x) = y$ for some $f(y) = z$ for instance. Whatever that *nested* function inside is equivalent to is plugged in as it's respective domain into the other function. 
+
+> Note that for $f \circ g(x)$: The Domain of $g(x)$
+
+
+
+
+
 
 
 
