@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-13T19:13:28.453-04:00
-edited_seconds: 380
+updated_at: 2026-09-13T21:24:51.088-04:00
+edited_seconds: 420
 course: PHY180H1
 tags:
   - PHY180H1
@@ -42,7 +42,7 @@ $$v=\bar{a}t + v_{0}\tag{3.1}$$
 --- 
 Now we will try to derive the other popularly known kinematics equations: 
 
-> Displacement Equation 1
+> [!axiom] Displacement Equation 1
 > $$x=\frac{1}{2}at^2 + v_{0}t + x_{0} \tag{k.1}$$
 > > [!theorem]- Derivation
 > > Take equation (3.1) and add a term of $v_{0}$ onto both sides, giving us: 
@@ -56,4 +56,5 @@ Now we will try to derive the other popularly known kinematics equations:
 > > And we get our final answer: 
 > > $$x=\frac{1}{2}at^2 + v_{0}t + x_{0}$$
 
-> 
+>[!axiom] Displacement Equation 2
+>This isn't really part of this textbook; but it's something that we have from SPH4U, so 
