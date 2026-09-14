@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T12:48:13.128-04:00
-edited_seconds: 530
+updated_at: 2026-09-14T13:07:22.981-04:00
+edited_seconds: 680
 course: ESC103H1
 tags:
   - ESC103H1
@@ -40,7 +40,7 @@ $$
 $$
 \vec{a}\cdot \vec{b} = \sum^n_{i=1}a_{i}b_{i}
 $$
-Note that if $\vec{a} = \vec{b}$; this simplifies to $\vec{a}\cdot \vec{a}=||\vec{a}||^2$. 
+Note that if $\vec{a} = \vec{b}$; this simplifies to $\vec{a}\cdot \vec{a}=||\vec{a}||^2$. That is; for any magnitude squared; we can resolve it into a dot-product with itself. 
 ### Properties
 The Dot Product operation is: 
 * Distributive:
@@ -52,7 +52,23 @@ The Dot Product operation is:
 	* Scalars do not fully distribute; they only distribute to one pair. 
 
 ## Geometric Interpretation
+Taken two vectors $\vec{a}$, $\vec{b}$, let's try to find the Magnitude of the difference between them ($||\vec{a}-\vec{b}||$): 
+$$
+||\vec{a}-\vec{b}|| = ?
+$$
+We can square this magnitude in order for us to represent it as a product of dot products: 
+$$||\vec{a}-\vec{b}||^2 = (\vec{a}-\vec{b})\cdot(\vec{a}+\vec{b})$$
+Expand and collect like terms: 
+$$||\vec{a}-\vec{b}||^2 = \vec{a}\cdot \vec{a} + \vec{b}\cdot\vec{b}-2\vec{a}\cdot\vec{b}$$
+$$||\vec{a}-\vec{b}||^2 = ||\vec{a}||^2 + ||\\\vec{b}||^2-2\vec{a}\cdot \vec{b}$$
+If we let $\vec{a}$ and $\vec{b}$ be some sides enclosing some angle $\theta$; then $c = \vec{a}-\vec{b}$. We can now define this situation as well through Cosine Law: 
+$$c^2 = a^2 +b^2 -2ab\cos \theta$$
+Then from here, we can see that: 
+$$\vec{a} \cdot \vec{b} = |\vec{a}||\vec{b}|\cos\theta$$
 
+### Implications
+* $\vec{a}\cdot \vec{b} >0$ implies $0<\theta<90$
+* $a$
 ## Triangle Inequality 
 The Triangle Inequality is a useful identity that arises out of the way Vector addition operates. Given two vectors $\vec{a}$ and $\vec{b}$; $\vec{a} + \vec{b}$ effectively creates the third side of a triangle. 
 
