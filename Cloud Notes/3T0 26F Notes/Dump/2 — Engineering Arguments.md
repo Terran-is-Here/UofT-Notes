@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T13:48:30.565-04:00
-edited_seconds: 400
+updated_at: 2026-09-14T13:54:49.220-04:00
+edited_seconds: 430
 course:
 tags:
   - ESC101H1
@@ -41,6 +41,8 @@ Generally:
 	* We may also require a qualifier (or constraint) to help support our claim. 
 	* We may also consider potential *counterclaims* that may arise; that is other views that may contrast our current point. 
 
+The Toulmin Structure *can* also be considered a method of developing arguments. Note 
+
 > [!theorem] Ground
 > The ground forms the fundamental backing for which we make our arguments; these form the context of the eventual claims that we form. 
 > > Note however that the *available information* varies per individual; consider what information comes from a personal source and what originates from a globally available dataset. 
@@ -63,5 +65,6 @@ Generally:
 > 
 > Note that the further we move away from the Ground, the more evidence and justification we need to do. 
 
-> [!theorem] Evide
-> 
+> [!theorem] Evidence & Justification 
+> These are logical / data-based figures which can *support* your claim. **At minimum; for an argument, you must have Evidence, Justification and a Claim.**
+>
