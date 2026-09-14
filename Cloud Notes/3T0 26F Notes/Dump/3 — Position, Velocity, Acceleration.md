@@ -1,12 +1,13 @@
 ---
-updated_at: 2026-09-11T22:49:09.482-04:00
-edited_seconds: 500
+updated_at: 2026-09-14T16:17:48.616-04:00
+edited_seconds: 560
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 3
-Date: 2026-09-11
-Week:
+Date: 2026-09-14
+Week: 2
+Created: September 11th 2026, 9:56:02 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[2 — Vectors (Physics)]]
@@ -19,6 +20,12 @@ Next: [[4 — 1D Kinematics]]
 
 --- 
 # Lecture Notes
+## Terminology
+* Position: The actual location of an object with respects to an origin (normally notated $x$)
+* Displacement is a vector that starts from an object's initial position and it's final position (normally notated $\vec{\Delta}x$)
+	* As a vector, it also has a magnitude. 
+* Path Length / Distance travelled (total distance from the initial position to the final position) (normally notated $d$)
+	* $\Delta \vec{x} \leq d$
 # Pre-Lecture Notes
 ## Distance and Displacement
 A key thing to note about acceleration, and motion in general—is that it is always based on a fixed(\*) point of reference. Displacement is generally defined as the change in position of an object: 

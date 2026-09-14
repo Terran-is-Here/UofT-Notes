@@ -1,11 +1,11 @@
 ---
-updated_at: 2026-09-14T09:22:26.539-04:00
-edited_seconds: 610
+updated_at: 2026-09-14T16:24:52.442-04:00
+edited_seconds: 680
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 4
-date: 2026-09-11
+date: 2026-09-17
 Week: 2
 Created: September 11th 2026, 10:41:21 pm
 ---
@@ -75,4 +75,13 @@ Now we will try to derive the other popularly known kinematics equations; the ot
 
 Just like in SPH4U / SPH3U, we can utilize these equations to solve a Kinematics problem with respects to one dimension.
 ## Free-Fall 
-Free-fall
+Free-fall problems generally operate on the assumption that a system's net acceleration is equivalent to gravity; that is $\bar{a} = a = g$. We can simply resubstitute these into our equations. 
+
+Note that with this new context; we can do some algebraic manipulation on our earlier equations to solve for solutions to problems with gravity. 
+
+> [!theorem] Impact Time 
+> Given a certain starting velocity, $v_{0}$, a starting displacement $x_{0}$, we can solve for the time it takes to impact to some surface ($x=0$ normally): Plug in our values; then we get: 
+> $$x = x_{0} + vt + \frac{1}{2}at^2$$
+> For sake of simplicity (for many cases of this problem), $x_{0} = 0$; then: 
+> $$x = vt + \frac{1}{2}at^2$$
+
