@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-09T17:25:59.353-04:00
-edited_seconds: 30
+updated_at: 2026-09-14T17:11:38.076-04:00
+edited_seconds: 40
 course: ESC180H1
 tags:
   - ESC180H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC180 Hub]]
 Previous: N/A
-Next: N/A 
+Next: [[3 — ESC180 Lecture 3 ]]
 
 --- 
-# Intro to Python
+lwk didnt write much 

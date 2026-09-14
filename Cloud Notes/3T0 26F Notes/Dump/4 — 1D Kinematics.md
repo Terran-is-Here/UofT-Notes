@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T16:58:27.829-04:00
-edited_seconds: 950
+updated_at: 2026-09-14T17:09:34.632-04:00
+edited_seconds: 960
 course: PHY180H1
 tags:
   - PHY180H1
@@ -11,7 +11,7 @@ Created: September 11th 2026, 10:41:21 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[3 — Position, Velocity, Acceleration]]
-Next: [[5 —]]
+Next: [[5 —2D Kinematics]]
 
 > [!quote] Textbook Chapters Discussed; 
 > 3.4-3.6
