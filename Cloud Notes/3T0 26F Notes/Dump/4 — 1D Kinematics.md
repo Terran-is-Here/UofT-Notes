@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T16:24:52.442-04:00
-edited_seconds: 680
+updated_at: 2026-09-14T16:47:55.509-04:00
+edited_seconds: 870
 course: PHY180H1
 tags:
   - PHY180H1
@@ -75,7 +75,7 @@ Now we will try to derive the other popularly known kinematics equations; the ot
 
 Just like in SPH4U / SPH3U, we can utilize these equations to solve a Kinematics problem with respects to one dimension.
 ## Free-Fall 
-Free-fall problems generally operate on the assumption that a system's net acceleration is equivalent to gravity; that is $\bar{a} = a = g$. We can simply resubstitute these into our equations. 
+Free-fall problems generally operate on the assumption that a system's net acceleration is equivalent to gravity; that is $\bar{a} = a = -g$. We can simply resubstitute these into our equations. 
 
 Note that with this new context; we can do some algebraic manipulation on our earlier equations to solve for solutions to problems with gravity. 
 
@@ -83,5 +83,25 @@ Note that with this new context; we can do some algebraic manipulation on our ea
 > Given a certain starting velocity, $v_{0}$, a starting displacement $x_{0}$, we can solve for the time it takes to impact to some surface ($x=0$ normally): Plug in our values; then we get: 
 > $$x = x_{0} + vt + \frac{1}{2}at^2$$
 > For sake of simplicity (for many cases of this problem), $x_{0} = 0$; then: 
-> $$x = vt + \frac{1}{2}at^2$$
+> $$0 = vt + \frac{1}{2}at^2$$
+> $$0 = t \left( v + \frac{1}{2}at \right)$$
+> Where solutions are $t=0$ and: 
+> $$v + \frac{1}{2}at = 0$$
+> Normally, $a = -g$ for free fall problems (downwards is -'ve)
+> $$\frac{1}{2}gt=v$$
+> $$t = \frac{2v}{g}$$
 
+With this logic; you can really adjust our earlier kinematics equations to solve for any question involving gravity in this context.
+## Integration and Differentiation
+Recall our definitions of Velocity and Acceleration. More generally, under Calculus, we define them as: 
+$$v(t) = \frac{d}{dt}x(t)$$
+$$
+a(t) = \frac{d}{dt}v(t)
+$$
+That is, velocity is the derivative of our function of displacement, and acceleration is the derivative of our velocity. From here, we can actually solve for an equation for displacement using calculus. 
+
+$$v(t) = \int \frac{d}{dt}v(t) dt \implies v(t) = \int a(t)dt +C_{1} $$
+Where $C_{1}$ is some constant of integration. We can use the same logic using our equation for displacement: 
+$$
+
+$$
