@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T08:57:23.536-04:00
-edited_seconds: 430
+updated_at: 2026-09-14T09:17:22.222-04:00
+edited_seconds: 510
 course: PHY180H1
 tags:
   - PHY180H1
@@ -56,5 +56,12 @@ Now we will try to derive the other popularly known kinematics equations:
 > > And we get our final answer: 
 > > $$x=\frac{1}{2}at^2 + v_{0}t + x_{0}$$
 
->[!axiom] Displacement Equation 2
->This isn't really part of this textbook; but it's something that we have from SPH4U, so 
+>[!axiom] Time-Independent Velocity
+>$$v^2 = v_{0} + 2a\Delta x$$
+>> [!theorem] Proof 
+>> Let's take equations $(3.1)$ and $(1.2)$ into the equation for $(2.1)$; that is: 
+>> $$v=at + v_{0} \text{ and } \bar{v} = \frac{v + v_{0}}{2} \to x_{t} = \bar{v}t + x_{0}$$
+>> We can solve our first equation into a term of time: 
+>> $$\frac{v-v_{0}}{a} = t$$
+>> Subbing both of these into equation $(2.1)$ then: 
+>> $$x_{t} = \frac{v + v_{0}}{2}*\frac{v-v_{0}}{a} + 
