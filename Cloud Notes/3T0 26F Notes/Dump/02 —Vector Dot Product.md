@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T11:10:11.745-04:00
-edited_seconds: 380
+updated_at: 2026-09-14T12:27:09.333-04:00
+edited_seconds: 430
 course: ESC103H1
 tags:
   - ESC103H1
@@ -15,6 +15,14 @@ Next: [[03 — Vector Projection]]
 
 --- 
 # Lecture Notes
+A good amount of the notes within these sections / this lecture (at least for the first half) have been covered within the previous note as is. 
+## Vector Definition
+Note that we don't really define the *starting points* of vectors. A vector with the same magnitude and angle are identical regardless of location; however we do have specific terms for these: 
+* A vector $\vec{v}$ at the origin is in the *standard position*. 
+
+## Properties of Vector Addition
+
+
 # Pre-Lecture Notes
 
 ## Dot Product

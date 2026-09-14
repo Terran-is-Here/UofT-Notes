@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T11:09:09.107-04:00
-edited_seconds: 70
+updated_at: 2026-09-14T12:12:13.609-04:00
+edited_seconds: 90
 course: ESC103H1
 tags:
   - ESC103H1
@@ -16,3 +16,9 @@ Next: N/A
 --- 
 # Lecture Notes
 # Pre-Lecture Notes
+For the purposes of this note; 
+## Scalar Projection
+
+## Vector Projection
+Vector projection is generally defined as: 
+$$$$
