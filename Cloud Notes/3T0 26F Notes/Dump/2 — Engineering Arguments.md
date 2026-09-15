@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T13:54:49.220-04:00
-edited_seconds: 430
+updated_at: 2026-09-15T08:50:41.952-04:00
+edited_seconds: 440
 course:
 tags:
   - ESC101H1
@@ -11,7 +11,7 @@ created:
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[1 — The Praxis Design Framework, PRA01 Debrief]]
-Next: 
+Next: [[03 — The Requirements Framework]]
 
 --- 
 # Lecture Notes
