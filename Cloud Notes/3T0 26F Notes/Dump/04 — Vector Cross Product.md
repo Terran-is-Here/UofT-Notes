@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T21:27:08.929-04:00
-edited_seconds: 210
+updated_at: 2026-09-15T17:15:16.021-04:00
+edited_seconds: 270
 course: ESC103H1
 tags:
   - ESC103H1
@@ -75,5 +75,14 @@ a_{2}b_{3} - a_{3}b_{2} \\
 a_{1}b_{2} - a_{2}b_{1}
 \end{bmatrix}
 $$
-
-
+(You can simply the determinants inside into the equations on the right.)
+## Geometric Interpretation
+An alternate mean for defining *a* cross product is: 
+$$
+||\vec{a}\times \vec{b}|| = ||\vec{a}||*||\vec{b}||\sin\theta
+$$
+or, conversely: 
+$$
+\vec{a} \times \vec{b} = ||\vec{b}|| * ||\vec{a}||
+$$
+Where $\theta$ is the angle between $\vec{a}$ and $\vec{b}$. A result of a cross-oprodu
