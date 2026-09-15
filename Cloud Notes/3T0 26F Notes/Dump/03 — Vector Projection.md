@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T20:50:56.242-04:00
-edited_seconds: 250
+updated_at: 2026-09-14T21:15:55.789-04:00
+edited_seconds: 260
 course: ESC103H1
 tags:
   - ESC103H1
@@ -11,7 +11,7 @@ Created: September 14th 2026, 11:08:55 am
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[02 —Vector Dot Product]]
-Next: N/A
+Next: [[04 — Vector Cross Product]]
 
 --- 
 # Lecture Notes
