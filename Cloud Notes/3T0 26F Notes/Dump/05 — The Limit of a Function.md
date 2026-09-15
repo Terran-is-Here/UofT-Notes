@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T11:04:49.525-04:00
-edited_seconds: 470
+updated_at: 2026-09-14T21:42:10.728-04:00
+edited_seconds: 480
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,8 +10,9 @@ Week: 2
 created:
 Created: September 12th 2026, 11:37:56 am
 ---
+Hub: [[ESC194 Hub]]
 Previous: [[02 — The Real Number System]]
-Next: N/A 
+Next: [[06 — Precise Limit Definition]]
 
 > [!quote] Material Source
 > Chapter 1.5 of the Textbook ([[Stewart 9th Edition Textbook.pdf#page=88|Stewart 9th Edition Textbook, p.51]])
