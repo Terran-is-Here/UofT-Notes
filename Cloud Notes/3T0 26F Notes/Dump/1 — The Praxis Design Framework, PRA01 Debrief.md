@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T13:22:57.600-04:00
-edited_seconds: 380
+updated_at: 2026-09-15T09:17:54.915-04:00
+edited_seconds: 400
 course: ELC101
 tags:
   - ESC101H1
@@ -20,8 +20,11 @@ Writing To Think: [[1.1 — Supplemental (Praxis)]]
 Overall; recall that praxis is the following framework: 
 * Framing: Defining an opportunity with stakeholders (w/requirements) 
 	* Stakeholders in general include everyone that would be affected with this project. 
+	* That is, understanding the situation
 * Diverging: Exploring a wide array of ideas and alternatives to solve the Framed opportunity. 
+	* i.e. brainstorming.
 * Converge: Making decisions and justifying recommendations, that is whittling down concepts formed from divergence. 
+	* i.e. disposing of some ideas down the road
 
 The goal of the Praxis Framework is to ultimately combine all of these, 
 ## Overall Language
