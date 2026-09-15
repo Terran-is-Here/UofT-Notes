@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-15T09:49:53.345-04:00
-edited_seconds: 220
+updated_at: 2026-09-15T09:52:15.018-04:00
+edited_seconds: 230
 course:
 tags:
 "Lecture #": 4
@@ -24,6 +24,14 @@ Stakeholders (individuals impacting or is impacted by a project) have a direct s
 > 
 > **Requirements** and **Evaluation Criteria** would be then part of the design requirements, informed by the NGOs in the process. 
 
+> [!theorem] Requirements
+> What the design **must do** to meet the need (defined by stakeholders). Basically quantified objectives. 
+> > Aspect/Property, with a unit and limit. 
+
+> [!theorem] Evaluation Criteria
+> To describe a potentially better solution. 
+> > Aspect/Property, with a unit and utility gradient (i.e. what is being optimized) 
+> > An example of a utility gradient would be minimizing mass. 
 
 ### NGOs
 > [!theorem] Needs
