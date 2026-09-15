@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-15T09:29:46.702-04:00
-edited_seconds: 140
+updated_at: 2026-09-15T09:49:53.345-04:00
+edited_seconds: 220
 course:
 tags:
 "Lecture #": 4
@@ -23,4 +23,22 @@ Stakeholders (individuals impacting or is impacted by a project) have a direct s
 > 
 > 
 > **Requirements** and **Evaluation Criteria** would be then part of the design requirements, informed by the NGOs in the process. 
-> 
+
+
+### NGOs
+> [!theorem] Needs
+> A clear statement of the root problem to solve / opportunity to meet. 
+
+> [!theorem] Goals
+> What the system/project must do meet the need / what does success for the project look like? 
+
+> [!theorem] Objectives
+> Specific, *measurable* targets to allow us to evaluate if goals are being met or not. 
+
+To make an objective measurable, the property should be some *standardized* unit in some way (ideally). Note however that real world standards differ often from the ideal standardized unit. 
+
+You *always* need to be aware with theoretical ideals, and practical reality. You need to find a *balance* of both—being workable for you as well as acceptable in the profession. 
+
+
+
+
