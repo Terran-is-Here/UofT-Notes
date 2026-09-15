@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T20:49:36.651-04:00
-edited_seconds: 220
+updated_at: 2026-09-14T20:50:56.242-04:00
+edited_seconds: 250
 course: ESC103H1
 tags:
   - ESC103H1
@@ -24,11 +24,14 @@ This is notated as the projection of $\vec{a}$ on $\vec{b}$. Recall the definiti
 $$\vec{a} \cdot \vec{b} = ||\vec{a}||*||\vec{b}||\cos \theta$$
 Multiplying our earlier equation by $\frac{||\vec{b}||}{||\vec{b}||}$ gives us: 
 $$
-\text{proj}_{\vec{b}}\vec{a} = \frac{||\vec{a}||*||\vec{b}||\cos\theta}{||\vec{b}||} = \frac{\vec{a}\cdot \vec{b}\cos\theta}{||\vec{b}||}
+\text{proj}_{\vec{b}}\vec{a} = \frac{||\vec{a}||*||\vec{b}||\cos\theta}{||\vec{b}||} = \frac{\vec{a}\cdot \vec{b}}{||\vec{b}||}
 $$
 ## Vector Projection
 Vector projection is generally defined as: 
 $$\text{vector proj}_{\vec{b}}\vec{a} = \text{proj}_{\vec{b}}\vec{a}* \hat{b} = \text{proj}_{\vec{b}}\vec{a} * \frac{\vec{b}}{||\vec{b}||}$$
 We can sub in our extended equation to our dot product: 
-$$\text{vector proj}_{\vec{b}}\vec{a}= \frac{\vec{a}\cdot \vec{b}\cos\theta}{||\vec{b}||} * \frac{\vec{b}}{||\vec{b}||}$$
-We can simplify the denominator into a dot product as well; recall that 
+$$\text{vector proj}_{\vec{b}}\vec{a}= \frac{\vec{a}\cdot \vec{b}}{||\vec{b}||} * \frac{\vec{b}}{||\vec{b}||}$$
+We can simplify the denominator into a dot product as well; recall that $||\vec{b}||*||\vec{b}|| =\vec{b}\cdot \vec{b}$
+$$
+\text{vector proj}_{\vec{b}}\vec{a}=\frac{\vec{a}\cdot \vec{b}}{\vec{b}\cdot \vec{b}}\vec{b}
+$$
