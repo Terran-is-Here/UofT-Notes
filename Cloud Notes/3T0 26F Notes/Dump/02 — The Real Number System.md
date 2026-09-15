@@ -332,6 +332,8 @@ Template:
 > > $$aw=cu$$
 > > $$bw=cv$$
 
+^041361
+
 ### Inequalities with X and Y 
 When considering inequalities with terms of both $x$ and $y$, we have to consider that we are now trying to find an inequality of a graph / slope (or in other words; the bounds are defined by functions in this instance and not pure static numbers )
 

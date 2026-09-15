@@ -1,11 +1,11 @@
 ---
-updated_at: 2026-09-14T21:15:55.789-04:00
-edited_seconds: 260
+updated_at: 2026-09-15T17:32:50.423-04:00
+edited_seconds: 310
 course: ESC103H1
 tags:
   - ESC103H1
 "Lecture #": 0
-Lecture Date: 2026-09-14
+Lecture Date: 2026-09-15
 Week:
 Created: September 14th 2026, 11:08:55 am
 ---
@@ -15,8 +15,19 @@ Next: [[04 — Vector Cross Product]]
 
 --- 
 # Lecture Notes
+## Projection
+Retake our earlier definition(s) of a vector: 
+$$
+\vec{a} = \begin{bmatrix}
+a_{1} \\
+a_{2}
+\end{bmatrix} = a_{1}\hat{i} + a_{2}\hat{j}
+$$
+The left-most term implies that we find our $a_{1}$ term as a projection of $\vec{a}$ onto $\hat{i}$. Projection is essentially resolving some vector $\vec{a}$ into it's projections in $x,y,z$ (or more specifically, $\hat{i},\hat{j},\hat{k}$). 
+
+Note that for $\mathbb{R}^2$, $a_{1}\hat{i}$ and $a_{2}\hat{j}$, these two corresponding projections are orthogonal complements of eachother. 
 # Pre-Lecture Notes
-For the purposes of this note; let $\vec{a}$ and $\vec{b}$ be two vectors; with the angle between them in tail-to-tail being notated as $\theta$
+For the purposes of this note; let $\vec{a}$ and $\vec{b}$ be two vectors; with the angle between them in **tail-to-tail** being notated as $\theta$. 
 ## Scalar Projection
 The scalar projection of a vector following the assumptions above can be generally defined as the relation below: 
 $$\text{proj}_{\vec{b}}\vec{a} =||\vec{a}||\cos \theta$$

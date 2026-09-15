@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T13:09:23.037-04:00
-edited_seconds: 700
+updated_at: 2026-09-15T17:28:06.007-04:00
+edited_seconds: 880
 course: ESC103H1
 tags:
   - ESC103H1
@@ -19,6 +19,40 @@ A good amount of the notes within these sections / this lecture (at least for th
 ## Vector Definition
 Note that we don't really define the *starting points* of vectors. A vector with the same magnitude and angle are identical regardless of location; however we do have specific terms for these: 
 * A vector $\vec{v}$ at the origin is in the *standard position*. 
+
+## Cauchy-Schwarz-Bunakowsky Inequality
+The CSB Inequality states that: 
+>[!theorem] CSB Inequality
+>$$|\vec{a}\cdot \vec{b}| \leq ||\vec{a}|| *||\vec{b}||$$
+
+We can show this through the following algebra; retake the definition of the Dot Product: 
+$$\vec{a} \cdot \vec{b} = ||\vec{a}||*||\vec{b}||\cos\theta$$
+Note that $\cos\theta$ will always range between $0\leq|\cos\theta|\leq{1}$, leading us to the CSB inequality: 
+$$|\vec{a}\cdot \vec{b}| = ||\vec{a}|| *||\vec{b}|| * |\cos\theta| \implies |\vec{a}\cdot \vec{b}| \leq ||\vec{a}|| * ||\vec{b}||$$
+A direct algebraic proof can be found in [[02 — The Real Number System#^041361|The Real Number System (ESC194 Note)]]
+
+## Triangle Inequality
+> [!abstract] Triangle Inequality 
+> Let $\vec{a}$ and $\vec{b}$ denote two vectors; whose sum is $\vec{a} + \vec{b} = \vec{c}$. Ergo: 
+> $$||\vec{a}|| + ||\vec{b}|| \geq ||\vec{a} + \vec{b}||$$
+
+We can show this through the following: Recall how $||\vec{a}||^2 =\vec{a}\cdot \vec{a}$; then: 
+$$||\vec{a}\cdot \vec{b}|| = \sqrt{ (\vec{a}+\vec{b}) \cdot(\vec{a}+\vec{b}) }$$
+Expanding: 
+$$
+||\vec{a}\cdot \vec{b}|| = \sqrt{ \vec{a}\cdot \vec{a} + \vec{b}\cdot \vec{b} + 2\vec{a}\vec{b} }
+$$
+
+Adding and removing a term of $2||\vec{a}||||\vec{b}||$: 
+$$
+||\vec{a}\cdot \vec{b}|| = \sqrt{ \vec{a}\cdot \vec{a} + \vec{b}\cdot \vec{b} +2||\vec{a}||||\vec{b}|| -2||\vec{a}||||\vec{b}||+ 2\vec{a}\cdot \vec{b} }
+$$
+We can simplify this: 
+$$
+||\vec{a}\cdot \vec{b}|| = \sqrt{ (||\vec{a}|| + ||\vec{b}||)^2 + 2(\vec{a}\cdot \vec{b} - |\vec{a}||\vec{b}|) }
+$$
+Recall from the CSB Theorem that our term on the right will always be negative, ergo triangle inequality holds. 
+
 # Pre-Lecture Notes
 
 ## Dot Product / Scalar Product
