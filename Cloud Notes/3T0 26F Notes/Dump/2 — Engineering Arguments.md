@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-15T08:50:41.952-04:00
-edited_seconds: 440
+updated_at: 2026-09-15T11:22:46.571-04:00
+edited_seconds: 450
 course:
 tags:
   - ESC101H1
@@ -67,4 +67,6 @@ The Toulmin Structure *can* also be considered a method of developing arguments.
 
 > [!theorem] Evidence & Justification 
 > These are logical / data-based figures which can *support* your claim. **At minimum; for an argument, you must have Evidence, Justification and a Claim.**
->
+
+> [!theorem] Counterpoint
+> These are potential counterpoints to your argument that you should consider when making your claim. 
