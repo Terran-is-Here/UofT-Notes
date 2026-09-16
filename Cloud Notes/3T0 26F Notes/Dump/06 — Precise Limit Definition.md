@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-15T16:22:46.174-04:00
-edited_seconds: 170
+updated_at: 2026-09-16T13:44:58.273-04:00
+edited_seconds: 200
 course: ESC194H1
 tags:
   - ESC194H1
@@ -27,4 +27,8 @@ $$|f(x)-L|<\epsilon$$
 
 
 $$0<|x-c|<\delta$$
-Note that our first inequality gives us our equivalent $y$-tolerance, and our second inequality gives us our equivalent $x$-compliance: 
+Note that our first inequality gives us our equivalent $y$-tolerance, and our second inequality gives us our equivalent $x$-compliance. The main goal of using Epsilon Delta is found within the first line: 
+$$
+\forall\epsilon >0,\exists\delta > 0
+$$
+That is, for all $\epsilon$ greater than 0, there must exist a $\delta$ greater than 0. We need to find a consistent definition for $\delta$ with respects to $\epsilon$ 
