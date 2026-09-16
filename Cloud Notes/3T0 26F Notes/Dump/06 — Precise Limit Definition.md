@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-16T15:27:52.464-04:00
-edited_seconds: 210
+updated_at: 2026-09-16T15:36:28.477-04:00
+edited_seconds: 230
 course: ESC194H1
 tags:
   - ESC194H1
@@ -31,4 +31,5 @@ Note that our first inequality gives us our equivalent $y$-tolerance, and our se
 $$
 \forall\epsilon >0,\exists\delta > 0
 $$
-That is, for all $\epsilon$ greater than 0, there must exist a $\delta$ greater than 0. We need to find a consistent definition for $\delta$ with respects to $\epsilon$ 
+That is, for all $\epsilon$ greater than 0, there must exist a $\delta$ greater than 0. We need to find a consistent definition for $\delta$ with respects to $\epsilon$. We are *given* $\epsilon$. 
+
