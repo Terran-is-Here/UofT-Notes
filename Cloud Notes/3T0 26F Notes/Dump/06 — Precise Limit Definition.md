@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-16T15:36:28.477-04:00
-edited_seconds: 230
+updated_at: 2026-09-16T17:26:23.937-04:00
+edited_seconds: 360
 course: ESC194H1
 tags:
   - ESC194H1
@@ -32,4 +32,24 @@ $$
 \forall\epsilon >0,\exists\delta > 0
 $$
 That is, for all $\epsilon$ greater than 0, there must exist a $\delta$ greater than 0. We need to find a consistent definition for $\delta$ with respects to $\epsilon$. We are *given* $\epsilon$. 
+### Linear Case 
+Take the following function: 
+$$
+\lim_{ x \to 2 } f(x) = 2x+4 = 8 
+$$
+Taking our earlier definition, then we come with the following: 
+* Given $\epsilon >0$, there exists a $\delta> 0$ such that: 
+$$|f(x) -L| < \epsilon$$
+$$
+0 < |x-a| < \delta
+$$
 
+> [!axiom] Proof 
+> Fill in our definitions for the two inequalities we have above: 
+> $$|2x+4-8| < \epsilon$$
+> $$0<|x-2|<\delta$$
+> Simplify our first inequality: 
+> $$|2x-4| < \epsilon$$
+> Note that we can factor this; ergo: 
+> $$2|x-2| < \epsilon$$
+> Recall how $|x-2| <\delta$, then this implies that $\delta = \frac{\epsilon}{2}$. Since we have defined $\delta$ in terms of $\epsilon$, this holds for all values of $\epsilon$, ergo the limit exists. 
