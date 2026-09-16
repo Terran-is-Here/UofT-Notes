@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-15T17:15:16.021-04:00
-edited_seconds: 280
+updated_at: 2026-09-16T09:12:42.991-04:00
+edited_seconds: 290
 course: ESC103H1
 tags:
   - ESC103H1
@@ -81,8 +81,8 @@ An alternate mean for defining *a* cross product is:
 $$
 ||\vec{a}\times \vec{b}|| = ||\vec{a}||*||\vec{b}||\sin\theta
 $$
-or, conversely: 
+or, conversely where $\hat{n}$ is a vector normal to the plane:
 $$
-\vec{a} \times \vec{b} = ||\vec{b}|| * ||\vec{a}||
+\vec{a} \times \vec{b} = ||\vec{b}|| * ||\vec{a}||*\sin\theta * \vec{n}
 $$
-Where $\theta$ is the angle between $\vec{a}$ and $\vec{b}$. A result of a cross-oprodu
+Where $\theta$ is the angle between $\vec{a}$ and $\vec{b}$. Cross product results are generally defined as being perpendicular to the plane formed by the other two vectors listed. 
