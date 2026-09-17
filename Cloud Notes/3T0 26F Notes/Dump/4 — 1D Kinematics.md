@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T17:09:34.632-04:00
-edited_seconds: 960
+updated_at: 2026-09-17T16:33:06.179-04:00
+edited_seconds: 1090
 course: PHY180H1
 tags:
   - PHY180H1
@@ -17,6 +17,39 @@ Next: [[5 —2D Kinematics]]
 > 3.4-3.6
 --- 
 # In-Lecture Notes
+### Motion with Constant Acceleration
+From $v=v_{0}+at$, we can integrate this into a term for displacement: 
+$$
+x - x_{0} = \int^t_{0}v(t')dt' + x_{0} = \left[v_{0}t' + \frac{at'}{2}\right]^{t}_{0}
+$$
+$$
+x-x_{0} = v_{0}t + \frac{at^2}{2}
+$$
+$$
+x = x_{0} + v_{0}t + \frac{at^2}{2}\tag{3.13 in the textbook}
+$$
+
+From here, using $v = v_{0}+at$ and $(3.13)$, we can solve for a term of *average velocity*: 
+$$
+\bar{v} = \frac{\Delta v}{\Delta t} = \frac{x-x_{0}}{t} 
+$$
+$$
+\frac{\left( v_{0}t  + \frac{at^2}{2} \right)}{t} = v_{0} + \frac{at}{2}
+$$
+$$
+v_{0}  +\frac{v-v_{0}}{2}
+$$
+$$
+\bar{v} = \frac{v+v_{0}}{2}
+$$
+From this, recall that: 
+$$
+\bar{v} = \frac{\Delta x}{t} = \frac{x-x_{0}}{t}
+$$
+$$
+\frac{v+v_{0}}{2} = \frac{x-x_{0}}{t} \implies x = \left( \frac{v+v_{0}}{2} \right)
+$$
+
 # Pre-Lecture Notes
 ## Kinematics Equations
 This section will detail the derivation and usage of some kinematics equations for use in $1d$ (really, $nD$) problems. 
