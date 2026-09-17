@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T17:45:17.533-04:00
-edited_seconds: 180
+updated_at: 2026-09-17T14:52:07.450-04:00
+edited_seconds: 190
 course: PHY180H1
 tags:
   - PHY180H1
@@ -12,7 +12,7 @@ Created: September 14th 2026, 5:22:05 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[4 — 1D Kinematics]]
-Next: N/A 
+Next: [[6 — Rotational Kinematics]]
 
 > [!quote] Textbook Reading: 
 > 4.1-4.3 

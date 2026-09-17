@@ -22,7 +22,7 @@ Mark Breakdown:
 | Assessment / Deliverable       | Weight | Dates                                                     |
 | ------------------------------ | ------ | --------------------------------------------------------- |
 | In-Class Quizzes               | 5%     | During LEC (1/2 per week)                                 |
-| Homework Assignments (10x)     | 5%     | Every Monday,right before midnight.                       |
+| Homework Assignments (10x)     | 5%     | Every Monday, right before midnight.                      |
 | Practical Activities / Surveys | 10%    | During PRA (1/week)                                       |
 | Term Tests                     | 40%    | Oct 8 (6pm) for TT1<br>Nov 16 (9am) for TT2               |
 | Group Presentations            | 5%     | During PRAs on the following dates:<br>Nov 17, 18, 24, 25 |
