@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T13:59:30.185-04:00
-edited_seconds: 1040
+updated_at: 2026-09-17T14:34:19.890-04:00
+edited_seconds: 1160
 course:
 tags:
   - ESC194H1
@@ -201,6 +201,13 @@ $$|y-L| < \epsilon \to |f(x) - L| <\epsilon$$
 This now means a range of $y$ values from $(L-\epsilon,L+\epsilon)$. 
 
 For instance: Find the following: 
-$$\left|\frac{x}{x+2}\right| < 1$$
+> $$\left|\frac{x}{x+2}\right| < 1$$
+
 Note that since our absolute values can be distributed, then: 
 $$|x| < |x+2|$$
+We can solve via cases: 
+* $x > 0 \implies |x| = x, x>0 \implies x+2 >2>0 \implies |x+2| = x+2 \to 0<2$ (Which leads us to say that for $x>0$, all values of $x$ hold.)
+* $x<0 \implies |x| = -x$
+	* $x+2 > 0 \implies |x+2| = x+2 \implies -x < x+2 \implies -2x < 2 \implies x>-1$
+	* $x+2 < 0 \implies |x+2| = -(x+2) \implies -x < -x-2 \implies 0 < -2$ which isn't true. 
+Our solution set is therefore: $x\in (-1,\infty)$
