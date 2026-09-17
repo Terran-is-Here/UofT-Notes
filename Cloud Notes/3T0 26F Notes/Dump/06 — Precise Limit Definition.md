@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T09:21:18.655-04:00
-edited_seconds: 380
+updated_at: 2026-09-17T13:56:41.598-04:00
+edited_seconds: 400
 course: ESC194H1
 tags:
   - ESC194H1
@@ -27,7 +27,10 @@ $$|f(x)-L|<\epsilon$$
 
 whenever: 
 $$0<|x-c|<\delta$$
-Or: 
+> Note that the above line implies that $x \neq c$. as that would lead to the $0<\dots$ inequality becoming false.
+
+
+This can all be written in one line as: 
 $$0<|x-c|<\delta \implies |f(x)-L| < \epsilon$$
 Note that our first inequality gives us our equivalent $y$-tolerance, and our second inequality gives us our equivalent $x$-compliance. The main goal of using Epsilon Delta is found within the first line: 
 $$

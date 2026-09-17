@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T13:39:48.871-04:00
-edited_seconds: 840
+updated_at: 2026-09-17T13:59:30.185-04:00
+edited_seconds: 1040
 course:
 tags:
   - ESC194H1
@@ -182,4 +182,25 @@ We will first square both sides; giving us:
 $$\frac{x}{(x+1)}< \frac{x+1}{x+2}$$
 Cross multiply and cancel: 
 $$x(x+2) < (x+1)^2 \implies x^2 + 2x < x^2 + 2x + 1 \implies 0<1$$
-This ends with an inherently true statement. Note that the square root operation for inequalities is only properly defined if and only if both sides of
+This ends with an inherently true statement. Note that squaring is only defined for inequalities as:
+> Given $a < b$, $$a^2 < b^2 \iff|a| < |b|$$. 
+#### Absolute Value Inequalities
+The main concept for Absolute Value Inequalities is that, as we break up our inequality into cases; the resulting set of inequalities / values must also comply with that original case. 
+
+### Intro to Epsilon-Delta
+
+Take the following inequality (Very closely linked to [[06 — Precise Limit Definition]]). 
+$$|x-4| < 10^{-100}$$
+Note that graphically; this means that we are looking for a value of $x$ in the range of $\{ 4-10^{-100},4+10^{-100} \}$; that is some tiny range around $x$. Consider this as: 
+
+$$|x-c| <\delta$$
+This now means a range between $(c-\delta,c+\delta)$. Consider that if $0 < |x-c| < \delta \implies x\neq c$! 
+
+Now, consider the following inequality: 
+$$|y-L| < \epsilon \to |f(x) - L| <\epsilon$$
+This now means a range of $y$ values from $(L-\epsilon,L+\epsilon)$. 
+
+For instance: Find the following: 
+$$\left|\frac{x}{x+2}\right| < 1$$
+Note that since our absolute values can be distributed, then: 
+$$|x| < |x+2|$$
