@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T13:20:10.590-04:00
-edited_seconds: 550
+updated_at: 2026-09-17T13:39:48.871-04:00
+edited_seconds: 840
 course:
 tags:
   - ESC194H1
@@ -140,9 +140,46 @@ $$(x+2)(x-3)>0$$
 We know that $x=-2,3 \to f(x)=0$. We simply just need to solve for the regions in which this function is *positive* (normally via a test table/sign table and testing values), where this is true when $x\in(-\infty,-2)\cup(3,\infty)$. 
 
 How about reciprocals? take the following: 
-> What set is defined by $\frac{x-1}{x+1}$
+> What set is defined by $\frac{x-1}{x+1}>1$? 
+
+One method we can solve this is by solving it in terms of cases. Take $x+1 >0 \implies x>-1$
+$$x-1 > x+1 \implies -1>1$$
+This *cannot* ever be true, ergo this case is never true. Take $x+1<0 \implies x<-1$; implying $x$ is negative; thus: 
+$$x-1 < x+1$$
+$$-1 < 1$$
+This statement is always true; ergo the only solution set for this problem is $x\in (-\infty,-1)$. 
+
+The other case we can solve for is by moving everything to one side: 
+$$\frac{x-1}{x+1}-1 >0 $$
+$$\frac{x-1}{x+1}-\frac{x+1}{x+1} >0 $$
+$$\frac{-2}{x+1}>0$$
+From here, we can solve for cases for the sign of this; i.e. the sign of $(x+1)$. We know this will be true if $x+1<0 \implies x<-1$, getting us the same solution set of $x\in (-\infty, -1)$
+
+Take the following: 
+> What set is defined by $$\frac{2x+8}{x^2+8x+7}$$
+
+We can factor this: 
+$$\frac{2(x+4)}{(x+1)(x+7)}>0$$
+We have to now consider once more using the sign table the following inequality of $(x+4)(x+1)(x+7)>0$. Solve for roots and work from there on a sign table to find values of $x$ that are positive, giving us the solution set of $x\in(-7,-4)\cup(-1,\infty)$.
 
 
 
+#### Proving Inequalities
+Given that: 
+> $0 \leq a\leq b$, show that $$\frac{a}{1+a}\leq \frac{b}{1+b}$$
 
+Since $a \land b\geq 0$, they are positive, ergo our denominators are positive, meaning that we can cross-multiply: 
+$$a(1+b) \leq b(1+a)$$
+$$a + ab \leq b + ab$$
+Ergo, $a \leq b$. The rule of thumb for proofs is that they should be reversible operations, that is using the result, we can return to our original basis, and vice-versa; 
+$$a \leq b =a + ab \leq b + ab = a(1+b) \leq b(1+a) \implies \frac{a}{1+a} \leq \frac{b}{1+b}$$
+This is only true if and only if $a$ and $b$ are strictly positive; that is $0\leq a\leq b$. 
 
+Given that: 
+> $$x<0 \implies \sqrt{\frac{ x }{x+1}} <\sqrt{ \frac{x+1 }{x+2}}$$
+
+We will first square both sides; giving us: 
+$$\frac{x}{(x+1)}< \frac{x+1}{x+2}$$
+Cross multiply and cancel: 
+$$x(x+2) < (x+1)^2 \implies x^2 + 2x < x^2 + 2x + 1 \implies 0<1$$
+This ends with an inherently true statement. Note that the square root operation for inequalities is only properly defined if and only if both sides of
