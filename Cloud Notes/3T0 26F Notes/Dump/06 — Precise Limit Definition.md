@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-16T17:26:23.937-04:00
-edited_seconds: 360
+updated_at: 2026-09-16T21:49:25.471-04:00
+edited_seconds: 370
 course: ESC194H1
 tags:
   - ESC194H1
@@ -25,8 +25,10 @@ $$|f(x)-L|<\epsilon$$
 > Note that the above line can be rewritten as:
 > $$-\epsilon+L < f(x) < \epsilon + L$$
 
-
+whenever: 
 $$0<|x-c|<\delta$$
+Or: 
+$$0<|x-c|<\delta \implies |f(x)-L| < \epsilon$$
 Note that our first inequality gives us our equivalent $y$-tolerance, and our second inequality gives us our equivalent $x$-compliance. The main goal of using Epsilon Delta is found within the first line: 
 $$
 \forall\epsilon >0,\exists\delta > 0
