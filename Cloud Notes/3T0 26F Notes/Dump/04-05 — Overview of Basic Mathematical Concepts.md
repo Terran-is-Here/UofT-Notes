@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-14T11:57:38.395-04:00
-edited_seconds: 490
+updated_at: 2026-09-17T13:20:10.590-04:00
+edited_seconds: 550
 course:
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week: 2
 created:
 Created: September 14th 2026, 11:05:13 am
 ---
-Previous: [[02 — The Real Number System]]
+Previous: [[02 — The Real Number System]], 
 Next: [[05 — The Limit of a Function]]
 
 > [!caution] Note
@@ -122,8 +122,25 @@ Statements resolve into a true/false statement: such as $1+3=4$ and $2 <6$ are s
 
 Statements do not include *specifications* for values; such as a set of values or a singular value for a variable.
 
+#### Inequalities with Variables
+Take the following example: 
+> What set is defined by the inequality of $-2(x-3) > 12$, that is, what values of x satisfy this inequality? 
 
+We can do some basic algebra to solve for this: 
+$$(x-3) < -6$$
+$$x < -3$$
+Therefore, $x\in (-\infty, -3)$. In general, for inequalities with variables; we seek to solve for a set/range of values that *that* respective variable must be in order for it to be true.
 
+Take the following: 
+> What set is defined by $5(x^2-x-6)>0$? 
+
+We can do some basic algebra to isolate; 
+$$(x^2-x-6) > 0$$
+$$(x+2)(x-3)>0$$
+We know that $x=-2,3 \to f(x)=0$. We simply just need to solve for the regions in which this function is *positive* (normally via a test table/sign table and testing values), where this is true when $x\in(-\infty,-2)\cup(3,\infty)$. 
+
+How about reciprocals? take the following: 
+> What set is defined by $\frac{x-1}{x+1}$
 
 
 

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-15T10:38:14.969-04:00
-edited_seconds: 480
+updated_at: 2026-09-17T13:11:43.907-04:00
+edited_seconds: 490
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,7 +11,7 @@ created:
 Created: September 12th 2026, 11:37:56 am
 ---
 Hub: [[ESC194 Hub]]
-Previous: [[02 — The Real Number System]]
+Previous: [[02 — The Real Number System]], [[04-05 — Overview of Basic Mathematical Concepts]]
 Next: [[06 — Precise Limit Definition]]
 
 > [!quote] Material Source
