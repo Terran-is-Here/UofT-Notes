@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T16:33:06.179-04:00
-edited_seconds: 1090
+updated_at: 2026-09-17T16:52:12.910-04:00
+edited_seconds: 1220
 course: PHY180H1
 tags:
   - PHY180H1
@@ -47,8 +47,22 @@ $$
 \bar{v} = \frac{\Delta x}{t} = \frac{x-x_{0}}{t}
 $$
 $$
-\frac{v+v_{0}}{2} = \frac{x-x_{0}}{t} \implies x = \left( \frac{v+v_{0}}{2} \right)
+\frac{v+v_{0}}{2} = \frac{x-x_{0}}{t} \implies x = t\left( \frac{v+v_{0}}{2} \right) + x_{0}
 $$
+Then, we can also solve for final velocity through the following: 
+$$
+v = v_{0} + at \implies t = \frac{v-v_{0}}{a}
+$$
+Plug it into our equation above, then: 
+$$x = \left(\frac{v-v_{0}}{a}\right)\left( \frac{v+v_{0}}{2} \right) + x_{0}$$
+Simplifying: 
+$$
+x-x_{0} = \left( \frac{v^2-v_{0}^2}{2a} \right)
+$$
+$$
+2a(x-x_{0}) = v^2 - v_{0}^2 \implies v^2 = v_{0}^2 + 2a(\Delta x)
+$$
+
 
 # Pre-Lecture Notes
 ## Kinematics Equations
@@ -74,11 +88,12 @@ $$v=\bar{a}t + v_{0}\tag{3.1}$$
 
 --- 
 Now we will try to derive the other popularly known kinematics equations; the others are put here for reference; 
-* $\bar{v} =\frac{v_{t} + v_{0}}{2}$
-* $v = \bar{a}t + v_{0}$
+* $\bar{v} =\frac{v_{t} + v_{0}}{2}$ (Does not contain acceleration) 
+* $v = \bar{a}t + v_{0}$ (Does not contain displacement!)
 * $x = x_{0} + \bar{v}t$
 
 > [!axiom] Displacement Equation 1
+> This does NOT have any final velocity as a term. 
 > $$x=\frac{1}{2}at^2 + v_{0}t + x_{0} \tag{k.1}$$
 > > [!theorem]- Derivation
 > > Take equation (3.1) and add a term of $v_{0}$ onto both sides, giving us: 
@@ -93,6 +108,7 @@ Now we will try to derive the other popularly known kinematics equations; the ot
 > > $$x=\frac{1}{2}at^2 + v_{0}t + x_{0}$$
 
 >[!axiom] Time-Independent Velocity
+>This does not have time as a term. 
 >$$v^2 = v_{0}^2 + 2a\Delta x \tag{k.2}$$
 >> [!theorem]- Proof 
 >> Let's take equations $(3.1)$ and $(1.2)$ into the equation for $(2.1)$; that is: 
@@ -108,7 +124,9 @@ Now we will try to derive the other popularly known kinematics equations; the ot
 
 Just like in SPH4U / SPH3U, we can utilize these equations to solve a Kinematics problem with respects to one dimension.
 ## Free-Fall 
-Free-fall problems generally operate on the assumption that a system's net acceleration is equivalent to gravity; that is $\bar{a} = a = -g$. We can simply resubstitute these into our equations. 
+Free-fall problems generally operate on the assumption that a system's net acceleration is equivalent to gravity; that is $\bar{a} = a = -g$. We can simply resubstitute these into our equations. **We assume that air resistance is nonexistent.**
+
+**For the purposes of this course, g=9.8**. If air resistance is non-negligible, you cannot neglect it in your calculations. 
 
 Note that with this new context; we can do some algebraic manipulation on our earlier equations to solve for solutions to problems with gravity. 
 
