@@ -1,11 +1,11 @@
 ---
-updated_at: 2026-09-18T16:35:03.931-04:00
-edited_seconds: 690
+updated_at: 2026-09-18T16:51:03.895-04:00
+edited_seconds: 820
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 5
-Lecture Date: 2026-09-14
+Lecture Date: 2026-09-18
 Week: 2
 created:
 Created: September 14th 2026, 5:22:05 pm
@@ -19,6 +19,8 @@ Next: [[6 — Rotational Kinematics]]
 --- 
 
 # Lecture Notes
+No explicitly separate notes have been written in this lecture, instead please refer to the following addendum blocks added during lecture: 
+* [[5 —2D Kinematics#^LectureAddendum1|Addendum 1]]
 # Pre-Lecture Notes
 
 ### 2D Extension
@@ -63,7 +65,7 @@ $$
 $$
 x_{t} = \left( \frac{|\vec{v_{0}}|^2\sin(2\theta)}{g} \right)
 $$
-
+> [!theorem] Lecture Addendum
 ### Time of Flight
 We already solved for a term of time of flight within our previous derivation of range: 
 $$
@@ -89,3 +91,10 @@ $$
 From here, we can see that for these trajectories, our graph would take the form of *some* parabola, with the following values (e.g. if you were to use it in a quadratic) 
 $$b = \tan\theta$$
 $$a=\frac{a'}{4|\vec{v_{0}}|\cos^2\theta}$$
+> [!theorem] Lecture Addendum
+> Note that $x\tan\theta$ is a straight line, whilst our quadratic term is the curve assuming that gravity was 0 that our projectile would take; meaning that our $g$ term is equivalent to some distance below the straight line that this ball falls from.
+> 
+> That is, $\Delta y$ between a gravity-less and gravity-affected arc is defined by $-\frac{1}{2}gx^2$. 
+
+^LectureAddendum1
+
