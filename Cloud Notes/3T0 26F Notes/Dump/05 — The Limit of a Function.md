@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T13:11:43.907-04:00
-edited_seconds: 490
+updated_at: 2026-09-18T13:31:08.634-04:00
+edited_seconds: 530
 course: ESC194H1
 tags:
   - ESC194H1
@@ -20,6 +20,7 @@ Next: [[06 — Precise Limit Definition]]
 --- 
 
 # Lecture Notes
+
 # Pre-Lecture Notes
 ## Definitions of a Limit 
 Intuitively, we can define the limit as the following: 
@@ -29,7 +30,9 @@ Intuitively, we can define the limit as the following:
 > That is, the limit of $f(x)$ as it approaches $a$ is some value $L$. 
 > Or: $$x \to a \implies f(x) \to L$$
 > Note that $x$ does not need to equal $a$; we simply wish to determine what (or if) there is a value that our function **converges** onto as we approach our value $a$. 
-> **A more formal definition will come in a later note (future me, please link it here)**
+> > More formally, the function needs to be defined on some interval near $a$. 
+> 
+> A formal definition is the topic of the next note, [[06 — Precise Limit Definition#Epsilon-Delta Definition|mainly the section on epsilon-delta]]
 
 Recall that in general, a limit is solely concerned with the state of the function at a locality around a point. Also recall the intuitive definition of the concept of a one-sided limit: 
 > [!theorem] Intuitive One-Sided Limit Definition: 

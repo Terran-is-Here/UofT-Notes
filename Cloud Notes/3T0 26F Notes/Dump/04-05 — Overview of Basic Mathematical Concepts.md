@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T14:34:19.890-04:00
-edited_seconds: 1160
+updated_at: 2026-09-18T13:24:34.364-04:00
+edited_seconds: 1260
 course:
 tags:
   - ESC194H1
@@ -211,3 +211,34 @@ We can solve via cases:
 	* $x+2 > 0 \implies |x+2| = x+2 \implies -x < x+2 \implies -2x < 2 \implies x>-1$
 	* $x+2 < 0 \implies |x+2| = -(x+2) \implies -x < -x-2 \implies 0 < -2$ which isn't true. 
 Our solution set is therefore: $x\in (-1,\infty)$
+### Triangle Inequality
+The triangle inequality is given to us by: 
+$$
+|a+b| \leq|a| + |b|
+$$
+Note that if $a\geq 0$ and $b\geq 0$, this actually holds true as an *equality*. 
+
+Consider, start out from: 
+$$
+(a+b)^2 = a^2 + 2ab+ b^2
+$$
+Note that:
+* for any $x^2 = |x|^2$, as well as $ab = |ab|$ 
+* if $a,b>0$ or $a,b <0$,
+	* Note that if the signs are different, then we get $ab<|a||b|$, that is $(a>0\land b<0)\lor(a<0\land b>0)$
+
+Then: 
+$$
+(a+b)^2 = a^2 + 2ab + b^2 \leq a^2 + 2|a||b| +b^2
+$$
+Then: 
+$$
+(a+b)^2 \leq |a|^2+2|a||b| + |b|^2
+$$
+$$
+(a+b)^2 \leq(|a| + |b|)^2 
+$$
+Ergo: 
+$$
+|a+b| \leq |a| + |b|
+$$

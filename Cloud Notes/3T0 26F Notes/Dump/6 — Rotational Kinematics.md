@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T13:11:25.818-04:00
-edited_seconds: 160
+updated_at: 2026-09-18T13:14:04.363-04:00
+edited_seconds: 180
 course:
 tags:
 "Lecture #": 0
@@ -30,4 +30,11 @@ $$
 Note as well, that the velocity of some point at the circumference is also given as: 
 $$
 |\vec{v}(t)| = |\vec{v}(t+h)| 
+$$
+Then: 
+$$
+\Delta \vec{r} = \vec{r}(t+h ) - \vec{r}(t)
+$$
+$$
+\Delta \vec{v} = \vec{v}(t+h) - \vec{v}(t)
 $$
