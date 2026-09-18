@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC180 Hub]]
 Previous: N/A
-Next: [[3 — ESC180 Lecture 3 ]]
+Next: [[5 — ESC180 Lecture 5]]
 
 --- 
 lwk didnt write much 

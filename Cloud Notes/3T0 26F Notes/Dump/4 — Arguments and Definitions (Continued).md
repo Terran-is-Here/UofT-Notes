@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T11:47:20.455-04:00
-edited_seconds: 130
+updated_at: 2026-09-18T11:55:47.928-04:00
+edited_seconds: 150
 course: ESC101H1
 tags:
   - ESC101H1
@@ -25,4 +25,12 @@ Freewriting: [[4a - Freewriting]]
 	* This may include Patents, which can also give some testing/standard. 
 
 ## Writing Reflections 
+See [[4a - Freewriting]]
 
+## Praxis Visual Vocabulary: 
+* Blue generally relates to *facts*
+	* These are things to generally know (within reason)
+* Green relates to *opinions*
+	* These are opinions to develop / argue
+* Pink *relates to questions*
+	* These should be answered to understand more about praxis / overall course. 
