@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T18:15:36.738-04:00
-edited_seconds: 500
+updated_at: 2026-09-18T18:32:19.596-04:00
+edited_seconds: 570
 course: PHY180H1
 tags:
   - PHY180H1
@@ -66,10 +66,14 @@ To describe the equations of motion of our particle, we can describe it through 
 > $$\vec{r} = \hat{i} A\sin(\omega t)+\hat{j}A\cos(\omega t)$$
 > Where $\omega$ is angular velocity, in terms of $\frac{rad}{s}$ (or some rotation over time value), and $A=r=|\vec{r}|$. 
 
-Note that this is an equation for a term of *displacement*, then we can differentiate it once for velocity, and twice for acceleration respectively: 
+Note that this is an equation for a term of *displacement*, then we can differentiate it once for velocity, and twice for acceleration respectively. Differentiate with respects to *time*. 
 
 > [!theorem] Velocity Equation (from above) 
+> $$\vec{v}(t) = \frac{\Delta \vec{r}}{\Delta t} = \hat{i}\omega A\cos(\omega t) - \hat{j}\omega \cos(\omega t)$$
 
+> [!theorem] Acceleration Equation (from above) 
+> $$\vec{a}(t) = \frac{\Delta \vec{v}(t)}{\Delta t} = -\hat{i}\omega^2A\sin(\omega t) - \hat{j}\omega^2\cos(\omega t)$$
 
-$$\frac{\Delta \vec{r}}{\Delta t} = \hat{i}\omega A\cos(\omega t) - \hat{j}\omega \cos$$
-
+Note that our earlier definition still holds; $\vec{v}(t)$ is tangent to the circle; and $\vec{a}$ is equivalent to our centripetal acceleration. 
+## Non-Uniform Circular Motion
+If our *tangential* velocity is non-constant, then this implies that we have some *acceleration* also tangent to the circle that affects our ro
