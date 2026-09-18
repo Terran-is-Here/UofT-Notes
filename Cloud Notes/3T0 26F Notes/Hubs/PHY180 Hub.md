@@ -28,7 +28,8 @@ Mark Breakdown:
 | Group Presentations            | 5%     | During PRAs on the following dates:<br>Nov 17, 18, 24, 25 |
 | Final Exam                     | 35%    | TBD                                                       |
 
-**Group Presentation Number: 6**
+**Group Presentation Number: 6** (i.e. presenting experiment 6) 
+**Pod Number: 17** 
 ### Materials 
 * Syllabus: [[PHY180_Syllabus_Fall 2026.pdf]]
 * Textbook [[university-physics-volume-1_-_WEB.pdf|University Physics Vol.1]]

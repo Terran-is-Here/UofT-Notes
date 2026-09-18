@@ -1,11 +1,12 @@
 ---
-updated_at: 2026-09-18T13:14:04.363-04:00
-edited_seconds: 180
-course:
+updated_at: 2026-09-18T16:35:38.749-04:00
+edited_seconds: 210
+course: PHY180H1
 tags:
-"Lecture #": 0
+  - PHY180H1
+"Lecture #": 6
 Lecture Date: 2026-09-17
-Week:
+Week: 3
 created:
 Created: September 17th 2026, 2:52:05 pm
 ---
@@ -19,6 +20,7 @@ Next: N/A
 --- 
 
 # Lecture Notes
+
 # Pre-Lecture Notes
 ### Uniform Circular Motion
 Uniform Circular Motion deals with the concept of objects rotating around some center with a constant velocity. Note that while the *magnitude* of the velocity vector may remain constant, *its direction* is changing constantly. 

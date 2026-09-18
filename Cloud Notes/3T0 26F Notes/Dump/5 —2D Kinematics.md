@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T22:23:49.485-04:00
-edited_seconds: 620
+updated_at: 2026-09-18T16:35:03.931-04:00
+edited_seconds: 690
 course: PHY180H1
 tags:
   - PHY180H1
@@ -23,6 +23,8 @@ Next: [[6 — Rotational Kinematics]]
 
 ### 2D Extension
 One of the core principles which allow us to analyze multi-dimension kinematics (not just $\mathbb{R}^2$, but $\mathbb{R}^n$) is the concept that dimensions within kinematics problems are linearly independent of each-other: that is $x$ and $y$ dimensions have their own movement / kinematics. 
+
+> That is, $2d$ motion is composed of two independent $1d$ motions/kinematics.
 
 This means that in general, we can break up any $n$-dimensional kinematics problem into an analysis of $n$ $1$-dimensional kinematics problems. Note that depending on the context, what we can learn in one axis may help us analyze another. 
 #### Projectile Motion
@@ -68,7 +70,7 @@ $$
 t_{f} = \frac{2|\vec{v_{0}}|\sin\theta}{g}
 $$
 ### Trajectory Equation
-To solve for an equation to *graph* out the trajectory, we need to find some way we can present $t$ as some function of $x$. For the purposes of this, we will assume $(x_{0},y_{0}) \mapsto(0,0)$. 
+To solve for an equation to *graph* out the trajectory, we need to find some way we can present $t$ as some function of $x$. For the purposes of this, we will assume $(x_{0},y_{0}) \mapsto(0,0)$
 
 $$
 x = v_{0x}t \implies t = \frac{x}{v_{0x}} \implies t = \frac{x}{|\vec{v_{0}}|\cos\theta}
@@ -84,4 +86,6 @@ Simplifying:
 $$
 y = x\tan \theta + \frac{ax^2}{4|\vec{v_{0}}|^2\cos^2\theta} \implies y=\tan(\theta)x + \frac{a}{4|\vec{v_{0}}| \cos^2\theta}x^2
 $$
-From here, we can see that for these trajectories, our graph would take the form of *some* parabola. 
+From here, we can see that for these trajectories, our graph would take the form of *some* parabola, with the following values (e.g. if you were to use it in a quadratic) 
+$$b = \tan\theta$$
+$$a=\frac{a'}{4|\vec{v_{0}}|\cos^2\theta}$$
