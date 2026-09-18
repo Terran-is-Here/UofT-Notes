@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T16:37:27.385-04:00
-edited_seconds: 220
+updated_at: 2026-09-18T18:15:36.738-04:00
+edited_seconds: 500
 course: PHY180H1
 tags:
   - PHY180H1
@@ -22,9 +22,10 @@ Next: N/A
 # Lecture Notes
 
 # Pre-Lecture Notes
-### Uniform Circular Motion
+## Uniform Circular Motion
 Uniform Circular Motion deals with the concept of objects rotating around some center with a constant velocity. Note that while the *magnitude* of the velocity vector may remain constant, *its direction* is changing constantly. 
 
+### Centripetal Acceleration
 Take a circle with a point some distance $\vec{r}$ away from the origin pointing towards some point on the circumference, then: 
 $$
 |\vec{r}(t)| =|\vec{r}(t+h) | 
@@ -40,3 +41,35 @@ $$
 $$
 \Delta \vec{v} = \vec{v}(t+h) - \vec{v}(t)
 $$
+Based on $\vec{v}\perp \vec{r}$, this implies that the triangle $\vec{v}(t), \vec{v}(t+h), \Delta \vec{v}$ and $\vec{r}(t), \vec{r}(t+h), \Delta \vec{r}$ are similar, that is: 
+$$
+\frac{\Delta v}{\vec{v}} = \frac{\Delta r}{\vec{r}} \implies \Delta v = \frac{\vec{v}\Delta r}{\vec{r}}
+$$
+Or, without vector notation, then 
+$$
+\Delta v = \frac{v\Delta r}{r}$$
+![[6 — Rotational Kinematics-1789768786583.webp|557x326]]
+
+To solve for a term of *centripetal acceleration*, we can take the derivative of our term: 
+$$
+a = \frac{\Delta v}{\Delta t} = \frac{1}{\Delta t}\left( \frac{v\Delta r}{r} \right) = \frac{v}{r}\left( \frac{\Delta r}{\Delta t} \right) = \frac{v^2}{r}
+$$
+That is: 
+> [!theorem] Centripetal Acceleration
+> $$a_{c} = \frac{v^2}{r}$$
+> Where $a_{c}$ always points to the center of the circle of rotation.
+
+### Equations of Motion
+To describe the equations of motion of our particle, we can describe it through $\vec{r}$, and is defined below: 
+
+> [!theorem] Equation of Motion of Circular Motion
+> $$\vec{r} = \hat{i} A\sin(\omega t)+\hat{j}A\cos(\omega t)$$
+> Where $\omega$ is angular velocity, in terms of $\frac{rad}{s}$ (or some rotation over time value), and $A=r=|\vec{r}|$. 
+
+Note that this is an equation for a term of *displacement*, then we can differentiate it once for velocity, and twice for acceleration respectively: 
+
+> [!theorem] Velocity Equation (from above) 
+
+
+$$\frac{\Delta \vec{r}}{\Delta t} = \hat{i}\omega A\cos(\omega t) - \hat{j}\omega \cos$$
+
