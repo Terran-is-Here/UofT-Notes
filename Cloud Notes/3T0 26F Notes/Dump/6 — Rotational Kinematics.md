@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T14:52:40.884-04:00
-edited_seconds: 60
+updated_at: 2026-09-17T22:25:16.213-04:00
+edited_seconds: 70
 course:
 tags:
 "Lecture #": 0
@@ -20,3 +20,5 @@ Next: N/A
 
 # Lecture Notes
 # Pre-Lecture Notes
+### Uniform Circular Motion
+Uniform Circular Motion deals with the concept 

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T22:05:19.919-04:00
-edited_seconds: 220
+updated_at: 2026-09-17T22:23:49.485-04:00
+edited_seconds: 620
 course: PHY180H1
 tags:
   - PHY180H1
@@ -44,4 +44,44 @@ $$
 \sin\theta * |\vec{v}|
 \end{bmatrix}
 $$
-That is, $\vec{v_{0x}} = |\vec{v}|\cos\theta$ and $\vec{v_{0y}}=$
+That is, $\vec{v_{0x}} = |\vec{v}|\cos\theta$ and $\vec{v_{0y}}=|\vec{v}|\sin\theta$; which we can then put into our respective $x$ and $y$ axis as their corresponding initial values. 
+### Range 
+Assume that we have a projectile launched on a flat surface, and we wish to determine the *distance* it travelled. We know we can find the horizontal distanced travelled by: 
+$$x_{t} = v_{0x}t$$
+We need to simply solve for a value of time to plug into this equation. We know at time of impact, $\Delta y=0$, then we can solve the following: 
+$$0 = v_{0y}t -\frac{1}{2}gt^2 \implies 0=t\left( v_{0y} - \frac{1gt}{2} \right)$$
+We know $\Delta y=0$ at $t=0$, so we try to solve for the other factor equal to 0 to solve for a value of $t$ to plug in: 
+$$
+v_{0y} - \frac{gt}{2} = 0 \implies t = \frac{2v_{0y}}{g} = \frac{2|\vec{v_{0}}|\sin\theta}{g}
+$$
+Plug it into our equation for $x_{t}$ above, then we get: 
+$$
+x_{t} = (|\vec{v_{0}}|\cos\theta)*\left( \frac{2|\vec{v_{0}}|\sin\theta}{g}\right)
+$$
+$$
+x_{t} = \left( \frac{|\vec{v_{0}}|^2\sin(2\theta)}{g} \right)
+$$
+
+### Time of Flight
+We already solved for a term of time of flight within our previous derivation of range: 
+$$
+t_{f} = \frac{2|\vec{v_{0}}|\sin\theta}{g}
+$$
+### Trajectory Equation
+To solve for an equation to *graph* out the trajectory, we need to find some way we can present $t$ as some function of $x$. For the purposes of this, we will assume $(x_{0},y_{0}) \mapsto(0,0)$. 
+
+$$
+x = v_{0x}t \implies t = \frac{x}{v_{0x}} \implies t = \frac{x}{|\vec{v_{0}}|\cos\theta}
+$$
+Plug this into our general expression for $y$: 
+$$
+y = v_{0y}t +\frac{a}{2}t^2
+$$
+$$
+y=(|\vec{v_{0}}|\sin\theta)\left(\frac{x}{|\vec{v_{0}}|\cos\theta}\right) + \frac{a}{2}\left(\frac{x}{|\vec{v_{0}}|\cos\theta}\right)^2
+$$
+Simplifying: 
+$$
+y = x\tan \theta + \frac{ax^2}{4|\vec{v_{0}}|^2\cos^2\theta} \implies y=\tan(\theta)x + \frac{a}{4|\vec{v_{0}}| \cos^2\theta}x^2
+$$
+From here, we can see that for these trajectories, our graph would take the form of *some* parabola. 
