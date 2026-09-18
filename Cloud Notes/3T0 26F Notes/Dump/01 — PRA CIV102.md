@@ -1,6 +1,6 @@
 ---
 updated_at: 2026-09-18T11:10:13.512-04:00
-edited_seconds: 80
+edited_seconds: 90
 course: CIV102H1
 tags:
   - CIV102H1

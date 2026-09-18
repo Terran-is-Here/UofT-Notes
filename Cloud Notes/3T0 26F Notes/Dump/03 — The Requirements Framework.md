@@ -1,8 +1,9 @@
 ---
-updated_at: 2026-09-15T09:52:15.018-04:00
-edited_seconds: 230
-course:
+updated_at: 2026-09-18T11:19:20.520-04:00
+edited_seconds: 250
+course: ESC101H1
 tags:
+  - ESC101H1
 "Lecture #": 4
 Lecture Date: 2026-09-15
 Week: 3
@@ -11,7 +12,7 @@ Created: September 15th 2026, 8:50:39 am
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[2 — Engineering Arguments]]
-Next: N/A 
+Next: [[4 — Arguments and Definitions (Continued)]]
 
 --- 
 # Lecture Notes
