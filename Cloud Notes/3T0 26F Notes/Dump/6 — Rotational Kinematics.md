@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T18:32:19.596-04:00
-edited_seconds: 570
+updated_at: 2026-09-18T18:41:30.280-04:00
+edited_seconds: 630
 course: PHY180H1
 tags:
   - PHY180H1
@@ -76,4 +76,13 @@ Note that this is an equation for a term of *displacement*, then we can differen
 
 Note that our earlier definition still holds; $\vec{v}(t)$ is tangent to the circle; and $\vec{a}$ is equivalent to our centripetal acceleration. 
 ## Non-Uniform Circular Motion
-If our *tangential* velocity is non-constant, then this implies that we have some *acceleration* also tangent to the circle that affects our ro
+If our *tangential* velocity is non-constant, then this implies that we have some *acceleration* also tangent to the circle that affects our rotating object, that is: 
+$$
+a_{t} = \frac{d|\vec{v}|}{dt}
+$$
+Note that if $a\neq 0$, then $v$ will change. If $a_{c}$ is constant; then:
+$$
+a_{c} = \frac{v^2}{r}
+$$
+
+For this to remain true, $r$ must scale to balance out the change in $\vec{v}$, meaning that our object's radius will proportionally increase or decrease respectively. 
