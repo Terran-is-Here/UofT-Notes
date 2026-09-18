@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T13:31:08.634-04:00
-edited_seconds: 530
+updated_at: 2026-09-18T13:59:42.620-04:00
+edited_seconds: 540
 course: ESC194H1
 tags:
   - ESC194H1
@@ -20,7 +20,11 @@ Next: [[06 — Precise Limit Definition]]
 --- 
 
 # Lecture Notes
-
+## Vertical Asymptote
+> The line $x=a$ for $f(x)$ is defined as a vertical asymptote for $f(x)$ if:
+> $$\lim_{ x \to a } f(x) = \pm \infty$$
+> $$\lim_{ x \to ^+a } f(x) = \pm \infty$$
+> $$\lim_{ x \to ^-a } f(x) = \pm \infty$$
 # Pre-Lecture Notes
 ## Definitions of a Limit 
 Intuitively, we can define the limit as the following: 

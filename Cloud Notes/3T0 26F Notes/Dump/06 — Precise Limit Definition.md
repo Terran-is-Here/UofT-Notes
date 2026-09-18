@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T13:53:59.298-04:00
-edited_seconds: 750
+updated_at: 2026-09-18T13:56:18.813-04:00
+edited_seconds: 780
 course: ESC194H1
 tags:
   - ESC194H1
@@ -110,8 +110,17 @@ We also seek to define the concept of *infinite limits* rigorously within our fu
 > $$0<|x-c| < \delta$$
 > $$f(x) > M$$
 > Where $M$ is any positive number.  
+> > What this means is that the value of our function will be *greater than any positive number* at $x$.
 
 > [!theorem] Infinite Limit: $-\infty$
 > Given the following limit: 
-> $$\lim_{ x \to c } $$
+> $$\lim_{ x \to c } f(x) = -\infty$$
+> Then, $\forall N, \exists\delta>0$ such that: 
+> $$0 < |x-c| <\delta$$
+> $$f(x) < N$$
+> Where $N$ is any negative number. 
+> > Note that the second inequality means that the value of our function will be *less than any negative number* at $x$
+
+Note that for one-sided limits, the bounds of $\delta$'s inequality change, while the term for the respective $y$ term (i.e, the one including $N \text{ or }M$). 
+
 
