@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-16T10:04:51.749-04:00
-edited_seconds: 300
+updated_at: 2026-09-18T12:16:20.925-04:00
+edited_seconds: 310
 course: ESC103H1
 tags:
   - ESC103H1
@@ -12,7 +12,7 @@ Created: September 14th 2026, 9:16:00 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[03 — Vector Projection]]
-Next: N/A
+Next: [[05 — Scalar and Vector Equations]]
 
 --- 
 

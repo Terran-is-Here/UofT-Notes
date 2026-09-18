@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T13:56:41.598-04:00
-edited_seconds: 400
+updated_at: 2026-09-18T12:18:38.109-04:00
+edited_seconds: 420
 course: ESC194H1
 tags:
   - ESC194H1
@@ -37,6 +37,10 @@ $$
 \forall\epsilon >0,\exists\delta > 0
 $$
 That is, for all $\epsilon$ greater than 0, there must exist a $\delta$ greater than 0. We need to find a consistent definition for $\delta$ with respects to $\epsilon$. We are *given* $\epsilon$. 
+
+> [!theorem] Tips 
+> 1. Break down complex proofs into cases and work from there—and recall all of the requirements for that following statement to be true. 
+> 2. If other terms exist where it isn't equivalent to our $\delta$ term, work to a way to get to it. 
 ### Linear Case 
 Take the following function: 
 $$

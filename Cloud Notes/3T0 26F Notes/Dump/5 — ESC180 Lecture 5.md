@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T12:12:08.356-04:00
-edited_seconds: 90
+updated_at: 2026-09-18T12:24:32.352-04:00
+edited_seconds: 100
 course: ESC180H1
 tags:
   - ESC180H1
@@ -20,6 +20,22 @@ Next:
 Generally, make variable names comprehensible.
 * Note that snake_case is normally used in python for variables; or SCREAMING_SNAKE_CASE for constants: 
 
-```python
+### Loops
+In general, loops are used for repeated computation, for loops execute a code block a number of times.
+* This is similar to Java's, although with simpler syntax.
 
+```python
+for x in range(0,n): 
+	#code block here
+```
+
+Note for something that can be iterated through, then: 
+```python
+list1 = ["a","b","c"]
+for element in list1: 
+	print(element)
+	# expected output: 
+	# a
+	# b
+	# c
 ```
