@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-17T14:52:07.450-04:00
-edited_seconds: 190
+updated_at: 2026-09-17T22:05:19.919-04:00
+edited_seconds: 220
 course: PHY180H1
 tags:
   - PHY180H1
@@ -35,4 +35,13 @@ Our $y$-dimension does provide us with some interesting context:
 * When $v_{y}=0$, our object is at it's "apex" (i.e. turn around window).
 	* The time at this moment gives us time of max height, which can be used to solve for actual max height. 
 
-Analysis of these one-dimensional fragments is trivial, as these can be done independently. 
+Analysis of these one-dimensional fragments is trivial, as these can be done independently.
+
+For instance, let us take: $\vec{v_{0}} \in \mathbb{R}^2$, then: 
+$$
+\vec{v_{0}} = \begin{bmatrix}
+\cos\theta *|\vec{v}|  \\
+\sin\theta * |\vec{v}|
+\end{bmatrix}
+$$
+That is, $\vec{v_{0x}} = |\vec{v}|\cos\theta$ and $\vec{v_{0y}}=$
