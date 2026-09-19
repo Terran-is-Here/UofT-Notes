@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T22:28:47.063-04:00
-edited_seconds: 660
+updated_at: 2026-09-19T12:07:45.609-04:00
+edited_seconds: 670
 course: PHY180H1
 tags:
   - PHY180H1
@@ -57,8 +57,7 @@ $$
 That is: 
 > [!theorem] Centripetal Acceleration
 > $$a_{c} = \frac{v^2}{r}$$
-> Where $a_{c}$ always points to the center of the circle of rotation.
-
+> Where $a_{c}$ always points to the center of the circle of rotation, that is it points radially inwards. It can also be termed as a form of **Radial** acceleration.
 ### Equations of Motion
 To describe the equations of motion of our particle, we can describe it through $\vec{r}$, and is defined below: 
 
