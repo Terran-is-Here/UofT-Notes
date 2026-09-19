@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T18:41:30.280-04:00
-edited_seconds: 630
+updated_at: 2026-09-18T22:28:47.063-04:00
+edited_seconds: 660
 course: PHY180H1
 tags:
   - PHY180H1
@@ -12,7 +12,7 @@ Created: September 17th 2026, 2:52:05 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[5 —2D Kinematics]]
-Next: N/A
+Next: [[7 — 1st and 2nd Laws of Newton]]
 
 > [!quote] Relevant Textbook Sections 
 > 4.4 — 4.5
@@ -86,3 +86,6 @@ a_{c} = \frac{v^2}{r}
 $$
 
 For this to remain true, $r$ must scale to balance out the change in $\vec{v}$, meaning that our object's radius will proportionally increase or decrease respectively. 
+
+## Relative Motion
+The rule of thumb for relative motion is to sum up the vector subscripts to get it to a term that results in the reference frame basis that we are looking for: recall that $\vec{AB} = -\vec{BA}$. 
