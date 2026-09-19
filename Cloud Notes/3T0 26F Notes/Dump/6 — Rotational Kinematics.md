@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-19T12:07:45.609-04:00
-edited_seconds: 670
+updated_at: 2026-09-19T12:10:22.579-04:00
+edited_seconds: 680
 course: PHY180H1
 tags:
   - PHY180H1
@@ -68,10 +68,10 @@ To describe the equations of motion of our particle, we can describe it through 
 Note that this is an equation for a term of *displacement*, then we can differentiate it once for velocity, and twice for acceleration respectively. Differentiate with respects to *time*. 
 
 > [!theorem] Velocity Equation (from above) 
-> $$\vec{v}(t) = \frac{\Delta \vec{r}}{\Delta t} = \hat{i}\omega A\cos(\omega t) - \hat{j}\omega \cos(\omega t)$$
+> $$\vec{v}(t) = \frac{\Delta \vec{r}}{\Delta t} = \hat{i}\omega A\cos(\omega t) - \hat{j}\omega A \cos(\omega t)$$
 
 > [!theorem] Acceleration Equation (from above) 
-> $$\vec{a}(t) = \frac{\Delta \vec{v}(t)}{\Delta t} = -\hat{i}\omega^2A\sin(\omega t) - \hat{j}\omega^2\cos(\omega t)$$
+> $$\vec{a}(t) = \frac{\Delta \vec{v}(t)}{\Delta t} = -\hat{i}\omega^2A\sin(\omega t) - \hat{j}\omega^2 A\cos(\omega t)$$
 
 Note that our earlier definition still holds; $\vec{v}(t)$ is tangent to the circle; and $\vec{a}$ is equivalent to our centripetal acceleration. 
 ## Non-Uniform Circular Motion
