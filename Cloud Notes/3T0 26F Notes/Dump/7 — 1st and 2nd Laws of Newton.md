@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T22:29:03.258-04:00
-edited_seconds: 80
+updated_at: 2026-09-20T11:10:09.121-04:00
+edited_seconds: 100
 course: PHY180H1
 tags:
   - PHY180H1
@@ -12,6 +12,10 @@ created:
 Hub: [[PHY180 Hub]]
 Previous: [[6 — Rotational Kinematics]]
 Next:
+
+> [!quote] Relevant Textbook Sections: 
+> 5.1-5.4
+
 
 --- 
 
