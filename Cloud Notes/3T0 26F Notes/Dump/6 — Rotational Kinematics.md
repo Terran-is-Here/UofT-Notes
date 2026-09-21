@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T10:07:09.606-04:00
-edited_seconds: 710
+updated_at: 2026-09-21T16:41:15.687-04:00
+edited_seconds: 780
 course: PHY180H1
 tags:
   - PHY180H1
@@ -51,7 +51,7 @@ $$
 $$
 \Delta \vec{v} = \vec{v}(t+h) - \vec{v}(t)
 $$
-Based on $\vec{v}\perp \vec{r}$, this implies that the triangle $\vec{v}(t), \vec{v}(t+h), \Delta \vec{v}$ and $\vec{r}(t), \vec{r}(t+h), \Delta \vec{r}$ are similar, that is: 
+Based on $\vec{v}\perp \vec{r}$, this implies that the triangle $\vec{v}(t), \vec{v}(t+h), \Delta \vec{v}$ and $\vec{r}(t), \vec{r}(t+h), \Delta \vec{r}$ are similar if $\Delta \theta$ is some really small value, that is the below statements hold true if $\Delta \theta \to 0$, that is: 
 $$
 \frac{\Delta v}{\vec{v}} = \frac{\Delta r}{\vec{r}} \implies \Delta v = \frac{\vec{v}\Delta r}{\vec{r}}
 $$
@@ -67,7 +67,7 @@ $$
 That is: 
 > [!theorem] Centripetal Acceleration
 > $$a_{c} = \frac{v^2}{r}$$
-> Where $a_{c}$ always points to the center of the circle of rotation, that is it points radially inwards. It can also be termed as a form of **Radial** acceleration.
+> Where $a_{c}$ always points to the center of the circle of rotation, that is it points radially inwards **always**. It can also be termed as a form of **Radial** acceleration.
 ### Equations of Motion
 To describe the equations of motion of our particle, we can describe it through $\vec{r}$, and is defined below: 
 
@@ -94,7 +94,10 @@ $$
 a_{c} = \frac{v^2}{r}
 $$
 
-For this to remain true, $r$ must scale to balance out the change in $\vec{v}$, meaning that our object's radius will proportionally increase or decrease respectively. 
-
+For this to remain true, $r$ must scale to balance out the change in $\vec{v}$, meaning that our object's radius will proportionally increase or decrease respectively. Note that if tangential acceleration is present, then the overall acceleration of our point (assuming solely $a_{c}$ and $a_{t}$) is defined by the following: 
+$$
+a = a_{c} + a_{t}
+$$
+Note that $a_{c} \perp a_t$; ergo $|\vec{a}| = \sqrt{ a_{c}^2 + a_{t}^2 }$. With $a_{t}\neq0$, $a$ will no longer be directly pointing towards the center. 
 ## Relative Motion
 The rule of thumb for relative motion is to sum up the vector subscripts to get it to a term that results in the reference frame basis that we are looking for: recall that $\vec{AB} = -\vec{BA}$. 
