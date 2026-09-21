@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T16:41:15.687-04:00
-edited_seconds: 780
+updated_at: 2026-09-21T16:53:48.168-04:00
+edited_seconds: 800
 course: PHY180H1
 tags:
   - PHY180H1
@@ -101,3 +101,9 @@ $$
 Note that $a_{c} \perp a_t$; ergo $|\vec{a}| = \sqrt{ a_{c}^2 + a_{t}^2 }$. With $a_{t}\neq0$, $a$ will no longer be directly pointing towards the center. 
 ## Relative Motion
 The rule of thumb for relative motion is to sum up the vector subscripts to get it to a term that results in the reference frame basis that we are looking for: recall that $\vec{AB} = -\vec{BA}$. 
+
+Relative Motion can be generally defined by the Galilean Transformation of Velocity: 
+$$
+\vec{v}_{CB} = \vec{v}_{CA} + \vec{v}_{AB}
+$$
+i.e. Combine vector subscripts. Note that the Galilean Transformation does not hold under Relativistic speeds, instead the Lorentz Transform is the value which holds. 
