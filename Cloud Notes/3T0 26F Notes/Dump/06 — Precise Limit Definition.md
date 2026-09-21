@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T11:24:44.314-04:00
-edited_seconds: 980
+updated_at: 2026-09-21T11:44:51.382-04:00
+edited_seconds: 1280
 course: ESC194H1
 tags:
   - ESC194H1
@@ -27,7 +27,7 @@ $$|x-1|<\delta \implies |f(x)-3| < 0.1$$
 That is: 
 * For what value of $|x-1| < ?$ that will give $|f(x) - 3| < 0.1$? 
 
-We could sub in our function to our second inequality to figure this out: 
+We could sub in our function to our second inequality to figure this out:
 $$
 \left|\frac{(2x+1)(x-1)}{(x-1)} - 3\right| = |(2x+1) - 3 | = |2x-2| = 2|x-1| <0.1
 $$
@@ -41,7 +41,75 @@ More generally:
 * we use $\epsilon$ to represent the tolerance of our $y$ values in $|f(x) - L| <\epsilon$
 * We use $\delta$ to represent the *corresponding* tolerance of our $x$ values in $|x-a| < \delta$
 
-Our goal is to search for some $\delta>0$ such that $|x-a$
+Our goal is to search for some $\delta>0$ such that $|x-a|<\delta \implies|f(x)-L|<\epsilon$. 
+* That is , $\epsilon$ is a term that's **given**, we always try to solve for a term of $\delta$ that agrees.
+
+Retaking our earlier example; then we can perform the same algebra: 
+$$
+|x - 1| < \delta
+$$
+$$
+$$
+$$
+\left|\frac{(2x+1)(x-1)}{(x-1)} - 3\right| = |(2x+1) - 3 | = |2x-2| = 2|x-1| < \epsilon \implies |x-1| < \frac{\epsilon}{2}
+$$
+From here, we can see that we can choose that $\delta = \frac{\epsilon}{2}$, since $$|x-1| < \delta \land |x-1| < \frac{\epsilon}{2} \implies \delta = \frac{\epsilon}{2}$$
+Or in English: 
+* Taking the value of $x\neq 1$ to be in the interval of $(1-\delta,1+\delta)$, we can make the value of $f(x)$ lie in the interval of $(3-\epsilon,3+\epsilon)$). 
+
+## Precise Limit Definition
+See [[06 — Precise Limit Definition#Epsilon-Delta Definition]] for a formal one, but in terms of the in course one: 
+
+> [!theorem] Definition
+> Let $f(x)$ be a function defined on some *open* interval that contains the number $c$ (except possibly at $x=c$, inclusion is not required), then we say that: $$\lim_{ x \to c }f(x) = L $$
+> If, $\forall\epsilon>0,\exists\delta>0$ such that: 
+> $$ 0 < |x-c| < \delta \implies|f(x) - L| < \epsilon$$
+
+That is, we attempt to trap our value of $f(x)$ within a bound of $\epsilon$ and $\delta$, if we can squeeze these values arbitrarily small, we can say that our limit exists. 
+
+### Examples
+Prove the following: 
+> $$\lim_{ x \to 2 } (3x-2) = 4 $$
+
+First, find a value for $\delta$ from $\epsilon$: 
+$$
+|x-2| <\delta
+$$
+$$
+|f(x) - L| = |3x-2-4| = |3x-6| = 3|x-2| < \epsilon \implies |x-2| < \frac{\epsilon}{3}
+$$
+This implies that we should choose $\delta = \frac{\epsilon}{3}$. From here, we prove the other direction that it holds true: 
+> Choose $\delta = \frac{\epsilon}{3}$;  then: 
+> $$|x-2| < \delta$$
+> Then from our $\epsilon$ inequality: 
+> $$|3x-2 -4| = |3x-6| = 3|x-2| < 3\delta$$
+> Take $\delta = \frac{\epsilon}{3}$, then: 
+> $$3|x-2| = |(3x-2)-4| < 3\left( \frac{\epsilon}{3} \right) \implies |(3x-2)-4| < \epsilon$$
+> Which is what we wanted, showing that our choice of $\delta$ satisfies our definition, and therefore our limit holds as desired. 
+## One-Handed Limits
+> [!theorem] Left-Handed Limit
+> We define the following left handed limit: $$\lim_{ x \to c^- } f(x) = L$$ 
+> For $\forall\epsilon > 0, \exists\delta>0$ such that: 
+> $$c-\delta < x < c \implies |f(x) - L| < \epsilon$$
+> That is, $x\in(c-\delta, c)$
+
+> [!theorem] Right-Handed Limit
+> We define the following left handed limit: $$\lim_{ x \to c^+ } f(x) = L$$ 
+> For $\forall\epsilon > 0, \exists\delta>0$ such that: 
+> $$c < x < c+\delta \implies |f(x) - L| < \epsilon$$
+> That is, $x\in(c, c+\delta)$
+
+### Example
+> Prove the following: $$\lim_{ x \to 0^+ } \sqrt{ x } = 0$$
+
+Our first step is to find some value of $\delta$ in the following: 
+$$0<x<\delta\implies|\sqrt{ x } -0 | < \epsilon$$
+Taking the $\epsilon$ side: 
+$$
+|\sqrt{ x }-0|=|\sqrt{ x }| =\sqrt{ x } < \epsilon  \implies x < \epsilon^2
+$$
+Note from the earlier definition, then we choose that $\delta = $
+# Pre-Lecture Notes
 ## Epsilon-Delta Definition
 The Epsilon-Delta Definition of a limit is the formal definition of a limit past the intuitive one we tackled in the previous note. It is formally defined as the following: 
 $$\lim_{ x \to c }f(x)=L \iff \forall \epsilon>0, \exists\delta >0 \text{ s.t. }$$
@@ -73,6 +141,8 @@ That is, for all $\epsilon$ greater than 0, there must exist a $\delta$ greater 
 > 2. If other terms exist where it isn't equivalent to our $\delta$ term, work to a way to get to it. 
 > 3. Recall your inequality properties. 
 > 4. Sometimes, adding and multiplying to add another bound can also be a viable candidate. 
+
+> **Note** that we always should prove the previous step, and prove the forward step (i.e. solve for $\delta$), and show that this choice holds true for $\epsilon$. 
 ### Linear Case 
 Take the following function: 
 $$
@@ -94,6 +164,9 @@ $$
 > Note that we can factor this; ergo: 
 > $$2|x-2| < \epsilon$$
 > Recall how $|x-2| <\delta$, then this implies that $\delta = \frac{\epsilon}{2}$. Since we have defined $\delta$ in terms of $\epsilon$, this holds for all values of $\epsilon$, ergo the limit exists. 
+> > Forward Direction Proof
+> > Let's take the forward direction, choose $\delta = \frac{\epsilon}{2}$, then take our corresponding $y$ tolerance: 
+> > $$|(2x)|$$
 ## One-Sided Limits
 Recall our intuitive definitions of one-sided limits from our previous note: 
 > [!theorem] Intuitive One-Sided Limit Definition: 
