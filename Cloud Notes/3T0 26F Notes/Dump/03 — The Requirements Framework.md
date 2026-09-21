@@ -12,7 +12,7 @@ Created: September 15th 2026, 8:50:39 am
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[2 — Engineering Arguments]]
-Next: [[4-5 — Arguments and Definitions (Continued)]]
+Next: [[4 — Arguments and Definitions (Continued)]]
 
 --- 
 # Lecture Notes

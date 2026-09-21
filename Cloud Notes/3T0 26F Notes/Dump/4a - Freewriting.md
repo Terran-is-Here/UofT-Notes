@@ -1,4 +1,4 @@
-**Related Lecture Note: [[4-5 — Arguments and Definitions (Continued)]]**
+**Related Lecture Note: [[4 — Arguments and Definitions (Continued)]]**
 > [!note] Prompt
 > Lorem Ipsum Here
 

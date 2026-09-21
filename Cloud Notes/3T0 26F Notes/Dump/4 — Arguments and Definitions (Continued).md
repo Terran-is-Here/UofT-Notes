@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T13:08:01.166-04:00
-edited_seconds: 170
+updated_at: 2026-09-21T13:11:45.201-04:00
+edited_seconds: 200
 course: ESC101H1
 tags:
   - ESC101H1
@@ -12,8 +12,9 @@ Created: September 18th 2026, 11:19:19 am
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[03 — The Requirements Framework]]
-Next: N/A
+Next: [[05 — Research and Building Needs, Goals and Objectives]]
 Freewriting: [[4a - Freewriting]]
+
 
 --- 
 
