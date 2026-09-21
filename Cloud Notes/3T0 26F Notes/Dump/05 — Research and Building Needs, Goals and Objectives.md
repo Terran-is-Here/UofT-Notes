@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T13:30:00.174-04:00
-edited_seconds: 340
+updated_at: 2026-09-21T13:42:12.155-04:00
+edited_seconds: 410
 course:
 tags:
   - ESC101H1
@@ -57,11 +57,31 @@ Building NGOs (Needs, Goals and Objectives) starts with first finding an *Opport
 3. Eliciting Stakeholder Expectations[^1]
 4. Synthesizing and Document
 
-[^1]: That is, trying to figure out what they actually fully exp
+[^1]: That is, trying to figure out what they actually fully expect based on our opportunities. 
+Refresh yourself on [[03 — The Requirements Framework]] in terms of the exact definitions of Needs, Goals and Objectives. 
 ### Identifying Opportunities
 We can find identities though the same Frame - Diverge - Converge framework that we've been using all this time throughout Praxis: 
 * We frame what we're looking to improve / work towards, 
 * We diverge to find potential opportunities to do our goal,
 * We converge to find which things we should update. 
+
+### Application
+For instance, we can retake our backpack example in terms of NGO: 
+
+> Need: We need to find a backpack suitable for most EngSci students. 
+
+From here, we can do some *primary research* or secondary research to identify what Stakeholders want in our Need. They may give us expectations (such as a backpack carrying alot). Such expectations can be formalized into a set of goals and objectives which we can quantify. 
+
+> Goal: The backpack should be able to carry everything that students need for an average day. 
+
+From this goal, we can find our Objectives via research / quantifying our values: 
+
+> Objective 1.1: The bag should have these measurements (??)
+
+> Objective 1.2: The bag should be able to carry up to (?)Kg
+
+For Objective 1.2: We could work towards finding some research to specify a carrying capacity for a backpack. From here we could also solve for the proper ergonomic load of a backpack through our research. **Always do secondary research before investing resources in primary research!**
+
+Note that often while doing secondary research, more terms may arise, such as "ergonomics". Should this be something that we also define one of our objectives on? We could do further research into this description in the long run. Note that we can also use these terms researched for further clarifying / specifying our research queries. 
 
 

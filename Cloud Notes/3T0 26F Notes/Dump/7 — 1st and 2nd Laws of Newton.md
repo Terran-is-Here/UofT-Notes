@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-20T11:10:09.121-04:00
-edited_seconds: 100
+updated_at: 2026-09-21T13:48:12.812-04:00
+edited_seconds: 120
 course: PHY180H1
 tags:
   - PHY180H1
@@ -21,3 +21,5 @@ Next:
 
 # Lecture Notes
 # Pre-Lecture Notes
+## Forces
+A force is generally defined as a *push* or a *pull*. Forces *are* vectors (i.e. with Magnitude and Direction) 
