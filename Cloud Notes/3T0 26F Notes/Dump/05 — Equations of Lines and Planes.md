@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T12:48:18.611-04:00
-edited_seconds: 470
+updated_at: 2026-09-21T12:56:36.457-04:00
+edited_seconds: 550
 course: ESC103H1
 tags:
   - ESC103H1
@@ -24,6 +24,12 @@ Generally, for two lines / planes intersect, we want to figure out where they ge
 Recall the simplest *scalar* equation that we had for a line in $R^2$: 
 $$y=mx+b$$
 For the vector equation of this line, refer to the definition we defined below ([[05 — Equations of Lines and Planes#^R3VectorEquation|Linked Here]]). What this equation generally means is that *all the points on the line* can be described by it's following relation. 
+
+For lines in $\mathbb{R}^2$, this can be be defined by simply removing our $z_{0}$ term: 
+$$\begin{bmatrix}x \\y\end{bmatrix} = \begin{bmatrix}x_{0} \\y_{0}\end{bmatrix}+a\begin{bmatrix}d_{1} \\d_{2}\end{bmatrix}$$
+Note our direction vector can be defined in terms of the slope of our line, and we can define our initial point in terms of some vertical translation from the origin; that is: 
+$$\begin{bmatrix}x \\y\end{bmatrix} = \begin{bmatrix}0 \\b\end{bmatrix}+a\begin{bmatrix}1 \\m\end{bmatrix}$$
+This resolves down to the familiar scalar equation of the line that we know. 
 # Pre-Lecture Notes
 ## Equation of a Line 
 Recall the definitions that we had for a general vector in $\mathbb{R}^3$: 
@@ -38,6 +44,9 @@ Recall the definitions that we had for a general vector in $\mathbb{R}^3$:
 > Where $a$ is some scalar multiple of $\vec{r}$. 
 ^R3VectorEquation
 
+> [!axiom] Lecture Addendum
+> Note that we can redefine the equation above to find any equation on the line as well: 
+> $$\begin{bmatrix}x-p_{1}\\y-p_{2}\\z-p_{3}\end{bmatrix} = a\vec{r}$$
 ## Plane Equations
 > [!theorem] Equation for a Plane 
 > $$\begin{bmatrix}x \\y\\z\end{bmatrix} = \vec{p} + A\vec{r} + B\vec{t} = \begin{bmatrix}p_{1}\\p_{2}\\p_{3}\end{bmatrix} + A\begin{bmatrix}r_{1}\\r_{2}\\r_{3}\end{bmatrix} + B \begin{bmatrix}t_{1}\\t_{2}\\t_{3}\end{bmatrix}$$
