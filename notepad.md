@@ -1,10 +1,11 @@
-v =  0 
-a = 1m/s 
-@Dx = -20m 
-v_0 = ? 
+$$
+\lim_{ x \to 0 } \left( \frac{1}{x^2} \right)= \infty
+$$
+$$
+0  < |x-a| < \delta
+$$
+$$
+\left| \frac{1}{x^2}\right| > M
+$$
 
-
-
-$$v^2 = 2a\Delta x + v_{0}^2$$
-$$0 = 2(-20) + v_{0}^2$$
-$$\sqrt{ 40 } $$
+$$$$

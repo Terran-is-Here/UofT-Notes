@@ -1,18 +1,18 @@
 ---
-updated_at: 2026-09-21T11:21:27.350-04:00
-edited_seconds: 260
+updated_at: 2026-09-21T12:13:02.463-04:00
+edited_seconds: 290
 course: ESC103H1
 tags:
   - ESC103H1
 "Lecture #": 5
-Lecture Date: 2026-09-18
-Week: 2
+Lecture Date: 2026-09-22
+Week: 3
 created:
 Created: September 18th 2026, 12:16:18 pm
 ---
-Hub: 
-Previous: 
-Next:
+Hub: [[ESC103 Hub]]
+Previous: [[04 — Vector Cross Product]]
+Next:[[06 — Solving Vector Equations]]
 
 --- 
 
