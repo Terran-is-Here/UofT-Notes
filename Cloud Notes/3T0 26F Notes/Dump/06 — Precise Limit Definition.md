@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T10:49:07.858-04:00
-edited_seconds: 800
+updated_at: 2026-09-21T11:24:44.314-04:00
+edited_seconds: 980
 course: ESC194H1
 tags:
   - ESC194H1
@@ -17,7 +17,31 @@ Next: [[07 — Limit Laws]]
 --- 
 
 # Lecture Notes
-# Pre-Lecture Notes
+Take the following function: 
+$$
+f(x) = \frac{2x^2 - x -1}{(x-1)} = \frac{(2x+1)(x-1)}{(x-1)}
+$$
+
+We know from intuition (and algebra) that $\lim_{ x \to 1}f(x)=3$. Note that we should be able to now mathematically quantify how close $x$ has to be for $f(x)$ to be within $0.1$ of $3$. Mathematically, we can define this as: 
+$$|x-1|<\delta \implies |f(x)-3| < 0.1$$
+That is: 
+* For what value of $|x-1| < ?$ that will give $|f(x) - 3| < 0.1$? 
+
+We could sub in our function to our second inequality to figure this out: 
+$$
+\left|\frac{(2x+1)(x-1)}{(x-1)} - 3\right| = |(2x+1) - 3 | = |2x-2| = 2|x-1| <0.1
+$$
+Note that we do not consider $x=1$; then from our earlier condition of $|x-1| < ?$, we can see that $|x-1| < 0.05$. Therefore: 
+* $|f(x) -3| < 0.1 \implies 0<|x-1| <0.05$; Or: 
+* $0<|x-1|<0.05 \implies |f(x)-3| <0.01$, That is $x\in(1-0.05, 1+0.05)$ and $y\in(3-0.01, 3+0.01)$. 
+## Generalization 
+Note that if we set our $\delta = \frac{\epsilon}{2}$, then we always have a solution for this inequality. 
+
+More generally:
+* we use $\epsilon$ to represent the tolerance of our $y$ values in $|f(x) - L| <\epsilon$
+* We use $\delta$ to represent the *corresponding* tolerance of our $x$ values in $|x-a| < \delta$
+
+Our goal is to search for some $\delta>0$ such that $|x-a$
 ## Epsilon-Delta Definition
 The Epsilon-Delta Definition of a limit is the formal definition of a limit past the intuitive one we tackled in the previous note. It is formally defined as the following: 
 $$\lim_{ x \to c }f(x)=L \iff \forall \epsilon>0, \exists\delta >0 \text{ s.t. }$$
