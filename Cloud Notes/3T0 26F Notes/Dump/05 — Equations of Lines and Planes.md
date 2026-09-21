@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T12:13:02.463-04:00
-edited_seconds: 290
+updated_at: 2026-09-21T12:48:18.611-04:00
+edited_seconds: 470
 course: ESC103H1
 tags:
   - ESC103H1
@@ -17,16 +17,26 @@ Next:[[06 — Solving Vector Equations]]
 --- 
 
 # Lecture Notes
+The general goal of this segment is to be able to define geometric shapes *as* equations, such as a line in $\mathbb{R}^2$ being defined as a scalar equation. Or more specifically, we seek to define the relationships of a value of $x$ to $y$ to describe a geometric object. 
+
+Generally, for two lines / planes intersect, we want to figure out where they geometrically meet (duh) 
+## Equation of a Line 
+Recall the simplest *scalar* equation that we had for a line in $R^2$: 
+$$y=mx+b$$
+For the vector equation of this line, refer to the definition we defined below ([[05 — Equations of Lines and Planes#^R3VectorEquation|Linked Here]]). What this equation generally means is that *all the points on the line* can be described by it's following relation. 
 # Pre-Lecture Notes
-## Vector Equations
+## Equation of a Line 
 Recall the definitions that we had for a general vector in $\mathbb{R}^3$: 
 
 > [!theorem] Equation for a Vector
 > $$\begin{bmatrix}x\\ y\\ z\end{bmatrix}= \vec{p} + a\vec{r} = \begin{bmatrix}p_{1}\\ p_{2} \\ p_{3}\end{bmatrix}+ \begin{bmatrix}ar_{1}\\ar_{2} \\ar_{3}\end{bmatrix}$$
-> Note that if $\vec{p}=\vec{0}$, we say that the vector runs through the origin. Generally, $\vec{p}$ is a *point* on the line defined by $\vec{r}$, and $\vec{r}$ is parallel to the direction of the line.  
+> Note that if $\vec{p}=\vec{0}$, we say that the vector runs through the origin. Note that $\vec{p}$ is defined from the origin *onto our line*. 
+> Generally, $\vec{p}$ is a *point* on the line defined by $\vec{r}$, and $\vec{r}$ is parallel to the direction of the line.  
+> We often notate $\vec{r}$ as some direction vector. 
 > Alternatively, we can define it as a set of 3 equations: 
 > $$\begin{bmatrix}x=p_{1} + ar_{1}\\y=p_{2} + ar_{2}\\z=p_{3}+ar_{3}\end{bmatrix}$$
 > Where $a$ is some scalar multiple of $\vec{r}$. 
+^R3VectorEquation
 
 ## Plane Equations
 > [!theorem] Equation for a Plane 
@@ -36,4 +46,10 @@ Recall the definitions that we had for a general vector in $\mathbb{R}^3$:
 > 
 > 
 
-
+Note than an alternate definition exists in terms of *scalars*: A plane can also be defined as the following: 
+$$
+ax +by+cz = d
+$$
+Where: 
+$$\vec{n} = \begin{bmatrix}a \\b \\c\end{bmatrix}$$
+Where $\vec{n}$ is a vector *normal* to the surface of the plane. 

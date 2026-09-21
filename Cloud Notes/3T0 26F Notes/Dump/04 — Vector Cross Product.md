@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T12:28:47.027-04:00
-edited_seconds: 590
+updated_at: 2026-09-21T12:34:32.976-04:00
+edited_seconds: 660
 course: ESC103H1
 tags:
   - ESC103H1
@@ -20,13 +20,13 @@ Next: [[05 — Equations of Lines and Planes]]
 ## Definition
 We generally define the cross product from following: 
 $$
-\vec{i} \times \vec{j} = \vec{k}
+\vec{i} \times \vec{j} = \vec{k} \text{ and } \vec{j}\times \vec{i} = -\vec{k}
 $$
 $$
-\vec{j}\times \vec{k} = \vec{i}
+\vec{j}\times \vec{k} = \vec{i} \text{ and } \vec{k} \times \vec{j} = \vec{i}
 $$
 $$
-\vec{k} \times \vec{i} = \vec{j}
+\vec{k} \times \vec{i} = \vec{j} \text{ and } \vec{i}\times \vec{k} = -\vec{j}
 $$
 Where $\vec{k}$ is perpendicular to both $\vec{i}$ and $\vec{j}$, that is these are unit vectors, the cross products of $\vec{i},\vec{j},\vec{k}$ result in one of the other unit vectors parallel to them; note that : 
 $$
@@ -48,7 +48,8 @@ Therefore:
 $$
 \vec{a}\times \vec{b} = \begin{bmatrix}
 a_{2}b_{3} - a_{3}b_{2} \\
-
+-(a_{1}b_{3} - a_{3}b_{1}) \\
+a_{2}b_{3} - a_{3}b_{2} \\
 \end{bmatrix}
 $$
 ### Properties
@@ -67,7 +68,7 @@ Given two vectors $\vec{a}$ and $\vec{b}$ with an angle $\theta$ between them; w
 $$
 ||\vec{a}\times \vec{b}||^2 = ||\vec{a}||^2||\vec{b}||^2 - (\vec{a}\cdot \vec{b}_{})^2
 $$
-## Geometric Proof 
+## Geometric Definition
 Recall our definition of a dot product, sub it into our above expression: 
 $$
 ||\vec{a}\times \vec{b}||^2 = ||\vec{a}||^2||\vec{b}||^2 - (||\vec{a}||*||\vec{b}|| \cos\theta)^2
@@ -85,7 +86,7 @@ Taking the square root, then:
 $$
 ||\vec{a}\times \vec{b}|| = ||\vec{a}||*||\vec{b}|| * |\sin\theta|
 $$
-Note what this geometrically means: If we take $\vec{a}$ and $\vec{b}$ with the angle $\theta$ between them,
+Note what this geometrically means: If we take $\vec{a}$ and $\vec{b}$ with the angle $\theta$ between them, $||\vec{b}||*\sin\theta$ gives us the height of the parallelogram formed between them, and since $||\vec{a}||$ is the base, then the **Magnitude of a Cross Product** gives us the *area of the parallelogram formed by those two vectors*. 
 # Pre-Lecture Notes
 ## Cross Product
 A cross product of two vectors $\vec{a}$ and $\vec{b}$ is generally defined as the following: 
