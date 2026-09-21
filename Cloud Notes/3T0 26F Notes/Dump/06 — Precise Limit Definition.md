@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T11:44:51.382-04:00
-edited_seconds: 1280
+updated_at: 2026-09-21T12:09:28.038-04:00
+edited_seconds: 1520
 course: ESC194H1
 tags:
   - ESC194H1
@@ -108,7 +108,72 @@ Taking the $\epsilon$ side:
 $$
 |\sqrt{ x }-0|=|\sqrt{ x }| =\sqrt{ x } < \epsilon  \implies x < \epsilon^2
 $$
-Note from the earlier definition, then we choose that $\delta = $
+Note from the earlier definition, then we choose that $\delta = \epsilon^2$
+
+Our next step is to actually prove this: 
+> Given $\delta =\epsilon^2$, then if $0 < x < \delta$: 
+> $$|\sqrt{ x }-0|=|\sqrt{ x }| =\sqrt{ x } \implies \sqrt{ x } < \sqrt{ \delta }$$
+> Now, sub in our value for $\delta=\epsilon^2$, then: 
+> $$\sqrt{ x }=\sqrt{ \epsilon^2 } \implies \sqrt{ x } < \epsilon$$
+> Note that, taking our earlier definition, then $$|\sqrt{ x }-0| <\epsilon$$
+
+
+## General Example
+$$
+\lim_{ x \to 2 } (x^2-1)=3
+$$
+Step 1: Solve for $\delta$: 
+$$
+|x-2| < \delta
+$$
+$$
+|f(x) - 3| = |x^2-1-3| = |(x+2)(x-2)| = |x+2||x-2| < \epsilon
+$$
+Note that from here, we have a problem: We have an additional $|x+2|$ term here. We need to  constrain this more. We can constrain it by some value $k$, that is some *upper limit*: 
+$$
+|x+2| < k
+$$
+Note from our inequality properties, this implies then: 
+$$
+|x+2||x-2| < k|x-2|<\epsilon
+$$
+From our earlier $\delta$ inequality, then: 
+$$
+k|x-2| < \epsilon \implies |x-2| < \frac{\epsilon}{k} \implies \delta \text{ should be chosen from } \frac{\epsilon}{k}
+$$
+
+So, let's assume $\delta$ is some value $1$, that is it is an upper bound. Sub it into our earlier case for $\delta$: 
+$$
+|x-2| < \delta \implies |x-2| < 1 \implies 1 < x < 3 \implies 3 < x+2 < 5 \implies |x+2| < 5
+$$
+Note from here, we can substitute this into our earlier equation, that is $k=5$, therefore: 
+$$
+|x+2| < 5 \implies 5|x-2| < \epsilon \implies |x-2| < \frac{\epsilon}{5} \implies \delta = \frac{\epsilon}{5}
+$$
+Note that we *we also have the condition of* $\delta=1$. That means that $$\delta = \text{min}\left\{  1, \frac{\epsilon}{5}  \right\}$$
+
+Now let's attempt to prove this: 
+Choose delta as: $$\delta = \text{min}\left\{  1, \frac{\epsilon}{5}  \right\}$$
+Then, if $$0 < |x-2|< \delta$$
+Then, we know that: 
+$$
+0 < |x-2| < \frac{\epsilon}{5} \land |x-2| < 1
+$$
+Note that from the inequality on the right: then: 
+$$
+-1 < x-2 < 1 \implies 3 < x+2 < 5 \implies |x+2| < 5
+$$
+Therefore, we take our $\epsilon$ term: 
+$$
+|f(x) - 3| = |x^2-1-3| = |(x+2)(x-2)| = |x+2||x-2| < \epsilon
+$$
+From here, substitute $5$ for $|x+2|$, then we can substitute in our earlier $\delta$ definition. 
+$$
+5|x-2| < 5\delta
+$$
+Assume that $\epsilon \to 0$, then $\delta = \frac{\epsilon}{5}$, meaning that the above inequality resolves to $|f(x)-3|=|x-2| <\epsilon$, therefore by definition our limit exists. 
+
+
 # Pre-Lecture Notes
 ## Epsilon-Delta Definition
 The Epsilon-Delta Definition of a limit is the formal definition of a limit past the intuitive one we tackled in the previous note. It is formally defined as the following: 
@@ -141,8 +206,9 @@ That is, for all $\epsilon$ greater than 0, there must exist a $\delta$ greater 
 > 2. If other terms exist where it isn't equivalent to our $\delta$ term, work to a way to get to it. 
 > 3. Recall your inequality properties. 
 > 4. Sometimes, adding and multiplying to add another bound can also be a viable candidate. 
+> 5. 
 
-> **Note** that we always should prove the previous step, and prove the forward step (i.e. solve for $\delta$), and show that this choice holds true for $\epsilon$. 
+> **Note** that we always should prove the previous step, and prove the forward step (i.e. solve for $\delta$), and show that this choice holds true for $\epsilon$. That is we want to work from $\epsilon$ back to $\delta$ back to $\epsilon$ for our original statement. 
 ### Linear Case 
 Take the following function: 
 $$
