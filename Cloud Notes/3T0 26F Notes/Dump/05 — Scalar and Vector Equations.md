@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-18T12:16:28.917-04:00
-edited_seconds: 70
+updated_at: 2026-09-21T11:04:37.155-04:00
+edited_seconds: 90
 course: ESC103H1
 tags:
   - ESC103H1
@@ -18,3 +18,5 @@ Next:
 
 # Lecture Notes
 # Pre-Lecture Notes
+## Vector Equations
+Recall the definitions that we had for a vector u
