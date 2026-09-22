@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T13:42:12.155-04:00
-edited_seconds: 410
+updated_at: 2026-09-22T09:11:35.799-04:00
+edited_seconds: 420
 course:
 tags:
   - ESC101H1
@@ -12,7 +12,7 @@ Created: September 21st 2026, 1:12:28 pm
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[4 — Arguments and Definitions (Continued)]]
-Next:
+Next: [[06 — Design For X]]
 
 --- 
 

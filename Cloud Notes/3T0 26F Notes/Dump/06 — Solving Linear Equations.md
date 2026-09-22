@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T22:41:13.480-04:00
-edited_seconds: 1110
+updated_at: 2026-09-22T09:05:22.177-04:00
+edited_seconds: 1120
 course: ESC103H1
 tags:
   - ESC103H1
