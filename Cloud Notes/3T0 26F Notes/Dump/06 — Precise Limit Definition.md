@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T12:09:28.038-04:00
-edited_seconds: 1530
+updated_at: 2026-09-22T09:51:54.627-04:00
+edited_seconds: 1550
 course: ESC194H1
 tags:
   - ESC194H1
@@ -284,6 +284,6 @@ We also seek to define the concept of *infinite limits* rigorously within our fu
 > Where $N$ is any negative number. 
 > > Note that the second inequality means that the value of our function will be *less than any negative number* at $x$
 
-Note that for one-sided limits, the bounds of $\delta$'s inequality change, while the term for the respective $y$ term (i.e, the one including $N \text{ or }M$). 
+Note that for one-sided limits, the bounds of $\delta$'s inequality change, while the term for the respective $y$ term (i.e, the one including $N \text{ or }M$) remains the same. We can combine these inequalities at will to describe the type of behavior we want to describe. 
 
 
