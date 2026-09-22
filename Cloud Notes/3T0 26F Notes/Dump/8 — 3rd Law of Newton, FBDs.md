@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T10:47:45.082-04:00
-edited_seconds: 250
+updated_at: 2026-09-22T15:54:47.447-04:00
+edited_seconds: 260
 course: PHY180H1
 tags:
   - PHY180H1
@@ -36,7 +36,7 @@ This section will detail the commonly seen forces present in classical mechanics
 > The force experienced on an object lying on a surface, as a force to resist the object's weight from causing it to fall through said surface. May be less than the weight of the actual object itself (e.g. on an incline), 
 
 > Friction
-> The force of friction is generally defined as a relationship between a coefficient of friction, and an object's weight , that is $F_{F} = \mu W_{m}$. 
+> The force of friction is generally defined as a relationship between a coefficient of friction, and an object's weight , that is $F_{F} = \mu F_{N}$. 
 > Friction will be more properly defined in later notes. 
 
 > Spring Force
