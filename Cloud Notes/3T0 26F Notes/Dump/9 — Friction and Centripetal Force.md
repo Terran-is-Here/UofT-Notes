@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T13:45:45.567-04:00
-edited_seconds: 120
+updated_at: 2026-09-22T15:23:20.973-04:00
+edited_seconds: 130
 course:
 tags:
 "Lecture #": 9
@@ -19,4 +19,5 @@ Next:
 --- 
 # Lecture Notes
 # Pre-Lecture Notes
-## Force of Fri
+## Force of Friction
+The Force of Friction is generally 
