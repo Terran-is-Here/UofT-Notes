@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T22:06:44.444-04:00
-edited_seconds: 640
+updated_at: 2026-09-21T22:27:25.123-04:00
+edited_seconds: 950
 course: ESC103H1
 tags:
   - ESC103H1
@@ -79,6 +79,9 @@ $$
 
 
 ### AX=B Matrix
+> [!quote] Relevant Textbook Section: 
+> [[Nicholson-OpenLAWA-2018B.pdf#page=69&offset=54,733,0|2.2 - Equations, Matrices and Transformations]]
+
 We now introduce the notation of an $Ax=B$ Matrix.
 * Let $A$ be equal to some matrix $m\times n$ composed of coefficients
 * let $x$ be equal to some matrix $m \times 1$ of variables, 
@@ -89,9 +92,35 @@ a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
 a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
 \vdots & \vdots & \vdots & \ddots & \vdots\\
 a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
-\end{bmatrix}$$
+\end{bmatrix},
+\vec{x} = \begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{m}\end{bmatrix},\vec{b} = \begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}$$
+
+We define $Ax=B$ as: 
 $$
-\vec{x} = \begin{bmatrix}
-x_{1}
-\end{bmatrix}
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
+\end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{m}\end{bmatrix} = \begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}
 $$
+Note that this is equivalent to our equation earlier; that for the $i$-th row, the corresponding value from the left is defined as the following. For the purposes of this, we will introduce the notation $\vec{r_{i}} = \begin{bmatrix}a_{i1} & a_{i 2} &\dots a_{i n} \end{bmatrix}$, that is $\vec{r_{i}}$ is a row vector representing the $i$-th row of $\vec{A}$, therefore: 
+$$
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
+\end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{m}\end{bmatrix} = 
+\begin{bmatrix}
+\vec{r_{1}} \cdot x \\
+\vec{r_{2}} \cdot x \\
+\vdots \\
+\vec{r_{m}} \cdot x
+\end{bmatrix}=\begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}$$
+Note that what we define $\vec{r_{i}} \cdot x$ as the following: 
+$$
+\vec{r_{i}} \cdot x = a_{i1} x_{1} + a_{i2}x_{2} + \dots+a_{in}x_{m} = b_{i}
+$$
+
+This
