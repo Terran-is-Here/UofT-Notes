@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T17:27:11.043-04:00
-edited_seconds: 1250
+updated_at: 2026-09-22T18:09:56.953-04:00
+edited_seconds: 1310
 course: ESC103H1
 tags:
   - ESC103H1
@@ -18,15 +18,9 @@ Next: N/A
 # Lecture Notes
 # Pre-Lecture Notes
 For the purposes of this note, consider the problem where we are trying to solve for a solution for a system of 3 equations with 3 unknowns ($x,y,z)$, that is the intersection points of 3 planes if they exist: 
-$$
-a_{11}x + a_{12}y + a_{13}z = b_{1}
-$$
-$$
-a_{21} x+a_{22}y+a_{23}z = b_{2}
-$$
-$$
-a_{31}x + a_{32}y + a_{33}z = b_{3}
-$$
+$$a_{11}x + a_{12}y + a_{13}z = b_{1}$$
+$$a_{21} x+a_{22}y+a_{23}z = b_{2}$$
+$$a_{31}x + a_{32}y + a_{33}z = b_{3}$$
 Or, in augmented matrix form, they can be expressed as: 
 $$
 \left[\begin{array}{ccc|c}
@@ -78,7 +72,7 @@ $$
 $$
 
 
-### AX=B Matrix
+## AX=B Matrix
 > [!quote] Relevant Textbook Section: 
 > [[Nicholson-OpenLAWA-2018B.pdf#page=69&offset=54,733,0|2.2 - Equations, Matrices and Transformations]]
 
@@ -147,3 +141,13 @@ a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn} & b_{m} \\
 \begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{n}\end{bmatrix}
 $$
 This can actually be generalized, as we can extend this to any size of $x,b$ as long as their width remains the same. What this means is we can transform $\mathbf{A}$ into it's RREF to solve for our terms in $x$ based on $b$. 
+
+### Backing Logic 
+Retake our original set of 3 equations that we had at the top: 
+$$a_{11}x + a_{12}y + a_{13}z = b_{1}$$
+$$a_{21} x+a_{22}y+a_{23}z = b_{2}$$
+$$a_{31}x + a_{32}y + a_{33}z = b_{3}$$
+Note how we can redefine this as a set of 3 column vectors: 
+$$
+x\begin{bmatrix}a_{11} \\a_{21} \\a_{31}\end{bmatrix}
+$$

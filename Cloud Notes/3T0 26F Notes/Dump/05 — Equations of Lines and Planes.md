@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T17:48:50.547-04:00
-edited_seconds: 710
+updated_at: 2026-09-22T17:59:16.141-04:00
+edited_seconds: 730
 course: ESC103H1
 tags:
   - ESC103H1
@@ -48,6 +48,9 @@ $$
 Note that a hyperplane in $\mathbb{R}^m$ will have a dimension of $m-1$. For instance, $m=2\to \mathbb{R}^2$, which means our hyperplane takes the dimension of a line. 
 
 In general, we can visualize this as the Hyperplane being a subspace of $\mathbb{R}^m$; where the normal vector gives the orthogonal remnant dimension. 
+
+### Plane Equations
+Note that we can convert an equation of a plane in a parametric form, into a set of vectors in a vector equation. 
 # Pre-Lecture Notes
 ## Equation of a Line 
 Recall the definitions that we had for a general vector in $\mathbb{R}^3$: 
