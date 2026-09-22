@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T14:50:42.219-04:00
-edited_seconds: 90
+updated_at: 2026-09-22T10:44:57.813-04:00
+edited_seconds: 230
 course: PHY180H1
 tags:
   - PHY180H1
@@ -11,7 +11,7 @@ created:
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[7 — 1st and 2nd Laws of Newton]]
-Next: N/A
+Next: [[9 —]]
 
 > [!quote] Referenced Textbook Sections 
 > 5.5-5.7
@@ -20,3 +20,24 @@ Next: N/A
 
 # Lecture Notes
 # Pre-Lecture Notes
+
+## Newton's Third Law 
+Newton's Third Law generally is defined as the Law of Reaction, that being that every force has an equal and opposite reactive force applied on them across bodies: 
+
+> [!theorem] NTL
+> Whenever a body exerts a force on a second body,  the first body experiences a force equal in magnitude and opposite in direction to the force it exerts. 
+
+For this context, and analyzing systems using NTL—it may help to separate the bodies of the system to try and properly understand where the reactive forces are being applied. 
+## Common Forces
+This section will detail the commonly seen forces present in classical mechanics. 
+
+> Normal Force 
+> The force experienced on an object lying on a surface, as a force to resist the object's weight from causing it to fall through said surface. May be less than the weight of the actual object itself (e.g. on an incline), 
+
+> Friction
+> The force of friction is generally defined as a relationship between a coefficient of friction, and an object's weight , that is $F_{F} = \mu W_{m}$. 
+> Friction will be more properly defined in later notes. 
+
+> Spring Force
+> The force applied by a spring (or more generally, the restorative force by any material in the linear-elastic regimen) can be generally applied by Hooke's Law: $$F_{E} = -k\Delta x$$
+> Note the negative sign, this force is a restorative force opposite the direction of displacement.
