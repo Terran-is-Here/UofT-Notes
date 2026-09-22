@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T18:09:56.953-04:00
-edited_seconds: 1310
+updated_at: 2026-09-22T18:24:26.234-04:00
+edited_seconds: 1340
 course: ESC103H1
 tags:
   - ESC103H1
@@ -149,5 +149,9 @@ $$a_{21} x+a_{22}y+a_{23}z = b_{2}$$
 $$a_{31}x + a_{32}y + a_{33}z = b_{3}$$
 Note how we can redefine this as a set of 3 column vectors: 
 $$
-x\begin{bmatrix}a_{11} \\a_{21} \\a_{31}\end{bmatrix}
+x\begin{bmatrix}a_{11} \\a_{21} \\a_{31}\end{bmatrix} + y\begin{bmatrix}a_{12} \\a_{22} \\a_{32}\end{bmatrix} + z\begin{bmatrix}a_{13} \\a_{23} \\a_{33}\end{bmatrix}  = \begin{bmatrix}b_{1} \\b_{2} \\b_{3}\end{bmatrix}
+$$
+That is, we can turn our system above into a column picture of vectors, Note that if we define our variables in terms of their own vector, that is: 
+$$
+\mathbf{x} = \begin{bmatrix}x \\y \\z\end{bmatrix}
 $$
