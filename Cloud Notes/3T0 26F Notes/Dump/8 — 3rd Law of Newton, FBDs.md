@@ -1,17 +1,18 @@
 ---
-updated_at: 2026-09-22T10:44:57.813-04:00
-edited_seconds: 230
+updated_at: 2026-09-22T10:47:45.082-04:00
+edited_seconds: 250
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 8
-Lecture Date: 2026-09-21
+Lecture Date: 2026-09-25
 Week: 3
 created:
+Created: September 21st 2026, 2:49:20 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[7 — 1st and 2nd Laws of Newton]]
-Next: [[9 —]]
+Next: [[9 — Friction and Centripetal Force]]
 
 > [!quote] Referenced Textbook Sections 
 > 5.5-5.7
