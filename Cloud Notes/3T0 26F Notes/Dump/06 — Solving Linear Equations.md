@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T22:27:25.123-04:00
-edited_seconds: 950
+updated_at: 2026-09-21T22:41:13.480-04:00
+edited_seconds: 1110
 course: ESC103H1
 tags:
   - ESC103H1
@@ -83,9 +83,13 @@ $$
 > [[Nicholson-OpenLAWA-2018B.pdf#page=69&offset=54,733,0|2.2 - Equations, Matrices and Transformations]]
 
 We now introduce the notation of an $Ax=B$ Matrix.
-* Let $A$ be equal to some matrix $m\times n$ composed of coefficients
-* let $x$ be equal to some matrix $m \times 1$ of variables, 
-* Let $b$ be equal to some matrix $m\times {1}$ of constants: 
+* Let $A$ be equal to some matrix $m\times n$ composed of coefficients: 
+	* $m$ represents the number of equations (rows).
+	* $n$ represents the number of variables present (columns). 
+* let $x$ be equal to some matrix $n \times 1$ of variables, 
+	* That is, our variable vector has a number of rows equal to the columns of coefficients present. 
+* Let $b$ be equal to some matrix $m\times {1}$ of constants.
+	* That is, our output / constant vector has a number of rows equal to the rows of *equations* present. 
 
 $$\vec{A} =\begin{bmatrix}
 a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
@@ -93,16 +97,16 @@ a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
 \vdots & \vdots & \vdots & \ddots & \vdots\\
 a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
 \end{bmatrix},
-\vec{x} = \begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{m}\end{bmatrix},\vec{b} = \begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}$$
+\vec{x} = \begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{n}\end{bmatrix},\vec{b} = \begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}$$
 
-We define $Ax=B$ as: 
+We define $A\mathbf{x}=\mathbf{b}$ as: 
 $$
 \begin{bmatrix}
 a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
 a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
 \vdots & \vdots & \vdots & \ddots & \vdots\\
 a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
-\end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{m}\end{bmatrix} = \begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}
+\end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{n}\end{bmatrix} = \begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}
 $$
 Note that this is equivalent to our equation earlier; that for the $i$-th row, the corresponding value from the left is defined as the following. For the purposes of this, we will introduce the notation $\vec{r_{i}} = \begin{bmatrix}a_{i1} & a_{i 2} &\dots a_{i n} \end{bmatrix}$, that is $\vec{r_{i}}$ is a row vector representing the $i$-th row of $\vec{A}$, therefore: 
 $$
@@ -111,16 +115,24 @@ a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
 a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
 \vdots & \vdots & \vdots & \ddots & \vdots\\
 a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
-\end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{m}\end{bmatrix} = 
+\end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{n}\end{bmatrix} = 
 \begin{bmatrix}
 \vec{r_{1}} \cdot x \\
 \vec{r_{2}} \cdot x \\
 \vdots \\
-\vec{r_{m}} \cdot x
+\vec{r_{n}} \cdot x
 \end{bmatrix}=\begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}$$
-Note that what we define $\vec{r_{i}} \cdot x$ as the following: 
+Note that we define $\vec{r_{i}} \cdot x$ as the following: 
 $$
-\vec{r_{i}} \cdot x = a_{i1} x_{1} + a_{i2}x_{2} + \dots+a_{in}x_{m} = b_{i}
+\vec{r_{i}} \cdot x = a_{i1} x_{1} + a_{i2}x_{2} + \dots+a_{in}x_{n} = b_{i}
 $$
 
-This
+This expression if you notice is actually similar to our expressions earlier for our scalar equations of a plane. Retaking our $3 \times 3$ matrix from earlier, then: 
+$$
+\begin{bmatrix}a_{11} & a_{12} & a_{13} \\a_{21} & a_{22} & a_{23} \\a_{31} & a_{32} & a_{33}\end{bmatrix}\begin{bmatrix}x \\y \\z\end{bmatrix} = \begin{bmatrix}b_{1} \\b_{2} \\b_{3}\end{bmatrix} \text{ which can be roughly represented like } \left[\begin{array}{ccc|c}
+a_{11} & a_{12} & a_{13} & b_{1} \\
+a_{21} & a_{22} &a_{23}&b_{2} \\
+a_{31} & a_{32} & a_{33} & b_{3}
+\end{array}
+\right]
+$$
