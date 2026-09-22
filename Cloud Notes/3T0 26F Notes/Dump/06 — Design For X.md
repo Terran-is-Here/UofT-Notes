@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T09:25:25.164-04:00
-edited_seconds: 170
+updated_at: 2026-09-22T09:42:06.859-04:00
+edited_seconds: 260
 course:
 tags:
 "Lecture #": 6
@@ -36,3 +36,19 @@ These results will *often* be incredibly domain-specific, i.e. these design prin
 > * Do the components have generous safety factors / factors that are likely to affect their lifespan? 
 > 
 > There exists a good amount of principles from DfX for DfReliability; although some principles apply more depending on the contexts of the device being discussed. 
+
+## Standards 
+Standards are *documented agreements* containing requirements / criteria to be applied as rules / guidelines / definitions. 
+
+**Standards are voluntary** unless adopted by a **Code / Regulation**. We want to use standards due to them: 
+* Promoting safety / reliability / productivity / efficiency (due to pre-established baseline standards existing) 
+* Facilitating interoperability (due to the parts / standards already being established across fields)
+* A common language for engineers & criteria for manufacturers (as we have a uniform definition for the object being defined by the standard). 
+
+## Codes
+Codes are *codified regulations and statutory requirements* enforced by government bodies to ensure public safety, health, and welfare in engineering practices. 
+
+**Standards are Mandatory** and **Legally Enforceable**. You must comply with them. Codes are present to: 
+* Establish a minimum baseline of safety and performance. 
+* Protecting the public's health, safety and welfare. 
+* Providing a legal course of action in the case of *non-compliance*. 
