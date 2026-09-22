@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T21:13:03.035-04:00
-edited_seconds: 560
+updated_at: 2026-09-22T17:48:50.547-04:00
+edited_seconds: 710
 course: ESC103H1
 tags:
   - ESC103H1
@@ -30,6 +30,24 @@ $$\begin{bmatrix}x \\y\end{bmatrix} = \begin{bmatrix}x_{0} \\y_{0}\end{bmatrix}+
 Note our direction vector can be defined in terms of the slope of our line, and we can define our initial point in terms of some vertical translation from the origin; that is: 
 $$\begin{bmatrix}x \\y\end{bmatrix} = \begin{bmatrix}0 \\b\end{bmatrix}+a\begin{bmatrix}1 \\m\end{bmatrix}$$
 This resolves down to the familiar scalar equation of the line that we know. 
+### Hyperplanes
+We can extend our concepts of lines and planes and vectors into $\mathbb{R}^m$ dimensional space: 
+$$
+\vec{n} = \begin{bmatrix}n_{1} \\n_{2} \\\vdots \\n_{m}\end{bmatrix}
+$$
+We can define the concept of a "hyperplane", that is $\vec{x}\cdot \vec{n}=0$ as a vector equation holds true. This means that $\forall \vec{x}\perp \vec{n}$. We can reuse the definition that we had in the prenotes, ergo: 
+$$
+n_{1}x_{1} + n_{2}x_{2} + \dots + n_{m}x_{m} = 0
+$$
+Where this is the scalar equation of the plane, equivalent to: 
+$$
+\vec{n} \cdot \vec{x} = \begin{bmatrix}n_{1} \\n_{2} \\\vdots \\n_{m}\end{bmatrix} * \begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{m}\end{bmatrix} = \begin{bmatrix}
+0\\0\\\vdots\\0
+\end{bmatrix}
+$$
+Note that a hyperplane in $\mathbb{R}^m$ will have a dimension of $m-1$. For instance, $m=2\to \mathbb{R}^2$, which means our hyperplane takes the dimension of a line. 
+
+In general, we can visualize this as the Hyperplane being a subspace of $\mathbb{R}^m$; where the normal vector gives the orthogonal remnant dimension. 
 # Pre-Lecture Notes
 ## Equation of a Line 
 Recall the definitions that we had for a general vector in $\mathbb{R}^3$: 
@@ -59,9 +77,14 @@ Note than an alternate definition exists in terms of *scalars*: A plane can also
 $$
 ax +by+cz = d
 $$
-Where: 
+Where $d=ax_{0}+by_{0}+cz_{0}$, where $x_{0},y_{0},z_{0}$ is the location of the point $\vec{p}$. 
 $$\vec{n} = \begin{bmatrix}a \\b \\c\end{bmatrix}$$
 Where $\vec{n}$ is a vector *normal* to the surface of the plane. 
 
 > [!theorem] Lecture Addendum
-> Given any vector $\vec{a}$, and we say that $\vec{n}$
+> Given any vector $\vec{a}$, and we say that $\vec{n}$ is the normal of the plane that contains $\vec{a}$, then: 
+> $$\vec{a} \cdot \vec{n} = \vec{0}$$$$\begin{bmatrix}x\\y\\z\end{bmatrix}\cdot \begin{bmatrix}a\\b\\c\end{bmatrix}=\vec{0} \implies ax+by+cz = 0$$
+> If our vector doesn't start at the origin, then
+> $$\vec{a} \cdot \vec{n} = \vec{0}$$$$\begin{bmatrix}x-x_{0}\\y-y_{0}\\z-z_{0}\end{bmatrix}\cdot \begin{bmatrix}a\\b\\c\end{bmatrix}=\vec{0} \implies ax+by+cz = ax_{0}+by_{0}+cz_{0} = d$$
+
+
