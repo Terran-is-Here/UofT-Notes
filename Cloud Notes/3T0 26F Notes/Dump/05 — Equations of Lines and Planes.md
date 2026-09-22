@@ -62,3 +62,6 @@ $$
 Where: 
 $$\vec{n} = \begin{bmatrix}a \\b \\c\end{bmatrix}$$
 Where $\vec{n}$ is a vector *normal* to the surface of the plane. 
+
+> [!theorem] Lecture Addendum
+> Given any vector $\vec{a}$, and we say that $\vec{n}$

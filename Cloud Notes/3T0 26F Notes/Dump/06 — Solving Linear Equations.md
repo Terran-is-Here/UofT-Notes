@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T09:05:22.177-04:00
-edited_seconds: 1120
+updated_at: 2026-09-22T17:27:11.043-04:00
+edited_seconds: 1250
 course: ESC103H1
 tags:
   - ESC103H1
@@ -136,3 +136,14 @@ a_{31} & a_{32} & a_{33} & b_{3}
 \end{array}
 \right]
 $$
+Where the solution of the augmented matrix on the right resolves in our $\mathbf{x}$; that is the solution to the following: 
+$$
+\text{ the solution of }\left[\begin{array}{ccccc|c}
+a_{11} & a_{12} & a_{13} & \dots & a_{1n} & b_{1}\\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n} & b_{2}\\
+\vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\
+a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn} & b_{m} \\
+\end{array}\right] \text{ gives us }
+\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{n}\end{bmatrix}
+$$
+This can actually be generalized, as we can extend this to any size of $x,b$ as long as their width remains the same. What this means is we can transform $\mathbf{A}$ into it's RREF to solve for our terms in $x$ based on $b$. 
