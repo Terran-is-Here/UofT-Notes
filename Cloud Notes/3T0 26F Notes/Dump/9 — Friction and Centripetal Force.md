@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T10:53:29.158-04:00
-edited_seconds: 110
+updated_at: 2026-09-22T13:45:45.567-04:00
+edited_seconds: 120
 course:
 tags:
 "Lecture #": 9
@@ -19,3 +19,4 @@ Next:
 --- 
 # Lecture Notes
 # Pre-Lecture Notes
+## Force of Fri
