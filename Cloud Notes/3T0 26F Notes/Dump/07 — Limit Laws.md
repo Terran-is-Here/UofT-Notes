@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-23T16:21:26.701-04:00
-edited_seconds: 280
+updated_at: 2026-09-23T16:43:18.585-04:00
+edited_seconds: 290
 course:
 tags:
   - ESC194H1
@@ -35,7 +35,10 @@ For the purposes of this section, assume that $c$ is some constant, and that $\l
 > $$\lim_{ x \to c } \frac{f(x)}{g(x)} = \frac{\lim_{ x \to c } f(x)}{\lim_{ x \to c } g(x)}$$
 > That is, assuming $\lim_{ x \to c }g(x) \neq 0$. 
 
-Note that from here, exponentiation and fractional powers will also follow along. 
+Note that from here, exponentiation and fractional powers will also follow along. Note that two other simple cases arise: 
+* $$\lim_{ x \to c } x = c$$
+* $$\lim_{ x \to c } b=b$$
+
 ### Squeeze Theorem
 The squeeze theorem states that, given the functions in the following relation: 
 $$
