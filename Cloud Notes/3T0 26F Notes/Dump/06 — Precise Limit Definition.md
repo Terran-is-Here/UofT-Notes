@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T09:51:54.627-04:00
-edited_seconds: 1550
+updated_at: 2026-09-23T15:36:36.321-04:00
+edited_seconds: 1560
 course: ESC194H1
 tags:
   - ESC194H1
@@ -150,7 +150,7 @@ Note from here, we can substitute this into our earlier equation, that is $k=5$,
 $$
 |x+2| < 5 \implies 5|x-2| < \epsilon \implies |x-2| < \frac{\epsilon}{5} \implies \delta = \frac{\epsilon}{5}
 $$
-Note that we *we also have the condition of* $\delta=1$. That means that $$\delta = \text{min}\left\{  1, \frac{\epsilon}{5}  \right\}$$
+	Note that we *we also have the condition of* $\delta=1$. That means that $$\delta = \text{min}\left\{  1, \frac{\epsilon}{5}  \right\}$$
 
 Now let's attempt to prove this: 
 Choose delta as: $$\delta = \text{min}\left\{  1, \frac{\epsilon}{5}  \right\}$$

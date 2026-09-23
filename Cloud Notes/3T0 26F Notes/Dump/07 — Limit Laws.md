@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T22:41:21.976-04:00
-edited_seconds: 120
+updated_at: 2026-09-23T15:28:54.313-04:00
+edited_seconds: 130
 course:
 tags:
   - ESC194H1
@@ -21,4 +21,5 @@ Next:
 # Lecture Notes
 # Pre-Lecture Notes
 ## Limit Laws
-The Limit Laws can be derived from application of the $\epsilon-\delta$ definition of the Limit, though those have been linked in a separate se
+The Limit Laws can be derived from application of the $\epsilon-\delta$ definition of the Limit, though those have been linked in a separate segment. 
+
