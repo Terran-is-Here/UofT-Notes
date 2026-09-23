@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T10:32:32.823-04:00
-edited_seconds: 100
+updated_at: 2026-09-22T22:41:21.976-04:00
+edited_seconds: 120
 course:
 tags:
   - ESC194H1
@@ -14,6 +14,8 @@ Hub: [[ESC194 Hub]]
 Previous: [[06 — Precise Limit Definition]]
 Next:
 
+> [!quote] Recommended Reading 
+> 1.6
 --- 
 
 # Lecture Notes
