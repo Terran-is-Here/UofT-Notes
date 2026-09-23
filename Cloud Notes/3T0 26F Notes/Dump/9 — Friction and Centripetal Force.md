@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-23T16:45:37.537-04:00
-edited_seconds: 230
+updated_at: 2026-09-23T16:49:43.321-04:00
+edited_seconds: 240
 course: PHY180H1
 tags:
   - PHY180H1
@@ -16,6 +16,8 @@ Next:
 > [!quote] Textbook Chapters Discussed: 
 > 6.1-6.2
 
+> [!caution] Note
+> It may be useful to refresh on some Integration characteristics and the relationship a term of $F,p,v,a$ has in terms of each other as some rate to $dt$; see [[4 — 1D Kinematics]] for more information. 
 
 --- 
 # Lecture Notes
