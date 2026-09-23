@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-23T16:04:42.070-04:00
-edited_seconds: 250
+updated_at: 2026-09-23T16:21:26.701-04:00
+edited_seconds: 280
 course:
 tags:
   - ESC194H1
@@ -12,7 +12,7 @@ Created: September 21st 2026, 10:49:06 am
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[06 — Precise Limit Definition]]
-Next:
+Next: [[08 — Continuity]]
 
 > [!quote] Recommended Reading 
 > 1.6
@@ -50,7 +50,21 @@ $$
 \lim_{ x \to c } f(x) = L
 $$
 That is, when we let $g(x)$ and $h(x)$ approach $c$, their values constrict $f(x)$ to have a same set of values that they do, eventually granting us the above theorem.
-$$
 
+Generally, interpretation and implementation of the Squeeze Theorem requires knowledge of the domains of one of the functions present; recall that given: 
 $$
-
+a < b < c
+$$
+Letting $D>0$, then
+$$
+Da < Db < Dc
+$$
+From here, for instance some function $\sin\left( \frac{1}{x} \right)$ can be expressed based off it's domain range, and then restricted from there: 
+$$
+-1 \leq \sin\left( \frac{1}{x} \right) \leq 1
+$$
+Let $D = x^2$, note that for all $x$, $D\geq 0$, thus: 
+$$
+-x^2 \leq x^2\sin\left( \frac{1}{x} \right) \leq x^2
+$$
+From our squeeze theorem above, $\lim_{ x \to 0 }-x^2 = \lim_{ x \to 0 }x^2 = 0$, implying that $\lim_{ x \to 0 }x^2\sin\left( \frac{1}{x} \right)=0$. 
