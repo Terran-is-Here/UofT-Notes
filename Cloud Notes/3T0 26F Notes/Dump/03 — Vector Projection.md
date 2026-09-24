@@ -1,10 +1,10 @@
 ---
-updated_at: 2026-09-15T17:46:16.763-04:00
-edited_seconds: 410
+updated_at: 2026-09-23T22:19:33.586-04:00
+edited_seconds: 420
 course: ESC103H1
 tags:
   - ESC103H1
-"Lecture #": 0
+"Lecture #": 3
 Lecture Date: 2026-09-15
 Week:
 Created: September 14th 2026, 11:08:55 am

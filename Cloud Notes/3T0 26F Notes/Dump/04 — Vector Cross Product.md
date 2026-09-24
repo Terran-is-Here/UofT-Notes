@@ -1,18 +1,19 @@
 ---
-updated_at: 2026-09-21T12:34:32.976-04:00
-edited_seconds: 660
+updated_at: 2026-09-23T22:19:44.010-04:00
+edited_seconds: 690
 course: ESC103H1
 tags:
   - ESC103H1
 "Lecture #": 4
 Lecture Date: 2026-09-21
-Week: -13
+Week: 3
 created:
 Created: September 14th 2026, 9:16:00 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[03 — Vector Projection]]
 Next: [[05 — Equations of Lines and Planes]]
+Tutorial: [[T2 - ESC103 Tutorial 2]]
 
 --- 
 

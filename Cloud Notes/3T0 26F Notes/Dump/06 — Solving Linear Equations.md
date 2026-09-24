@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T18:24:26.234-04:00
-edited_seconds: 1340
+updated_at: 2026-09-23T22:19:17.132-04:00
+edited_seconds: 1350
 course: ESC103H1
 tags:
   - ESC103H1
@@ -13,6 +13,7 @@ Created: September 21st 2026, 9:13:07 pm
 Hub: [[ESC103 Hub]]
 Previous: [[05 — Equations of Lines and Planes]]
 Next: N/A 
+Tutorial: 
 
 --- 
 # Lecture Notes

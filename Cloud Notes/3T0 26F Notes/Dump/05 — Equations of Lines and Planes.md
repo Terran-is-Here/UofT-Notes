@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T17:59:16.141-04:00
-edited_seconds: 730
+updated_at: 2026-09-23T22:20:20.380-04:00
+edited_seconds: 740
 course: ESC103H1
 tags:
   - ESC103H1
@@ -13,6 +13,7 @@ Created: September 18th 2026, 12:16:18 pm
 Hub: [[ESC103 Hub]]
 Previous: [[04 — Vector Cross Product]]
 Next: [[06 — Solving Linear Equations]]
+Tutorial: [[T2 - ESC103 Tutorial 2]]
 
 --- 
 
