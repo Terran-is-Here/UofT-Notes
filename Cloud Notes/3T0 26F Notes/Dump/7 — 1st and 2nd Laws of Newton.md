@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T14:48:58.163-04:00
-edited_seconds: 370
+updated_at: 2026-09-24T16:28:28.453-04:00
+edited_seconds: 390
 course: PHY180H1
 tags:
   - PHY180H1
@@ -8,6 +8,7 @@ tags:
 Lecture Date: 2026-09-24
 Week:
 created:
+Created: September 18th 2026, 10:28:45 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[6 — Rotational Kinematics]]
@@ -20,6 +21,8 @@ Next: [[8 — 3rd Law of Newton, FBDs]]
 --- 
 
 # Lecture Notes
+## Dynamics
+Dynamics are generally defined as the study of *why* things move. 
 # Pre-Lecture Notes
 ## Forces
 A force is generally defined as a *push* or a *pull*. Forces *are* vectors (i.e. with Magnitude and Direction). Also recall that vectors are defined in terms of Newtons (units of $[M^1L^1T^{-2}]$). 
