@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-24T13:40:13.667-04:00
-edited_seconds: 1900
+updated_at: 2026-09-24T13:46:03.855-04:00
+edited_seconds: 1930
 course: ESC194H1
 tags:
   - ESC194H1
@@ -20,7 +20,6 @@ Next: [[07 — Limit Laws]]
 
 > [!caution] Forward Proof Direction
 > In general, we seek to go from the $\delta$ to the $\epsilon$ direction in terms of proving that our limit exists. 
-
 
 Take the following function: 
 $$
@@ -220,7 +219,8 @@ Since our range does not inherently include $1$, then $|(x+1)^2| < 4$; therefore
 $$
 |x-2| * \frac{|x|}{|(x+1)^2|} < 3\frac{|x-2|}{|(x+1)^2|} \to |x-2| * \frac{|x|}{|(x+1)^2|} < 3\frac{|x-2|}{4} < \delta 
 $$
-Which then implies our choice for $\delta$ can be $\frac{4}{3}\epsilon$ . 
+Which then implies our choice for $\delta$ can be $\frac{4}{3}\epsilon$ . We now seek to perform the forward direction of the proof. 
+
 
 
 

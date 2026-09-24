@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-23T16:43:18.585-04:00
-edited_seconds: 290
+updated_at: 2026-09-24T13:58:52.524-04:00
+edited_seconds: 370
 course:
 tags:
   - ESC194H1
@@ -19,6 +19,11 @@ Next: [[08 — Continuity]]
 --- 
 
 # Lecture Notes
+> [!theorem] Theorem - Uniqueness of a Limit 
+> $$\begin{align}\text{ if } \lim_{ x \to c } f(x) = L \land \lim_{ x \to c } f(x) = M\\\implies L=M \end{align}$$
+> The proof of this can be derived from $\epsilon-\delta$. 
+
+
 # Pre-Lecture Notes
 ## Limit Laws
 The Limit Laws can be derived from application of the $\epsilon-\delta$ definition of the Limit, though those have been linked in a separate segment. They have been listed here below: 
@@ -26,6 +31,7 @@ The Limit Laws can be derived from application of the $\epsilon-\delta$ definiti
 For the purposes of this section, assume that $c$ is some constant, and that $\lim_{ x \to c }f(x)$ and $\lim_{ x \to c }g(x)$ exist, then: 
 > Sum Law & Difference Law: $$\lim_{ x \to c } \left[f(x) + g(x)\right] = \lim_{ x \to c } f(x) + \lim_{ x \to c } g(x) $$
 > $$\lim_{ x \to c } \left[f(x) - g(x)\right] = \lim_{ x \to c } f(x) - \lim_{ x \to c } g(x) $$
+
 
 > Multiplication Laws 
 > $$\lim_{ x \to c } Df(x) = D\lim_{ x \to c } f(x)$$
