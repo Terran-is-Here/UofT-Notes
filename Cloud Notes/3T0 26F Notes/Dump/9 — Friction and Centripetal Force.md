@@ -1,20 +1,20 @@
 ---
-updated_at: 2026-09-23T16:49:43.321-04:00
-edited_seconds: 240
+updated_at: 2026-09-23T21:40:25.054-04:00
+edited_seconds: 360
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 9
-Lecture Date: 2026-09-22
+Lecture Date: 2026-09-28
 Week: 4
 created:
 ---
 Hub: [[PHY180 Hub]]
 Previous:  [[8 — 3rd Law of Newton, FBDs]]
-Next:
+Next: [[10 — Drag Force and Terminal Velocity]]
 
 > [!quote] Textbook Chapters Discussed: 
-> 6.1-6.2
+> 6.1-6.2 (though really, 6.3 is also included.) 
 
 > [!caution] Note
 > It may be useful to refresh on some Integration characteristics and the relationship a term of $F,p,v,a$ has in terms of each other as some rate to $dt$; see [[4 — 1D Kinematics]] for more information. 
@@ -31,6 +31,19 @@ The Force of Friction is generally defined as a force *opposite* the direction o
 
 > [!theorem] Kinetic Friction
 > Kinetic Friction is defined as the following: $$F_{K} = \mu_{k}N$$
-> Note that this only exists if and only if our object has a speed greater than 0. 
+> Note that this only exists if and only if our object has a speed greater than 0, that is at that instantaneous moment.
 
-Friction forces are reaction forces *which always point against the direction of motion*. 
+Recall that friction forces are reaction forces *which always point against the direction of motion*. 
+
+## Centripetal Force
+Centripetal force is the extension of the concept of Centripetal Acceleration into the world of dynamics; with it generally defined as: 
+$$
+F_{C} = ma_{c} = \frac{mv^2}{r} = mr\omega^2
+$$
+Note that the second definition is the extension of $v_{a} = r\omega$ into acceleration. Note that this implies that: 
+$$
+F_{C} = \frac{mv^2}{r} \implies r = \frac{mv^2}{F_{C}}
+$$
+That is, a ever increasing centripetal force decreases the effective radius for a given object travelling at a certain velocity. Centripetal Force is *however* not a force on it's own, rather it is provided by other forces (such as $F_{F},F_{N},F_{T}$). 
+### Banked Curves
+Banked Curves are extensions of both the inclined surface problems in combination with centripetal acceleration. Note that for these problems, it is easier to keep our axis aligned to the cardinal directions; as we want our vector pointing inwards to be directly pointing inwards (i.e. we don't have to do more math than is needed.) 
