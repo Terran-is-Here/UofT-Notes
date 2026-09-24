@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-24T13:22:19.476-04:00
-edited_seconds: 1800
+updated_at: 2026-09-24T13:40:13.667-04:00
+edited_seconds: 1900
 course: ESC194H1
 tags:
   - ESC194H1
@@ -17,6 +17,11 @@ Next: [[07 — Limit Laws]]
 --- 
 
 # Lecture Notes
+
+> [!caution] Forward Proof Direction
+> In general, we seek to go from the $\delta$ to the $\epsilon$ direction in terms of proving that our limit exists. 
+
+
 Take the following function: 
 $$
 f(x) = \frac{2x^2 - x -1}{(x-1)} = \frac{(2x+1)(x-1)}{(x-1)}
@@ -188,7 +193,11 @@ Simplify this to find a term of $(x-2)$:
 $$
 \left| \frac{4x+1}{(x+1)^2}-1\right| < \epsilon \to |x-2|\left| \frac{x}{(x+1)^2}\right| < \epsilon
 $$
+> [!caution] Note
+> We want to choose a minimum value of $\delta$ that is an interval that is well defined in some way. i.e, no weird behavior appears from asymptotes. 
+
 We're once again finding to deal with this factor. We can try setting $\delta\leq 1$, i.e. $\delta=1$; then: 
+
 $$
 |x-2| < 1 
 $$
@@ -198,22 +207,21 @@ $$
 $$
 1 < x < 3 \to |x| < 3 
 $$
+Note that the interval above is a required implied value for the resultant proof of $\epsilon-\delta$. 
 From this, we know that: 
 $$
-|x-2| * \frac{|x|}{|(x+1)^2|} < 3x-\frac{|x-2|}{|(x+1)^2|}
+|x-2| * \frac{|x|}{|(x+1)^2|} < 3\frac{|x-2|}{|(x+1)^2|}
 $$
 From here, we seek to try and minimize the value of $|(x+1)^2|$ on the interval of $1 <x<3$. From here, we can test to find the value of this absolute value within this range; then: 
 $$
 |(x+1)^2| \text{ at x = 1} \to 4
 $$
 Since our range does not inherently include $1$, then $|(x+1)^2| < 4$; therefore: 
-
 $$
-|x-2| * \frac{|x|}{|(x+1)^2|} < 3\frac{|2|}{|(x+1)^2|} \to
+|x-2| * \frac{|x|}{|(x+1)^2|} < 3\frac{|x-2|}{|(x+1)^2|} \to |x-2| * \frac{|x|}{|(x+1)^2|} < 3\frac{|x-2|}{4} < \delta 
 $$
+Which then implies our choice for $\delta$ can be $\frac{4}{3}\epsilon$ . 
 
-> [!caution] Note
-> We want to choose a minimum value of $\delta$ that is an interval that is well defined in some way. i.e, no weird behavior appears from asymptotes. 
 
 
 # Pre-Lecture Notes
