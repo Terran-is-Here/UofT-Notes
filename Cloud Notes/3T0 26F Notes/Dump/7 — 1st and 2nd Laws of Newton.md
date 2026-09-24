@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-24T16:28:28.453-04:00
-edited_seconds: 390
+updated_at: 2026-09-24T16:30:57.775-04:00
+edited_seconds: 430
 course: PHY180H1
 tags:
   - PHY180H1
@@ -25,8 +25,9 @@ Next: [[8 — 3rd Law of Newton, FBDs]]
 Dynamics are generally defined as the study of *why* things move. 
 # Pre-Lecture Notes
 ## Forces
-A force is generally defined as a *push* or a *pull*. Forces *are* vectors (i.e. with Magnitude and Direction). Also recall that vectors are defined in terms of Newtons (units of $[M^1L^1T^{-2}]$). 
+A force is generally defined as a *push* or a *pull* from something *external to the system*[^1]. Forces *are* vectors (i.e. with Magnitude and Direction). Also recall that vectors are defined in terms of Newtons (units of $[M^1L^1T^{-2}]$). 
 
+[^1]: Taken from the lecture.
 ### Newton's First Law 
 Newton's First Law states that: 
 > [!theorem] NFL 
@@ -68,3 +69,5 @@ $$
 W_{m} = m *\left[\frac{GM}{r^2}\right]
 $$
 Where $G$ is the gravitational constant of $\frac{6.67*10^{-11}Nm^2}{kg^2}$ and $M$ is the mass of the main body of gravity within the system, and $r$ is some term representing the distance of the body of analysis from the center of mass of the gravitational body.
+
+
