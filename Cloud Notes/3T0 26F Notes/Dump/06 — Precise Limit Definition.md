@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-23T15:36:36.321-04:00
-edited_seconds: 1560
+updated_at: 2026-09-24T13:22:19.476-04:00
+edited_seconds: 1800
 course: ESC194H1
 tags:
   - ESC194H1
@@ -172,6 +172,48 @@ $$
 5|x-2| < 5\delta
 $$
 Assume that $\epsilon \to 0$, then $\delta = \frac{\epsilon}{5}$, meaning that the above inequality resolves to $|f(x)-3|=|x-2| <\epsilon$, therefore by definition our limit exists. 
+
+## More Examples
+Prove the following: 
+> $$\lim_{ x \to 2 } \frac{4x+1}{(x+1)^2} = 1$$
+
+Filling out our inequalities: 
+$$
+|x-2| < \delta
+$$
+$$
+\left| \frac{4x+1}{(x+1)^2}-1\right| < \epsilon
+$$
+Simplify this to find a term of $(x-2)$: 
+$$
+\left| \frac{4x+1}{(x+1)^2}-1\right| < \epsilon \to |x-2|\left| \frac{x}{(x+1)^2}\right| < \epsilon
+$$
+We're once again finding to deal with this factor. We can try setting $\delta\leq 1$, i.e. $\delta=1$; then: 
+$$
+|x-2| < 1 
+$$
+$$
+-1 < x-2 < 1
+$$
+$$
+1 < x < 3 \to |x| < 3 
+$$
+From this, we know that: 
+$$
+|x-2| * \frac{|x|}{|(x+1)^2|} < 3x-\frac{|x-2|}{|(x+1)^2|}
+$$
+From here, we seek to try and minimize the value of $|(x+1)^2|$ on the interval of $1 <x<3$. From here, we can test to find the value of this absolute value within this range; then: 
+$$
+|(x+1)^2| \text{ at x = 1} \to 4
+$$
+Since our range does not inherently include $1$, then $|(x+1)^2| < 4$; therefore: 
+
+$$
+|x-2| * \frac{|x|}{|(x+1)^2|} < 3\frac{|2|}{|(x+1)^2|} \to
+$$
+
+> [!caution] Note
+> We want to choose a minimum value of $\delta$ that is an interval that is well defined in some way. i.e, no weird behavior appears from asymptotes. 
 
 
 # Pre-Lecture Notes

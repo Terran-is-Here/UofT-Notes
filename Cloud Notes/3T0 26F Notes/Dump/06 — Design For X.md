@@ -1,8 +1,9 @@
 ---
-updated_at: 2026-09-22T09:42:06.859-04:00
-edited_seconds: 260
-course:
+updated_at: 2026-09-24T13:03:45.262-04:00
+edited_seconds: 270
+course: ESC101H1
 tags:
+  - ESC101H1
 "Lecture #": 6
 Lecture Date: 2026-09-22
 Week: 3
