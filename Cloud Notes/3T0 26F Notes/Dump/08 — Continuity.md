@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-23T16:45:03.325-04:00
-edited_seconds: 250
+updated_at: 2026-09-25T12:46:39.464-04:00
+edited_seconds: 270
 course: ESC194H1
 tags:
   - ESC194H1
@@ -52,4 +52,6 @@ Since both of these are continuous, and that a polynomial is the sum of these po
 
 > [!theorem] Rational Functions
 > From this, it also extends to the concept that rational functions are continuous everywhere in it's domain *with the exception of places in which the denominator resolves to a value of 0.*
-> 
+
+
+
