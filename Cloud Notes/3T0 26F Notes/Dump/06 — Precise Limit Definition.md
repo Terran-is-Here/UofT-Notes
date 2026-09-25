@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T11:11:27.446-04:00
-edited_seconds: 1940
+updated_at: 2026-09-25T14:51:11.451-04:00
+edited_seconds: 1950
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week: 3
 created:
 Created: September 14th 2026, 9:42:17 pm
 ---
-Hub: [[ESC194 Hub]]
+xHub: [[ESC194 Hub]]
 Previous: [[05 — The Limit of a Function]]
 Next: [[07 — Limit Laws]]
 
