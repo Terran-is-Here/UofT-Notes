@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-24T13:03:45.262-04:00
-edited_seconds: 270
+updated_at: 2026-09-25T11:11:47.496-04:00
+edited_seconds: 280
 course: ESC101H1
 tags:
   - ESC101H1
@@ -12,7 +12,7 @@ Created: September 22nd 2026, 9:11:34 am
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[05 — Research and Building Needs, Goals and Objectives]]
-Next: N/A
+Next: [[07 — Engineering Arguments (continued) ]]
 
 --- 
 # Lecture Notes
