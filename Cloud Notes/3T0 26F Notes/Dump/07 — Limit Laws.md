@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T13:13:03.787-04:00
-edited_seconds: 420
+updated_at: 2026-09-25T13:25:22.259-04:00
+edited_seconds: 610
 course:
 tags:
   - ESC194H1
@@ -22,6 +22,42 @@ Next: [[08 — Continuity]]
 > [!theorem] Theorem - Uniqueness of a Limit 
 > $$\begin{align}\text{ if } \lim_{ x \to c } f(x) = L \land \lim_{ x \to c } f(x) = M\\\implies L=M \end{align}$$
 > The proof of this can be derived from $\epsilon-\delta$. 
+
+## Proving Limit Laws
+Prove the following: 
+$$
+\lim_{ x \to c }x =c
+$$
+> *Proof.*
+> Once again, look for Delta.
+> $$\begin{align}|x-c| < \epsilon \\|x-c| < \delta\end{align}$$
+> This implies we should choose $\delta=\epsilon$. The proof from the forward direction should be trivial at this point: 
+> $$\begin{align}|x-c| < \delta \implies |x-c|<\epsilon \end{align}, \delta=\epsilon \implies |x-c|<\epsilon$$
+> As we desired. 
+
+
+Prove the following: 
+$$
+$$
+$$
+\begin{align}\lim_{ x \to c } f(x) &= L \\\lim_{ x \to c } g(x) &= M \implies \\\lim_{ x \to c } f(x)g(x) &= LM\end{align}$$
+Proof is left as an exercise to the reader. 
+
+> *Proof.*
+> Once again, look for $\delta$ in both cases, note that: 
+> $$\begin{align}|x-c| &< \epsilon \tag{f(x)}\\|x-c| &< \epsilon \tag{g(x)} \implies\\\text{for g(x) and f(x)},\epsilon \text{ is shared}\end{align}$$
+
+However: 
+$$
+\begin{align}
+|f(x) - L| < \delta_{1}
+\end{align}
+
+$$
+## Finding Limits 
+
+$$
+$$
 
 
 # Pre-Lecture Notes
@@ -53,8 +89,9 @@ n > 0 , n \in \mathbb{R}
 \end{align}
 $$
 $$
-\lim_{ x \to c } \n
+\lim_{ x \to c } \sqrt[n]{ x } = \sqrt[n]{ c }
 $$
+Note that if $n$ is even, $c > 0$. 
 ### Squeeze Theorem
 The squeeze theorem states that, given the functions in the following relation: 
 $$
