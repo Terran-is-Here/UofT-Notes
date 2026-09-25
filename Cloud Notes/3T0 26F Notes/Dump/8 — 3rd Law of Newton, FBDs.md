@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-22T15:54:47.447-04:00
-edited_seconds: 260
+updated_at: 2026-09-25T16:27:37.247-04:00
+edited_seconds: 360
 course: PHY180H1
 tags:
   - PHY180H1
@@ -29,6 +29,10 @@ Newton's Third Law generally is defined as the Law of Reaction, that being that 
 > Whenever a body exerts a force on a second body,  the first body experiences a force equal in magnitude and opposite in direction to the force it exerts. 
 
 For this context, and analyzing systems using NTL—it may help to separate the bodies of the system to try and properly understand where the reactive forces are being applied. 
+
+> [!ila] In-Lecture Addendum
+> Newton's Third Law always operates in related force-reaction force pairs. These force-reaction force pairs also *act on opposite bodies*. 
+
 ## Common Forces
 This section will detail the commonly seen forces present in classical mechanics. 
 
