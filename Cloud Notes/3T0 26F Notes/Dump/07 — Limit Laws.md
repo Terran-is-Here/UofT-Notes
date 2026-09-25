@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-24T16:14:06.696-04:00
-edited_seconds: 380
+updated_at: 2026-09-25T13:13:03.787-04:00
+edited_seconds: 420
 course:
 tags:
   - ESC194H1
@@ -45,6 +45,16 @@ Note that from here, exponentiation and fractional powers will also follow along
 * $$\lim_{ x \to c } x = c$$
 * $$\lim_{ x \to c } b=b$$
 
+### Exponentiation 
+$$
+\begin{align}
+\lim_{ x \to c } x^n = c^n \\
+n > 0 , n \in \mathbb{R}
+\end{align}
+$$
+$$
+\lim_{ x \to c } \n
+$$
 ### Squeeze Theorem
 The squeeze theorem states that, given the functions in the following relation: 
 $$
