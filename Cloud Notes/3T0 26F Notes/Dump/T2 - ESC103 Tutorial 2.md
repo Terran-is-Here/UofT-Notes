@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-24T11:16:30.651-04:00
-edited_seconds: 530
+updated_at: 2026-09-25T12:19:15.024-04:00
+edited_seconds: 610
 course: ESC103H1
 tags:
   - Tutorial
@@ -19,10 +19,11 @@ tag:#ESC103H1 [week:3]
 This note will have the questions and / answers from Tutorial 2 of ESC103. 
 
 # Questions
-1. idk
-2. idk
-3. idk
-4. idk
+Available at: [[Tutorial 2.pdf|ESC180 Tutorial 2's Document]]. 
+1. Consider the points $A(1,1,1)$, $B(2,2,3)$, $C(6,1,10)$ Find the angle $ABC$ where $B$ is the vertex.
+2. Let $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^2$ or $\mathbb{R}^3$. Let $a=|\vec{u}|$ and $b=|\vec{v}|$. Prove that $\vec{w} = a\vec{v} + b |\vec{u}|$ bisects the angle between $\vec{u}$ and $\vec{v}$. 
+3. Given a rectangular solid of $1$, $1$, $\sqrt{ 2 }$, Find the angle between the body diagonal and one of the longest sides. 
+4. Using cross product, find the area 
 5. idk
 6. Using projections, show that the sum of the squares of the distances from a point $P=(x_{1},y_{1})$ to the perpendicular vectors $ax+by=0$ and $bx-ay=0$ is equal to the square of the length of the vector $\vec{OP} = \begin{bmatrix}x_{1}\\y_{1}\end{bmatrix}$. 
 7. Prove that if $\vec{u}$ and $\vec{v}$ are vectors in $\mathbb{R}^3$, then $\vec{u}\cdot(\vec{u}\times \vec{v}) = 0$.
