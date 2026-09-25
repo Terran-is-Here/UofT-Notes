@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T13:49:39.505-04:00
-edited_seconds: 710
+updated_at: 2026-09-25T13:59:34.107-04:00
+edited_seconds: 830
 course: ESC194H1
 tags:
   - ESC194H1
@@ -81,8 +81,22 @@ $$
 
 Then, following from the Squeeze Theorem, then: 
 $$\lim_{ x \to 0 } x^2\cos\left( \frac{1}{x^2} \right) = 0$$
-## Continuity 
-The definition of Continu
+## Continuity & Applications
+The definition of Continuity below in Pre-Lecture segment of this note ([[08 — Continuity#Continuity|08 — Continuity\Continuity]]) still holds. Note that the implications that this gives: 
+1. Our function is defined at $f(c)$, i.e. $f(x) \mapsto y$ then $c\in x$.
+2. That the limit $\lim_{ x \to c }f(x)$ exists; which implies that $f(x)$ must be defined on some open interval *containing* $c$. 
+	1. The above two statements basically state that $c$ is in $x$, and that $f(x)$ must be defined on an interval containing $c$. 
+3. $\lim_{ x \to c }f(x) = f(c)$
+	1. This mainly deals with the concept of holes/jump discontinuities present. 
+### Continuity Types
+There are generally 4 Continuity Types: 
+
+$$
+\begin{align}
+\text{Infinite}&& \text{Jump}&& \text{?}&& \text{?} \\
+\lim_{ x \to c } f(x) = \pm\infty && 
+\end{align}
+$$
 # Pre-Lecture Notes
 ## Continuity 
 The concept of continuity can be generally defined as the idea of "not lifting your hand from the page". Mathematically however, this is defined as the following: 
