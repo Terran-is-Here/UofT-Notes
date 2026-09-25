@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T11:51:35.273-04:00
-edited_seconds: 210
+updated_at: 2026-09-25T11:52:36.612-04:00
+edited_seconds: 230
 course: ESC101H1
 tags:
   - ESC101H1
@@ -53,4 +53,4 @@ We want to present our argument *differently* than the inductive work that went 
 
 ### Toulmin's Extended
 * We normally don't verbally articulate the ground. 
-* 
+* We can start with a qualifier to decrease the scope of our argument. 

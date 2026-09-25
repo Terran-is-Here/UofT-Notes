@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-23T17:12:14.334-04:00
-edited_seconds: 120
+updated_at: 2026-09-25T12:10:47.839-04:00
+edited_seconds: 130
 course: ESC180H1
 tags:
   - ESC180H1
@@ -12,7 +12,7 @@ Created: September 21st 2026, 5:11:54 pm
 ---
 Hub: [[ESC180 Hub]]
 Previous: [[5 — ESC180 Lecture 5]]
-Next: [[6 — ESC180 Lecture 6]]
+Next: [[8 — ESC180 Lecture 8]]
 
 --- 
 # Lecture Notes
