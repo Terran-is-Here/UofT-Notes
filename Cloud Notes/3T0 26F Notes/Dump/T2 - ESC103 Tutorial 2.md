@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T12:19:15.024-04:00
-edited_seconds: 610
+updated_at: 2026-09-25T20:37:18.252-04:00
+edited_seconds: 910
 course: ESC103H1
 tags:
   - Tutorial
@@ -34,6 +34,26 @@ Available at: [[Tutorial 2.pdf|ESC180 Tutorial 2's Document]].
 
 
 # Answers
+> Question 1 
+> > Consider the points $A(1,1,1)$, $B(2,2,3)$, $C(6,1,10)$ Find the angle $ABC$ where $B$ is the vertex.
+
+> This is trivial, solve for $\vec{BA}$ and $\vec{BC}$: 
+> $$\begin{align}\vec{BA} = \begin{bmatrix}1-2 \\1-2 \\1-3\end{bmatrix} = \begin{bmatrix}-1 \\-1 \\-2\end{bmatrix} && \vec{BC} = \begin{bmatrix}6-2 \\1-2 \\10-3\end{bmatrix} = \begin{bmatrix}4 \\-1 \\7\end{bmatrix}\\ \end{align}$$From here, solve for the angle via dot product: 
+> $$\begin{align}\vec{BA} \cdot \vec{BC} = -4 + 1 - 14 &= -17 & \vec{BA}\cdot \vec{BC} &= |\vec{BA}||\vec{BC}|\cos\theta\\&&\cos\theta &= \frac{\vec{BA}\cdot \vec{BC}}{|\vec{BA}||\vec{BC|}}\end{align}$$
+> From here, then $$\theta = \cos^{-1}\left( \frac{-17}{\sqrt{ 6 }*\sqrt{ 66 }} \right) \approx 148.7\degree$$
+
+> Question 2
+> > Let $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^2$ or $\mathbb{R}^3$. Let $a=|\vec{u}|$ and $b=|\vec{v}|$. Prove that $\vec{w} = a\vec{v} + b\vec{u}$ bisects the angle between $\vec{u}$ and $\vec{v}$. 
+
+> Analyze the component vectors of $\vec{w}$
+> Recall, $\vec{w} = a\vec{v} + b\vec{u}$
+
+$$
+\begin{align}
+a\vec{v} = |\vec{u}|\vec{v} && b\vec{u} = |\vec{v}|\vec{u} \\
+
+\end{align}
+$$
 
 > [!theorem] Question 7
 > > Given $\vec{u},\vec{v}\in \mathbb{R}^3$, then $\vec{u}\cdot(\vec{u}\times \vec{v})=0$. Prove this statement. 
