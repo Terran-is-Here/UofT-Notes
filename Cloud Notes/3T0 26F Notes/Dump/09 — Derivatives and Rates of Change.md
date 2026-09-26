@@ -1,17 +1,17 @@
 ---
-updated_at: 2026-09-26T16:45:45.378-04:00
-edited_seconds: 170
+updated_at: 2026-09-26T17:14:27.594-04:00
+edited_seconds: 180
 course: ESC194H1
 tags:
   - ESC194H1
-"Lecture #": 0
+"Lecture #": 9
 Lecture Date: 2026-09-28
 Week: 4
 Created: September 26th 2026, 4:17:02 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[08 — Continuity]]
-Next: N/A
+Next: [[10 — Differentiation Formulas and Applied Derivatives]]
 > [!quote] Recommended Reading 
 > Stewart 2.1, 2.2
 > Since this section also pertains to limits, [[06 — Precise Limit Definition#Precise Limit Definition|the Precise Limit Definition (ESC194-L6)]] could also help. 
