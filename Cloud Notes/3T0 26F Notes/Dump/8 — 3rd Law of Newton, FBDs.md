@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T16:52:33.969-04:00
-edited_seconds: 380
+updated_at: 2026-09-25T20:51:31.805-04:00
+edited_seconds: 390
 course: PHY180H1
 tags:
   - PHY180H1
@@ -37,11 +37,6 @@ For this context, and analyzing systems using NTL—it may help to separate the 
 > Note that this extends to non-contact forces (such as Newtonian Gravitation). 
 ## Common Forces
 This section will detail the commonly seen forces present in classical mechanics. 
-
-
-
-
-
 
 > Normal Force 
 > The force experienced on an object lying on a surface, as a force to resist the object's weight from causing it to fall through said surface. May be less than the weight of the actual object itself (e.g. on an incline), 

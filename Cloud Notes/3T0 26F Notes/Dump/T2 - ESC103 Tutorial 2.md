@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T20:37:18.252-04:00
-edited_seconds: 910
+updated_at: 2026-09-25T20:49:36.667-04:00
+edited_seconds: 1160
 course: ESC103H1
 tags:
   - Tutorial
@@ -34,26 +34,25 @@ Available at: [[Tutorial 2.pdf|ESC180 Tutorial 2's Document]].
 
 
 # Answers
-> Question 1 
+* Note: Questions 1, 3 and 4 have been skipped due to their ease, and is left as an exercise to the reader. 
+> [!theorem] Question 1
 > > Consider the points $A(1,1,1)$, $B(2,2,3)$, $C(6,1,10)$ Find the angle $ABC$ where $B$ is the vertex.
 
+> [!caution]- Answer
 > This is trivial, solve for $\vec{BA}$ and $\vec{BC}$: 
 > $$\begin{align}\vec{BA} = \begin{bmatrix}1-2 \\1-2 \\1-3\end{bmatrix} = \begin{bmatrix}-1 \\-1 \\-2\end{bmatrix} && \vec{BC} = \begin{bmatrix}6-2 \\1-2 \\10-3\end{bmatrix} = \begin{bmatrix}4 \\-1 \\7\end{bmatrix}\\ \end{align}$$From here, solve for the angle via dot product: 
 > $$\begin{align}\vec{BA} \cdot \vec{BC} = -4 + 1 - 14 &= -17 & \vec{BA}\cdot \vec{BC} &= |\vec{BA}||\vec{BC}|\cos\theta\\&&\cos\theta &= \frac{\vec{BA}\cdot \vec{BC}}{|\vec{BA}||\vec{BC|}}\end{align}$$
 > From here, then $$\theta = \cos^{-1}\left( \frac{-17}{\sqrt{ 6 }*\sqrt{ 66 }} \right) \approx 148.7\degree$$
 
-> Question 2
+> [!theorem] Question 2
 > > Let $\vec{u}$ and $\vec{v}$ in $\mathbb{R}^2$ or $\mathbb{R}^3$. Let $a=|\vec{u}|$ and $b=|\vec{v}|$. Prove that $\vec{w} = a\vec{v} + b\vec{u}$ bisects the angle between $\vec{u}$ and $\vec{v}$. 
 
+> [!caution]- Answer
 > Analyze the component vectors of $\vec{w}$
 > Recall, $\vec{w} = a\vec{v} + b\vec{u}$
-
-$$
-\begin{align}
-a\vec{v} = |\vec{u}|\vec{v} && b\vec{u} = |\vec{v}|\vec{u} \\
-
-\end{align}
-$$
+> $$\begin{align}a\vec{v} &= ||\vec{u}||\vec{v}=\vec{s_{1}} & b\vec{u} = ||\vec{v}||\vec{u}&=\vec{s_{2}} \\\vec{s_{1}}\cdot \vec{s}_{1} = ||\vec{s}_{1}||^2 &= ||\vec{u}||\vec{v} \cdot ||\vec{u}||\vec{v} & \vec{s_{2}}\cdot \vec{s}_{2} = ||\vec{s}_{2}||^2 &= ||\vec{v}||\vec{u} \cdot ||\vec{v}||\vec{u}  \\||\vec{s_{1}}||^2 = ||\vec{u}||^2(\vec{v}\cdot \vec{v}) &= ||\vec{u}||^2||\vec{v}||^2 & ||\vec{s_{2}}||^2 = ||\vec{v}||^2(\vec{u}\cdot \vec{u})  &= ||\vec{v}||^2||\vec{u}||^2 \\||\vec{s_{1}}|| &= ||\vec{u}||||\vec{v}|| & ||\vec{s_{2}}|| &= ||\vec{v}||||u\vec{v}|\end{align}$$
+> From this, we see that $\vec{s_{1}}$ and $\vec{s_{2}}$ form an Isosceles Triangle; note that: $\vec{s_{1}} + \vec{s_{2}} = \vec{w}$; then: 
+> $$\begin{align}\vec{s_{1}} + \vec{s_{2}} &= \vec{w} \\||\vec{u}||\vec{v} + ||\vec{v}||\vec{u} &=\vec{w}\end{align}$$Note that this then graphically tells us that, $\vec{w}$ bisects the angle between $\vec{u}$ and $\vec{v}$. 
 
 > [!theorem] Question 7
 > > Given $\vec{u},\vec{v}\in \mathbb{R}^3$, then $\vec{u}\cdot(\vec{u}\times \vec{v})=0$. Prove this statement. 
