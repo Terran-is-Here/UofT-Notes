@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-26T14:07:51.407-04:00
-edited_seconds: 340
+updated_at: 2026-09-26T14:20:42.684-04:00
+edited_seconds: 490
 course: N/A
 tags:
   - Other
@@ -36,26 +36,42 @@ Failure Theory allows us to compare multiple sources of stress (from FEA) into o
 $$
 \sigma_{v} = \sqrt{ \sigma_{1}^2 + \sigma^2_{2} - \sigma_{1}\sigma_{2} }
 $$
-Where this is then the value that we compare between $@\mu_{u}$. 
+Where this is then the value that we compare between $\mu_{u}$ (ultimate tensile stress). Note that in this case, we can define $\sigma_{1} = \sigma_{\theta}$, and $\sigma_{2} = \sigma_{ax}$. 
 
 ### Example 
 $$
 \begin{align}
 p = 1000\text{psi} \\
-a = 6\text{in} \\
+a = 3\text{in} \\
 h = 0.125
 \end{align}
 $$
-With a factor of safety of two: Solve for if it is valid: 
+With a factor of safety of $2.5$. Solve for if it is valid: 
 
 $$
 \begin{align}
-\sigma_{\theta} = \frac{pa}{t} = \frac{2500*6}{0.125} &= 120000 \\
-\sigma_{2x} = \frac{\sigma_{\theta}}{2} &= 60000
+\sigma_{\theta} = \frac{pa}{t} = \frac{2500*3}{0.125} &= 60000 \\
+\sigma_{2x} = \frac{\sigma_{\theta}}{2} &= 30000
 \end{align}
 
 $$
 Then: 
 $$
-\sigma_{v} = \sqrt{ 12000 }
+\begin{align}
+\sigma_{v} = \sqrt{ 60000^2 + 30000^2 - 60000*30000 } &\approx 52000\text{psi} & \text{Note, }\sigma_{u} = 45000\text{psi} \\
+\sigma_{v} &>\sigma_{u} & \therefore \text{Material fails at 45000 psi.}
+\end{align}
+$$
+Note that at our desired operating regimens; then: 
+$$
+\begin{align}
+\sigma_{\theta} = \frac{pa}{t} = \frac{1000*3}{0.125} &= 24000 \\
+\sigma_{2x} = \frac{\sigma_{\theta}}{2} &= 12000
+\end{align}
+$$
+$$
+\begin{align}
+\sigma_{v} = \sqrt{ 24000^2 + 24000^2 - 24000*12000 } &\approx 20800 \text{psi} & \text{Note, }\sigma_{u} = 45000\text{psi} \\
+\sigma_{v} &<\sigma_{u} & \therefore \text{Material does not fail at operating pressure.}
+\end{align}
 $$
