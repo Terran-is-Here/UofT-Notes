@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T13:59:34.107-04:00
-edited_seconds: 830
+updated_at: 2026-09-26T16:17:04.381-04:00
+edited_seconds: 840
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,7 +11,7 @@ Created: September 23rd 2026, 4:21:26 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[07 — Limit Laws]]
-Next: N/A
+Next: [[09 — Derivatives and Rates of Change]]
 > [!quote] Recommended Reading 
 > 1.8 in the Stewart Textbook, 3.3 of the Supplemental. 
 --- 
