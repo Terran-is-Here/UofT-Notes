@@ -1,17 +1,17 @@
 ---
-updated_at: 2026-09-27T12:05:04.483-04:00
-edited_seconds: 1040
+updated_at: 2026-09-27T12:09:26.892-04:00
+edited_seconds: 1070
 course: ESC194H1
 tags:
   - ESC194H1
-"Lecture #": 0
+"Lecture #": 10
 Lecture Date: 2026-10-01
 Week: 4
 Created: September 26th 2026, 5:14:39 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[09 — Derivatives and Rates of Change]]
-Next: N/A 
+Next: [[11 — Trigonometric, Chain and Implicit Differentiation]]
 > [!quote] Recommended Reading 
 > Sections 2.3, 2.7 of the Stewart Textbook. 
 > Also, [[07 — Limit Laws]] will also be a useful reference for some of the things that we do. 
@@ -73,7 +73,7 @@ $$
 In general for the sciences, the concept of a derivative generally extends to some instantaneous rate of change. For instance, for physics, this can be seen with the relationship that acceleration, velocity, and displacement have from each other (taking from [[4 — 1D Kinematics#Integration and Differentiation|PHY180 (4) - 1D Kinematics\Integration & Differentiation]]): 
 $$
 \begin{align}
-v(t) &= \frac{ds(t)}{dt}
+v(t) &= \frac{ds(t)}{dt} =s'(t)\\ 
+a(t) = \frac{dv(t)}{dt} &= \frac{d^2s(t)}{dt^2} = s''(t)
 \end{align}
-
 $$
