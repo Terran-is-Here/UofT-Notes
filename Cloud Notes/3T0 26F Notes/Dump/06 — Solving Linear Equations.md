@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-23T22:19:17.132-04:00
-edited_seconds: 1350
+updated_at: 2026-09-27T12:40:02.149-04:00
+edited_seconds: 1370
 course: ESC103H1
 tags:
   - ESC103H1
@@ -50,10 +50,10 @@ $$
 
 Therefore, we can define the following as an alternate means of viewing how to solve our expression above: 
 $$
-x\vec{v}_{x} + y\vec{v}_{y} + z\vec{v}_{z} = \vec{b}
-$$Subbing in our values: 
-$$
-x\begin{bmatrix}a_{11} \\a_{21} \\a_{31}\end{bmatrix} + y\begin{bmatrix}a_{12} \\a_{22} \\a_{32}\end{bmatrix}+z\begin{bmatrix}a_{13} \\a_{23} \\a_{33}\end{bmatrix} =\begin{bmatrix}b_{1} \\b_{2} \\b_{3}\end{bmatrix}$$
+x\vec{v}_{x} + y\vec{v}_{y} + z\vec{v}_{z} = \vec{b}$$
+Subbing in our values: 
+
+$$x\begin{bmatrix}a_{11} \\a_{21} \\a_{31}\end{bmatrix} + y\begin{bmatrix}a_{12} \\a_{22} \\a_{32}\end{bmatrix}+z\begin{bmatrix}a_{13} \\a_{23} \\a_{33}\end{bmatrix} =\begin{bmatrix}b_{1} \\b_{2} \\b_{3}\end{bmatrix}$$
 Where our goal now is to solve for a set of solutions of $x,y,z$ to solve for a linear combination of the vectors $\vec{v}_x,\vec{v}_{y}, \vec{v}_{z}$ that equals $\vec{b}$. 
 ## General Expression
 Recall how we defined the concept of a [[02 —Vector Dot Product#Dot Product / Scalar Product|Dot Product]], we generally defined it as the sum of the respective products of two matrices. 
