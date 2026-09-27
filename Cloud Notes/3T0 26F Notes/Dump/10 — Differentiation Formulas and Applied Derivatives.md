@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T11:45:42.593-04:00
-edited_seconds: 670
+updated_at: 2026-09-27T12:05:04.483-04:00
+edited_seconds: 1040
 course: ESC194H1
 tags:
   - ESC194H1
@@ -34,20 +34,46 @@ As we saw from the previous section, taking the derivative solely from this limi
 > General Power Rule 
 > Let $f(x) = x^n$, then $f'(x) = nx^{n-1}$. 
 > *Proof:* 
-
 $$
 \begin{align}
 f(x) &= a_{1}x^n + a_{2}x^{n-1} + \dots + a_n \\
 f(x+h) & = a_{1}(x+h)^n + a_{2}(x+h)^{n-1} + \dots + a_{n}  \\
-&= a_{1}x^n + \binom{n}{1}a_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2  +\dots +a_{2}x^{n-1}+ \binom{n-1}{1}a_{2}x^{n-2}h +\binom{n-1}{1}a_{2}x^{n-3}h^2 +a_{1}h^n +\dots a_{n} \\
-&= a_{1}x^n + na_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2 + \dots + a_{1}h^n + a_{2}x^{n-1}+ \binom{n-1}{1}a_{2}x^{n-2}h+\dots a_{2}h^{n-1} +\dots + a_{n} \\
-f(x+h) -f(x) & = a_{1}x^n + na_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2 + \dots + a_{1}h^n + a_{2}x^{n-1}+ \binom{n-1}{1}a_{2}x^{n-2}h+\dots a_{2}h^{n-1} +\dots  + a_{n} - (a_{1}x^n + a_{2}x^{n-1} + \dots + a_n) \\
-=& na_{1}x^{n-1}h + \binom{n}{2}a_{1}x^{n-2}h^2 + \dots a_{1}h^n + (n-1)a_{2}x^{n-2}h + \dots \binom{n-1}{2}a_{2}x^{n-3}h^1
+&= a_{1}x^n + \binom{n}{1}a_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2  +\dots +a_{2}x^{n-1}+ \binom{n-1}{1}a_{2}x^{n-2}h +\binom{n-1}{2}a_{2}x^{n-3}h^2 +a_{1}h^n +\dots + a_{n-1}x + a_{n-1}h+ a_{n} \\
+&= a_{1}x^n + na_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2 + \dots + a_{1}h^n + a_{2}x^{n-1}+ \binom{n-1}{1}a_{2}x^{n-2}h+\dots a_{2}h^{n-1} +\dots + a_{n-1}x + a_{n-1}h+a_{n} \\
+f(x+h) -f(x) & = a_{1}x^n + na_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2 + \dots + a_{1}h^n + a_{2}x^{n-1}+ \binom{n-1}{1}a_{2}x^{n-2}h+\dots a_{2}h^{n-1} +\dots  + a_{n-1}x + a_{n-1}h + a_{n} - (a_{1}x^n + a_{2}x^{n-1} + \dots + a_n) \\
+&= na_{1}x^{n-1}h + \binom{n}{2}a_{1}x^{n-2}h^2 + \dots a_{1}h^n + (n-1)a_{2}x^{n-2}h + \dots \binom{n-1}{2}a_{2}x^{n-3}h^2 + \dots a_{n-1}h \\
+&=h\left(na_{1}x^{n-1} + \binom{n}{2}a_{1}x^{n-2}h^1 + \dots a_{1}h^{n-1} + (n-1)a_{2}x^{n-2} + \dots \binom{n-1}{2}a_{2}x^{n-3}h^1 + \dots a_{n-1}\right) \\
+\lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h}& = \lim_{ h \to 0 } \frac{h\left(na_{1}x^{n-1} + \binom{n}{2}a_{1}x^{n-2}h^1 + \dots a_{1}h^{n-1} + (n-1)a_{2}x^{n-2} + \dots \binom{n-1}{2}a_{2}x^{n-3}h^1 + \dots a_{n-1}\right)}{h} \\
+&=\lim_{ h \to 0 } na_{1}x^{n-1} + \binom{n}{2}a_{1}x^{n-2}h^1 + \dots a_{1}h^{n-1} + (n-1)a_{2}x^{n-2} + \dots \binom{n-1}{2}a_{2}x^{n-3}h^1 + \dots a_{n-1} \\
+&= na_{1}x^{n-1} + (n-1)a_{2}x^{n-2} + \dots a_{n-1}
+\end{align}
+$$
+Note that this arises from binomial expansion theorem. 
+
+> Product Rule
+> Let $F(x) = f(x)g(x)$, then $F'(x) = f(x)g'(x) = f'(x)g(x)$
+> Proof: 
+$$
+\begin{align}
+F'(x)&= \lim_{ h \to 0 } \frac{F(x+h)-F(x)}{h} = \lim_{ h \to 0 } \frac{f(x+h)g(x+h)-f(x)g(x)}{h} \\
+&= \lim_{ h \to 0 } \frac{f(x+h)g(x+h) - f(x+h)g(x) +f(x+h)g(x) - f(x)g(x)}{h} &\text{Add/subtract term of  } f(x+h)g(x)\\
+&=\lim_{ h \to 0 } \left[ f(x+h) \frac{g(x+h)-g(x)}{h} + g(x) \frac{f(x+h) - f(x)}{h}\right] & \text{Factor \& simplify}\\
+&= \lim_{ h \to 0 } \left[f(x+h) \frac{g(x+h)-g(x)}{h}\right] + \lim_{ h \to 0 } \left[g(x) \frac{f(x+h) - f(x)}{h}\right] \\
+&=f(x)g'(x) + g(x)f'(x)
 \end{align}
 $$
 
+> Quotient Rule 
+> Let $F(x) = \frac{f(x)}{g(x)}$, then $$F'(x) = \frac{g(x)f'(x) - g'(x)f(x)}{g(x)^2}$$
+> Proof is left as an exercise to the reader. 
+
+
+
+## Applied Rates of Change
+In general for the sciences, the concept of a derivative generally extends to some instantaneous rate of change. For instance, for physics, this can be seen with the relationship that acceleration, velocity, and displacement have from each other (taking from [[4 — 1D Kinematics#Integration and Differentiation|PHY180 (4) - 1D Kinematics\Integration & Differentiation]]): 
+$$
+\begin{align}
+v(t) &= \frac{ds(t)}{dt}
+\end{align}
 
 $$
-
-$$
-
