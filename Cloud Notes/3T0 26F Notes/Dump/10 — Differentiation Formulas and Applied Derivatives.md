@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-26T17:28:46.905-04:00
-edited_seconds: 240
+updated_at: 2026-09-27T11:45:42.593-04:00
+edited_seconds: 670
 course: ESC194H1
 tags:
   - ESC194H1
@@ -33,5 +33,21 @@ As we saw from the previous section, taking the derivative solely from this limi
 
 > General Power Rule 
 > Let $f(x) = x^n$, then $f'(x) = nx^{n-1}$. 
-> *Proof:* Left as an exercise to the reader (Aries here, I am NOT writing out this proof in the back of a moving vehicle.) 
+> *Proof:* 
+
+$$
+\begin{align}
+f(x) &= a_{1}x^n + a_{2}x^{n-1} + \dots + a_n \\
+f(x+h) & = a_{1}(x+h)^n + a_{2}(x+h)^{n-1} + \dots + a_{n}  \\
+&= a_{1}x^n + \binom{n}{1}a_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2  +\dots +a_{2}x^{n-1}+ \binom{n-1}{1}a_{2}x^{n-2}h +\binom{n-1}{1}a_{2}x^{n-3}h^2 +a_{1}h^n +\dots a_{n} \\
+&= a_{1}x^n + na_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2 + \dots + a_{1}h^n + a_{2}x^{n-1}+ \binom{n-1}{1}a_{2}x^{n-2}h+\dots a_{2}h^{n-1} +\dots + a_{n} \\
+f(x+h) -f(x) & = a_{1}x^n + na_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2 + \dots + a_{1}h^n + a_{2}x^{n-1}+ \binom{n-1}{1}a_{2}x^{n-2}h+\dots a_{2}h^{n-1} +\dots  + a_{n} - (a_{1}x^n + a_{2}x^{n-1} + \dots + a_n) \\
+=& na_{1}x^{n-1}h + \binom{n}{2}a_{1}x^{n-2}h^2 + \dots a_{1}h^n + (n-1)a_{2}x^{n-2}h + \dots \binom{n-1}{2}a_{2}x^{n-3}h^1
+\end{align}
+$$
+
+
+$$
+
+$$
 
