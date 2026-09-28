@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T21:20:20.083-04:00
-edited_seconds: 610
+updated_at: 2026-09-27T21:40:24.275-04:00
+edited_seconds: 840
 course: PHY180H1
 tags:
   - PHY180H1
@@ -66,7 +66,32 @@ $$
 \begin{align}
 W_{E} &= \int_{A}^B-kx\ dx \\
 &= -k \int_{A}^Bx \ dx \\
-&=-k\left[\right]
-\end{align}
+&=-k\left[\frac{1}{2}x_{b}^2-\frac{1}{2}x_{a}^2\right] \\
+W_{E}&= -\frac{k}{2}[x_{b}^2 - x_{a}^2]
+\end{align}$$
+## Kinetic Energy 
+Kinetic Energy is generally defined as the following: 
+>[!theorem] Kinetic Energy
+> $$K = \frac{1}{2}mv^2$$
+> Note that $K$ can sometimes be notated as $E_{K}$; this is in terms of Joules. Note that $p=mv \to v=\frac{p}{m}$, which means that this can be rewritten as: 
+> $$K = \frac{mp^2}{2m^2} = \frac{p^2}{2m}$$
 
+Note however that $v$, like other values, are based off a certain reference frame. Refer to [[6 — Rotational Kinematics#]] and [[7 — 1st and 2nd Laws of Newton#Newton's First Law|Newton's First Law (PHY180-7)]] for a brief review on this. 
+## Work-Energy Theorem 
+The Work-Energy Theorem states that the Net Work of a system is equivalent to a change in it's kinetic energy. Let us retake the definition of work to show how this is true: 
+$$
+\begin{align}
+dW &= \vec{F} \cdot d\vec{r} & \text{Note, }\vec{F} = m\frac{d\vec{v}}{dt} \\
+&= m\frac{d\vec{v}}{dt} \cdot d\vec{r} & \\
+&=md\vec{v} \cdot \frac{d\vec{r}}{dt} & \text{Note, } \frac{d\vec{r}}{dt} = d\vec{v} \\
+&=md\vec{v} \cdot d\vec{v} & md\vec{v} \to m\vec{v} \\
+&=m\vec{v}\cdot d\vec{v}
+\end{align}
+$$
+I personally (Aries) am not that familiar yet with integration of vectors; we can break this up into it's component form: 
+$$
+\begin{align}
+dW &= mv_{x}dv_{x} + mv_{y}dv_{y} + mv_{z}dv_{z} \\
+\int_{A}^BdW
+\end{align}
 $$
