@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T22:22:26.374-04:00
-edited_seconds: 260
+updated_at: 2026-09-28T12:35:12.108-04:00
+edited_seconds: 270
 course: ESC103H1
 tags:
   - ESC103H1
@@ -9,7 +9,7 @@ Lecture Date: 2026-09-27
 Week: 4
 ---
 Hub: [[ESC103 Hub]]
-Previous: [[06 — Solving Linear Equations]]
+Previous: [[06 — Solving Linear Equations, Intro to Matrices]]
 Next: N/A 
 
 --- 
@@ -27,7 +27,7 @@ a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
 $$
 This is in principle the operation of performing a Matrix-Vector multiplication, which can be defined in two ways: 
 ### Ax=B
-This method is essentially what formed [[06 — Solving Linear Equations#AX=B Matrix|Ax=B Matrices (ESC103-6)]] in the previous note, that is: 
+This method is essentially what formed [[06 — Solving Linear Equations, Intro to Matrices#AX=B Matrix|Ax=B Matrices (ESC103-6)]] in the previous note, that is: 
 $$
 \begin{bmatrix}
 a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
@@ -43,7 +43,7 @@ a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
 \end{bmatrix}=\begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}
 $$
 ### Linear Combination
-Or, this can also be shown as the following (essentially [[06 — Solving Linear Equations#Backing Logic|Backing Logic (ESC103-6)]]): 
+Or, this can also be shown as the following (essentially [[06 — Solving Linear Equations, Intro to Matrices#Backing Logic|Backing Logic (ESC103-6)]]): 
 $$
 \begin{align}
 &=\begin{bmatrix}

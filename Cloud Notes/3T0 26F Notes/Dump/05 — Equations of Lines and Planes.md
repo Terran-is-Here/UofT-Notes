@@ -12,7 +12,7 @@ Created: September 18th 2026, 12:16:18 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[04 — Vector Cross Product]]
-Next: [[06 — Solving Linear Equations]]
+Next: [[06 — Solving Linear Equations, Intro to Matrices]]
 Tutorial: [[T2 - ESC103 Tutorial 2]]
 
 --- 

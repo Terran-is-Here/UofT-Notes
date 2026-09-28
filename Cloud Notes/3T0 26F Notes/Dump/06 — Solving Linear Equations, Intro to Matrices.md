@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T12:30:22.767-04:00
-edited_seconds: 1660
+updated_at: 2026-09-28T12:48:52.789-04:00
+edited_seconds: 1880
 course: ESC103H1
 tags:
   - ESC103H1
@@ -42,8 +42,51 @@ This can be rewritten as:
 $$
 x\begin{bmatrix}1\\3\end{bmatrix} + y\begin{bmatrix}-2\\2\end{bmatrix} = \begin{bmatrix}1\\11\end{bmatrix}
 $$
-That is, we rewrite our linear system into solving for the coefficients for a *linear combination* which leads to our resultant vector. Note that the space formed by our vectors $\begin{bmatrix}1\\3\end{bmatrix}$ and $\begin{bmatrix}-2\\2\end{bmatrix}$ are no longer present in $\mathbb{R}^2$, but rather their own unique component space (as $x,y$ are now linear coefficients for our linear combinations.) 
-
+That is, we rewrite our linear system into solving for the coefficients for a *linear combination* which leads to our resultant vector. Note that the components of the coordinate space formed by our vectors $\begin{bmatrix}1\\3\end{bmatrix}$ and $\begin{bmatrix}-2\\2\end{bmatrix}$ **are no longer present in** $\mathbb{R}^2$, but rather their own unique coordinate space (as $x,y$ are now linear coefficients for our linear combinations.) This coordinate space is represented by the corresponding components of our column vector (e.g. $r_{1},r_{2}$). 
+In this case, $x=3,y=1$ gives us our solution, i.e. $(3,1)$:  
+$$3\begin{bmatrix}1\\3\end{bmatrix} + 1\begin{bmatrix}-2\\2\end{bmatrix} = \begin{bmatrix}1\\11\end{bmatrix}$$
+## Introduction to Matrices
+Matrices are generally described as a means to describe a system of equations. A matrix is represented as a rectangular array of numbers with a size of $m\times n$, where $m$ is the number of rows, and $n$ is the number of columns. For instance: $$A = \begin{bmatrix}4 & 8 & 3 \\2 & 1 & -9\end{bmatrix}$$
+The matrix $A$ has a size of $2\times 3$. Generally for a matrix: 
+$$
+A =\begin{bmatrix}\vec{r}_{1} \\\vec{r}_{2} \\\vdots \\\vec{r}_{n}\end{bmatrix} = \begin{bmatrix}
+\vec{c_{1}} & \vec{c_{2}} & \dots &\vec{c_{n}}
+\end{bmatrix}$$
+Where $\vec{r_{n}}$ is some row vector, and $\vec{c_{n}}$ is some column vector. For Instance: 
+$$
+\begin{align}
+\vec{r}_{1}&=\begin{bmatrix}
+4 & 8 & 3
+\end{bmatrix} \\
+\vec{c_{1}} &=\vec{r_{1}}^T = \begin{bmatrix}4\\8\\3\end{bmatrix}
+\end{align}
+$$
+### AX=B Matrix (Lecture) 
+Taking our earlier example: 
+$$
+\begin{align}x-2y &=1 \\ 3x+2y &=11\end{align}
+$$
+We can represent this as the following matrix-vector multiplication: 
+$$
+\begin{align}
+\begin{bmatrix}1 & -2 \\3 & 2\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}&=\begin{bmatrix}1 \\11\end{bmatrix} \\
+\mathbf{A\vec{v}} &=\vec{b}
+\end{align}$$
+Where this represents our system above. We often notate our coefficients as some matrix $\mathbf{A}$, our vector of variables $\vec{v}$, and our vector of constants $\vec{b}$. This raises the question though, how *do* we multiply *matrices* with *vectors*? 
+#### Row Picture
+The multiplication of a matrix by a vector can be described as the following. Taking our earlier example to demonstrate: 
+$$
+\begin{align}
+\begin{bmatrix}1 & -2 \\3 & 2\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}&=\begin{bmatrix}1 \\11\end{bmatrix} =\begin{bmatrix}\vec{r_{1}}^T \cdot \vec{x}\\ \vec{r_{2}}^T \cdot \vec{x}
+\end{bmatrix}\\\end{align}$$
+Where $\vec{r_{n}}$ is equivalent to the $n$'th row of our vector. This then gives us the following system back: 
+$$
+\begin{bmatrix}1\\-2\end{bmatrix}\cdot \begin{bmatrix}x\\y\end{bmatrix} = 1x-2y = 1
+$$
+$$
+\begin{bmatrix}3\\2\end{bmatrix}\cdot \begin{bmatrix}x\\y\end{bmatrix} = 3x+2y = 11
+$$
+This is generally defined in this equation (taken from Pre-Lecture Notes): Note that in this case, a $m\times n$
 
 
 ---
@@ -146,12 +189,12 @@ a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
 a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
 \end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{n}\end{bmatrix} = 
 \begin{bmatrix}
-\vec{r_{1}} \cdot x \\
-\vec{r_{2}} \cdot x \\
+\vec{r_{1}}^T \cdot x \\
+\vec{r_{2}}^T \cdot x \\
 \vdots \\
-\vec{r_{m}} \cdot x
+\vec{r_{m}}^T \cdot x
 \end{bmatrix}=\begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}$$
-Note that we define $\vec{r_{i}} \cdot x$ as the following: 
+Note that we define $\vec{r_{i}}^T \cdot x$ as the following: 
 $$
 \vec{r_{i}} \cdot x = a_{i1} x_{1} + a_{i2}x_{2} + \dots+a_{in}x_{n} = b_{i}
 $$
