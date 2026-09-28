@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T12:40:02.149-04:00
-edited_seconds: 1370
+updated_at: 2026-09-27T22:18:05.840-04:00
+edited_seconds: 1400
 course: ESC103H1
 tags:
   - ESC103H1
@@ -12,7 +12,7 @@ Created: September 21st 2026, 9:13:07 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[05 — Equations of Lines and Planes]]
-Next: N/A 
+Next: [[07 — Matrix Vector Products]]
 Tutorial: 
 
 --- 
@@ -115,7 +115,7 @@ a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
 \vec{r_{1}} \cdot x \\
 \vec{r_{2}} \cdot x \\
 \vdots \\
-\vec{r_{n}} \cdot x
+\vec{r_{m}} \cdot x
 \end{bmatrix}=\begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}$$
 Note that we define $\vec{r_{i}} \cdot x$ as the following: 
 $$

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T20:51:31.805-04:00
-edited_seconds: 390
+updated_at: 2026-09-27T22:02:19.929-04:00
+edited_seconds: 400
 course: PHY180H1
 tags:
   - PHY180H1
@@ -20,6 +20,7 @@ Next: [[9 — Friction and Centripetal Force]]
 --- 
 
 # Lecture Notes
+See related In-Lecture Addendums
 # Pre-Lecture Notes
 
 ## Newton's Third Law 

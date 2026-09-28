@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T12:09:26.892-04:00
-edited_seconds: 1070
+updated_at: 2026-09-27T22:13:11.665-04:00
+edited_seconds: 1080
 course: ESC194H1
 tags:
   - ESC194H1
@@ -45,7 +45,7 @@ f(x+h) -f(x) & = a_{1}x^n + na_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2 + \dots 
 &=h\left(na_{1}x^{n-1} + \binom{n}{2}a_{1}x^{n-2}h^1 + \dots a_{1}h^{n-1} + (n-1)a_{2}x^{n-2} + \dots \binom{n-1}{2}a_{2}x^{n-3}h^1 + \dots a_{n-1}\right) \\
 \lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h}& = \lim_{ h \to 0 } \frac{h\left(na_{1}x^{n-1} + \binom{n}{2}a_{1}x^{n-2}h^1 + \dots a_{1}h^{n-1} + (n-1)a_{2}x^{n-2} + \dots \binom{n-1}{2}a_{2}x^{n-3}h^1 + \dots a_{n-1}\right)}{h} \\
 &=\lim_{ h \to 0 } na_{1}x^{n-1} + \binom{n}{2}a_{1}x^{n-2}h^1 + \dots a_{1}h^{n-1} + (n-1)a_{2}x^{n-2} + \dots \binom{n-1}{2}a_{2}x^{n-3}h^1 + \dots a_{n-1} \\
-&= na_{1}x^{n-1} + (n-1)a_{2}x^{n-2} + \dots a_{n-1}
+&= na_{1}x^{n-1} + (n-1)a_{2}x^{n-2} + \dots+a_{n-1}
 \end{align}
 $$
 Note that this arises from binomial expansion theorem. 

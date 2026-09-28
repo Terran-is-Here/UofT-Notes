@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T22:00:05.322-04:00
-edited_seconds: 1140
+updated_at: 2026-09-27T22:01:19.680-04:00
+edited_seconds: 1150
 course: PHY180H1
 tags:
   - PHY180H1
@@ -12,7 +12,7 @@ Created: September 23rd 2026, 10:02:18 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[10 — Drag Force and Terminal Velocity]]
-Next: N/A
+Next: [[12 — Potential Energy, Conservative and Non-Conservative Forces]]
 
 > [!quote] Recommended Reading 
 > 7.1-7.4
