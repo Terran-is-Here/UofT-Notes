@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-26T17:14:39.400-04:00
-edited_seconds: 850
+updated_at: 2026-09-28T11:29:02.796-04:00
+edited_seconds: 1160
 course: ESC194H1
 tags:
   - ESC194H1
@@ -90,13 +90,65 @@ The definition of Continuity below in Pre-Lecture segment of this note ([[08 —
 	1. This mainly deals with the concept of holes/jump discontinuities present. 
 ### Continuity Types
 There are generally 4 Continuity Types: 
+> [!theorem] Infinite Discontinuity
+> Given a function $f(x)$, we say that it has a infinite discontinuity at $x=a$ if the limit at that point does not inherently exist. 
 
+> [!theorem] Removable Discontinuity
+> Given a function $f(x)$, we say that it has a removable discontinuity if:
+> * at $x=a$, $f(a)=B$ .
+> * However, $\lim_{ x \to a }f(x)=L$, where $L$ is some finite value. 
+> * And, $B \neq L \implies f(a) \neq \lim_{ x \to a }f(x)$
+> 
+> Or, in shorthand: 
+> $$\begin{align}f(x=a) &= B \\\lim_{ x \to a } f(x) &= L \\L \neq B \implies f(a) &\neq \lim_{ x \to a }f(x) \end{align}$$
+
+> [!theorem] Jump Discontinuity
+> Given a function $f(x)$, we say it has a jump discontinuity at $a$ if: 
+> * $\lim_{ x \to a^+ }f(x) \neq \lim_{ x \to a^- }f(x) \implies \nexists\lim_{ x \to a }f(x)$
+
+> [!theorem] Other Discontinuities
+> Other discontinuities exist; for instance take the Dirichlet Function, defined as: 
+> $$f(x) = \begin{cases}1: x\text{ is rational}\\0: x\text{ is irrational}\end{cases}$$
+> Note that this function is discontinuous, as this has an infinite number of jump discontinuities between rational and irrational values present. 
+### Monodirectional Continuities
+That is, right-handed and or left-handed continuities. These are essentially sub-definitions of our earlier limit-based continuity expressions (see [[08 — Continuity#Continuity|the section in the pre-lecture about it]])
+
+> Right-Handed Continuity
+> We state that a function is continuous from the right at some value $x=c$ if $\lim_{ x \to c^+ }f(x) = f(c)$
+
+> Left-Handed Continuity
+> We state that a function is continuous from the right at some value $x=c$ if $\lim_{ x \to c^- }f(x) = f(c)$
+
+## Interval Continuity
+We say that a function is continuous on an interval if it is continuous on every point *on* that interval. Note that at the end-points of the interval, we define their concept of "continuous" as the corresponding monodirectional continuity as appropriate. 
+
+*Example*: Show that $f(x) = \sqrt{ x^2-4 }$ is continuous on the domain of $(-\infty,-2]\cup[2,\infty)$. For this, we will consider this in terms of cases. 
+
+Consider the case when $c>2 \lor c<-2$ is defined as: 
 $$
 \begin{align}
-\text{Infinite}&& \text{Jump}&& \text{?}&& \text{?} \\
-\lim_{ x \to c } f(x) = \pm\infty && 
+\lim_{ x \to c } \sqrt{ x^2-4 } = \sqrt{ \lim_{ x \to c } x^2-4 } = \sqrt{ c^2-4 } && \text{Note, }\sqrt{ c^2-4 } = f(c) \\
+\therefore, \text{f(x) is continous if } x<-2\lor x>2 
 \end{align}
 $$
+Consider now the case at our endpoints that are defined at $c=2$ and $c=-2$: 
+$$
+\begin{align}
+x=-2 \implies c&=-2 \\
+\lim_{ x \to -2^- } \sqrt{ x^2-4 } = \sqrt{ \lim_{ x \to -2^- }x^2-4 }  = \sqrt{ (-2)^2-4 } &= 0 = f(-2) \\
+\therefore f(x)\text{ is continuous at -2 (from the left)}
+\end{align}
+$$
+$$
+\begin{align}
+x=2 \implies c&=2 \\
+\lim_{ x \to 2^+ } \sqrt{ x^2-4 } = \sqrt{ \lim_{ x \to -2^+ }x^2-4 }  = \sqrt{ (2)^2-4 } &= 0 = f(2) \\
+\therefore f(x)\text{ is continuous at 2 (from the right)}
+\end{align}
+$$
+From this, we show that from all these cases, that $f(x)$ is continuous for our entire interval $x\in$
+
+
 # Pre-Lecture Notes
 ## Continuity 
 The concept of continuity can be generally defined as the idea of "not lifting your hand from the page". Mathematically however, this is defined as the following: 
