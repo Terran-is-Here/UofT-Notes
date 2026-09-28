@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T22:13:11.665-04:00
-edited_seconds: 1080
+updated_at: 2026-09-28T10:05:13.462-04:00
+edited_seconds: 1090
 course: ESC194H1
 tags:
   - ESC194H1
@@ -77,3 +77,4 @@ v(t) &= \frac{ds(t)}{dt} =s'(t)\\
 a(t) = \frac{dv(t)}{dt} &= \frac{d^2s(t)}{dt^2} = s''(t)
 \end{align}
 $$
+Although, by extension, these segments are therefore the antiderivatives of each other: 

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T22:14:02.859-04:00
-edited_seconds: 110
+updated_at: 2026-09-28T10:20:30.705-04:00
+edited_seconds: 230
 course: ESC194H1
 tags:
   - ESC194H1
@@ -17,3 +17,25 @@ Next: N/A
 --- 
 # Lecture Notes
 # Pre-Lecture Notes
+## Trigonometric Derivatives
+Trigonometric Derivatives can be generally obtained from the Differentiation Formulas that we derived in our previous note, as well as some angle sum identities. For this segment, we will take the derivative of $\sin(x)$: 
+$$
+\begin{align}
+f(x) &= \sin(x) \\
+f'(x) &= \lim_{ h \to 0 } \frac{\sin(x+h)-\sin(x)}{h} \\
+&= \lim_{ h \to 0 } \frac{\sin (x)\cos(h) + \sin(h)\cos(x) - \sin(x)}{h} \\
+&=\lim_{ h \to 0 } \frac{\sin (x)\cos(h) - \sin(x)+ \sin(h)\cos(x) }{h}  \\
+&= \lim_{ h \to 0 } \sin(x) \frac{\cos(h)-1}{h} + \lim_{ h \to 0 } \frac{\sin(h)\cos(x)}{h} \\
+&= \sin(x) \lim_{ h \to 0 } \frac{\cos(h)-1}{h} + \cos(x)\lim_{ h \to 0 } \frac{\sin(h)}{h} &\lim_{ h \to 0 } \frac{\cos(h)-1}{h} =0 &&\lim_{ h \to 0 } \frac{\sin(h)}{h}=1\\ \\
+&=\sin(x)(0) + \cos(x)(1)  \\
+&=\cos(x)
+\end{align}
+$$
+Note that the two limits that we have shown on the right will be proved in their respective subsection: 
+
+### Special Trigonometric Limits 
+
+> The following holds true: 
+> $$\lim_{ x \to 0 } \frac{\sin(x)}{x} = 1$$
+> *Proof*
+> 
