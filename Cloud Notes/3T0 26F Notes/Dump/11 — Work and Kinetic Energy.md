@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T21:40:24.275-04:00
-edited_seconds: 840
+updated_at: 2026-09-27T22:00:05.322-04:00
+edited_seconds: 1140
 course: PHY180H1
 tags:
   - PHY180H1
@@ -91,7 +91,28 @@ $$
 I personally (Aries) am not that familiar yet with integration of vectors; we can break this up into it's component form: 
 $$
 \begin{align}
-dW &= mv_{x}dv_{x} + mv_{y}dv_{y} + mv_{z}dv_{z} \\
-\int_{A}^BdW
+dW &= mv_{x}dv_{x} + mv_{y}dv_{y} + mv_{z}dv_{z} = m\left[v_{x}dv_{x} + v_{y}dv_{y} + v_{z}dv_{z}\right] \\
+W_{net}=\int_{A}^BdW &= \int_{A}^Bm\left[v_{x}dv_{x} + v_{y}dv_{y} + v_{z}dv_{z}\right] & \\
+&=\left[\frac{m}{2}v_{x}^2 + \frac{m}{2}v_{y}^2 + \frac{m}{2}v_{x}^2\right]^B_{A} \\
+&= \left[\frac{m}{2}v_{x}^2 + \frac{m}{2}v_{y}^2 +\frac{m}{2}v_{z}^2\right]^B_{A} = [\frac{m}{2}v^2]^B_{A} &v_{x}^2 + v_{y}^2 +v_{z}^2 = v^2\\
+W_{net}&=K_{B}-K_{A} = \Delta K
 \end{align}
 $$
+What this means is that for instance, if Work is *negative*, then the kinetic energy of our object will proportionally decrease. 
+## Power 
+Power is generally defined as some term of Energy over time, that is: 
+$$P_{av} = \frac{W}{t}$$
+This is often notated in the term of a $W$ (Watt), where $1W = \frac{1J}{s}$. 
+
+> [!theorem] Instantaneous Power
+> Instantaneous power is defined as the following: 
+> $$P = \frac{dW}{dt}$$
+> Note that this can also be expressed as: $$\begin{align}P&= \frac{dW}{dt}& dW = \vec{F} \cdot d\vec{v} \\&= \frac{\vec{F}\cdot d\vec{r}}{dt} \\&= \vec{F} \cdot \frac{d\vec{r}}{dt} \\&=\vec{F} \cdot \vec{v}\end{align}$$
+
+Note that if $P$ is constant for some time interval $dt$, then we can say that: 
+$$
+\begin{align}
+Pdt &= dW \\
+\int Pdt &= \int dW  \\ \\
+Pt&=W\end{align}$$
+That is to say, that if $P$ is constant, the net work is defined as the area under the Power curve with respects to time. 
