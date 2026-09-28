@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T12:09:25.574-04:00
-edited_seconds: 1460
+updated_at: 2026-09-28T12:30:22.767-04:00
+edited_seconds: 1660
 course: ESC103H1
 tags:
   - ESC103H1
@@ -17,6 +17,36 @@ Tutorial:
 
 --- 
 # Lecture Notes
+Linear Algebra is solving a *set* or *system* of linear equations[^1]. This has a wide variety of applications. 
+
+> Applications
+> For instance: Professor (Chen?) is researching particulate matter present in the air (due to their focus as an atmospheric chemist). Particulate Matter present can be described as a histogram with the number of particles present with respects to their relative size.
+> 
+> We can use linear algebra to back-propagate values from particles measured, to predicted amounts present (as some particulates may be categoized as another size due to uncertainties due to measurements): $$\begin{align}N_{1}^` &= 0.9N_{1} + 0.1 N_{2} + 0.05 N_{3} \\N_{2}^` &= 0.1N_{1} + 0.8 N_{2} + 0.10 N_{3} \\N_{3}^` &= 0.0N_{1} + 0.1 N_{2} + 0.85 N_{3} \end{align}$$
+> This is a system of linear equations, which is the focus of linear algebra. 
+---
+
+Consider the following two equations: 
+$$\begin{align}x-2y &=1 \\ 3x+2y &=11\end{align}$$
+The purposes of this Lecture Note is to show two methods to express this linear system: as a row picture, and as a column picture. Note that the goal of this is to solve for a set of $(x,y)$ that satisfy both equations *simultaneously*. 
+## Row Picture 
+The Row Picture essentially wants us to solve our equation as the solution (for our case above) as the intersection point of our two line equations above. 
+$$
+\begin{align}x-2y &=1 \\ 3x+2y &=11\end{align}
+$$
+In this case, the solution is the point $(3,1)$. 
+## Column Picture
+The Column Picture asks us to solve this in terms of "columns", i.e. vertically. Instead of seeing them as a set of two linear equations that need to be simultaneously satisfied, this can be represented as the following vector equation: 
+$$\begin{bmatrix}x-2y\\3x+2y\end{bmatrix} = \begin{bmatrix}1\\11\end{bmatrix}$$
+This can be rewritten as: 
+$$
+x\begin{bmatrix}1\\3\end{bmatrix} + y\begin{bmatrix}-2\\2\end{bmatrix} = \begin{bmatrix}1\\11\end{bmatrix}
+$$
+That is, we rewrite our linear system into solving for the coefficients for a *linear combination* which leads to our resultant vector. Note that the space formed by our vectors $\begin{bmatrix}1\\3\end{bmatrix}$ and $\begin{bmatrix}-2\\2\end{bmatrix}$ are no longer present in $\mathbb{R}^2$, but rather their own unique component space (as $x,y$ are now linear coefficients for our linear combinations.) 
+
+
+
+---
 # Pre-Lecture Notes
 For the purposes of this note, consider the problem where we are trying to solve for a solution for a system of 3 equations with 3 unknowns ($x,y,z)$, that is the intersection points of 3 planes if they exist: 
 $$
@@ -39,7 +69,7 @@ $$
 The row pictures deal with considering our equations above as a series of $3$ planes, and simply solving for the solution of $x,y,z$ that satisfies all the values; where the resultant intersection gives you the point at which all three planes intersect. In other words, we want to return that augmented matrix above us into a row-echelon / row-reduced matrix. 
 
 ## Column Picture
-The Column Picture of solving for the solution of a system of 3 equations deals with solving for a linear combination that solves for our solution set of $x,y,z$. 
+The Column Picture of solving for the solution of a system of 3 equations deals with solving for a **linear combination** that solves for our solution set of $x,y,z$. 
 
 Note that we can define 3 vectors from the equations above based on if they're in terms of $x$, $y$, or $z$: 
 $$
@@ -162,3 +192,5 @@ That is, we can turn our system above into a column picture of vectors, Note tha
 $$
 \mathbf{x} = \begin{bmatrix}x \\y \\z\end{bmatrix}
 $$
+
+[^1]: Well, specifically for linear algebra.
