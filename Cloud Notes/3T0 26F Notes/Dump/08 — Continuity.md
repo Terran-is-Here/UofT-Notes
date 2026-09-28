@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T11:49:49.824-04:00
-edited_seconds: 1530
+updated_at: 2026-09-28T11:58:03.021-04:00
+edited_seconds: 1700
 course: ESC194H1
 tags:
   - ESC194H1
@@ -172,17 +172,8 @@ $$
 
 This can be extended to an interesting result: 
 * Any Polynomial Function is *Continuous* on $\mathbb{R}$. 
-Recall the definition of a polynomial: 
-$$
-\begin{align}
-f(x) &= a_{1}x^n + a_{2}x^{n-1} + \dots + a_{n} & \text{Where } n \text{ is an integer} \\
-\lim_{ x \to a } f(x) &= \lim_{ x \to a } \left[a_{1}x^n + a_{2}x^{n-1} + \dots + a_{n}\right] \\
-&=\lim_{ x \to a } a_{1}x^n + \lim_{ x \to a }a_{2}x^{n-1} +\dots+\lim_{ x \to a } a_{n}  \\
-&=a_{1}\lim_{ x \to a } x^n + a_{2}\lim_{ x \to a } x^{n-1} +\dots + a_{n} \\
-f(x)&=a_{1}a^n + a_{2}a^{n-1} +\dots + a_{n} \\
-&\therefore\text{ Any polynomial is continuous for any arbitrary  }a
-\end{align}
-$$
+  Recall the definition of a polynomial: 
+  $$\begin{align}f(x) &= a_{1}x^n + a_{2}x^{n-1} + \dots + a_{n} & \text{Where } n \text{ is an integer} \\\lim_{ x \to a } f(x) &= \lim_{ x \to a } \left[a_{1}x^n + a_{2}x^{n-1} + \dots + a_{n}\right] \\&=\lim_{ x \to a } a_{1}x^n + \lim_{ x \to a }a_{2}x^{n-1} +\dots+\lim_{ x \to a } a_{n}  \\&=a_{1}\lim_{ x \to a } x^n + a_{2}\lim_{ x \to a } x^{n-1} +\dots + a_{n} & \text{via Constant Multiplication Rule}\\f(x)&=a_{1}a^n + a_{2}a^{n-1} +\dots + a_{n}  & \text{via Exponentiation Rule}\\&\therefore\text{ Any polynomial is continuous for any arbitrary  }a\end{align}$$
 * Any *Rational* Function is Continuous on it's domain, that is: 
 $$\begin{align}
 f(x) = \frac{P(x)}{Q(x)} && \text{Where } f(x), x\in \{ x\in \mathbb{R}|Q(x) \neq 0 \}
@@ -214,7 +205,24 @@ D = \{ x \in \mathbb{R} | \cos^2(x) + 1 \neq 0 \}
 $$
 Note that $\nexists\cos^2(x) < 0$, then this implies that $D=\{ x \in \mathbb{R} \}$. 
 
-Consider anot
+Consider a case when our function is composed of functions with discontinuities: 
+![[08 — Continuity-1790610668792.webp|284]]
+Let us try checking if a function of $h(x)=f(f(x))is$ continuous at some value $x=0$. Let's first evaluate it at $f(0)$: 
+$$
+h(0) = f(f(0)) = f(2) = 2
+$$
+Now, consider it's limits from left and right of $x=0$: 
+$$
+\begin{align}
+\lim_{ x \to 0^+ }h(x)  &= \lim_{ x \to 0^+ } f(f(x)) & \text{ Consider approaching from the right, then} \lim_{ x \to 0^+ } f(x) = 2 \\
+&= f(2) = 2 \\
+\lim_{ x \to 0^- }h(x)  &= \lim_{ x \to 0^- } f(f(x)) & \text{ Consider approaching from the left, then} \lim_{ x \to 0^- } f(x) = 2 \\
+&= f(2) = 2 \\ 
+\lim_{ x \to 0^+ }h(x) = \lim_{ x \to 0^- } h(x) = 2 &= h(x) & \text{Therefore, our function is continuous at }x=0.
+\end{align}
+$$
+
+
 # Pre-Lecture Notes
 ## Continuity 
 The concept of continuity can be generally defined as the idea of "not lifting your hand from the page". Mathematically however, this is defined as the following: 
