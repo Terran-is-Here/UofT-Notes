@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T22:18:05.840-04:00
-edited_seconds: 1400
+updated_at: 2026-09-27T22:25:07.590-04:00
+edited_seconds: 1440
 course: ESC103H1
 tags:
   - ESC103H1
@@ -143,6 +143,8 @@ a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn} & b_{m} \\
 $$
 This can actually be generalized, as we can extend this to any size of $x,b$ as long as their width remains the same. What this means is we can transform $\mathbf{A}$ into it's RREF to solve for our terms in $x$ based on $b$. 
 
+### Implication
+What this implies is that we can find the vector pointing to the possible intersection of the set of $m$ amounts of hyperplanes existing in the $n-1$-th dimension with a vector that points to it in $n-1$ space as the result of a Matrix-Vector multiplication operation. 
 ### Backing Logic 
 Retake our original set of 3 equations that we had at the top: 
 $$a_{11}x + a_{12}y + a_{13}z = b_{1}$$

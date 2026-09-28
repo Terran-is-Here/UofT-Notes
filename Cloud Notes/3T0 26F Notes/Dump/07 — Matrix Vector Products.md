@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T22:21:13.997-04:00
-edited_seconds: 220
+updated_at: 2026-09-27T22:22:26.374-04:00
+edited_seconds: 260
 course: ESC103H1
 tags:
   - ESC103H1
@@ -51,8 +51,8 @@ a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
 a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
 \vdots & \vdots & \vdots & \ddots & \vdots\\
 a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
-\end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{n}\end{bmatrix} \\
-&= \begin{bmatrix}a_{11} \\a_{21} \\\vdots \\a_{m{1}}\end{bmatrix}x_{1} +\begin{bmatrix}a_{12} \\a_{22} \\\vdots \\a_{m2}\end{bmatrix}x_{2}  + \dots+  
+\end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{n}\end{bmatrix}  =\begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}\\
+&= \begin{bmatrix}a_{11} \\a_{21} \\\vdots \\a_{m{1}}\end{bmatrix}x_{1} +\begin{bmatrix}a_{12} \\a_{22} \\\vdots \\a_{m2}\end{bmatrix}x_{2}  + \dots+  \begin{bmatrix}a_{1n} \\a_{2n} \\\vdots \\a_{mn}\end{bmatrix}x_{n} = \begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}
 \end{align}
-
 $$
+That is, it can be said that the above Matrix-Vector multiplication is equivalent to the linear combination of the $n$ column vectors of $\mathbf{A}$ with the coefficients being the members of $\vec{x}$, with it being mapped to some $\vec{b}$. 
