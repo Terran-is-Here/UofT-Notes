@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T11:52:36.612-04:00
-edited_seconds: 230
+updated_at: 2026-09-28T13:12:36.406-04:00
+edited_seconds: 240
 course: ESC101H1
 tags:
   - ESC101H1
@@ -9,9 +9,9 @@ Lecture Date: 2026-09-25
 Week: 3
 Created: September 25th 2026, 11:23:03 am
 ---
-Hub: 
+Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[06 — Design For X]]
-Next:
+Next: [[08 — Teamwork]]
 
 --- 
 # Lecture Notes
