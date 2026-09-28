@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T22:01:19.680-04:00
-edited_seconds: 1150
+updated_at: 2026-09-28T09:46:12.025-04:00
+edited_seconds: 1160
 course: PHY180H1
 tags:
   - PHY180H1
@@ -102,7 +102,7 @@ What this means is that for instance, if Work is *negative*, then the kinetic en
 ## Power 
 Power is generally defined as some term of Energy over time, that is: 
 $$P_{av} = \frac{W}{t}$$
-This is often notated in the term of a $W$ (Watt), where $1W = \frac{1J}{s}$. 
+This is often notated in the term of a $W$ (Watt), where $1W = \frac{1J}{s}$; $W$ in this context can be defined as the non-instantaneous form of $\vec{F}\cdot \vec{d}$ or $|\vec{F}||\vec{d}|\cos\theta$. 
 
 > [!theorem] Instantaneous Power
 > Instantaneous power is defined as the following: 
