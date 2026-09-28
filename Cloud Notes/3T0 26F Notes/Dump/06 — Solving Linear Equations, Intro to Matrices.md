@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T12:48:52.789-04:00
-edited_seconds: 1880
+updated_at: 2026-09-28T12:56:50.361-04:00
+edited_seconds: 2030
 course: ESC103H1
 tags:
   - ESC103H1
@@ -86,7 +86,46 @@ $$
 $$
 \begin{bmatrix}3\\2\end{bmatrix}\cdot \begin{bmatrix}x\\y\end{bmatrix} = 3x+2y = 11
 $$
-This is generally defined in this equation (taken from Pre-Lecture Notes): Note that in this case, a $m\times n$
+This is generally defined in this equation (taken from Pre-Lecture Notes):
+$$
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
+\end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{n}\end{bmatrix} = 
+\begin{bmatrix}
+\vec{r_{1}}^T \cdot x \\
+\vec{r_{2}}^T \cdot x \\
+\vdots \\
+\vec{r_{m}}^T \cdot x
+\end{bmatrix}=\begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}
+$$
+Note that in this case, a $m\times n$ size of matrix $\mathbf{A}$ gives us $m$ hyperplane with a dimension of $n-1$. 
+
+#### Column Picture
+Retaking our earlier equation: 
+$$
+\begin{align}
+\begin{bmatrix}1 & -2 \\3 & 2\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}&=\begin{bmatrix}1 \\11\end{bmatrix} \\
+\mathbf{A\vec{v}} &=\vec{b}
+\end{align}
+$$
+This can be written in the *column picture* as: 
+$$
+x\begin{bmatrix}1\\3\end{bmatrix} + y\begin{bmatrix}-2\\2\end{bmatrix} = \begin{bmatrix}1\\11\end{bmatrix}
+$$
+This gives us the following intuition: A Matrix Vector Product (in terms of a Column Picture) between $\mathbf{A}\vec{v}$ is the linear combination of the column vectors present in $\mathbf{A}$ which results to $\vec{b}$; where each column is multiplied with the unknown number that is the component in $\vec{v}$ (i.e. $\vec{v}$ gives us the set of scalar coefficients). 
+
+Generally: 
+$$
+\begin{bmatrix}
+\vec{c_{1}} & \vec{c_{2}} & \dots & \vec{c_{n}}
+\end{bmatrix}\begin{bmatrix}
+v_{1}\\v_{2}\\\vdots\\v_{n}
+\end{bmatrix} = v_{1}\vec{c_{1}} + v_{2}\vec{c_{2}} + \dots + v_{n}\vec{c_{n}}
+$$
+Where $\vec{c_{n}}$ is some column vector. 
 
 
 ---
