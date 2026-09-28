@@ -1,6 +1,6 @@
 ---
 updated_at: 2026-09-28T11:58:03.021-04:00
-edited_seconds: 1700
+edited_seconds: 1710
 course: ESC194H1
 tags:
   - ESC194H1
@@ -218,7 +218,7 @@ $$
 &= f(2) = 2 \\
 \lim_{ x \to 0^- }h(x)  &= \lim_{ x \to 0^- } f(f(x)) & \text{ Consider approaching from the left, then} \lim_{ x \to 0^- } f(x) = 2 \\
 &= f(2) = 2 \\ 
-\lim_{ x \to 0^+ }h(x) = \lim_{ x \to 0^- } h(x) = 2 &= h(x) & \text{Therefore, our function is continuous at }x=0.
+\lim_{ x \to 0^+ }h(x) = \lim_{ x \to 0^- } h(x) = 2 &= h(x) & \therefore \text{, our function is continuous at }x=0.
 \end{align}
 $$
 

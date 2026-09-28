@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-27T22:25:07.590-04:00
-edited_seconds: 1440
+updated_at: 2026-09-28T12:09:25.574-04:00
+edited_seconds: 1460
 course: ESC103H1
 tags:
   - ESC103H1
@@ -19,9 +19,13 @@ Tutorial:
 # Lecture Notes
 # Pre-Lecture Notes
 For the purposes of this note, consider the problem where we are trying to solve for a solution for a system of 3 equations with 3 unknowns ($x,y,z)$, that is the intersection points of 3 planes if they exist: 
-$$a_{11}x + a_{12}y + a_{13}z = b_{1}$$
-$$a_{21} x+a_{22}y+a_{23}z = b_{2}$$
-$$a_{31}x + a_{32}y + a_{33}z = b_{3}$$
+$$
+\begin{align}
+a_{11}x + a_{12}y + a_{13}z &= b_{1} \\
+a_{21} x+a_{22}y+a_{23}z &= b_{2} \\
+a_{31}x + a_{32}y + a_{33}z &= b_{3}
+\end{align}
+$$
 Or, in augmented matrix form, they can be expressed as: 
 $$
 \left[\begin{array}{ccc|c}
