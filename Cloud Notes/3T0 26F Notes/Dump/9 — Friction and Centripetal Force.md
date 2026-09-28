@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T16:49:27.567-04:00
-edited_seconds: 510
+updated_at: 2026-09-28T19:36:29.219-04:00
+edited_seconds: 540
 course: PHY180H1
 tags:
   - PHY180H1
@@ -45,9 +45,10 @@ mg&= \frac{\tan\theta mv^2}{r} \\
 g &= \tan\theta * \frac{v^2}{r} & \text{Note, }\tan\theta = \frac{y}{r} \\
 &= \frac{yv^2}{r^2} & \text{Note } v=\frac{2\pi r}{T} \\
 &= \frac{y}{r^2} * \left( \frac{2\pi r}{T} \right)^2  \\
-&= \frac{4\pi^2y}{T^2}
+g&=\boxed{\frac{4\pi^2y}{T^2}}
 \end{align}
 $$
+Note that this is the equation that 
 ## Friction
 See the corresponding ILA blocks within Force of Friction. 
 
