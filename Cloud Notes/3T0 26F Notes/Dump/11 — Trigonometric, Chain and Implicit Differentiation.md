@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T10:20:30.705-04:00
-edited_seconds: 230
+updated_at: 2026-09-28T10:27:38.528-04:00
+edited_seconds: 250
 course: ESC194H1
 tags:
   - ESC194H1
@@ -38,4 +38,6 @@ Note that the two limits that we have shown on the right will be proved in their
 > The following holds true: 
 > $$\lim_{ x \to 0 } \frac{\sin(x)}{x} = 1$$
 > *Proof*
-> 
+> Take the following diagram: 
+> ![[11 — Trigonometric, Chain and Implicit Differentiation-1790605672585.webp]]
+> Where $\theta$ is within $0<\theta< \frac{\pi}{2}$, And where $|OB| =$
