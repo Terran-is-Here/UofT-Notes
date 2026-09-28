@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T11:29:02.796-04:00
-edited_seconds: 1160
+updated_at: 2026-09-28T11:49:49.824-04:00
+edited_seconds: 1530
 course: ESC194H1
 tags:
   - ESC194H1
@@ -146,9 +146,75 @@ x=2 \implies c&=2 \\
 \therefore f(x)\text{ is continuous at 2 (from the right)}
 \end{align}
 $$
-From this, we show that from all these cases, that $f(x)$ is continuous for our entire interval $x\in$
+From this, we show that from all these cases, that $f(x)$ is continuous for our entire interval $x\in (-\infty,-2]\cup[2,\infty)$ 
+## Continuity Rules 
+We have the following theorems that can help for simplifying these rules: 
 
+> [!theorem] Theorem
+> Let $f(x),g(x)$ be continuous at $x=c$, and $x$ is a constant, then the following are also continuous at $c$: 
+> * $f(x) \pm g(x)$
+> * $af(x) \lor ag(x)$
+> * $f(x)g(x)$
+> * $\frac{f(x)}{g(x)}$ (if $g(c)\neq 0$)
 
+For instance, the product rule: 
+*Proof:* If $f,g$ continuous at $x=c$, their product will also be continuous at $c$
+$$
+\begin{align}
+&f(x),g(x)\text{ are continuous at }x=c \\
+&\implies \lim_{ x \to c } f(x) = f(c) &\lim_{ x \to c } g(x)=g(c) \\
+&\implies \lim_{ x \to c } f(x)g(x) = \lim_{ x \to c } f(x) * \lim_{ x \to c } g(x) & \text{From the Product Law of Limits}\\
+&= f(c)g(c)
+\end{align}
+$$
+
+*Corollary:* Consider this extended to some interval, that is $f,g,$ are continuous on an interval. 
+
+This can be extended to an interesting result: 
+* Any Polynomial Function is *Continuous* on $\mathbb{R}$. 
+Recall the definition of a polynomial: 
+$$
+\begin{align}
+f(x) &= a_{1}x^n + a_{2}x^{n-1} + \dots + a_{n} & \text{Where } n \text{ is an integer} \\
+\lim_{ x \to a } f(x) &= \lim_{ x \to a } \left[a_{1}x^n + a_{2}x^{n-1} + \dots + a_{n}\right] \\
+&=\lim_{ x \to a } a_{1}x^n + \lim_{ x \to a }a_{2}x^{n-1} +\dots+\lim_{ x \to a } a_{n}  \\
+&=a_{1}\lim_{ x \to a } x^n + a_{2}\lim_{ x \to a } x^{n-1} +\dots + a_{n} \\
+f(x)&=a_{1}a^n + a_{2}a^{n-1} +\dots + a_{n} \\
+&\therefore\text{ Any polynomial is continuous for any arbitrary  }a
+\end{align}
+$$
+* Any *Rational* Function is Continuous on it's domain, that is: 
+$$\begin{align}
+f(x) = \frac{P(x)}{Q(x)} && \text{Where } f(x), x\in \{ x\in \mathbb{R}|Q(x) \neq 0 \}
+\end{align}$$
+We can prove this statement, recall that $P(x)$ and $Q(x)$ are continuous over an interval (from our first point above) , and from our previous theorem, that $\frac{P(x)}{Q(x)}$ is continuous over it's interval on regions where our denominator is not equal to 0, as these are the ratio of two continuous functions.
+  
+## Function Composition
+> [!theorem] 
+> If $f$ is continuous at some point $b$, and $\lim_{ x \to c }g(x)=b$, then: 
+> $$\lim_{ x \to c } f(g(x)) =f(\lim_{ x \to c } g(x)) = f(b)$$
+
+This can be extended: 
+> [!theorem]
+> If $g$ is continuous at $x=c$, and $f(x)$ is continuous at $g(x)$, then: 
+> $$f\circ g(x) = f(g(x))$$
+> Where this is continuous at $x=c$. 
+### Example
+Consider: 
+$$
+f(x) = \frac{1}{\cos^2(x)+1}
+$$
+Note that $f(x) = f_{1}\circ f_{2} \circ f_{3}$, where: 
+* $f_{1} = \frac{1}{x}$
+* $f_{2} = x^2 +1$
+* $f_{3} \cos(x)$
+Note that $f_{1},f_{2},f_{3}$ are continuous over it's entire domain (except for $f_{1}$ at $x=0$ as per our above theorem); then: 
+$$
+D = \{ x \in \mathbb{R} | \cos^2(x) + 1 \neq 0 \}
+$$
+Note that $\nexists\cos^2(x) < 0$, then this implies that $D=\{ x \in \mathbb{R} \}$. 
+
+Consider anot
 # Pre-Lecture Notes
 ## Continuity 
 The concept of continuity can be generally defined as the idea of "not lifting your hand from the page". Mathematically however, this is defined as the following: 
