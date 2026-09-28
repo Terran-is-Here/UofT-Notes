@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-24T16:30:57.775-04:00
-edited_seconds: 430
+updated_at: 2026-09-28T16:23:20.217-04:00
+edited_seconds: 450
 course: PHY180H1
 tags:
   - PHY180H1
@@ -41,6 +41,8 @@ NFL also generally defines the concept of Inertial Reference Frames:
 > [!theorem] Inertial Reference Frames
 > A reference frame moving at *constant* velocity relative to an inertial frame of reference is also considered to be inertial. A reference frame *accelerating* with respects to an inertial frame of reference is considered to be non-interial.
 
+> [!caution] Caution
+> Newton's Laws only apply to **Inertial Reference Frames**. If a frame has an inherent acceleration, it is considered non-inertial, and cannot be considered as following Newton's Law. 
 ## Newton's Second Law
 Newton's Second law states that: 
 > [!theorem] NSL: 

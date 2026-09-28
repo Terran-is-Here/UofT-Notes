@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-23T21:40:25.054-04:00
-edited_seconds: 360
+updated_at: 2026-09-28T16:34:23.906-04:00
+edited_seconds: 380
 course: PHY180H1
 tags:
   - PHY180H1
@@ -21,6 +21,9 @@ Next: [[10 — Drag Force and Terminal Velocity]]
 
 --- 
 # Lecture Notes
+
+
+---
 # Pre-Lecture Notes
 ## Force of Friction
 The Force of Friction is generally defined as a force *opposite* the direction of acceleration (or, from [[7 — 1st and 2nd Laws of Newton#Newton's First Law|Newton's First Law]], the net acceleration). There exists two definitions of friction: Static and Kinetic Friction: 
@@ -44,6 +47,6 @@ Note that the second definition is the extension of $v_{a} = r\omega$ into accel
 $$
 F_{C} = \frac{mv^2}{r} \implies r = \frac{mv^2}{F_{C}}
 $$
-That is, a ever increasing centripetal force decreases the effective radius for a given object travelling at a certain velocity. Centripetal Force is *however* not a force on it's own, rather it is provided by other forces (such as $F_{F},F_{N},F_{T}$). 
+That is, a ever increasing centripetal force decreases the effective radius for a given object travelling at a certain velocity. Centripetal Force is *however* not a force on it's own, rather it is provided by other forces (such as $F_{F},F_{N},F_{T}$); or in other words; it is often equivalent to the net force of the corresponding rotational system. 
 ### Banked Curves
 Banked Curves are extensions of both the inclined surface problems in combination with centripetal acceleration. Note that for these problems, it is easier to keep our axis aligned to the cardinal directions; as we want our vector pointing inwards to be directly pointing inwards (i.e. we don't have to do more math than is needed.) 
