@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T10:27:38.528-04:00
-edited_seconds: 250
+updated_at: 2026-09-28T21:24:16.227-04:00
+edited_seconds: 480
 course: ESC194H1
 tags:
   - ESC194H1
@@ -37,7 +37,19 @@ Note that the two limits that we have shown on the right will be proved in their
 
 > The following holds true: 
 > $$\lim_{ x \to 0 } \frac{\sin(x)}{x} = 1$$
-> *Proof*
+
+> [!theorem]- *Proof*
 > Take the following diagram: 
 > ![[11 — Trigonometric, Chain and Implicit Differentiation-1790605672585.webp]]
-> Where $\theta$ is within $0<\theta< \frac{\pi}{2}$, And where $|OB| =$
+> Where $\theta$ is within $0<\theta< \frac{\pi}{2}$, And where $|BC| = |OB|\sin\theta = \sin\theta$. Note that in this case, $\text{arc BA} = \theta r = \theta$
+> From here, we can tell that:$$\begin{align}|BC| < |AB| &< \text{arc AB} \\\sin\theta &< \theta \\\frac{\sin\theta}{\theta} &< 1 \end{align}$$
+> Note that we now extend the tangent lines from $A$ and $B$, when note that $\text{arc AB} < |DA| = |OA|\tan\theta = \tan\theta$
+> Then we have the set of following relations: 
+> $$\begin{align}\frac{\sin\theta}{\theta} < 1\\\theta < \tan\theta \implies \theta < \frac{\sin\theta}{\cos\theta}\end{align}$$
+> From here: $$\begin{align}\theta &< \frac{\sin\theta}{\cos\theta}  \\\implies \cos\theta &< \frac{\sin\theta}{\theta}  \\\implies \cos\theta &< \frac{\sin\theta}{\theta} <1 \\\lim_{ \theta \to 0 } \cos\theta &< \lim_{ \theta \to 0 }  \frac{\sin\theta}{\theta} < \lim_{ \theta \to 0 } 1 & \text{Following from Squeeze Theorem, then} \\\implies \lim_{ \theta \to 0 } \frac{\sin\theta}{\theta} &= 1\end{align}$$
+
+
+> The following also holds true: 
+$$
+> \lim_{ x \to 0 } \co
+$$
