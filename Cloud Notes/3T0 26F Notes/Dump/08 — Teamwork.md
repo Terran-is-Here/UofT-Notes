@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T13:34:50.472-04:00
-edited_seconds: 210
+updated_at: 2026-09-29T09:11:38.462-04:00
+edited_seconds: 220
 course: ESC101H1
 tags:
   - ESC101H1
@@ -10,7 +10,7 @@ Week: 4
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[07 — Engineering Arguments (continued)]]
-Next: N/A
+Next: [[09 — The Framing Strand]]
 
 --- 
 # Lecture Notes
