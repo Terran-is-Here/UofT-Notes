@@ -1,16 +1,16 @@
 ---
-updated_at: 2026-09-28T12:35:12.108-04:00
-edited_seconds: 270
+updated_at: 2026-09-28T21:46:40.012-04:00
+edited_seconds: 290
 course: ESC103H1
 tags:
   - ESC103H1
 "Lecture #": 7
-Lecture Date: 2026-09-27
+Lecture Date: 2026-09-28
 Week: 4
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[06 — Solving Linear Equations, Intro to Matrices]]
-Next: N/A 
+Next: [[8 — Basic Linear Algebra Concepts]]
 
 --- 
 # Lecture Notes

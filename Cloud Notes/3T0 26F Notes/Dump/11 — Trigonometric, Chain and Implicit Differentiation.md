@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T21:40:48.410-04:00
-edited_seconds: 790
+updated_at: 2026-09-28T21:59:25.807-04:00
+edited_seconds: 820
 course: ESC194H1
 tags:
   - ESC194H1
@@ -31,7 +31,9 @@ f'(x) &= \lim_{ h \to 0 } \frac{\sin(x+h)-\sin(x)}{h} \\
 &=\cos(x)
 \end{align}
 $$
-Note that the two limits that we have shown on the right will be proved in their respective subsection: 
+Note that the two limits that we have shown on the right will be proved in their respective subsection
+### Trigonometric Derivatives 
+
 
 ### Special Trigonometric Limits 
 The following are two useful identities that we can have for evaluating some limits and potential derivatives. 
