@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T19:36:29.219-04:00
-edited_seconds: 540
+updated_at: 2026-09-29T19:27:16.074-04:00
+edited_seconds: 550
 course: PHY180H1
 tags:
   - PHY180H1
@@ -48,7 +48,7 @@ g &= \tan\theta * \frac{v^2}{r} & \text{Note, }\tan\theta = \frac{y}{r} \\
 g&=\boxed{\frac{4\pi^2y}{T^2}}
 \end{align}
 $$
-Note that this is the equation that 
+Note that this is the equation that will be applied within our Lab on 09/30. 
 ## Friction
 See the corresponding ILA blocks within Force of Friction. 
 
