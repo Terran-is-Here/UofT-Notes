@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T21:24:16.227-04:00
-edited_seconds: 480
+updated_at: 2026-09-28T21:40:48.410-04:00
+edited_seconds: 790
 course: ESC194H1
 tags:
   - ESC194H1
@@ -34,6 +34,7 @@ $$
 Note that the two limits that we have shown on the right will be proved in their respective subsection: 
 
 ### Special Trigonometric Limits 
+The following are two useful identities that we can have for evaluating some limits and potential derivatives. 
 
 > The following holds true: 
 > $$\lim_{ x \to 0 } \frac{\sin(x)}{x} = 1$$
@@ -50,6 +51,20 @@ Note that the two limits that we have shown on the right will be proved in their
 
 
 > The following also holds true: 
-$$
-> \lim_{ x \to 0 } \co
-$$
+> $$\lim_{ x \to 0 } \frac{\cos(x) - 1}{x} = 1$$
+
+> [!theorem]- *Proof*
+> Multiply numerator and denominator by a term of $\cos(x) + 1$
+> $$\begin{align}\lim_{ x \to 0 } \frac{\cos(x)-1}{x}& =\lim_{ x \to 0 } \frac{\cos(x)-1}{x} \frac{(\cos(x) +1)}{(\cos(x) +1)} \\&= \lim_{ x \to 0 } \frac{\cos^2(x)-1}{x(\cos(x) + 1)} \\&= \lim_{ x \to 0 } \frac{-\sin^2(x)}{x(\cos(x) + 1)} \\&=-\left[\lim_{ x \to 0 } \frac{\sin(x)}{x}\right] \left[ \lim_{ x \to 0 } \frac{\sin (x)}{\cos(x) + 1} \right] & \text{Using } \lim_{ x \to 0 } \frac{\sin(x)}{x} = 1 \\&=-1\left[ \lim_{ x \to 0 } \frac{\sin (x)}{\cos(x) + 1} \right]& \text{Evaluating the limits} \\&=-1* \frac{0}{2} = 0 \\\lim_{ x \to 0 } \frac{\cos(x)-1}{x}&= 0\end{align}$$
+
+Note that if we can algebraically manipulate a term into one of these forms, we can back substitute this as their corresponding values. 
+
+## Chain Rule 
+Take the following function: 
+$$F(x) = \sqrt{ x^2 +1 }$$
+Note that this can be expressed as some function composition of $f\circ g(x)$, where $f(x) = \sqrt{ x }$, and $g(x) = x^2 +1$. The chain rule is generally defined as the following: 
+
+> Given some function $F(x) = f\cdot g(x) = f(g(x))$, then: 
+> $$F'(x) = f'(g(x))g(x) = \frac{df}{dg} \frac{dg}{dx}$$
+
+
