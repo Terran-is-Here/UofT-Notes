@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T21:59:25.807-04:00
-edited_seconds: 820
+updated_at: 2026-09-28T23:03:51.665-04:00
+edited_seconds: 860
 course: ESC194H1
 tags:
   - ESC194H1
@@ -69,4 +69,18 @@ Note that this can be expressed as some function composition of $f\circ g(x)$, w
 > Given some function $F(x) = f\cdot g(x) = f(g(x))$, then: 
 > $$F'(x) = f'(g(x))g(x) = \frac{df}{dg} \frac{dg}{dx}$$
 
+## Implicit Differentiation
+Implicit Differentiation essentially allows us to take the derivative of functions taken implicitly. For instance, take the following implicitly defined function: 
+$$
+x^2 +y^2 = 25
+$$
+We *can* define this in terms of $x$ as two separate functions. What happens if we take the derivative of this function? In this case, we can perform some *implicit* differentiation. Note that we can define $y$ as some function of $x$, therefore taking the derivative on both sides with respect to $x$
+$$
+\begin{align}
+2x + 2y \frac{dy}{dx} &= 0 \\
+\frac{dy}{dx}&=-\frac{2x}{2y} \\
+&= -\frac{x}{y}
+\end{align}
+$$
+This equation gives us the equation of the slope of a point on our original implicit function of $x^2 + y^2 = 25$. 
 
