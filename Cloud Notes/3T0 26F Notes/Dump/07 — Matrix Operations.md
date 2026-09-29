@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-29T17:52:34.951-04:00
-edited_seconds: 670
+updated_at: 2026-09-29T17:56:01.484-04:00
+edited_seconds: 700
 course: ESC103H1
 tags:
   - ESC103H1
@@ -18,6 +18,12 @@ Next: [[08 — Matrix Vector Products]]
 
 --- 
 # Lecture Notes
+> [!ila] Summary
+> For all 3 methods (algebraic, row picture, column picture), we can solve $\mathbf{A}\vec{x} = \vec{b}$ for any values $b_{1},b_{2},b_{3}$; that is we can solve for the values in $\vec{x}$. 
+> * The Row Picture solves for a point that is *present* within all  hyperplanes *if* they exist. 
+> * The Column Picture solves for a linear combination of column vectors that points to our *resultant* vector $\vec{b}$ if a solution exists. 
+> 
+> Note that this can only be solved for any value of $\vec{b}$ if and only if all columns vectors of $\mathbf{A}$ are linearly independent. 
 ## Matrix Operations
 Recall the definition of a matrix in our context: 
 $$
@@ -172,4 +178,4 @@ c\begin{bmatrix}
 $$
 Using some quick algebra, we can see that $c,d=0$, which means that there exists no linear combination (specifically, $0=6$ is required, which is false.) This means that $\vec{c}_{3}$ cannot be expressed as a linear combination of 3 other vectors. This means that this system is [[8 — Basic Linear Algebra Concepts#Linear Independence|Linearly Independent]]. 
 
-If a system is purely composed of linearly in
+If a system is purely composed of linearly independent vectors, then all combinations of column vectors fill $\mathbb{R}^3$. 
