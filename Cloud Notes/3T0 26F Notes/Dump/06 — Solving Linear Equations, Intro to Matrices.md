@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T12:56:50.361-04:00
-edited_seconds: 2030
+updated_at: 2026-09-29T17:12:45.483-04:00
+edited_seconds: 2040
 course: ESC103H1
 tags:
   - ESC103H1
@@ -12,7 +12,7 @@ Created: September 21st 2026, 9:13:07 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[05 — Equations of Lines and Planes]]
-Next: [[07 — Matrix Vector Products]]
+Next: [[08 — Matrix Vector Products]], [[07 — Matrix Operations]]
 Tutorial: 
 
 --- 

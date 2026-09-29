@@ -1,6 +1,6 @@
 ---
 Created: September 28th 2026, 9:46:55 pm
-updated_at: 2026-09-28T21:56:36.398-04:00
+updated_at: 2026-09-29T17:13:07.721-04:00
 edited_seconds: 210
 course: ESC103H1
 tags:
@@ -10,7 +10,7 @@ Lecture Date: 2026-09-29
 Week: 4
 ---
 Hub: [[ESC103 Hub]]
-Previous: [[07 — Matrix Vector Products]]
+Previous: [[08 — Matrix Vector Products]]
 Next: [[09 — Matrix Multiplication]]
 
 --- 
