@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T23:03:51.665-04:00
-edited_seconds: 860
+updated_at: 2026-09-29T09:34:20.731-04:00
+edited_seconds: 870
 course: ESC194H1
 tags:
   - ESC194H1
@@ -74,7 +74,7 @@ Implicit Differentiation essentially allows us to take the derivative of functio
 $$
 x^2 +y^2 = 25
 $$
-We *can* define this in terms of $x$ as two separate functions. What happens if we take the derivative of this function? In this case, we can perform some *implicit* differentiation. Note that we can define $y$ as some function of $x$, therefore taking the derivative on both sides with respect to $x$
+We *can* define this in terms of $x$ as two separate functions. What happens if we take the derivative of this function? In this case, we can perform some *implicit* differentiation. Note that we can define $y$ as some function of $x$, therefore taking the derivative on both sides with respect to $x$:
 $$
 \begin{align}
 2x + 2y \frac{dy}{dx} &= 0 \\
@@ -82,5 +82,6 @@ $$
 &= -\frac{x}{y}
 \end{align}
 $$
-This equation gives us the equation of the slope of a point on our original implicit function of $x^2 + y^2 = 25$. 
+This equation gives us the equation of the slope of a point on our original implicit function of $x^2 + y^2 = 25$. Note that $y^2 \to y(x)^2 \to 2y(x)y'(x) \to 2yy'$. 
+
 
