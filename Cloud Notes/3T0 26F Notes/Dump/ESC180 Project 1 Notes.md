@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T19:52:45.731-04:00
-edited_seconds: 300
+updated_at: 2026-09-28T19:56:50.225-04:00
+edited_seconds: 320
 course:
 tags:
 "Lecture #": 0
@@ -64,4 +64,11 @@ If battery reaches 0% when Idling *or in usage*, decrease temperature by 1C per 
 	* If this happens 3 times within $6$ hours, the battery is in a bad health state.
 * Batteries in Bad Health state cannot charge past 80%. 
 	* If it initially switches to a bad health state, it will not charge past 80% until discharged. 
-* 
+
+
+## Overcharge Logic 
+* If battery reaches 100% while charging, temperature will continue to increase by 0.25C / minute; while charge does not exceed past 100%. 
+* For Bad Health State:
+	* Reaches 80% while charging
+	* Switches to bad health state while being at or above 90% 
+	* battery charge will not go further. 
