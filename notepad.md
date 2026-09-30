@@ -12,6 +12,10 @@ Given Wire ABC:
 	* $E=200,000MPa$
 
 ## Energy in Segment BC: 
+> We know stress is *correct*. 
+> What the FUCK is strain? 
+
+
 Simple approach for $\epsilon_{bc}$
 $$
 \begin{align}
@@ -43,4 +47,15 @@ h&= \frac{E\Delta L\pi}{2L_{0}mg}\left[r_{bc}^2 + r_{ab}^2\right] \\
 \end{align}
 
 $$
-Invalid appro
+Invalid approach... 
+
+Ok, try this 
+$$
+\begin{align}
+\sigma_{BC} &= \frac{F_{A}}{A_{bc}} \\
+\epsilon_{BC} &= \frac{\Delta L}{L_{0}} = \frac{\sigma_{bc}}{E} \\
+&= \frac{F_{A}}{EA_{bc}} \\
+\text{Total Energy} &= \frac{F_{A}^2}{2EA_{bc}^2} A_{bc}L_{0} \\
+&= \frac{F_{A}^2}{2EA_{bc}}L_{0}
+\end{align}
+$$
