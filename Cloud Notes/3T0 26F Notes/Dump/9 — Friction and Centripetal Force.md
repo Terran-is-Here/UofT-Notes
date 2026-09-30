@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-29T19:27:16.074-04:00
-edited_seconds: 550
+updated_at: 2026-09-29T20:00:49.079-04:00
+edited_seconds: 560
 course: PHY180H1
 tags:
   - PHY180H1
@@ -51,7 +51,6 @@ $$
 Note that this is the equation that will be applied within our Lab on 09/30. 
 ## Friction
 See the corresponding ILA blocks within Force of Friction. 
-
 
 ---
 # Pre-Lecture Notes
