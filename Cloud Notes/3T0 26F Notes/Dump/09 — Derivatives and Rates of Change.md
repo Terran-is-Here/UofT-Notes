@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-01T13:54:12.265-04:00
-edited_seconds: 770
+updated_at: 2026-10-01T13:56:46.207-04:00
+edited_seconds: 810
 course: ESC194H1
 tags:
   - ESC194H1
@@ -27,8 +27,13 @@ From this, we get the formal definition of a derivative.
 
 > [!theorem] Limit Definition of a Derivative
 > The derivative of a function $f(x)$ at $x=a$ is denoted by the notation of $f'(a)$ is defined as: $$f'(a) = \lim_{ h \to 0 } \frac{f(a+h)-f(a)}{h} \underbrace{\implies}_{a=x} f'(x) = \lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h}$$
-> This is alternatively notated as $\frac{dy}{dx}$: 
+> This is alternatively notated as $\frac{dy}{dx}$, where $y=f(x)$, $\frac{dy}{dx}=f'(x)$
+> $$\frac{dy}{dx} = \lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h}$$
 
+Higher order derivatives can be expressed as the following: 
+$$
+(f'(x))' = f''(x) = \frac{d}{dx}\left(\frac{dy}{dx}\right) = \frac{d^2y}{dx^2}
+$$
 
 
 ### Computing from Definition
