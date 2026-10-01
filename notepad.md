@@ -51,11 +51,13 @@ Invalid approach...
 
 Ok, try this 
 $$
-\begin{align}
-\sigma_{BC} &= \frac{F_{A}}{A_{bc}} \\
-\epsilon_{BC} &= \frac{\Delta L}{L_{0}} = \frac{\sigma_{bc}}{E} \\
-&= \frac{F_{A}}{EA_{bc}} \\
-\text{Total Energy} &= \frac{F_{A}^2}{2EA_{bc}^2} A_{bc}L_{0} \\
-&= \frac{F_{A}^2}{2EA_{bc}}L_{0}
-\end{align}
+
+
+
+###
+$$assd
+
+###
+$$
+4\sum_{n=0}^{1000} \frac{(-1)^n}{2n+1}
 $$
