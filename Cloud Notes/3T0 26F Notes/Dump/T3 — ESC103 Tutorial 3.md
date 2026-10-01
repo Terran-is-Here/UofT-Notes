@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-01T09:53:16.867-04:00
-edited_seconds: 430
+updated_at: 2026-10-01T14:43:46.230-04:00
+edited_seconds: 530
 course: ESC103H1
 tags:
   - Tutorial
@@ -52,3 +52,13 @@ tag:#ESC103H1 [week:4]
 > Sub in the point $(0,0,c)$ into our equation, then
 > $$\begin{align}-bc(0) -ac(0)-ab(c) &= d \\-abc&=d\end{align}$$Resubstitute as $d$ back into $1$: 
 > $$\begin{align}-bcx -acy-abz &= d \tag{1} \\-bcx -acy-abz &= -abc \\\frac{-bcx}{-abc} + \frac{-acy}{-abc} + \frac{-abz}{-abc} &= 1 \\\frac{x}{a} + \frac{y}{b} + \frac{z}{c} = 1\end{align}$$Therefore, the equation of this plane is the equation of $\frac{x}{a}+\frac{y}{b}+\frac{z}{c} = 1$. 
+
+> *Question 2:*
+> > Find the vector equation for the line through $(-2,5,0)$ that is parallel to the planes $2x+y-4z=0$ and $-x+2y+3x+1=0$. 
+> 
+> Note that a line parallel through the two planes listed is therefore perpendicular to both planes; or in other words, the direction vector provided by this point is given by the cross product of the normal vectors present: $$\begin{bmatrix}2\\1\\-4\end{bmatrix} \times \begin{bmatrix}-1\\2\\3\end{bmatrix} = \det \begin{bmatrix}\hat{i} & \hat{j} & \hat{k} \\2 & 1 & -4 \\-1 & 2 & 3 \end{bmatrix} = \begin{bmatrix}11 \\2\\5\end{bmatrix}$$Therefore our line is defined by the following: $$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}11\\2\\5\end{bmatrix}t + \begin{bmatrix}-2\\5\\0\end{bmatrix}$$
+
+> *Question 3:*
+> > Let $A,B,C(2,-1,1)$ be the vertices of a triangle when $\vec{AB}$ is parallel to $\begin{bmatrix}1\\-1\\1\end{bmatrix}$ and $\vec{AC}$ is parallel to $\begin{bmatrix}2\\0\\-1\end{bmatrix}$, and angle $C=90\degree$. Find the vector equation of the line through $B$ and $C$. 
+> 
+> 
