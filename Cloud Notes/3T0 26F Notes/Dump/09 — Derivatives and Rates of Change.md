@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-01T13:33:33.074-04:00
-edited_seconds: 380
+updated_at: 2026-10-01T13:54:12.265-04:00
+edited_seconds: 770
 course: ESC194H1
 tags:
   - ESC194H1
@@ -25,17 +25,70 @@ Recall, that we defined the concept of a derivative of a function as the *slope*
 
 From this, we get the formal definition of a derivative. 
 
+> [!theorem] Limit Definition of a Derivative
 > The derivative of a function $f(x)$ at $x=a$ is denoted by the notation of $f'(a)$ is defined as: $$f'(a) = \lim_{ h \to 0 } \frac{f(a+h)-f(a)}{h} \underbrace{\implies}_{a=x} f'(x) = \lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h}$$
+> This is alternatively notated as $\frac{dy}{dx}$: 
+
+
 
 ### Computing from Definition
 Given the following function: $f(x) = x^2 + 3x + 2$. Take the derivative of this function using the limit definition of a derivative. This can be expressed as: 
 $$
 \begin{align}
 f'(x) &= \lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h} \\
-&= \lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h}
+&= \lim_{ h \to 0 } \frac{(x+h)^2 + 3(x+h) +2)-(x^2 + 3x + 2)}{h} \\
+&=\lim_{ h \to 0 } \frac{x^2 + 2xh+h^2 + 3x+3h +2-x^2 - 3x - 2)}{h} \\
+&=\lim_{ h \to 0 } \frac{2xh+h^2 +3h }{h} \\
+&=\lim_{ h \to 0 } \frac{h(2x + h + 3)}{h} \\
+&= \lim_{ h \to 0 } 2x+h+3 =2x + (0) + 3 \\
+&=2x+3 
 \end{align}
-
 $$
+
+Given the following function: $f(x) = \sqrt{ x }$ using the definition: 
+$$
+\begin{align}
+f'(x) &= \lim_{ h \to 0 } \frac{\sqrt{ x+h }-\sqrt{ x }}{h} \\
+&=\lim_{ h \to 0 } \frac{\sqrt{ x+h }-\sqrt{ x }}{h} *\frac{\sqrt{ x+h }+\sqrt{ x }}{\sqrt{ x+h }+\sqrt{ x }} \\
+&=\lim_{ h \to 0 } \frac{x+h-x}{h(\sqrt{ x+h }+\sqrt{ x })} \\
+&=\lim_{ h \to 0 } \frac{h}{h(\sqrt{ x+h }+\sqrt{ x })} \\
+f'(x)&=\lim_{ h \to 0 } \frac{1}{(\sqrt{ x+h }+\sqrt{ x })} = \frac{1}{2\sqrt{ x }} \\
+\end{align}
+$$
+Note that $f(x), x\in[0,\infty)$, but $f'(x), x\in(0,\infty)$ due to the denominator. The domain of a function and it's derivative may not be equal. 
+### Function Differentiability 
+A function $f(x)$ is differentiable at a point $a$ if $f'(a)$ exists. 
+
+A function $f(x)$ is differentiable on an interval $(a,b)$ for any $a,b$ if it is differentiable on every point in $(a,b)$. 
+
+> Example: Take the function $f(x) = |x|$. At what points is this differentiable. Note that absolute function is a piecewise function of $f(x)=|x|=\begin{cases}-x:x\leq 0\\x:x>0\end{cases}$. 
+> Consider this in terms of cases, $x<0 \implies f(x) = -x$ therefore: 
+
+$$f'(x) = \lim_{ h \to 0 } \frac{-(x+h) +x}{h} = \lim_{ h \to 0 } -\frac{h}{h} = -1$$
+Consider this if $x >0 \implies f(x) = x$, therefore: 
+$$f'(x) = \lim_{ h \to 0 } \frac{(x+h) -x}{h} = \lim_{ h \to 0 } \frac{h}{h} = 1$$
+Consider however, what if $x=0 \implies f(x) =x$, then: 
+$$
+\begin{align}
+f'(0) = \lim_{ h \to 0 } \frac{|0+h| - |0|}{h} &= \lim_{ h \to 0 } \frac{|h|}{h} & \text{Approach from both sides} \\
+=\lim_{ h \to ^-0 } \frac{|h|}{h} =\lim_{ h \to ^-0 } -\frac{h}{h} &= -1 &  =\lim_{ h \to ^+0 } \frac{|h|}{h} =\lim_{ h \to ^+0 } +\frac{h}{h} &= -1 \\
+\text{Since LHL} \neq \text{RHL} && \implies \lim_{ h \to 0 } =\frac{|h|}{h} =\text{DNE} \\
+\therefore, f'(0) =\text{DNE.}
+\end{align}
+$$
+
+### Continuity and Differentiability
+> *Theorem.*
+> If $f(x)$ is differentiable at $x=a$, then $f(x)$ is continuous at that point $a$. 
+> This is non-bidirectional. Continuity does not imply differentiability, but differentiability implies continuity, that is: 
+> $$\exists f'(x=a) \implies f(x) \text{ is continuous at } x=a$$Recall, continuous at $x=a$ means that $\lim_{ x \to a }f(x)=f(a)$. The proof is left as an exercise to the reader. 
+
+#### Non-Differentiable Locations
+> Cusps: 
+> Locations that are continuous, or in other words, locations where our derivative from either side explode to $\pm \infty$. 
+
+> Vertical Line Locations
+> Locations where the derivative approaches infinity; or in other words the tangent line becomes vertical. 
 
 ----
 # Pre-Lecture Notes
