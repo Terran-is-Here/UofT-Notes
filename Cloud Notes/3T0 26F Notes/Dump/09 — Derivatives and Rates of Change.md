@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-26T17:14:27.594-04:00
-edited_seconds: 180
+updated_at: 2026-10-01T13:08:15.575-04:00
+edited_seconds: 190
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week: 4
 Created: September 26th 2026, 4:17:02 pm
 ---
 Hub: [[ESC194 Hub]]
-Previous: [[08 — Continuity]]
+Previous: [[08 — Continuity]], [[08-1 — Intermediate Value Theorem]]
 Next: [[10 — Differentiation Formulas and Applied Derivatives]]
 > [!quote] Recommended Reading 
 > Stewart 2.1, 2.2
