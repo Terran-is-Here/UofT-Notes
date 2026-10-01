@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-23T22:01:52.498-04:00
-edited_seconds: 430
+updated_at: 2026-10-01T16:25:40.139-04:00
+edited_seconds: 470
 course: PHY180H1
 tags:
   - PHY180H1
@@ -16,6 +16,10 @@ Next: [[11 — Work and Kinetic Energy]]
 
 --- 
 # Lecture Notes
+## Hooke's Law 
+Hooke's Law was mentioned in this lecture, but a pre-written section was already written in depth in the following note: [[11 — Work and Kinetic Energy#Hooke's Law & Elastic Energy|PHY180 (11) - Hooke's Law]]. 
+## Reaction Forces
+Note that Normal Forces and Friction forces (static friction) are only to what is needed. 
 # Pre-Lecture Notes
 ## Drag Force
 Drag Force is the fluid equivalent to the concept of a contact frictional force between two surfaces, albeit in fluids. Akin to the concept of $F_{F}$, it also acts directly opposite in the direction of motion, albeit unlike $F_{F}$, it is also proportional to the velocity of the object. 

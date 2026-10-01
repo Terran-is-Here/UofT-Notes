@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-30T12:50:10.247-04:00
-edited_seconds: 570
+updated_at: 2026-10-01T16:25:08.098-04:00
+edited_seconds: 600
 course: PHY180H1
 tags:
   - PHY180H1
@@ -50,7 +50,8 @@ g&=\boxed{\frac{4\pi^2y}{T^2}}
 $$
 Note that this is the equation that will be applied within our Lab on 09/30. 
 ## Friction
-	See the corresponding ILA blocks within Force of Friction. 
+See the corresponding ILA blocks within Force of Friction. 
+
 
 ---
 # Pre-Lecture Notes

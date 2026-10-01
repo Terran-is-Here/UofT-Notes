@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T09:46:12.025-04:00
-edited_seconds: 1160
+updated_at: 2026-10-01T16:17:08.777-04:00
+edited_seconds: 1170
 course: PHY180H1
 tags:
   - PHY180H1
@@ -59,7 +59,7 @@ Hooke's Law is defined as the following:
 $$
 F_{E} = -kx
 $$
-Where $k$ is some material component, and $x$ is some displacement from the baseline. Note that this is a linear force (so we can use our simplified integral). If we wanted to solve for the linear elastic energy present in a spring; recall our definition from above: 
+Where $k$ is some material component (in terms of $\frac{F}{D}$ or commonly, $\frac{N}{m}$), and $x$ is some displacement from the baseline. Note that this is a linear force (so we can use our simplified integral). If we wanted to solve for the linear elastic energy present in a spring; recall our definition from above: 
 $$\begin{align}W_{AB} = \underset{\text{path AB}}{\int }\vec{F}\cdot d\vec{r} \\\end{align}$$
 In this case, $\vec{F} = -kx$, and $d\vec{r}$ is equivalent to the path length, or *displacement* experienced by our spring, some term $dx$, therefore: 
 $$
