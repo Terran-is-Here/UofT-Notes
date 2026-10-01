@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-01T16:25:40.139-04:00
-edited_seconds: 470
+updated_at: 2026-10-01T16:40:17.610-04:00
+edited_seconds: 480
 course: PHY180H1
 tags:
   - PHY180H1
@@ -20,6 +20,8 @@ Next: [[11 — Work and Kinetic Energy]]
 Hooke's Law was mentioned in this lecture, but a pre-written section was already written in depth in the following note: [[11 — Work and Kinetic Energy#Hooke's Law & Elastic Energy|PHY180 (11) - Hooke's Law]]. 
 ## Reaction Forces
 Note that Normal Forces and Friction forces (static friction) are only to what is needed. 
+## Rolling Friction
+Note that for rotational objects, we say that their corresponding coefficient of friction is equivalent to their static friction (as for a rotational member, the bottom of the thing should be static) 
 # Pre-Lecture Notes
 ## Drag Force
 Drag Force is the fluid equivalent to the concept of a contact frictional force between two surfaces, albeit in fluids. Akin to the concept of $F_{F}$, it also acts directly opposite in the direction of motion, albeit unlike $F_{F}$, it is also proportional to the velocity of the object. 
