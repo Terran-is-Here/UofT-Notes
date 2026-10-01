@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-25T20:49:36.667-04:00
-edited_seconds: 1160
+updated_at: 2026-09-30T22:21:07.183-04:00
+edited_seconds: 1170
 course: ESC103H1
 tags:
   - Tutorial
@@ -10,6 +10,7 @@ Lecture Date: 2026-09-22
 Week: 3
 ---
 Hub: [[ESC103 Hub]]
+Next Notes: [[T3 — ESC103 Tutorial 3]]
 Connected Notes: [[04 — Vector Cross Product]], [[05 — Equations of Lines and Planes]]
 ```query
 tag:#ESC103H1 [week:3]
