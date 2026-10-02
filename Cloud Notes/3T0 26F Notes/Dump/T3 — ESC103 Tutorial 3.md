@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-01T14:43:46.230-04:00
-edited_seconds: 530
+updated_at: 2026-10-02T14:29:19.035-04:00
+edited_seconds: 670
 course: ESC103H1
 tags:
   - Tutorial
@@ -61,4 +61,8 @@ tag:#ESC103H1 [week:4]
 > *Question 3:*
 > > Let $A,B,C(2,-1,1)$ be the vertices of a triangle when $\vec{AB}$ is parallel to $\begin{bmatrix}1\\-1\\1\end{bmatrix}$ and $\vec{AC}$ is parallel to $\begin{bmatrix}2\\0\\-1\end{bmatrix}$, and angle $C=90\degree$. Find the vector equation of the line through $B$ and $C$. 
 > 
-> 
+> Note that $\vec{AB}$ is parallel to $\begin{bmatrix}1\\-1\\1\end{bmatrix}$, meaning that $\vec{AC}=t\begin{bmatrix}1\\-1\\1\end{bmatrix}$ . Using the same logic, $\vec{AC} = s\begin{bmatrix}2\\0\\-1\end{bmatrix}$. $\vec{BC} = \vec{AC}-\vec{AB}$. Then: $$\begin{align}\vec{BC}&=\vec{AC}-\vec{AB} \\&=-t\begin{bmatrix}1\\-1\\1\end{bmatrix} + s\begin{bmatrix}2\\0\\-1\end{bmatrix} \\&=\begin{bmatrix}2s-t \\t \\-t-s\end{bmatrix}\end{align}$$
+> Since $C$ is $90\degree$, then $\vec{BC}\cdot \vec{AC} = 0$: $$\begin{align}\begin{bmatrix}2s-t \\t \\-t-s\end{bmatrix}\cdot\begin{bmatrix}2\\0\\-1\end{bmatrix} = -4s-2t +t+s = 0 \\  -t=-3s \implies t=3s\end{align}$$Working backwards then: $$\begin{bmatrix}2s-t \\t \\-t-s\end{bmatrix} = \begin{bmatrix}2s- 3s\\3s \\-3s-s\end{bmatrix}  = \begin{bmatrix}-1\\3\\-4\end{bmatrix}s$$
+Therefore, the vector equation of our line is given by the following: $$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}-1\\3\\-4\end{bmatrix}s + \begin{bmatrix}2\\-1\\1\end{bmatrix}$$
+
+
