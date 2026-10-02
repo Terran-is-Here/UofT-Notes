@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-02T16:30:46.711-04:00
-edited_seconds: 1250
+updated_at: 2026-10-02T16:51:56.042-04:00
+edited_seconds: 1390
 course: PHY180H1
 tags:
   - PHY180H1
@@ -18,8 +18,20 @@ Next: [[12 — Potential Energy, Conservative and Non-Conservative Forces]]
 > 7.1-7.4
 --- 
 # Lecture Notes
+## Kinetic Friction 
+Recall, Kinetic Friction always acts opposite in the direction of travel, meaning that kinetic friction always performs some form of negative work: 
+$$
+W_{f} = -f_{k}\Delta d
+$$
+## Work Done by Gravity
+Recall that the force of gravity is normally constant near the Earth, therefore $F_{g}=mg$. We can roughly define the work done by gravity as: 
+$$
+\begin{align}
+W_{g} = -mg\Delta h && \Delta h = h_{t}- h_{0}
+\end{align}
 
-
+$$
+Where $\Delta h$ is defined as positive upwards / negative downwards as per usual. Note that this implies that $W_{g}$ is a state function, where the path to $h_{t}$ from $h_{0}$ does not matter. 
 # Pre-Lecture Notes
 ## Work 
 Work is generally defined as the integral of the path of a force with respect to it's displacement. To begin, we can define the definition of an infinitesimally small amount of work: 
@@ -67,14 +79,16 @@ F_{E} = -kx
 $$
 Where $k$ is some material component (in terms of $\frac{F}{D}$ or commonly, $\frac{N}{m}$), and $x$ is some displacement from the baseline. Note that this is a linear force (so we can use our simplified integral). If we wanted to solve for the linear elastic energy present in a spring; recall our definition from above: 
 $$\begin{align}W_{AB} = \underset{\text{path AB}}{\int }\vec{F}\cdot d\vec{r} \\\end{align}$$
-In this case, $\vec{F} = -kx$, and $d\vec{r}$ is equivalent to the path length, or *displacement* experienced by our spring, some term $dx$, therefore: 
+In this case, $\vec{F} = -kx$ assuming that our object starts from $x=0$ (in terms of equilibrium), and $d\vec{r}$ is equivalent to the path length, or *displacement* experienced by our spring, some term $dx$, therefore: 
 $$
 \begin{align}
 W_{E} &= \int_{A}^B-kx\ dx \\
 &= -k \int_{A}^Bx \ dx \\
 &=-k\left[\frac{1}{2}x_{b}^2-\frac{1}{2}x_{a}^2\right] \\
-W_{E}&= -\frac{k}{2}[x_{b}^2 - x_{a}^2]
+W_{E}&= -\frac{k}{2}[x_{b}^2 - x_{a}^2] = -\frac{k}{2}(x^2_{t}-x^2_{0})
 \end{align}$$
+> [!ila] In Lecture Addendum
+> Note however that the definition above is generally true for any spring, even non-linear ones; just follow traditional antiderivative rules as per usual. 
 ## Kinetic Energy 
 Kinetic Energy is generally defined as the following: 
 >[!theorem] Kinetic Energy
@@ -94,17 +108,17 @@ dW &= \vec{F} \cdot d\vec{r} & \text{Note, }\vec{F} = m\frac{d\vec{v}}{dt} \\
 &=m\vec{v}\cdot d\vec{v}
 \end{align}
 $$
-I personally (Aries) am not that familiar yet with integration of vectors; we can break this up into it's component form: 
+Note that for $m\vec{v}\cdot d\vec{v}$, then this can be rewritten as the sum of $mv_{x}dv_{x} + mv_{y}dv_{y} + mv_{z}dv_{z}$ as per the definition of the dot product (assuming that $d\vec{v} = \begin{bmatrix}dv_{x}\\dv_{y}\\dv_{z}\end{bmatrix}$)
 $$
 \begin{align}
 dW &= mv_{x}dv_{x} + mv_{y}dv_{y} + mv_{z}dv_{z} = m\left[v_{x}dv_{x} + v_{y}dv_{y} + v_{z}dv_{z}\right] \\
 W_{net}=\int_{A}^BdW &= \int_{A}^Bm\left[v_{x}dv_{x} + v_{y}dv_{y} + v_{z}dv_{z}\right] & \\
 &=\left[\frac{m}{2}v_{x}^2 + \frac{m}{2}v_{y}^2 + \frac{m}{2}v_{x}^2\right]^B_{A} \\
-&= \left[\frac{m}{2}v_{x}^2 + \frac{m}{2}v_{y}^2 +\frac{m}{2}v_{z}^2\right]^B_{A} = [\frac{m}{2}v^2]^B_{A} &v_{x}^2 + v_{y}^2 +v_{z}^2 = v^2\\
+&= \left[\frac{m}{2}v_{x}^2 + \frac{m}{2}v_{y}^2 +\frac{m}{2}v_{z}^2\right]^B_{A} = [\frac{m}{2}v^2]^B_{A} &v_{x}^2 + v_{y}^2 +v_{z}^2 = v^2 \text{ (for vectors in } \mathbb{R}^3\text{)}\\
 W_{net}&=K_{B}-K_{A} = \Delta K
 \end{align}
 $$
-What this means is that for instance, if Work is *negative*, then the kinetic energy of our object will proportionally decrease. 
+What this means is that for instance, if Work is *negative*, then the kinetic energy of our object will proportionally decrease. What this also means if that *if* our velocity does not change; the net work done on the system will also be 0. 
 ## Power 
 Power is generally defined as some term of Energy over time, that is: 
 $$P_{av} = \frac{W}{t}$$
