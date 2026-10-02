@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-28T10:05:13.462-04:00
-edited_seconds: 1090
+updated_at: 2026-10-02T13:29:43.441-04:00
+edited_seconds: 1180
 course: ESC194H1
 tags:
   - ESC194H1
@@ -17,6 +17,19 @@ Next: [[11 — Trigonometric, Chain and Implicit Differentiation]]
 > Also, [[07 — Limit Laws]] will also be a useful reference for some of the things that we do. 
 --- 
 # Lecture Notes
+## Product Rule 
+Refer to it's corresponding section in [[10 — Differentiation Formulas and Applied Derivatives#Differentiation Formulas|this very note down below]]. 
+## Power Rule Extension
+Extending from the Quotient rule, we can show that Power Rule also holds for negative powers: 
+
+> *Proof.* Let $F(x) = \frac{1}{g(x)} = \frac{1}{x^m} m\in \mathbb{Z}, m>0$
+
+$$
+\begin{align}
+F'(x) &= \frac{x^m(0) - (1)(mx^{m-1})}{(x^m)^2} \\
+&= \frac{-mx^{m-1}}{x^{2m}} \\
+&=-mx^{-m-1} & \text{Let } n = -m:  \\
+&=nx^{n-1}\end{align}$$
 # Pre-Lecture Notes
 ## Differentiation Formulas 
 Retaking the limit-based definition of the limit: 
