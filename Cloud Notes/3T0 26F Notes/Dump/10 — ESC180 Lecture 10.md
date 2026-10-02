@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-02T12:41:44.067-04:00
-edited_seconds: 260
+updated_at: 2026-10-02T12:53:25.406-04:00
+edited_seconds: 360
 course:
 tags:
 "Lecture #": 0
@@ -76,9 +76,25 @@ def ManualSliceWhile(L,start,end,step):
 		while ind>start :
 			res.append(L[ind])
 			ind+= step 
-	else: 
-	
-	
-	
-	
 ```
+
+## Extending a List 
+The following extends a list: 
+```python
+#list.extend(param) appends a list onto the end of another list: 
+L = [0,1,2]
+M = [3,4,5]
+L.extend(M) # Inherently modifies the list L, such as our list.append(param) functions. 
+print(L) # Expected: [0,1,2,3,4,5]
+```
+
+Note that `list.append(param)` directly appends whatever `param` is to the end of the list. Note also that `list.append(param)` solely accepts one operator, so star operators will not function. 
+
+## Sorting Lists 
+Python has a built in function for sorting lists as is: 
+```python
+L = [3,1,100,-5,29,50,0.1,-10]
+L.sort() # Also directly changes L's structure, like list.extend and list.append
+print(L) # Expected: [-10, -5, 0.1, 1, 3, 29, 50, 100]
+```
+Note that `list.sort()` also works with lists **solely composed of strings** (via lexicographic comparisons). It also primarily in ascending order. 
