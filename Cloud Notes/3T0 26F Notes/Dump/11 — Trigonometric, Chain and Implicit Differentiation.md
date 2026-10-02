@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-29T10:39:24.667-04:00
-edited_seconds: 880
+updated_at: 2026-10-02T13:51:31.372-04:00
+edited_seconds: 1070
 course: ESC194H1
 tags:
   - ESC194H1
@@ -16,6 +16,34 @@ Next: N/A
 > Stewart Textbook: 2.4-2.6
 --- 
 # Lecture Notes
+## Derivative of Sin(x) 
+See the proof at the top of the Trigonometric Derivatives section in this note, however an alternative geometric proof exists. Retaking the following diagram: 
+![[11 — Trigonometric, Chain and Implicit Differentiation-1790605672585.webp]]
+We can define this in terms of the inequality of areas, that is $\triangle OBA_{A} < \text{arc BA} < \triangle ODA_{A}$
+$$
+\begin{align}
+\triangle OBA_{A} = \frac{1}{2}*\sin\theta &= \frac{1}{2}\sin\theta \\
+\text{arc BA} = \pi r^2 *\left( \frac{x}{2\pi} \right) =\frac{(1)^2x}{2} &= \frac{1}{2}x \\
+\triangle ODA &= \frac{1}{2}\tan\theta
+\end{align}
+$$
+Therefore, our inequality becomes: 
+$$
+\begin{align}
+\frac{1}{2}\sin\theta &< \frac{1}{2}x < \frac{1}{2}\tan\theta \\
+\sin\theta &< x < \frac{\sin\theta}{\cos\theta} & \text{Divide by a term of }\sin\theta \\
+1 &< \frac{x}{\sin\theta} < \frac{1}{\cos\theta} &\text{ Take the reciprocal} \\
+1 &> \frac{\sin\theta}{x} > \cos\theta & \text{Take the limits} \\
+\cos\theta < \frac{\sin\theta}{x} < 1 \implies \lim_{ \theta \to 0 } 1 &< \lim_{ \theta \to 0 } \frac{\sin\theta}{x} < \lim_{ \theta \to 0 } \cos\theta \\
+1 &< \lim_{ \theta \to \infty } \frac{\sin\theta}{x}
+\end{align}
+$$
+## Other Trigonometric Derivatives 
+Using the same methods as earlier, you can solve for the other trigonometric derivates as shown below: 
+* $$\frac{d}{dx}\tan(x) = \sec^2(x)$$
+* $$\frac{d}{dx}\cot(x)=\csc^2(x)$$
+* $$\frac{d}{dx}\sec(x) = \sec(x)\tan(x)$$
+* $$\frac{d}{dx}\csc(x) =- \csc(x)\cot(x)$$
 # Pre-Lecture Notes
 ## Trigonometric Derivatives
 Trigonometric Derivatives can be generally obtained from the Differentiation Formulas that we derived in our previous note, as well as some angle sum identities. For this segment, we will take the derivative of $\sin(x)$: 
