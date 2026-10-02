@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-01T16:40:17.610-04:00
-edited_seconds: 480
+updated_at: 2026-10-02T16:23:54.280-04:00
+edited_seconds: 520
 course: PHY180H1
 tags:
   - PHY180H1
@@ -31,6 +31,8 @@ Drag Force is the fluid equivalent to the concept of a contact frictional force 
 > Where $\rho$ is equivalent to the density of our fluid ($[M^1L^{-3}]$), 
 > $C$ is some constant related to the shape of our object (empirically defined)
 > $A$ is the cross-section of our object
+> > [!ila] In-Lecture Addendum (10/2)
+> > $A$ is the exact cross-section of our object. For instance, for a spherical object, A is defined as the area of the corresponding circle in the cross-area. 
 
 Note that since $\frac{1}{2}C\rho A$ is often some constant, that is it (will normally) not change during the movement of an object, it is often denoted as some constant $b$; i.e.
 $$
@@ -60,8 +62,10 @@ Stokes Law is a special case(?) of Drag Force which mainly operates under the fo
 3. $\rho > \rho_{\text{Air}}$
 If any of these are true, then the following equation is more accurate for modelling the force of drag experienced by an object:
 
+> [!theorem] Stokes' Law
 > $$F_{s} = 6\pi r\eta v$$
 > Where: 
-> * $\eta$ is the Viscosity of our Fluid (under some condition) 
+> * $\eta$ is the Viscosity of our Fluid (under some condition) (eta) 
 > * $r$ is the Radius of our object
 > * $v$ is the velocity of our object. 
+

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-01T16:17:08.777-04:00
-edited_seconds: 1170
+updated_at: 2026-10-02T16:30:46.711-04:00
+edited_seconds: 1250
 course: PHY180H1
 tags:
   - PHY180H1
@@ -18,6 +18,8 @@ Next: [[12 — Potential Energy, Conservative and Non-Conservative Forces]]
 > 7.1-7.4
 --- 
 # Lecture Notes
+
+
 # Pre-Lecture Notes
 ## Work 
 Work is generally defined as the integral of the path of a force with respect to it's displacement. To begin, we can define the definition of an infinitesimally small amount of work: 
@@ -30,19 +32,23 @@ Note that if $\vec{F} = \bar{F} = F$, that is force is some constant value; the 
 $$
 \begin{align}
 W_{AB} &= \underset{\text{Path AB}}{\int}\vec{F} \cdot d\vec{r}  = \underset{\text{Path AB}}{\int}dW\\
-&= \vec{F}\underset{\text{Path AB}}{\int}d\vec{r}  \\
+&= \vec{F}\cdot\underset{\text{Path AB}}{\int}d\vec{r}  \\
 &= \vec{F}\cdot(\vec{r}_{B}-\vec{r}_{A}) \\
 &= |\vec{F}||\vec{r}_{b} - \vec{r}_{a}|\cos\theta
 \end{align}
 $$
 With $\vec{r}_{b}-\vec{r}_{a}$ of the path of $AB$, this generally approximates the vector $\vec{d}$; therefore
 $$
-=|\vec{F}||\vec{d}|\cos\theta
+W=|\vec{F}||\vec{d}|\cos\theta
 $$
 Or, without vector notation: 
 $$
-W=Fd\cos\theta
+W=Fd\cos\theta = \vec{F}\cdot \vec{d}
 $$
+> [!ila] In Lecture Addendum
+> Note that the term of $\cos\theta$ implies something interesting: Work can be 0, negative, or positive *depending on the value of $\cos\theta$*. 
+> * If work is negative, then our direction of force is opposite the direction of displacement. 
+> * If work is 0, then our direction of force is perpendicular to the direction of work. 
 ### Non-Constant Forces & Work 
 In general for non-constant forces which vary over some distance; it may help to show them as a function of their components. Recall that we defined force in the direction of it's path as the following: 
 $$
