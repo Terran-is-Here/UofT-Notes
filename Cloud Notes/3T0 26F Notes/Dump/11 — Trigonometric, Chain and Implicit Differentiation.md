@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-02T13:51:31.372-04:00
-edited_seconds: 1070
+updated_at: 2026-10-02T14:18:11.513-04:00
+edited_seconds: 1210
 course: ESC194H1
 tags:
   - ESC194H1
@@ -23,27 +23,85 @@ We can define this in terms of the inequality of areas, that is $\triangle OBA_{
 $$
 \begin{align}
 \triangle OBA_{A} = \frac{1}{2}*\sin\theta &= \frac{1}{2}\sin\theta \\
-\text{arc BA} = \pi r^2 *\left( \frac{x}{2\pi} \right) =\frac{(1)^2x}{2} &= \frac{1}{2}x \\
+\text{arc BA} = \pi r^2 *\left( \frac{\theta}{2\pi} \right) =\frac{(1)^2\theta}{2} &= \frac{1}{2}\theta \\
 \triangle ODA &= \frac{1}{2}\tan\theta
 \end{align}
 $$
 Therefore, our inequality becomes: 
 $$
 \begin{align}
-\frac{1}{2}\sin\theta &< \frac{1}{2}x < \frac{1}{2}\tan\theta \\
-\sin\theta &< x < \frac{\sin\theta}{\cos\theta} & \text{Divide by a term of }\sin\theta \\
-1 &< \frac{x}{\sin\theta} < \frac{1}{\cos\theta} &\text{ Take the reciprocal} \\
-1 &> \frac{\sin\theta}{x} > \cos\theta & \text{Take the limits} \\
-\cos\theta < \frac{\sin\theta}{x} < 1 \implies \lim_{ \theta \to 0 } 1 &< \lim_{ \theta \to 0 } \frac{\sin\theta}{x} < \lim_{ \theta \to 0 } \cos\theta \\
-1 &< \lim_{ \theta \to \infty } \frac{\sin\theta}{x}
+\frac{1}{2}\sin\theta &< \frac{1}{2}\theta < \frac{1}{2}\tan\theta \\
+\sin\theta &< \theta < \frac{\sin\theta}{\cos\theta} & \text{Divide by a term of }\sin\theta \\
+1 &< \frac{\theta}{\sin\theta} < \frac{1}{\cos\theta} &\text{ Take the reciprocal} \\
+1 &> \frac{\sin\theta}{\theta} > \cos\theta & \text{Take the limits} \\
+\cos\theta < \frac{\sin\theta}{\theta} < 1 \implies \lim_{ \theta \to 0 } 1 &< \lim_{ \theta \to 0 } \frac{\sin\theta}{\theta} < \lim_{ \theta \to 0 } \cos\theta \\
+1 &< \lim_{ \theta \to 0 } \frac{\sin\theta}{\theta} < 1
 \end{align}
 $$
+Therefore from squeeze theorem, $\lim_{ \theta \to 0 } \frac{\sin\theta}{\theta} = 1$. 
 ## Other Trigonometric Derivatives 
 Using the same methods as earlier, you can solve for the other trigonometric derivates as shown below: 
 * $$\frac{d}{dx}\tan(x) = \sec^2(x)$$
 * $$\frac{d}{dx}\cot(x)=\csc^2(x)$$
 * $$\frac{d}{dx}\sec(x) = \sec(x)\tan(x)$$
 * $$\frac{d}{dx}\csc(x) =- \csc(x)\cot(x)$$
+## Chain Rule 
+Say that we want to differentiate the following: 
+$$
+f(x) = (3x^2 + 1)^{173}
+$$
+Note that if we let $u = 3x^2 + 1$, then $f(x) = f(u(x)) = u^{173}$
+Then: 
+$$
+\frac{d}{dx}f(x) = \frac{df(u)}{du}* \frac{du}{dx}
+$$
+Or: 
+$$
+\begin{align}
+f(g(x)) = f'(g(x))g'(x) \\
+f \circ g(x) \implies f'(g)g'
+\end{align}
+
+$$
+For instance: $\frac{d}{dx}\sin(3x^2+2)$, Let $u = 3x^2 + 2$, then: 
+$$
+\begin{align}
+\frac{d}{dx}\sin(3x^2 + 2) = \cos(3x^2+2)*6x
+\end{align}
+$$
+### Extending Chain Rule 
+Take the following: 
+$$
+y=y(u), u=u(x), x=x(t)
+$$
+Then: 
+$$
+\frac{dy}{dt} = \frac{dy}{du} \frac{du}{dx} \frac{dx}{dt}
+$$
+For example: 
+$$
+\begin{align}
+y(u) = (u+1)^2 \\
+u(x) = x^3 \\
+x(t) = 14-t
+\end{align}
+$$
+Then: 
+$$
+\begin{align}
+\frac{dy}{du} = 2(u+1) \\
+\frac{du}{dx} = 3x^2 \\
+\frac{dx}{dt} = -1
+\end{align}
+$$
+Then: 
+$$
+\begin{align}
+\frac{dy}{dt} &= 2(u+1)(3x^2)(-1) \\
+&=-x(x^3+1)
+\end{align}
+
+$$
 # Pre-Lecture Notes
 ## Trigonometric Derivatives
 Trigonometric Derivatives can be generally obtained from the Differentiation Formulas that we derived in our previous note, as well as some angle sum identities. For this segment, we will take the derivative of $\sin(x)$: 
