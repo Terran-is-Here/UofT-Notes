@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-02T16:51:56.042-04:00
-edited_seconds: 1390
+updated_at: 2026-10-03T19:08:22.344-04:00
+edited_seconds: 1420
 course: PHY180H1
 tags:
   - PHY180H1
@@ -32,6 +32,11 @@ W_{g} = -mg\Delta h && \Delta h = h_{t}- h_{0}
 
 $$
 Where $\Delta h$ is defined as positive upwards / negative downwards as per usual. Note that this implies that $W_{g}$ is a state function, where the path to $h_{t}$ from $h_{0}$ does not matter. 
+## Loop Question
+Given a roller coaster with a loop below at radius $R$, at what height $h$ should a cart with mass $m$ be released to ensure that it maintains contact all throughout the loop? 
+
+> Take the analysis of the rollercoaster at the top of the loop; then we get the scenario where: 
+> $$\Sigma F_{y} = F_{N}+F_{G} = \frac{mv^2}{R}$$
 # Pre-Lecture Notes
 ## Work 
 Work is generally defined as the integral of the path of a force with respect to it's displacement. To begin, we can define the definition of an infinitesimally small amount of work: 
