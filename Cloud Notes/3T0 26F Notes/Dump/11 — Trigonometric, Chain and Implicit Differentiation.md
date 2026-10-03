@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-02T14:18:11.513-04:00
-edited_seconds: 1210
+updated_at: 2026-10-03T13:13:37.177-04:00
+edited_seconds: 1230
 course: ESC194H1
 tags:
   - ESC194H1
@@ -38,11 +38,13 @@ $$
 1 &< \lim_{ \theta \to 0 } \frac{\sin\theta}{\theta} < 1
 \end{align}
 $$
-Therefore from squeeze theorem, $\lim_{ \theta \to 0 } \frac{\sin\theta}{\theta} = 1$. 
+Therefore from squeeze theorem, $\lim_{ \theta \to 0 } \frac{\sin\theta}{\theta} = 1$.
+> [!caution] 
+> Take the one-sided limits as needed before taking the bidirectional limit, as you still need to show that you can take it inherently. Either that or $\epsilon-\delta$, pick your poison.
 ## Other Trigonometric Derivatives 
 Using the same methods as earlier, you can solve for the other trigonometric derivates as shown below: 
 * $$\frac{d}{dx}\tan(x) = \sec^2(x)$$
-* $$\frac{d}{dx}\cot(x)=\csc^2(x)$$
+* $$\frac{d}{dx}\cot(x)=-\csc^2(x)$$
 * $$\frac{d}{dx}\sec(x) = \sec(x)\tan(x)$$
 * $$\frac{d}{dx}\csc(x) =- \csc(x)\cot(x)$$
 ## Chain Rule 
