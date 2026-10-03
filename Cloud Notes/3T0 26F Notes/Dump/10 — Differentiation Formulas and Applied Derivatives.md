@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-02T13:29:43.441-04:00
-edited_seconds: 1180
+updated_at: 2026-10-03T12:56:02.301-04:00
+edited_seconds: 1550
 course: ESC194H1
 tags:
   - ESC194H1
@@ -78,7 +78,20 @@ $$
 
 > Quotient Rule 
 > Let $F(x) = \frac{f(x)}{g(x)}$, then $$F'(x) = \frac{g(x)f'(x) - g'(x)f(x)}{g(x)^2}$$
-> Proof is left as an exercise to the reader. 
+> Proof: 
+
+$$
+\begin{align}
+F'(x) &= \lim_{ h \to 0 } \left[ \frac{f(x+h)}{g(x+h)}-\frac{f(x)}{g(x)} \right] \frac{1}{h} \\
+&= \lim_{ h \to 0 } \left[ \frac{f(x+h)g(x)-f(x)g(x+h)}{g(x+h)g(x)h} \right]  \\
+&= \lim_{ h \to 0 } \left[\frac{f(x+h)g(x)-f(x)g(x) + f(x)g(x) - f(x)g(x+h)}{g(x+h)g(x)h}\right] \\
+&= \lim_{ h \to 0 } \left[ \frac{f(x+h)g(x)-f(x)g(x)}{g(x+h)g(x)h}  + \frac{f(x)g(x)-f(x)g(x+h)}{g(x+h)g(x)h}\right] \\
+&= \lim_{ h \to 0 } \left[\frac{f(x+h)g(x)-f(x)g(x)}{g(x+h)g(x)h}\right] + \lim_{ h \to 0 } \left[\frac{f(x)g(x)-f(x)g(x+h)}{g(x+h)g(x)h}\right] \\
+&=\lim_{ h \to 0 } \left[ \frac{f(x+h)-f(x)}{h} *\frac{g(x)}{g(x+h)g(x)} \right] -\lim_{ h \to 0 } \left[ \frac{g(x+h)-g(x)}{h} *\frac{f(x)}{g(x+h)g(x)} \right] \\
+&=\lim_{ h \to 0 } \left[ \frac{f'(x)g(x)}{g(x+h)g(x)} \right] - \lim_{ h \to 0 } \left[ \frac{g'(x)f(x)}{g(x+h)g(x)} \right] \\
+F'(x)&= \frac{f'(x)g(x)}{g(x)^2} - \frac{g'(x)f(x)}{g(x)^2} = \frac{f'(x)g(x)-g'(x)f(x)}{g(x)^2}
+\end{align}
+$$
 
 
 
