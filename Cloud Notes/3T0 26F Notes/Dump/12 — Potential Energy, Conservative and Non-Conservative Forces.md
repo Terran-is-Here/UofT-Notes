@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-02T14:31:35.984-04:00
-edited_seconds: 110
+updated_at: 2026-10-03T18:47:09.273-04:00
+edited_seconds: 150
 course: PHY180H1
 tags:
   - PHY180H1
@@ -16,4 +16,10 @@ Next: N/A
 > University Physics 8.1-8.2
 --- 
 # Lecture Notes
+
+
+---
 # Pre-Lecture Notes
+## Gravitational Potential Energy
+The concept of gravitational potential energy is roughly defined as: $$mgh = P_G$$where $m$ stands for mass, $g$ stands for gravity and $h$ stands for the height of the body.
+
