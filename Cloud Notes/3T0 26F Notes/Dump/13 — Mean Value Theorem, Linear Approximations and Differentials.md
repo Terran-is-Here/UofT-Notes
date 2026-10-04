@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T19:25:36.915-04:00
-edited_seconds: 440
+updated_at: 2026-10-04T19:50:26.584-04:00
+edited_seconds: 810
 course:
 tags:
 "Lecture #": 0
@@ -56,5 +56,13 @@ Using Rolle's Theorem, we can now build a proof for the MVT.
 > [!theorem] Mean Value Theorem
 > Given: If $f$ is a real-valued function, defined and continuous on, and having a derivative on the open interval $(a,b)$, then there exists some point $c\in(a,b)$ such that: 
 > $$\boxed{f'(c)=\frac{f(b)-f(a)}{b-a}}\tag{MVT}$$
-
-*Proof*
+*Proof*:
+Take the secant line between some point $(a,f(a)), (b,f(b))$: 
+$$\begin{align}m&=\frac{f(b)-f(a)}{b-a} & \text{ Take some point } (a,f(a)) \\f(a)&=\left(\frac{f(b)-f(a)}{b-a}\right)a + b \\b&= f(a)-\left(\frac{f(b)-f(a)}{b-a}\right)a \\y&=\left(\frac{f(b)-f(a)}{b-a}\right)(x-a) + f(a)\end{align}$$
+Now, we define some function $g(x)$ which represents the distance between a point $y=f(x)$ and the secant line; then: $$g(x) = f(x) - f(a) - \left(\frac{f(b)-f(a)}{b-a}\right)(x-a)$$
+Note that $g(x)$ at $g(a)=g(b)=0$, and that it is defined and continuous on $[a,b]$, and differentiable on $(a,b)$. From Rolle's Theorem, there therefore exists some $g'(c)=0$ where $c\in(a,b)$. 
+If we rearrange this for some $f(x)$, then: 
+$$f(x) = g(x) + f(a) + \left(\frac{f(b)-f(a)}{b-a}\right)(x-a)$$
+Differentiating $f(x)$ with respects to $x$ gives us the following: $$f'(x) = g'(x) +\left(\frac{f(b)-f(a)}{b-a}\right)$$
+Note from Rolle's Theorem, some value $c$ exists where $g'(c)=0$, which means for some value $c\in(a,b)$: 
+$$\boxed{f'(c) = \frac{f(b)-f(a)}{b-a}}$$
