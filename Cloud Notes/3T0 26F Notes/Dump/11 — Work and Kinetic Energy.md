@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T21:35:43.906-04:00
-edited_seconds: 1480
+updated_at: 2026-10-03T21:39:12.531-04:00
+edited_seconds: 1510
 course: PHY180H1
 tags:
   - PHY180H1
@@ -37,10 +37,7 @@ Given a roller coaster with a loop below at radius $R$, at what height $h$ shoul
 
 > Take the analysis of the rollercoaster at the top of the loop; then we get the scenario where: 
 > $$\Sigma F_{y} = F_{N}+F_{G} = \frac{mv^2}{R}$$
-> We want to solve for the minimal speed, that is when $F_{N}=0$, yet when our cart still remains on our track; that is: 
-
-$$\begin{align}\Sigma F_{y}= F_{G} &= \frac{mv_{min}^2}{R}\\mg&= \frac{mv_{min}^2}{R}\\v_{min}^2 &= Rg\end{align}$$
-Note at this point that the equivalent energy in terms of the work that gravity has done to our cart is some term of $mg(h-2R)$. Recall that $W=\Delta E_{K}$, and since $E_{K_{0}} = 0$, then all of our energy at this point is in the term defined by $v^2$
+> We want to solve for the minimal speed, that is when $F_{N}=0$, yet when our cart still remains on our track; that is: $$\begin{align}\Sigma F_{y}= F_{G} &= \frac{mv_{min}^2}{R}\\mg&= \frac{mv_{min}^2}{R}\\v_{min}^2 &= Rg\end{align}$$Note at this point that the equivalent energy in terms of the work that gravity has done to our cart is some term of $mg(h-2R)$. Recall that $W=\Delta E_{K}$, and since $E_{K_{0}} = 0$, then all of our energy at this point is in the term defined by $v^2_{min}$: $$\begin{align}mg(h-2R) &= \frac{1}{2}mv_{min}^2  \\mg(h-2R) &= \frac{1}{2}mRg \\h &= 2.5R\end{align}$$
 # Pre-Lecture Notes
 ## Work 
 Work is generally defined as the integral of the path of a force with respect to it's displacement. To begin, we can define the definition of an infinitesimally small amount of work: 
