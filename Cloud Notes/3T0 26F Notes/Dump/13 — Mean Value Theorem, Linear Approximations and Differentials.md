@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T19:08:25.045-04:00
-edited_seconds: 170
+updated_at: 2026-10-04T19:25:36.915-04:00
+edited_seconds: 440
 course:
 tags:
 "Lecture #": 0
@@ -18,13 +18,43 @@ Next:
 # Pre-Lecture Notes
 ## Mean Value Theorem
 The mean value theorem is the following statement: 
-> [!theorem] Mean Value Theorem
+> Mean Value Theorem
 > Given: If $f$ is a real-valued function, defined and continuous on, and having a derivative on the open interval $(a,b)$, then there exists some point $c\in(a,b)$ such that: 
 > $$\boxed{f'(c)=\frac{f(b)-f(a)}{b-a}}\tag{MVT}$$
 
 The proof for this requires quite a bit of thinking, and required a few other theorems to build up to it. 
 
-> Lemma 
-> *Given:* $f$ is a function which is defined, continuous, and differentiable on an open interval $(u,v)$, and $f$ assumes it's maximum value at some point $w$ within the interval. 
-> *Prove*: $f'(w)=0$
-> *Proof:* Consider the definition of $f'(w)$ from the limit-
+> [!theorem] Lemma 1
+> > *Given:* 
+> > $f$ is a function which is defined, continuous, and differentiable on an open interval $(u,v)$
+> > $f$ assumes it's maximum value at some point $w$ within the interval. 
+> 
+> > *Prove*: $f'(w)=0$
+> 
+> *Proof:* Consider the definition of $f'(w)$ from the limit: 
+> $$f'(w) = \lim_{ h \to 0 } \frac{f(w+h)-f(w)}{h}$$
+> Since $f(w)$ assumes some maximum value; then $f(w+p) <f(w) \implies f(w+p)-f(w)<0$; which means that for any value $h$ on our numerator, then it must be some negative value; then from our one sided limits: $$\begin{align}f'_{+}(w) = \lim_{ h \to ^+0 } \frac{f(w+h)-f(w)}{h} \implies \frac{f(w+h)-f(w)}{h} < 0 \\f'_{-}(w) = \lim_{ h \to ^-0 } \frac{f(w+h)-f(w)}{h} \implies \frac{f(w+h)-f(w)}{h} > 0\end{align}$$
+> For $f'(w)$ to exist, $f'_{+}(w) = f'_{-}(w)$ must be equal. The only way this can be true is if and only if $f'(w) = 0$. 
+> 
+> > [!theorem] Lemma 1.2 
+> > This theorem also extends to some minimum value $m$ within some interval; where $f(m+p)> f(m) \implies f(m+p)-f(m) > 0$. From the above inequalities, then $f'(m)=0$. 
+
+> [!theorem] Rolle's Theorem
+> > *Given*: 
+> > $f$ is continuous on a closed interval $[a,b]$
+> > $f$ has a derivative on each point of $(a,b)$
+> > $f(a)=f(b)$
+> 
+> Prove: There exists a point $c\in(a,b)$ where $f'(c) = 0$
+> 
+> Proof: 
+> If $f(x)$ is continuous on some interval $[a,b]$, then it must possess some maximum value $M$ and minimum value $m$ in $[a,b] \to[f(a),f(b)]$. Since $f(a)=f(b)$, these values are not defined on $[a,b]$ and are thus defined in the open interval of $(a,b)$. 
+> 
+> Following from Lemma 1.1 and Lemma 1.2, then there exists some point $c\in(a,b) \implies f'(c)=0$. 
+
+Using Rolle's Theorem, we can now build a proof for the MVT. 
+> [!theorem] Mean Value Theorem
+> Given: If $f$ is a real-valued function, defined and continuous on, and having a derivative on the open interval $(a,b)$, then there exists some point $c\in(a,b)$ such that: 
+> $$\boxed{f'(c)=\frac{f(b)-f(a)}{b-a}}\tag{MVT}$$
+
+*Proof*
