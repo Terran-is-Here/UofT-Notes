@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T22:33:29.276-04:00
-edited_seconds: 870
+updated_at: 2026-10-03T22:47:46.413-04:00
+edited_seconds: 910
 course: PHY180H1
 tags:
   - PHY180H1
@@ -94,4 +94,11 @@ Where our integral is a path integral of all possible paths taken. We now define
 > The work done by a conservative force is *dependent* on the path; that is it is not a state function. 
 
 ### Proving Conservativity
-The question then arises; how *can* we define if a force is conservative or not? The core concept (at least the one defined by the textbook)
+The question then arises; how *can* we define if a force is conservative or not? The core concept (at least the one defined by the textbook) is that our function is an exact differential. Recall that we defined work as the following: 
+$$
+\begin{align}
+dW &= \vec{F} \cdot d\vec{r} \\
+dW&=F_{x}dr_{x} + F_{y}dr_{y} + F_{z}dr_{z}
+\end{align}
+$$
+Where we can expand it into a corresponding multivariable differential. We 
