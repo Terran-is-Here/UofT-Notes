@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T19:06:09.292-04:00
-edited_seconds: 280
+updated_at: 2026-10-03T21:33:12.301-04:00
+edited_seconds: 290
 course: PHY180H1
 tags:
   - PHY180H1
@@ -43,3 +43,5 @@ Recall that we defined $W=\Delta E_{K}$, then $\Delta E_{PG} = -\Delta E_{EK}$ o
 
 Note that for Gravitational Potential Energy, whatever we define $h$ as, is arbitrary. We normally define it as the surface, or any medium that makes it convenient for the sake of analysis. 
 
+## Potential Energy
+Generally for any potential energy, atleast from h
