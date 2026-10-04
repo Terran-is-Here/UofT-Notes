@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T11:17:16.445-04:00
-edited_seconds: 1710
+updated_at: 2026-10-04T11:27:32.759-04:00
+edited_seconds: 1780
 course: PHY180H1
 tags:
   - PHY180H1
@@ -96,6 +96,10 @@ Where our integral is a path integral of all possible paths taken. We now define
 > An example of a non-conservative force is the force of friction; generally, dissipative forces are not conservative. 
 
 ### Proving Conservativity
+> [!quote] Recommended Reading 
+> This section deals with some multivariable calculus; an addendum is linked here: [[12.1 — Multivariable Calculus (PHY180)]]
+
+
 The question then arises; how *can* we define if a force is conservative or not? The core concept (at least the one defined by the textbook) is that our function is an exact differential. Recall that we defined work as the following: 
 $$
 \begin{align}
@@ -132,20 +136,19 @@ This can be shown in the following examples:
 $$
 \begin{align}
 \int \frac{\partial F_{x}}{\partial y} &= \int 4xy \ \partial y \\
-F_{x} &=2xy^2 +C_{x}
+F_{x} &=2xy^2 +F_{x}(y)
 \end{align}
 $$
 $$
 \begin{align}
 \int \frac{\partial F_{y}}{\partial x} &= \int 4xy \ \partial x \\
-F_{y} &= 2x^2y + C_{y}
+F_{y} &= 2x^2y + F_{y}(x)
 \end{align}
 $$
 
-From our above position, we know that when $y=x=0$, $F=0$, which means that $C_{x}=C_{y}=0$, therefore our force vector is represented by the following: 
-$$
-F=2xy^2\hat{i}+ 2x^2y\hat{j} 
-$$
+From our above position, we know that when $y=x=0$, $F=0$, which means that $F_{x}(y)=F_{y}(x)=0$, therefore our force vector is represented by the following: 
+$$F=2xy^2\hat{i}+ 2x^2y\hat{j} $$
+At $x=y=1$, this resolves to a vector $\begin{bmatrix}2\\2\end{bmatrix}$; whose magnitude is $2\sqrt{ 2 }$. 
 ## Differentiating Potential Energy
 Another implication of potential energy; since we defined it as negatively proportional to work, and work is the integral of a force and some distance: 
 $$
