@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T22:16:34.193-04:00
-edited_seconds: 650
+updated_at: 2026-10-03T22:33:29.276-04:00
+edited_seconds: 870
 course: PHY180H1
 tags:
   - PHY180H1
@@ -80,3 +80,18 @@ $$\begin{align}
 dW&=\vec{F}\cdot d\vec{r}\\
 W&=\underset{\text{Path AB}}{\int_{A}^B}\vec{F}\cdot d\vec{r}
 \end{align}$$
+Where our integral is a path integral of all possible paths taken. We now define the concept of a conservative and a non-conservative force: 
+
+> Conservative Forces 
+> The work done by a *conservative force* is independent of the path; that is it is a state function. The work done by a conservative force is the same for *any* path connecting two points $AB$: 
+> $$W=\underset{\text{Path 1 of AB}}{\int_{A}^B}\vec{F}\cdot d\vec{r}=\underset{\text{Path 2 of AB}}{\int_{A}^B}\vec{F}\cdot d\vec{r}$$
+> Consecutively, we can define a conservative force if and only if it's closed path results in a net work of 0: 
+> $$W=0=\oint \vec{F}\cdot d\vec{r}\implies \vec{F}\text{ is a conservative force}$$
+> Note that for any $\oint$ over the path $AB$; we can express this as:  $$\begin{align}\oint \vec{F} \cdot d\vec{r} &= \underset{\text{Path 1 AB}}{\int}\vec{F}\cdot d\vec{r} + \underset{\text{Path 2 BA}}{\int}\vec{F}\cdot d\vec{r} \\&=\underset{\text{Path 1 AB}}{\int}\vec{F}\cdot d\vec{r} - \underset{\text{Path 2 AB}}{\int}\vec{F}\cdot d\vec{r} = 0\end{align}$$
+> Note that we defined that this summed to $0$, since a path $BA$ is equivalent to having a negative work for the corresponding path $AB$. 
+
+> Non-Conservative Forces
+> The work done by a conservative force is *dependent* on the path; that is it is not a state function. 
+
+### Proving Conservativity
+The question then arises; how *can* we define if a force is conservative or not? The core concept (at least the one defined by the textbook)
