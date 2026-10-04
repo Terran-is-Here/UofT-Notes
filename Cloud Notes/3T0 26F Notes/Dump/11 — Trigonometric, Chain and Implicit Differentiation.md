@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T13:13:37.177-04:00
-edited_seconds: 1230
+updated_at: 2026-10-04T18:14:04.585-04:00
+edited_seconds: 1240
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,7 +11,7 @@ Created: September 27th 2026, 12:09:30 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[10 — Differentiation Formulas and Applied Derivatives]]
-Next: N/A 
+Next: [[12 — Related Rates, Min and Max Values]]
 > [!quote] Recommended Reading 
 > Stewart Textbook: 2.4-2.6
 --- 
