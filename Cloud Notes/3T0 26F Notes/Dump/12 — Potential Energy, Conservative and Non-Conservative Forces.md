@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T22:47:46.413-04:00
-edited_seconds: 910
+updated_at: 2026-10-03T23:17:18.285-04:00
+edited_seconds: 1210
 course: PHY180H1
 tags:
   - PHY180H1
@@ -101,4 +101,30 @@ dW &= \vec{F} \cdot d\vec{r} \\
 dW&=F_{x}dr_{x} + F_{y}dr_{y} + F_{z}dr_{z}
 \end{align}
 $$
-Where we can expand it into a corresponding multivariable differential. We 
+Where we can expand it into a corresponding multivariable differential. 
+> Equivalent Differential
+> The textbook defines the concept of an equivalent differential in $\mathbb{R}^2$ to be the following: 
+> $$dW = \vec{F}\cdot d\vec{r} = F_{x}dr_{x}+F_{y}dr_{y}\to F_{x}dx + F_{y}dy$$
+> This is an exact differential if: 
+> $$\frac{dF_{x}}{dr_{y}}=\frac{dF_{y}}{dr_{x}}\implies \frac{dF_{x}}{dy} =\frac{dF_{y}}{dx}$$
+> (Note that in reality, equivalent differentials are more accurately defined by partial differential.)
+
+This can be shown in the following examples: 
+> $$axy^3\hat{i} + ayx^3\hat{j}$$$$\begin{align}\frac{dF_{x}}{dy} = \frac{d(axy^3)}{dy}= 3axy^2 && \frac{dF_{y}}{dx} = \frac{d(ayx^3)}{dx} & =3ayx^2 \\3axy^2\neq {3}ayx^2 && \therefore\text{ Force is N.C}\end{align}$$
+
+> $$a\left[\frac{y^2}{x}\hat{i}+2y\ln\left( \frac{x}{b} \right)\hat{j}\right]$$$$\begin{align}\frac{dF_{x}}{dy}=\frac{d\left( \frac{ay^2}{x} \right)}{dy}=\frac{2ay}{x} && \frac{dF_{y}}{dx}=\frac{d\left( 2ay\ln \left( \frac{x}{b} \right) \right)}{dx} = \frac{2ay}{\left( \frac{x}{b} \right)}\left( \frac{1}{b} \right) = \frac{2ay}{x} \\\frac{2ay}{x}=\frac{2ay}{x} && \therefore \text{Force is C.}\end{align}$$
+
+$$
+\frac{ax\hat{i} + ay\hat{j}}{x^2 + y^2} = \frac{ax\hat{i}}{x^2+y^2} + \frac{ay\hat{j}}{x^2+y^2}
+$$
+Note that for this case, we are solving this as a partial differential: 
+$$
+\begin{align}
+\frac{\delta F_{x}}{\delta y} = \frac{\delta\left[\frac{ax}{x^2+y^2} \right]}{\delta y} &= ax \frac{\delta\left[(x^2+y^2)^{-1}\right]}{\delta y} \\
+&=ax* (-1(x^2+y^2)^{-2}2y) \\
+\frac{\delta F_{x}}{\delta y}&= -\frac{2axy}{(x^2+y^2)^2}
+\end{align}
+$$
+$$
+\frac{\delta F_{y}}{\delta x} = \frac{\delta\left[ \frac{ay}{x^2+y^2} \right]}{\delta y} = ay \frac{\delta[(x^2+y^2)^{-1}]}{\delta y}
+$$
