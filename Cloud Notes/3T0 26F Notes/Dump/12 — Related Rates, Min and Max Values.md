@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T18:28:25.577-04:00
-edited_seconds: 220
+updated_at: 2026-10-04T18:51:24.175-04:00
+edited_seconds: 230
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,7 +11,7 @@ Created: October 4th 2026, 6:14:03 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[11 — Trigonometric, Chain and Implicit Differentiation]]
-Next: N/A 
+Next: [[13 — Mean Value Theorem, Linear Approximations and Differentials]]
 > [!quote] Recommended Reading 
 > Stewart Textbook Ch. 2.8, 3.1 
 --- 
