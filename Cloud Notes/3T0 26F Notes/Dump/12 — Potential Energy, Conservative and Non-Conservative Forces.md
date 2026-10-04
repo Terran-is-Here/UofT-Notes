@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T23:29:10.335-04:00
-edited_seconds: 1410
+updated_at: 2026-10-03T23:41:30.818-04:00
+edited_seconds: 1490
 course: PHY180H1
 tags:
   - PHY180H1
@@ -115,9 +115,9 @@ This can be shown in the following examples:
 > $$a\left[\frac{y^2}{x}\hat{i}+2y\ln\left( \frac{x}{b} \right)\hat{j}\right]$$$$\begin{align}\frac{dF_{x}}{dy}=\frac{d\left( \frac{ay^2}{x} \right)}{dy}=\frac{2ay}{x} && \frac{dF_{y}}{dx}=\frac{d\left( 2ay\ln \left( \frac{x}{b} \right) \right)}{dx} = \frac{2ay}{\left( \frac{x}{b} \right)}\left( \frac{1}{b} \right) = \frac{2ay}{x} \\\frac{2ay}{x}=\frac{2ay}{x} && \therefore \text{Force is C.}\end{align}$$
 
 > $$\frac{ax\hat{i} + ay\hat{j}}{x^2 + y^2} = \frac{ax\hat{i}}{x^2+y^2} + \frac{ay\hat{j}}{x^2+y^2}$$
-> Note that for this case, we are solving this as a partial differential: $$\begin{align}\frac{\delta F_{x}}{\delta y} = \frac{\delta\left[\frac{ax}{x^2+y^2} \right]}{\delta y} &= ax \frac{\delta\left[(x^2+y^2)^{-1}\right]}{\delta y} \\&=ax* (-1(x^2+y^2)^{-2}2y) \\\frac{\delta F_{x}}{\delta y}&= -\frac{2axy}{(x^2+y^2)^2}\end{align}$$
-> $$\begin{align}\frac{\delta F_{y}}{\delta x} = \frac{\delta\left[ \frac{ay}{x^2+y^2} \right]}{\delta y} &= ay \frac{\delta[(x^2+y^2)^{-1}]}{\delta y} \\&= ay * (-1(x^2+y^2)^{-2}2x) \\\frac{\delta F_{x}}{\delta y}&=-\frac{2axy}{(x^2+y^2)^2}\end{align}$$
-> Note that: $$\frac{\delta F_{y}}{\delta x}=-\frac{2axy}{(x^2+y^2)^2}=\frac{\delta F_{x}}{\delta y} \implies \text{Force is Conservative}$$
+> Note that for this case, we are solving this as a partial differential: $$\begin{align}\frac{\partial F_{x}}{\partial y} = \frac{\partial\left[\frac{ax}{x^2+y^2} \right]}{\partial y} &= ax \frac{\partial\left[(x^2+y^2)^{-1}\right]}{\partial y} \\&=ax* (-1(x^2+y^2)^{-2}2y) \\\frac{\partial F_{x}}{\partial y}&= -\frac{2axy}{(x^2+y^2)^2}\end{align}$$
+> $$\begin{align}\frac{\partial F_{y}}{\partial x} = \frac{\partial\left[ \frac{ay}{x^2+y^2} \right]}{\partial y} &= ay \frac{\partial[(x^2+y^2)^{-1}]}{\partial y} \\&= ay * (-1(x^2+y^2)^{-2}2x) \\\frac{\partial F_{x}}{\partial y}&=-\frac{2axy}{(x^2+y^2)^2}\end{align}$$
+> Note that: $$\frac{\partial F_{y}}{\partial x}=-\frac{2axy}{(x^2+y^2)^2}=\frac{\partial F_{x}}{\partial y} \implies \text{Force is Conservative}$$
 ## Differentiating Potential Energy
 Another implication of potential energy; since we defined it as negatively proportional to work, and work is the integral of a force and some distance: 
 $$
@@ -133,5 +133,8 @@ dU&= -\vec{F}\cdot d\vec{r} & \text{Let } d\vec{r}=dl\text{ where } l \text{ is 
 $$
 For multidimensional forces, such as ones in $\mathbb{R}^2$, then this can be expanded as: 
 $$
-\vec{F} =- \left( \frac{\delta U}{\delta x} \right)\hat{i} - \left( \frac{\delta U}{\delta y} \right)\hat{j}
+\vec{F} =- \left( \frac{\partial U}{\partial x} \right)\hat{i} - \left( \frac{\partial U}{\partial y} \right)\hat{j} = -\begin{bmatrix}
+\frac{\partial U}{\partial x} \\
+\frac{\partial U}{\partial y} 
+\end{bmatrix}
 $$
