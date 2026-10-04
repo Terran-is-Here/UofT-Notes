@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T10:42:06.609-04:00
-edited_seconds: 1570
+updated_at: 2026-10-04T11:17:16.445-04:00
+edited_seconds: 1710
 course: PHY180H1
 tags:
   - PHY180H1
@@ -123,6 +123,29 @@ This can be shown in the following examples:
 > Note that for this case, we are solving this as a partial differential: $$\begin{align}\frac{\partial F_{x}}{\partial y} = \frac{\partial\left[\frac{ax}{x^2+y^2} \right]}{\partial y} &= ax \frac{\partial\left[(x^2+y^2)^{-1}\right]}{\partial y} \\&=ax* (-1(x^2+y^2)^{-2}2y) \\\frac{\partial F_{x}}{\partial y}&= -\frac{2axy}{(x^2+y^2)^2}\end{align}$$
 > $$\begin{align}\frac{\partial F_{y}}{\partial x} = \frac{\partial\left[ \frac{ay}{x^2+y^2} \right]}{\partial y} &= ay \frac{\partial[(x^2+y^2)^{-1}]}{\partial y} \\&= ay * (-1(x^2+y^2)^{-2}2x) \\\frac{\partial F_{x}}{\partial y}&=-\frac{2axy}{(x^2+y^2)^2}\end{align}$$
 > Note that: $$\frac{\partial F_{y}}{\partial x}=-\frac{2axy}{(x^2+y^2)^2}=\frac{\partial F_{x}}{\partial y} \implies \text{Force is Conservative}$$
+
+> Applied Example 
+> A two-dimensional force is $0$ on the $x$ and $y$ axis, while also satisfying the following condition: 
+> $$\frac{\partial F_{x}}{\partial y}=\frac{\partial F_{y}}{\partial x}=4xy$$
+> What is the magnitude of the force at $x=y=1$? 
+> Solve for the corresponding force values by taking the integrals with respects to $\partial y$ and $\partial x$ respectively: 
+$$
+\begin{align}
+\int \frac{\partial F_{x}}{\partial y} &= \int 4xy \ \partial y \\
+F_{x} &=2xy^2 +C_{x}
+\end{align}
+$$
+$$
+\begin{align}
+\int \frac{\partial F_{y}}{\partial x} &= \int 4xy \ \partial x \\
+F_{y} &= 2x^2y + C_{y}
+\end{align}
+$$
+
+From our above position, we know that when $y=x=0$, $F=0$, which means that $C_{x}=C_{y}=0$, therefore our force vector is represented by the following: 
+$$
+F=2xy^2\hat{i}+ 2x^2y\hat{j} 
+$$
 ## Differentiating Potential Energy
 Another implication of potential energy; since we defined it as negatively proportional to work, and work is the integral of a force and some distance: 
 $$
@@ -143,3 +166,4 @@ $$
 \frac{\partial U}{\partial y} 
 \end{bmatrix}
 $$
+
