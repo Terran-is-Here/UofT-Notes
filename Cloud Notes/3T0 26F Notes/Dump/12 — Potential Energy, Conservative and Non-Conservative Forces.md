@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T21:54:36.382-04:00
-edited_seconds: 500
+updated_at: 2026-10-03T22:16:34.193-04:00
+edited_seconds: 650
 course: PHY180H1
 tags:
   - PHY180H1
@@ -64,4 +64,19 @@ $$
 E_{K} + \Sigma U =E_{M} \text{ Where } E_{M} \text{ is our system's total energy.}
 $$
 $E_{M}$ can be defined from a case by case basis. For instance, take the following example from the textbook: 
+
+> Assume that a spring system is affected by gravity. Assume that this spring at it's initial position is also in it's equilibrium position, that is $x=0$ in $\frac{1}{2}kx^2$. Then: 
+> > We can define our gravitational potential energy's relevant baseline at the peak of this spring, that is $y=0$, and at this point by convention with $mgy_{a} = mg(0) = 0$, then this point has no relevant gravitational potential energy.  
+> > Denote this point $y_{A}$. At this point, $E_{K}=0$.
 > 
+> From here, note at the lowest point of this spring / it's maximum deformation (some value $y_{B}$), $E_{K}$ is momentarily 0 at this point, as our object's velocity drops to 0. Then: 
+> $$E_{KA}+ U_{A} = E_{KB} + U_{B}$$
+> Since $E_{KA},E_{KB} = 0$, and $U_{A}=0$ (as $y=0$), and $U_{B} = U_{E} + U_{G}$, then: $$\begin{align}0 &= U_{E} + U_{G} \\0 &= \frac{1}{2}ky_{B}^2 + mgy_{B} \\y_{B} &=-\frac{2mg}{k}\end{align}$$
+> Where $y_{b}$ would then be the value of the maximum stretch deformation of our spring. 
+
+## Conservative and Non-Conservative Forces
+Recall that our earlier definition of Work: 
+$$\begin{align}
+dW&=\vec{F}\cdot d\vec{r}\\
+W&=\underset{\text{Path AB}}{\int_{A}^B}\vec{F}\cdot d\vec{r}
+\end{align}$$
