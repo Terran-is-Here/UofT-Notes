@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T23:41:30.818-04:00
-edited_seconds: 1490
+updated_at: 2026-10-04T10:42:06.609-04:00
+edited_seconds: 1570
 course: PHY180H1
 tags:
   - PHY180H1
@@ -82,16 +82,18 @@ W&=\underset{\text{Path AB}}{\int_{A}^B}\vec{F}\cdot d\vec{r}
 \end{align}$$
 Where our integral is a path integral of all possible paths taken. We now define the concept of a conservative and a non-conservative force: 
 
-> Conservative Forces 
+> [!theorem] Conservative Forces 
 > The work done by a *conservative force* is independent of the path; that is it is a state function. The work done by a conservative force is the same for *any* path connecting two points $AB$: 
 > $$W=\underset{\text{Path 1 of AB}}{\int_{A}^B}\vec{F}\cdot d\vec{r}=\underset{\text{Path 2 of AB}}{\int_{A}^B}\vec{F}\cdot d\vec{r}$$
 > Consecutively, we can define a conservative force if and only if it's closed path results in a net work of 0: 
 > $$W=0=\oint \vec{F}\cdot d\vec{r}\implies \vec{F}\text{ is a conservative force}$$
 > Note that for any $\oint$ over the path $AB$; we can express this as:  $$\begin{align}\oint \vec{F} \cdot d\vec{r} &= \underset{\text{Path 1 AB}}{\int}\vec{F}\cdot d\vec{r} + \underset{\text{Path 2 BA}}{\int}\vec{F}\cdot d\vec{r} \\&=\underset{\text{Path 1 AB}}{\int}\vec{F}\cdot d\vec{r} - \underset{\text{Path 2 AB}}{\int}\vec{F}\cdot d\vec{r} = 0\end{align}$$
 > Note that we defined that this summed to $0$, since a path $BA$ is equivalent to having a negative work for the corresponding path $AB$. 
+> > Note that conservative forces have a corresponding potential energy term related to them. 
 
-> Non-Conservative Forces
+> [!theorem] Non-Conservative Forces
 > The work done by a conservative force is *dependent* on the path; that is it is not a state function. 
+> An example of a non-conservative force is the force of friction; generally, dissipative forces are not conservative. 
 
 ### Proving Conservativity
 The question then arises; how *can* we define if a force is conservative or not? The core concept (at least the one defined by the textbook) is that our function is an exact differential. Recall that we defined work as the following: 
@@ -107,12 +109,15 @@ Where we can expand it into a corresponding multivariable differential.
 > $$dW = \vec{F}\cdot d\vec{r} = F_{x}dr_{x}+F_{y}dr_{y}\to F_{x}dx + F_{y}dy$$
 > This is an exact differential if: 
 > $$\frac{dF_{x}}{dr_{y}}=\frac{dF_{y}}{dr_{x}}\implies \frac{dF_{x}}{dy} =\frac{dF_{y}}{dx}$$
-> (Note that in reality, equivalent differentials are more accurately defined by partial differential.)
+> Note that in reality, equivalent differentials are more accurately defined by partial differential: 
+> $$\frac{\partial F_{x}}{\partial y}=\frac{\partial F_{y}}{\partial x}$$
+
+
 
 This can be shown in the following examples: 
-> $$axy^3\hat{i} + ayx^3\hat{j}$$$$\begin{align}\frac{dF_{x}}{dy} = \frac{d(axy^3)}{dy}= 3axy^2 && \frac{dF_{y}}{dx} = \frac{d(ayx^3)}{dx} & =3ayx^2 \\3axy^2\neq {3}ayx^2 && \therefore\text{ Force is N.C}\end{align}$$
+> $$axy^3\hat{i} + ayx^3\hat{j}$$$$\begin{align}\frac{\partial F_{x}}{\partial y} = \frac{\partial (axy^3)}{\partial y}= 3axy^2 && \frac{\partial F_{y}}{\partial x} = \frac{\partial (ayx^3)}{\partial x} & =3ayx^2 \\3axy^2\neq {3}ayx^2 && \therefore\text{ Force is N.C}\end{align}$$
 
-> $$a\left[\frac{y^2}{x}\hat{i}+2y\ln\left( \frac{x}{b} \right)\hat{j}\right]$$$$\begin{align}\frac{dF_{x}}{dy}=\frac{d\left( \frac{ay^2}{x} \right)}{dy}=\frac{2ay}{x} && \frac{dF_{y}}{dx}=\frac{d\left( 2ay\ln \left( \frac{x}{b} \right) \right)}{dx} = \frac{2ay}{\left( \frac{x}{b} \right)}\left( \frac{1}{b} \right) = \frac{2ay}{x} \\\frac{2ay}{x}=\frac{2ay}{x} && \therefore \text{Force is C.}\end{align}$$
+> $$a\left[\frac{y^2}{x}\hat{i}+2y\ln\left( \frac{x}{b} \right)\hat{j}\right]$$$$\begin{align}\frac{\partial F_{x}}{\partial y}=\frac{\partial \left( \frac{ay^2}{x} \right)}{\partial y}=\frac{2ay}{x} && \frac{\partial F_{y}}{\partial x}=\frac{\partial \left( 2ay\ln \left( \frac{x}{b} \right) \right)}{\partial x} = \frac{2ay}{\left( \frac{x}{b} \right)}\left( \frac{1}{b} \right) = \frac{2ay}{x} \\\frac{2ay}{x}=\frac{2ay}{x} && \therefore \text{Force is C.}\end{align}$$
 
 > $$\frac{ax\hat{i} + ay\hat{j}}{x^2 + y^2} = \frac{ax\hat{i}}{x^2+y^2} + \frac{ay\hat{j}}{x^2+y^2}$$
 > Note that for this case, we are solving this as a partial differential: $$\begin{align}\frac{\partial F_{x}}{\partial y} = \frac{\partial\left[\frac{ax}{x^2+y^2} \right]}{\partial y} &= ax \frac{\partial\left[(x^2+y^2)^{-1}\right]}{\partial y} \\&=ax* (-1(x^2+y^2)^{-2}2y) \\\frac{\partial F_{x}}{\partial y}&= -\frac{2axy}{(x^2+y^2)^2}\end{align}$$
