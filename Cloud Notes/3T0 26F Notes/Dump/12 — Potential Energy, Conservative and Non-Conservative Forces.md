@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T23:17:18.285-04:00
-edited_seconds: 1210
+updated_at: 2026-10-03T23:29:10.335-04:00
+edited_seconds: 1410
 course: PHY180H1
 tags:
   - PHY180H1
@@ -102,7 +102,7 @@ dW&=F_{x}dr_{x} + F_{y}dr_{y} + F_{z}dr_{z}
 \end{align}
 $$
 Where we can expand it into a corresponding multivariable differential. 
-> Equivalent Differential
+> [!theorem] Equivalent Differential
 > The textbook defines the concept of an equivalent differential in $\mathbb{R}^2$ to be the following: 
 > $$dW = \vec{F}\cdot d\vec{r} = F_{x}dr_{x}+F_{y}dr_{y}\to F_{x}dx + F_{y}dy$$
 > This is an exact differential if: 
@@ -114,17 +114,24 @@ This can be shown in the following examples:
 
 > $$a\left[\frac{y^2}{x}\hat{i}+2y\ln\left( \frac{x}{b} \right)\hat{j}\right]$$$$\begin{align}\frac{dF_{x}}{dy}=\frac{d\left( \frac{ay^2}{x} \right)}{dy}=\frac{2ay}{x} && \frac{dF_{y}}{dx}=\frac{d\left( 2ay\ln \left( \frac{x}{b} \right) \right)}{dx} = \frac{2ay}{\left( \frac{x}{b} \right)}\left( \frac{1}{b} \right) = \frac{2ay}{x} \\\frac{2ay}{x}=\frac{2ay}{x} && \therefore \text{Force is C.}\end{align}$$
 
+> $$\frac{ax\hat{i} + ay\hat{j}}{x^2 + y^2} = \frac{ax\hat{i}}{x^2+y^2} + \frac{ay\hat{j}}{x^2+y^2}$$
+> Note that for this case, we are solving this as a partial differential: $$\begin{align}\frac{\delta F_{x}}{\delta y} = \frac{\delta\left[\frac{ax}{x^2+y^2} \right]}{\delta y} &= ax \frac{\delta\left[(x^2+y^2)^{-1}\right]}{\delta y} \\&=ax* (-1(x^2+y^2)^{-2}2y) \\\frac{\delta F_{x}}{\delta y}&= -\frac{2axy}{(x^2+y^2)^2}\end{align}$$
+> $$\begin{align}\frac{\delta F_{y}}{\delta x} = \frac{\delta\left[ \frac{ay}{x^2+y^2} \right]}{\delta y} &= ay \frac{\delta[(x^2+y^2)^{-1}]}{\delta y} \\&= ay * (-1(x^2+y^2)^{-2}2x) \\\frac{\delta F_{x}}{\delta y}&=-\frac{2axy}{(x^2+y^2)^2}\end{align}$$
+> Note that: $$\frac{\delta F_{y}}{\delta x}=-\frac{2axy}{(x^2+y^2)^2}=\frac{\delta F_{x}}{\delta y} \implies \text{Force is Conservative}$$
+## Differentiating Potential Energy
+Another implication of potential energy; since we defined it as negatively proportional to work, and work is the integral of a force and some distance: 
 $$
-\frac{ax\hat{i} + ay\hat{j}}{x^2 + y^2} = \frac{ax\hat{i}}{x^2+y^2} + \frac{ay\hat{j}}{x^2+y^2}
+U=-W = -\int \vec{F}\cdot d\vec{r}
 $$
-Note that for this case, we are solving this as a partial differential: 
+Therefore, differentiating $U$ with respects to displacement gives us an infinitesimal amount of  potential energy with respects of a force applied: 
 $$
 \begin{align}
-\frac{\delta F_{x}}{\delta y} = \frac{\delta\left[\frac{ax}{x^2+y^2} \right]}{\delta y} &= ax \frac{\delta\left[(x^2+y^2)^{-1}\right]}{\delta y} \\
-&=ax* (-1(x^2+y^2)^{-2}2y) \\
-\frac{\delta F_{x}}{\delta y}&= -\frac{2axy}{(x^2+y^2)^2}
+U&=-\int \vec{F}\cdot d\vec{r} \\
+dU&= -\vec{F}\cdot d\vec{r} & \text{Let } d\vec{r}=dl\text{ where } l \text{ is a infinitesimal displacement}\\
+-\frac{dU}{d\vec{r}}=-\frac{dU}{dl}&=\vec{F}
 \end{align}
 $$
+For multidimensional forces, such as ones in $\mathbb{R}^2$, then this can be expanded as: 
 $$
-\frac{\delta F_{y}}{\delta x} = \frac{\delta\left[ \frac{ay}{x^2+y^2} \right]}{\delta y} = ay \frac{\delta[(x^2+y^2)^{-1}]}{\delta y}
+\vec{F} =- \left( \frac{\delta U}{\delta x} \right)\hat{i} - \left( \frac{\delta U}{\delta y} \right)\hat{j}
 $$
