@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-05T11:49:05.758-04:00
-edited_seconds: 820
+updated_at: 2026-10-05T12:02:15.772-04:00
+edited_seconds: 1010
 course: ESC194H1
 tags:
   - ESC194H1
@@ -59,7 +59,40 @@ From here, we can extend this to absolute maximum and minimums: Given $x=c\in D$
 > This creates a parabola. Note that $f(0)=0 \leq f(x)\ \forall x\in(-\infty,\infty)$, then $f(0)$ is an absolute minimum for $f(x)\in(-\infty,\infty)$. Note additionally that this function does not have an absolute maxima. 
 
 > Example: $f(x)=\sin(x)$ where $x\in(-\infty,\infty)$
-> Note that this sinusoidal function has *infinitely many* local minima and maxima. Note that since these all share the same value; then there are an *infinite* number of absolute maxima and absolute minima. 
+> Note that this sinusoidal function has *infinitely many* local minima and maxima. Note that since these all share the same value; then there are an *infinite* number of local and absolute minima and maxima on $(-\infty,\infty)$. 
+
+## Extreme Value Theorem (LEC) 
+> [!theorem] EVT (Extreme Value Theorem) 
+> If $f$ is a continuous on the closed interval $[a,b]$, then $f$ takes on at least one *minimum* and *maximum* value on $[a,b]$. 
+> > Note that $f$ needs to be continuous **on a closed interval**. 
+> 
+
+*Proof:* (Provided in the *supplement*, so really just a transcript of the section in [[12 — Related Rates, Min and Max Values#Extreme Value Theorem|EVT (below)]]). 
+
+> Lemma 1.1
+> If $f$ is continuous on a closed interval $[a,b]$, then $f$ is also bounded on $[a,b]$. 
+
+From this we can work on a proof. Then, assume $f(x)$ is continuous as given in the theorem, then by Lemma 1.1, $f$ is bounded. 
+
+Let $M$ be the Least Upper Bound of $f$ on $[a,b]$. Recall that from [[02 — The Real Number System#Completeness of the Reals Axiom (CORA)|CORA]], that $M$ exists due to $f$ being bounded. 
+
+Using this information, we want to show that for some $f(c), c\in[a,b]$ where $f(c)=M$. From here, we can proceed by a contradiction. Assume that $M$ is 
+
+Assume that $f(x) < M$ on $[a,b]$, then define $g(x)=\frac{1}{M-f(x)}$. If $f(x) < M$ on $[a,b]$, then $g(x)$ is continuous *and positive* on $[a,b]$. By the lemma, this is bounded. 
+
+Then, $0<g(x)<K$ where $K$ is some bound on $g(x),x\in AB$. This implies that: 
+$$
+g(x) = \frac{1}{M-f(x)} \leq K
+$$
+Rearranging: 
+$$
+\frac{1}{K}\leq M-f(x)
+$$
+$$
+f(x)\leq M-\frac{1}{K}
+$$
+Note that this contradicts our concept, that the LUB of $f(x)$ is $M$, but here, f(x)'s LUB is $M-\frac{1}{k}$. Therefore, $f(x)$ must take on it's maximum $M$ somewhere on $[a,b]$. 
+
 ---
 # Pre-Lecture Notes
 ## Related Rates
@@ -86,7 +119,7 @@ Note that the definition for $x$ near $c$ is that it is true for some open inter
 ### Extreme Value Theorem 
 The extreme value theorem is the following
 
-> a
+> Extreme Value Theorem 
 > > *Given:* $f$ is defined and continuous on $[a,b]$
 > 
 > Prove: $f$ assumes a maximum *and* minimum value on $[a,b]$. 
