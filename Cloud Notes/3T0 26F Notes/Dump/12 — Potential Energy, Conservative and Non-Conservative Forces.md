@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-05T16:54:47.815-04:00
-edited_seconds: 1820
+updated_at: 2026-10-05T17:32:54.549-04:00
+edited_seconds: 1840
 course: PHY180H1
 tags:
   - PHY180H1
@@ -11,7 +11,7 @@ Created: September 27th 2026, 10:01:18 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[11 — Work and Kinetic Energy]]
-Next: N/A 
+Next: [[13 — Conservation of Energy, Stability]]
 > [!quote] Recommended Reading 
 > University Physics 8.1-8.2
 --- 
@@ -104,6 +104,8 @@ Where our integral is a path integral of all possible paths taken. We now define
 > [!quote] Recommended Reading 
 > This section deals with some multivariable calculus; an addendum is linked here: [[12.1 — Multivariable Calculus (PHY180)]]
 
+> [!caution] Note
+> The content past this segment (the multivariable calculus) is NOT necessary to know; but still nice to know if any bullshit gets thrown our way. 
 
 The question then arises; how *can* we define if a force is conservative or not? The core concept (at least the one defined by the textbook) is that our function is an exact differential. Recall that we defined work as the following: 
 $$
