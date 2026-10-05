@@ -1,15 +1,16 @@
 ---
-updated_at: 2026-10-04T22:05:08.169-04:00
-edited_seconds: 1280
-course:
+updated_at: 2026-10-04T22:22:39.645-04:00
+edited_seconds: 1600
+course: ESC194H1
 tags:
+  - ESC194H1
 "Lecture #": 0
 Lecture Date: 2026-10-04
 Week:
 ---
-Hub: 
-Previous: 
-Next:
+Hub: [[ESC194 Hub]]
+Previous: [[12 — Related Rates, Min and Max Values]]
+Next: N/A 
 
 --- 
 # Lecture Notes
@@ -70,6 +71,7 @@ $$\boxed{f'(c) = \frac{f(b)-f(a)}{b-a}}$$
 ^768c51
 Note that MVT extends a very interesting corollary: 
 
+> [!theorem] Corollary 1.1
 > > *Given:* 
 > > $f$ is a function defined & continuous on the closed interval $[a,b]$, 
 > > $\exists f'(x)$, and $f'(x)=0$ for $x\in(a,b)$
@@ -77,12 +79,26 @@ Note that MVT extends a very interesting corollary:
 > Prove: $f$ is constant on the interval $[a,b]$. 
 > 
 > Proof: 
-> If $f$ is continuous, defined on some closed interval $[a,b]$, then it is also continuous on some subinterval $[a,x]\subset[a,c]$, where $x\in(a,b]$. 
-> If $f$ is differentiable on some open interval $(a,b)$, then it is also differentiable on some subinterval $(a,x)\subset(a,c)$ where $x\in(a,b]$.
+> If $f$ is continuous, defined on some closed interval $[a,b]$, then it is also continuous on some subinterval $[a,x]\subset[a,b]$, where $x\in(a,b]$. 
+> If $f$ is differentiable on some open interval $(a,b)$, then it is also differentiable on some subinterval $(a,x)\subset(a,b)$ where $x\in(a,b]$.
 > 
 > Following from MVT, then there exists a point $g$ for $f'$ such that
 > $$f'(g) = \frac{f(x)-f(a)}{x-a}$$
-> Note from our givens, we know that $f'(w)=0$ if $w\in(a,b)$, but since $w\in(a,x)\subset(a,b)$ then the given concept of $f'(w)=0$ is still applicable: $$f'(g) = \frac{f(x)-f(a)}{x-a}=0 \implies f(x) = f(a)$$
+> Note from our givens, we know that $f'(g)=0$ if $g\in(a,b)$, but since $g\in(a,x)\subset(a,b)$ then the given concept of $f'(g)=0$ is still applicable: $$f'(g) = \frac{f(x)-f(a)}{x-a}=0 \implies f(x) = f(a)$$
 > Note that our definition for $x$ was an arbitrary value between $a$ and $b$ (inclusive). If $x=a$, $f(a)=f(a)$, and if $x=b$, $f(b)=f(a)$ which means that across the interval of $[a,b]$, $f(x)=f(a)$, which implies that $f$ is some constant value. 
+
+Or in other words, we can show that the derivative of any function across an interval will be $0$ if and only if that function is some constant.  
 ## Cauchy's Mean Value Theorem 
-Cauchy's Mean Value Theorem is an 
+Cauchy's Mean Value Theorem is an extension of the Mean Value Theorem: 
+
+> [!theorem] Cauchy's Mean Value Theorem
+> *Given:*
+> $f,g$ are two functions defined *and* continuous on an interval $[a,b]$. 
+> $f,g$ also have a derivative at every interval $(a,b)$. Suppose further that $g(a)\neq g(b)$. 
+> 
+> Prove: There exists a point $c\in(a,b)$ for which $$\frac{f(b)-f(a)}{g(b)-g(a)} = \frac{f'(c)}{g'(c)}$$
+> Proof: 
+> Consider the following function: 
+> $$h(x) = f(x)(g(b)-g(a))-g(x)(f(b)-f(a))$$
+> Consider then $h(a)$ and $h(b)$: $$\begin{align}h(a) &= f(a)(g(b)-g(a))-g(a)(f(b)-f(a)) \\&= f(a)g(b) - f(a)g(a) -g(a)f(b) + g(a)f(a) = f(a)g(b) - f(b)g(a) \\h(b) &= f(b)(g(b)-g(a)) - g(b)(f(b)-f(a)) \\&= f(b)g(b) - f(b)g(a) - g(b)f(b) + g(b)f(a) = -f(b)g(a) + f(a)g(b) \\&\implies h(a)=h(b)\end{align}$$
+> From this, Rolle's Theorem holds true, then there exists some value where $h'(c)=0$. Differentiating with respects to $x$: $$\begin{align}h'(x) = f'(x)(g(b)-g(a))-g'(x)(f(b)-f(a)) &= 0 \\f'(x)(g(b)-g(a))&=g'(x)(f(b)-f(a))  \\\frac{g(b)-g(a)}{f(b)-f(a)} &= \frac{g'(x)}{f'(x)} \\\boxed{\frac{f'(x)}{g'(x)}= \frac{f(b)-f(a)}{g(b)-g(a)}}\end{align}$$
