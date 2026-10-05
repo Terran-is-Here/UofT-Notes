@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-05T16:50:53.918-04:00
-edited_seconds: 1810
+updated_at: 2026-10-05T16:54:47.815-04:00
+edited_seconds: 1820
 course: PHY180H1
 tags:
   - PHY180H1
@@ -45,6 +45,9 @@ Recall that we defined $W=\Delta E_{K}$, then $\Delta E_{PG} = -\Delta E_{EK}$ o
 > $$\Delta U = -\Delta E_{K} = -W$$
 
 Note that for Gravitational Potential Energy, whatever we define $h$ as, is arbitrary. We normally define it as the surface, or any medium that makes it convenient for the sake of analysis. 
+
+> [!ila] In Lecture Addendum
+> We, like every other field of science, only care about some $\Delta E$. 
 
 > [!axiom] Potential Energy Integration
 > Recall that we defined work as the following: 
