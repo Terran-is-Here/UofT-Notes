@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-05T12:02:15.772-04:00
-edited_seconds: 1010
+updated_at: 2026-10-05T13:31:29.075-04:00
+edited_seconds: 1090
 course: ESC194H1
 tags:
   - ESC194H1
@@ -76,7 +76,7 @@ From this we can work on a proof. Then, assume $f(x)$ is continuous as given in 
 
 Let $M$ be the Least Upper Bound of $f$ on $[a,b]$. Recall that from [[02 — The Real Number System#Completeness of the Reals Axiom (CORA)|CORA]], that $M$ exists due to $f$ being bounded. 
 
-Using this information, we want to show that for some $f(c), c\in[a,b]$ where $f(c)=M$. From here, we can proceed by a contradiction. Assume that $M$ is 
+Using this information, we want to show that for some $f(c), c\in[a,b]$ where $f(c)=M$. From here, we can proceed by a contradiction. 
 
 Assume that $f(x) < M$ on $[a,b]$, then define $g(x)=\frac{1}{M-f(x)}$. If $f(x) < M$ on $[a,b]$, then $g(x)$ is continuous *and positive* on $[a,b]$. By the lemma, this is bounded. 
 
@@ -145,5 +145,9 @@ The Boundness Theorem lets us show that, for any function defined and continuous
 > * $\gamma=a$, then approaching this from the right, then: 
 >   $\exists\delta>0$ in $[a,a+\delta)\implies|f(x)-f(\gamma)|<\epsilon=1\implies |f(x)|<1+|f(\gamma)|$
 > * $\gamma=b$, then approaching this from the left, then: 
->   $\exists\delta>0$ in $(b-\delta,b] \implies |f(x)-f(\gamma)|<\epsilon \implies$
-> Will be continued tomorrow. 
+>   $\exists\delta>0$ in $(b-\delta,b] \implies |f(x)-f(\gamma)|<\epsilon \implies |f(x)|<1+|f(\gamma)|$
+> * $a<\gamma<b$, then our interval is $(a-\delta,a+\delta)$. 
+> In either case, $f(x)$ is bounded on $[a,b]$ by some $1+|f(\gamma)|$.
+> Note that with some $[a_{n},b_{n}]$, it will lie in one of the cases above.
+
+### Extreme Value Theorem (Proof) 

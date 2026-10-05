@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-29T09:16:23.709-04:00
-edited_seconds: 90
+updated_at: 2026-10-05T13:15:20.072-04:00
+edited_seconds: 100
 course:
 tags:
 "Lecture #": 0
@@ -13,4 +13,6 @@ Next:
 
 --- 
 # Lecture Notes
+
+Recall, framing is us *defining* an engineering opportunity (with stakeholders and requirements). 
 
