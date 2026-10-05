@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-05T13:51:37.294-04:00
-edited_seconds: 1370
+updated_at: 2026-10-05T13:54:02.267-04:00
+edited_seconds: 1420
 course: ESC194H1
 tags:
   - ESC194H1
@@ -166,13 +166,5 @@ The Boundness Theorem lets us show that, for any function defined and continuous
 > > Note that  $f(x) > L \implies f(x)-L >0 \implies L-f(x) <0$
 > > Defining $g(x)$ on the same interval: 
 > > $$g(x)=\frac{1}{L-f(x)}$$
-> > Note that this function is continuous and negative on values of $[a,b]$, therefore for some lower bound $Y$: 
-
-$$
-\begin{align}
-Y \leq g(x) < 0 \\
-Y \leq \frac{1}{L-f(x)} \\
-Y(L-f(x)) \geq 1 \\
-
-\end{align}
-$$
+> > Note that this function is continuous and negative on values of $[a,b]$, therefore for some lower bound $Y$: $$\begin{align}Y \leq g(x) < 0 \\Y \leq \frac{1}{L-f(x)} \\Y(L-f(x)) \geq 1 \\-f(x)\leq\frac{1}{Y} -L \\f(x) \geq L-\frac{1}{Y}\end{align}$$
+> > This implies that the $GLB$ of $f(x)$ is $L-\frac{1}{Y}$, which contradicts $f(x)$'s LUB being $L$, therefore, $f(x)$ must attain it's minimum value at some point on the interval $[a,b]$. 

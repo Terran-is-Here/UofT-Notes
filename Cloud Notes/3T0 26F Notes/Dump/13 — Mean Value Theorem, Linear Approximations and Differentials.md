@@ -1,18 +1,20 @@
 ---
-updated_at: 2026-10-04T22:34:49.813-04:00
-edited_seconds: 1610
+updated_at: 2026-10-05T13:58:22.133-04:00
+edited_seconds: 1650
 course: ESC194H1
 tags:
   - ESC194H1
-"Lecture #": 0
+"Lecture #": 13
 Lecture Date: 2026-10-04
-Week:
+Week: 5
+Created: October 4th 2026, 6:51:22 pm
 ---
 
 Hub: [[ESC194 Hub]]
 Previous: [[12 — Related Rates, Min and Max Values]]
-Next: N/A 
-
+Next: [[14 — Derivatives, Function Shape, Horizontal Asymptotes]]
+> [!quote] Recommended Reading 
+> Section 3.2, 2.9 of the textbook. 
 --- 
 # Lecture Notes
 
