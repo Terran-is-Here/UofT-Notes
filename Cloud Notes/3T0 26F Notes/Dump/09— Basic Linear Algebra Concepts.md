@@ -105,6 +105,8 @@ Note that $rank(\mathbf{A_{4}})=0$, then the column space of $\mathbf{A_{4}}$ is
 > [!theorem] Basis 
 > The basis is the set of linearly independent vectors that *span* a vector space. 
 
+Take the following example
+
 
 ---
 # Pre-Lecture Notes
