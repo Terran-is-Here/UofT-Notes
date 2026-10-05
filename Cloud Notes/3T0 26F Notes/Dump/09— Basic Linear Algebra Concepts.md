@@ -1,7 +1,7 @@
 ---
 Created: September 28th 2026, 9:46:55 pm
-updated_at: 2026-10-05T12:52:14.067-04:00
-edited_seconds: 760
+updated_at: 2026-10-05T13:11:34.029-04:00
+edited_seconds: 890
 course: ESC103H1
 tags:
   - ESC103H1
@@ -103,10 +103,18 @@ Note that $rank(\mathbf{A_{4}})=0$, then the column space of $\mathbf{A_{4}}$ is
 
 ## Basis 
 > [!theorem] Basis 
-> The basis is the set of linearly independent vectors that *span* a vector space. 
+> The basis is the **set of linearly independent vectors** that *span* a vector space. 
 
-Take the following example
+Take the following example: 
+$$\mathbf{A_{1}} = \begin{bmatrix}1 & 0 & 0 \\2 & 4 & 0 \\3 & 5 & 6\end{bmatrix}$$
+Note that we need all 3 column vectors to span $\mathbb{R}^3$. The basis vectors for this matrix is $\left\{\begin{bmatrix}1\\2\\3\end{bmatrix},\begin{bmatrix}0\\4\\5\end{bmatrix},\begin{bmatrix}0\\0\\6\end{bmatrix} \right\}$. 
+For $\mathbf{A_{2}}$: 
+$$
+\mathbf{A_{2}}=\begin{bmatrix}1 & 2 & 3 \\1 & 4 & 5 \\6 & 0 & 6\end{bmatrix}
+$$
+This column space is a plane; where the third vector is a redundant due to it being a linear combination of 2 column vectors; then the basis vectors for this matrix is: $\left\{\begin{bmatrix}1\\1\\6\end{bmatrix},\begin{bmatrix}2\\4\\0\end{bmatrix}\right\}$.  Note that since technically, $\vec{c}_{3}$ is linearly independent with $\vec{c}_{2}$ and $\vec{c}_{1}$ on their own, then $\left\{\begin{bmatrix}3\\5\\6\end{bmatrix},\begin{bmatrix}2\\4\\0\end{bmatrix}\right\}$ and $\left\{\begin{bmatrix}3\\5\\6\end{bmatrix},\begin{bmatrix}1\\1\\6\end{bmatrix}\right\}$ are also valid sets of basis vectors. 
 
+Basis Vectors describe the minimum amount of vectors required to describe a space, or in other words, the required linearly independent vectors to span the space. 
 
 ---
 # Pre-Lecture Notes
