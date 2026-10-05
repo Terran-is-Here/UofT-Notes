@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-03T21:39:12.531-04:00
-edited_seconds: 1510
+updated_at: 2026-10-05T16:24:45.293-04:00
+edited_seconds: 1540
 course: PHY180H1
 tags:
   - PHY180H1
@@ -134,6 +134,7 @@ This is often notated in the term of a $W$ (Watt), where $1W = \frac{1J}{s}$; $W
 > Instantaneous power is defined as the following: 
 > $$P = \frac{dW}{dt}$$
 > Note that this can also be expressed as: $$\begin{align}P&= \frac{dW}{dt}& dW = \vec{F} \cdot d\vec{v} \\&= \frac{\vec{F}\cdot d\vec{r}}{dt} \\&= \vec{F} \cdot \frac{d\vec{r}}{dt} \\&=\vec{F} \cdot \vec{v}\end{align}$$
+> Note that this equation is a very powerful concept to think about; that the Power is equivalent to a dot product of the Force with the next velocity vector. 
 
 Note that if $P$ is constant for some time interval $dt$, then we can say that: 
 $$
