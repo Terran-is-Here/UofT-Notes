@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T22:22:39.645-04:00
-edited_seconds: 1600
+updated_at: 2026-10-04T22:34:49.813-04:00
+edited_seconds: 1610
 course: ESC194H1
 tags:
   - ESC194H1
@@ -8,6 +8,7 @@ tags:
 Lecture Date: 2026-10-04
 Week:
 ---
+
 Hub: [[ESC194 Hub]]
 Previous: [[12 — Related Rates, Min and Max Values]]
 Next: N/A 
