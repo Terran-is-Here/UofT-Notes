@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T19:50:26.584-04:00
-edited_seconds: 810
+updated_at: 2026-10-04T21:42:51.610-04:00
+edited_seconds: 1040
 course:
 tags:
 "Lecture #": 0
@@ -52,7 +52,7 @@ The proof for this requires quite a bit of thinking, and required a few other th
 > 
 > Following from Lemma 1.1 and Lemma 1.2, then there exists some point $c\in(a,b) \implies f'(c)=0$. 
 
-Using Rolle's Theorem, we can now build a proof for the MVT. 
+Using Rolle's Theorem, we can now build a proof for the MVT. [[#^768c51]]
 > [!theorem] Mean Value Theorem
 > Given: If $f$ is a real-valued function, defined and continuous on, and having a derivative on the open interval $(a,b)$, then there exists some point $c\in(a,b)$ such that: 
 > $$\boxed{f'(c)=\frac{f(b)-f(a)}{b-a}}\tag{MVT}$$
@@ -66,3 +66,19 @@ $$f(x) = g(x) + f(a) + \left(\frac{f(b)-f(a)}{b-a}\right)(x-a)$$
 Differentiating $f(x)$ with respects to $x$ gives us the following: $$f'(x) = g'(x) +\left(\frac{f(b)-f(a)}{b-a}\right)$$
 Note from Rolle's Theorem, some value $c$ exists where $g'(c)=0$, which means for some value $c\in(a,b)$: 
 $$\boxed{f'(c) = \frac{f(b)-f(a)}{b-a}}$$
+
+^768c51
+Note that MVT extends a very interesting corollary: 
+
+> > *Given:* 
+> > $f$ is a function defined & continuous on the closed interval $[a,b]$, 
+> > $\exists f'(x)$, and $f'(x)=0$ for $x\in(a,b)$
+> 
+> Prove: $f$ is constant on the interval $[a,b]$. 
+> 
+> Proof: 
+> If $f$ is continuous on the closed interval $[a,b]$, lets define a subset $J$ defined by $(a,x)$ where $a< x\leq b$. Since $f$ was differentiable across the entire interval $(a,b)$, then our function is also differentiable across an interval of $(a,x)$.
+> where $x$ is some arbitrary value; then it holds that from MVT that some value $d$ allows the following: $$f'(d) = \frac{f(x)-f(a)}{x-a} = 0 \implies f(a) = f(x)$$
+> Since $x$ is any arbitrary value that satisfies $a<x\leq b$ (or, $x\in(a,b]$); then $f$ must be a constant across the interval $[a,b]$.
+## Cauchy's Mean Value Theorem 
+Cauchy's Mean Value Theorem is an 
