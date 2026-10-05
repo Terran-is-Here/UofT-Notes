@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T18:14:04.585-04:00
-edited_seconds: 1240
+updated_at: 2026-10-05T11:28:21.392-04:00
+edited_seconds: 1550
 course: ESC194H1
 tags:
   - ESC194H1
@@ -104,6 +104,67 @@ $$
 \end{align}
 
 $$
+## Explicit and Implicit Functions
+Explicit functions are defined as having all independent variables on one side, and a dependent on the left, such as $y=\frac{x^2+1}{x^3}$. 
+
+An implicitly defined function is where this is defined as a combination of $x,y$, such as $x^3y-x^2-1=0$. Note that if we define $y=y(x)$, then if we differentiate this, then: 
+$$
+\begin{align}
+\frac{d}{dx}(x^3y-x^2-1) &= \frac{d}{dx}(0) \\
+x^3 \frac{dy}{dx} + 3x^2y -2x&= 0 \\
+\frac{dy}{dx} = \frac{2x-3x^2y}{x^3}
+\end{align}
+$$
+Note that we can isolate for a term of $y$ in our original expression, that is $y=\frac{1+x^2}{x^3}$; then we can back-substitute this back into some explicit derivative of $\frac{dy}{dx}$. 
+> [!ila] In Lecture Addendum 
+> Implicit differentiation does not require us to separate our independent variables to differentiate!
+
+For instance, taking the function: 
+$$
+\begin{align}
+x^3y\sin (x^{1/3}y) = \frac{1}{1-xy}
+\end{align}
+$$
+We can't isolate this as some sole term of $y$ as a function of $x$; we can implicitly differentiate this: 
+$$
+\begin{align}
+x^3y\sin\left(x^{1/3}y \right)=\frac{1}{1-xy}
+\end{align}$$ Will be done later. 
+$$$$
+### Higher Order Implicit Differentiation: 
+For instance, take $y^3-x^2=4$. 
+The first derivative with respects to dx gives us: 
+
+$$
+\begin{align}
+\frac{d}{dx}(y^3-x^2) = 3y^2y'-2x= 0 \\
+\implies y' = \frac{2x}{3y^2}
+\end{align}
+$$
+Taking the second derivative with respects to $\frac{d}{dx}$, then: 
+$$
+\begin{align}
+y'' &= \frac{d}{dx} \left( \frac{2x}{3y^2} \right) \\
+&=\left( \frac{2(3y^2)-6yy'2x}{9y^4} \right)
+\end{align}
+$$
+## Extending the Power Rule to Rational Powers
+Recall, that $\frac{d}{dx}x^n=nx^{n-1}$ for $n\in \mathbb{Z}$. We can show that we can extend this to *all rational numbers*. 
+
+That is, prove that $$\frac{d}{dx}x^{p/q} = \frac{p}{q}x^{(p/q)-1}$$where $q\neq0$
+
+Let $y=x^{p/q}$, then $y^q=x^p$. Differentiating this implicitly with respects to $x$: 
+$$
+\begin{align}
+\frac{d}{dx}y^q &= \frac{d}{dx}x^p \\
+qy^{q-1}y' &= px^{p-1} \\
+y'&=\frac{px^{p-1}}{qy^{q-1}} & \text{Resubstitute back y} \\
+y' &= \frac{px^{p-1}}{q(x^{p/q})^{q-1}} = \frac{p}{q}x^{(p/q)-1}
+\end{align}
+
+$$
+
+---
 # Pre-Lecture Notes
 ## Trigonometric Derivatives
 Trigonometric Derivatives can be generally obtained from the Differentiation Formulas that we derived in our previous note, as well as some angle sum identities. For this segment, we will take the derivative of $\sin(x)$: 

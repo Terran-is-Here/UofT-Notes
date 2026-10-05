@@ -16,6 +16,9 @@ Next: [[13 — Mean Value Theorem, Linear Approximations and Differentials]]
 > Stewart Textbook Ch. 2.8, 3.1 
 --- 
 # Lecture Notes
+## Related Rates (LEC) 
+Take an example: 
+> A lighthouse is on an island 3km away from a straight shoreline, and 
 
 ---
 # Pre-Lecture Notes
