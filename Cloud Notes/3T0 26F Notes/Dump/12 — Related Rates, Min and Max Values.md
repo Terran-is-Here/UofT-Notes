@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T22:46:42.181-04:00
-edited_seconds: 400
+updated_at: 2026-10-04T23:02:02.822-04:00
+edited_seconds: 520
 course: ESC194H1
 tags:
   - ESC194H1
@@ -63,7 +63,11 @@ The Boundness Theorem lets us show that, for any function defined and continuous
 > 
 > Let $c$ be the midpoint of $[a,b]$, if $f(x)$ is unbounded on $[a,b]$, then it is unbounded on either $[a,c]$ or $[c,b]$. Define now that $[a_{1},b_{1}]$ to be the half in which $f(x)$ is unbounded; if $f(x)$ is unbounded in both, take the left half. 
 > 
-> Progressively subdividing this gives us a set of $A$, defined by the left-most endpoints. From [[02 — The Real Number System#Completeness of the Reals Axiom (CORA)|Completeness of the Reals Axiom]] this set has some LUB $\gamma$; where $\gamma\in[a,b]$; then $f(\gamma)$ is continuous. 
+> Progressively subdividing this gives us a set of $A$, defined by the left-most endpoints. From [[02 — The Real Number System#Completeness of the Reals Axiom (CORA)|Completeness of the Reals Axiom]] this set has some LUB $\gamma$; where $\gamma\in[a,b]$; then $f(\gamma)$ is continuous. Note that the length of a subinterval is some value $\frac{b-a}{2^n}$ for some bound $[a_{n},b_{n}]$. 
 > 
-> Then: 
-> * $\gamma=a$, then 
+> Then; using the concept of being continuous, we can choose an $\epsilon=1$ with [[06 — Precise Limit Definition#Epsilon-Delta Definition|Epsilon Delta]] (primarily [[06 — Precise Limit Definition#One-Handed Limits|One Handed Limits]])
+> * $\gamma=a$, then approaching this from the right, then: 
+>   $\exists\delta>0$ in $[a,a+\delta)\implies|f(x)-f(\gamma)|<\epsilon=1\implies |f(x)|<1+|f(\gamma)|$
+> * $\gamma=b$, then approaching this from the left, then: 
+>   $\exists\delta>0$ in $(b-\delta,b] \implies |f(x)-f(\gamma)|<\epsilon \implies$
+> Will be continued tomorrow. 
