@@ -10,7 +10,7 @@ Week: 4
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[06 — Solving Linear Equations, Intro to Matrices]]
-Next: [[8 — Basic Linear Algebra Concepts]]
+Next: [[09— Basic Linear Algebra Concepts]]
 
 --- 
 # Lecture Notes

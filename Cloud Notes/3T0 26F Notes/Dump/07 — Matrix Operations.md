@@ -176,6 +176,6 @@ c\begin{bmatrix}
 3c & 5d & 6
 \end{array}\right]
 $$
-Using some quick algebra, we can see that $c,d=0$, which means that there exists no linear combination (specifically, $0=6$ is required, which is false.) This means that $\vec{c}_{3}$ cannot be expressed as a linear combination of 3 other vectors. This means that this system is [[8 — Basic Linear Algebra Concepts#Linear Independence|Linearly Independent]]. 
+Using some quick algebra, we can see that $c,d=0$, which means that there exists no linear combination (specifically, $0=6$ is required, which is false.) This means that $\vec{c}_{3}$ cannot be expressed as a linear combination of 3 other vectors. This means that this system is [[09— Basic Linear Algebra Concepts#Linear Independence|Linearly Independent]]. 
 
 If a system is purely composed of linearly independent vectors, then all combinations of column vectors fill $\mathbb{R}^3$. 
