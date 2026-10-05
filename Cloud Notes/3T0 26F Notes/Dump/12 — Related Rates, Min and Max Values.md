@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-05T13:31:29.075-04:00
-edited_seconds: 1090
+updated_at: 2026-10-05T13:51:37.294-04:00
+edited_seconds: 1370
 course: ESC194H1
 tags:
   - ESC194H1
@@ -148,6 +148,31 @@ The Boundness Theorem lets us show that, for any function defined and continuous
 >   $\exists\delta>0$ in $(b-\delta,b] \implies |f(x)-f(\gamma)|<\epsilon \implies |f(x)|<1+|f(\gamma)|$
 > * $a<\gamma<b$, then our interval is $(a-\delta,a+\delta)$. 
 > In either case, $f(x)$ is bounded on $[a,b]$ by some $1+|f(\gamma)|$.
-> Note that with some $[a_{n},b_{n}]$, it will lie in one of the cases above.
+> Note that with some $[a_{n},b_{n}]$, it will lie in one of the cases above, when $\frac{b-a}{2^n}<\delta$, meaning that $f(x)$ in $[a_{n},b_{n}]$ *is* bounded, contradicting our point earlier. Therefore, $f$ must be bounded on $[a,b]$. 
 
 ### Extreme Value Theorem (Proof) 
+> Extreme Value Theorem 
+> > *Given:* $f$ is defined and continuous on $[a,b]$
+> 
+> Prove: $f$ assumes a maximum *and* minimum value on $[a,b]$. 
+> From the Boundness Theorem, we know that $f$ will have some LUB $M$, where some $f(c)=M, c\in[a,b]$. Assume now that $f$ never attains $M$, that is: 
+> $$f(x) < M \ \text{for all x in the domain of f}$$
+> Let us define the following function $g(x)$ on the same interval $[a,b]$: $$g(x) = \frac{1}{M-f(x)}$$
+> Note that this function is *continuous* and *non-negative* on values of $[a,b]$. Therefore for some $K$ where $g(x)$ is Bounded: $$0 < g(x) \leq K$$ for all $x\in[a,b]$, Then: $$\begin{align}\frac{1}{M-f(x)} &\leq K \\1 &\leq K(M-f(x)) \\\frac{1}{K} &\leq M-f(x) \\\frac{1}{K}-M &\leq -f(x) \\f(x) &\leq M-\frac{1}{K}\end{align}$$Note then that this shows that $f(x)$ has an LUB of $M-\frac{1}{K}$ instead, which contradicts the idea that $f(x)$ has an LUB of $M$. Therefore, $f(x)$ must reach it's maximum value of $M$ somewhere. 
+> 
+> > A similar set of logic exists for showing that a function reaches it's minimum value. 
+> > From the Boundness Theorem, we know that $f$ will have some GLB $L$, where for some $f(c)=L, c\in[a,b]$. Assume now that $f$ never attains $L$, that is: 
+> > $$f(x) > L \text{ for all x in the domain of }f$$
+> > Note that  $f(x) > L \implies f(x)-L >0 \implies L-f(x) <0$
+> > Defining $g(x)$ on the same interval: 
+> > $$g(x)=\frac{1}{L-f(x)}$$
+> > Note that this function is continuous and negative on values of $[a,b]$, therefore for some lower bound $Y$: 
+
+$$
+\begin{align}
+Y \leq g(x) < 0 \\
+Y \leq \frac{1}{L-f(x)} \\
+Y(L-f(x)) \geq 1 \\
+
+\end{align}
+$$
