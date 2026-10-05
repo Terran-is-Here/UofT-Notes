@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-05T16:24:45.293-04:00
-edited_seconds: 1540
+updated_at: 2026-10-05T16:46:36.256-04:00
+edited_seconds: 1570
 course: PHY180H1
 tags:
   - PHY180H1
@@ -118,9 +118,9 @@ Note that for $m\vec{v}\cdot d\vec{v}$, then this can be rewritten as the sum of
 $$
 \begin{align}
 dW &= mv_{x}dv_{x} + mv_{y}dv_{y} + mv_{z}dv_{z} = m\left[v_{x}dv_{x} + v_{y}dv_{y} + v_{z}dv_{z}\right] \\
-W_{net}=\int_{A}^BdW &= \int_{A}^Bm\left[v_{x}dv_{x} + v_{y}dv_{y} + v_{z}dv_{z}\right] & \\
+W_{net}=\int_{A}^BdW &= \int_{A}^Bm\left[v_{x}dv_{x} + v_{y}dv_{y} + v_{z}dv_{z}\right] \\
 &=\left[\frac{m}{2}v_{x}^2 + \frac{m}{2}v_{y}^2 + \frac{m}{2}v_{x}^2\right]^B_{A} \\
-&= \left[\frac{m}{2}v_{x}^2 + \frac{m}{2}v_{y}^2 +\frac{m}{2}v_{z}^2\right]^B_{A} = [\frac{m}{2}v^2]^B_{A} &v_{x}^2 + v_{y}^2 +v_{z}^2 = v^2 \text{ (for vectors in } \mathbb{R}^3\text{)}\\
+&= \left[\frac{m}{2}v_{x}^2 + \frac{m}{2}v_{y}^2 +\frac{m}{2}v_{z}^2\right]^B_{A} = \left[ \frac{m}{2}v^2 \right]^B_{A} &v_{x}^2 + v_{y}^2 +v_{z}^2 = v^2 \text{ (for vectors in } \mathbb{R}^3\text{)}\\
 W_{net}&=K_{B}-K_{A} = \Delta K
 \end{align}
 $$
@@ -133,7 +133,7 @@ This is often notated in the term of a $W$ (Watt), where $1W = \frac{1J}{s}$; $W
 > [!theorem] Instantaneous Power
 > Instantaneous power is defined as the following: 
 > $$P = \frac{dW}{dt}$$
-> Note that this can also be expressed as: $$\begin{align}P&= \frac{dW}{dt}& dW = \vec{F} \cdot d\vec{v} \\&= \frac{\vec{F}\cdot d\vec{r}}{dt} \\&= \vec{F} \cdot \frac{d\vec{r}}{dt} \\&=\vec{F} \cdot \vec{v}\end{align}$$
+> Note that this can also be expressed as: $$\begin{align}P&= \frac{dW}{dt}& dW = \vec{F} \cdot d\vec{v} \\&= \frac{\vec{F}\cdot d\vec{r}}{dt} \\&= \vec{F} \cdot \frac{d\vec{r}}{dt} \\P&=\vec{F} \cdot \vec{v}=\frac{dW}{dt}\end{align}$$
 > Note that this equation is a very powerful concept to think about; that the Power is equivalent to a dot product of the Force with the next velocity vector. 
 
 Note that if $P$ is constant for some time interval $dt$, then we can say that: 

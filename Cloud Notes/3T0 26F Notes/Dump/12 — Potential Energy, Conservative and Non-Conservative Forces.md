@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T11:27:32.759-04:00
-edited_seconds: 1780
+updated_at: 2026-10-05T16:50:53.918-04:00
+edited_seconds: 1810
 course: PHY180H1
 tags:
   - PHY180H1
@@ -16,7 +16,8 @@ Next: N/A
 > University Physics 8.1-8.2
 --- 
 # Lecture Notes
-
+## Conservation of Energy
+Conservation of Energy, if you recall, is simply the relation that $E_{0}=E_{t}$
 
 ---
 # Pre-Lecture Notes
@@ -40,7 +41,8 @@ Recall that we defined $W=\Delta E_{K}$, then $\Delta E_{PG} = -\Delta E_{EK}$ o
 > [!theorem] Potential Energy
 > $$\Delta E_{P} = -\Delta E_{K}$$
 > Where $\Delta E_{P}$ is any potential energy, and $\Delta E_{K}$ is the change in kinetic energy. 
-> > In the textbook, potential energy is normally notated as some $\Delta U$. This is the convention we will share for the remainder of this note packet. 
+> > In the textbook, potential energy is normally notated as some $\Delta U$. This is the convention we will share for the remainder of this note packet.
+> $$\Delta U = -\Delta E_{K} = -W$$
 
 Note that for Gravitational Potential Energy, whatever we define $h$ as, is arbitrary. We normally define it as the surface, or any medium that makes it convenient for the sake of analysis. 
 
