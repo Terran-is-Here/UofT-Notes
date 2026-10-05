@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T21:42:51.610-04:00
-edited_seconds: 1040
+updated_at: 2026-10-04T22:05:08.169-04:00
+edited_seconds: 1280
 course:
 tags:
 "Lecture #": 0
@@ -77,8 +77,12 @@ Note that MVT extends a very interesting corollary:
 > Prove: $f$ is constant on the interval $[a,b]$. 
 > 
 > Proof: 
-> If $f$ is continuous on the closed interval $[a,b]$, lets define a subset $J$ defined by $(a,x)$ where $a< x\leq b$. Since $f$ was differentiable across the entire interval $(a,b)$, then our function is also differentiable across an interval of $(a,x)$.
-> where $x$ is some arbitrary value; then it holds that from MVT that some value $d$ allows the following: $$f'(d) = \frac{f(x)-f(a)}{x-a} = 0 \implies f(a) = f(x)$$
-> Since $x$ is any arbitrary value that satisfies $a<x\leq b$ (or, $x\in(a,b]$); then $f$ must be a constant across the interval $[a,b]$.
+> If $f$ is continuous, defined on some closed interval $[a,b]$, then it is also continuous on some subinterval $[a,x]\subset[a,c]$, where $x\in(a,b]$. 
+> If $f$ is differentiable on some open interval $(a,b)$, then it is also differentiable on some subinterval $(a,x)\subset(a,c)$ where $x\in(a,b]$.
+> 
+> Following from MVT, then there exists a point $g$ for $f'$ such that
+> $$f'(g) = \frac{f(x)-f(a)}{x-a}$$
+> Note from our givens, we know that $f'(w)=0$ if $w\in(a,b)$, but since $w\in(a,x)\subset(a,b)$ then the given concept of $f'(w)=0$ is still applicable: $$f'(g) = \frac{f(x)-f(a)}{x-a}=0 \implies f(x) = f(a)$$
+> Note that our definition for $x$ was an arbitrary value between $a$ and $b$ (inclusive). If $x=a$, $f(a)=f(a)$, and if $x=b$, $f(b)=f(a)$ which means that across the interval of $[a,b]$, $f(x)=f(a)$, which implies that $f$ is some constant value. 
 ## Cauchy's Mean Value Theorem 
 Cauchy's Mean Value Theorem is an 
