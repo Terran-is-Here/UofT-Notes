@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-04T23:02:02.822-04:00
-edited_seconds: 520
+updated_at: 2026-10-05T11:49:05.758-04:00
+edited_seconds: 820
 course: ESC194H1
 tags:
   - ESC194H1
@@ -18,8 +18,48 @@ Next: [[13 — Mean Value Theorem, Linear Approximations and Differentials]]
 # Lecture Notes
 ## Related Rates (LEC) 
 Take an example: 
-> A lighthouse is on an island 3km away from a straight shoreline, and 
+> A lighthouse is on an island 3km away from a straight shoreline, and the light makes 4 rotations per minute. How fast is the beam of light from the lighthouse moving along the shoreline when the beam is 1km from the closest point on the shore? 
 
+I'd draw a diagram but I don't have a diagram drawing software. Note that the lighthouse is *always* 3km from the shore. Then, from the closest point of the shore, the distance between the lighthouse's closest point and the beam is some value $x$. 
+
+This question basically asks, can we relate the rate of rotation with the velocity of the beam. Note that: 
+$$
+\tan\theta = \frac{x}{3}
+$$
+Differentiating this with respects to $t$; then: 
+$$
+\begin{align}
+\frac{d}{dt}\tan\theta = \frac{d}{dt} \frac{x}{3} \\
+\sec^2\theta \ \frac{d\theta}{dt} =  \frac{1}{3} \frac{dx}{dt} \\
+\frac{dx}{dt} &= 3\sec^2\theta  \frac{d\theta}{dt}
+\end{align}
+$$
+Note that the beam revolves at 4 revolutions per minute. Note that this is equivalent to $\frac{8\pi}{min}=\frac{d\theta}{dt}$: Then we can evaluate this at the point of interest (which in our case is when the beam is is one 1km from the closest point of the shore), that is our point of interest is $x=1$:
+$$
+\begin{align}
+\frac{dx}{dt}|_{x=1} = 3\sec^2(\theta|_{x=1})8\pi
+\end{align}
+$$
+To evaluate our $\theta|_{x=1}$ recall that $\sec^2\theta = \tan^2\theta+1$; and $\tan\theta$ at $\theta=1$ means $\tan\theta=\frac{1}{3}$; then we can see that: 
+$$
+\begin{align}
+\frac{dx}{dt}|_{x=1} &= 3\left( \frac{1}{3}^2+1 \right)8\pi \\
+&=\frac{10}{3}8\pi \\
+&=\frac{80\pi}{3} \text{km/m}
+\end{align}$$
+## Maximum and Minimum Values (LEC) 
+* A function is considered to have a *local maximum* at $x=c\iff f(c)\geq f(x) \ \forall x\text{ sufficiently close to }c$ (This is an *intuitive* description for what close means.) 
+* A function if considered to have a *local minimum* at $x=c\iff f(c)\leq x \ \forall x\text{ sufficiently close to }c$.  
+
+From here, we can extend this to absolute maximum and minimums: Given $x=c\in D$ where $D$ is the domain of f.
+* $f(c)$ is the absolute maximum of $f\in D$ if $f(c)\geq f(x) \ \forall x\in D$. 
+* $f(c)$ is the absolute minimum of $f\in D$ if $f(c)\leq f(x) \ \forall x\in D$
+
+> Example: $f(x)=x^2$,where $x\in(-\infty,\infty)$
+> This creates a parabola. Note that $f(0)=0 \leq f(x)\ \forall x\in(-\infty,\infty)$, then $f(0)$ is an absolute minimum for $f(x)\in(-\infty,\infty)$. Note additionally that this function does not have an absolute maxima. 
+
+> Example: $f(x)=\sin(x)$ where $x\in(-\infty,\infty)$
+> Note that this sinusoidal function has *infinitely many* local minima and maxima. Note that since these all share the same value; then there are an *infinite* number of absolute maxima and absolute minima. 
 ---
 # Pre-Lecture Notes
 ## Related Rates
