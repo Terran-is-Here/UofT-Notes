@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T16:16:43.031-04:00
-edited_seconds: 570
+updated_at: 2026-10-06T16:33:45.228-04:00
+edited_seconds: 590
 course: ESC103H1
 tags:
   - ESC103H1
@@ -69,6 +69,7 @@ $$
 \mathbf{A}*\begin{bmatrix}b_{11} \\b_{21} \\\vdots \\b_{n1}\end{bmatrix} & \mathbf{A}*\begin{bmatrix}b_{12} \\b_{22} \\\vdots \\b_{n_{2}}\end{bmatrix} & \dots & \mathbf{A}*\begin{bmatrix}b_{1p} \\b_{2p} \\\vdots \\b_{np}\end{bmatrix}
 \end{bmatrix}
 $$
+Recall from [[06 — Solving Linear Equations, Intro to Matrices#AX=B Matrix|ESC103 (8) — AX=B]] matrices that some $A\vec{x}=\vec{b}$, where $\vec{b}$ is a column vector with the same number of $m$ rows as $\vec{x}$. 
 ## Example
 Take the following set of matrices: 
 $$
