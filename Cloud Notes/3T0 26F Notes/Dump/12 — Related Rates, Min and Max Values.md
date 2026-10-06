@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T09:19:57.522-04:00
-edited_seconds: 1770
+updated_at: 2026-10-06T09:24:59.620-04:00
+edited_seconds: 1870
 course: ESC194H1
 tags:
   - ESC194H1
@@ -98,7 +98,7 @@ The concept of a *critical point* does not inherently arise from EVT; but rather
 > [!theorem] Fermat's Theorem
 > If a function $f$ has a local maximum *or* minimum at $c$, if $f'(c)$ exists, then $f'(c)=0$.
 
-> *Proof:*
+> [!caution]- Proof
 > Let's assume that a local maximum exists at some value $f(c)$; then $f(c) \geq f(x)$. If we let $x$ be sufficiently close to c, that is $x=c+h$; then we have the following inequality: 
 > $$\begin{align}f(c) &\geq f(c+h)  \\0 &\geq f(c+h)-f(c)\\f(c+h)-f(c)&\leq 0\end{align}$$If we let $h>0$, then we can divide this whole expression by $h$ and take the resulting one-sided limit: $$\begin{align}\frac{f(c+h)-f(c)}{h}&\leq 0 \\\lim_{ h \to ^+0 } \frac{f(c+h)-f(c)}{h} &\leq \lim_{ h \to ^+0 } 0=0 \\f'(c) = \lim_{ h \to 0 } \frac{f(c+h)-f(c)}{h}=\lim_{ h \to ^+0 } \frac{f(c+h)-f(c)}{h} &\leq 0 &\text{Since the limit exists}\end{align}$$
 > Conversely, if $h<0$, we divide this whole expression by some negative number $h$: $$\begin{align}\frac{f(c+h)-f(c)}{h} &\geq 0 \\\lim_{ h \to ^-0 } \frac{f(c+h)-f(c)}{h} &\geq \lim_{ h \to ^-0 } 0 \\f'(c) = \lim_{ h \to 0 } \frac{f(c+h)-f(c)}{h} =\lim_{ h \to ^-0 } \frac{f(c+h)-f(c)}{h} &\geq 0\end{align}$$
@@ -109,7 +109,12 @@ If $f'(c)\leq {0}$ and $f'(c)\geq 0$ at the same time, then $f'(c)$ must be $0$ 
 > > Let $h>0$, divide both sides by some positive number; then: 
 > > $$\begin{align}f(c+h)-f(c) &\geq 0 \\\frac{f(c+h)-f(c)}{h} &\geq 0 \\\lim_{ h \to ^+0 } \frac{f(c+h)-f(c)}{h} &\geq \lim_{ h \to ^+0 } 0 = 0 \\f'(c) = \lim_{ h \to 0 } \frac{f(c+h)-f(c)}{h} = \lim_{ h \to ^+0 } \frac{f(c+h)-f(c)}{h} &\geq 0 \implies f'(c) \geq 0\end{align}$$
 > > Similarly, let $h<0$, then divide both sides by some negative number; then: $$\begin{align}f(c+h)-f(c) &\geq 0 \\\frac{f(c+h)-f(c)}{h} &\leq 0 \\\lim_{ h \to ^-0 } \frac{f(c+h)-f(c)}{h} &\leq \lim_{ h \to ^-0 } 0=0 \\f'(c) = \lim_{ h \to 0 } \frac{f(c+h)-f(c)}{h} = \lim_{ h \to ^-0 } \frac{f(c+h)-f(c)}{h} &\leq 0 \implies f'(c) \leq 0\end{align}$$
-> > If $f'(c) \geq0$ and $f'(c) \leq0$; then $f'(c)$ must be equal to $0$ if at $f(c)$, a local minium exists. 
+> > If $f'(c) \geq0$ and $f'(c) \leq0$; then $f'(c)$ must be equal to $0$ if at $f(c)$, a local minimum exists. 
+
+Note however that Fermat's Theorem does **not** explicitly say that for any case $f'(c)=0$, that a local max *or* min arises; it simply tells us that if a local max or min exists; then $f'(c)=0$ (that is, the converse of Fermat's Theorem is always false.) It however points us towards the correct direction: 
+
+> [!theorem] Critical Number
+> A critical number of the function $f$ is a number $c$ in the domain of $f$ where $f'(c)=0$ or $f'(c)$ does not exist.  
 
 ---
 # Pre-Lecture Notes

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T08:28:46.011-04:00
-edited_seconds: 150
+updated_at: 2026-10-06T09:30:28.421-04:00
+edited_seconds: 160
 course: ESC194H1
 tags:
   - ESC194H1
@@ -21,3 +21,4 @@ Next: N/A
 ---
 # Pre-Lecture Notes
 ## Intervals of Increase and Decrease 
+
