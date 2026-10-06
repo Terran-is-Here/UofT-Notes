@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T15:51:14.607-04:00
-edited_seconds: 510
+updated_at: 2026-10-06T16:16:43.031-04:00
+edited_seconds: 570
 course: ESC103H1
 tags:
   - ESC103H1
@@ -80,6 +80,9 @@ $$
 Then $\mathbf{C}$ is expressed as: 
 $$
 \mathbf{C} = \begin{bmatrix}
-
+5 & 5 & 10 & 10 \\
+30 & 30 & 60 & 60 \\
+45 & 45 & 90 & 90 \\
+60 & 60 & 120 & 120
 \end{bmatrix}
 $$

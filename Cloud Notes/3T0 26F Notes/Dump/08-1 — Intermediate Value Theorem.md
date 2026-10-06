@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-01T13:21:55.459-04:00
-edited_seconds: 360
+updated_at: 2026-10-06T16:16:14.886-04:00
+edited_seconds: 370
 course: ESC194H1
 tags:
   - ESC194H1
@@ -8,7 +8,7 @@ tags:
 Lecture Date: 2026-10-01
 Week: 4
 ---
-Hub: 
+Hub: [[ESC194 Hub]]
 Previous: [[08 — Continuity]]
 Next: [[09 — Derivatives and Rates of Change]]
 > [!caution] Note
