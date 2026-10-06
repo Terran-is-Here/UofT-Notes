@@ -1,7 +1,7 @@
 ---
 Created: September 28th 2026, 9:46:55 pm
-updated_at: 2026-10-05T13:11:34.029-04:00
-edited_seconds: 890
+updated_at: 2026-10-06T15:14:28.848-04:00
+edited_seconds: 900
 course: ESC103H1
 tags:
   - ESC103H1
@@ -11,7 +11,7 @@ Week: 4
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[08 — Matrix Vector Products]], [[07 — Matrix Operations]] (In-Lecture Insertion)
-Next: [[09 — Matrix Multiplication]]
+Next: [[10 — Matrix Multiplication]]
 
 --- 
 # Lecture Notes
