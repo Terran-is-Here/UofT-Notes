@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-05T17:50:24.978-04:00
-edited_seconds: 120
+updated_at: 2026-10-05T21:55:04.973-04:00
+edited_seconds: 180
 course: PHY180H1
 tags:
   - PHY180H1
@@ -20,3 +20,13 @@ Next:
 ---
 # Pre-Lecture Notes
 ## Conservation of Energy
+The concept of the conservation of energy of a system is defined by the term below: 
+$$K+U=E$$
+Where $E$ is the *mechanical energy* of the system. If we define $K$ and $U$ in terms of their differences; then: 
+$$\Delta (K+U) = E$$
+**If** a non-conservative / dissipative force exists; then the difference in the mechanical energy grants us the energy dissipated by this non-conservative force: 
+$$\Delta E_{\text{path AB}} =\Delta (K+U)_{\text{path AB}} = W_{\text{non-conservative force on path AB}}$$
+Since $K,U$ are conserved quantities, if these quantities change, the resulting difference is the amount of energy dissipated out of the system. 
+
+Note that if and only if a non-conservative force is *absent* from a system, then for any $K,U$, then: $$K_{0}+U_{0}=K_{t}+U_{t}=E$$
+That is, any change in some $K$ will be directly equal to some change in $U$, as $E$ must remain some constant. 
