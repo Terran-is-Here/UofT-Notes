@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-01T13:04:17.069-04:00
-edited_seconds: 1740
+updated_at: 2026-10-06T14:14:02.732-04:00
+edited_seconds: 1750
 course: ESC194H1
 tags:
   - ESC194H1
@@ -227,7 +227,7 @@ $$
 The Intermediate Value Theorem states that: 
 > Let $f(x)$ be *continuous* on some closed interval $[a,b]$, and with $f(a) \neq f(b)$, then there exists a number $c\in(a,b) \to f(c)=N$, where $N$ is some number. 
 
-This basically says that a function takes on all intermediate values between $f(a)$ and $f(b)$. 
+This basically says that a function takes on all intermediate values between $f(a)$ and $f(b)$, see [[08-1 — Intermediate Value Theorem]]. 
 # Pre-Lecture Notes
 ## Continuity 
 The concept of continuity can be generally defined as the idea of "not lifting your hand from the page". Mathematically however, this is defined as the following: 
