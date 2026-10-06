@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T16:33:45.228-04:00
-edited_seconds: 590
+updated_at: 2026-10-06T17:33:53.837-04:00
+edited_seconds: 880
 course: ESC103H1
 tags:
   - ESC103H1
@@ -16,6 +16,110 @@ Next:
 > * Perform matrix multiplication $\mathbf{AB}$ using the dot products of rows of matrix $\mathbf{A}$ with the columns of matrix $\mathbf{B}$
 --- 
 # Lecture Notes
+## Matrix Multiplication (LEC) 
+Recall from when we defined the $\mathbf{A}\vec{x}=\mathbf{B}$ operation: 
+$$
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
+\end{bmatrix}\begin{bmatrix}x_{1} \\x_{2} \\\vdots \\x_{n}\end{bmatrix} = \begin{bmatrix}b_{1} \\b_{2} \\\vdots \\b_{m}\end{bmatrix}
+$$
+If we add more rows into $\vec{x}$, then the corresponding rows of $\vec{b}$ will scale accordingly: 
+$$
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} & \dots & a_{1n}\\
+a_{21} & a_{22} & a_{23} & \dots & a_{2n}\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+a_{m 1} & a_{m 2} & a_{m 3} & \dots & a_{mn}
+\end{bmatrix}\begin{bmatrix}x_{11} & x_{12} \\x_{21} &x_{22} \\\vdots & \vdots \\x_{n1} & x_{n2}\end{bmatrix} = \begin{bmatrix}b_{11}&b_{12} \\b_{21} &b_{22}\\\vdots & \vdots\\b_{m1} & b_{m 2}\end{bmatrix}
+$$
+In other words; $\mathbf{AB}$'s $j$th column is a column vector equal to $\mathbf{A}$ times the $j$-th column of $B$, that is $A\vec{b}_{j}$.
+### Example
+Given the two matrices: 
+$$
+\mathbf{A=}\begin{bmatrix}1 & 2 \\3 & 4\end{bmatrix}
+$$
+$$
+\mathbf{B}=\begin{bmatrix}
+5 & 6 \\
+7 & 8
+\end{bmatrix}
+$$
+Then $\mathbf{AB}$ would give the following $2\times {2}$ square matrix: 
+$$
+\begin{bmatrix}
+\mathbf{A}\vec{b}_{1} & \mathbf{A}\vec{b}_{2}
+\end{bmatrix} = 
+\begin{bmatrix}
+1(5)+2(7) & 1(6)+2(8) \\
+3(5)+4(7)& 3(6) + 4 (8)
+\end{bmatrix} = \begin{bmatrix}
+19 & 22 \\
+43 & 50
+\end{bmatrix}
+$$
+**Remember**, we can always represent an $\mathbf{A\vec{r}}$ as the linear combination of the column vectors of $\mathbf{A}$ with the scalar coefficients present in $\vec{b}_{n}$. 
+## Alternate Notation
+We can redefine $\mathbf{AB}$ as the following: 
+$$
+\begin{bmatrix}\dots  & \vec{a}_{1} & \dots \\\dots & \vec{a}_{2} & \dots \\& \vdots \\\dots & \vec{a}_{m} & \dots\end{bmatrix}
+\begin{bmatrix}
+\vdots & \vdots &  & \vdots \\
+\vec{b}_{1} & \vec{b}_{2} & \dots & \vec{b}_{p} \\
+\vdots & \vdots &  & \vdots
+\end{bmatrix}
+=\begin{bmatrix}
+\vec{a_{1}}\cdot \vec{b_{1}} & \vec{a_{1}}\cdot \vec{b_{2}}  & \dots & \vec{a}_{1}\cdot \vec{b}_{p}\\
+\vec{a_{2}}\cdot \vec{b_{1}} & \vec{a_{2}}\cdot \vec{b_{2}} & \dots & \vec{a_{2}}\cdot \vec{b}_{p} \\
+\vdots & \vdots & \ddots & \vdots \\
+ &  & \vec{a}_{i}\cdot \vec{b}_{j}
+\end{bmatrix}
+$$
+Where the $i$ row and $j$ th column is represented as $M_{ij}=\vec{a_{i}}^T\cdot \vec{b}_{j}$
+
+Retaking our earlier example with this notation: 
+$$
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
+\begin{bmatrix}
+5 & 6 \\
+7 & 8
+\end{bmatrix}
+$$
+Gives us : 
+$$
+\begin{bmatrix}
+\begin{bmatrix}1\\2\end{bmatrix}\cdot\begin{bmatrix}5\\7\end{bmatrix} & \begin{bmatrix}1\\2\end{bmatrix}\cdot \begin{bmatrix}6\\8\end{bmatrix} \\
+\begin{bmatrix}3\\4\end{bmatrix}\cdot\begin{bmatrix}5\\7\end{bmatrix} & \begin{bmatrix}3\\4\end{bmatrix}\cdot \begin{bmatrix}6\\8\end{bmatrix}
+\end{bmatrix} = \begin{bmatrix}19 & 22 \\43 & 50\end{bmatrix}
+$$
+## Properties of Matrix Multiplication
+We will introduce the following identity matrix: 
+$$
+I = \begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix}
+$$
+Where this is extended to any $m\times m$ matrix, where all the values on the main diagonal are $1$, and all the values not present on the main diagonal are $0$. Note that if we multiply this by some matrix; then: 
+$$
+\begin{bmatrix}a & b \\c & d\end{bmatrix} \begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix} = \begin{bmatrix}
+\begin{bmatrix}a\\b\end{bmatrix}\cdot \begin{bmatrix}1\\0\end{bmatrix} & \begin{bmatrix}a\\b\end{bmatrix}\cdot \begin{bmatrix}0\\1\end{bmatrix} \\
+\begin{bmatrix}c\\d\end{bmatrix}\cdot \begin{bmatrix}1\\0\end{bmatrix} & \begin{bmatrix}c\\d\end{bmatrix}\cdot \begin{bmatrix}0\\1\end{bmatrix}
+\end{bmatrix} = \begin{bmatrix}(1)a + (0)b & (0)a + (1)b \\(1)c + (0)d & (0)c + (1)d \end{bmatrix} = \begin{bmatrix}a & b \\c & d\end{bmatrix}
+$$
+
+That is, $\mathbf{AI=IA=A}$ (if they share the same generals). 
+
+> [!caution] Matrix Multiplication is NOT communicative: 
+$$\mathbf{AB}\neq \mathbf{BA}$$
+
+Note: 
+If $\mathbf{A} = m\times n$, and $\mathbf{B}=n\times p$: 
+* $\mathbf{AB}=m\times p$
+* $\mathbf{BA}$ may not exist (different n)
+
 
 ---
 # Pre-Lecture Notes
