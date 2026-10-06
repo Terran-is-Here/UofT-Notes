@@ -1,15 +1,16 @@
 ---
-updated_at: 2026-10-05T13:15:20.072-04:00
-edited_seconds: 100
-course:
+updated_at: 2026-10-06T09:10:59.324-04:00
+edited_seconds: 110
+course: ESC101H1
 tags:
-"Lecture #": 0
+  - ESC101H1
+"Lecture #": 9
 Lecture Date: 2026-09-29
-Week:
+Week: 5
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[08 — Teamwork]]
-Next:
+Next: [[10— The Design Brief]]
 
 --- 
 # Lecture Notes

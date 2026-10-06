@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T09:01:17.500-04:00
-edited_seconds: 1580
+updated_at: 2026-10-06T09:19:57.522-04:00
+edited_seconds: 1770
 course: ESC194H1
 tags:
   - ESC194H1
@@ -93,30 +93,23 @@ f(x)\leq M-\frac{1}{K}
 $$
 Note that this contradicts our concept, that the LUB of $f(x)$ is $M$, but here, f(x)'s LUB is $M-\frac{1}{k}$. Therefore, $f(x)$ must take on it's maximum $M$ somewhere on $[a,b]$. 
 
-## Critical Points
+## Fermat's Theorem
 The concept of a *critical point* does not inherently arise from EVT; but rather another theorem known as Fermat's Theorem: 
-> Fermat's Theorem
+> [!theorem] Fermat's Theorem
 > If a function $f$ has a local maximum *or* minimum at $c$, if $f'(c)$ exists, then $f'(c)=0$.
 
 > *Proof:*
 > Let's assume that a local maximum exists at some value $f(c)$; then $f(c) \geq f(x)$. If we let $x$ be sufficiently close to c, that is $x=c+h$; then we have the following inequality: 
-$$\begin{align}f(c) &\geq f(c+h)  \\0 &\geq f(c+h)-f(c)\\f(c+h)-f(c)&\leq 0\end{align}$$If we let $h>0$, then we can divide this whole expression by $h$ and take the resulting one-sided limit: 
-$$
-\begin{align}
-\frac{f(c+h)-f(c)}{h}&\leq 0 \\
-\lim_{ h \to ^+0 } \frac{f(c+h)-f(c)}{h} &\leq \lim_{ h \to ^+0 } 0=0 \\
-f'(c) = \lim_{ h \to 0 } \frac{f(c+h)-f(c)}{h}=\lim_{ h \to ^+0 } \frac{f(c+h)-f(c)}{h} &\leq 0 &\text{Since the limit exists}
-\end{align}
-$$
-Conversely, if $h<0$, we divide this whole expression by some negative number $h$: 
-$$
-\begin{align}
-\frac{f(c+h)-f(c)}{h} &\geq 0 \\
-\lim_{ h \to ^-0 } \frac{f(c+h)-f(c)}{h} &\geq \lim_{ h \to ^-0 } 0 \\
-f'(c) = \lim_{ h \to 0 } \frac{f(c+h)-f(c)}{h} =\lim_{ h \to ^-0 } \frac{f(c+h)-f(c)}{h} &\geq 0
-\end{align}
-$$
+> $$\begin{align}f(c) &\geq f(c+h)  \\0 &\geq f(c+h)-f(c)\\f(c+h)-f(c)&\leq 0\end{align}$$If we let $h>0$, then we can divide this whole expression by $h$ and take the resulting one-sided limit: $$\begin{align}\frac{f(c+h)-f(c)}{h}&\leq 0 \\\lim_{ h \to ^+0 } \frac{f(c+h)-f(c)}{h} &\leq \lim_{ h \to ^+0 } 0=0 \\f'(c) = \lim_{ h \to 0 } \frac{f(c+h)-f(c)}{h}=\lim_{ h \to ^+0 } \frac{f(c+h)-f(c)}{h} &\leq 0 &\text{Since the limit exists}\end{align}$$
+> Conversely, if $h<0$, we divide this whole expression by some negative number $h$: $$\begin{align}\frac{f(c+h)-f(c)}{h} &\geq 0 \\\lim_{ h \to ^-0 } \frac{f(c+h)-f(c)}{h} &\geq \lim_{ h \to ^-0 } 0 \\f'(c) = \lim_{ h \to 0 } \frac{f(c+h)-f(c)}{h} =\lim_{ h \to ^-0 } \frac{f(c+h)-f(c)}{h} &\geq 0\end{align}$$
 If $f'(c)\leq {0}$ and $f'(c)\geq 0$ at the same time, then $f'(c)$ must be $0$ if $f(c)$ denotes a local maximum. 
+> > We can use a similar set of logic for showing that a point at a minimum must also have a derivative at 0. 
+> > Assume that a local maximum exists at some value $f(c)$, then $f(c) \leq f(x)$ for $x$ being sufficiently close to $c$, that is $x=c+h$: 
+> > $$f(c)\leq f(c+h)\implies 0\leq f(c+h)-f(c)$$
+> > Let $h>0$, divide both sides by some positive number; then: 
+> > $$\begin{align}f(c+h)-f(c) &\geq 0 \\\frac{f(c+h)-f(c)}{h} &\geq 0 \\\lim_{ h \to ^+0 } \frac{f(c+h)-f(c)}{h} &\geq \lim_{ h \to ^+0 } 0 = 0 \\f'(c) = \lim_{ h \to 0 } \frac{f(c+h)-f(c)}{h} = \lim_{ h \to ^+0 } \frac{f(c+h)-f(c)}{h} &\geq 0 \implies f'(c) \geq 0\end{align}$$
+> > Similarly, let $h<0$, then divide both sides by some negative number; then: $$\begin{align}f(c+h)-f(c) &\geq 0 \\\frac{f(c+h)-f(c)}{h} &\leq 0 \\\lim_{ h \to ^-0 } \frac{f(c+h)-f(c)}{h} &\leq \lim_{ h \to ^-0 } 0=0 \\f'(c) = \lim_{ h \to 0 } \frac{f(c+h)-f(c)}{h} = \lim_{ h \to ^-0 } \frac{f(c+h)-f(c)}{h} &\leq 0 \implies f'(c) \leq 0\end{align}$$
+> > If $f'(c) \geq0$ and $f'(c) \leq0$; then $f'(c)$ must be equal to $0$ if at $f(c)$, a local minium exists. 
 
 ---
 # Pre-Lecture Notes
@@ -174,6 +167,7 @@ The Boundness Theorem lets us show that, for any function defined and continuous
 > * $a<\gamma<b$, then our interval is $(a-\delta,a+\delta)$. 
 > In either case, $f(x)$ is bounded on $[a,b]$ by some $1+|f(\gamma)|$.
 > Note that with some $[a_{n},b_{n}]$, it will lie in one of the cases above, when $\frac{b-a}{2^n}<\delta$, meaning that $f(x)$ in $[a_{n},b_{n}]$ *is* bounded, contradicting our point earlier. Therefore, $f$ must be bounded on $[a,b]$. 
+> 
 
 ### Extreme Value Theorem (Proof) 
 > Extreme Value Theorem 
