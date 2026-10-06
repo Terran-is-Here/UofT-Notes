@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-05T13:58:22.133-04:00
-edited_seconds: 1650
+updated_at: 2026-10-06T08:26:39.372-04:00
+edited_seconds: 1670
 course: ESC194H1
 tags:
   - ESC194H1
@@ -70,6 +70,8 @@ $$f(x) = g(x) + f(a) + \left(\frac{f(b)-f(a)}{b-a}\right)(x-a)$$
 Differentiating $f(x)$ with respects to $x$ gives us the following: $$f'(x) = g'(x) +\left(\frac{f(b)-f(a)}{b-a}\right)$$
 Note from Rolle's Theorem, some value $c$ exists where $g'(c)=0$, which means for some value $c\in(a,b)$: 
 $$\boxed{f'(c) = \frac{f(b)-f(a)}{b-a}}$$
+> > Note the implications of this theorem; it basically states that at some point $c$ in the closed interval of a function's domain, then there exists a derivative $f'(c)$ which returns a slope equal to the secant line of the endpoints of our function. 
+
 
 ^768c51
 Note that MVT extends a very interesting corollary: 
