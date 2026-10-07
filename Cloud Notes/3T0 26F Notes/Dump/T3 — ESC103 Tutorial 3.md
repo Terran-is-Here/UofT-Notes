@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T20:49:21.666-04:00
-edited_seconds: 1170
+updated_at: 2026-10-06T21:09:36.741-04:00
+edited_seconds: 1480
 course: ESC103H1
 tags:
   - Tutorial
@@ -90,10 +90,36 @@ tag:#ESC103H1 [week:4]
 > > First, rewrite the plane into it's proper scalar form. $5x-3y+z=-4$. From here we know the normal vector from this plane as some vector $\begin{bmatrix}5\\-3\\1\end{bmatrix}$. Let us find a *point* on this plane. A solution that comes to mind quickly is $A(-1,0,1)$, which satisfies the inequality. From here, the vector $AP$ is given by the matrix $\begin{bmatrix}-2\\1\\2\end{bmatrix}$. 
 > > We want to solve for the plain distance between our plane, and our point. Our vector $AP$ points directly to $P$; and we know that $n_{1}$ is the shortest line (well, parallel direction vector) from the plane to the point. Thus, we take the scalar projection of $AP$ onto $n_{1}$, taking the absolute value as we only care about the distance.$$d=\frac{AP\cdot n_{1}}{|n_{1}|} = \frac{-10-3+2}{\sqrt{ 35 }} = -\frac{11}{\sqrt{ 35 }} \to \frac{11}{\sqrt{ 35 }}$$
 
-> Question 7
-> Show that the planes $3x-y+6z=7$ and $-6x+2y-12z=1$ are parallel. 
-> Note, that for the Answer, we notate the first equation as $\pi_{1}$, and the second as some $\pi_{2}$. 
-> > Answer
+> [!theorem] Question 7
+> Show that the planes $3x-y+6z=7$ and $-6x+2y-12z=1$ are parallel, and find the distance between the planes.
+> > Note, that for the Answer, we notate the first equation as $\pi_{1}$, and the second as some $\pi_{2}$. 
+> 
+> > [!caution]- Answer
 > > To show that the planes are parallel, we only need to see if the normal vectors are scalar multiples of each other. If they are; then they are parallel, and thus the planes are parallel. 
 > > For $\pi_{1}$; $n_{1}=\begin{bmatrix}3\\-1\\6\end{bmatrix}$. For $\pi_{2}$, $n_{2}=\begin{bmatrix}-6\\2\\-12\end{bmatrix}$. From here, it's trivial that $n_{2}=-2n_{1}$, and thus the planes are parallel. To find the distance between the planes we can use the similar kind of logic that we used to solve Question 6. 
-> > A point on $\pi_{1}$ is the point $(1,2,1)$. A point on $\pi_{2}$ is the point $(0,0.5,0)$; The resulting vector from $\pi_{1},\pi_{2}$ is 
+> > A point on $\pi_{1}$ is the point $(1,2,1)$. A point on $\pi_{2}$ is the point $(0,0.5,0)$; The resulting vector from $\pi_{1}\pi_{2}$ is $\begin{bmatrix}-1\\-1.5\\-1\end{bmatrix}$. Taking the absolute value of the scalar projection will give the associated distance: $$d= \left| \frac{\pi_{1}\pi_{2}\cdot n_{1}}{|n_{1}|} \right| = \left| \frac{-3 +1.5 - 6 = -7.5}{\sqrt{ 46 }}\right| = \frac{7.5}{\sqrt{ 46 }}$$
+
+> [!theorem] Question 8
+> Find the vector equation for the line in $\mathbb{R}_{3}$ that contains the point $P(-1,6,0)$ and is orthogonal to the plane $4x-z=5$. 
+> 
+> > [!caution]- Answer
+> > The corresponding normal vector to the plane is $n_{1}=\begin{bmatrix}4\\0\\-1\end{bmatrix}$, If our line is orthogonal to the plane, then our direction vector of our point is parallel to $n_{1}$; thus: $$\begin{bmatrix}x\\y\\z\end{bmatrix}= \begin{bmatrix}4\\0\\-1\end{bmatrix}t + \begin{bmatrix}-1\\6\\0\end{bmatrix}, t\in \mathbb{R}$$
+
+> [!theorem] Question 9 
+> Find the scalar equation for the plane that is *represented* by the following vector equation: 
+> $$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}-1\\5\\6\end{bmatrix} + t\begin{bmatrix}0\\-1\\3\end{bmatrix} + s\begin{bmatrix}2\\-1\\0\end{bmatrix}$$
+> > [!caution]- Answer
+> > Given our two direction vectors, simply solve for the corresponding normal vector by taking the Determinant of the $3\times3$ matrix below: $$\det\begin{bmatrix}\hat{i} & \hat{j} & \hat{k} \\0 & -1 & 3 \\2 & -1 & 0\end{bmatrix} = \begin{bmatrix}3\\6\\2\end{bmatrix}$$
+> > Thus the corresponding scalar equation at the moment is $3x+6y+2z=d$, Plug in the point $(-1,5,6)$ to solve for $d$: $-3+30+12 =39=d$, therefore the equation is $3x+6y+2z=39$. 
+
+> [!theorem] Question 10
+> The equation $ax+by=0$ represents a line through the origin in $\mathbb{R}^2$ if $a,b\neq0$. What does this equation represent in $\mathbb{R}^3$ if you think of it as $ax+by+0z=0$ ? 
+> > [!caution]- Answer
+> > The new equation in $\mathbb{R}_{3}$ now represents a new plane, vertically defined from the line $ax+by$ in the $xy$ plane. Since $z$ can take on *any* value in this equation, and it still remains true; then any $z$ value above the line $ax+by$ is included in the corresponding space formed by this **plane**. 
+
+> Question 11
+> Consider the following planes in $\mathbb{R}^3$: $$\begin{align}1x+0y+0z = 2 \\0x + 1y + 0z = 3 \\0x + 0y + 1z = 4\end{align}$$
+> 1.  Construct a mental image of the row picture. 
+> 2. Express the 3 equations as a single vector equation.
+> 3. Construct a mental image of the column picture. 
+1. What does the solution to these 3 equations represent in $\mathbb{R}^3$? 
