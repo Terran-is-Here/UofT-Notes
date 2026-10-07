@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T17:40:39.748-04:00
-edited_seconds: 1010
+updated_at: 2026-10-06T20:10:57.220-04:00
+edited_seconds: 1020
 course: ESC103H1
 tags:
   - ESC103H1
@@ -74,7 +74,7 @@ $$
 \vec{a_{1}}\cdot \vec{b_{1}} & \vec{a_{1}}\cdot \vec{b_{2}}  & \dots & \vec{a}_{1}\cdot \vec{b}_{p}\\
 \vec{a_{2}}\cdot \vec{b_{1}} & \vec{a_{2}}\cdot \vec{b_{2}} & \dots & \vec{a_{2}}\cdot \vec{b}_{p} \\
 \vdots & \vdots & \ddots & \vdots \\
- &  & \vec{a}_{i}\cdot \vec{b}_{j}
+ &  & & \vec{a}_{i}\cdot  \vec{b}_{j}
 \end{bmatrix}
 $$
 Where the $i$ row and $j$ th column is represented as $M_{ij}=\vec{a_{i}}^T\cdot \vec{b}_{j}$

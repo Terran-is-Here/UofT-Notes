@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-02T14:29:19.035-04:00
-edited_seconds: 670
+updated_at: 2026-10-06T20:29:30.880-04:00
+edited_seconds: 930
 course: ESC103H1
 tags:
   - Tutorial
@@ -41,28 +41,44 @@ tag:#ESC103H1 [week:4]
 
 # Answers
 
-> *Question 1:* 
+> [!theorem]- *Question 1:* 
 > > Consider the plane that intersects the coordinate axes at $x=a$, $y=b$, $z=c$ where $a,b,c \neq 0$ scalars. Using the vector cross product, derive and show that the scalar equation of this plane is given by: $$\frac{x}{a}+\frac{y}{b}+\frac{z}{c} = 1$$
 > 
-> Let $x=a,y=b,z=c$. If we say these points exist on the plane, then the following are vectors which also exist on the plane: 
-> $$\vec{ac} = \begin{bmatrix}-a\\0\\c\end{bmatrix},\vec{ab}= \begin{bmatrix}-a\\b\\0\end{bmatrix}$$Which means that the cross product of these two vectors give us the normal vector of this plane: 
-> $$\vec{n}=\vec{ac} \times \vec{ab} = \det \begin{bmatrix}\hat{i} & \hat{j} & \hat{k} \\-a & 0 & c \\-a & b & 0\end{bmatrix} = \begin{bmatrix}-bc\\-ac\\-ab\end{bmatrix}$$
-> Which means that the following is the corresponding scalar equation of our plane: 
-> $$-bcx -acy-abz = d \tag{1}$$
-> Sub in the point $(0,0,c)$ into our equation, then
-> $$\begin{align}-bc(0) -ac(0)-ab(c) &= d \\-abc&=d\end{align}$$Resubstitute as $d$ back into $1$: 
-> $$\begin{align}-bcx -acy-abz &= d \tag{1} \\-bcx -acy-abz &= -abc \\\frac{-bcx}{-abc} + \frac{-acy}{-abc} + \frac{-abz}{-abc} &= 1 \\\frac{x}{a} + \frac{y}{b} + \frac{z}{c} = 1\end{align}$$Therefore, the equation of this plane is the equation of $\frac{x}{a}+\frac{y}{b}+\frac{z}{c} = 1$. 
+> > [!caution]- Answer
+> > Let $x=a,y=b,z=c$. If we say these points exist on the plane, then the following are vectors which also exist on the plane: 
+> > $$\vec{ac} = \begin{bmatrix}-a\\0\\c\end{bmatrix},\vec{ab}= \begin{bmatrix}-a\\b\\0\end{bmatrix}$$Which means that the cross product of these two vectors give us the normal vector of this plane: 
+> > $$\vec{n}=\vec{ac} \times \vec{ab} = \det \begin{bmatrix}\hat{i} & \hat{j} & \hat{k} \\-a & 0 & c \\-a & b & 0\end{bmatrix} = \begin{bmatrix}-bc\\-ac\\-ab\end{bmatrix}$$
+> > Which means that the following is the corresponding scalar equation of our plane: 
+> > $$-bcx -acy-abz = d \tag{1}$$
+> > Sub in the point $(0,0,c)$ into our equation, then
+> > $$\begin{align}-bc(0) -ac(0)-ab(c) &= d \\-abc&=d\end{align}$$Resubstitute as $d$ back into $1$: 
+> > $$\begin{align}-bcx -acy-abz &= d \tag{1} \\-bcx -acy-abz &= -abc \\\frac{-bcx}{-abc} + \frac{-acy}{-abc} + \frac{-abz}{-abc} &= 1 \\\frac{x}{a} + \frac{y}{b} + \frac{z}{c} = 1\end{align}$$Therefore, the equation of this plane is the equation of $\frac{x}{a}+\frac{y}{b}+\frac{z}{c} = 1$. 
 
-> *Question 2:*
+> [!theorem]- *Question 2:*
 > > Find the vector equation for the line through $(-2,5,0)$ that is parallel to the planes $2x+y-4z=0$ and $-x+2y+3x+1=0$. 
 > 
-> Note that a line parallel through the two planes listed is therefore perpendicular to both planes; or in other words, the direction vector provided by this point is given by the cross product of the normal vectors present: $$\begin{bmatrix}2\\1\\-4\end{bmatrix} \times \begin{bmatrix}-1\\2\\3\end{bmatrix} = \det \begin{bmatrix}\hat{i} & \hat{j} & \hat{k} \\2 & 1 & -4 \\-1 & 2 & 3 \end{bmatrix} = \begin{bmatrix}11 \\2\\5\end{bmatrix}$$Therefore our line is defined by the following: $$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}11\\2\\5\end{bmatrix}t + \begin{bmatrix}-2\\5\\0\end{bmatrix}$$
+> > [!caution]- Answer
+> > Note that a line parallel through the two planes listed is therefore perpendicular to both planes; or in other words, the direction vector provided by this point is given by the cross product of the normal vectors present: $$\begin{bmatrix}2\\1\\-4\end{bmatrix} \times \begin{bmatrix}-1\\2\\3\end{bmatrix} = \det \begin{bmatrix}\hat{i} & \hat{j} & \hat{k} \\2 & 1 & -4 \\-1 & 2 & 3 \end{bmatrix} = \begin{bmatrix}11 \\2\\5\end{bmatrix}$$Therefore our line is defined by the following: $$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}11\\2\\5\end{bmatrix}t + \begin{bmatrix}-2\\5\\0\end{bmatrix}$$
 
-> *Question 3:*
+> [!theorem]- *Question 3:*
 > > Let $A,B,C(2,-1,1)$ be the vertices of a triangle when $\vec{AB}$ is parallel to $\begin{bmatrix}1\\-1\\1\end{bmatrix}$ and $\vec{AC}$ is parallel to $\begin{bmatrix}2\\0\\-1\end{bmatrix}$, and angle $C=90\degree$. Find the vector equation of the line through $B$ and $C$. 
+>
+> > [!caution]- Answer
+> > Note that $\vec{AB}$ is parallel to $\begin{bmatrix}1\\-1\\1\end{bmatrix}$, meaning that $\vec{AC}=t\begin{bmatrix}1\\-1\\1\end{bmatrix}$ . Using the same logic, $\vec{AC} = s\begin{bmatrix}2\\0\\-1\end{bmatrix}$. $\vec{BC} = \vec{AC}-\vec{AB}$. Then: $$\begin{align}\vec{BC}&=\vec{AC}-\vec{AB} \\&=-t\begin{bmatrix}1\\-1\\1\end{bmatrix} + s\begin{bmatrix}2\\0\\-1\end{bmatrix} \\&=\begin{bmatrix}2s-t \\t \\-t-s\end{bmatrix}\end{align}$$
+> > Since $C$ is $90\degree$, then $\vec{BC}\cdot \vec{AC} = 0$: $$\begin{align}\begin{bmatrix}2s-t \\t \\-t-s\end{bmatrix}\cdot\begin{bmatrix}2\\0\\-1\end{bmatrix} = -4s-2t +t+s = 0 \\  -t=-3s \implies t=3s\end{align}$$Working backwards then: $$\begin{bmatrix}2s-t \\t \\-t-s\end{bmatrix} = \begin{bmatrix}2s- 3s\\3s \\-3s-s\end{bmatrix}  = \begin{bmatrix}-1\\3\\-4\end{bmatrix}s$$
+> > Therefore, the vector equation of our line is given by the following: $$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}-1\\3\\-4\end{bmatrix}s + \begin{bmatrix}2\\-1\\1\end{bmatrix}$$
+
+> [!theorem] Question 4: 
+> > Find all unit vectors parallel to the $yz$ plane that are orthogonal to the vector $\begin{bmatrix}3\\-1\\2 \end{bmatrix}$. 
 > 
-> Note that $\vec{AB}$ is parallel to $\begin{bmatrix}1\\-1\\1\end{bmatrix}$, meaning that $\vec{AC}=t\begin{bmatrix}1\\-1\\1\end{bmatrix}$ . Using the same logic, $\vec{AC} = s\begin{bmatrix}2\\0\\-1\end{bmatrix}$. $\vec{BC} = \vec{AC}-\vec{AB}$. Then: $$\begin{align}\vec{BC}&=\vec{AC}-\vec{AB} \\&=-t\begin{bmatrix}1\\-1\\1\end{bmatrix} + s\begin{bmatrix}2\\0\\-1\end{bmatrix} \\&=\begin{bmatrix}2s-t \\t \\-t-s\end{bmatrix}\end{align}$$
-> Since $C$ is $90\degree$, then $\vec{BC}\cdot \vec{AC} = 0$: $$\begin{align}\begin{bmatrix}2s-t \\t \\-t-s\end{bmatrix}\cdot\begin{bmatrix}2\\0\\-1\end{bmatrix} = -4s-2t +t+s = 0 \\  -t=-3s \implies t=3s\end{align}$$Working backwards then: $$\begin{bmatrix}2s-t \\t \\-t-s\end{bmatrix} = \begin{bmatrix}2s- 3s\\3s \\-3s-s\end{bmatrix}  = \begin{bmatrix}-1\\3\\-4\end{bmatrix}s$$
-Therefore, the vector equation of our line is given by the following: $$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}-1\\3\\-4\end{bmatrix}s + \begin{bmatrix}2\\-1\\1\end{bmatrix}$$
+> > [!caution]- Answer
+> > If a vector is on the $yz$ plane; then they must be of some form $\begin{bmatrix}0\\a\\ b\end{bmatrix}$; We want to find what values of $a$ and $b$ with the dot product of the equation above gives us soemthing orthogonal to such a vector; that is their dot product is 0. $$\begin{bmatrix}0\\a\\b\end{bmatrix}\cdot \begin{bmatrix}3\\-1\\2\end{bmatrix} = -a + 2b = 0 \to 2b=a$$
+> > From this, then we can see that $b=\frac{a}{2}$; therefore our vector is now currently $\begin{bmatrix}0\\a\\ \frac{a}{2}\end{bmatrix}$. If this is a unit vector; then it's magnitude must be some value 1, then: 
+> > $$\begin{align}a^2 + \frac{a^2}{4} &= 1 \\a^2\left( \frac{5}{4} \right) &= 1  \\a &= \pm \frac{2}{\sqrt{ 5 }}\end{align}$$
+> > Then our unit vector is some value $\begin{bmatrix}0\\ \frac{2}{\sqrt{5 }}\\ \frac{1}{\sqrt{ 5 }}\end{bmatrix}$
 
-
+> Question 5: 
+> The area of a tetrahedron is given by $\frac{1}{3}(\text{area of the base})(\text{height})$. Use this result to prove that the volume of a tetrahedron with sides defined by the vectors $\vec{a},\vec{b},\vec{c}$ is given by $\frac{1}{6}|\vec{a}\cdot(\vec{b}\times \vec{c})|$, taking the base to be defined by vectors $\vec{b},\vec{c}$. Note that $\vec{a}\cdot(\vec{b}\times \vec{c})$ is referred to as the scalar triple product. 
+> 
+> > Answer
+> > The area of the base of a tetrahedron is some triangle; thus we know that $\text{area of the base}=\frac{1}{2}|\vec{b}\times \vec{c}|$. The vector *normal* to this is given to us by $\vec{b}\times \vec{c}$. To solve for the magnitude of the height, we perform a vector projection on $\vec{b}\times \vec{c}$ using $\vec{a}$. This gives us the resulting vector of: $$\vec{h}=\frac{\vec{a}\cdot(\vec{b}\times \vec{c})}{|\vec{b}\times \vec{c}|^2}(\vec{b}\times \vec{c})$$
