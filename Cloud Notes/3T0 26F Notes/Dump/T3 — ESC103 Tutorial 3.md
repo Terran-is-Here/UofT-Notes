@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T20:29:30.880-04:00
-edited_seconds: 930
+updated_at: 2026-10-06T20:49:21.666-04:00
+edited_seconds: 1170
 course: ESC103H1
 tags:
   - Tutorial
@@ -41,7 +41,7 @@ tag:#ESC103H1 [week:4]
 
 # Answers
 
-> [!theorem]- *Question 1:* 
+> [!theorem] Question 1:
 > > Consider the plane that intersects the coordinate axes at $x=a$, $y=b$, $z=c$ where $a,b,c \neq 0$ scalars. Using the vector cross product, derive and show that the scalar equation of this plane is given by: $$\frac{x}{a}+\frac{y}{b}+\frac{z}{c} = 1$$
 > 
 > > [!caution]- Answer
@@ -54,13 +54,13 @@ tag:#ESC103H1 [week:4]
 > > $$\begin{align}-bc(0) -ac(0)-ab(c) &= d \\-abc&=d\end{align}$$Resubstitute as $d$ back into $1$: 
 > > $$\begin{align}-bcx -acy-abz &= d \tag{1} \\-bcx -acy-abz &= -abc \\\frac{-bcx}{-abc} + \frac{-acy}{-abc} + \frac{-abz}{-abc} &= 1 \\\frac{x}{a} + \frac{y}{b} + \frac{z}{c} = 1\end{align}$$Therefore, the equation of this plane is the equation of $\frac{x}{a}+\frac{y}{b}+\frac{z}{c} = 1$. 
 
-> [!theorem]- *Question 2:*
+> [!theorem] Question 2:
 > > Find the vector equation for the line through $(-2,5,0)$ that is parallel to the planes $2x+y-4z=0$ and $-x+2y+3x+1=0$. 
 > 
 > > [!caution]- Answer
 > > Note that a line parallel through the two planes listed is therefore perpendicular to both planes; or in other words, the direction vector provided by this point is given by the cross product of the normal vectors present: $$\begin{bmatrix}2\\1\\-4\end{bmatrix} \times \begin{bmatrix}-1\\2\\3\end{bmatrix} = \det \begin{bmatrix}\hat{i} & \hat{j} & \hat{k} \\2 & 1 & -4 \\-1 & 2 & 3 \end{bmatrix} = \begin{bmatrix}11 \\2\\5\end{bmatrix}$$Therefore our line is defined by the following: $$\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}11\\2\\5\end{bmatrix}t + \begin{bmatrix}-2\\5\\0\end{bmatrix}$$
 
-> [!theorem]- *Question 3:*
+> [!theorem] Question 3:
 > > Let $A,B,C(2,-1,1)$ be the vertices of a triangle when $\vec{AB}$ is parallel to $\begin{bmatrix}1\\-1\\1\end{bmatrix}$ and $\vec{AC}$ is parallel to $\begin{bmatrix}2\\0\\-1\end{bmatrix}$, and angle $C=90\degree$. Find the vector equation of the line through $B$ and $C$. 
 >
 > > [!caution]- Answer
@@ -77,8 +77,23 @@ tag:#ESC103H1 [week:4]
 > > $$\begin{align}a^2 + \frac{a^2}{4} &= 1 \\a^2\left( \frac{5}{4} \right) &= 1  \\a &= \pm \frac{2}{\sqrt{ 5 }}\end{align}$$
 > > Then our unit vector is some value $\begin{bmatrix}0\\ \frac{2}{\sqrt{5 }}\\ \frac{1}{\sqrt{ 5 }}\end{bmatrix}$
 
-> Question 5: 
+> [!theorem] Question 5: 
 > The area of a tetrahedron is given by $\frac{1}{3}(\text{area of the base})(\text{height})$. Use this result to prove that the volume of a tetrahedron with sides defined by the vectors $\vec{a},\vec{b},\vec{c}$ is given by $\frac{1}{6}|\vec{a}\cdot(\vec{b}\times \vec{c})|$, taking the base to be defined by vectors $\vec{b},\vec{c}$. Note that $\vec{a}\cdot(\vec{b}\times \vec{c})$ is referred to as the scalar triple product. 
 > 
+> > [!caution]- Answer
+> > The area of the base of a tetrahedron is some triangle; thus we know that $\text{area of the base}=\frac{1}{2}|\vec{b}\times \vec{c}|$. The vector *normal* to this is given to us by $\vec{b}\times \vec{c}$. To solve for the magnitude of the height, we perform a scalar projection on $\vec{b}\times \vec{c}$ using $\vec{a}$. This gives us the resulting height of $$h=\frac{\vec{a}\cdot(\vec{b}\times \vec{c})}{|\vec{b}\times \vec{c}|}$$
+> > Note that we only care for *height as some positive value*, thus we take the absolute value. Taking our above equation, then$$\frac{1}{3}\left( \frac{|\vec{a}\cdot(\vec{b}\times \vec{c})|}{|\vec{b}\times \vec{c}|} \right)* \frac{1}{2}(|\vec{b}\times \vec{c}|) = \frac{1}{6}|\vec{a}\cdot (\vec{b}\times \vec{c})|$$
+
+> [!theorem] Question 6
+> Find the distance between the point $P(-3,1,3)$ and the plane $5x+z=3y-4$. 
+> > [!caution]- Answer
+> > First, rewrite the plane into it's proper scalar form. $5x-3y+z=-4$. From here we know the normal vector from this plane as some vector $\begin{bmatrix}5\\-3\\1\end{bmatrix}$. Let us find a *point* on this plane. A solution that comes to mind quickly is $A(-1,0,1)$, which satisfies the inequality. From here, the vector $AP$ is given by the matrix $\begin{bmatrix}-2\\1\\2\end{bmatrix}$. 
+> > We want to solve for the plain distance between our plane, and our point. Our vector $AP$ points directly to $P$; and we know that $n_{1}$ is the shortest line (well, parallel direction vector) from the plane to the point. Thus, we take the scalar projection of $AP$ onto $n_{1}$, taking the absolute value as we only care about the distance.$$d=\frac{AP\cdot n_{1}}{|n_{1}|} = \frac{-10-3+2}{\sqrt{ 35 }} = -\frac{11}{\sqrt{ 35 }} \to \frac{11}{\sqrt{ 35 }}$$
+
+> Question 7
+> Show that the planes $3x-y+6z=7$ and $-6x+2y-12z=1$ are parallel. 
+> Note, that for the Answer, we notate the first equation as $\pi_{1}$, and the second as some $\pi_{2}$. 
 > > Answer
-> > The area of the base of a tetrahedron is some triangle; thus we know that $\text{area of the base}=\frac{1}{2}|\vec{b}\times \vec{c}|$. The vector *normal* to this is given to us by $\vec{b}\times \vec{c}$. To solve for the magnitude of the height, we perform a vector projection on $\vec{b}\times \vec{c}$ using $\vec{a}$. This gives us the resulting vector of: $$\vec{h}=\frac{\vec{a}\cdot(\vec{b}\times \vec{c})}{|\vec{b}\times \vec{c}|^2}(\vec{b}\times \vec{c})$$
+> > To show that the planes are parallel, we only need to see if the normal vectors are scalar multiples of each other. If they are; then they are parallel, and thus the planes are parallel. 
+> > For $\pi_{1}$; $n_{1}=\begin{bmatrix}3\\-1\\6\end{bmatrix}$. For $\pi_{2}$, $n_{2}=\begin{bmatrix}-6\\2\\-12\end{bmatrix}$. From here, it's trivial that $n_{2}=-2n_{1}$, and thus the planes are parallel. To find the distance between the planes we can use the similar kind of logic that we used to solve Question 6. 
+> > A point on $\pi_{1}$ is the point $(1,2,1)$. A point on $\pi_{2}$ is the point $(0,0.5,0)$; The resulting vector from $\pi_{1},\pi_{2}$ is 
