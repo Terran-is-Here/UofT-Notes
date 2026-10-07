@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-07T09:02:41.196-04:00
-edited_seconds: 1800
+updated_at: 2026-10-07T09:05:00.362-04:00
+edited_seconds: 1810
 course: ESC103H1
 tags:
   - Tutorial
@@ -11,7 +11,7 @@ Week: 4
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[T2 - ESC103 Tutorial 2]]
-Relevant Notes: [[T4- ESC103 Tutorial 4]]
+Connected Notes: [[T4- ESC103 Tutorial 4]]
 ```query
 tag:#ESC103H1 [week:4]
 ```

@@ -1,13 +1,13 @@
 ---
 Created: September 28th 2026, 9:46:55 pm
-updated_at: 2026-10-06T15:14:28.848-04:00
-edited_seconds: 900
+updated_at: 2026-10-07T09:16:08.145-04:00
+edited_seconds: 910
 course: ESC103H1
 tags:
   - ESC103H1
-"Lecture #": 8
-Lecture Date: 2026-09-29
-Week: 4
+"Lecture #": 9
+Lecture Date: 2026-10-05
+Week: 5
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[08 — Matrix Vector Products]], [[07 — Matrix Operations]] (In-Lecture Insertion)
