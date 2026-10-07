@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T21:09:36.741-04:00
-edited_seconds: 1480
+updated_at: 2026-10-06T21:29:42.423-04:00
+edited_seconds: 1790
 course: ESC103H1
 tags:
   - Tutorial
@@ -117,9 +117,31 @@ tag:#ESC103H1 [week:4]
 > > [!caution]- Answer
 > > The new equation in $\mathbb{R}_{3}$ now represents a new plane, vertically defined from the line $ax+by$ in the $xy$ plane. Since $z$ can take on *any* value in this equation, and it still remains true; then any $z$ value above the line $ax+by$ is included in the corresponding space formed by this **plane**. 
 
-> Question 11
+> [!theorem] Question 11
 > Consider the following planes in $\mathbb{R}^3$: $$\begin{align}1x+0y+0z = 2 \\0x + 1y + 0z = 3 \\0x + 0y + 1z = 4\end{align}$$
 > 1.  Construct a mental image of the row picture. 
 > 2. Express the 3 equations as a single vector equation.
-> 3. Construct a mental image of the column picture. 
-1. What does the solution to these 3 equations represent in $\mathbb{R}^3$? 
+> 3. Construct a mental image of the column picture.
+> 4. What does the solution to these 3 equations represent in $\mathbb{R}^3$? 
+> > [!caution]- Answer(s) 
+> > 1. The row picture gives us three planes, one in $yz$, one in $xz$, and one in $xy$. 
+> > 2. The vector equation from the normal vectors gives us the following: $$\begin{bmatrix}1\\0\\0\end{bmatrix}x+\begin{bmatrix}0\\1\\0\end{bmatrix}y +\begin{bmatrix}0\\0\\1\end{bmatrix}z = \begin{bmatrix}2\\3\\4\end{bmatrix}$$
+> > 3. The column picture gives us a linear combination of the resultant vector. 
+> > 4. The solutions give us the intersection point of all 3 planes; or the scalar multiples of the linear combination above to get to the resultant vector desired. 
+> 
+> 
+
+
+> [!theorem] Question 12 
+> Consider the following planes in $\mathbb{R}^3$: $$\begin{align}x + y + z &= 2 \\x + 2y + z &= 3 \\ 2x +3y + 2z &= 5 \end{align}$$
+> 1. Express these 3 equations as a single vector equation.
+> 2. Find two linear combinations of the column vectors on the left hand side that equal the right hand side vector. 
+> 3. Show that it is only possible to find linear combinations of the column vectors on the left-hand side when the right-hand side vector is equal to $\begin{bmatrix}4\\6\\ c\end{bmatrix}$ and $c$ is equal to what value? 
+> 4. Express these 3 equations in the form of $A\vec{v}=\vec{b}$. 
+>
+> > [!caution]- Answer
+> > 1. As an equation: $$\begin{bmatrix}1\\1\\2\end{bmatrix}x + \begin{bmatrix}1\\2\\3\end{bmatrix}y + \begin{bmatrix}1\\1\\2\end{bmatrix}z = \begin{bmatrix}2\\3\\5\end{bmatrix}$$
+> > 2. $(0,1,1)$ and $(1,1,0)$
+> > 3. $$\begin{align}\left[\begin{array}{ccc|c}1 & 1 & 1 & 4 \\1 & 2 & 1 & 6 \\2 & 3 & 2 & c\end{array}\right] \to \left[\begin{array}{ccc|c}1 & 1 & 1 & 4 \\1 & 2 & 1 & 6 \\2 & 3 & 2 & c\end{array}\right]  &\to \left[\begin{array}{ccc|c}1 & 1 & 1 & 4 \\1 & 2 & 1 & 6 \\0 & 1 & 0 & c-8\end{array}\right]  \to \left[\begin{array}{ccc|c}0 & -1 & 0 & -2 \\1 & 2 & 1 & 6 \\0 & 1 & 0 & c-8\end{array}\right]  \\y&=2 \implies 2 = c-8 \to c=10\end{align}$$
+> >    Thus, the only possible linear combinations for this arrangement is when $c=10$; or conversely with $\begin{bmatrix}2\\3\\5\end{bmatrix}*2$; since both are parallel. 
+> > 4. $$\begin{bmatrix}1 & 1 & 1 \\1 & 2 & 1 \\2 & 3 & 2\end{bmatrix}\begin{bmatrix}x\\y\\z\end{bmatrix} =\begin{bmatrix}2\\3\\5\end{bmatrix}$$
