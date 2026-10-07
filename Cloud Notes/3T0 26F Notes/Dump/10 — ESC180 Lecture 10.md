@@ -1,15 +1,16 @@
 ---
-updated_at: 2026-10-02T12:53:25.406-04:00
-edited_seconds: 360
-course:
+updated_at: 2026-10-07T17:06:52.286-04:00
+edited_seconds: 380
+course: ESC180H1
 tags:
+  - ESC180H1
 "Lecture #": 0
 Lecture Date: 2026-10-02
 Week:
 ---
-Hub: 
-Previous: 
-Next:
+Hub: [[ESC180 Hub]]
+Previous: [[09 — ESC180 Lecture 9]]
+Next: [[11 — ESC180 Lecture 11]]
 
 --- 
 # Lecture Notes

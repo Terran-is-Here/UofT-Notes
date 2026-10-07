@@ -1,9 +1,10 @@
 ---
-updated_at: 2026-10-02T12:22:24.732-04:00
-edited_seconds: 330
-course:
+updated_at: 2026-10-07T17:06:47.397-04:00
+edited_seconds: 340
+course: ESC180H1
 tags:
-"Lecture #": 0
+  - ESC180H1
+"Lecture #": 9
 Lecture Date: 2026-09-28
 Week:
 ---
