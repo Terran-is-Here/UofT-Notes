@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T17:33:53.837-04:00
-edited_seconds: 880
+updated_at: 2026-10-06T17:40:39.748-04:00
+edited_seconds: 1010
 course: ESC103H1
 tags:
   - ESC103H1
@@ -98,6 +98,7 @@ $$
 \end{bmatrix} = \begin{bmatrix}19 & 22 \\43 & 50\end{bmatrix}
 $$
 ## Properties of Matrix Multiplication
+### Identity Matrix
 We will introduce the following identity matrix: 
 $$
 I = \begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix}
@@ -115,11 +116,41 @@ That is, $\mathbf{AI=IA=A}$ (if they share the same generals).
 > [!caution] Matrix Multiplication is NOT communicative: 
 $$\mathbf{AB}\neq \mathbf{BA}$$
 
+> [!caution] It IS communicative (with the same order): 
+> $$\mathbf{(AB)C}=\mathbf{A(BC)}$$
+
 Note: 
 If $\mathbf{A} = m\times n$, and $\mathbf{B}=n\times p$: 
 * $\mathbf{AB}=m\times p$
-* $\mathbf{BA}$ may not exist (different n)
+* $\mathbf{BA}$ may not exist (different number of rows and columns)
 
+### Exchange Matrix: 
+The exchange matrix is the following: 
+$$\mathbf{E}=
+\begin{bmatrix}
+0 & 1 \\
+1 & 0
+\end{bmatrix}
+$$
+Note what happens when we multiply a matrix with it: 
+$$
+\begin{align}
+\begin{bmatrix}a & b \\c & d\end{bmatrix}\begin{bmatrix}0 & 1 \\1 & 0\end{bmatrix} = \begin{bmatrix}b & a \\d & c\end{bmatrix} \\
+\begin{bmatrix}0 & 1 \\1 & 0\end{bmatrix}\begin{bmatrix}a & b \\c & d\end{bmatrix} = \begin{bmatrix}c & d \\a & b\end{bmatrix}
+\end{align}
+
+$$
+If $\mathbf{AE}$, then the resultant matrix will have the corresponding columns of $A$ flipped. if $\mathbf{EA}$, the rows are reversed instead. 
+## Application
+Recall, if we have some $\mathbf{A}\vec{x}=\vec{b}$: 
+$$
+\begin{align}
+\mathbf{A}\vec{x} &= \vec{b} \\
+\mathbf{BA}\vec{x}&=\mathbf{B}\vec{b} \\
+\mathbf{(BA)}\vec{x}&=\mathbf{B}\vec{b}
+\end{align}
+$$
+Due to the associativity of Matrix Multiplication being associative; then this may allows us to manipulate our equation to an easier term to work with. **The order MUST be preserved since Matrix Multiplication is NOT communicative**. 
 
 ---
 # Pre-Lecture Notes
