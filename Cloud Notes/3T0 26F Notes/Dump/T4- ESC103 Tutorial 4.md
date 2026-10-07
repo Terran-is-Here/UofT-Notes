@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-07T10:00:52.649-04:00
-edited_seconds: 300
+updated_at: 2026-10-07T10:04:46.659-04:00
+edited_seconds: 320
 course: ESC103H1
 tags:
   - Tutorial
@@ -15,7 +15,11 @@ Connected Notes: [[T3 — ESC103 Tutorial 3]]
 tag:#ESC103H1 [week:5]
 ```
 --- 
-## Questions: 
+## Useful Concepts
+> [!caution]
+> Any matrix can be defined as a transformation; that we take a vector and map it to another vector. An *inverse* maps a new vector and maps it towards our original space. We can thus only take the inverse of a full rank matrix (that is, an inverse) (bijective/surjective, 1:1 ratio for points -> corresponding linear transformations) 
+
+## Questions & Answers 
 
 > [!theorem] Question 1
 > 1. Find a 3x3 matrix with 3 independent columns and all nine entries equal to 1 or 2. 
