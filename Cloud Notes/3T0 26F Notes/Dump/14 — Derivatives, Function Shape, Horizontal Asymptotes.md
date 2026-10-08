@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T10:13:19.121-04:00
-edited_seconds: 630
+updated_at: 2026-10-08T10:17:19.502-04:00
+edited_seconds: 750
 course: ESC194H1
 tags:
   - ESC194H1
@@ -84,31 +84,15 @@ $$
 x<N &\implies |f(x)-L| < \epsilon
 \end{align}
 $$
-A proof is attached below: 
-$$
-\begin{align}
-\lim_{ x \to \infty } \frac{1}{x} = 0  \\
-\forall \epsilon>0, \exists N \text{ s.t. } \\
-x> N &\implies |f(x) -0| < \epsilon
-\end{align}$$
-First, let's determine a good choice of $N$
-$$
-\begin{align}
-\left|\frac{1}{x}\right|  < \epsilon && x > N \implies x > N > 0 \implies \left|\right|\\
--\epsilon < \frac{1}{x} < \epsilon \\
-- \epsilon < \frac{1}{x} < \epsilon && x>N>0 \implies x\text{ is +'ve} \\
-x > \frac{1}{\epsilon} && \implies \text{Choose } N=\frac{1}{\epsilon}
-\end{align}
-$$
-With our choice of $N$, we now seek to prove the forwards direction. 
-$$
-\begin{align}
-x > N   = \frac{1}{\epsilon} \\
-x> \frac{1}{\epsilon} \\
-\frac{1}{x} <  \epsilon \\
-\left| \frac{1}{x}\right| < \epsilon
-\end{align}
-$$
+
+> [!ila] Application
+> Note that this concept is not limited in application to determining the end behaviors of a function; this can also be applied in the following limit: 
+> $$\lim_{ x \to \infty } \frac{1}{x}=0$$
+> A proof is attached below: 
+> > [!theorem]- Proof
+> > $$\begin{align}\lim_{ x \to \infty } \frac{1}{x} = 0  \\\forall \epsilon>0, \exists N \text{ s.t. } \\x> N &\implies |f(x) -0| < \epsilon\end{align}$$
+> > First, let's determine a good choice of $N$: $$\begin{align}\left|\frac{1}{x}\right|  < \epsilon && x > N \implies x > N > 0 \implies \left| \frac{1}{x}\right|=\frac{1}{x}\\-\epsilon < \frac{1}{x} < \epsilon && \forall x>0, -\epsilon< \frac{1}{x} \text{ is always true}\\x > \frac{1}{\epsilon} && \implies \text{Choose } N=\frac{1}{\epsilon}\end{align}$$
+> > With our choice of $N$, we now seek to prove the forwards direction. $$\begin{align}x > N   = \frac{1}{\epsilon} \\x> \frac{1}{\epsilon} \\\frac{1}{x} <  \epsilon &&x > N > 0 \implies \frac{1}{x} = \left| \frac{1}{x}\right|\\\left| \frac{1}{x}\right| < \epsilon\end{align}$$
 ## Precise Infinite Limit
 Combining our definitions above; then we can show that a limit diverges to infinity by the following precise definition: 
 $$

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T09:56:31.876-04:00
-edited_seconds: 330
+updated_at: 2026-10-08T10:28:29.511-04:00
+edited_seconds: 340
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week: 6
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[14 — Derivatives, Function Shape, Horizontal Asymptotes]]
-Next: N/A 
+Next: [[16 — Optimization and Antiderivatives]]
 > [!quote] Recommended Reading 
 > Section 3.5 of the Stewart Textbook
 
