@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-07T22:52:39.108-04:00
-edited_seconds: 230
+updated_at: 2026-10-07T23:22:13.804-04:00
+edited_seconds: 250
 course: PHY180H1
 tags:
   - PHY180H1
@@ -11,7 +11,7 @@ Created: October 5th 2026, 5:32:52 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[12 — Potential Energy, Conservative and Non-Conservative Forces]], [[12.1 — Multivariable Calculus (PHY180)]]
-Next:
+Next: [[14 — Momentum and Impulse]]
 > [!quote] Recommended Reading 
 > University Physics 8.3, 8.4, 8.5 
 --- 

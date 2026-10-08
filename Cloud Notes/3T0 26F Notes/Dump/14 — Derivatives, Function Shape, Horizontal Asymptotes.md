@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-07T23:16:31.055-04:00
-edited_seconds: 520
+updated_at: 2026-10-07T23:20:24.797-04:00
+edited_seconds: 580
 course: ESC194H1
 tags:
   - ESC194H1
@@ -71,6 +71,23 @@ $$
 $$
 In terms of our [[06 — Precise Limit Definition#Epsilon-Delta Definition|Epsilon-Delta Definition]] of a limit: 
 $$
-\begin{align}\forall\epsilon&>0, \exists N \text{ s.t. } \\x>N &\implies |f(x)-L| < \epsilon\end{align}
+\begin{align}\lim_{ x \to \infty } f(x) &= L\\\forall\epsilon&>0, \exists N \text{ s.t. } \\x>N &\implies |f(x)-L| < \epsilon\end{align}
 $$
-Once again, using our 
+Once again, using our knowledge on $\epsilon-\delta$, that we want to write $N$ as some term of $\epsilon$ (or more accurately, choose some $N=?\epsilon$ such that we can back-substitute back to $|f(x)-L|<\epsilon$). Graphically, what this means is that for some arbitrarily large value of $x$ larger than $N$, we can progressively bound it to a smaller and smaller $\epsilon$. This is also defined in terms to negative infinity: 
+$$
+\begin{align}
+\lim_{ x \to -\infty } f(x) & =L  \\
+\exists\epsilon&>0,\exists N\text{ s.t.} \\
+x<N &\implies |f(x)-L| < \epsilon
+\end{align}
+$$
+## Precise Infinite Limit
+Combining our definitions above; then we can show that a limit diverges to infinity by the following precise definition: 
+$$
+\begin{align}
+\lim_{ x \to \infty } f(x) = \infty \\
+\forall M, \exists N \text{ s.t.} \\
+x>N \implies f(x) > M
+\end{align}
+$$
+The negative definition also exists for this; follow the same logic to write $N$ as some term of $M$. 
