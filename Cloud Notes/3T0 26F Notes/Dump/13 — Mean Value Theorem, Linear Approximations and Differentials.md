@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T13:47:54.780-04:00
-edited_seconds: 1840
+updated_at: 2026-10-08T13:58:50.664-04:00
+edited_seconds: 2050
 course: ESC194H1
 tags:
   - ESC194H1
@@ -41,7 +41,26 @@ Now we can move MVT:
 > Take the following equation: $$g(x) = f(x) - \left[ \frac{f(b)-f(a)}{b-a}(x-a) +f(a) \right]$$
 > Note that the term in the brackets is equivalent to some line from $(a,f(a)) \to (b,f(b))$. Then this represents to us the distance between some $f(x)$ and the line between it's endpoints. 
 > 
-> Note that $g(x)$
+> Note that $g(a)=g(b)=0$, and $g(x)$ is continuous and differentiable on $f(x)$ being continuous and differentiable; then $g(x)$ continuous on $[a,b]$ and differentiable on $(a,b)$. Then $g(x)$ satisfies the criteria for Rolle's Theorem. Then there is at least one $g(c),c\in(a,b), g'(c)=0$. $$g'(x) = f'(x) - \left( \frac{f(b)-f(a)}{b-a} \right)$$We know from Rolle that $\exists c, g'(c) = 0$, therefore: $$\begin{align}g'(c) = f'(c) - \left( \frac{f(b)-f(a)}{b-a} \right) = 0 \\\boxed{f'(c) = \frac{f(b)-f(a)}{b-a}}\end{align}$$
+
+## Application
+Take the following example:
+> Two runners start a race at the same time, and finish in a tie. Show that at some time during the race, they have the same velocity. 
+
+> Let $h(t)$ be the position of Runner 1, Let $g(t)$ be the position of Runner 2. Then we can define that: 
+
+$$f(t) = h(t)-g(t)$$
+Note from this, that we want to show some time $t_{0}$ where $g'(t_{0}) = h'(t_{0}) \implies f'(t)=0$ from above if differentiated. 
+Note that, at the beginning of the race, $h(0)=g(0)=0$, and $f(0)=0$. At the end of the race, $h(T) = g(T)\implies f(T)=0$. Since $f(0)=f(T)=0$, we can apply Rolle's Theorem (letting $h,t$ are continuous.). From RT, $\exists t_{0}\in(0,T) \implies f'(t_{0})=0$. Note that: 
+$$
+\begin{align}
+f'(t) = h'(t) - g'(t) \\
+f'(t_{0}) = h'(t_{0}) - g'(t_{0}) = 0 \\
+\implies h'(t_{0}) = g'(t_{0})
+\end{align}$$
+
+
+
 ---
 # Pre-Lecture Notes
 ## Mean Value Theorem
