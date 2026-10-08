@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T13:27:57.476-04:00
-edited_seconds: 1970
+updated_at: 2026-10-08T13:33:51.466-04:00
+edited_seconds: 2010
 course: ESC194H1
 tags:
   - ESC194H1
@@ -126,6 +126,16 @@ Given a continuous function on a *closed* interval $[a,b]$, to find absolute ext
 2. Find values $f(a),f(b)$ (at the end-points) of the interval.
 3. Largest and smallest values of the values found from the process above are our absolute extrema and minima respectively. 
 
+> Take the following: 
+> $f(x) = x^2, x\in[-1,3]$
+> Taking the first step; then $f'(0) = 0$ ($f'(x) = 2x$). Note that $f'(x)$ is a polynomial and is continuous everywhere; but this is the sole critical point of our function. Plugging this in, we get $p_{1}=0$.
+> 
+> Taking the second step, we now evaluate at the end points: $p_{2}=f(-1)=1$, $p_{3}=f(3)=9$. From here, we can see that $p_{1}$ is the absolute minimum of our function, and $p_{3}$ is the absolute maximum of our function on this interval. 
+
+> Another example: 
+> $$f(x) = x^3-6x^2+5, x\in[-3,5]$$
+> Find the absolute maximum and minimum of this function on the given interval. 
+> > Taking the derivative, then $f'(x) = 3x^2 -12x$, then $f'(x) = 0 = 3x(x-4)$, or $x=0,4$ for solutions to $f'(x)=0$. 
 
 ---
 # Pre-Lecture Notes

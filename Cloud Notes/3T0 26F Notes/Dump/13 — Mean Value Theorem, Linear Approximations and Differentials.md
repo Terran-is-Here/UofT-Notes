@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-07T23:00:29.269-04:00
-edited_seconds: 1680
+updated_at: 2026-10-08T13:47:54.780-04:00
+edited_seconds: 1840
 course: ESC194H1
 tags:
   - ESC194H1
@@ -17,7 +17,31 @@ Next: [[14 — Derivatives, Function Shape, Horizontal Asymptotes]]
 > Section 3.2, 2.9 of the textbook. 
 --- 
 # Lecture Notes
+## Mean Value Theorem (LEC) 
+The mean value theorem is the following: 
+> If $f$ is differentiable on the open interval $(a,b)$ **AND** continuous on the *closed* interval $[a,b]$, then there is *at least* one number $c\in(a,b)$, where: 
+> $$f'(c) = \frac{f(b)-f(a)}{b-a}$$
 
+To prove this, we need Rolle's Theorem: 
+> [!ila] Rolle's Theorem
+> Let $f$ be differentiable on the open interval $(a,b)$ and continuous on the closed interval $[a,b]$. Then, if $f(a)=f(b)=0$, then there exists at least one number $c\in(a,b)$ where $f'(c)=0$
+> > Proof: Consider the following cases. 
+> > 1. $f(x)=f(a)=f(b)=0 \implies f(x)$ is a constant function, $f'(x)=0 \forall x\in(a,b)$. 
+> > 2. $f(x) >0$ for some values $x\in (a,b)$
+> > 3. $f(x) <0$ for some values $x\in(a,b)$. 
+>
+>
+> > We can perform a proof using Case 2. 
+> >  $f(x) > 0$ for $x\in(a,b)$.
+> >  Since $f(x)$ is continuous on $[a,b]$, then it has to take some maximum value $f(c)=M,c\in[a,b]$ from [[12 — Related Rates, Min and Max Values#Extreme Value Theorem (LEC)|EVT]]. Note for case 2, $f(x)>0 \implies f(c)>0$; since $f(a)=f(b) =0$, then $c\in(a,b)$. 
+> >  Since $f'(x)$ is differentiable on $(a,b)$, $f'(c)$ exists. From Fermat's Theorem, $f'(c)=0$. Therefore there exists some location $x=c$ on the open interval $x=c\in(a,b) \implies f(c)=0$
+
+Now we can move MVT: 
+
+> Take the following equation: $$g(x) = f(x) - \left[ \frac{f(b)-f(a)}{b-a}(x-a) +f(a) \right]$$
+> Note that the term in the brackets is equivalent to some line from $(a,f(a)) \to (b,f(b))$. Then this represents to us the distance between some $f(x)$ and the line between it's endpoints. 
+> 
+> Note that $g(x)$
 ---
 # Pre-Lecture Notes
 ## Mean Value Theorem
@@ -60,7 +84,7 @@ The proof for this requires quite a bit of thinking, and required a few other th
 
 Using Rolle's Theorem, we can now build a proof for the MVT. [[#^768c51]]
 > [!theorem] Mean Value Theorem
-> Given: If $f$ is a real-valued function, defined and continuous on, and having a derivative on the open interval $(a,b)$, then there exists some point $c\in(a,b)$ such that: 
+> Given: If $f$ is a real-valued function, defined and continuous on, and having a derivative on the open interval $(a,b)$, then there exists at least one point $c\in(a,b)$ such that: 
 > $$\boxed{f'(c)=\frac{f(b)-f(a)}{b-a}}\tag{MVT}$$
 *Proof*:
 Take the secant line between some point $(a,f(a)), (b,f(b))$: 
