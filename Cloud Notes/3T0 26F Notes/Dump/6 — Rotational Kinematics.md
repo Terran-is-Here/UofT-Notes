@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T16:53:48.168-04:00
-edited_seconds: 800
+updated_at: 2026-10-08T17:28:13.140-04:00
+edited_seconds: 810
 course: PHY180H1
 tags:
   - PHY180H1
@@ -96,7 +96,7 @@ $$
 
 For this to remain true, $r$ must scale to balance out the change in $\vec{v}$, meaning that our object's radius will proportionally increase or decrease respectively. Note that if tangential acceleration is present, then the overall acceleration of our point (assuming solely $a_{c}$ and $a_{t}$) is defined by the following: 
 $$
-a = a_{c} + a_{t}
+\vec{a}=\vec{a}_{c}+\vec{a}_{t}
 $$
 Note that $a_{c} \perp a_t$; ergo $|\vec{a}| = \sqrt{ a_{c}^2 + a_{t}^2 }$. With $a_{t}\neq0$, $a$ will no longer be directly pointing towards the center. 
 ## Relative Motion
