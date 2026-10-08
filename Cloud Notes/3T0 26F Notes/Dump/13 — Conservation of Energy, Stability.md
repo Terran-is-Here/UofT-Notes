@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T16:24:33.767-04:00
-edited_seconds: 340
+updated_at: 2026-10-08T16:50:17.852-04:00
+edited_seconds: 510
 course: PHY180H1
 tags:
   - PHY180H1
@@ -22,7 +22,32 @@ $$
 U_{e}=\frac{1}{2}kx^2
 $$
 
+## Potential Energy Graphs
+For generating potential energy graphs; recall the integration-based definition of Potential Energy: 
+$$
+U = -\int _{A}^BF\cdot dr
+$$
+Where $dr$ is often some term of displacement, or more often $x$, then: 
+$$
+U = -\int_{A}^BF(r)dr
+$$
+### Relationship with Force 
+The concept of a force can be applied in a potential; that is it is actually equivalent to the *negative gradient of potential* (or in other words, the derivative of a potential energy graph with respects to distance gives you force): 
+$$
+\vec{F} = -\vec{\nabla} U
+$$
+Where: 
+$$
+F_{x}=-\frac{\partial U}{\partial x}, F_{y}=- \frac{\partial U}{\partial y}, F_{z}=- \frac{\partial U}{\partial z}
+$$
+Note that if we do the following: 
+$$
+\begin{align}
+\frac{F_{x}}{dy} = -\frac{\partial U}{\partial x\partial y} && \frac{F_{y}}{dx} = -\frac{\partial U}{\partial x\partial y} \\
+\frac{F_{x}}{dy}=\frac{F_{y}}{dy}\end{align}$$
+Which gets us the potential energy result for conservative forces that we got in [[12 — Potential Energy, Conservative and Non-Conservative Forces#Proving Conservativity|Proving Conservativity (PHY180-12)]]; that is it results from differentiating the partial results of some gradient of potential. 
 
+## Sources of Energy 
 
 ---
 # Pre-Lecture Notes
@@ -46,3 +71,12 @@ Since $E \geq0$ always; then: $$K + U(x) = E \geq 0$$
 From here, we can show and solve for a set of values for $x$ for which our particle can take from it's initial energy states; which graphically also restrict the number of energy values which our particle may take (or in other words, the set of possible potential energy values that our particle can take). 
 
 Think about this as showing which range of potential energy values / wells that our particle can passively escape. 
+
+> [!ila] In Lecture Addendum 1
+> We can think of the range of values; as the range under some line $y=E_{T_{0}}$, or in other words the amount of energy initially within the system is the maximum it can ever reach, and the function under this is the only valid positions possible. 
+
+> [!ila] In Lecture Addendum 2
+> There exists two general types Equilibrium points: 
+> * Stable: Where our particle will oscillate between two points (a local minima) 
+> * Unstable: Where our particle, if disturbed, would fall into another potential well (a local minima). 
+
