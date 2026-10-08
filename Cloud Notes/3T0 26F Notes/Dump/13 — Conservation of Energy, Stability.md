@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-07T23:22:13.804-04:00
-edited_seconds: 250
+updated_at: 2026-10-08T16:24:33.767-04:00
+edited_seconds: 340
 course: PHY180H1
 tags:
   - PHY180H1
@@ -16,6 +16,13 @@ Next: [[14 — Momentum and Impulse]]
 > University Physics 8.3, 8.4, 8.5 
 --- 
 # Lecture Notes
+## Spring Potential Energy
+Note that we discussed this already previously in [[12 — Potential Energy, Conservative and Non-Conservative Forces]], but spring potential energy is defined as: 
+$$
+U_{e}=\frac{1}{2}kx^2
+$$
+
+
 
 ---
 # Pre-Lecture Notes

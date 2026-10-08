@@ -1,11 +1,11 @@
 ---
-updated_at: 2026-10-05T17:32:54.549-04:00
-edited_seconds: 1840
+updated_at: 2026-10-08T16:20:29.071-04:00
+edited_seconds: 1850
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 12
-Lecture Date: 2026-09-27
+Lecture Date: 2026-10-05
 Week: 5
 Created: September 27th 2026, 10:01:18 pm
 ---
