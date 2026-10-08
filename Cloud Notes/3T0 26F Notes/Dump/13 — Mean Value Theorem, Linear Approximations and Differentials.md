@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T08:26:39.372-04:00
-edited_seconds: 1670
+updated_at: 2026-10-07T23:00:29.269-04:00
+edited_seconds: 1680
 course: ESC194H1
 tags:
   - ESC194H1
@@ -25,6 +25,8 @@ The mean value theorem is the following statement:
 > Mean Value Theorem
 > Given: If $f$ is a real-valued function, defined and continuous on, and having a derivative on the open interval $(a,b)$, then there exists some point $c\in(a,b)$ such that: 
 > $$\boxed{f'(c)=\frac{f(b)-f(a)}{b-a}}\tag{MVT}$$
+
+^646c42
 
 The proof for this requires quite a bit of thinking, and required a few other theorems to build up to it. 
 
