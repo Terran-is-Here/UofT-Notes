@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T09:24:59.620-04:00
-edited_seconds: 1870
+updated_at: 2026-10-08T13:27:57.476-04:00
+edited_seconds: 1970
 course: ESC194H1
 tags:
   - ESC194H1
@@ -113,8 +113,19 @@ If $f'(c)\leq {0}$ and $f'(c)\geq 0$ at the same time, then $f'(c)$ must be $0$ 
 
 Note however that Fermat's Theorem does **not** explicitly say that for any case $f'(c)=0$, that a local max *or* min arises; it simply tells us that if a local max or min exists; then $f'(c)=0$ (that is, the converse of Fermat's Theorem is always false.) It however points us towards the correct direction: 
 
+> Consider the function $f(x) =x^3$. Note that $f'(0)=0$, but this value is not a local minima or maxima or extremum[^1]. 
+> Consider the function $f(x) = |x|$, $f'(0) =DNE$, but the function has a local minima at $f(0)$.
+
 > [!theorem] Critical Number
-> A critical number of the function $f$ is a number $c$ in the domain of $f$ where $f'(c)=0$ or $f'(c)$ does not exist.  
+> A critical number of the function $f$ is a number $c$ **in the domain** of $f$ where $f'(c)=0$ or $f'(c)$ does not exist.  
+> > [!ila] In-Lecture Version
+> > Given a function $f$, numbers $c$ **in the domain** of $f$ for which $f'(c)=0$ or $f'(c)$ fails to exist are called *critical points* of $f$.
+## Finding Extremum
+Given a continuous function on a *closed* interval $[a,b]$, to find absolute extrema/minima, we do the following: 
+1. Find values $f(c)$ where $f'(c)=0$ or fails to exist. (critical points) 
+2. Find values $f(a),f(b)$ (at the end-points) of the interval.
+3. Largest and smallest values of the values found from the process above are our absolute extrema and minima respectively. 
+
 
 ---
 # Pre-Lecture Notes
@@ -192,3 +203,5 @@ The Boundness Theorem lets us show that, for any function defined and continuous
 > > $$g(x)=\frac{1}{L-f(x)}$$
 > > Note that this function is continuous and negative on values of $[a,b]$, therefore for some lower bound $Y$: $$\begin{align}Y \leq g(x) < 0 \\Y \leq \frac{1}{L-f(x)} \\Y(L-f(x)) \geq 1 \\-f(x)\leq\frac{1}{Y} -L \\f(x) \geq L-\frac{1}{Y}\end{align}$$
 > > This implies that the $GLB$ of $f(x)$ is $L-\frac{1}{Y}$, which contradicts $f(x)$'s LUB being $L$, therefore, $f(x)$ must attain it's minimum value at some point on the interval $[a,b]$. 
+
+[^1]: Maximum or Minimum term.
