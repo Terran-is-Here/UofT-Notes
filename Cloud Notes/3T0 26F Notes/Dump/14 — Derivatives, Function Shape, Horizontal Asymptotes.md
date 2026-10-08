@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T09:10:38.694-04:00
-edited_seconds: 640
+updated_at: 2026-10-08T10:13:19.121-04:00
+edited_seconds: 630
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,7 +11,7 @@ Created: October 5th 2026, 1:58:37 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[13 — Mean Value Theorem, Linear Approximations and Differentials]]
-Next: [[15 — Summary of Curve Sketching]]
+Next: [[15 — Summary of Curve Sketching ]]
 > [!quote] Recommended Reading 
 > Chapter 3.3, 3.4 of the Stewart Textbook. 
 > [[12 — Related Rates, Min and Max Values#Fermat's Theorem]]
@@ -82,6 +82,31 @@ $$
 \lim_{ x \to -\infty } f(x) & =L  \\
 \exists\epsilon&>0,\exists N\text{ s.t.} \\
 x<N &\implies |f(x)-L| < \epsilon
+\end{align}
+$$
+A proof is attached below: 
+$$
+\begin{align}
+\lim_{ x \to \infty } \frac{1}{x} = 0  \\
+\forall \epsilon>0, \exists N \text{ s.t. } \\
+x> N &\implies |f(x) -0| < \epsilon
+\end{align}$$
+First, let's determine a good choice of $N$
+$$
+\begin{align}
+\left|\frac{1}{x}\right|  < \epsilon && x > N \implies x > N > 0 \implies \left|\right|\\
+-\epsilon < \frac{1}{x} < \epsilon \\
+- \epsilon < \frac{1}{x} < \epsilon && x>N>0 \implies x\text{ is +'ve} \\
+x > \frac{1}{\epsilon} && \implies \text{Choose } N=\frac{1}{\epsilon}
+\end{align}
+$$
+With our choice of $N$, we now seek to prove the forwards direction. 
+$$
+\begin{align}
+x > N   = \frac{1}{\epsilon} \\
+x> \frac{1}{\epsilon} \\
+\frac{1}{x} <  \epsilon \\
+\left| \frac{1}{x}\right| < \epsilon
 \end{align}
 $$
 ## Precise Infinite Limit

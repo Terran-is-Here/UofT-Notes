@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T09:24:07.141-04:00
-edited_seconds: 280
+updated_at: 2026-10-08T09:56:31.876-04:00
+edited_seconds: 330
 course: ESC194H1
 tags:
   - ESC194H1
@@ -26,6 +26,10 @@ Curve Sketching is predominantly based on the tests that we have derived within 
 > > $f'(c)>0$ in some interval, then that interval is an interval of *increase*. 
 > > $f'(c)<0$, in some interval, then that interval is an interval of *decrease*. 
 
+> [!theorem] Concavity Test
+> > $f''(x) > 0, x\in I \implies I$ is a concave *up* interval for $f(x)$. 
+> > $f''(x) < 0, x\in I \implies I$ is a concave *down* interval for $f(x)$. 
+
 > [!theorem] First Derivative Test 
 > Let $f$ have a critical number at some value $c$, then: 
 > > If $f'(c)$ goes from $+ \to -$, $f(c)$ is a local maximum. 
@@ -47,8 +51,11 @@ We generally follow the following steps:
 4. Determine Asymptotes: 
 	1. Recall our definition for them: $$\begin{align}\lim_{ x \to ^+a } f(x) = \pm \infty && \lim_{ x \to ^-a } f(x) = \pm \infty\end{align}$$
 	   Where the sign is dependent on what direction this limit ends up taking. 
+	2. Also determine if a *horizontal* asymptote exists. 
 5. Intervals of Increase / Decrease 
 	1. Use the intervals of increase / decrease test that we had above. 
 6. Determine Local Maxima / Minima 
 	1. Use either the First or Second Derivative test (though the first is often ideal) 
 7. Determine changes in Concavity
+	1. Use the Concavity test to determine changes in concavity. 
+Following all the information above; then from this we can start sketching our behavior. 
