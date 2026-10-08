@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-07T23:20:24.797-04:00
-edited_seconds: 580
+updated_at: 2026-10-08T09:10:38.694-04:00
+edited_seconds: 640
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,9 +11,12 @@ Created: October 5th 2026, 1:58:37 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[13 — Mean Value Theorem, Linear Approximations and Differentials]]
-Next: N/A
+Next: [[15 — Summary of Curve Sketching]]
 > [!quote] Recommended Reading 
 > Chapter 3.3, 3.4 of the Stewart Textbook. 
+> [[12 — Related Rates, Min and Max Values#Fermat's Theorem]]
+> [[06 — Precise Limit Definition#Epsilon-Delta Definition]]
+> [[13 — Mean Value Theorem, Linear Approximations and Differentials#Mean Value Theorem]]
 
 --- 
 # Lecture Notes
