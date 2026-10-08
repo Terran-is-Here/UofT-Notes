@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T16:50:17.852-04:00
-edited_seconds: 510
+updated_at: 2026-10-08T16:55:21.384-04:00
+edited_seconds: 550
 course: PHY180H1
 tags:
   - PHY180H1
@@ -45,9 +45,16 @@ $$
 \begin{align}
 \frac{F_{x}}{dy} = -\frac{\partial U}{\partial x\partial y} && \frac{F_{y}}{dx} = -\frac{\partial U}{\partial x\partial y} \\
 \frac{F_{x}}{dy}=\frac{F_{y}}{dy}\end{align}$$
+Extending this to $\mathbb{R}^3$: 
+$$
+\begin{align}
+\frac{F_{x}}{dydz}=\frac{-\partial U}{\partial x\partial y\partial z} &&\frac{F_{y}}{dxdz}=\frac{-\partial U}{\partial x\partial y\partial z} &&\frac{F_{z}}{dxdz}=\frac{-\partial U}{\partial x\partial y\partial z} \\
+\frac{F_{x}}{dydz} = \frac{F_{y}}{dxdz} = \frac{F_{z}}{dxdz}
+\end{align}
+$$
+
 Which gets us the potential energy result for conservative forces that we got in [[12 — Potential Energy, Conservative and Non-Conservative Forces#Proving Conservativity|Proving Conservativity (PHY180-12)]]; that is it results from differentiating the partial results of some gradient of potential. 
 
-## Sources of Energy 
 
 ---
 # Pre-Lecture Notes
