@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T10:17:19.502-04:00
-edited_seconds: 750
+updated_at: 2026-10-09T13:24:36.002-04:00
+edited_seconds: 820
 course: ESC194H1
 tags:
   - ESC194H1
@@ -20,6 +20,27 @@ Next: [[15 — Summary of Curve Sketching ]]
 
 --- 
 # Lecture Notes
+## Derivatives and Shapes 
+The following are true (Let $f$ be differentiable on $(a,b)$): 
+1. If $f'(x)>0,x\in(a,b)\implies f\text{ is increasing on } (a,b)$
+2. If $f'(x)<0,x\in(a,b)\implies f\text{ is decreasing on } (a,b)$
+3. If $f'(x)=0,x\in(a,b)\implies f\text{ is constant on } (a,b)$
+If $f$ is also continuous on $[a,b]$, the above statements are extended to include the endpoints of the function. Proofs for the definitions above with the function extended to a closed interval are defined in the Pre-Lecture notes section ([[14 — Derivatives, Function Shape, Horizontal Asymptotes#^76775e|here]]) . 
+
+### Application
+Let $f(x) = \sqrt{ 1-x^2 }$ if $f(x)$ is cont on $[-1,1]$; then: 
+$$f'(x) = \frac{1}{2\sqrt{ 1-x^2 }}-2x = -\frac{x}{2\sqrt{ 1-x^2 }}$$
+Then note that $f(x)$ is only differentiable on $(-1,1)$; which is a subset of $[-1,1]$. 
+
+Note that: 
+$$
+\begin{align}
+f(x) &= y \\
+y&=\sqrt{ 1-x^2 }
+\end{align}
+
+$$
+
 
 ---
 # Pre-Lecture Notes
@@ -41,6 +62,8 @@ Proofs of this are attached below:
 > Proof of IoI, IoD: 
 > Let $x_{1},x_{2}$ be any two numbers in an interval with $x_{1}<x_{2}$. From how we defined an *increasing* function, then we need to prove that $f(x_{1})<f(x_{2})$. Given if $f'(x) >0$, then from [[13 — Mean Value Theorem, Linear Approximations and Differentials#^646c42|Mean Value Theorem]]: $$\begin{align}f'(c) &= \frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}} &  x_{1}<x_{2} \to 0 < x_{2}-x_{1}  \\(x_{2}-x_{1})f'(c) &= f(x_{2})-f(x_{1}) & (x_{2}-x_{1}) > 0 \land f'(c) >0 & \implies f(x_2)-f(x_{1}) > 0 \\f(x_{2})>f(x_{1}) \implies f(x_{1}) & \leq f(x_{2})\end{align}$$
 > Similarly, now let $f'(x) <0$, then we need to show that our function must be decreasing, that is for $x_{1}<x_{2}$, $f(x_{2})<f(x_{1})$. $$\begin{align}f'(c) &= \frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}& x_{1}<x_{2} \implies 0 < x_{2}-x_{1} \\(x_{2}-x_{1})f'(c)&=f(x_{2})-f(x_{1}) & (x_{2}-x_{1})>0 \land f'(c) <0 \implies f(x_{2})-f(x_{1})<0 \\f(x_{2})-f(x_{1})<0 &\implies f(x_{2})<f(x_{1})\end{align}$$
+
+^76775e
 
 ### First Derivative Test 
 The first derivative test arises from both Fermat's Theorem, *and* Intermediate Value Theorem: 

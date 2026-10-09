@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-07T23:22:33.762-04:00
-edited_seconds: 100
+updated_at: 2026-10-09T13:14:34.993-04:00
+edited_seconds: 140
 course: PHY180H1
 tags:
   - PHY180H1
@@ -18,3 +18,9 @@ Next:
 
 ---
 # Pre-Lecture Notes
+## Momentum
+Momentum is generally defined as the product of the mass of a particle and it's corresponding velocity: 
+$$
+\vec{p} = m\vec{v}
+$$
+Where the corresponding units are actually in terms of $N*m$. Differentiating this with respects to an infinitesimal time (or in other words;)
