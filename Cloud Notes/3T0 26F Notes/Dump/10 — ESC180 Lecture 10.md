@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC180 Hub]]
 Previous: [[09 — ESC180 Lecture 9]]
-Next: [[11 — ESC180 Lecture 11]]
+Next: [[14 — ESC180 Lecture 14]]
 
 --- 
 # Lecture Notes
