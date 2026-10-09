@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-09T14:49:06.009-04:00
-edited_seconds: 430
+updated_at: 2026-10-09T16:25:13.503-04:00
+edited_seconds: 620
 course: PHY180H1
 tags:
   - PHY180H1
@@ -15,6 +15,14 @@ Next:
 > 9.1 - 9.3 (University Physics)
 --- 
 # Lecture Notes
+## Momentum (LEC) 
+Momentum is a property of *moving* things; that is inertia in motion. It's defined as the velocity of an object multiplied by it's mass: 
+$$\vec{p} = m\vec{v}$$
+Or, as a scalar, $p=mv$. Note that since $\vec{p}$ is a vector; unlike energy, it is a vector and *has* direction. 
+> [!ila] Interesting Realization
+> If $p=mv$, $pv = mv^2 \implies pv=2E_{k}$, Seemed interesting. 
+> $$\frac{p^2}{2m}=\frac{pv}{2}=E_{k}$$
+> > What am I saying; this is literally in [[11 — Work and Kinetic Energy]] (Aries, I mean not exactly but something like it.) 
 
 ---
 # Pre-Lecture Notes
@@ -73,13 +81,15 @@ $$ma=\frac{dp}{dt}=F$$
 > Or in other words, force is actually the instantaneous rate of change of momentum. 
 > > This can be seen from $F=ma$ too, since $a=\frac{dv}{dt}$, then 
 > > $$\begin{align}F&=ma \\&=m * \frac{dv}{dt} \\&=\frac{m*dv}{dt} \\F&=\frac{dp}{dt}\end{align}$$
-
-
 ## Conservation of Momentum
 Conservation of Momentum is another conservatory principle in physics, however it applies more generally to more states over our current definition of the conservation of Energy. 
 
 > [!Theorem] Conservation of Momentum
 > In a closed system where the **net force** is zero (as a force imparts a change in momentum); the total momentum within a system remains constant. $$p_{a 0} + p_{b 0} = p_{a t} + p_{b t}$$
-> This applies for any amount of dimensions; where the net momentum in any $1d$ linear system is held constant *if* no external forces are applied. 
-> > If external forces are applied; this increases the net amount of momentum present within the system; we could use the equations that we have above that we defined in an eal
+> This applies for any amount of dimensions; where the net momentum in an $n$-dimensional setup can be broken up  $n$ $1d$ linear systems. 
+> > If external forces are applied; this increases the net amount of momentum present within the system; we could use the equations that we have above that we defined in the earlier sections of this lecture. 
+> 
+> > This can be used to derive other equations (in the next note) pertaining to Elastic and Inelastic collisions; since some $p_{a}=m_{a}v_{a}$, and $m_{a}$ normally does not change (unless it's an inelastic collision).
+
+Note that this principle applies *generally for any closed system*; even in cases in which the kinetic energy of a system may decrease, such as cases of Inelastic Collisions. 
 
