@@ -10,7 +10,7 @@ Week: 5
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[08 — Teamwork]]
-Next: [[10— The Design Brief]]
+Next: [[13 or something — Writing The Brief]]
 
 --- 
 # Lecture Notes
