@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-09T13:42:58.468-04:00
-edited_seconds: 1020
+updated_at: 2026-10-09T13:56:35.998-04:00
+edited_seconds: 1100
 course: ESC194H1
 tags:
   - ESC194H1
@@ -42,7 +42,7 @@ f'(x)=\frac{-x}{2\sqrt{ 1-x^2 }}>0, x\in(-1,0) \implies f(x)\text{ is increasing
 f'(x) = \frac{-x}{2\sqrt{ 1-x^2 }} <0, x\in(0,1)\implies f(x)\text{ is increasing on } [0,+1]\end{align}
 $$
 
-## First Derivative Test
+## First Derivative Test / 1DT
 We define the following as the first derivative test: 
 
 > Suppose that $x=c$ is a critical point of $f$, and that $f$ is continuous at $c$. if $\exists\delta>0$ such that: 
@@ -65,10 +65,44 @@ Note that $f'(x)=0,x=0,1$, $f(x)$ is continuous on $\mathbb{R}$, and $0,1$ are t
 * $(1,\infty) \implies f'(x)>0$ (Increasing)
 
 Then from the first derivative test, $f(0)$ is a local minimum. $f(1)$ is not an extremum. 
-## Concavity
+## Concavity & 2DT 
 We define the following: 
 > A function is defined to be *concave up* on an interval $I$ if it lies above all of it's tangents. 
 > A function is defined to be *concave down* on an interval $I$ if it lies below all of it's tangents. 
+
+This leads us to the second derivative test: 
+> If $x=c$ is a critical point for some $f$, and $f$ is twice differentiable at $c$ ($f'(c)=0 \land \exists f''(c)$), Then: 
+> 1. $f''(c)>0$, then $f(c)$ is a local minimum.
+> 	1. Consider, if our function is concave *up*, then our function is still sloping upwards.
+> 2. $f''(c)<0$, then $f(c)$ is a local maximum.
+> 	1. Consider, if our function is concave down, then our function is beginning to slope downwards. 
+
+## Example 
+$$
+\begin{align}
+f(x) &= x^3-2x^2 \\
+f'(x) &= 3x^2 -4x = x(3x-4) & f'(x) = 0, x=0, \frac{4}{3}, x\in \mathbb{R}
+\end{align}
+$$
+Taking the second derivative test: 
+$$
+\begin{align}
+f''(x)&=6x-4 & \\
+f''(0) &= -4<0 \implies \text{function is concave down } \\
+f''\left( \frac{4}{3} \right) &= 4>0 \implies \text{function is concave up here}
+\end{align}
+$$
+From the second derivative test, $f(0)$ is a maximum, and $f\left( \frac{4}{3} \right)$ is a local minimum. 
+
+### Test Failure
+$$
+\begin{align}
+f(x) &= x^3 \\
+f'(x) &= 3x^2  \implies f(x)=0, x=0\\
+f''(x) &=6x 
+\end{align}
+$$
+Note that at $x=0, f''(0) =0$, meaning that the second derivative test *fails* (since it's only defined for $>$ or $<$). In other words, the second derivative test does *not* tell us anything new. Going back to the first derivative test we now know that $f'(x) =3x^2 > 0 \forall x\in \mathbb{R}$, therefore there exists to max or minimum value at $f(0)$. 
 
 ---
 # Pre-Lecture Notes
