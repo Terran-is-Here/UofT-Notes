@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T20:10:57.220-04:00
-edited_seconds: 1020
+updated_at: 2026-10-09T16:47:53.397-04:00
+edited_seconds: 1030
 course: ESC103H1
 tags:
   - ESC103H1
@@ -10,7 +10,7 @@ Week: 5
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[09— Basic Linear Algebra Concepts]]
-Next:
+Next: [[11 — Factoring Matrices A-CR]]
 > [!quote] Learning Objectives
 > * Perform matrix multiplication $\mathbf{AB}$ using the linear combination of the columns of matrix $\mathbf{A}$.
 > * Perform matrix multiplication $\mathbf{AB}$ using the dot products of rows of matrix $\mathbf{A}$ with the columns of matrix $\mathbf{B}$
