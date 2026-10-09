@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-09T13:24:36.002-04:00
-edited_seconds: 820
+updated_at: 2026-10-09T13:42:58.468-04:00
+edited_seconds: 1020
 course: ESC194H1
 tags:
   - ESC194H1
@@ -34,13 +34,41 @@ Then note that $f(x)$ is only differentiable on $(-1,1)$; which is a subset of $
 
 Note that: 
 $$
+\begin{align}f(x) &= y \\y&=\sqrt{ 1-x^2 } \\y^2 &=1-x^2 \\y^2+x^2&=1\end{align}$$
+From our derivative; we can see that we know that our denominator will always be positive; thus the sign changes for values where our numerator changes, thus: 
+$$
 \begin{align}
-f(x) &= y \\
-y&=\sqrt{ 1-x^2 }
-\end{align}
-
+f'(x)=\frac{-x}{2\sqrt{ 1-x^2 }}>0, x\in(-1,0) \implies f(x)\text{ is increasing on } [-1,0]\\
+f'(x) = \frac{-x}{2\sqrt{ 1-x^2 }} <0, x\in(0,1)\implies f(x)\text{ is increasing on } [0,+1]\end{align}
 $$
 
+## First Derivative Test
+We define the following as the first derivative test: 
+
+> Suppose that $x=c$ is a critical point of $f$, and that $f$ is continuous at $c$. if $\exists\delta>0$ such that: 
+> 1. $f'(x) >0$ for $x \in(c-\delta,c)$, and $f'(c)<0$ for $x\in(c,c+\delta)$, then $f(c)$ is a local maximum.
+> 2. $f'(c) <0$ for $x \in (c-\delta,c)$ and $f'(c) >0$ for $x \in (c,c+\delta)$, then $f(c)$ is a local minimum. 
+> 3. $f'(c)<0, x\in(c-\delta,c)\cup(c,c+\delta)$ or $f'(c)>0, x\in(c-\delta,c)\cup(c,c+\delta)$, then $f(c)$ is neither (not a local extrenum). 
+> 	1. In other words, if $f'(c)$ remains a constant sign across a critical point.
+
+### Application
+Take the following: 
+$$
+\begin{align}
+f(x) &= 3x^4 -8x^3 +6x^2 \\
+f'(x) &= 12x^3 -24x^2 +12x = 12x(x-1)^2
+\end{align}
+$$
+Note that $f'(x)=0,x=0,1$, $f(x)$ is continuous on $\mathbb{R}$, and $0,1$ are the only critical points. We now need to find the intervals where $f(x)$ is increasing; or in other words where $f'(x)>0\lor f'(x)<0$. We do this by considering different intervals between our critical points. 
+* $(-\infty,0) \implies f'(x)<0$ (Decreasing)
+* $(0,1) \implies f'(x)>0$ (Increasing)
+* $(1,\infty) \implies f'(x)>0$ (Increasing)
+
+Then from the first derivative test, $f(0)$ is a local minimum. $f(1)$ is not an extremum. 
+## Concavity
+We define the following: 
+> A function is defined to be *concave up* on an interval $I$ if it lies above all of it's tangents. 
+> A function is defined to be *concave down* on an interval $I$ if it lies below all of it's tangents. 
 
 ---
 # Pre-Lecture Notes
