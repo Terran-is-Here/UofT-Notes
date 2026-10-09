@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-09T12:39:57.320-04:00
-edited_seconds: 340
+updated_at: 2026-10-09T12:56:08.340-04:00
+edited_seconds: 560
 course: ESC180H1
 tags:
   - ESC180H1
@@ -60,6 +60,14 @@ for element in my_dict:
 	print(element) #returns "value", 2, "value" in that order. 
 ```
 
+> *and* ordered, though that varies between versions (mainly older, older ones). 
+
+However, for iteration in *this* method, you need to ensure that the *size* of the Iterable remains constant; instead use dict.items() and iterate through that pointer. 
+```python
+for key, element in my_dict.items(): 
+	if element < 95: 
+		del my_dict[key] 
+```
 ### Object Assignment 
 We can add elements in a dictionary with the following syntax: 
 ```python
@@ -70,4 +78,42 @@ Note that all the *keys* in a dictionary can also be cast into their own list, a
 ```python
 L1 = list(my_dict.keys()) #Returns an iterable object dict_keys, which can be cast into a list. 
 L2 = list(my_dict.values()) # Returns an iterable object dict_values, which can be cast into a list.
+
+```
+Or, they can be accessed as a list of *tuples* of key,value pairs: 
+```python
+# Points to a STATIC copy of the dictionary's values. 
+#Returns an iterable object dict_values in terms of [(key,values)...] pairs. Cannot be cast to a list. 
+L3 = my_dict.items() 
+
+
+for key, element in L3: #unpacks corresponding tuple
+	print(key)
+	print(element) 
+```
+Note that since any valid element can be anything; meaning that that object's corresponding methods are extended to what's being called.
+
+## Object Manipulation
+To remove objects from an object: 
+```python
+del my_dict[key] #removes key and it's corresponding values in my_dict
+my_dict.clear() #removes all key:value pairs, in other words my_dict = {}. 
+```
+
+## Reversing the Order 
+To invert the order of key:value pairs, we need to actually define a helper function: 
+
+```python
+
+some_dict = {"a":1, "b":2, "c":1}
+def inv_dict(dict): 
+	output_dict = {}
+	for key, value in dict.items(): 
+		if value not in output_dict: #checks if key is already present within the list
+			output_dict[value] = [key]
+		else: # if not, append to a list
+			output_dict[value].append(key) 
+	return output_dict
+
+print(inv_dict(some_dict)) #returns {1: ["a","b"], 2:["b"]}. 
 ```
