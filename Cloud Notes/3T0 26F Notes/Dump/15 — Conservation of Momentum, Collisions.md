@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-09T23:37:12.637-04:00
-edited_seconds: 430
+updated_at: 2026-10-09T23:57:25.364-04:00
+edited_seconds: 780
 course: PHY180H1
 tags:
   - PHY180H1
@@ -64,9 +64,26 @@ v_{1}+v_{1,f}&= v_{2} + v_{2,f}  \\
 \implies v_{1}-v_{2} &= v_{2,f}-v_{1,f}
 \end{align}
 $$
-We can actually relate these together in a linear system: 
+We can actually relate these together in a linear system of $\mathbf{A}x = b$ (see [[06 — Solving Linear Equations, Intro to Matrices#AX=B Matrix|AX=B Matrices]])
 $$
-\begin{bmatrix}m_{1} & m_{2} \\1 & -1\end{bmatrix}\begin{bmatrix}
-v_{1}
+\begin{bmatrix}m_{1} & m_{2} \\1 & -1\end{bmatrix}\begin{bmatrix}v_{1,f} \\v_{2,f}\end{bmatrix} = 
+\begin{bmatrix}m_{1}v_{1} + m_{2}v_{2} \\v_{2}-v_{1}\end{bmatrix}= \begin{bmatrix}m_{1}v_{1,f} + m_{1}v_{2,f} \\v_{1,f}-v_{2,f}\end{bmatrix}
+$$
+$$
+\begin{bmatrix}m_{1} & m_{2} \\1 & -1\end{bmatrix}\begin{bmatrix}v_{1,f} \\v_{2,f}\end{bmatrix} = 
+\begin{bmatrix}m_{1}v_{1} + m_{2}v_{2} \\v_{2}-v_{1}\end{bmatrix} \tag{we only care about this}
+$$
+> Note that we now need to *solve* for the inverse of a matrix. We haven't really figured out how to exactly get our selves to some equation (at least at time of writing); but a matrix inverse is generally defined as the following: 
+> $$\begin{align}\mathbf{A} &= \begin{bmatrix}a & b \\c & d\end{bmatrix} \\\mathbf{A}^{-1} &=\frac{1}{\det \mathbf{A}}\text{adj }\mathbf{A} = \frac{1}{ad-bc}\begin{bmatrix}d & -b \\-c & a\end{bmatrix}\end{align}$$
+> We denote $\mathbf{A}^{-1}$ the inverse of matrix $\mathbf{A}$, and has the property that $\mathbf{A}\mathbf{A^{-1}}=\mathbf{I}$:$$\begin{align}\left( \frac{1}{ad-bc} \right)\begin{bmatrix}a & b \\c & d\end{bmatrix}\begin{bmatrix}d & -b \\-c & a\end{bmatrix} &= \begin{bmatrix}ad-bc & -ab+ba \\cd-dc & -cb+da\end{bmatrix}\left( \frac{1}{ad-bc} \right) \\\begin{bmatrix}\frac{ad-bc}{ad-bc} & 0 \\0 & \frac{ad-bc}{ad-bc}\end{bmatrix} & = \begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix} \\\therefore, \mathbf{AA}^{-1} &= \mathbf{I}\end{align}$$
+
+For our case, we want to solve for some $\mathbf{A^{-1}}$, or in other words the inverse of our matrix $\begin{bmatrix}m_{1} & m_{2}\\1 & -1\end{bmatrix}$. Taking our formula above; then we see that; 
+$$
+\begin{bmatrix}m_{1} & m_{2} \\1 & -1\end{bmatrix}^{-1} = \frac{1}{-(m_{1}+m_{2})}\begin{bmatrix}-1 & m_{2} \\-1 & m_{1}\end{bmatrix}
+$$
+Then: 
+$$
+\begin{bmatrix}v_{1,f} \\v_{2,f}\end{bmatrix} = \left( -\frac{1}{m_{1}+m_{2}} \right)\begin{bmatrix}
+
 \end{bmatrix}
 $$
