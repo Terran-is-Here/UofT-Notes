@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T18:04:41.310-04:00
-edited_seconds: 840
+updated_at: 2026-10-10T18:24:53.880-04:00
+edited_seconds: 1120
 course: ESC194H1
 tags:
   - ESC194H1
@@ -108,13 +108,28 @@ We will now detail some more theorems which may be useful for analysis.
 > > $$\sum^n_{i=1}i = \frac{n(n+1)}{2}$$
 > 
 > > *Proof*
-> > Define the sum of this statement as some value $S$, that is $S=1+2+3+\dots+n-1+n$. Writing them in ascending and descending order gives us: 
+> > Define the sum of this statement as some value $S$, that is $S=1+2+3+\dots+n-1+n$. Writing them in ascending and descending order gives us: $$\begin{align}S &= 1+2+3+\dots+n-1+n \\S &= n + n-1 + n-2 + \dots + 3+2+1 \\\end{align}$$
+> > Summing these up gives us the following: $$\begin{align}2S &=\underbrace{ (n+1) + (n+1) + \dots +(n+1)}_{n \text{ times}} \\\sum _{i=1}^n= S &= \frac{n(n+1)}{2}\end{align}$$
+
+> *Theorem 3.6*
+> Prove the following formula for the sum of the *squares* of the first $n$ integers. 
+> > $$\sum^n_{i=1}i^2 = 1 + 2^2 + 3^3 + \dots + n^2 = \frac{n(n+1)(2n+1)}{6}$$
+> 
+> > Proof 
+> > We will prove this through Induction.
+> > * We will first show that $n=1$ holds true for the formula $\frac{n(n+1)(2n+1)}{6} = 1*2*3 =1$, which holds.
+> > * We now assume that this holds true for some $n=k$, that is $\frac{k(k+1)(2k+1)}{6}$. 
+> > 
+> > We now need to prove this for $n=k+1$: 
 
 $$
 \begin{align}
-S &= 1+2+3+\dots+n-1+n \\
-S &= n + n-1 + n-2 + \dots + 3+2+1 \\
+\sum_{i=1}^{k+1}i^2 &= \underbrace{1^2 + 2^2 + \dots + k^2}_{\text{Equivalent to }n=k} + (k+1)^2\\&=\frac{k(k+1)(2k+1)+6(k+1)^2}{6}  \\
+&= (k+1) \frac{k(2k+1)+6(k+1)}{6} \\
+&=(k+1)\frac{2k^2+k+6k+6}{6} \\
+&=(k+1)\frac{2k^2+7k+6}{6}  \\
+&=(k+1)\frac{2k^2+7k+6}{6} 
 \end{align}
 $$
-Summing these up gives us the following: $$\begin{align}2S &=\underbrace{ (n+1) + (n+1) + \dots +(n+1)}_{n \text{ times}} \\\sum _{i=1}^n= S &= \frac{n(n+1)}{2}\end{align}$$
+
 
