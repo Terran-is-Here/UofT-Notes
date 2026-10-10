@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T17:08:56.202-04:00
-edited_seconds: 400
+updated_at: 2026-10-10T17:44:44.089-04:00
+edited_seconds: 540
 course: ESC194H1
 tags:
   - ESC194H1
@@ -68,4 +68,21 @@ Note that we can extend this to the concept of Antiderivatives.
 
 Note what Theorem 1.1 indicates: Taking the antiderivative of a function results in an *infinite* range of functions that have the same shape but are solely vertically translated from each other. Intuitively this makes sense; $F(x) = G(x) +C$, then with $F'(x)=G'(x)=f$, then $F'(x) = f(x)$, as $\frac{d}{dx}C=0$ for any constant. 
 
+> Note, notation 
+### Antiderivative Formulas 
+Antiderivative Formulas / Expressions arise from the concept that Antiderivatives differentiate back into their original function. 
 
+> Power Rule 
+> From $f(x) = x^n, f'(x)=nx^{n-1}$ Then the antiderivative of $f(x)=x^n$ is:$$f(x) = x^n, \int f(x) dx = \frac{x^{n+1}}{n+1} + C$$
+> Note this is only true if and only if $n\neq -1$. 
+> > In this case, $f(x)=x^{-1}, F(x) = \ln|x| +C$. 
+
+> Differentiation Rules 
+> The Sum Rule natively applies with antidifferentiation, as well as the constant rule. 
+> > Constant Rule:
+> > $$f(x)=c, F(x) = cx + C$$
+
+> Trigonometric Rules
+> Essentially reverse the direction of your differentiation of the trig functions. 
+> $$\begin{array}{cc|c}\text{ Function} && \text{Corresponding Antiderivative} \\\cos(x) &  & \sin(x) \\\sin(x) &  & -\cos(x) \\\sec^2(x) &  & \tan(x) \\\sec(x)\tan(x) &  & \sec(x)\end{array}$$
+> That is, you know that the derivative of $\sin$ is $\cos$, therefore the antiderivative of $\cos$ is $\sin$. Same logic applies for the rest; since the **antiderivative when differentiated returns the original function**. 
