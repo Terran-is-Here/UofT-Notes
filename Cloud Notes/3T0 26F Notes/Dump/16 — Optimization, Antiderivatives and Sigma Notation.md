@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T18:24:53.880-04:00
-edited_seconds: 1120
+updated_at: 2026-10-10T18:31:26.679-04:00
+edited_seconds: 1230
 course: ESC194H1
 tags:
   - ESC194H1
@@ -72,17 +72,17 @@ Note what Theorem 1.1 indicates: Taking the antiderivative of a function results
 ### Antiderivative Formulas 
 Antiderivative Formulas / Expressions arise from the concept that Antiderivatives differentiate back into their original function. 
 
-> Power Rule 
+> [!theorem] Power Rule 
 > From $f(x) = x^n, f'(x)=nx^{n-1}$ Then the antiderivative of $f(x)=x^n$ is:$$f(x) = x^n, \int f(x) dx = \frac{x^{n+1}}{n+1} + C$$
 > Note this is only true if and only if $n\neq -1$. 
 > > In this case, $f(x)=x^{-1}, F(x) = \ln|x| +C$. 
 
-> Differentiation Rules 
+> [!theorem] Differentiation Rules 
 > The Sum Rule natively applies with antidifferentiation, as well as the constant rule. 
 > > Constant Rule:
 > > $$f(x)=c, F(x) = cx + C$$
 
-> Trigonometric Rules
+> [!theorem] Trigonometric Rules
 > Essentially reverse the direction of your differentiation of the trig functions. 
 > $$\begin{array}{cc|c}\text{ Function} && \text{Corresponding Antiderivative} \\\cos(x) &  & \sin(x) \\\sin(x) &  & -\cos(x) \\\sec^2(x) &  & \tan(x) \\\sec(x)\tan(x) &  & \sec(x)\end{array}$$
 > That is, you know that the derivative of $\sin$ is $\cos$, therefore the antiderivative of $\cos$ is $\sin$. Same logic applies for the rest; since the **antiderivative when differentiated returns the original function**. 
@@ -97,39 +97,36 @@ $$
 \begin{align}
 \sum_{x=1}^n 1 &= n \tag{Theorem 2.1} \\
 \sum_{x=m}^nca_{i} &= c\sum_{x=m}^na_{i} \tag{Theorem 2.2} \\
-\sum^n_{x=m}a_{i}+b_{i} & = \sum_{x=m}^na_{i} + \sum ^n_{x=m}b_{i} \tag{Theorem 3.3} \\
-\sum^n_{x=m}a_{i}-b_{i} & = \sum_{x=m}^na_{i} - \sum ^n_{x=m}b_{i} \tag{Theorem 3.4} 
+\sum^n_{x=m}a_{i}+b_{i} & = \sum_{x=m}^na_{i} + \sum ^n_{x=m}b_{i} \tag{Theorem 2.3} \\
+\sum^n_{x=m}a_{i}-b_{i} & = \sum_{x=m}^na_{i} - \sum ^n_{x=m}b_{i} \tag{Theorem 2.4} 
 \end{align}
 $$
 We will now detail some more theorems which may be useful for analysis. 
 
-> *Theorem 3.5*
+> [!theorem] *Theorem 2.5*
 > Prove the following formula for the sum of the first $n$ integers: 
 > > $$\sum^n_{i=1}i = \frac{n(n+1)}{2}$$
 > 
-> > *Proof*
+> > [!caution]- *Proof*
 > > Define the sum of this statement as some value $S$, that is $S=1+2+3+\dots+n-1+n$. Writing them in ascending and descending order gives us: $$\begin{align}S &= 1+2+3+\dots+n-1+n \\S &= n + n-1 + n-2 + \dots + 3+2+1 \\\end{align}$$
 > > Summing these up gives us the following: $$\begin{align}2S &=\underbrace{ (n+1) + (n+1) + \dots +(n+1)}_{n \text{ times}} \\\sum _{i=1}^n= S &= \frac{n(n+1)}{2}\end{align}$$
 
-> *Theorem 3.6*
+> [!theorem] *Theorem 2.6*
 > Prove the following formula for the sum of the *squares* of the first $n$ integers. 
 > > $$\sum^n_{i=1}i^2 = 1 + 2^2 + 3^3 + \dots + n^2 = \frac{n(n+1)(2n+1)}{6}$$
 > 
-> > Proof 
+> > [!caution]- Proof 
 > > We will prove this through Induction.
 > > * We will first show that $n=1$ holds true for the formula $\frac{n(n+1)(2n+1)}{6} = 1*2*3 =1$, which holds.
 > > * We now assume that this holds true for some $n=k$, that is $\frac{k(k+1)(2k+1)}{6}$. 
 > > 
-> > We now need to prove this for $n=k+1$: 
+> > We now need to prove this for $n=k+1$: $$\begin{align}\sum_{i=1}^{k+1}i^2 &= \underbrace{1^2 + 2^2 + \dots + k^2}_{\text{Equivalent to }n=k} + (k+1)^2\\&=\frac{k(k+1)(2k+1)+6(k+1)^2}{6}  \\&= (k+1) \frac{k(2k+1)+6(k+1)}{6} \\&=(k+1)\frac{2k^2+k+6k+6}{6} \\&=(k+1)\frac{2k^2+7k+6}{6}  \\&=(k+1)\frac{(2k+3)(k+2)}{6}  \\&=\frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}\end{align}$$
+> > Therefore, this identity holds. 
 
-$$
-\begin{align}
-\sum_{i=1}^{k+1}i^2 &= \underbrace{1^2 + 2^2 + \dots + k^2}_{\text{Equivalent to }n=k} + (k+1)^2\\&=\frac{k(k+1)(2k+1)+6(k+1)^2}{6}  \\
-&= (k+1) \frac{k(2k+1)+6(k+1)}{6} \\
-&=(k+1)\frac{2k^2+k+6k+6}{6} \\
-&=(k+1)\frac{2k^2+7k+6}{6}  \\
-&=(k+1)\frac{2k^2+7k+6}{6} 
-\end{align}
-$$
+> Theorem 2.7 
+> Prove the following formula for the sum of the *cubes* of the first $n$ integers. 
+> $$\sum^n_{i=1}i^3 = \left[ \frac{n(n+1)}{2} \right]^2$$
+> > Proof 
+> > Left as an exercise to the reader. 
 
-
+Note that limits can be applied in combination with Sigma Notation (though normally, we evaluate what the Sigma notation evaluates to, then we apply our limits from there). 
