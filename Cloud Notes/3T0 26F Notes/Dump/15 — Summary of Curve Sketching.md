@@ -10,7 +10,7 @@ Week: 6
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[14 — Derivatives, Function Shape, Horizontal Asymptotes]]
-Next: [[16 — Optimization and Antiderivatives]]
+Next: [[16 — Optimization, Antiderivatives and Sigma Notation]]
 > [!quote] Recommended Reading 
 > Section 3.5 of the Stewart Textbook
 

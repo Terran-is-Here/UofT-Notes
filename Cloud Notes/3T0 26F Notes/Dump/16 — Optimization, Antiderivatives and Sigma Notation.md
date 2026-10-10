@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T17:44:44.089-04:00
-edited_seconds: 540
+updated_at: 2026-10-10T18:04:41.310-04:00
+edited_seconds: 840
 course: ESC194H1
 tags:
   - ESC194H1
@@ -68,7 +68,7 @@ Note that we can extend this to the concept of Antiderivatives.
 
 Note what Theorem 1.1 indicates: Taking the antiderivative of a function results in an *infinite* range of functions that have the same shape but are solely vertically translated from each other. Intuitively this makes sense; $F(x) = G(x) +C$, then with $F'(x)=G'(x)=f$, then $F'(x) = f(x)$, as $\frac{d}{dx}C=0$ for any constant. 
 
-> Note, notation 
+> Note, notation wise, the arbitrary constant that arises from antidifferentiation is always notated by some capital $C$. In terms of determining what value this is, we need to be given some $F(a)=d$ to calculate $C$ (or in other words, we need to have the value of the actual antiderivative at some point). 
 ### Antiderivative Formulas 
 Antiderivative Formulas / Expressions arise from the concept that Antiderivatives differentiate back into their original function. 
 
@@ -86,3 +86,35 @@ Antiderivative Formulas / Expressions arise from the concept that Antiderivative
 > Essentially reverse the direction of your differentiation of the trig functions. 
 > $$\begin{array}{cc|c}\text{ Function} && \text{Corresponding Antiderivative} \\\cos(x) &  & \sin(x) \\\sin(x) &  & -\cos(x) \\\sec^2(x) &  & \tan(x) \\\sec(x)\tan(x) &  & \sec(x)\end{array}$$
 > That is, you know that the derivative of $\sin$ is $\cos$, therefore the antiderivative of $\cos$ is $\sin$. Same logic applies for the rest; since the **antiderivative when differentiated returns the original function**. 
+
+## Sigma Notation
+Sigma Notation is the discrete version of its more well known sibling, the one for Integration. Sigma notation is defined as the following: 
+$$
+\sum _{x=m}^na_{i} = \underbrace{a_{m} + a_{m+1}  + a_{m+2} + \dots + a_{n}}_{\text{Some set of numbers (can be from a function)}}
+$$
+From this definition, we can derive some very useful theorems for analysis. The following below are trivial theorems and the proof is left as an exercise to the reader.  
+$$
+\begin{align}
+\sum_{x=1}^n 1 &= n \tag{Theorem 2.1} \\
+\sum_{x=m}^nca_{i} &= c\sum_{x=m}^na_{i} \tag{Theorem 2.2} \\
+\sum^n_{x=m}a_{i}+b_{i} & = \sum_{x=m}^na_{i} + \sum ^n_{x=m}b_{i} \tag{Theorem 3.3} \\
+\sum^n_{x=m}a_{i}-b_{i} & = \sum_{x=m}^na_{i} - \sum ^n_{x=m}b_{i} \tag{Theorem 3.4} 
+\end{align}
+$$
+We will now detail some more theorems which may be useful for analysis. 
+
+> *Theorem 3.5*
+> Prove the following formula for the sum of the first $n$ integers: 
+> > $$\sum^n_{i=1}i = \frac{n(n+1)}{2}$$
+> 
+> > *Proof*
+> > Define the sum of this statement as some value $S$, that is $S=1+2+3+\dots+n-1+n$. Writing them in ascending and descending order gives us: 
+
+$$
+\begin{align}
+S &= 1+2+3+\dots+n-1+n \\
+S &= n + n-1 + n-2 + \dots + 3+2+1 \\
+\end{align}
+$$
+Summing these up gives us the following: $$\begin{align}2S &=\underbrace{ (n+1) + (n+1) + \dots +(n+1)}_{n \text{ times}} \\\sum _{i=1}^n= S &= \frac{n(n+1)}{2}\end{align}$$
+
