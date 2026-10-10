@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T13:58:50.664-04:00
-edited_seconds: 2050
+updated_at: 2026-10-10T14:15:47.267-04:00
+edited_seconds: 2060
 course: ESC194H1
 tags:
   - ESC194H1
@@ -136,6 +136,8 @@ Note that MVT extends a very interesting corollary:
 > $$f'(g) = \frac{f(x)-f(a)}{x-a}$$
 > Note from our givens, we know that $f'(g)=0$ if $g\in(a,b)$, but since $g\in(a,x)\subset(a,b)$ then the given concept of $f'(g)=0$ is still applicable: $$f'(g) = \frac{f(x)-f(a)}{x-a}=0 \implies f(x) = f(a)$$
 > Note that our definition for $x$ was an arbitrary value between $a$ and $b$ (inclusive). If $x=a$, $f(a)=f(a)$, and if $x=b$, $f(b)=f(a)$ which means that across the interval of $[a,b]$, $f(x)=f(a)$, which implies that $f$ is some constant value. 
+
+^4698a8
 
 Or in other words, we can show that the derivative of any function across an interval will be $0$ if and only if that function is some constant.  
 ## Cauchy's Mean Value Theorem 
