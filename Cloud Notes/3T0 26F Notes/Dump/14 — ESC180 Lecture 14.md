@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-09T12:56:08.340-04:00
-edited_seconds: 560
+updated_at: 2026-10-10T13:41:22.009-04:00
+edited_seconds: 570
 course: ESC180H1
 tags:
   - ESC180H1

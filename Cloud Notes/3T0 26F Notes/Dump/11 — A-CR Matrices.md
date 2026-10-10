@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T12:29:56.990-04:00
-edited_seconds: 590
+updated_at: 2026-10-10T13:45:28.026-04:00
+edited_seconds: 680
 course: ESC103H1
 tags:
   - ESC103H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[10 — Matrix Multiplication]]
-Next:
+Next: [[]]
 
 > [!quote] Learning Objectives 
 > * Construct a matrix $\mathbf{C}$ from matrix $\mathbf{A}$ using the definition of independent vectors. 
@@ -101,4 +101,11 @@ x_{3}&=t
 $$
 Which then implies 
 $$\begin{bmatrix}x_{1}\\x_{2}\\x_{3}\end{bmatrix} = t\begin{bmatrix}-2\\-1 \\1\end{bmatrix}$$
-As the solution to our above expression of $\mathbf{A}\vec{x}=\vec{0}$. 
+As the solution to our above expression of $\mathbf{A}\vec{x}=\vec{0}$. Note that this entire expression leads us to two more core definitions for Linear Algebra: 
+> [!theorem] Nullspace/Kernel
+> The **nullspace** (otherwise known as the Kernel) of some matrix $\mathbf{A}$ is the vector space for the solution of $\vec{x}$ in $\mathbf{A}\vec{x}=\vec{0}$. 
+
+> [!theorem] Nullity
+> **Nullity** is the *Dimension* of the null space; that is it's corresponding amount of basis vectors. 
+
+
