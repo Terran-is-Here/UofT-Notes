@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-09T23:57:25.364-04:00
-edited_seconds: 780
+updated_at: 2026-10-10T00:17:41.863-04:00
+edited_seconds: 1110
 course: PHY180H1
 tags:
   - PHY180H1
@@ -83,7 +83,27 @@ $$
 $$
 Then: 
 $$
-\begin{bmatrix}v_{1,f} \\v_{2,f}\end{bmatrix} = \left( -\frac{1}{m_{1}+m_{2}} \right)\begin{bmatrix}
-
+\begin{align}
+\begin{bmatrix}v_{1,f} \\v_{2,f}\end{bmatrix} &= \left( -\frac{1}{m_{1}+m_{2}} \right)\begin{bmatrix}-1 & -m_{2} \\-1 & m_{1}\end{bmatrix}\begin{bmatrix}m_{1}v_{1} + m_{2}v_{2} \\v_{2}-v_{1}\end{bmatrix} \\
+&=\left( -\frac{1}{m_{1}+m_{2}} \right)\begin{bmatrix}
+-m_{1}v_{1}-m_{2}v_{2}  -m_{2}v_{2}+m_2v_{1}  =-2m_{2}v_{2} +v_{1}(m_{2}-m_{1}) \\
+-m_{1}v_{1}-m_{2}v_{2} + m_{1}v_{2} -m_{1}v_{1} = -2m_{1}v_{1} + v_{2}(m_{1}-m_{2})
+\end{bmatrix} \\ \\
+&=\left( \frac{1}{m_{1}+m_{2}} \right)\begin{bmatrix}
+2m_{2}v_{2} -v_{1}(m_{2}-m_{1}) \\
+2m_{1}v_{1} - v_{2}(m_{1}-m_{2})
+\end{bmatrix} \\ \\
+\begin{bmatrix}v_{1,f} \\v_{2,f}\end{bmatrix} &=\begin{bmatrix}
+\frac{2m_{2}v_{2}}{m_{1}+m_{2}} - \frac{v_{1}(m_{2}-m_{1})}{(m_{1}+m_{2})} \\
+\frac{2m_{1}v_{1}}{(m_{1}+m_{2})}-\frac{v_{2}(m_{1}-m_{2})}{(m_{1}+m_{2})}
 \end{bmatrix}
+\end{align}
+$$
+That is: 
+$$
+
+\begin{align} \\
+v_{1,f} = \frac{2m_{2}v_{2}}{m_{1}+m_{2}} - v_{1} \frac{m_{2}-m_{1}}{m_{1}+m_{2}} \\
+v_{2,f} = \frac{2m_{1}v_{1}}{m_{1}+m_{2}} - v_{1} \frac{m_{1}-m_{2}}{m_{1}+m_{2}}
+\end{align}
 $$
