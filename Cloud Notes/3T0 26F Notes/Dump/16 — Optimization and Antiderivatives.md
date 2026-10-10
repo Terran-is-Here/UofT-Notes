@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T14:55:01.677-04:00
-edited_seconds: 380
+updated_at: 2026-10-10T17:08:56.202-04:00
+edited_seconds: 400
 course: ESC194H1
 tags:
   - ESC194H1
@@ -51,7 +51,8 @@ Note that the concept of taking an antiderivative also has an added component to
 > If $f'(x)=g'(x) \forall x\in(a,b)$, then $f(x)-g(x)$ is constant on $(a,b)$, that is $f(x) = g(x)+c$. 
 >
 > > *Proof*
-> > If $f'(x)=g'(x)$, define the function $L(x)=f(x)-g(x)$. $L'(x)=f'(x)-g'(x)=0 \implies L(x)=C$, then $f(x)-g(x) = C \implies f(x)=g(x)+C$
+> > If $f'(x)=g'(x)$, define the function $L(x)=f(x)-g(x)$.
+> >  $L'(x)=f'(x)-g'(x)=0 \implies L(x)=C$, then $f(x)-g(x) = C \implies f(x)=g(x)+C$
 
 Note that we can extend this to the concept of Antiderivatives.
 
@@ -59,7 +60,8 @@ Note that we can extend this to the concept of Antiderivatives.
 > Let $F(x),G(x)$ be the antiderivatives of some function $f$, $F(x) = G(x)+C$. 
 >
 > > *Proof* 
-> > If $F(x),G(x)$ are antiderivatives of some function $f$, then $F'(x)=G'(x)=f$. Using a same set of logic as the corollary above, define a function $L(x) = F(x)-G(x)$.
+> > If $F(x),G(x)$ are antiderivatives of some function $f$, then $F'(x)=G'(x)=f$. 
+> > Using the same set of logic as the corollary above, define a function $L(x) = F(x)-G(x)$.
 > > $L'(x) = F'(x)-G'(x) = 0 \implies L(x)=C$, then $F(x)-G(x)=C$, which then shows that $F(x)=G(x)+C$. 
 > 
 > > Or, an Antiderivative of a function $f$ will always have some constant term $C$ on the end; which can be set to any arbitrary value. 
