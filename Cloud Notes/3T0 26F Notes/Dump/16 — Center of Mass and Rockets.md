@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-11T11:45:10.921-04:00
-edited_seconds: 570
+updated_at: 2026-10-11T14:58:05.122-04:00
+edited_seconds: 790
 course:
 tags:
 "Lecture #": 0
@@ -80,8 +80,6 @@ Note that the term in the parenthesis *actually gives us the center of mass*. Or
 > $$\boxed{\vec{x_{\text{CoM}}} =  \frac{1}{M}\sum_{j=1}^N m_{j} \vec{x_{j}}}$$
 > Where $M$ is the system's total energy, $m_{j}$ being the mass of an individual particle, and $\vec{x_{j}}$ being it's distance from some origin point as a vector. 
 
-
-
 Note that this is in terms of a vector; we can break this up into it's dimensional components; then performing the traditional resultant vector math to get the equivalent center of mass: 
 $$
 \begin{align}
@@ -91,3 +89,32 @@ $$
 \end{align}
 $$
 Where then the resultant combined center of mass vector is equivalent to combining all the corresponding vector components of the equation above. 
+## Rocket Propulsion
+Rockets are vehicles which expel some material out from behind them in order to accelerate; or in other words; they are *reaction* engines. Let us define our rocket's initial momentum as the following: 
+$$
+p_{r}=v_{r}m_{r}
+$$
+Consider now the case when we have rocket gasses escaping out of the rocket. For the purposes of this derivation, we will assume that the change in the mass of the rocket due to rocket fuel being expelled (i.e; $dm_{g}$) is constant. 
+
+This gas will travel towards the left with some velocity $u$; or in terms of the system from the surface; some velocity $v-u$. Our rocket will also now gain some speed $dv$ from the escape gasses pushing on the rocket; thus taking conservation of momentum: 
+$$
+\begin{align}
+p_{t} &  = (m_{r}-dm_{g})(v+dv) + dm_{g}(v-u)  & \text{w/CoM} \\
+m_{r}  & =m_{r}v + dvm_{r} -dm_{g}v - dm_{g}dv + dm_{g}v -dm_{g}u \\
+0 & =dvm_{r}-dm_{g}dv-dm_{g}u \\
+m_{r}dv  & =dm_{g}dv +dm_{g}u
+\end{align}
+$$
+Note that $dm_{g}dv$ will be miniscule/negligible, therefore we can equate this as: 
+$$
+m_{r}dv = dm_{g}u 
+$$
+Note that $dm_{g}$ is a change of mass from the total mass of the rocket; that is $dm_{g} = -dm$: 
+$$
+\begin{align}
+m_{r}dv  & = -dm u \\
+dv  & =-u \frac{dm}{m_{r}} \\
+\int_{t_{0}}^{t_{1}}dv  & =-u \int_{m_{0}}^m{f} \frac{1}{m}dm  \\
+\Delta v  & =-u \ln|
+\end{align}
+$$
