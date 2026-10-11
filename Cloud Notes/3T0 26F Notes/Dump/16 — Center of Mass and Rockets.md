@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-11T15:03:55.095-04:00
-edited_seconds: 830
+updated_at: 2026-10-11T16:56:48.184-04:00
+edited_seconds: 1190
 course:
 tags:
 "Lecture #": 16
@@ -119,9 +119,40 @@ dv  & =-u \frac{dm}{m_{r}} \\
 \Delta v  & =u\ln\left( \frac{m_{0}}{m} \right)
 \end{align}
 $$
-Where $u$ represents the *exhaust velocity* of our propellant. 
+Where $u$ represents the *exhaust velocity* of our propellant. The equation above represents the *rocket equation* of our rocket.
+> [!theorem] Rocket Equation (without gravity) 
+> $$\Delta v   =u\ln\left( \frac{m_{0}}{m} \right)$$
+> Where $m_{0}$ represents the wet mass of the rocket, and $m$ represents the dry mass of the rocket. 
 ### With Gravity
 Recall our previous step: 
 $$
-p_{t} = 
+p_{t} =  (m_{r}-dm_{g})(v+dv) + dm_{g}(v-u)
 $$
+Note that this is some $p_{i}=p_{f}$ situation. Recall that $p_{t}=m_{r}v$; then with this we can say that
+$$
+dp =  (m_{r}-dm_{g})(v+dv) + dm_{g}(v-u) - m_{r}v
+$$
+Recall that $dp = \vec{F}dt$, For our context; this would be some $m_{r}gdt$; then; reusing the steps we derived above; then: 
+$$
+\begin{align}
+-m_{r}g dt & = m_{r}v + m_{r}dv - dm_{g}v - dm_{g}dv +  dm_{g}v -dm_{g}u-m_{r}v \\
+-m_{r}g dt & = m_{r}dv - dm_{g}dv -dm_{g}u  & dm_{g}dv \to 0 \\
+-m_{r}gdt  & =m_{r}dv - dm_{g}u & dm_{g} u = -udm_{r} \\
+-m_{r}gdt  & =m_{r}dv +udm_{r}  \\
+-m_{r}gdt - udm_{r} & =m_{r}dv \\
+\end{align}
+$$
+From the last line there; then: 
+$$
+\begin{align}
+m_{r}dv & =-u dm_{r}-m_{r}gdt \\
+dv  & =-u \frac{1}{m_{r}}dm_{r} - gdt \\
+\int _{v_{0}}^{v_{t}}dv & =-u\int_{m_{0}}^{m_{r}} \frac{1}{m_{r}}dm_{r} - g\int_{t_{0}}^t dt \\
+v_{t}-v_{0}  & =-u\left[ \ln\left( \frac{x}{m_{r}} \right) \right]^{m_{r}}_{m_{0}}-g(t-t_{0}) \\
+\Delta v & =-u\left( -\ln\left( \frac{m_{0}}{m_{r}} \right) \right)-g\Delta t \\[1.5em]
+\end{align}
+$$
+From here, we get the rocket equation for a rocket affected by gravity: 
+$$\boxed{\Delta v  =u\ln\left( \frac{m_{0}}{m_{r}} \right)-g\Delta t}$$
+
+
