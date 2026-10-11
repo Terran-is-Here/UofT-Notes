@@ -1,12 +1,13 @@
 ---
-updated_at: 2026-10-09T22:47:03.069-04:00
-edited_seconds: 780
+updated_at: 2026-10-10T21:28:45.211-04:00
+edited_seconds: 790
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 14
-Lecture Date: 2026-10-07
+Lecture Date: 2026-10-09
 Week: 5
+Created: October 7th 2026, 11:22:24 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[13 — Conservation of Energy, Stability]]
