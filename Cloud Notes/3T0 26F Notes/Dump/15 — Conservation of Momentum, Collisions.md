@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T21:44:40.627-04:00
-edited_seconds: 1430
+updated_at: 2026-10-10T21:56:50.877-04:00
+edited_seconds: 1590
 course: PHY180H1
 tags:
   - PHY180H1
@@ -11,7 +11,7 @@ Created: October 9th 2026, 10:47:01 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[14 — Momentum and Impulse]]
-Next:
+Next: [[16 — Center of Mass and Rockets]]
 > [!quote] Recommended Reading 
 > Sections 9.4, 9.5 
 --- 
@@ -91,15 +91,23 @@ The equation $v_{1} + v_{1,f} = v_{2}+v_{2,f}$ is actually quite significant; pa
 > That is: $$\boxed{\begin{aligned} v_{1,f} = \frac{2m_{2}v_{2}}{m_{1}+m_{2}} - v_{1} \frac{m_{2}-m_{1}}{m_{1}+m_{2}} \\[1em]v_{2,f} = \frac{2m_{1}v_{1}}{m_{1}+m_{2}} - v_{2} \frac{m_{1}-m_{2}}{m_{1}+m_{2}}\end{aligned}}$$
 > Note that the equations above are symmetric with each other, the subscripts are simply swapped in the numerators. 
 
-> Traditional Derivation
+> [!theorem] Traditional Derivation
 > Taking the equation $v_{1}+v_{1,f} = v_{2}+v_{2,f}$, we can rearrange this into something that substitutes out one of our velocities. 
 > > Taking the final velocity of object one as something to back-substitute 
 > > $v_{1,f}=v_{2}+v_{2,f} - v_{1}$
-> > Plugging this into our equations above to the conservation of momentum: 
+> > Plugging this into our equations above to the conservation of momentum: $$\begin{align}m_{1}v_{1} - m_{1}(v_{2} + v_{2,f} -v_{1}) &= m_{2}v_{2,f} -m_{2}v_{2} \\m_{1}v_{1} - m_{1}v_{2} - m_{1}v_{2,f} + m_{1}v_{1} &= m_{2}v_{2,f} - m_{2}v_{2} \\2m_{1}v_{1} - m_{1}v_{2}+ m_{2}v_{2}  & = m_{1}v_{2,f} + m_{2}v_{2,f} \\2m_{1}v_{1} -v_{2}(m_{1}-m_{2})  & =v_{2,f}(m_{1}+m_{2}) \\[1.5em]\frac{2m_{1}v_{1}}{m_{1}+m_{2}} - v_{2} \frac{m_{1}-m_{2}}{m_{1}+m_{2}}  & =v_{2,f}\end{align}$$
+> > This equation above is equivalent to the equation that we got from the linear algebra derivation above. The other solution is essentially the same, just with all subscripts flipped.
+> > 
 
+### Perfectly Inelastic 
+Perfectly inelastic collisions have a coefficient of restitution of $0$, meaning that the relative separation velocities of our objects are $0$, or in other words; our objects are stuck together. In this case, our momentum equations actually simplify significantly: 
 $$
 \begin{align}
-m_{1}v_{1} - m_{1}(v_{2} + v_{2,f} -v_{1}) = m_{2}v_{2,f} -m_{2}v_{2} \\
-m_{1}v_{1} - m_{1}v_{2} - m_{1}v_{2,f} + m_{1}v_{1} = m_{2}v_{2,f} - m_{2}v_{2}
+m_{1}v_{1} + m_{2}v_{2} &= (m_{1}+m_{2})v_{f} \\
+\frac{m_{1}v_{1} + m_{2}v_{2}}{m_{1}+m_{2}} & =v_{f}
 \end{align}
 $$
+## Collisions in Higher Dimensions
+Similarly to Kinematics, the underlying principle is that since Momentum is a property of mass *and* velocity, then we can solve it as with any multidimensional kinematics problem by simply solving it as separate one-dimensional momentum problems.
+
+Note that the Conservation of Momentum (and corresponding coefficient of restitution) all remain constant across all dimensions of a problem unless otherwise stated. Simply break up into dimensional components; solve each individually; then solve for the resultant vector of the problem as usual. 
