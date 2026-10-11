@@ -1,9 +1,9 @@
 ---
-updated_at: 2026-10-11T14:58:05.122-04:00
-edited_seconds: 790
+updated_at: 2026-10-11T15:03:55.095-04:00
+edited_seconds: 830
 course:
 tags:
-"Lecture #": 0
+"Lecture #": 16
 Lecture Date: 2026-10-10
 Week:
 ---
@@ -115,6 +115,13 @@ $$
 m_{r}dv  & = -dm u \\
 dv  & =-u \frac{dm}{m_{r}} \\
 \int_{t_{0}}^{t_{1}}dv  & =-u \int_{m_{0}}^m{f} \frac{1}{m}dm  \\
-\Delta v  & =-u \ln|
+\Delta v  & =-u \ln\left( \frac{m_{0}}{m} \right) & \text{Since } u \text{ points opposite to } v \\
+\Delta v  & =u\ln\left( \frac{m_{0}}{m} \right)
 \end{align}
+$$
+Where $u$ represents the *exhaust velocity* of our propellant. 
+### With Gravity
+Recall our previous step: 
+$$
+p_{t} = 
 $$
