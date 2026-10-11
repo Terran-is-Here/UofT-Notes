@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T13:33:51.466-04:00
-edited_seconds: 2010
+updated_at: 2026-10-11T17:28:34.343-04:00
+edited_seconds: 2020
 course: ESC194H1
 tags:
   - ESC194H1
@@ -172,6 +172,7 @@ For us to prove this; we need to apply another theorem called the Boundness Theo
 #### Boundness Theorem 
 The Boundness Theorem lets us show that, for any function defined and continuous on a closed interval $[a,b]$, it is bounded within that interval. 
 
+> [!theorem] Boundness Theorem
 > > *Given:* 
 > > $f$ is a function defined and continuous on the interval $[a,b]$
 > 
