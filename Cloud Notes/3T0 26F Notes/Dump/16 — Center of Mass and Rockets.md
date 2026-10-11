@@ -1,11 +1,13 @@
 ---
-updated_at: 2026-10-11T16:56:48.184-04:00
-edited_seconds: 1190
-course:
+updated_at: 2026-10-11T17:13:04.722-04:00
+edited_seconds: 1300
+course: PHY180H1
 tags:
+  - PHY180H1
 "Lecture #": 16
-Lecture Date: 2026-10-10
-Week:
+Lecture Date: 2026-10-16
+Week: 6
+Created: October 10th 2026, 9:57:06 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[15 — Conservation of Momentum, Collisions]]
@@ -121,8 +123,9 @@ dv  & =-u \frac{dm}{m_{r}} \\
 $$
 Where $u$ represents the *exhaust velocity* of our propellant. The equation above represents the *rocket equation* of our rocket.
 > [!theorem] Rocket Equation (without gravity) 
-> $$\Delta v   =u\ln\left( \frac{m_{0}}{m} \right)$$
-> Where $m_{0}$ represents the wet mass of the rocket, and $m$ represents the dry mass of the rocket. 
+> $$\Delta v   =u\ln\left( \frac{m_{0}}{m_{d}} \right)$$
+> Where $m_{0}$ represents the wet mass of the rocket, and $m_{d}$ represents the current dry mass of the rocket. This solves for the effective $\Delta v$ as a rocket goes from $m_{0} \to m_{d}$, or in other words, how much $\Delta v$ is offered by this rocket as it burns all of it's fuel. 
+> 
 ### With Gravity
 Recall our previous step: 
 $$
@@ -154,5 +157,9 @@ v_{t}-v_{0}  & =-u\left[ \ln\left( \frac{x}{m_{r}} \right) \right]^{m_{r}}_{m_{0
 $$
 From here, we get the rocket equation for a rocket affected by gravity: 
 $$\boxed{\Delta v  =u\ln\left( \frac{m_{0}}{m_{r}} \right)-g\Delta t}$$
+> [!theorem] Rocket Equation (with gravity) 
+> The rocket equation, taking into account a term of gravity, is represented by the following: 
+> $$\boxed{\Delta v  =u\ln\left( \frac{m_{0}}{m_{r}} \right)-g\Delta t}$$
+> Where $m_{0}$ represents the wet mass of the rocket, $m_{r}$ represents the dry mass of the rocket, $u$ represents the exhaust velocity, and $\Delta t$ represents the time it takes for our rocket to go from $m_{0} \to m_{r}$. 
 
 
