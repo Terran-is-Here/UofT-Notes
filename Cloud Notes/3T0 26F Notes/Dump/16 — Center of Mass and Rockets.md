@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-11T00:07:18.330-04:00
-edited_seconds: 320
+updated_at: 2026-10-11T00:19:39.267-04:00
+edited_seconds: 490
 course:
 tags:
 "Lecture #": 0
@@ -19,7 +19,7 @@ Next: N/A
 
 ---
 # Pre-Lecture Notes
-## Center of Mass
+## Extending Newtonian Mechanics
 So far, all Newtonian mechanics have been focused on defining the behaviors of point loads: 
 $$
 F=ma
@@ -52,3 +52,31 @@ $$
 
 $$
 That is, the net external force applied is equivalent to the sum of the corresponding change of momentum over the time period of *all* of the particles present in our object. 
+### Center of Mass
+Consider now that if our object has some total momentum represented by the points; some $P_{t}$; then: 
+$$
+F = \frac{dP_{t}}{dt}
+$$
+If we consider this situation; recall that we can define $P_{t}$ as $\sum p_{j}$; then take the following; note that $M$ represents the **total mass of the body**. 
+$$
+F = \sum^N_{j=1} \frac{d \vec{p_{j}}}{dt} = M\vec{a}
+$$
+Rewriting this; then: 
+$$
+\begin{align}
+M\vec{a} &  = \sum_{j=1}^N \frac{d\vec{p_{j}}}{dt} \\
+ & = \frac{d}{dt}\sum_{j=1}^N \vec{p_{j}}  & \text{Note, }\vec{p_{j}} = m_{j} \vec{v_{j}} = \frac{m_{j}\vec{x_{j}}}{dt}\\
+ & = \frac{d}{dt}\sum_{j=1}^N m_{j} \frac{d\vec{x_{j}}}{dt} \\
+ M\vec{a}&  = \frac{d^2}{dt^2}\sum_{j=1}^N m_{j}\vec{x_{j}}
+\end{align}
+$$
+Then, dividing by the *total* mass of the body: 
+$$
+\vec{a} =  \frac{d^2}{dt^2}\left( \frac{1}{M}\sum_{j=1}^N m_{j} \vec{x_{j}} \right)
+$$
+Note that the term in the parenthesis *actually gives us the center of mass*. Or in other words; Center of Mass is the *mean* of the system as a weighed average as a function of distance and weight. 
+
+$$
+\vec{x_{\text{CoM}}} =  \frac{1}{M}\sum_{j=1}^N m_{j} \vec{x_{j}}
+$$
+Note that this is in terms of a vector; we can break this up into it's dimensional components; then performing the traditional resultant vector math to get the equivalent center of mass. 
