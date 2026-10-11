@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-11T00:19:39.267-04:00
-edited_seconds: 490
+updated_at: 2026-10-11T11:45:10.921-04:00
+edited_seconds: 570
 course:
 tags:
 "Lecture #": 0
@@ -75,8 +75,19 @@ $$
 \vec{a} =  \frac{d^2}{dt^2}\left( \frac{1}{M}\sum_{j=1}^N m_{j} \vec{x_{j}} \right)
 $$
 Note that the term in the parenthesis *actually gives us the center of mass*. Or in other words; Center of Mass is the *mean* of the system as a weighed average as a function of distance and weight. 
+> [!theorem] Center of Mass
+> The vector pointing towards the center of mass of a system can be derived as the equation below: 
+> $$\boxed{\vec{x_{\text{CoM}}} =  \frac{1}{M}\sum_{j=1}^N m_{j} \vec{x_{j}}}$$
+> Where $M$ is the system's total energy, $m_{j}$ being the mass of an individual particle, and $\vec{x_{j}}$ being it's distance from some origin point as a vector. 
 
+
+
+Note that this is in terms of a vector; we can break this up into it's dimensional components; then performing the traditional resultant vector math to get the equivalent center of mass: 
 $$
-\vec{x_{\text{CoM}}} =  \frac{1}{M}\sum_{j=1}^N m_{j} \vec{x_{j}}
+\begin{align}
+\vec{x_{\text{CoM}, x}} = \frac{1}{M}\sum_{j=1}^Nm_{j}\vec{x_{xj}} \\
+\vec{x_{\text{CoM}, y}} = \frac{1}{M}\sum_{j=1}^Nm_{j}\vec{x_{xy}} \\
+\vec{x_{\text{CoM}, z}} = \frac{1}{M}\sum_{j=1}^Nm_{j}\vec{x_{xz}}
+\end{align}
 $$
-Note that this is in terms of a vector; we can break this up into it's dimensional components; then performing the traditional resultant vector math to get the equivalent center of mass. 
+Where then the resultant combined center of mass vector is equivalent to combining all the corresponding vector components of the equation above. 
