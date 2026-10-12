@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-12T13:40:44.713-04:00
-edited_seconds: 850
+updated_at: 2026-10-12T14:02:20.361-04:00
+edited_seconds: 1170
 course: PHY180H1
 tags:
   - Assignment
@@ -122,5 +122,62 @@ $$
 > Question 11
 > Determine the $x$ position of the center of mass; with $x$ defined in the diagram. 
 
-> For analysis, assume the object is of a mass o
-> 
+> For analysis, assume the object is of a dimension of $1\times 1$ meters; to simplify the corresponding $dm$ terms; then the corresponding linear density is $8 \frac{g}{cm}$  and $2.4 \frac{g}{cm}$; then our total $M = 520g$; solving for the center of mass; then: 
+
+$$
+X_{c} = \frac{1}{M} \left( \int_{0}^{50}xdm_{Fe} + \int_{50}^{100}xdm_{Al} \right)
+$$
+Note that $dm_{Fe} = 8*dx$, and $dm_{Al} = 2.4dx$; then: 
+$$
+\begin{align}
+X_{c}  & = \frac{1}{M} \left( \int_{0}^{50}8xdx + \int_{50}^{100}2.4xdx \right) \\
+X_{c}  & = \frac{1}{M}\left[  \left( \frac{8x^2}{x} \right)^{50}_{0 } + \left( \frac{2.4x^2}{2} \right)_{50}^{100} \right] \\
+\end{align}
+$$
+Evaluating the integrals separately; then: 
+$$
+\begin{align}
+4x^2|_{0}^{50} &  = 10000 \\
+1.2x^2|_{50}^{100}  & = 1.2(100)^2 -1.2(50)^2=9000
+\end{align}
+$$
+Thus: 
+$$
+X_{c} = \frac{(19000)}{520} \approx 36.53846154 \ cm
+$$
+
+> Question 12
+> A rocket takes off from Earth and reaches a speed of 100m/s in 10s. If the exhaust speed is 1500m/s, and the mass of fuel burned was 100kg, what is the original mass of the rocket? 
+
+> Taking into account the Rocket Equation with gravity: 
+
+$$
+\Delta v = u\ln\left( \frac{m_{0}}{m_{r}} \right) - g\Delta t
+$$
+Note that $m_{0}=m_{r}+m_{f}$; then: 
+$$
+\begin{align}
+\Delta v & =u\ln \left( \frac{m_{0}}{m_{r}} = \frac{m_{r}+m_{f}}{m_{r}} \right)-g\Delta t \\
+\frac{\Delta v + g\Delta t}{u}  & = \ln\left( \frac{m_{r}+m_{f}}{m_{r}} \right) \\
+e^{\frac{\Delta v + g\Delta t}{u}} &  = \frac{m_{r}+m_{f}}{m_{r}} \\
+m_{r}  & =\frac{m_{f}}{e^{\frac{\Delta v + g\Delta t}{u}}-1}
+\end{align}
+$$
+Subbing in our values; then: 
+$$
+m_{r} = \frac{100}{e^{\frac{100+ 9.8*10}{1500}}-1} \approx 708.6754383 \ kg
+$$
+
+> Question 13
+> A big wagon with a mass of 250kg is initially rolling without friction at 3.00m/s. It starts to rain, and the rain accumulates in the wagon at the constant rate of 10.0kg/hr. The rain is falling straight down. After 2 hours of rain, what is the speed of the wagon? 
+
+> Apply conservation of Momentum as usual; 
+
+$$
+\begin{align}
+m_{0}v_{0} & =m_{1}v_{1} \\
+\frac{m_{0}v_{0}}{m_{1}} & =v_{1}  & m_{1} = m_{0} + 20 \implies m_{1}=270 \\
+\frac{(250)(3)}{270} & =v_{1}\approx 2.\bar{7} \ \frac{m}{s}
+\end{align}
+
+$$
