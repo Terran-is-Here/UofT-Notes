@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-12T14:20:26.097-04:00
-edited_seconds: 1360
+updated_at: 2026-10-12T19:14:56.678-04:00
+edited_seconds: 1560
 course: PHY180H1
 tags:
   - Assignment
@@ -20,7 +20,7 @@ Connected Notes:
 Questions taken from [[hw5.pdf]]: 
 
 > Question 1: 
-> Acceleration decreases, speed increases (tangential acceleration from gravity decreases; but maintains velocity / keeps gaining a smaller amount of it) 
+> Acceleration decreases, speed increases (tangential acceleration from gravity decreases; but maintains velocity / keeps gaining a smaller amount of it) (D)
 
 > Question 2: 
 > A particle of mass $2.0\ kg$ moves under influence of the force $F(x) = \frac{3}{\sqrt{ x }}$. If it's speed at $x=2.0\ m$  is $6.0m/s$, what is it's speed at $x=7$? 
@@ -65,7 +65,36 @@ Solve via Quadratic Formula; then we get $\Delta h=141.4769302, -36.94$m Then th
 
 > Question 6 **
 >Two sailboats have identical size and shape, but sailboat A has a significantly larger mass than sailboat B. They are both subject to the same wind and the same constant net force as they start from rest and move the same distance of 100 m. After traveling 100 m (multiple choice question)
-> If $F$ is constant for both; then $dm$ is the same for both over some time period $\Delta t$; but since $m_{a} > m_{b}$; then $v_{a}<v_{b}$; Since $v_{a}<v_{b}$; Boat A will be moving slower than boat B, but both should have the same kinetic energy and momentum. 
+
+Consider if an applied net force $F$ was applied over a distance $d$ to two objects, $m$ and $xm$; where $xm$ represents our larger structure, $x>1$. Their corresponding kinetic energies are as follows: 
+$$
+\begin{align}
+Fd  & = \frac{1}{2}mv_{1}^2 \implies v_{1}=\sqrt{ \frac{2Fd}{m} }\\ \\
+Fd  & =\frac{1}{2}xmv^2_{2} \implies v_{2} = \sqrt{ \frac{2Fd}{xm} }
+\end{align}
+$$
+Which makes sense; our objects would have the same kinetic energy. Consider now their momentums: 
+$$
+\begin{align}
+m_{1}v_{1}  & = m\sqrt{ \frac{2Fd}{m} } =\sqrt{ m 2Fd }\\
+m_{2}v_{2} & =xm\sqrt{ \frac{2Fd}{xm} } = \sqrt{2xmFd }
+\end{align}
+$$
+Considering now for our above cases; then: 
+$$
+\begin{array}{cc|cc}
+\text{Boat A} &  & \text{Boat B} \\
+\frac{1}{2}xmv_{1}^2 &  & \frac{1}{2}mv_{2}^2 \\
+\sqrt{2xmFd } &  & \sqrt{ 2mFd }
+\end{array}
+$$
+Since the same net force is applied onto both boats; their kinetic energies would be equal. However, due to the mass difference, the *Momentum* of boat $A$ will always be larger than boat $B$; That is: 
+$$
+\begin{align}
+\frac{1}{2}xmv_{1}^2 &  = \frac{1}{2}mv_{2}^2 & \text{Object Kinetic Energies} \\
+\sqrt{ 2xmFd } &  > \sqrt{ 2xmFd } &  \iff x>1, \text{Object Momentums}
+\end{align}
+$$
 
 > Question 7
 > A croquet mallet balances when suspended from its center of mass, as shown in the left part of the figure. If you cut the mallet into two pieces at its center of mass, as shown in the right part of the figure, how do the masses of the two pieces compare?
