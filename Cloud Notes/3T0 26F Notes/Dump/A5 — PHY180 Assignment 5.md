@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-12T13:22:36.803-04:00
-edited_seconds: 550
+updated_at: 2026-10-12T13:40:44.713-04:00
+edited_seconds: 850
 course: PHY180H1
 tags:
   - Assignment
@@ -57,4 +57,70 @@ mg(50) & =-mg\Delta h + \frac{1}{2}k\Delta h^2 \\
  & = -39200 - 787\Delta h + 7.5\Delta h^2
 \end{align}
 $$
-Solve via Quadratic Formula. 
+Solve via Quadratic Formula; then we get $\Delta h=36.86$m Then the height of our jumper above the river will be $113.14$m 
+
+> Question 6
+>Two sailboats have identical size and shape, but sailboat A has a significantly larger mass than sailboat B. They are both subject to the same wind and the same constant net force as they start from rest and move the same distance of 100 m. After traveling 100 m (multiple choice question)
+> If $F$ is constant for both; then $dm$ is the same for both over some time period $\Delta t$; but since $m_{a} > m_{b}$; then $v_{a}<v_{b}$; Since $v_{a}<v_{b}$; Boat A will have less kinetic energy than B, but both would have the same momentum. 
+
+> Question 7
+> A croquet mallet balances when suspended from its center of mass, as shown in the left part of the figure. If you cut the mallet into two pieces at its center of mass, as shown in the right part of the figure, how do the masses of the two pieces compare?
+> 
+> The answer to this will be C. (i think) 
+
+> Question 8
+> A 2000-kg railway car coasts at 4.4m/s underneath a grain terminal, which dumps grain directly down into the freight car. If the speed of the unloaded freight car must not go below 3.0m/s, what is the maximum mass of grain it can accept? 
+
+> For this case, solve for the mass of our final object via Conservation of Momentum: 
+
+$$
+\begin{align}
+m_{0}v_{0} &  = m_{1}v_{1} \\
+\frac{m_{0}v_{0}}{v_{1}} & =m_{1} \\
+\frac{(2000)(4.4)}{(3.0)}  & =m_{1}  \\
+m_{1} & =2933.\bar{3}\ kg
+\end{align}
+$$
+Since the initial weight of the railway car was $2000\ kg$, then the maximum mass of grain acceptable would be a value of around $933.\bar{3}$ kg. 
+
+> Question 9
+> A 100-g firecracker is launched vertically into the air and explodes into two pieces at the peak of it's trajectory. If a 72-g piece is projected horizontally to the left at 20m/s, what is it's speed and direction of the other piece? 
+> > Solve via Conservation of Momentum: 
+> > Define left as negative, then
+$$
+\begin{align}
+0 &  =(72)(-20) + 28v \\
+\frac{1440}{28} & =v = 51.4285\ \frac{m}{s}
+\end{align}
+$$
+
+> Question 10
+> Two cars of the same mass approach an extremely icy four-way perpendicular intersection, Car A travels northward at 30m/s, and car B is travelling eastward. They collide and stick together, travelling at 28 degrees north of east. What was the initial velocity of Car B? 
+
+> Solve via cardinal dimensions. 
+> Solving the Y dimension first; then: 
+
+
+$$
+\begin{align}
+mv = 2mv'_{x} \\
+v'_{x}=\frac{1}{2}v = 15\ \frac{m}{s}
+\end{align}
+$$
+Using trig, we can solve for the corresponding $x$ component, then: 
+$$
+v'_{x} = \frac{15}{\tan 28}
+$$
+From here, then using $x$ dimension then: 
+$$
+\begin{align}
+mv_{x} = 2mv'_{x} \\
+v_{x} = 2v'_{x} = \frac{30}{\tan 28} \approx 58.42179396\ \frac{m}{s}
+\end{align}
+$$
+
+> Question 11
+> Determine the $x$ position of the center of mass; with $x$ defined in the diagram. 
+
+> For analysis, assume the object is of a mass o
+> 
