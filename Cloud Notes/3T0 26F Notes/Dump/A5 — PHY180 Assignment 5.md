@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-12T14:02:20.361-04:00
-edited_seconds: 1170
+updated_at: 2026-10-12T14:20:26.097-04:00
+edited_seconds: 1360
 course: PHY180H1
 tags:
   - Assignment
@@ -24,7 +24,11 @@ Questions taken from [[hw5.pdf]]:
 
 > Question 2: 
 > A particle of mass $2.0\ kg$ moves under influence of the force $F(x) = \frac{3}{\sqrt{ x }}$. If it's speed at $x=2.0\ m$  is $6.0m/s$, what is it's speed at $x=7$? 
-> > $$\begin{align}W = \Delta K &  = \int_{2}^7F(x) dx \\& =\left[ -\frac{3}{2(\sqrt{ x })^3} \right]_{2}^7 \\& =\left[ -\frac{3}{2(\sqrt{ 7 })^3} + \frac{3}{2\sqrt{ 2 }^3} \right] \\& \approx 0.449337699J\end{align}$$$$\begin{align}W  & = E_{k_{t}}-E_{k_{0}} \\W + E_{k_{0}} & =E_{kt}   \\\left( W + \frac{1}{2}mv_{0}^2 \right)  & =\frac{1}{2}mv^2 \\\sqrt{ \frac{2\left( W + \frac{1}{2}mv_{0}^2 \right)}{m} }  & =v \\v & =\sqrt{ \frac{2\left( 0.449337699 + \frac{1}{2}(2)(6)^2 \right)}{2} } \\v & \approx 6.037328689\ \frac{m}{s}\end{align}$$
+> > $$\begin{align}W = \Delta K &  = \int_{2}^7 F(x)dx \\& =3 \int_{2}^7 x^{-1/2}dx \\& =3[2\sqrt{ x }]^7_{2} \\& =6[\sqrt{ 7 }-\sqrt{ 2 }] \approx 7.389226492\ J\end{align}$$$$\begin{align}W  & = E_{k_{t}}-E_{k_{0}} \\W + E_{k_{0}} & =E_{kt}   \\\left( W + \frac{1}{2}mv_{0}^2 \right)  & =\frac{1}{2}mv^2 \\\sqrt{ \frac{2\left( W + \frac{1}{2}mv_{0}^2 \right)}{m} }  & =v \\v & =\sqrt{ \frac{2\left( 7.389226492 + \frac{1}{2}(2)(6)^2 \right)}{2} } \\v & \approx 6.587049908\ \frac{m}{s}\end{align}$$
+
+
+
+
 
 > Question 3: 
 > A $5.00\times 10^5$ kg subway train is brought to a stop from a speed of $0.500 \frac{m}{s}$ in $0.400\ m$ by a large spring bumper at the end of it's track. What is $k$ for this spring bumper? 
@@ -42,7 +46,7 @@ $$
 > 
 > If a person falls at constant speed; then the drag force is equal to the force of gravity on our person; thus $F_{d} = F_{g}$. We also know that this force would be constant (as $mgh$ is a constant force, and $F_{d}$ will asymomatically approach it's maximum being equal to the terminal velocity); thus: $$\begin{align}W_{L}  & =\int_{0}^{15]}mg dh \\& =mg(15) = 60(9.8)(15) = 8820J\end{align}$$
 
-> Question 5: 
+> Question 5 *: 
 > An 80.0 kg bungee jumper drops from rest off a bridge that is 200.0 m above a river. As he falls, air resistance is negligible, and the unstretched bungee cord attached to him uncoils. 
 > 
 > When the jumper is 50.0 m below the bridge, the bungee cord is completely uncoiled and forms a straight line. Below that point, the bungee cord acts as a spring, obeying Hooke’s law as it is stretched beyond its equilibrium length of 50.0 m, with a spring constant of k = 15N/m. How far above the river will the jumper be when he first momentarily stops?
@@ -57,11 +61,11 @@ mg(50) & =-mg\Delta h + \frac{1}{2}k\Delta h^2 \\
  & = -39200 - 787\Delta h + 7.5\Delta h^2
 \end{align}
 $$
-Solve via Quadratic Formula; then we get $\Delta h=36.86$m Then the height of our jumper above the river will be $113.14$m 
+Solve via Quadratic Formula; then we get $\Delta h=141.4769302, -36.94$m Then the height of our jumper above the river will be $8.5230698$m 
 
-> Question 6
+> Question 6 **
 >Two sailboats have identical size and shape, but sailboat A has a significantly larger mass than sailboat B. They are both subject to the same wind and the same constant net force as they start from rest and move the same distance of 100 m. After traveling 100 m (multiple choice question)
-> If $F$ is constant for both; then $dm$ is the same for both over some time period $\Delta t$; but since $m_{a} > m_{b}$; then $v_{a}<v_{b}$; Since $v_{a}<v_{b}$; Boat A will have less kinetic energy than B, but both would have the same momentum. 
+> If $F$ is constant for both; then $dm$ is the same for both over some time period $\Delta t$; but since $m_{a} > m_{b}$; then $v_{a}<v_{b}$; Since $v_{a}<v_{b}$; Boat A will be moving slower than boat B, but both should have the same kinetic energy and momentum. 
 
 > Question 7
 > A croquet mallet balances when suspended from its center of mass, as shown in the left part of the figure. If you cut the mallet into two pieces at its center of mass, as shown in the right part of the figure, how do the masses of the two pieces compare?
@@ -146,8 +150,8 @@ $$
 X_{c} = \frac{(19000)}{520} \approx 36.53846154 \ cm
 $$
 
-> Question 12
-> A rocket takes off from Earth and reaches a speed of 100m/s in 10s. If the exhaust speed is 1500m/s, and the mass of fuel burned was 100kg, what is the original mass of the rocket? 
+> Question 12 **
+> A rocket takes off from Earth and reaches a speed of 100m/s in 10s. If the exhaust speed is 1500m/s, and the mass of fuel burned was 100kg, what is the original mass ($m_{0}$) of the rocket? 
 
 > Taking into account the Rocket Equation with gravity: 
 
@@ -167,6 +171,7 @@ Subbing in our values; then:
 $$
 m_{r} = \frac{100}{e^{\frac{100+ 9.8*10}{1500}}-1} \approx 708.6754383 \ kg
 $$
+Then, $m_{0}=808.6754383 \ kg$
 
 > Question 13
 > A big wagon with a mass of 250kg is initially rolling without friction at 3.00m/s. It starts to rain, and the rain accumulates in the wagon at the constant rate of 10.0kg/hr. The rain is falling straight down. After 2 hours of rain, what is the speed of the wagon? 
@@ -179,5 +184,14 @@ m_{0}v_{0} & =m_{1}v_{1} \\
 \frac{m_{0}v_{0}}{m_{1}} & =v_{1}  & m_{1} = m_{0} + 20 \implies m_{1}=270 \\
 \frac{(250)(3)}{270} & =v_{1}\approx 2.\bar{7} \ \frac{m}{s}
 \end{align}
-
 $$
+
+> Question 14,15
+> A puck of mass m1 = 0.2 kg is sliding on an ice table without friction. Its initial velocity is along the x-axis with v0 = 10 m/s as shown in the figure. 
+> The puck collides elastically with an identical puck, m2, which is initially at rest. The pucks exit the collision as shown in the figure.
+> 
+> It is observed that, after the collision, the velocity components of puck 2 are =(8.6 m/s, −3.5 m/s).
+> > Question 14: What is the x component of puck 1 after the collision? (Trivial examination; 1.4m/s)
+> > Question 15: What is the y component of puck 1 after the collision? (Trivial examination, 3.5 m/s)
+> 
+> 
