@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-11T17:13:04.722-04:00
-edited_seconds: 1300
+updated_at: 2026-10-12T11:47:42.566-04:00
+edited_seconds: 1340
 course: PHY180H1
 tags:
   - PHY180H1
@@ -91,6 +91,12 @@ $$
 \end{align}
 $$
 Where then the resultant combined center of mass vector is equivalent to combining all the corresponding vector components of the equation above. 
+
+In terms of a continuous object; that is $m_{j} \to dm$; then: 
+$$
+\vec{x_{\text{CoM}}} = \frac{1}{M}\int \vec{r}dm
+$$
+Where $dm$ is the corresponding infinitesimally small amount of mass on an object; and $\vec{r}$ represents some physical dimensional characteristic *of* our object. 
 ## Rocket Propulsion
 Rockets are vehicles which expel some material out from behind them in order to accelerate; or in other words; they are *reaction* engines. Let us define our rocket's initial momentum as the following: 
 $$
