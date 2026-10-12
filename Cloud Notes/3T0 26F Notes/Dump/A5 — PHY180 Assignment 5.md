@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-12T12:13:41.244-04:00
-edited_seconds: 460
+updated_at: 2026-10-12T13:22:36.803-04:00
+edited_seconds: 550
 course: PHY180H1
 tags:
   - Assignment
@@ -47,4 +47,14 @@ $$
 > 
 > When the jumper is 50.0 m below the bridge, the bungee cord is completely uncoiled and forms a straight line. Below that point, the bungee cord acts as a spring, obeying Hooke’s law as it is stretched beyond its equilibrium length of 50.0 m, with a spring constant of k = 15N/m. How far above the river will the jumper be when he first momentarily stops?
 
-Solve for when $U_{g}=U_{e}$: 
+Solve via conservation of energy; taking analysis at maximum height, and at height of corresponding spring equilibrium: 
+$$
+\begin{align}
+mgh & =mg(h-50-\Delta h) + \frac{1}{2}k\Delta h^2 \\
+mg(200) & =mg(150-\Delta h) + \frac{1}{2}k\Delta h^2 \\
+mg(50) & =-mg\Delta h + \frac{1}{2}k\Delta h^2 \\
+0  & =-(80)(9.8)(50) - (80)(9.8)\Delta h + 7.5\Delta h^2 \\
+ & = -39200 - 787\Delta h + 7.5\Delta h^2
+\end{align}
+$$
+Solve via Quadratic Formula. 
