@@ -1,6 +1,6 @@
 ---
 updated_at: 2026-10-13T17:53:25.589-04:00
-edited_seconds: 1210
+edited_seconds: 1240
 course: ESC103H1
 tags:
   - ESC103H1
@@ -79,7 +79,8 @@ Take the following:
 $$
 \begin{align}
 \mathbf{A}\vec{x}  & = \vec{0} \\
-\mathbf{CR}\vec{x}  & = \vec{0}  & \text{Using associative property: } (\mathbf{AB})
+\mathbf{CR}\vec{x}  & = \vec{0}  & \text{Using associative property: } (\mathbf{AB})\mathbf{C} = \mathbf{A}(\mathbf{BC}) \\
+\mathbf{C}(\mathbf{R})\vec{x} & =\vec{0}
 \end{align}
 $$
 
