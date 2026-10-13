@@ -10,7 +10,7 @@ Week: 5
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[09— Basic Linear Algebra Concepts]]
-Next: [[11 — A-CR Matrices]]
+Next: [[11 — A-CR Matrix Factorization]]
 > [!quote] Learning Objectives
 > * Perform matrix multiplication $\mathbf{AB}$ using the linear combination of the columns of matrix $\mathbf{A}$.
 > * Perform matrix multiplication $\mathbf{AB}$ using the dot products of rows of matrix $\mathbf{A}$ with the columns of matrix $\mathbf{B}$

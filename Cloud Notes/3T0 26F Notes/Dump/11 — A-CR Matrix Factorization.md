@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T13:45:28.026-04:00
-edited_seconds: 680
+updated_at: 2026-10-13T17:33:28.732-04:00
+edited_seconds: 890
 course: ESC103H1
 tags:
   - ESC103H1
@@ -10,18 +10,50 @@ Week:
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[10 — Matrix Multiplication]]
-Next: [[]]
+Next: [[12 — Elementary Row Operations]]
 
 > [!quote] Learning Objectives 
 > * Construct a matrix $\mathbf{C}$ from matrix $\mathbf{A}$ using the definition of independent vectors. 
 > * Construct a matrix $\mathbf{R}$ such that $\mathbf{A}=\mathbf{CR}$
-> * Explain the significance of $\mathbf{R,C}$ with respects of $\mathbf{A}$
+> * Explain the significance of $\mathbf{R,C}$ with respects to $\mathbf{A}$
 
 > [!quote] Recommended Reading 
 > [[08 — Matrix Vector Products]], and [[09— Basic Linear Algebra Concepts]] are also useful for this section as they pop up again and again. 
 --- 
  
 # Lecture Notes
+## Matrix Decomposition
+The general concept of Matrix Decomposition, is that given some matrix $\mathbf{A}$, we should be able to express this as a product of two matrices $\mathbf{C,R}$; that is: 
+$$
+\mathbf{A}= \mathbf{C}\mathbf{R}
+$$
+The concept is that we can break up some $\mathbf{A}$ (which could be complex) into two simpler matrices $\mathbf{C,R}$. We do this to try and make some matrices much easier to compute. 
+
+> [!theorem] Constructing $\mathbf{C}$ from $\mathbf{A}$ (where $A$ is a $m\times n$ matrix) 
+> We want to construct our matrix $\mathbf{C}$ with solely the linearly independent columns of $\mathbf{A}$, or in other words, the basis column vectors of a matrix $\mathbf{A}$. 
+> For instance: 
+> $$\mathbf{A} = \begin{bmatrix}2 & 6 & 4 \\4 & 12 & 8 \\1 & 3 & 5\end{bmatrix}$$Factoring this above requires us to note which columns are linearly independent. 
+> 1. If column 1 of $\mathbf{A}$ is not $\vec{0}$, put the first column in $\mathbf{C}$. 
+> 2. If column $n$ of $\mathbf{A}$ is not some multiple / scalar combination of the currently present columns, put column two into $\mathbf{C}$. Otherwise, skip. 
+> 	1. In lecture, this was written as "if column two of A is not some multiple of column 1, then put column 2 in c, otherwise skip."
+> 3. Repeat step 2 until all $\mathbf{A}$ have been iterated over. 
+> 
+> Thus, for our matrix above; then $\mathbf{C}$ per step is: 
+> $$\begin{bmatrix}2\\4\\1\end{bmatrix} \to \begin{bmatrix}2\\4\\1\end{bmatrix} \to \begin{bmatrix}2 & 4 \\4 & 8 \\1 & 5\end{bmatrix}$$
+> > Note then, that $\mathbf{C}$ should have $r$ columns; where $r\leq n$, and all column vectors inside are linearly independent. 
+> > > In this case, the column space of $\mathbf{A}$ is equal to the column space of $\mathbf{C}$; that is the column vectors of $\mathbf{C}$ are the basis vectors of the column space of $\mathbf{A}$
+> > > And $r$ represents the rank of $\mathbf{C}$, which represents the rank of $\mathbf{A}$. 
+> 
+> Note that for a big matrix $\mathbf{A}$, checking the linear independence of all of it's corresponding column vectors may be computationally intensive. 
+
+> Constructing $\mathbf{R}$ from $\mathbf{C}$
+> Retaking our example matrix: $$\mathbf{A} = \begin{bmatrix}2 & 6 & 4 \\4 & 12 & 8 \\1 & 3 & 5\end{bmatrix}$$
+> Note from the above step; that $\mathbf{C} = \begin{bmatrix}2 & 4\\4 & 8\\1 & 5\end{bmatrix}$
+> We now need to solve this:
+
+$$
+\mathbf{A} = \begin{bmatrix}2 & 6 & 4 \\4 & 12 & 8 \\1 & 3 & 5\end{bmatrix} = \begin{bmatrix}2 & 4\\4 & 8\\1 & 5\end{bmatrix}\mathbf{R}
+$$
 
 ---
 # Pre-Lecture Notes
@@ -52,6 +84,10 @@ Recall that matrix multiplication **always** works in a row-column arrangement. 
 Note however that the matrix $\mathbf{R}$ is something special: it is the Row-Reduced Echelon Form of $\mathbf{A}$; though it's kind of outside the bounds of this note for now to work on it. 
 
 ## Solving Ax=0 using A=CR 
+> [!caution] Note
+> This section is *technically* meant for next lecture, though I wouldn't be surprised if it's not mentioned in this lecture. Will edit in the future if it is moved to a future lecture. 
+
+
 A = CR provides us a useful tool for solving our previous $\mathbf{A}\vec{x} = \vec{b}$ equations that we have tackled in the past in a bit more of an algebraic method. Take the following matrix: 
 $$
 \mathbf{A}=\begin{bmatrix} 
