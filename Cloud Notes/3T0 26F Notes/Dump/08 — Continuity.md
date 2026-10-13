@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-06T22:57:18.738-04:00
-edited_seconds: 1760
+updated_at: 2026-10-13T09:48:56.915-04:00
+edited_seconds: 1770
 course: ESC194H1
 tags:
   - ESC194H1
@@ -61,7 +61,7 @@ $$
 Note that this was taken up in a previous note already, that is [[07 — Limit Laws#Squeeze Theorem|in Limit Laws (07) - Squeeze Theorem]]. For purposes of completeness, they will be positioned here again (as they were mentioned in this lecture): 
 
 > [!theorem] Squeeze Theorem
-> $$\begin{align}\text{given }f(x),g(x),h(x) \text{ where } \\h(x) \leq f(x) \leq g(x)&&\text{where }\lim_{ x \to c } f(x) = \lim_{ x \to c } g(x) = L\\\implies \lim_{ x \to c } f(x)=L\end{align}$$
+> $$\begin{align}\text{given }f(x),g(x),h(x) \text{ where } \\h(x) \leq f(x) \leq g(x)&&\text{where }\lim_{ x \to c } h(x) = \lim_{ x \to c } g(x) = L\\\implies \lim_{ x \to c } f(x)=L\end{align}$$
 > Graphically, this is akin to us "squeezing" our desired though two bounding functions that converge onto the same location, since we can show that the space between these functions equals zero, then our function must converge onto this same value. 
 
 ### Example 
