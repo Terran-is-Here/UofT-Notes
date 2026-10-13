@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-13T17:33:28.732-04:00
-edited_seconds: 890
+updated_at: 2026-10-13T17:53:25.589-04:00
+edited_seconds: 1210
 course: ESC103H1
 tags:
   - ESC103H1
@@ -19,6 +19,12 @@ Next: [[12 — Elementary Row Operations]]
 
 > [!quote] Recommended Reading 
 > [[08 — Matrix Vector Products]], and [[09— Basic Linear Algebra Concepts]] are also useful for this section as they pop up again and again. 
+
+> [!ila] Lecture Summary
+> $\mathbf{A=CR}$
+> * $\mathbf{C}$ contains $r$ independent columns of $\mathbf{A}$. 
+> * $r$ is the rank of matrix $\mathbf{A}$. 
+> * $\mathbf{R}$ tells us how we should modify $\mathbf{C}$ to obtain $\mathbf{A}$
 --- 
  
 # Lecture Notes
@@ -46,13 +52,35 @@ The concept is that we can break up some $\mathbf{A}$ (which could be complex) i
 > 
 > Note that for a big matrix $\mathbf{A}$, checking the linear independence of all of it's corresponding column vectors may be computationally intensive. 
 
-> Constructing $\mathbf{R}$ from $\mathbf{C}$
+> [!theorem] Constructing $\mathbf{R}$ from $\mathbf{C}$
 > Retaking our example matrix: $$\mathbf{A} = \begin{bmatrix}2 & 6 & 4 \\4 & 12 & 8 \\1 & 3 & 5\end{bmatrix}$$
 > Note from the above step; that $\mathbf{C} = \begin{bmatrix}2 & 4\\4 & 8\\1 & 5\end{bmatrix}$
-> We now need to solve this:
+> We now need to solve this:$$\mathbf{A} = \begin{bmatrix}2 & 6 & 4 \\4 & 12 & 8 \\1 & 3 & 5\end{bmatrix} = \begin{bmatrix}2 & 4\\4 & 8\\1 & 5\end{bmatrix}\mathbf{R} = \begin{bmatrix}2 & 4\\4 & 8\\1 & 5\end{bmatrix}\begin{bmatrix}a & d & f\\b & e & g\end{bmatrix}$$
+> Note that since $\mathbf{A}=3\times 3$, $\mathbf{C}=3 \times 2$, then $\mathbf{R}$ must have dimensions of $2 \times 3$; since $3\times 2 * 2 \times 3 \implies 3 \times 3$. The question then arises; what are the values of $\mathbf{R}$? 
+> Let's solve this piece by piece: Note that $\begin{bmatrix}a\ \\  b\end{bmatrix}$ is a vector in $\mathbf{R}$; then note that : 
+> $$\begin{bmatrix}2 & 4 \\4 & 8  \\1 & 5\end{bmatrix} \begin{bmatrix}a\\b\end{bmatrix} = \begin{bmatrix}2\\4\\1\end{bmatrix}$$
+> Then: $$\begin{align}2a+4b  & = 2 \to a=1\\4a + 8b  & = 4 \to b=0 \\1a + 5b  & = 1\end{align}$$
+> But, recall; that matrix vector products are also linear combinations in column view: $$\begin{bmatrix}2\\4\\1\end{bmatrix}a  + \begin{bmatrix}4\\8\\5\end{bmatrix}b = \begin{bmatrix}2\\4\\1\end{bmatrix} \implies a=1,b=0$$
+> Repeating this process for $\begin{bmatrix}f\\ g\end{bmatrix}$, this must be $\begin{bmatrix}0\\1\end{bmatrix}$.
+> Now for $\begin{bmatrix}d\\ e\end{bmatrix}$, then: $$\begin{bmatrix}2\\4\\1\end{bmatrix}d  + \begin{bmatrix}4\\8\\5\end{bmatrix}e = \begin{bmatrix}6\\12\\3\end{bmatrix} \implies d=3,b=0$$
+> Thus $\mathbf{R} = \begin{bmatrix}1 & 3 & 0 \\  0 & 0 & 1\end{bmatrix}$.
 
+From the steps above, we have factored $\mathbf{A}$ to the following: 
+$$\mathbf{A} = \mathbf{CR} = \begin{bmatrix}2 & 4 \\4 & 8  \\1 & 5\end{bmatrix}\begin{bmatrix}1 & 3 & 0 \\0 & 0 & 1\end{bmatrix}$$
+> [!caution]
+> To find the $i$-th column of $\mathbf{R}$, take the $i$th column of $\mathbf{A}$, and express it as a linear combination of the column vectors present within $\mathbf{C}$. 
+
+> [!ila] Important Idea
+> In other words, $\mathbf{C}$ give us the tools, and $\mathbf{R}$ give us the instructions that we need to construct the corresponding matrix of $\mathbf{A}$. 
+
+## Solving Homogenous Vectors 
+
+Take the following: 
 $$
-\mathbf{A} = \begin{bmatrix}2 & 6 & 4 \\4 & 12 & 8 \\1 & 3 & 5\end{bmatrix} = \begin{bmatrix}2 & 4\\4 & 8\\1 & 5\end{bmatrix}\mathbf{R}
+\begin{align}
+\mathbf{A}\vec{x}  & = \vec{0} \\
+\mathbf{CR}\vec{x}  & = \vec{0}  & \text{Using associative property: } (\mathbf{AB})
+\end{align}
 $$
 
 ---
@@ -83,9 +111,14 @@ Recall that matrix multiplication **always** works in a row-column arrangement. 
 ### Significance of R
 Note however that the matrix $\mathbf{R}$ is something special: it is the Row-Reduced Echelon Form of $\mathbf{A}$; though it's kind of outside the bounds of this note for now to work on it. 
 
-## Solving Ax=0 using A=CR 
+## Solving Homogenous Systems
 > [!caution] Note
 > This section is *technically* meant for next lecture, though I wouldn't be surprised if it's not mentioned in this lecture. Will edit in the future if it is moved to a future lecture. 
+
+> [!ila] In Lecture Addendum
+> This was previously keyed as solving Ax=0 using A=CR, however this is now termed as solving Homogenous Systems. 
+> 
+> A homogenous system is any system of the form $\mathbf{A}\vec{x}=\vec{0}$. 
 
 
 A = CR provides us a useful tool for solving our previous $\mathbf{A}\vec{x} = \vec{b}$ equations that we have tackled in the past in a bit more of an algebraic method. Take the following matrix: 
