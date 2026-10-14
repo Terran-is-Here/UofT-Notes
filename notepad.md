@@ -24,4 +24,12 @@ $$
 $$
 Note if $|f(x)-L| < \epsilon, |g(x)-M| <\epsilon \implies |f(x)-L| + |g(x)-M| <2 \epsilon$; meaning that for each case here, set $|f(x)-L| <\frac{\epsilon}{2}, |g(x)-M| < \frac{\epsilon}{2}$; thus giving our result as desired; where $\delta=\text{min}\{ \delta_{1},\delta_{2} \}$. 
 
-
+Then: 
+$$
+\begin{align}
+\forall\epsilon>0, \exists\delta>0.\ \delta = \min\{ \delta_{1},\delta_{2} \}; \\
+|x-c| < \delta_{1} \implies |f(x_{x})-L | < \frac{\epsilon}{2} \\
+|x-c| < \delta_{2} \implies |g(x) - M| < \frac{\epsilon}{2} \\
+\implies |x-c| < \delta \implies |f(x) - L| 
+\end{align}
+$$
