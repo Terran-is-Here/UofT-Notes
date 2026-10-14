@@ -1,12 +1,12 @@
 ---
-updated_at: 2026-10-13T17:53:25.589-04:00
-edited_seconds: 1240
+updated_at: 2026-10-14T09:11:57.324-04:00
+edited_seconds: 1250
 course: ESC103H1
 tags:
   - ESC103H1
 "Lecture #": 11
 Lecture Date: 2026-10-09
-Week:
+Week: 6
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[10 — Matrix Multiplication]]
