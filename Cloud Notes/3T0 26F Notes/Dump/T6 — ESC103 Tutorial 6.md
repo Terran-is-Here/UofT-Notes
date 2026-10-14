@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-14T10:42:31.125-04:00
-edited_seconds: 400
+updated_at: 2026-10-14T10:59:02.628-04:00
+edited_seconds: 520
 course: ESC103H1
 tags:
   - Tutorial
@@ -41,3 +41,20 @@ tag:#ESC101H1 [week:7]
 > > Plugging in $t=\frac{c}{a}$; then: 
 > > $$\begin{bmatrix}a & b \\0 & d-\frac{bc}{a}\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}f\\g-\frac{fc}{a}\end{bmatrix}$$
 > > Then: $$\begin{align}\left( d-\frac{bc}{a} \right)y = g-\frac{fc}{a} \\y = \frac{\left( g-\frac{fc}{a} \right)}{d-\frac{bc}{a}} -= \frac{ga-fc}{da-bc}\end{align} $$
+
+> Question 3
+> A system of linear equations cannot have just two solutions. Let's examine why this is the case.
+> 1. Consider a system of linear equations with 3 unknowns. Assume that two solutions are known: $(x,y,z)$ and $(X,Y,Z)$. What is another solution? 
+> 2. If you know that $25$ planes in $\mathbb{R}^3$ meet in two points; where else do they meet? 
+> > Answer
+> > 1. Any solution that lies on a line between $(x,y,z)$ and $(X,Y,Z)$, Consider the system above; of $3$ hyperplanes in $\mathbb{R}^3$ (or in other words, three 2d planes). If they have two solutions; they can have either be collectively intersecting in a line. 
+> > 	2. Or in other words, any solution of $\left( \frac{x+X}{2},\frac{y+Y}{2},\frac{z+Z}{2}  \right)$; since we have two equations within our system. 
+> > 3. The $25$ planes in $\mathbb{R}^3$ meet in a line in R3 with the points included within that line;
+> > 	4. Or any solution of points within each plane would work (if all of them are colinear). 
+
+Question 4: 
+> Consider the system of linear equations below: $$\begin{align}2x+5y+z & =0 \\4x+dy+z & =2 \\y-z & =3\end{align}$$
+> The objective is to determine the equivalent upper triangular system. 
+> 1. What is the upper triangular system for the value of $d$ in Part 1? 
+> 2. What value of $d$ produces a zero pivot in row 3? 
+> 3. Is there a solution to this system for the value of d in Part 3? 

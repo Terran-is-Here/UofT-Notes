@@ -30,6 +30,7 @@ $$
 \forall\epsilon>0, \exists\delta>0.\ \delta = \min\{ \delta_{1},\delta_{2} \}; \\
 |x-c| < \delta_{1} \implies |f(x_{x})-L | < \frac{\epsilon}{2} \\
 |x-c| < \delta_{2} \implies |g(x) - M| < \frac{\epsilon}{2} \\
-\implies |x-c| < \delta \implies |f(x) - L| 
+\implies |x-c| <  \delta \implies |f(x) +g(x) - L - M| \leq |f(x) - L| + |g(m) - M| < 2 \frac{\epsilon}{2} = \epsilon \\
+
 \end{align}
 $$
