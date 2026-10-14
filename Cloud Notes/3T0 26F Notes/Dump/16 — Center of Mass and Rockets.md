@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-12T11:47:42.566-04:00
-edited_seconds: 1340
+updated_at: 2026-10-14T08:36:50.329-04:00
+edited_seconds: 1350
 course: PHY180H1
 tags:
   - PHY180H1
@@ -11,7 +11,7 @@ Created: October 10th 2026, 9:57:06 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[15 — Conservation of Momentum, Collisions]]
-Next: N/A
+Next: [[17 — Rotational Kinematics, Rotational Variables]]
 > [!quote] Recommended Reading 
 > University Physics 9.6, 9.7
 > [[14 — Momentum and Impulse]]
