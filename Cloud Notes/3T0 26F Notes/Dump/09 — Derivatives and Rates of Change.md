@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-01T13:56:46.207-04:00
-edited_seconds: 810
+updated_at: 2026-10-13T22:38:00.181-04:00
+edited_seconds: 820
 course: ESC194H1
 tags:
   - ESC194H1
@@ -76,7 +76,7 @@ Consider however, what if $x=0 \implies f(x) =x$, then:
 $$
 \begin{align}
 f'(0) = \lim_{ h \to 0 } \frac{|0+h| - |0|}{h} &= \lim_{ h \to 0 } \frac{|h|}{h} & \text{Approach from both sides} \\
-=\lim_{ h \to ^-0 } \frac{|h|}{h} =\lim_{ h \to ^-0 } -\frac{h}{h} &= -1 &  =\lim_{ h \to ^+0 } \frac{|h|}{h} =\lim_{ h \to ^+0 } +\frac{h}{h} &= -1 \\
+=\lim_{ h \to ^-0 } \frac{|h|}{h} =\lim_{ h \to ^-0 } -\frac{h}{h} &= -1 &  =\lim_{ h \to ^+0 } \frac{|h|}{h} =\lim_{ h \to ^+0 } +\frac{h}{h} &= 1 \\
 \text{Since LHL} \neq \text{RHL} && \implies \lim_{ h \to 0 } =\frac{|h|}{h} =\text{DNE} \\
 \therefore, f'(0) =\text{DNE.}
 \end{align}
