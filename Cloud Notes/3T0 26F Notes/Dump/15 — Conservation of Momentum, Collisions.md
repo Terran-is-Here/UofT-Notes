@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T21:56:50.877-04:00
-edited_seconds: 1590
+updated_at: 2026-10-15T16:26:37.698-04:00
+edited_seconds: 1720
 course: PHY180H1
 tags:
   - PHY180H1
@@ -13,9 +13,38 @@ Hub: [[PHY180 Hub]]
 Previous: [[14 — Momentum and Impulse]]
 Next: [[16 — Center of Mass and Rockets]]
 > [!quote] Recommended Reading 
-> Sections 9.4, 9.5 
+> Sections 9.4, 9.5 (University Physics)
 --- 
 # Lecture Notes
+## Impulse (Continued) 
+Recall from [[14 — Momentum and Impulse#^39f602|PHY180  (14) — Impulse over an Interval]] that we can define $\Delta p = \int Fdt$; then if we increase $dt$, with the same $\Delta p$, $\bar{F}$ must decrease. Therefore, to decrease the amount of force potentially experienced by a stop, it may be advantageous to increase the duration in which an impulse is applied. 
+
+For instance: 
+> As part of a safety investigation, two 1400 kg cars travelling at 20m/s are crashed into different barriers. Find the average forces exerted on (a) the car that hits a line of water barrels and takes 1.5s to stop, and (b) the car that hits a concrete barrier and takes 0.1s to stop. 
+
+For the first car: 
+
+$$
+\begin{align}
+\Delta p = J = F_{avg}\Delta t \\
+-28000  & = F_{avg} \Delta t \\
+-\frac{28000}{1.5}  & = F_{avg} =  -19,000  \ N
+\end{align}
+$$
+For the second: 
+$$
+\begin{align}
+\Delta p = J  & =F\Delta t \\
+-28000 & = F\Delta t \\
+-\frac{28000}{0.1}= F  & =-280,000\ N
+\end{align}
+$$
+
+## Conservation of Momentum (LEC) 
+> [!ila] Fixed Object CoM 
+> Note that with collisions with large fixed objects, Conservation of Momentum is not preserved. Note for elastic situations, that Kinetic Energy *is* conserved, but in inelastic collisions this is not preserved as per usual. 
+
+
 
 ---
 # Pre-Lecture Notes

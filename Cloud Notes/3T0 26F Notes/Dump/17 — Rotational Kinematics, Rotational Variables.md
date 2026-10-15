@@ -1,11 +1,13 @@
 ---
-updated_at: 2026-10-14T08:39:09.088-04:00
-edited_seconds: 110
-course:
+updated_at: 2026-10-15T16:26:48.705-04:00
+edited_seconds: 130
+course: PHY180H1
 tags:
-"Lecture #": 0
+  - PHY180H1
+"Lecture #": 17
 Lecture Date: 2026-10-14
-Week:
+Week: 7
+Created: October 14th 2026, 8:36:48 am
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[16 — Center of Mass and Rockets]]

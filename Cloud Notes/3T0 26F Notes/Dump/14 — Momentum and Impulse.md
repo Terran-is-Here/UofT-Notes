@@ -83,6 +83,8 @@ Where the force is the force applied on an object over some time interval; integ
 > Note that since (later on), $J=\Delta p$, then 
 > $$\Delta p = \int _{t_{0}}^{t^1}\vec{F}(t)dt$$
 
+^39f602
+
 Note that we can redefine this in terms of an *average force*. Given some function $f(x)$, it's average can be defined as some integral: 
 $$
 f_{av}(x) = \frac{1}{\Delta x}\int_{x_{0}}^{x_{1}}f(x) dx
