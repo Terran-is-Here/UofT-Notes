@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-15T13:47:06.298-04:00
-edited_seconds: 720
+updated_at: 2026-10-15T13:59:16.384-04:00
+edited_seconds: 870
 course: ESC194H1
 tags:
   - ESC194H1
@@ -123,7 +123,32 @@ $$
 $$
 Where $mx+b$ is our Oblique Asymptote; or in other words, $f(x) \to (mx+b)$. 
 
-Take the following
+## Curve Sketching Procedure
+1. Find the domain of the function, and end points if they exist.
+2. Find $y,x$ intercepts if they exist. 
+3. Determine the shape of the function (symmetry? periodicity?) 
+4. Find asymptotes (if any) 
+	1. Vertical, Horizontal, Oblique
+5. Find the derivative of the function if it exists; determine CPs -> IoIs and IoDs, VTs / VCs 
+6. Find the second derivative if it exists; determine PoInf -> Changes in Concavity
+7. Evaluate extremums. 
+
+For instance, sketch the following: 
+$$
+f(x) = \frac{1}{4}x^4 - 2x^2 + \frac{7}{4}
+$$
+Following our steps: 
+1. All $x\in$ domain, no end points. 
+2. Intercepts
+	1. $f(0) = \frac{7}{4}$ y intercept, 
+	2. Solutions are $x=\pm_{1}, \pm \sqrt{ 7 }$
+3. Symmetry: 
+	1. Function has even symmetry (test via $f(x)=f(-x)$), which holds true. 
+4. Asymptotes
+	1. No asymptotes detected ($\lim_{ x \to \pm\infty }f(x)=\pm \infty$)
+5. Derivative of the function: $f'(x) = x^3 -4x=x(x^2-4)=x(x+2)(x-2)$, solutions for CPs are $x=0,\pm2$; no cases where VTs/VCs arise. 
+	1. Intervals of Decrease: $(-\infty,-2)$
+	2. Intervals of Increase: $()$
 
 ---
 # Pre-Lecture Notes
