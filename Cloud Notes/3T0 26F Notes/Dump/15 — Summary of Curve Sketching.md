@@ -1,12 +1,13 @@
 ---
-updated_at: 2026-10-15T13:27:04.091-04:00
-edited_seconds: 480
+updated_at: 2026-10-15T13:47:06.298-04:00
+edited_seconds: 720
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 15
 Lecture Date: 2026-10-15
 Week: 6
+Created: October 8th 2026, 9:10:38 am
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[14 — Derivatives, Function Shape, Horizontal Asymptotes]]
@@ -52,6 +53,77 @@ $$
 $$
 
 ## Evaluating Infinite Limits 
+Consider the following limit: 
+$$
+\lim_{ x \to \infty } \frac{6x^2+x+5}{2x^2-x+3} = \lim_{ x \to \infty } \frac{\left( x^2\left( 6 + \frac{1}{x} + \frac{5}{x^2} \right) \right)}{x^2\left( 2-\frac{1}{x}+\frac{3}{x^2} \right)} = \frac{6}{2} = 3
+$$
+This requires us to however see that; 
+$$
+\lim_{ x \to \infty } \frac{1}{x^r}=0
+$$
+Which we can easily prove: 
+$$
+\begin{align}
+\forall\epsilon>0, \exists N \text{ s.t. } \\
+x > N  & \implies \left|\frac{1}{x^r}\right| < \epsilon \\
+ & \implies \left| \frac{1}{x}\right|^r < \epsilon  \implies \frac{1}{x} < \sqrt[r]{ \epsilon } \\
+ & \implies \frac{1}{\sqrt[r]{ \epsilon }} < x \implies N = \frac{1}{\sqrt[n]{ \epsilon }}
+\end{align}
+$$
+Then we can prove the forward direction as required. 
+
+## Infinite Limits at Infinity 
+Take the following: 
+$$
+\lim_{ x \to \infty } x^2=\infty
+$$
+To formally prove this; then: 
+$$
+\begin{align} 
+f(x)\text{ defined on } (a,\infty)\\
+\lim_{ x \to \infty } f(x) = \infty \text{ can be stated as} \\
+\forall M>0, \exists N>0\text{ s.t. } \\
+x > N \implies f(x) > M
+\end{align}
+$$
+## Indeterminate Forms 
+Consider the following: 
+$$
+\lim_{ x \to \infty } x^3-x^2=\infty-\infty????
+$$
+Consider rewriting this function as the following: 
+$$
+\lim_{ x \to \infty } x^2(x-1) = \infty*\infty??
+$$
+Note that intuitively; $\infty\pm\infty \land \infty*\infty = \infty$. However, what do we do with $\frac{\infty}{\infty}$ and $\infty-\infty$? These should be avoided; and these are what we term as indeterminate forms (also including $\frac{0}{0}$, etc. )
+
+## Vertical Tangents and Cusps 
+Recall the concept of a vertical tangent; the idea that a tangent expression explodes out to infinity. We can formally define it here. 
+
+> Vertical Tangent
+> Let $f(x)$ be continuous at $x=c$, if $\lim_{ x \to c }f'(x) = \pm \infty$, then we say that a vertical tangent exists at $x=c$. 
+
+> Vertical Cusp
+> $f(x)$ is continuous at $x=c$, and $\lim_{ x \to ^-c }f(x) = \mp\infty$ and $\lim_{ x \to ^+c }f(x) = \pm\infty$, then $x=c$ has a vertical cusp. 
+
+For instance, take the following: 
+$$
+	\begin{align}
+	f(x) &  = 3 + (x+1)^{2/3} \\
+	f'(x)  & =\frac{2}{3(x+1)^{1/3}} \\
+	\lim_{ x \to ^--1 } f'(x) & =-\infty \\
+	\lim_{ x \to ^+-1 } f'(x) & =\infty \implies f(x) \text{ has a vertical cusp at } x=-1
+	\end{align}
+
+$$
+## Slant Asymptotes (Oblique Asymptotes) 
+Slant Asymptotes are defined as the following: 
+$$
+\lim_{ x \to \infty } [f(x)-(mx+b)] = 0
+$$
+Where $mx+b$ is our Oblique Asymptote; or in other words, $f(x) \to (mx+b)$. 
+
+Take the following
 
 ---
 # Pre-Lecture Notes
