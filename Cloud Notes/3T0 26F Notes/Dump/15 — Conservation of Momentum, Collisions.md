@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-15T16:26:37.698-04:00
-edited_seconds: 1720
+updated_at: 2026-10-15T16:44:36.429-04:00
+edited_seconds: 1760
 course: PHY180H1
 tags:
   - PHY180H1
@@ -42,7 +42,7 @@ $$
 
 ## Conservation of Momentum (LEC) 
 > [!ila] Fixed Object CoM 
-> Note that with collisions with large fixed objects, Conservation of Momentum is not preserved. Note for elastic situations, that Kinetic Energy *is* conserved, but in inelastic collisions this is not preserved as per usual. 
+> Note that with collisions with large fixed objects, Conservation of Momentum is *still preserved* (though it's hard to observe). Note for elastic situations, that Kinetic Energy *is* conserved, but in inelastic collisions this is not preserved as per usual. 
 
 
 
@@ -128,6 +128,10 @@ The equation $v_{1} + v_{1,f} = v_{2}+v_{2,f}$ is actually quite significant; pa
 > > This equation above is equivalent to the equation that we got from the linear algebra derivation above. The other solution is essentially the same, just with all subscripts flipped.
 > > 
 
+> [!ila] In Lecture Addendum
+> Taking our system of equations above: 
+> $$\boxed{\begin{aligned} v_{1,f} = \frac{2m_{2}v_{2}}{m_{1}+m_{2}} - v_{1} \frac{m_{2}-m_{1}}{m_{1}+m_{2}} \\[1em]v_{2,f} = \frac{2m_{1}v_{1}}{m_{1}+m_{2}} - v_{2} \frac{m_{1}-m_{2}}{m_{1}+m_{2}}\end{aligned}}$$
+> Note that this is in terms of if both objects are moving during the initial velocity. If we swap to an inertial reference frame where one of our objects are at rest; we can completely remove one of the terms above in this equation. Note that you need to perform the Galilean Transformation between inertial reference frames when needed. 
 ### Perfectly Inelastic 
 Perfectly inelastic collisions have a coefficient of restitution of $0$, meaning that the relative separation velocities of our objects are $0$, or in other words; our objects are stuck together. In this case, our momentum equations actually simplify significantly: 
 $$
