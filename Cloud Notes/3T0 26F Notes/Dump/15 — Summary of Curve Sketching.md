@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-08T10:28:29.511-04:00
-edited_seconds: 340
+updated_at: 2026-10-15T13:27:04.091-04:00
+edited_seconds: 480
 course: ESC194H1
 tags:
   - ESC194H1
@@ -16,6 +16,42 @@ Next: [[16 — Optimization, Antiderivatives and Sigma Notation]]
 
 --- 
 # Lecture Notes
+## Horizontal Asymptotes
+Recall how we defined the concept of a *vertical* asymptote: The value of a function diverges into infinity either from one or both sides into $\pm \infty$; 
+
+By contrast; we can define the concept of the horizontal asymptote as the following: 
+$$
+\lim_{ x \to \infty } f(x) =L  \lor \lim_{ x \to -\infty } f(x) = L \implies y=L \text{ is the horizontal asymptote of }f(x)
+$$
+From here, we need to derive a new definition as to how we should actually formally describe the concept of an infinite limit. For limits at infinity: 
+
+Let $f(x)$ be defined on some interval $(a,\infty)$, then: 
+$$
+\begin{align}
+\lim_{ x \to \infty } f(x)  & = L \\
+ & \implies \forall\epsilon>0,\exists N \text{ s.t. } \\
+x > N  & \implies |f(x)-L| < \epsilon
+\end{align}
+$$
+An example: 
+$$
+\lim_{ x \to \infty }  \frac{x^2-1}{x^2+1} = 1
+$$
+Then; from above: 
+$$
+\begin{align}
+\forall\epsilon>0, \exists N \text{ s.t} \\
+x > N  & \implies \left|\frac{(x^2-1)}{x^2+1} -1\right| < \epsilon \\
+ & \implies \left|\frac{-2}{x^2+1}\right| = \frac{2}{x^2+1} < \epsilon \implies \frac{2}{x^2} < \frac{2}{x^2+1} < \epsilon \\
+ &\implies \frac{2}{x^2} < \epsilon \implies \frac{2}{\epsilon} < x^2 \implies x > \sqrt{ \frac{2}{\epsilon} } = N \\
+\end{align}
+$$
+Choosing $\sqrt{ \frac{2}{\epsilon} }$ as $N$, then: 
+$$
+\left|\frac{(x^2-1)}{x^2+1} -1\right| < \frac{2}{x^2+1} < \frac{2}{x^2} < \frac{2}{N^2} < \frac{2}{\left( \frac{2}{\epsilon} \right)} = \epsilon 
+$$
+
+## Evaluating Infinite Limits 
 
 ---
 # Pre-Lecture Notes
