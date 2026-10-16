@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-14T08:36:50.329-04:00
-edited_seconds: 1350
+updated_at: 2026-10-16T16:29:35.786-04:00
+edited_seconds: 1650
 course: PHY180H1
 tags:
   - PHY180H1
@@ -18,6 +18,72 @@ Next: [[17 — Rotational Kinematics, Rotational Variables]]
 
 --- 
 # Lecture Notes
+## Center of Mass (LEC) 
+Center of Mass is a generalization of Newton's Second Law to an object made out of an amount of particles with mass $m_{j}$; then: 
+$$
+M = \sum_{j=1}^Nm_{j}
+$$
+Then Newton's Second law is equivalent to the sum of the forces applied onto the particles, is equivalent to the force exterior applied to the Center of Mass: 
+$$
+\sum^N_{j=1}\vec{f_{j}^{ext}} = \vec{F}_{ext} =M\vec{a}_{\text{center of mass}}
+$$
+
+Then the position of the Center of Mass can be given by: 
+$$
+\vec{r}_{CM} = \frac{1}{M}\sum^N_{j=1}m_{j}\vec{r}_{j}
+$$
+Where $\vec{r}_{j}$ is defined around a certain origin point; normally one of the points. Refer to [[16 — Center of Mass and Rockets#Extending Newtonian Mechanics|the section in the pre-lecture notes]] for a detailed derivation of this equation; note that if we say now that our object is made out of infinitely many particles with some minute mass $dm$  and distance $dr$; then we should be able to equate this for a continuous system. Refer to this document for information pertaining to solving this: https://tutorial.math.lamar.edu/classes/calcii/centerofmass.aspx
+
+However, for a continuous object; then this can be defined as: 
+$$
+\boxed{\vec{r}_{CM} = \frac{1}{M}\int_{m_{0}}^m \vec{r}dm}
+$$
+Note that $dm$ can be defined as some factor of $\rho lr$, or some factor of constant density across an object. For instance, you can set $m = \rho br,$, then $dm=\rho b dr$
+
+> Example 
+> Where is the center of mass of a quarter of a solid circle? 
+
+Note that by symmetry; we should know that $x_{cm}=y_{cm}$; thus we need to solely find $x_{cm}$. 
+
+For an infinitesimal element, we know it has some $dM$ , with a height of $y$ and a width of $dx$, thus: 
+$$
+dA = ydx
+$$
+Note from Pythagorean Theorem, then: 
+$$
+\begin{align}
+x^2 + y^2 = R^2 \\
+y = \sqrt{ R^2-x^2 }
+\end{align}
+$$
+Then: 
+$$
+\begin{align}
+dA = \sqrt{ R^2-x^2 } \ dx
+\end{align}
+$$
+Note that the area of the entire circle is: 
+$$
+A = \pi R^2 \implies A = \frac{\pi R^2}{4}
+$$
+Since we're analyzing a quarter of our circle; then: 
+$$
+\begin{align}
+dm = \frac{M}{A}dA\\
+ & =\frac{M}{\frac{\pi R^2}{4}}dA \\
+ dm& =\frac{4M}{\pi R^2}\sqrt{ R^2-x^2 }dx
+\end{align}
+$$
+Thus: 
+$$
+\begin{align}
+x_{com} & = \frac{1}{M}\int x \ dM \\
+x_{com} & = \frac{1}{M}\int x *\frac{4M}{\pi R^2}\sqrt{ R^2-x^2 } \ dx \\
+x_{com} & = \frac{4}{\pi R^2}\int x\sqrt{ R^2-x^2 } \ dx  &  u = R^2 - x^2 \implies \frac{du}{dx} = -2x \\
+ & = \frac{4}{\pi R^2}\int xu^{1/2}du
+\end{align}
+
+$$
 
 ---
 # Pre-Lecture Notes
