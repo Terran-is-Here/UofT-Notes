@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-15T13:59:16.384-04:00
-edited_seconds: 870
+updated_at: 2026-10-16T13:24:26.563-04:00
+edited_seconds: 970
 course: ESC194H1
 tags:
   - ESC194H1
@@ -147,8 +147,16 @@ Following our steps:
 4. Asymptotes
 	1. No asymptotes detected ($\lim_{ x \to \pm\infty }f(x)=\pm \infty$)
 5. Derivative of the function: $f'(x) = x^3 -4x=x(x^2-4)=x(x+2)(x-2)$, solutions for CPs are $x=0,\pm2$; no cases where VTs/VCs arise. 
-	1. Intervals of Decrease: $(-\infty,-2)$
-	2. Intervals of Increase: $()$
+	1. Intervals of Decrease: $(-\infty,-2)\cup(0,2)$
+	2. Intervals of Increase: $(-2,0)\cup(2,\infty)$
+6. Second Derivative of the function: $f''(x) = 3x^2 -4$, Then solutions for $f''(x)=0$ are $x=\pm\frac{2}{\sqrt{ 3 }}$: 
+	1. Concave Up: $\left( -\infty,-\frac{2}{\sqrt{ 3 }} \right)\cup\left( \frac{2}{\sqrt{ 3 }},\infty \right)$
+	2. Concave Down: $\left( -\frac{2}{\sqrt{ 3 }}, \frac{2}{\sqrt{ 3 }} \right)$
+	3. Inflection points are present at $x=\pm \frac{2}{\sqrt{ 3 }}$. 
+7. Local Extrema. 
+	1. We can find local extrema using our critical points: $0,\pm2$, Using the second derivative test: 
+	2. $f''(0)=-4 <0 \implies$ $f(0)$ is a local max. 
+	3. $f''(2)=f''(-2)=8 >0 \implies$ $f(-2),f(2)$ is a local min. 
 
 ---
 # Pre-Lecture Notes
