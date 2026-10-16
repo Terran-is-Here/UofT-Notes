@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-16T13:50:06.343-04:00
-edited_seconds: 310
+updated_at: 2026-10-16T13:52:41.519-04:00
+edited_seconds: 380
 course: ESC194H1
 tags:
   - ESC194H1
@@ -40,31 +40,9 @@ Take the following example:
 Use Linear Approximation to estimate $(1.1)^3$ and $(1.001)^3$; then approximate $(1.1)^{77}$ and $(1.001)^{77}$. We have two approximations for these functions. 
 
 > For the first, $f(x) = x^3, f'(x)=3x^2$, then following our linear approximation, using $a=1$, then: 
-$$
-\begin{align}
-f(x)  & \approx f'(a)(x-a)+f(a) \\
-1.1^3 & \approx 3(1.1-1)+1 \\
-1.1^3 & \approx 1.3 \\
-1.331 & \approx 1.3
-\end{align}$$
-$$
-\begin{align}
-1.001^3  & \approx 3(1.001-1) + 1 \\
-1.003003  & \approx 0.003 + 1 = 1.003
-\end{align}
-$$
+> $$\begin{align}f(x)  & \approx f'(a)(x-a)+f(a) \\1.1^3 & \approx 3(1.1-1)+1 \\1.1^3 & \approx 1.3 \\1.331 & \approx 1.3\end{align}$$
+> $$\begin{align}1.001^3  & \approx 3(1.001-1) + 1 \\1.003003  & \approx 0.003 + 1 = 1.003\end{align}$$
 
 > For the second, $f(x)=x^{77}, f'(x) = 77x^{76}$, then $a=1$
-$$
-\begin{align}
-f(x)  & \approx f'(a)(x-a) + f(a)  \\
- & \approx 76(x-1) + 1
-\end{align}
-$$
-Then: 
-$$
-\begin{align}
-f(1.1)  & \approx(76)(0.1)+1 \\
-1538.993 & \approx
-\end{align}
-$$
+> $$\begin{align}f(x)  & \approx f'(a)(x-a) + f(a)  \\& \approx 76(x-1) + 1\end{align}$$
+> Then: $$\begin{align}f(1.1)  & \approx(76)(0.1)+1 \\1538.993 & \approx 8.6 \text{ (highly inaccurate)}\end{align}$$$$\begin{align}f(1.001) &  \approx(76)(0.001) + 1 \\1.001^3 & \approx (0.076) + 1 = 1.076 \\1.008  & \approx 1.076 \text{ (an alright estimation)}\end{align}$$
