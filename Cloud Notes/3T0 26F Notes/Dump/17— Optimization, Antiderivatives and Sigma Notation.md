@@ -1,15 +1,15 @@
 ---
-updated_at: 2026-10-12T11:34:12.798-04:00
-edited_seconds: 1240
+updated_at: 2026-10-16T13:34:50.813-04:00
+edited_seconds: 1250
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 16
-Lecture Date: 2026-10-16
+Lecture Date: 2026-10-19
 Week: 6
 ---
 Hub: [[ESC194 Hub]]
-Previous: [[15 — Summary of Curve Sketching]]
+Previous: [[15 — Summary of Curve Sketching]], [[16 — Linear Approximation and Differentials]]
 Next: N/A 
 > [!quote] Recommended Reading 
 > Stewart Section 3.7, 3.9

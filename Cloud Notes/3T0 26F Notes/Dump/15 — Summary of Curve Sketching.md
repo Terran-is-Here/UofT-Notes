@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-16T13:24:26.563-04:00
-edited_seconds: 970
+updated_at: 2026-10-16T13:33:21.850-04:00
+edited_seconds: 980
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,7 +11,7 @@ Created: October 8th 2026, 9:10:38 am
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[14 — Derivatives, Function Shape, Horizontal Asymptotes]]
-Next: [[16 — Optimization, Antiderivatives and Sigma Notation]]
+Next: [[16 — Linear Approximation and Differentials]],  [[17— Optimization, Antiderivatives and Sigma Notation]]
 > [!quote] Recommended Reading 
 > Section 3.5 of the Stewart Textbook
 
