@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-16T16:29:35.786-04:00
-edited_seconds: 1650
+updated_at: 2026-10-16T16:50:44.116-04:00
+edited_seconds: 2110
 course: PHY180H1
 tags:
   - PHY180H1
@@ -78,12 +78,68 @@ Thus:
 $$
 \begin{align}
 x_{com} & = \frac{1}{M}\int x \ dM \\
-x_{com} & = \frac{1}{M}\int x *\frac{4M}{\pi R^2}\sqrt{ R^2-x^2 } \ dx \\
-x_{com} & = \frac{4}{\pi R^2}\int x\sqrt{ R^2-x^2 } \ dx  &  u = R^2 - x^2 \implies \frac{du}{dx} = -2x \\
- & = \frac{4}{\pi R^2}\int xu^{1/2}du
+x_{com} & = \frac{1}{M}\int_{0}^R x *\frac{4M}{\pi R^2}\sqrt{ R^2-x^2 } \ dx \\
+x_{com} & = \frac{4}{\pi R^2}\int_{0}^R x\sqrt{ R^2-x^2 } \ dx  &  u = R^2 - x^2 \implies \frac{du}{dx} = -2x \\
 \end{align}
 
 $$
+Note with 
+$$
+\begin{align}
+\frac{du}{dx}=-2x  \\
+du=-2xdx \\
+-\frac{du}{2} = xdx
+\end{align}
+$$
+Then: 
+$$
+\begin{align}
+x_{com} & = \frac{4}{\pi R^2}\int_{0}^R \sqrt{ R^2-x^2 } \ xdx \\
+x_{com} & = \frac{4}{\pi R^2}\int_{0}^R -u^{1/2}\frac{1}{2}du = \frac{4}{\pi R^2}\int_{0}^R-\frac{u^{1/2}}{2} \\
+ & =\frac{4}{\pi R^2} \left[ -\frac{1}{2} * \frac{2}{3} u^{3/2} \right] = \frac{4}{\pi R^2}\left[ -\frac{1}{3} u^{3/2} \right]_{0}^R \\
+ & =-\frac{4}{3\pi R^2}[u^{3/2}]_{0}^R  & \text{Resub } u = R^2-x^2\\ 
+ & =-\frac{4}{3\pi R^2}[(R^2-R^2)^{3/2} - (R^2-0^2)^{3/2} ] \\
+ & =-\frac{4}{3\pi R^2}
+\end{align}
+$$
+## Rocket Equation (LEC)
+The Rocket Equation arises from conservation of momentum; note that for a rocket: 
+$$
+\begin{align}
+p_{i} = p_{f}
+\end{align}
+$$
+For our rocket: 
+$$
+p_{fr} = (m-dm_{f})(v+dv)
+$$
+And for the gas present: 
+$$
+p_{fg} = dm_{g}u 
+$$
+Where $u$ is the exhaust velocity of our rocket; then setting $p_{i} = m_{0}v_{0}$ with $m=m_{0}$; then setting these equal: 
+$$
+\begin{align}
+m_{0}v  & = (m_{0}-dm_{g})(v+dv) + dm_{g}(-u + v + dv)  \\
+m_{0}v  & = m_{0}v + mdv - dm_{g}v -dm_{g}dv - dm_{g}u + dm_{g}v + dm_{g}dv  & dm_{g}dv \to 0\\
+0 & = mdv   - dm_{g}u  & \text{note, } dm_{g}= -dm\\
+dmu  & =mdv \\
+dv & =\frac{1}{m_{0}}dmu  \\
+\int_{v_{0}}^{v_{t}} dv & =-u\int_{m_{0}}^m \frac{1}{m}dm \\
+\Delta v & =u[\ln(m_{0})-\ln (m)] = u\ln\left( \frac{m_{0}}{m} \right) \\
+\Delta v & =u\ln\left( \frac{m}{m_{0}} \right)
+\end{align}
+$$
+
+
+### Application
+> A rocket is fired in deep space, where gravity is negligible. In the first second, it ejects $\frac{1}{160}$ of it's mass as exhaust gas, and has an acceleration of $15.2$m/s^2. What is the speed $u$ of the exhaust gas relative to the rocket? 
+
+Note:
+$$
+a=  \frac{\Delta v}{\Delta t} = 15.2
+$$
+Where $\Delta t =1$
 
 ---
 # Pre-Lecture Notes
