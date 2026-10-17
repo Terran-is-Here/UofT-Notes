@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-16T16:50:44.116-04:00
-edited_seconds: 2110
+updated_at: 2026-10-16T16:58:06.018-04:00
+edited_seconds: 2250
 course: PHY180H1
 tags:
   - PHY180H1
@@ -99,9 +99,10 @@ x_{com} & = \frac{4}{\pi R^2}\int_{0}^R -u^{1/2}\frac{1}{2}du = \frac{4}{\pi R^2
  & =\frac{4}{\pi R^2} \left[ -\frac{1}{2} * \frac{2}{3} u^{3/2} \right] = \frac{4}{\pi R^2}\left[ -\frac{1}{3} u^{3/2} \right]_{0}^R \\
  & =-\frac{4}{3\pi R^2}[u^{3/2}]_{0}^R  & \text{Resub } u = R^2-x^2\\ 
  & =-\frac{4}{3\pi R^2}[(R^2-R^2)^{3/2} - (R^2-0^2)^{3/2} ] \\
- & =-\frac{4}{3\pi R^2}
+ & =-\frac{4}{3\pi R^2}(-R^3) = \frac{4R}{3\pi}
 \end{align}
 $$
+Since $x_{com}=y_{com}$, center of mass is present at $\left(\frac{4}{3\pi}, \frac{4}{3\pi} \right)$
 ## Rocket Equation (LEC)
 The Rocket Equation arises from conservation of momentum; note that for a rocket: 
 $$
@@ -139,7 +140,15 @@ Note:
 $$
 a=  \frac{\Delta v}{\Delta t} = 15.2
 $$
-Where $\Delta t =1$
+Where $\Delta t =1s$, note that $\Delta m = m-m_{0} \implies\left( m_{0}-\frac{m_{0}}{160} \right) = m_{0} \left( 1-\frac{1}{160} \right)=m_{0}\left( \frac{159}{160} \right)=m$; then
+$$
+\begin{align}
+a=\frac{\Delta v}{\Delta t} = \frac{u}{\Delta t}\ln\left( \frac{m_{0}}{m} \right) \\
+\frac{a\Delta t}{\ln\left( \frac{m_{0}}{m} \right)} = u \\
+\frac{15.2}{\ln\left( \frac{160}{159} \right)} =  2424.39206& 
+\end{align}
+$$
+
 
 ---
 # Pre-Lecture Notes
