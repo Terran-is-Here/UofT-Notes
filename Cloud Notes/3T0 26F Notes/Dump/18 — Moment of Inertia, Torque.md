@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-18T17:06:54.405-04:00
-edited_seconds: 270
+updated_at: 2026-10-18T17:27:12.671-04:00
+edited_seconds: 380
 course: PHY180H1
 tags:
   - PHY180H1
@@ -14,12 +14,13 @@ Next: N/A
 > [!quote] Recommended Reading 
 > University Physics, 10.4-10.5
 > [[11 — Work and Kinetic Energy]]
+> [[16 — Center of Mass and Rockets]]
 --- 
 # Lecture Notes
 
 ---
 # Pre-Lecture Notes
-## Rotational Kinetic Energy
+## Rotational Kinetic Energy & Moments of Inertia 
 Recall that we defined Kinetic Energy as the following in the previous note: 
 $$
 K_{T}= \frac{1}{2}mv^2
@@ -62,4 +63,24 @@ $$
 > [!theorem] Moment of Inertia (Integral) 
 > The *moment* of inertia of a continuous object can be found by realizing that; for any infinitesimal segment of an object (i.e. $dm$), the radius will remain the same; thus we can define $I$ by taking smaller and smaller cuts of $m_{j}$ in the expression we defined above; up to some $dm$; then: 
 > $$I = \int r^2 dm$$
-> Where $dm$ represents some component of the mass distribution of the ob
+> Where $dm$ represents some component of the mass distribution of the object (often from the linear mass density; though not always); and $r$ is often some term of distance from the rotational center. 
+> > In CIV102; this is known as the Second Mass-Moment of Inertia; since that's the extended name of the term (though physics normally solely uses the term Moment of Inertia) 
+
+## Calculating Moments of Inertia
+Retaking our two Moment of Inertia expressions from above: 
+$$
+\begin{align}
+I  & = \sum^N_{j=1}m_{j}r_{j}^2 \\
+ & =\int r^2\ dm
+\end{align}
+$$
+We could now begin starting to solve for some expressions for the moments of inertia of some objects. Note that for most objects; we can normally define $dm$ as some differential with respects to $r$. Note that $r$ is some factor with respects to how we define where our axis of rotation for our object is; and thus if we define $dm$ as a term of $r$; then the integration bounds above are now defined with respects to the geometry of an object. 
+
+> Consider now the example of a uniform thin rod with an axis through the center; that is a rod of length $L$ and a linear mass density of $\lambda$. 
+
+Recall that we can find the center of mass of a uniform object by taking the integral of $\frac{1}{M}\int r\ dm$; where $dm=\lambda dr$; then 
+$$
+\begin{align}
+r_{com} = \frac{1}{M}\int r\lambda dr
+\end{align}
+$$
