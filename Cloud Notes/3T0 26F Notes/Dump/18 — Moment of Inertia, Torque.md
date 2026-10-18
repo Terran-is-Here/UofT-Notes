@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-18T17:46:53.488-04:00
-edited_seconds: 660
+updated_at: 2026-10-18T17:54:46.793-04:00
+edited_seconds: 730
 course: PHY180H1
 tags:
   - PHY180H1
@@ -10,7 +10,7 @@ Week: 7
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[17 — Rotational Kinematics, Rotational Variables]]
-Next: N/A
+Next: [[19 —Newton's Second Law for Rotation, Rotational Energy]]
 > [!quote] Recommended Reading 
 > University Physics, 10.4-10.5
 > [[11 — Work and Kinetic Energy]]
@@ -143,3 +143,14 @@ I  & = \sigma2\pi \int_{0}^{R}r^3dr = \sigma2\pi\left[ \frac{R^4}{4} \right] \\
  I & =\frac{M\pi R^4}{2\pi R^2} = \frac{MR^2}{2}
 \end{align}
 $$
+> Note that (probably) an alternative method exists for doing this in terms of some angular measure $\theta$; integrating from $0$ to $2\pi$, as we can subtend the area of a circle as the area inscribed within the arc formed by that corresponding angle. 
+> 
+> Proof is left as an exercise to the future reader. 
+## Compound Objects 
+Now that we know how to solve for the Moment of Inertias of continuous objects; now arises the equation as to how we should derive the moment of inertia of multiple objects in a more complex structure. 
+
+In general, if we want to define the total Moment of Inertia of a system, we define it as the summation of the moments with respects to some rotational axis: 
+$$
+I = \sum ^{N}_{n=1} I_{n}
+$$
+Note that this means that **when we take the moments** in this context; they need to share the same axis; thus the Parallel Axis theorem may be applied in order to find the corresponding moment with the context of a certain rotational axis being set. 
