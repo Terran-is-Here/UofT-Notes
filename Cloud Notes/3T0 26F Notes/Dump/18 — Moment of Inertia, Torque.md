@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-18T17:27:12.671-04:00
-edited_seconds: 380
+updated_at: 2026-10-18T17:46:53.488-04:00
+edited_seconds: 660
 course: PHY180H1
 tags:
   - PHY180H1
@@ -52,6 +52,13 @@ Where we define the term inside; $\sum_{j=1}^N m_{j}r_{j}^2$ as the *Moment of I
 > $$I = \sum_{j=1}^Nm_{j}r_{j}^2$$
 > Where $I$ is a measure of the object's rotational inertia; that is to say how hard it is to change it's rotational velocity. 
 
+> [!axiom] Implications
+> For instance; take an object with two particles of mass $M$ some distance $r$ from the rotational center of an object. If we analyze the center of our object; then we get the following moment expression: 
+> $$I = Mr^2 + Mr^2 = 2Mr^2$$
+> Now consider if we analyze it at the end of one of our objects instead; then: 
+> $$I = M 0^2 + M(2r)^2 = 4Mr^2$$
+> Which implies that our object will actually be *twice as hard* to rotate. 
+
 Then; our above expression for rotational kinetic energy becomes the following: 
 $$
 K_{R} = \frac{1}{2}I\omega^2
@@ -81,6 +88,58 @@ We could now begin starting to solve for some expressions for the moments of ine
 Recall that we can find the center of mass of a uniform object by taking the integral of $\frac{1}{M}\int r\ dm$; where $dm=\lambda dr$; then 
 $$
 \begin{align}
-r_{com} = \frac{1}{M}\int r\lambda dr
+r_{com} &  = \frac{1}{M}\int ^{L}_{0} r\lambda dr = \frac{\lambda}{M} \left( \frac{L^2}{2} \right)   & \lambda L=M\\
+ & =\frac{L}{2}
+\end{align}
+$$
+Which implies that the center of mass of an object is at it's center. Consider now us finding the moment of inertia at this center; since we defined $dm$ already; then: 
+$$
+\begin{align}
+I  & = \int r^2 dm = \int\lambda r^2dr = \lambda \int_{-\frac{L}{2}}^{L/2} r^2dr \\
+ & =\lambda\left[ \frac{r^3}{3} \right]^{L/2}_{-L/2} = \lambda\left[ \frac{L^3}{24} + \frac{L^3}{24} \right] \\
+I & =\frac{\lambda L^3}{12} = \frac{ML^2}{12}
+\end{align}
+$$
+
+Consider now if we took the rotational axis at the *end* of one of the beams; that is changing the bounds of the integral from $\left[ -\frac{L}{2}, \frac{L}{2} \right]$ to $[0,L]$: 
+$$
+\begin{align}
+I  & = \int r^2dm = \int\lambda r^2dr = \lambda \int ^{L}_{0}r^{2}dr \\
+ & =\frac{\lambda L^3}{3}= \frac{ML^2}{3}
+\end{align}
+$$
+This leads to the following theorem arising: 
+> [!theorem] Parallel-Axis Theorem
+> Let $m$ be the mass of an object, and let $d$ be the distance from an axis through the object's center of mass to a new axis, then we have: 
+> $$I_{\text{Parallel Axis}} = I_{\text{CoM}} + md^2$$
+
+For our expressions above; then we have: 
+$$
+\begin{align}
+\frac{1}{3}ML^2  & = \frac{1}{12}ML^2 + M\left( \frac{L}{2} \right)^2  \\
+ & =\frac{1}{12}ML^2 + \frac{ML^2}{4} = \frac{1}{3}ML^2
+\end{align}
+$$
+### Other Surfaces
+Note that for other surfaces; the context for which we define $dm$ (and consequently, $dr$) may vary. 
+
+> For instance; suppose that we are forced to find the Moment of Inertia of a flat disk. 
+
+For this, since it's a flat disk, we can assume that the density is uniform across the flat surface; that is $\sigma A = M$; then $\sigma dA =dM$; where $\sigma$ is the surface mass density of the object ($\sigma=\frac{M}{A}$)
+
+Now consider the term $dA$; since this is a circle; we know that $A = \pi r^2$; thus $dA = 2\pi r\ dr$; thus plugging this in to our expression above: for $dM = \sigma(2\pi r) dr$ 
+$$
+\begin{align}
+I  & = \int r^2\ dm = \int r^2 (\sigma2\pi r) \ dr  \\
+ & =\sigma2\pi\int r^3dr
+
+\end{align}
+$$
+Consider now the bounds that we are integrating with respects to; we want to integrate from the *center* of the circle, all the way out towards it's full radius, some radius $R$; then: 
+$$
+\begin{align}
+I  & = \sigma2\pi \int_{0}^{R}r^3dr = \sigma2\pi\left[ \frac{R^4}{4} \right] \\
+ I& =\frac{\sigma\pi R^4}{2}  & \sigma=\frac{M}{A=\pi R^2} \\
+ I & =\frac{M\pi R^4}{2\pi R^2} = \frac{MR^2}{2}
 \end{align}
 $$
