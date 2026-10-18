@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-12T19:14:56.678-04:00
-edited_seconds: 1560
+updated_at: 2026-10-18T12:44:59.125-04:00
+edited_seconds: 1570
 course: PHY180H1
 tags:
   - Assignment
@@ -95,6 +95,7 @@ $$
 \sqrt{ 2xmFd } &  > \sqrt{ 2xmFd } &  \iff x>1, \text{Object Momentums}
 \end{align}
 $$
+The answer for 6 is therefore B. 
 
 > Question 7
 > A croquet mallet balances when suspended from its center of mass, as shown in the left part of the figure. If you cut the mallet into two pieces at its center of mass, as shown in the right part of the figure, how do the masses of the two pieces compare?
