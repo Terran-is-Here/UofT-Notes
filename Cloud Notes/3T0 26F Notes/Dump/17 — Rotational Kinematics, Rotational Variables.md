@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-18T13:04:48.278-04:00
-edited_seconds: 620
+updated_at: 2026-10-18T13:12:38.118-04:00
+edited_seconds: 780
 course: PHY180H1
 tags:
   - PHY180H1
@@ -104,4 +104,9 @@ $$
 \omega_{t}^2 & =\omega_{0}^2 +2a\Delta \theta \tag { Equation 1.4} 
 \end{align}
 $$
-> [!cay]
+> [!caution] Note
+>  These expressions are essentially the same structurally to their linear kinematics equivalents: 
+>  $$\begin{array}{cc|cc}\text{Linear Kinematics} &  & \text{Rotational Kinematics} \\v_{t} =at + v_{0} &  & \omega_{t}=\alpha t + \omega_{0} \\\bar{v} = \frac{v_{0}+v_{t}}{2} &  & \bar{\omega} = \frac{\omega_{t}+\omega_{0}}{2} \\ x= \bar{v}t + x_{0} &  & \theta = \bar{\theta}t + \theta_{0} \\ x = \frac{1}{2}at^2 + v_{0}t + x_{0} &  & \theta = \frac{1}{2}\alpha t^2 + \omega_{0}t + \theta_{0} \\v_{f}^2 = v_{0}^2 + 2a\Delta x &  & \omega_{t}^2 = \omega_{0}^2 + 2\alpha\Delta\theta\end{array}$$
+>  Since velocity and acceleration follow the same differential structure in a rotational and linear context. 
+
+Since $\omega_{t}$ is always in terms of some radians/second; they need to be converted into revolutions per minute or vice versa if necessary. 
