@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-17T22:11:45.587-04:00
-edited_seconds: 390
+updated_at: 2026-10-18T13:04:48.278-04:00
+edited_seconds: 620
 course: PHY180H1
 tags:
   - PHY180H1
@@ -69,7 +69,7 @@ $$
 \bar{\omega}  & = \frac{\Delta\theta}{\Delta t}  \\
 \bar{\omega}\Delta t  & = \Delta\theta  & \Delta t = t_{f}-t_{0}, t_{0}=0 \\
 \bar{\omega}t  & =\theta_{t}-\theta_{0} \\
-\theta _{t}  & =\bar{\omega}t + \theta_{0}
+\theta _{t}  & =\bar{\omega}t + \theta_{0} \tag{Equation 1.1}
 
 \end{align}
 $$
@@ -80,14 +80,28 @@ $$
 \alpha  & =\frac{d\omega}{dt} \\
 \int_{t_{0}}^t\alpha\ dt  & =\int_{\omega_{0}}^{\omega t}d\omega \\
 \alpha t & =\omega_{t}-\omega_{0}  \\
-\omega_{t}  & = \alpha t + \omega_{0}
+\omega_{t}  & = \alpha t + \omega_{0} \tag{Equation 1.2}
 \end{align}
 $$
-From here; then note that $\omega _t = \frac{d\theta}{dt}$, integrating once more then: 
+Note that since $\omega=\frac{d\theta}{dt}$; integrating with respects once more to time (setting $t_{0}=0$). Note that since $\omega$ varies as a function of time; then we can set it as some $\alpha t+\omega_{0}$; then: 
 $$
 \begin{align}
-\omega_{t}  & = \alpha t + \omega_{0} \\
-\int_{t_{0}}^t\omega_{t} \ dt & = \int_{t_{0}}^t\alpha t + \omega_{0} \ dt \\
-
+\int_{t_{0}}^t\omega dt  & =\int_{\theta_{0}}^{\theta_{t}} d\theta \\
+\int_{t_{0}}^t (\alpha t + \omega_{0})\ dt & =\theta_{t}-\theta_{0} \\
+\frac{1}{2}\alpha t^2 + \omega_{0}t  +\theta_{0}& =\theta_{t} \tag{Equation 1.3}
 \end{align}
 $$
+> Note that this expression is essentially equivalent to it's linear motion cousin. 
+
+From here, we can solve for a time independent version of Equation 1.2 by solving for time in Equation 1.1: 
+$$
+\begin{align}
+\frac{\omega_{t}-\omega_{0}}{\alpha}  & =t \\
+\frac{1}{2}\alpha\left( \frac{\omega_{t}-\omega_{0}}{\alpha} \right)^2 + \omega_{0}\left(\frac{\omega_{t}-\omega_{0}}{\alpha}\right)  +\theta_{0}& =\theta_{t} \tag{Equation 1.3} \\
+\frac{1(\omega _{t}^2 -2\omega_{t}\omega_{0}+\omega _{0}^2)}{2\alpha} + \frac{\omega_{0}(\omega_{t})-\omega_{0}}{\alpha}  & =\Delta\theta \\
+\omega_{t}^2 -2\omega_{t}\omega_{0} + \omega_{0}^2 + 2\omega_{0}\omega_{t} - 2\omega_{0}^2 & =2a\Delta\theta \\
+\omega_{t}^2 - \omega_{0}^2 & =2a\Delta\theta \\
+\omega_{t}^2 & =\omega_{0}^2 +2a\Delta \theta \tag { Equation 1.4} 
+\end{align}
+$$
+> [!cay]
