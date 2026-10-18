@@ -12,7 +12,7 @@ Created: September 14th 2026, 5:22:05 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[4 — 1D Kinematics]]
-Next: [[6 — Rotational Kinematics]]
+Next: [[6 — Uniform Circular Motion]]
 
 > [!quote] Textbook Reading: 
 > 4.1-4.3 

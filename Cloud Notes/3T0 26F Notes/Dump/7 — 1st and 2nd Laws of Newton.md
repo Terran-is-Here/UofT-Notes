@@ -11,7 +11,7 @@ created:
 Created: September 18th 2026, 10:28:45 pm
 ---
 Hub: [[PHY180 Hub]]
-Previous: [[6 — Rotational Kinematics]]
+Previous: [[6 — Uniform Circular Motion]]
 Next: [[8 — 3rd Law of Newton, FBDs]]
 
 > [!quote] Relevant Textbook Sections: 

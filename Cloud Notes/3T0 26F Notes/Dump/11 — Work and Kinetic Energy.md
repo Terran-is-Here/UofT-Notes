@@ -102,7 +102,7 @@ Kinetic Energy is generally defined as the following:
 > Note that $K$ can sometimes be notated as $E_{K}$; this is in terms of Joules. Note that $p=mv \to v=\frac{p}{m}$, which means that this can be rewritten as: 
 > $$K = \frac{mp^2}{2m^2} = \frac{p^2}{2m}$$
 
-Note however that $v$, like other values, are based off a certain reference frame. Refer to [[6 — Rotational Kinematics#]] and [[7 — 1st and 2nd Laws of Newton#Newton's First Law|Newton's First Law (PHY180-7)]] for a brief review on this. 
+Note however that $v$, like other values, are based off a certain reference frame. Refer to [[6 — Uniform Circular Motion#]] and [[7 — 1st and 2nd Laws of Newton#Newton's First Law|Newton's First Law (PHY180-7)]] for a brief review on this. 
 ## Work-Energy Theorem 
 The Work-Energy Theorem states that the Net Work of a system is equivalent to a change in it's kinetic energy. Let us retake the definition of work to show how this is true: 
 $$

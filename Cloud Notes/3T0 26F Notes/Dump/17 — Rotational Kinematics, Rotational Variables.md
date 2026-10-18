@@ -1,20 +1,21 @@
 ---
-updated_at: 2026-10-18T13:12:38.118-04:00
-edited_seconds: 780
+updated_at: 2026-10-18T16:18:26.741-04:00
+edited_seconds: 900
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 17
-Lecture Date: 2026-10-14
+Lecture Date: 2026-10-19
 Week: 7
 Created: October 14th 2026, 8:36:48 am
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[16 — Center of Mass and Rockets]]
-Next: N/A
+Next: [[18 — Moment of Inertia, Torque]]
 > [!quote] Recommended Reading 
 > University Physics 10.1 - 10.3
 > Looking at [[2 — Vectors (Physics)#Polar Coordinates]] may also be useful. 
+> [[6 — Uniform Circular Motion]] (an earl)
 --- 
 # Lecture Notes
 
@@ -42,7 +43,7 @@ Note however that for a rotational system; $\omega$ is always some constant; whi
 > For instance consider if $r_{1} <r_{2} \implies r_{1}\omega < r_{2}\omega \implies v_{1}<v_{2}$
 
 ### Vector Angular Velocity
-Note that $\omega$ is represented by some vector quantity; that is perpendicular to the plane formed by $\vec{v},\vec{r}$. Then: $\vec{v} = \vec{\omega}-\vec{r}$. 
+Note that $\omega$ is represented by some vector quantity; that is perpendicular to the plane formed by $\vec{v},\vec{r}$. Then: $\vec{v} = \vec{\omega}\times\vec{r}$. 
 
 We define $\omega$ by the right hand rule; where it points upwards in some clockwise rotation; and downwards in a counter clockwise direction. 
 ### Angular Acceleration
@@ -110,3 +111,18 @@ $$
 >  Since velocity and acceleration follow the same differential structure in a rotational and linear context. 
 
 Since $\omega_{t}$ is always in terms of some radians/second; they need to be converted into revolutions per minute or vice versa if necessary. 
+### Relating Angular and Translational Kinematics
+Recall how earlier we defined $\theta=\frac{s}{r}$; that is as the ratio of an arc length $s$ and the radius of rotation $r$. 
+
+Note however that $\vec{v}=\vec{\omega} \times \vec{r}$; then we can describe that: 
+$$
+\begin{align}
+\omega  & = \frac{v_{t}}{r} \\
+\alpha & = \frac{a_{t}}{r}
+\end{align}
+$$
+Which makes sense; as both $v_{t}$, and $a_{t}$ are both tangential components of some component around some axis of rotation. Note however that for [[6 — Uniform Circular Motion|UCM]], we still have our own separate $a_{c}$ term defined by $v_{t}$; that is 
+$$
+a_{c} = \frac{v_{t}^2}{r} = \omega^2r
+$$
+
