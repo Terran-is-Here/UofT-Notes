@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T11:47:06.351-04:00
-edited_seconds: 1700
+updated_at: 2026-10-19T12:00:33.640-04:00
+edited_seconds: 1850
 course: ESC194H1
 tags:
   - ESC194H1
@@ -111,7 +111,40 @@ f'(x)  & = 5x^4 + 4x^3 + 4x + C_{1} \\
 f(x) & =x^5 + x^4 + 2x^2 +C_{1}x + C_{2} 
 \end{align}
 $$
-Note that from here, we have two unknown constants. We actually need the boundary conditions for $f'(x)$ and $f(x)$. 
+Note that from here, we have two unknown constants. We actually need the boundary conditions for $f'(x)$ and $f(x)$ at a certain points $C_{1},C_{2}$. 
+## Sigma Notation (LEC) 
+> [!quote] Recommended Reading 
+> Stewart Textbook Appendix E, Section 4.1, 4.2
+
+> Sigma Notation
+> If $a_{m}, a_{m+1},\dots,a_{n}$ are eal numbers, and $m,n$, where $m\leq n$, then we denote the following: 
+> $$S=\sum_{i=m}^n a_{i}=a_{m} + a_{{m+1}} + \dots+a_{n} $$
+> In this context, we consider $i$ as the index of summation. 
+
+Summations can be represented in multiple ways; since we have control as to how a sum is being indexed, we can manipulate our definition of $i$ in order to represent sums in a more usable method. For instance, take the following function: 
+
+$$
+\sum_{i=2}^n i^3 = 2^3 + 3^3 + \dots + (n-1)^3 + n^3
+$$
+Consider; we could also define this as the following: 
+$$
+\sum_{j=1}^{n-1} (j+1)^3 = 2^3 + 3^3 +\dots + n^3
+$$
+That is, we can manipulate the bounds of the sum, as long as the corresponding function is adjusted with respects to a term. The following theorems are useful for working with sums: 
+
+$$
+\begin{align}
+\sum_{i=m}^n\alpha*a_{i}  & =\alpha\sum_{i=m}^na_{i} & \alpha~\text{is a constant} \tag{1.1} \\
+\sum_{i=m}^na_{i}\pm b_{i} & =\sum_{i=m}^na_{i} \pm\sum_{i=m}^nb_{i}\tag{1.2,1.3} \\
+\sum_{i=1}^n 1  & =n  \tag{1.4}\\
+\sum_{i=1}^n \alpha & =an \tag{1.5}\\
+\sum_{i=1}^ni & =\frac{n(n+1)}{2}\tag{1.6} \\
+\sum_{i=1}^ni^2 & =\frac{n(n+1)(2n+1)}{6} \tag{1.7} \\
+\sum_{i=1}^ni^3 & =\left[ \frac{n(n+1)}{2} \right]^2 \tag{1.8} \\
+\sum_{i=m}^ni^4  & =\frac{n(n+1)(2n+1)(3n^2+3n-1)}{30 (?)}
+\end{align}
+$$
+
 
 ---
 # Pre-Lecture Notes
@@ -183,7 +216,7 @@ Antiderivative Formulas / Expressions arise from the concept that Antiderivative
 > That is, you know that the derivative of $\sin$ is $\cos$, therefore the antiderivative of $\cos$ is $\sin$. Same logic applies for the rest; since the **antiderivative when differentiated returns the original function**. 
 
 ## Sigma Notation
-Sigma Notation is the discrete version of its more well known sibling, the one for Integration. Sigma notation is defined as the following: 
+Sigma Notation is the discrete version of its more well known sibling, ($\int$) the one for Integration. Sigma notation is defined as the following: 
 $$
 \sum _{x=m}^na_{i} = \underbrace{a_{m} + a_{m+1}  + a_{m+2} + \dots + a_{n}}_{\text{Some set of numbers (can be from a function)}}
 $$
