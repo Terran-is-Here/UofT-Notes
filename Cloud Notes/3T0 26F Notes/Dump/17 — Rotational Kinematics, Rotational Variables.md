@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-18T16:18:26.741-04:00
-edited_seconds: 900
+updated_at: 2026-10-19T16:32:57.340-04:00
+edited_seconds: 1040
 course: PHY180H1
 tags:
   - PHY180H1
@@ -15,9 +15,23 @@ Next: [[18 — Moment of Inertia, Torque]]
 > [!quote] Recommended Reading 
 > University Physics 10.1 - 10.3
 > Looking at [[2 — Vectors (Physics)#Polar Coordinates]] may also be useful. 
-> [[6 — Uniform Circular Motion]] (an earl)
+> [[6 — Uniform Circular Motion]] (for centripetal and constant velocity)
 --- 
 # Lecture Notes
+## Rotational Kinematics (LEC) 
+The following is a complete list of terms for Rotational Kinematics for reference. 
+* A particle travels on a circular path of some radius $R$. 
+* Angular position is defined by $\theta$
+* Arc Length is defined by $s=\Delta\theta R$
+* Angular velocity is defined by $\omega = \frac{d\theta}{dt}$ .
+	* Tangential velocity is defined by $v_{t}=\omega r$
+* Angular acceleration is defined by $\alpha=\frac{d\omega}{dt}=\frac{d^2\theta}{dt^2}$
+	* Tangential acceleration is defined by $a_{t}=\alpha r$
+* Centripetal Acceleration is defined by $a_{c} = \frac{v_{t}^2}{r}$. 
+Sign convention wise; we call the counter clockwise direction is positive, and the clockwise direction as negative. In terms of $\alpha$, this would be defined in terms of how $\omega$ is changing (i.e. if $\omega$ is positive and speeding up, $\alpha$ is also positive). 
+
+> [!theorem] Note
+> Note that $\omega$ and $\alpha$ can be defined as the right hand rule; i.e. curling your right hight hand and thumb sticking up is the resultant direction of the vector $\omega$ or $\alpha$
 
 ---
 # Pre-Lecture Notes
@@ -38,6 +52,9 @@ Where $\omega$ is some value of $rad$/$s$. With this; and noting that $\frac{ds}
 $$
 v = r\omega
 $$
+> [!ila] In Lecture Addendum
+> Note that if $\omega$ is in terms of radians per second; we can rewrite this into revolutions per minute as $\omega=\frac{2\pi}{T}$. 
+
 Note however that for a rotational system; $\omega$ is always some constant; whilst the radius can vary. That is to say; a spinning thing will have the same angular velocity across the entire rotating object, but the radius may vary: 
 
 > For instance consider if $r_{1} <r_{2} \implies r_{1}\omega < r_{2}\omega \implies v_{1}<v_{2}$
@@ -56,6 +73,9 @@ $$
 \vec{a} = \vec{\alpha}\times \vec{r}
 $$
 Where $a$ in this case represents the *tangential* acceleration of our system; and is the corresponding cross product of $\alpha$ and $\vec{r}$. Note that this would technically be colinear (or at minimum antiparallel) with some $\vec{v}$; which can be expressed from above. 
+
+> [!ila] In Lecture Addendum
+> Note that for any rotating rigid body, all rotational components are constant across the whole rotational body; independent of radii. 
 
 ## Angular Kinematics Expressions
 Similarly to how we derived the kinematics equations for [[4 — 1D Kinematics|1D Kinematics]]; we can derive a *shockingly* similar set of equations in terms of angular velocity. 
