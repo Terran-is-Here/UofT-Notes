@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T11:18:51.023-04:00
-edited_seconds: 380
+updated_at: 2026-10-19T13:50:44.708-04:00
+edited_seconds: 580
 course: PHY180H1
 tags:
   - PHY180H1
@@ -72,4 +72,34 @@ From here, we derive the full expression for extending Newton's Second Law to Ro
 Note that $I$ is always some term of the geometry of the object that we are trying to rotate; which means it often varies as a different set of parameters present. 
 
 ## Rotational Energy
-Recall that in [[11 — Work and Kinetic Energy]], we defined the concept of $W$ 
+Recall that in [[11 — Work and Kinetic Energy]], we defined the concept of work as the following: 
+$$
+dw = F\cdot d\vec{r}
+$$
+Note that for a moment arm; the distance of the moment arm does not change; rather some degree measure of theta changes, thus: 
+$$
+\begin{align}
+dw  & =Fr*d\theta \\
+\int dw  & =\int F{r}d\theta \\
+W  & =\int \tau~d\theta
+\end{align}
+$$
+That is, we define the work done by a rotational force as the torque applied onto our object, over some angular interval. We can define this in terms of the net work as: 
+$$
+W_{net} = \int \sum \tau~d\theta
+$$
+
+Where we can sum up the corresponding $\tau$ forces which may be playing into our system; and thus: 
+$$
+W_{net} = \int \tau_{net}~d\theta
+$$
+Note that Work in this context is now related to the term of rotational kinetic energy that we had: 
+
+> [!theorem] Work-Energy Theorem (Rotational Systems)
+> Recall the work energy theorem for translational systems; that is:
+> $$W = K_{t}-K_{0} = \Delta K$$
+> From [[18 — Moment of Inertia, Torque#Rotational Kinetic Energy & Moments of Inertia| PHY180 (18) > Rotational Kinetic Energy]] that the rotational kinetic energy of an object can be derived from setting $v = r\omega$: 
+> $$K=\frac{1}{2}mv^2 = \frac{1}{2}mr^2\omega^2 = \frac{1}{2}I\omega^2$$
+> Where $W$ is given to us by the following expression: 
+> $$W_{AB} = \int_{\theta _{A}}^{\theta _{B}}\tau~d\theta$$
+
