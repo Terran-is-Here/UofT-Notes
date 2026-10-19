@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T11:25:59.699-04:00
-edited_seconds: 1510
+updated_at: 2026-10-19T11:47:06.351-04:00
+edited_seconds: 1700
 course: ESC194H1
 tags:
   - ESC194H1
@@ -30,6 +30,9 @@ Optimization problems generally follow the same following pattern. We often want
 For instance: 
 > Let us say that we want a poster to have a total area of $240~cm^2$, with $1~cm$ margins on the bottom and sides, and a $2~cm$ margin on the top. What dimensions of poster will give the largest printed area? 
 
+> [!ila]  In Lecture Addendum
+> Consider that using logic, we can bound the intervals of values that $\ell$ could take; (or even $h$) within some closed bound. From here, we could use the closed interval method to also analyze the function. 
+
 We can intuitively define the following terms: 
 $$
 \begin{align}
@@ -54,10 +57,61 @@ $$
 A'_{int} = \frac{720}{h^2} =2 \\
 \frac{h^2}{720}  & = \frac{1}{2} \\
  h^2& =360 \\
- h  & =\pm \sqrt{ 360 } \approx 19~cm
+ h  & =\pm \sqrt{ 360 }=6\sqrt{ 10 } \approx 19~cm
 \end{align}
 $$
-We can plug in this value for $h$ into our original term (note that we did not consider the negative root, as it did not make sense). Note that we also did not consider $h=0$, as it would both not make sense, and it is also not included in the domain of th
+We can plug in this value for $h$ into our original term (note that we did not consider the negative root, as it did not make sense). Note that we also did not consider $h=0$, as it would both not make sense, and it is also not included in the domain of the original function being differentiated. 
+
+We also take a note to see that our term for $h$ has to be bounded from $[3,77]$; thus from here we could bound and determine the end points over the closed interval method. We know that $6\sqrt{ 10 }$ would be our maximum point for this case; then taking the original area expression, then: 
+$$
+\begin{align}
+240  & = \ell*6\sqrt{ 10 } \\
+\ell  & = 4\sqrt{ 10 }
+\end{align}
+$$
+## Antiderivatives (LEC) 
+Recall how we define the concept of the derivative as the instantaneous rate of change (or slope) of the function given at a certain point. Antiderivatives ask us to think about if, given how a function changes (it's slope), can I work backwards to find the shape of the original function? 
+
+We define antiderivatives as the following: 
+> [!theorem] Antiderivative (LEC) 
+> A function $F(x)$ is called **an** antiderivative for $f$ on an open interval $I$ if: 
+> $$F'(x) = f(x)~ \forall x\in I$$
+> > [!caution] Note
+> > Antiderivatives are not unique; as for any Antiderivative, we can add some arbitrary constant at the end; as this would still satisfy our definition of the antiderivative of a function. 
+> 
+
+For instance for the above definition: $$f(x)=x^2 \implies F(x) = \frac{1}{3}x^3$$
+Note that we can define this in terms of a trigonometric function. 
+
+Consider now finding the antiderivative of the function below with the additional following information: 
+$$
+f(x) = \frac{x+1}{\sqrt{ x }}~,F(1)=5
+$$
+Taking the antiderivative of this; then: 
+$$
+\begin{align}
+f(x)  & = \frac{x}{\sqrt{ x }} + \frac{1}{\sqrt{ x }} = \sqrt{ x  }+x^{-1/2} & \text{Taking inverse power rule...} \\
+F(x) & = \frac{2}{3}x^{3/2} + 2x^{1/2} +C
+\end{align}
+$$
+Since we know $F(1)=5$, then $F(1) = \frac{2}{3}+2+C = 5 \implies C=\frac{7}{3}$, then we can **fully specify** antiderivative: 
+$$
+F(x)=\frac{2}{3}x^{3/2} + 2x^{1/2} + \frac{7}{3}
+$$
+This expression is fully specified. Note that $F(1)$ is considered a (boundary condition), as it defines the behavior of our function at a certain point. 
+### Higher Derivatives
+Considering now higher derivatives; then: 
+$$
+f''(x) = 20x^3 + 12x^2 + 4
+$$
+What is the original function? Taking the reverse power rule twice, then: 
+$$
+\begin{align}
+f'(x)  & = 5x^4 + 4x^3 + 4x + C_{1} \\
+f(x) & =x^5 + x^4 + 2x^2 +C_{1}x + C_{2} 
+\end{align}
+$$
+Note that from here, we have two unknown constants. We actually need the boundary conditions for $f'(x)$ and $f(x)$. 
 
 ---
 # Pre-Lecture Notes
