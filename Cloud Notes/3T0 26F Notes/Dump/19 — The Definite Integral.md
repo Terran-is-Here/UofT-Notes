@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-18T22:27:30.514-04:00
-edited_seconds: 300
+updated_at: 2026-10-18T22:47:59.609-04:00
+edited_seconds: 490
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,9 +11,10 @@ Created: October 18th 2026, 10:02:14 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[18 — Areas and Distances]]
-Next: N/A
+Next: [[20 — The Fundamental Theorem of Calculus]]
 > [!quote] Recommended Reading 
 > Section 4.2 of the Stewart Textbook
+> [[17— Optimization, Antiderivatives and Sigma Notation]]
 --- 
 # Lecture Notes
 
@@ -50,6 +51,46 @@ $$
 \sum^n_{x=m}a_{i}+b_{i} & = \sum_{x=m}^na_{i} + \sum ^n_{x=m}b_{i} \tag{Sum 1.3} \\
 \sum^n_{x=m}a_{i}-b_{i} & = \sum_{x=m}^na_{i} - \sum ^n_{x=m}b_{i} \tag{Sum 1.4}  \\
 \sum^n_{i=1}i  & = \frac{n(n+1)}{2}\tag{Sum 1.5} \\
-\sum^n_{i=1}i^2 =& = \frac{n(n+1)(2n+1)}{6} \tag{Sum 1.6}
+\sum^n_{i=1}i^2 =& = \frac{n(n+1)(2n+1)}{6} \tag{Sum 1.6} \\
+\sum^n_{i=1}i^3  & = \left[ \frac{n(n+1)}{2} \right]^2 \tag{Sum 1.7}
 \end{align}
 $$
+
+Evaluating Definite Integrals is very similar to how we approached limit laws, that being that we want to get the function that we are taking a definite integral of into a form where we can apply one of the following theorems / sums above in order to gain a better sum as to what they are. 
+
+### The Midpoint Rule 
+Note that, while we defined in the definition of a definite integral through the Reimann sum as us taking the sum with the sampling point being the middle of the function; that is taking $x_{i} = \frac{1}{2}(x_{i-1}+x_{i})$ and working it out from there. 
+
+## Definite Integral Properties
+A Definite Integral follows the following general properties; mostly stemming from the Sum Properties arising from above; although more of them arise from a graphical intuition of the concept of Integrals being the area under a graph. 
+$$
+\begin{align}
+\int _{a}^b c~dx  & = c(b-a) \\
+\int_{a}^{b}[f(x)\pm g(x)]~dx & =\int_{a}^b f(x)~dx \pm \int_{a}^b f(g)~dx  \\
+\int_{a}^b cf(x)~dx & =c\int_{a}^b f(x)~dx
+\end{align}
+$$
+
+Note that integrals also has the following property with respects to how we define their bounds: 
+$$
+\int_{a}^b f(x) ~dx = -\int_{b}^a f(x)~dx
+$$
+Since $\Delta x = \frac{b-a}{n}$, then $-\Delta x = \frac{a-b}{n}$; and since our integral is in concept defined by the Reimann sum of the function; then this holds true. From this, note that if the bounds are the same, then $\Delta x=0$, then:
+$$
+\int_{a}^{a}f(x)~dx =0
+$$
+We can also combine integral bounds: 
+$$
+\int_{a}^b f(x)~dx + \int_{b}^cf(x)~dx = \int_{a}^c f(x)~dx
+$$
+Consider this as the equivalent to us adding together both areas under a graph; which are both present / connected to each other at the $b$ boundary. 
+
+The following comparison properties are also true: 
+$$
+\begin{align}
+\implies f(x) \geq 0 ~\text{for}~a\leq x\leq c  & \implies \int_{a}^b f(x)~dx \geq 0 \\
+\implies f(x) \geq g(x)~\text{for}~a\leq x\leq b  & \implies \int_{a}^b f(x)~dx \geq \int_{a}^b g(x)~dx \\
+\implies m \leq f(x) \leq M~\text{for}~a\leq x\leq b & \implies m(b-a)\leq \int^b_{a}f(x)~dx\leq M(b-a)
+\end{align}
+$$
+Note that the second property states that an order is preserved if we take an integral over an inequality; thus we can prove the last one by simply taking the integral across all of the terms present in the first inequality and using our constant integral rule above to evaluate $\int m$ and $\int M$ as $m(b-a)$ and $M(b-a)$. 
