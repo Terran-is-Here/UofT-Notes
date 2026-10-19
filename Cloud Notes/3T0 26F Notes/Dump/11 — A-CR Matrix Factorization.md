@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T12:30:10.893-04:00
-edited_seconds: 1430
+updated_at: 2026-10-19T12:50:00.710-04:00
+edited_seconds: 1590
 course: ESC103H1
 tags:
   - ESC103H1
@@ -129,7 +129,57 @@ Or in other words, $R\vec{x}=0$ and $A\vec{x}=0$ both share the same set of solu
 $$
 \begin{bmatrix}1\\0\end{bmatrix}x_{1} + \begin{bmatrix}3\\0\end{bmatrix}x_{2} + \begin{bmatrix}0\\1\end{bmatrix}x_{3} = \begin{bmatrix}0\\0\end{bmatrix}
 $$
-$x_{1}=-3x_{2}$, $x_{2}=x_{2}=t$, $x_{3}=0$, then we get $\vec{x}=t\begin{bmatrix}-3\\1\\0\end{bmatrix}$; or in other words, the set of solutions is of the form of a line with a span of $\mathbb{R}^1$. We can change $x_{2}=t$, as we can define it as our free variable (as it is not natively dependent on any other terms of the expression) 
+$x_{1}=-3x_{2}$, $x_{2}=x_{2}=t$, $x_{3}=0$, then we get $\vec{x}=t\begin{bmatrix}-3\\1\\0\end{bmatrix}$; or in other words, the set of solutions is of the form of a line with a span of $\mathbb{R}^1$ (or in other words, our system has a nullity of 1). We can change $x_{2}=t$, as we can define it as our free variable (as it is not natively dependent on any other terms of the expression) We now arise at some other definitions: 
+
+> A free variable is a variable freely defined as any value.
+> A leading(pivot) variable is a variable dependent on some free variable (for our case, $x_{1},x_{3}$). 
+
+Note that a free variable can be set well, freely. the pivot variables need only to be defined as some term of the leading variable. 
+
+> [!theorem] Null space (tut) 
+> The null space of a matrix $\mathbf{A}$ is the set of solutions of $\vec{x}$ in $\mathbf{A}\vec{x}=\vec{0}$. 
+> > The *dimension* of a null space is otherwise notated as nullity. Or in other words, the amount of linearly-independent basis vectors within the null space. 
+
+Note that for our expression of linearly independent basis vectors from above, we define it's nullity() as 0. 
+
+Take now the following example: 
+$$
+\mathbf{A_{3}}=  \begin{bmatrix}2 & 3 & -4 \\1 & \frac{3}{2} & -2 \\4 & 6 & -8\end{bmatrix}=
+\begin{bmatrix}2\\1 \\4\end{bmatrix}\begin{bmatrix}
+1 & \frac{3}{2}-2
+\end{bmatrix}
+$$
+Then solving for $R\vec{x}=0$: 
+$$
+x_{1} + \frac{3}{2}x_{2} + -2x_{3} = 0
+$$
+Note that for any combination of $x_{1},x_{2},x_{3}$ works for this combination. Thus, this is actually a *plane* in R3 (or, a Hyperplane in $\mathbb{R}^3$ ). For our case, declare $x_{2},x_{3}$ as free variables; then we can solve for an expression of $x_{1}$: 
+$$
+\begin{align}
+x_{1}=-\frac{3}{2}x_{2} + 2x_{3} \\
+x_{2}=x_{2} \\
+x_{3}=x_{3}
+\end{align}
+$$
+Then, in a vector form: 
+$$
+\begin{bmatrix}x_{1}\\x_{2}\\x_{3}\end{bmatrix} = \begin{bmatrix}
+-\frac{3}{2}\\1\\0
+\end{bmatrix}x_{2} + \begin{bmatrix}
+2\\0\\1
+\end{bmatrix}x_{3}
+$$
+We denote the two column vectors here as the two special solutions; all other solutions for $x_{1},x_{2},x_{3}$ are linear combinations of these two; or in other words, a vector that lies on the plane defined by these two matrices. 
+
+Note that we can relate the concept of nullity with the rank of the original matrix, consider a matrix with $\text{rank}(\mathbf{A})=3$ (or for above; we know that for a matrix with all linearly independent vectors, the sole solution is the origin), thus $\text{nullity}(\mathbf{A})=0$
+
+Consider now a matrix with 2 linearly independent columns and one dependent column; then we have $\text{rank}(\mathbf{A_{2}})=2$ and $\text{nullity}(A_{2})=1$. 
+
+Conversely, for the one we just did; we have $\text{rank}(A_{3})=1$ and $\text{nullity}(A_{3})=2$. There's a clear pattern in here; this is defined by the Rank Nullity Theorem: 
+
+> Rank Nullity Theorem
+> $$\text{rank}(A) + \text{nullity}(A) = n$$
+> Where $n$ represents the number of columns within a matrix; or in other words, the number of variables present. Thus, the rank of a variable represents the number of pivot variables, while nullity represents the number of free variables present in solutions to a system. 
 
 ---
 # Pre-Lecture Notes
