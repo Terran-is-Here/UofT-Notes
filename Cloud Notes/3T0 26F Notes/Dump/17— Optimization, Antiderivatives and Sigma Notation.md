@@ -1,12 +1,12 @@
 ---
-updated_at: 2026-10-18T21:30:13.775-04:00
-edited_seconds: 1270
+updated_at: 2026-10-19T11:25:59.699-04:00
+edited_seconds: 1510
 course: ESC194H1
 tags:
   - ESC194H1
-"Lecture #": 16
+"Lecture #": 17
 Lecture Date: 2026-10-19
-Week: 6
+Week: 7
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[15 — Summary of Curve Sketching]], [[16 — Linear Approximation and Differentials]]
@@ -17,6 +17,47 @@ Next: [[18 — Areas and Distances]]
 --- 
 
 # Lecture Notes
+## Optimization (LEC) 
+Optimization problems generally follow the same following pattern. We often want to try and relate a system of related mathematical expressions as a set of known variables (and or their differentials) , then follow our approaches from [[12 — Related Rates, Min and Max Values]] in order to find the possible max/min values present. 
+1. Understand the problem being presented (what are we trying to find, maximize, or minimize?) 
+2. Draw a diagram (helps a lot).
+3. Introduce variables for quantities of interest (+label clearly on the diagram that we defined in section 2) 
+4. Solve mathematical relationships between properties present. 
+	1. Note that you may find that quantities of interest may depend on more than one variable. 
+	2. More than one relationship may be required; and or the knowledge of the differential may be required knowledge. 
+5. Find maximum and minimum values of the quantity of interest. 
+
+For instance: 
+> Let us say that we want a poster to have a total area of $240~cm^2$, with $1~cm$ margins on the bottom and sides, and a $2~cm$ margin on the top. What dimensions of poster will give the largest printed area? 
+
+We can intuitively define the following terms: 
+$$
+\begin{align}
+A_{ext}  & = \ell h   =240 \\
+A_{int} & =(\ell-2)(h-3) 
+\end{align}
+$$
+We want to maximize $A_{int}$, we can define $\ell$ as $\ell=\frac{240}{h}$; then: 
+$$
+\begin{align}
+A_{int}  & = \left( \frac{240}{h}  - 2\right)(h-3)  \\
+ & =240  - \frac{3(240)}{h} -2h+6 =-\frac{720}{h} -2h + 246
+ \end{align}
+$$
+Differentiating this to find possible maximums: 
+$$
+A'_{int}=\frac{720}{h^2} - 2 = 0
+$$
+Then: 
+$$
+\begin{align}
+A'_{int} = \frac{720}{h^2} =2 \\
+\frac{h^2}{720}  & = \frac{1}{2} \\
+ h^2& =360 \\
+ h  & =\pm \sqrt{ 360 } \approx 19~cm
+\end{align}
+$$
+We can plug in this value for $h$ into our original term (note that we did not consider the negative root, as it did not make sense). Note that we also did not consider $h=0$, as it would both not make sense, and it is also not included in the domain of th
 
 ---
 # Pre-Lecture Notes

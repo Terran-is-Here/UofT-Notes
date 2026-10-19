@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T10:49:16.382-04:00
-edited_seconds: 350
+updated_at: 2026-10-19T11:18:51.023-04:00
+edited_seconds: 380
 course: PHY180H1
 tags:
   - PHY180H1
@@ -69,4 +69,7 @@ From here, we derive the full expression for extending Newton's Second Law to Ro
 > [!theorem] Newton's Second Law (rigid bodies) 
 > The net torque of an object is equivalent to the sum of all the torques on an object, and is equivalent to the product of the Moment of Inertia and the net Angular Acceleration of an object: $$\tau_{net} = \sum \tau = I\alpha$$
 
-Note that $I$ is always some term of the geometry of the object that we are trying to rotate. 
+Note that $I$ is always some term of the geometry of the object that we are trying to rotate; which means it often varies as a different set of parameters present. 
+
+## Rotational Energy
+Recall that in [[11 — Work and Kinetic Energy]], we defined the concept of $W$ 
