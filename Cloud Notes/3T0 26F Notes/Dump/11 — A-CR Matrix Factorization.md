@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T12:50:00.710-04:00
-edited_seconds: 1590
+updated_at: 2026-10-19T12:55:26.714-04:00
+edited_seconds: 1600
 course: ESC103H1
 tags:
   - ESC103H1
@@ -180,6 +180,8 @@ Conversely, for the one we just did; we have $\text{rank}(A_{3})=1$ and $\text{n
 > Rank Nullity Theorem
 > $$\text{rank}(A) + \text{nullity}(A) = n$$
 > Where $n$ represents the number of columns within a matrix; or in other words, the number of variables present. Thus, the rank of a variable represents the number of pivot variables, while nullity represents the number of free variables present in solutions to a system. 
+
+We can apply solving systems of linear equations as the result of a chemical reaction; though that is beyond the scope of this note and is thus left as a future thing to read. i guess. 
 
 ---
 # Pre-Lecture Notes
