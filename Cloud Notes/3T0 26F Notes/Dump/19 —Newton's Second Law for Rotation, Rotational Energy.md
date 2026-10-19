@@ -1,14 +1,16 @@
 ---
-updated_at: 2026-10-18T18:01:59.972-04:00
-edited_seconds: 90
-course:
+updated_at: 2026-10-18T23:15:13.927-04:00
+edited_seconds: 120
+course: PHY180H1
 tags:
-"Lecture #": 0
+  - PHY180H1
+"Lecture #": 19
 Lecture Date: 2026-10-18
 Week:
+Created: October 18th 2026, 6:01:52 pm
 ---
-Hub: 
-Previous: 
+Hub: [[PHY180 Hub]]
+Previous: [[18 — Moment of Inertia, Torque]]
 Next:
 
 --- 
