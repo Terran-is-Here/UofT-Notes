@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T17:35:48.294-04:00
-edited_seconds: 240
+updated_at: 2026-10-19T17:47:48.007-04:00
+edited_seconds: 350
 course: ESC180H1
 tags:
   - ESC180H1
@@ -53,4 +53,30 @@ c = 3
 L = [a,b,c] # data structure wise, equivalent to some L[id(a),id(b),id(c)]; but note that id(L) is something different entirely 
 ```
 
-When we declare $a,b$
+When we declare `a,b,c` as a different value, the corresponding memory pointer address that they point to changes. Note that memory pointer addresses may be a bit arbitrary; immutability does not imply that a certain piece of data is pointed to the same address: 
+
+```python
+a = (1,2) 
+b = (1,2) 
+
+# Returns True, both 1 and 2 have the same primitive memory pointer address
+a[0] is b[0]
+a[1] is b[1]
+
+a is b # returns false, different addresses 
+```
+
+In terms of functions: 
+```python
+def a(): 
+	pass
+	
+a #returns a memory address? or something? returns a hex value wiith it though, which can be converted into a hex value
+
+```
+
+Note however that if we point a variable at another variable; that essentially turns a variable back into a pointer: 
+```python
+a = 1 # id(a) = id(1) 
+a = b # id(b) => id(1) #pointer points directly at 1 
+```
