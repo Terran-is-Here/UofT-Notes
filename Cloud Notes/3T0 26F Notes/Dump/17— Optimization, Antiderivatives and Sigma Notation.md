@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-16T13:34:50.813-04:00
-edited_seconds: 1250
+updated_at: 2026-10-18T21:30:13.775-04:00
+edited_seconds: 1270
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week: 6
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[15 — Summary of Curve Sketching]], [[16 — Linear Approximation and Differentials]]
-Next: N/A 
+Next: [[18 — Areas and Distances]]
 > [!quote] Recommended Reading 
 > Stewart Section 3.7, 3.9
 > [[10 — Differentiation Formulas and Applied Derivatives]], [[11 — Trigonometric, Chain and Implicit Differentiation]]
