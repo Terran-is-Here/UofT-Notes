@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T13:41:22.009-04:00
-edited_seconds: 570
+updated_at: 2026-10-19T17:12:45.182-04:00
+edited_seconds: 590
 course: ESC180H1
 tags:
   - ESC180H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC180 Hub]]
 Previous: [[10 — ESC180 Lecture 10]]
-Next:
+Next: [[17 — ESC 180 Lecture 17]]
 
 --- 
 # Lecture Notes
