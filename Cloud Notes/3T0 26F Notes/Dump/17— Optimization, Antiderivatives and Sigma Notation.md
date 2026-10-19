@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T12:00:33.640-04:00
-edited_seconds: 1850
+updated_at: 2026-10-19T12:10:23.948-04:00
+edited_seconds: 1860
 course: ESC194H1
 tags:
   - ESC194H1
@@ -141,7 +141,7 @@ $$
 \sum_{i=1}^ni & =\frac{n(n+1)}{2}\tag{1.6} \\
 \sum_{i=1}^ni^2 & =\frac{n(n+1)(2n+1)}{6} \tag{1.7} \\
 \sum_{i=1}^ni^3 & =\left[ \frac{n(n+1)}{2} \right]^2 \tag{1.8} \\
-\sum_{i=m}^ni^4  & =\frac{n(n+1)(2n+1)(3n^2+3n-1)}{30 (?)}
+\sum_{i=m}^ni^4  & =\frac{n(n+1)(2n+1)(3n^2+3n-1)}{30 (?)} \tag{1.9}
 \end{align}
 $$
 

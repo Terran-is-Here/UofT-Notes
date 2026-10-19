@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-14T09:11:57.324-04:00
-edited_seconds: 1250
+updated_at: 2026-10-19T12:30:10.893-04:00
+edited_seconds: 1430
 course: ESC103H1
 tags:
   - ESC103H1
@@ -74,7 +74,6 @@ $$\mathbf{A} = \mathbf{CR} = \begin{bmatrix}2 & 4 \\4 & 8  \\1 & 5\end{bmatrix}\
 > In other words, $\mathbf{C}$ give us the tools, and $\mathbf{R}$ give us the instructions that we need to construct the corresponding matrix of $\mathbf{A}$. 
 
 ## Solving Homogenous Vectors 
-
 Take the following: 
 $$
 \begin{align}
@@ -83,6 +82,54 @@ $$
 \mathbf{C}(\mathbf{R})\vec{x} & =\vec{0}
 \end{align}
 $$
+Note that $\vec{x}=\vec{0}$ is always a solution to this system; however the question is now "does there exist any other $\vec{x}$ where this results in $\vec{0}$"? 
+
+To start, let's take the example where $\mathbf{A}$ has linearly independent column vectors; such as: 
+$$
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & -2 & 7 \\
+0 & 1 & 5
+\end{bmatrix}
+\begin{bmatrix}
+x_{1}\\x_{2}\\x_{3}
+\end{bmatrix}=
+\begin{bmatrix}
+0\\0\\0
+\end{bmatrix}
+$$
+Note that since $\mathbf{A}$'s column space are linearly independent; then the only linear combination of the column vectors are when the scalars are 0. Note that since the column vectors for $\mathbf{A}$ is linearly independent, then in $\mathbf{CR}$: 
+$$
+\begin{bmatrix}1 & 0 & 0 \\0 & -2 & 7 \\0 & 1 & 5\end{bmatrix}\begin{bmatrix}1 & 0 & 0 \\0 & 1 & 0 \\0 & 0 & 1\end{bmatrix}\begin{bmatrix}
+x_{1}\\x_{2}\\x_{3}
+\end{bmatrix} = \vec{0} \iff \vec{x}=0
+$$
+
+Consider now a non-linearly independent matrix: take the following matrix: 
+$$
+\begin{bmatrix}2 & 6 & 4 \\4 & 12 & 8 \\1 & 3 & 5\end{bmatrix}
+$$
+Factoring this into $A=CR$, then: 
+$$
+\begin{bmatrix}2 & 6 & 4 \\4 & 12 & 8 \\1 & 3 & 5\end{bmatrix} = \begin{bmatrix}2 & 4\\4 & 8\\1 & 5\end{bmatrix}\begin{bmatrix}
+1 & 3 & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+$$
+Applying this to $\mathbf{A}=CR \implies C(R\vec{x})=0$: 
+$$
+\begin{bmatrix}2 & 4\\4 & 8\\1 & 5\end{bmatrix}\begin{bmatrix}
+1 & 3 & 0 \\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}x_{1}\\x_{2}\\x_{3}\end{bmatrix} = \vec{0}
+$$
+Note that now, recall that for a set of linearly independent vectors $C$, or in our case, the Column vector is linearly independent. Thus, the only way that is $\vec{0}$ is if we can equate $R\vec{x}=0$; then: 
+$$\begin{bmatrix}1 & 3 & 0 \\0 & 0 & 1\end{bmatrix}\begin{bmatrix}x_{1}\\x_{2}\\x_{3}\end{bmatrix}=\vec{0}$$
+Or in other words, $R\vec{x}=0$ and $A\vec{x}=0$ both share the same set of solutions $\vec{x}$. Thus, taking this from the column picture; this can be trivially solved: 
+$$
+\begin{bmatrix}1\\0\end{bmatrix}x_{1} + \begin{bmatrix}3\\0\end{bmatrix}x_{2} + \begin{bmatrix}0\\1\end{bmatrix}x_{3} = \begin{bmatrix}0\\0\end{bmatrix}
+$$
+$x_{1}=-3x_{2}$, $x_{2}=x_{2}=t$, $x_{3}=0$, then we get $\vec{x}=t\begin{bmatrix}-3\\1\\0\end{bmatrix}$; or in other words, the set of solutions is of the form of a line with a span of $\mathbb{R}^1$. We can change $x_{2}=t$, as we can define it as our free variable (as it is not natively dependent on any other terms of the expression) 
 
 ---
 # Pre-Lecture Notes
