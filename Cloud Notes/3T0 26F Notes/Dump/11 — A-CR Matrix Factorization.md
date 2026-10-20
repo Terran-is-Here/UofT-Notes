@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T12:55:26.714-04:00
-edited_seconds: 1600
+updated_at: 2026-10-20T17:31:12.836-04:00
+edited_seconds: 1780
 course: ESC103H1
 tags:
   - ESC103H1
@@ -182,6 +182,64 @@ Conversely, for the one we just did; we have $\text{rank}(A_{3})=1$ and $\text{n
 > Where $n$ represents the number of columns within a matrix; or in other words, the number of variables present. Thus, the rank of a variable represents the number of pivot variables, while nullity represents the number of free variables present in solutions to a system. 
 
 We can apply solving systems of linear equations as the result of a chemical reaction; though that is beyond the scope of this note and is thus left as a future thing to read. i guess. 
+
+> [!ila] In Lecture Addendum
+> Note that from here, the lecture goes into using linear algebra in a chemical reaction system. For this case; we define a variable pertaining to each term; then have each row be equivalent to the molar ratios present within atoms. 
+
+For instance, take the following system:
+$$
+\begin{align}
+x_{4}C_{2}H_{6} + x_{5}O_{2} \to x_{3}CO + x_{2}H_{2}  \to x_{1}C
+\end{align}
+$$
+then: 
+$$
+\begin{array}{c:cc}
+C & 2x_{4} \to x_{3}+x_{1} \\
+H & 6x_{4} \to 2x_{2} \\
+O & 2x_{5} \to x_{3}
+\end{array}
+$$
+From the definition of the change in something, that is the final minus initial, and that these should sum up to zero: 
+$$
+\begin{align}
+1x_{1}+0x_{2}+1x_{3}-2x_{4}+0x_{5} & =0 \\
+2x_{2}-6x_{4} & =0 \\
+x_{3}-2x_{5} & =0
+\end{align}
+$$
+Then we can define this as the following matrix: 
+$$
+\begin{bmatrix}
+1 & 0 & 1\\0 & 1 & 0\\0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+1 & 0 & 0  & -2 & 2 \\
+0 & 1 & 0 & -3 & 0 \\
+0 & 0 & 1 & 0 & -2\end{bmatrix}
+\begin{bmatrix}
+x_{1}\\x_{2}\\x_{3}\\x_{4}\\x_{5}
+\end{bmatrix} = \vec{0}
+$$
+Then: 
+$$
+\begin{align}
+x_{1} & =2x_{4}-2x_{5} \\
+x_{2} & =3x_{4} \\
+x_{3} & =2x_{5} \\
+x_{4} & =x_{4} \\
+x_{5} & =x_{5}
+\end{align} \implies
+\begin{bmatrix}
+x_{1}\\x_{2}\\x_{3}\\x_{4}\\x_{5}
+\end{bmatrix} = \begin{bmatrix}
+2\\3\\0\\1\\0
+\end{bmatrix}x_{4} + \begin{bmatrix}
+-2\\0\\2\\0\\1
+\end{bmatrix}x_{5}
+$$
+Note that this implies that $x_{5}$ controls the amount of corresponding soot formation; that is $x_{1}$ is inversely proportional to $x_{5}$. 
+
 
 ---
 # Pre-Lecture Notes

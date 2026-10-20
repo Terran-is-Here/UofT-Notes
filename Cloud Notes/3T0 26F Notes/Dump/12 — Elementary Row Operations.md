@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T22:13:22.865-04:00
-edited_seconds: 260
+updated_at: 2026-10-20T17:33:57.132-04:00
+edited_seconds: 300
 course: ESC103H1
 tags:
   - ESC103H1
@@ -15,6 +15,23 @@ Next:
 
 --- 
 # Lecture Notes
+Recall that previously, to solve $A\vec{x}=\vec{0}$, we previously factored $A\vec{x}$ into $CR\vec{x}$ to solve correspondingly; where $C\vec{x}=0$ holds the solution to $A\vec{x}=0$. 
+
+Recall that from [[10 — Matrix Multiplication]], we can multiply both sides of an equation **by the same matrix, in the same order**; that is $A\vec{x}=\vec{b}$, multiplying by the same matrix $E_{1}$ maintains this equality: $(A\vec{x}=\vec{b}) = (M_{1}A\vec{x}=M_{1}\vec{b})$. Using this property of matrix multiplication, we can solve a system of linear equations through multiplying by certain set of matrices; called Elementary Row Operations. 
+
+## Upper Triangular Matrix
+For a square system (i.e. $n\times n$ matrices), an upper triangular matrix is defined as the following: 
+$$U=\begin{bmatrix}u_{11} & u_{12} & u_{13} \\0 & u_{22} & u_{23} \\0 & 0 & u_{33}\end{bmatrix}$$
+Where all terms to the bottom left of the main diagonal of a matrix are defined as being equal to 0. Note that this form is useful, as in the case where we are solving a $A\vec{x}=\vec{0}$, we can easily solve this into our system of equations: 
+$$U\vec{x}=\vec{b}=\begin{bmatrix}u_{11} & u_{12} & u_{13} \\0 & u_{22} & u_{23} \\0 & 0 & u_{33}\end{bmatrix}\begin{bmatrix}
+x_{1}\\x_{2}\\x_{3}
+\end{bmatrix}=\begin{bmatrix}
+b_{1}\\b_{2}\\b_{3}
+\end{bmatrix}$$
+As from here, $x_{3}=u_{33}=b_{3}$, then this can be solved from here. Note that we can get any matrix from $A$ to $U$ by performing a set of matrix multiplications: 
+$$
+E_{k}\dots E_{2}E_{1}A\vec{x} = Ek\dots E_{2}E_{3}
+$$
 
 ---
 # Pre-Lecture Notes
