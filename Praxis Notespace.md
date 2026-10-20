@@ -18,3 +18,20 @@ Confusion:
 
 Frustration: 
 * Lack of access to some standards which could have been incredibly useful to have access to. 
+
+---
+## Personal Praxis Notes 
+## Tutorials 
+Tutorial 6
+* 
+
+## Design Brief
+* Focused predominantly on the development of Goal 2 / Design for Reliability within our project; spent most of my time researching terms for MTBF (and the lack thereof in terms of the data listed, see above.) 
+	* Decided, after discussion with fellow team members; that we should change it from MBTF to some measure of weather, as well as considering only having it in terms of Mechanical devices. 
+* Focused on the Proofreading and Research + References of the sources used within the Design Brief for both my, and the majority of our teammate's work.![[Praxis Notespace-1792509550119.webp|687x345]]
+	* Focused on ensuring that the data / research actually gathered by my teammates actually corroborate with the data listed, as just another check to make sure things were going well.
+	* Helped with final SPaG checks. 
+* Did not use AI at all within this assignment; mainly since I don't use it that much often in general. 
+* Wrote Stakeholder interpretations, based on first hand experience and the interview data gathered by Jeffrey. 
+	* I may have written it without full consideration of other secondary sources, which may be a source of weakness. 
+##
