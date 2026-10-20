@@ -24,6 +24,13 @@ Frustration:
 ## Tutorials 
 Tutorial 6
 * Elina and Ethan don't really seem to be that as effective / out there as versus to Us / Jefferey? 
+Todo: 
+* Get online whiteboard set up 
+* Asynchronously work on brainstorms, and inform others if you have something you want a look taken at (or if there are changes) 
+* Synchronous work session from 8-10pm 
+
+Reflection: 
+* The most useful tool that we have used so far was the 6-3-5 Brainstorming tool, as it both lets us individually work on a problem, then working collaboratively on things. 
 
 ## Design Brief
 * Focused predominantly on the development of Goal 2 / Design for Reliability within our project; spent most of my time researching terms for MTBF (and the lack thereof in terms of the data listed, see above.) 
