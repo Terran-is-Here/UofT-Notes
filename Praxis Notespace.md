@@ -23,7 +23,7 @@ Frustration:
 ## Personal Praxis Notes 
 ## Tutorials 
 Tutorial 6
-* 
+* Elina and Ethan don't really seem to be that as effective / out there as versus to Us / Jefferey? 
 
 ## Design Brief
 * Focused predominantly on the development of Goal 2 / Design for Reliability within our project; spent most of my time researching terms for MTBF (and the lack thereof in terms of the data listed, see above.) 
