@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-20T17:33:57.132-04:00
-edited_seconds: 300
+updated_at: 2026-10-20T17:50:33.005-04:00
+edited_seconds: 620
 course: ESC103H1
 tags:
   - ESC103H1
@@ -30,8 +30,111 @@ b_{1}\\b_{2}\\b_{3}
 \end{bmatrix}$$
 As from here, $x_{3}=u_{33}=b_{3}$, then this can be solved from here. Note that we can get any matrix from $A$ to $U$ by performing a set of matrix multiplications: 
 $$
-E_{k}\dots E_{2}E_{1}A\vec{x} = Ek\dots E_{2}E_{3}
+
+\underbrace{E_{k}\dots E_{2}E_{1}A}_{\vec{U}}\vec{x}=
+\underbrace{Ek\dots E_{2}E_{1}\vec{b}}_{\vec{C}}
 $$
+Or otherwise, we transform from $A\vec{x}=\vec{b}$ to $\vec{U}\vec{x}=\vec{C}$, where $\{ E_{k},E_{k-1},\dots E_{1} \}$ are the set of elementary row operations as matrices multiplied onto our matrix $A$. 
+## Elementary Row Operations (LEC)
+Elementary Row operations can be taken from the Identity Matrix. 
+
+> Changing Rows: 
+
+$$E_{1}\begin{bmatrix}a & b\\c & d\end{bmatrix} = \begin{bmatrix}
+c & d\\a & b
+\end{bmatrix}$$
+Note that we can see this if we rearrange an Identity matrix: 
+$$
+\begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix} \to \begin{bmatrix}0 & 1 \\1 & 0\end{bmatrix} = E_{1}$$
+Then, we can see that: 
+$$
+\begin{bmatrix}
+0 & 1\\1 & 0
+\end{bmatrix}\begin{bmatrix}
+a & b\\c & d
+\end{bmatrix} = \begin{bmatrix}
+c & d\\a & b
+\end{bmatrix}
+$$
+Where we have now changed the rows of our $2\times{2}$ matrix. 
+
+> Scalar Multiplication to a specific Row 
+
+$$
+E_{2}\begin{bmatrix}a & b \\c & d\end{bmatrix} = \begin{bmatrix}
+ka & kb \\
+c & d
+\end{bmatrix}
+$$
+From the identity matrix, we can see that: 
+$$
+\begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix} \to \begin{bmatrix}k & 0 \\0 & 1\end{bmatrix}= E_{2}
+$$
+Then: 
+$$\begin{bmatrix}k & 0 \\0 & 1\end{bmatrix}\begin{bmatrix}a&b\\c&d\end{bmatrix} = \begin{bmatrix}ka & kb \\c & d\end{bmatrix}$$
+As desired. 
+
+> Adding a row to another row
+
+$$
+E_{3} \begin{bmatrix}
+a & b\\c & d
+\end{bmatrix} = \begin{bmatrix}
+a & b\\c+ka & d+kb
+\end{bmatrix}
+$$
+We can also take this from the identity matrix. 
+$$
+\begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix} \to \begin{bmatrix}1 & 0 \\k & 1\end{bmatrix} = E_{3}
+$$
+
+$$
+\begin{bmatrix}1 & 0 \\k & 1\end{bmatrix} \begin{bmatrix}
+a & b\\c & d
+\end{bmatrix} = \begin{bmatrix}
+a & b\\c+ka & d+kb
+\end{bmatrix}
+$$
+In summary, an Elementary Matrix is the matrix obtained by performing one of the three row operations *on the identity* matrix. Multiplying a matrix $A$ by $E_{n}$ is equivalent to performing the Elementary Row Operation *directly onto* $A$. 
+
+### Application
+To go from a matrix $A \to U$, we could perform a series of row operations on $A$ (as row operations is just multiplying $A$ by a series of $E$ matrices). For instance: 
+$$
+A = \begin{bmatrix}1 & 2 & 3 \\1 & 4 & 8 \\0 & 2 & 5\end{bmatrix}
+$$
+And if we wanted to find the null space; that is $A\vec{x}=\vec{0}$; we can multiply this by a series of row operations. From here, then: 
+
+$$
+\begin{bmatrix}
+1 & 0 & 0 \\
+-1 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}1 & 2 & 3 \\1 & 4 & 8 \\0 & 2 & 5\end{bmatrix} = \begin{bmatrix}1 & 2 & 3 \\0 & 2 & 5 \\0 & 2 & 5\end{bmatrix}
+$$
+Then: 
+$$
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & -1 & 0
+\end{bmatrix}\begin{bmatrix}1 & 2 & 3 \\0 & 2 & 5 \\0 & 2 & 5\end{bmatrix} = \begin{bmatrix}
+1 & 2 & 3\\0 & 2 & 5\\0 & 0 & 0
+\end{bmatrix}
+$$
+Or conversely: 
+$$
+\underbrace{\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & -1 & 0
+\end{bmatrix}}_{E_{2}}
+\underbrace{\begin{bmatrix}
+1 & 0 & 0 \\
+-1 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix}}_{E_{2}}\begin{bmatrix}1 & 2 & 3 \\1 & 4 & 8 \\0 & 2 & 5\end{bmatrix}  = \vec{0}
+$$
+Note that $E_{2},E_{1}$ are the row operations that we performed 
 
 ---
 # Pre-Lecture Notes
