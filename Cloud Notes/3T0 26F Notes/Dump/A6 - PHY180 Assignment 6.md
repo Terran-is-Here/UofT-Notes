@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-20T14:19:28.673-04:00
-edited_seconds: 130
+updated_at: 2026-10-20T14:25:29.901-04:00
+edited_seconds: 140
 course:
 tags:
 "Lecture #": 0
