@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-20T18:28:15.808-04:00
-edited_seconds: 520
+updated_at: 2026-10-20T18:40:40.738-04:00
+edited_seconds: 710
 course:
 tags:
 "Lecture #": 0
@@ -15,6 +15,9 @@ Connected Notes:
 
 Previous Assignment: [[A5 — PHY180 Assignment 5]]
 Next: N/A
+
+> [!caution]
+> ok i got lazy and didnt bother to write down the questions. 
 
 ---
 
@@ -72,4 +75,47 @@ $$
 > Question 6
 > ![[A6 - PHY180 Assignment 6-1792535262000.webp]]
 
-Assume that winds are tangential, measured at the edge of the tornado; thus $r=60m$ and $v_{t} = 500 \frac{km}{h} = 138.\bar{8} \frac{m}{s}$; 
+Assume that winds are tangential, measured at the edge of the tornado; thus $r=60m$ and $v_{t} = 500 \frac{km}{h} = 138.\bar{8} \frac{m}{s}$; Then: 
+$$
+\begin{align}
+v_{t} = r\omega_{t} \\
+\frac{v_{t}}{r} = \omega_{t} \\
+\frac{138.8}{30}  & \approx 4.629629630 \frac{\text{rad}}{s}
+\end{align}
+$$
+
+> Question 7
+> ![[A6 - PHY180 Assignment 6-1792535486821.webp]]
+
+Recall that we define rotational kinetic energy by substituting mass with $I$ and $v$ with $\omega$; then: 
+$$
+\begin{align}
+K  & = \frac{1}{2}I\omega^2 \\
+\sqrt{ \frac{2K}{I} }  & = \omega \\
+\sqrt{ \frac{2(100)}{9.0} } & =\omega \approx 4.714045208 \frac{\text{rad}}{s}
+\end{align}
+$$
+
+> Question 8: 
+> ![[A6 - PHY180 Assignment 6-1792535665158.webp]]
+
+Using the torque equation; then we can solve for $t$, set all of the values to be scalar values; then: 
+$$
+\begin{align}
+\tau &  = rF_{t}\sin\theta \\
+\frac{\tau}{r\sin\theta} & =F_{t} \\
+\frac{5.00\times 10^3}{6*\sin(30)} & \approx 1,666.6666\bar{6} \text{ N}
+\end{align}
+$$
+
+> Question 9,10
+> ![[A6 - PHY180 Assignment 6-1792535803914.webp]]
+
+Assuming that a constant acceleration was applied; we can solve for $\alpha$ from $\frac{d\omega}{dt}$; that is: 
+$$
+\alpha = \frac{200}{5} = 40 \frac{\text{ rad}}{s}
+$$
+Then, using N2L: 
+$$
+\tau = I\alpha
+$$
