@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T13:50:44.708-04:00
-edited_seconds: 580
+updated_at: 2026-10-19T21:52:24.117-04:00
+edited_seconds: 590
 course: PHY180H1
 tags:
   - PHY180H1
@@ -102,4 +102,8 @@ Note that Work in this context is now related to the term of rotational kinetic 
 > $$K=\frac{1}{2}mv^2 = \frac{1}{2}mr^2\omega^2 = \frac{1}{2}I\omega^2$$
 > Where $W$ is given to us by the following expression: 
 > $$W_{AB} = \int_{\theta _{A}}^{\theta _{B}}\tau~d\theta$$
+
+From here, we can also define the concept of rotational power: 
+> [!theorem] Rotational Power
+> $$dP =  \frac{dW}{dt} = \tau* \frac{d\theta}{dt}=\tau\omega$$
 

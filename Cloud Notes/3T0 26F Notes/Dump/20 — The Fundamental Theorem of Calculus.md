@@ -1,12 +1,12 @@
 ---
-updated_at: 2026-10-19T21:32:08.700-04:00
-edited_seconds: 350
+updated_at: 2026-10-19T21:47:49.056-04:00
+edited_seconds: 520
 course: ESC194H1
 tags:
   - ESC194H1
-"Lecture #": 0
-Lecture Date: 2026-10-19
-Week:
+"Lecture #": 20
+Lecture Date: 2026-10-23
+Week: 7
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[19 — The Definite Integral]]
@@ -21,6 +21,10 @@ Next: N/A
 ## Fundamental Theorem of Calculus
 The Fundamental Theorem of Calculus is, well, the fundamental theorem of Calculus. It lets us link together the concepts of differentiation and integration together in order. Note that the textbook goes in two parts in trying to solve and express the FToC, and we will follow the same logic here. 
 
+For the purposes of readability; the two tenets of FToC have been placed here: 
+> [!theorem] Fundamental Theorem of Calculus 
+> 1. If $g(x) = \int _a^x~f(x)~dx,~g'(x)=f(x)$. Or in other words, $\frac{d}{dx}\int_{a}^xf(x)~dx = f(x)$
+> 2. $\int_{a}^b f(x)~dx = F(b)-F(a)$, where $F'(x)=f(x)$. 
 ### FToC: Special Case
 The first segment of the Fundamental Theorem of Calculus deals with functions with the following form: 
 $$
@@ -86,3 +90,33 @@ Thus we arrive at the formal definition for the first half of the Fundamental Th
 > Here, $g(x)$ is continuous on $[a,b]$, and is differentiable on the corresponding open interval, where $g'(x)=f(x)$. 
 
 ### FToC: Calculation
+The second segment of the Fundamental Theorem of Calculus is defined as the following: 
+
+$$
+\int _{a}^{b}f(x)~dx = F(b)-F(a)
+$$
+Where $F'(x)=f(x)$, that is $F$ is *any* antiderivative of $f(x)$. We will now attempt to prove the following: 
+
+Let $g(x)$ be the following: 
+$$
+g(x) = \int_{a}^x f(x)~dx
+$$
+Recall from part $1$ that $g'(x) = f(x)$, or in other words; $g(x)$ is the antiderivative of $f(x)$; then: 
+$$
+F(x) = g(x) +C
+$$
+Note that taking the one-sided limits, we can see that $g(a),g(b)$ exist, where $g(a)=0$, as $\int_{a}^a~f(x)~dx = 0$; then we can define the difference as the following: 
+
+$$
+\begin{align}
+F(b)-F(a)  & =(g(b) + C ) - (g(a)+C) \\
+ & =g(b) = \int_{a}^b ~f(x)~dx
+\end{align}
+$$
+Then; we can see that a discrete integral can be calculated by taking the difference between an antiderivative taken at two points. 
+
+> [!theorem] Fundamental Theorem of Calculus (Part 2): 
+> If $f$ is continuous on $[a,b]$, then: 
+> $$\int_{a}^b~f(x)~dx = F(b)-F(a)$$
+> Where $F$ is any antiderivative of $f$, that is $F'(x)=f(x)$
+
