@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T21:13:44.736-04:00
-edited_seconds: 260
+updated_at: 2026-10-19T21:32:08.700-04:00
+edited_seconds: 350
 course: ESC194H1
 tags:
   - ESC194H1
@@ -58,3 +58,31 @@ $$
 \frac{g(x+h)-g(x)}{h} = \frac{1}{h}\int_{x}^{x+h}f(x)~dx
 $$
 Note that since $f(x)$ is continuous on an interval $[a,b]$, we know that since the values we are testing are inside that interval, it must thus also be continuous within some closed interval $[x,x+h]$, thus following EVT, $\exists c_{1},c_{2}\in[x,x+h]$ where $f(c_{1})=m$ and $f(c_{2})=M$, that is, the absolute maxima and minima of the function. 
+
+Note then that: 
+$$
+\begin{align}
+m(x+h-x)  & \leq g(x+h)-g(x) \leq M(x+h-x) \\
+mh & \leq g(x+h)-g(x) \leq Mh \\
+f(c_{1})h  & \leq \int _{x}^{x+h}f(x) \, dx \leq f(c_{2})h  \\
+f(c_{1}) & \leq \frac{1}{h}\int _{x}^{x+h}f(x) \, dx  \leq f(c_{2})  \\
+f(c_{1}) & \leq \frac{g(x+h)-g(x)}{h} \leq f(c_{2})
+\end{align}
+$$
+Note that with $\lim_{ h \to 0 }$, $c_{1} \to x$, $c_{2} \to x$ as $[x,x+h]$ with $h\to0\implies [x,x+h] \to[x,x]$; then: 
+$$
+f(x) \leq \lim_{ h \to 0 } \frac{g(x+h)-g(x)}{h}= g'(x) \leq f(x)
+$$
+Thus from the Squeeze Theorem, then:
+
+$$
+g'(x) = \lim_{ h \to 0 } \frac{g(x+h)-g(x)}{h} = f(x)
+$$
+Thus we arrive at the formal definition for the first half of the Fundamental Theorem of Calculus: 
+
+> [!theorem] Fundamental Theorem of Calculus (Part 1)
+> If $f$ is continuous on $[a,b]$, then the function $g(x)$ defined by the following: 
+> $$g(x) = \int _{a}^{x}f(t) \, dt, ~~~ a\leq x\leq b $$
+> Here, $g(x)$ is continuous on $[a,b]$, and is differentiable on the corresponding open interval, where $g'(x)=f(x)$. 
+
+### FToC: Calculation
