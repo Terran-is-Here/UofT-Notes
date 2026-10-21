@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-20T22:22:28.298-04:00
-edited_seconds: 1000
+updated_at: 2026-10-20T22:42:42.663-04:00
+edited_seconds: 1260
 course:
 tags:
 "Lecture #": 0
@@ -51,7 +51,7 @@ $$
 \begin{align}
 \omega_{t}^2  & = \omega_{0}^2 + 2\alpha d\theta \\
 \frac{\omega_{t}^2 - \omega_{0}^2}{2d\theta} & =\alpha \\
-\alpha=\frac{800^2\pi^2-1200^2\pi^2}{160\pi}  & =\left( \frac{800^2-1200^2}{160} \right)\pi \approx-15,708 \frac{\text{rad}}{s^2}
+\alpha=\frac{800^2\pi^2-1200^2\pi^2}{160\pi}  & =\left( \frac{800^2-1200^2}{160} \right)\pi \approx-15,708 \frac{\text{rad}}{m^2} = -43.63323130
 \end{align}
 $$
 
@@ -60,7 +60,7 @@ $$
 \begin{align}
 \omega_{t}  & = \omega_{0} + \alpha t \\
 \frac{\omega_{t}-\omega_{0}}{\alpha}  & = t \\
-\frac{800-1200}{-15708}  & \approx 0.025464731~s
+\frac{800-1200}{-43.63323130}  & \approx 9.~s
 \end{align}
 $$
 
@@ -167,4 +167,57 @@ Recall that we defined Work as the force applied over a rotational quadrant; tha
 $$
 dw= F\cdot d\theta
 $$
-Recall that $dP = \frac{dw}{dt}$, then $dP = F\cdot \frac{d\theta}{dt} = F\cdot \omega$, then with the applied forces present, 
+Recall that $dP = \frac{dw}{dt}$, then $dP = \tau\cdot \frac{d\theta}{dt} = \tau\cdot \omega$, then with the applied forces present: 
+$$
+\begin{align}
+dP  & = -1*0.2*20\pi = -12.5663W
+\end{align}
+$$
+Thus, to ensure that the wheel has to keep rotating at a constant rate, then $dP_{potter}=12.5663J$
+
+> Question 13
+> ![[A6 - PHY180 Assignment 6-1792549561437.webp]]
+
+Consider for Circle A: 
+$$
+\sum \tau = F_{a}r = I_{a}\alpha \implies \frac{F_{a}r}{I_{a}} = \alpha_{a}
+$$
+For a disk; with the same uniform board, we can assume that $\sigma$ is the same; then: 
+$$
+I_{a} = \frac{\sigma r^3}{2}
+$$
+Then, for circle $b$ with $r=2r$, then: 
+$$
+I_{b} = \frac{\sigma 8r^3}{2} = 8I_{a}
+$$
+Then:
+$$
+\begin{align}
+\sum\tau = 2F_{a}2r  & = 8I_{a}\alpha _{b} \\
+\alpha_{b}=\frac{F_{a}r}{2I_{a}} = \frac{1}{2}\alpha_{a}
+\end{align}
+$$
+Then $\alpha_{a}=2\alpha_{b}$; thus the answer is B. 
+
+> Question 14
+> ![[A6 - PHY180 Assignment 6-1792550097711.webp]]
+
+Using equilibrium on $m_{2}$: 
+$$
+\begin{align}
+\sum F : m_{2}g - F_{t}  & = m_{2}a \\
+F_{t} & =m_{2}g-m_{2}a
+\end{align}
+$$
+Let downwards be positive, then $+\alpha\to+x$; Taking the net torque: 
+$$
+\begin{align}
+\sum \tau  & = F_{t}r = I\alpha \\
+\frac{r(m_{2}g-m_{2}a)}{I}  & = \alpha  & a = \alpha r \\
+\frac{r^2(m_{2}g-m_{2}a)}{I} & =a \\
+r^2m_{2}g - r^2m_{2}a  & = Ia \\
+r^2m_{2}g  & =Ia + r^2m_{2}a \\
+\frac{r^2m_{2}g}{I + r^2m_{2}} & =a = \frac{(0.2^2)(2.5)(9.8)}{0.05 + 0.2^2*2.5} ={6}.5\bar{3}  \frac{m}{s^2}
+\end{align}
+$$
+
