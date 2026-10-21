@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-20T21:29:47.457-04:00
-edited_seconds: 770
+updated_at: 2026-10-20T22:22:28.298-04:00
+edited_seconds: 1000
 course:
 tags:
 "Lecture #": 0
@@ -127,4 +127,44 @@ $$
 > Question 11: 
 > ![[A6 - PHY180 Assignment 6-1792545985331.webp]]
 
-We first need to solve 
+Consider the forces present at $m_{1}$; that is: 
+$$
+\begin{align}
+\sum F = m_{1}g - F_{t_{1}} = m_{1}a \\
+F_{t_{1}} = m_{1}g-m_{1}a = m_{1}(g-a)
+\end{align}
+$$
+Consider now the forces present around $m_{2}$, that is: 
+$$
+\begin{align}
+\sum F = F_{2t} = m_{2}a = 2m_{1}a \\
+F_{2t} = 2m_{1}a
+\end{align}
+$$
+Consider now that both of these rope forces are acting on the pulley on the radius. Note that with the RHL convention on signs; , $\alpha r$ is actually pointing towards an acceleration towards the left, which is negative. In our case; we have to say that $a_{t}=-\alpha r$
+$$
+\begin{align}
+\sum \tau  & = rF_{t2} - rF_{t1 } = I\alpha  & a_{t} = \alpha r \\
+-\frac{r(F_{t_{2}}-F_{t_{1}})}{I} & =\alpha
+\end{align}
+$$
+Then: 
+$$
+\begin{align}
+-\frac{r^2(F_{t_{2}}-F_{t_{1}})}{I}  & = a_{t} \\
+-\frac{r^2(2m_{1}a - m_{1}g+m_{1}a)}{I} & =a_{t} \\
+-3r^2m_{1}a + r^2m_{1}g  & =a_{t}I  \\
+r^2m_{1}g & =aI + 3r^2m_{1}a \\
+\frac{r^2m_{1}g}{(I+3r^2m_{1})}  & =a \\
+\frac{(0.2^2)(2)(9.8)}{(0.4 + 3(0.2^2)2)}  & =1.225 \frac{~m}{s^2}
+\end{align}
+$$
+
+> Question 12
+> ![[A6 - PHY180 Assignment 6-1792549265699.webp]]
+
+Recall that we defined Work as the force applied over a rotational quadrant; that is an angle measure: 
+$$
+dw= F\cdot d\theta
+$$
+Recall that $dP = \frac{dw}{dt}$, then $dP = F\cdot \frac{d\theta}{dt} = F\cdot \omega$, then with the applied forces present, 
