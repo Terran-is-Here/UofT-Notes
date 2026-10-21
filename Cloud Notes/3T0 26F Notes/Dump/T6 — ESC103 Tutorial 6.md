@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-21T10:10:06.500-04:00
-edited_seconds: 1300
+updated_at: 2026-10-21T10:30:09.215-04:00
+edited_seconds: 1640
 course: ESC103H1
 tags:
   - Tutorial
@@ -182,9 +182,81 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 Where $E_{3}E_{2}E_{1}A=U$
-Performing row operations; then we see that adding two row 1 to row 3, swapping tow 2 to the top, and 
+Performing row operations; then we see that: 
+$$
+\begin{bmatrix}
+1 & 1 & 0 \\
+4 & 6 & 1 \\
+-2 & 2 & 0
+\end{bmatrix} \to \begin{bmatrix}
+1 & 1 & 0 \\
+0 & 2 & 1 \\
+-2 & 2 &0
+\end{bmatrix} \to \begin{bmatrix}
+1 & 1 & 0 \\
+0 & 2 & 1 \\
+0 & 4 & 0
+\end{bmatrix} \to \begin{bmatrix}
+1 & 1 & 0 \\
+0 & 2 & 1 \\
+0 & 0 & -2
+\end{bmatrix}
+$$
+Where, we subtract row 2 by 4 row 1, add row 3 with 2 row 1, then subtract 2 row 2 with row 3, then: 
+$$
+E_{1}=\begin{bmatrix}
+1 & 0 & 0 \\
+-4 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+$$
+$$
+E_{2}=
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+2 & 0 & 1
+\end{bmatrix}
+$$
+$$
+E_{3}=\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & -2 & 1
+\end{bmatrix}
+$$
 
 2. Solve for $E=E_3E_{2}E_{1}$
+Solving for the elementary matrix, then: 
+$$
+E = \begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & -2 & 1
+\end{bmatrix}\begin{bmatrix}
+1 & 0 & 0\\0 & 1 & 0\\2 & 0 & 1
+\end{bmatrix}\begin{bmatrix}
+1 & 0 & 0\\-4 & 1 & 0\\0 & 0 & 1
+\end{bmatrix}
+$$
+Performing matrix multiplication on the first pair: 
+$$
+E = \begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+2 & -2 & 1
+\end{bmatrix}\begin{bmatrix}
+1 & 0 & 0 \\
+-4 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix} = \begin{bmatrix}
+1 & 0 & 0 \\
+-4 & 1 & 0 \\
+10 & -2 & 1
+\end{bmatrix}
+$$
+
+
 3. Include $\vec{b}$ to produce the augmented matrix: 
 $$
 \left[\begin{array}{ccc|c}
@@ -193,4 +265,49 @@ $$
 -2 & 2 & 0 & 0
 \end{array}\right]
 $$
-With the goal being to solve this system, using elimination to convert $A\vec{x}=\vec{b} \to U\vec{x}=\vec{c}$, determine $c\vec{c}$
+With the goal being to solve this system, using elimination to convert $A\vec{x}=\vec{b} \to U\vec{x}=\vec{c}$, determine $\vec{c}$. Solving this system; then we can multiply by $E$ on both sides: 
+$$
+\begin{bmatrix}
+1 & 0 & 0 \\
+-4 & 1 & 0 \\
+10 & -2 & 1
+\end{bmatrix}\begin{bmatrix}
+1 & 1 & 0 \\
+4 & 6 & 1 \\
+-2 & 2 & 0
+\end{bmatrix} = \begin{bmatrix}
+1 & 0 & 0 \\
+-4 & 1 & 0 \\
+10 & -2 & 1
+\end{bmatrix}\begin{bmatrix}
+1 \\0 \\0
+\end{bmatrix}
+$$
+Note that the first part will resolve to our vector $u$, then we can just simply multiply the right side; giving us $\begin{bmatrix}1\\-4\\10\end{bmatrix}$.
+
+4. Working with $U\vec{x}=\vec{c}$, solve for $\vec{x}$ using back-substitution.
+
+
+> Question 7
+> Consider the following planes: 
+$$
+\begin{align}
+\pi_{1}: x-3y-z & =0 \\
+\pi_{2}: x-3y-z & =12
+\end{align}
+$$
+These planes are parallel because their normal vectors are parallel. 
+
+1. Give a vector equation for all points on each plane using the form: 
+$$
+\begin{bmatrix}
+x \\y\\z
+\end{bmatrix} = \begin{bmatrix}
+?\\0\\0
+\end{bmatrix} + \begin{bmatrix}
+?\\1\\0
+\end{bmatrix} y + \begin{bmatrix}
+?\\0\\1
+\end{bmatrix}z
+$$
+2. From just looking at the two vector equations derived in 1, how do you know the two planes are parallel? 
