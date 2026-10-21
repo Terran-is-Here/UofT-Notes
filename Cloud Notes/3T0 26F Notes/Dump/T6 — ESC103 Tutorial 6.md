@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-21T10:30:09.215-04:00
-edited_seconds: 1640
+updated_at: 2026-10-21T10:42:06.498-04:00
+edited_seconds: 1760
 course: ESC103H1
 tags:
   - Tutorial
@@ -310,4 +310,30 @@ x \\y\\z
 ?\\0\\1
 \end{bmatrix}z
 $$
+For plane 1, we can rearrange this as $x=3y+z$; then setting $y,z$ as the free variables, then: 
+$$
+\begin{bmatrix}
+x \\y\\z
+\end{bmatrix} = \begin{bmatrix}
+0\\0\\0
+\end{bmatrix} + \begin{bmatrix}
+3\\1\\0
+\end{bmatrix} y + \begin{bmatrix}
+1\\0\\1
+\end{bmatrix}z
+		$$
+For plane 2, we can rearrange $x = 3y+z+12$, then setting $y,z$ as the free variables, then 
+$$
+\begin{bmatrix}
+x \\y\\z
+\end{bmatrix} = \begin{bmatrix}
+12\\0\\0
+\end{bmatrix} + \begin{bmatrix}
+3\\1\\0
+\end{bmatrix} y + \begin{bmatrix}
+1\\0\\1
+\end{bmatrix}z
+$$
+
 2. From just looking at the two vector equations derived in 1, how do you know the two planes are parallel? 
+Direction vectors are parallel for the vectors which define points on the plane. 
