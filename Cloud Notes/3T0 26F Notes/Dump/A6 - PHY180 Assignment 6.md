@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-20T22:56:41.902-04:00
-edited_seconds: 1340
+updated_at: 2026-10-21T08:41:48.537-04:00
+edited_seconds: 1460
 course:
 tags:
 "Lecture #": 0
@@ -39,7 +39,7 @@ Next: N/A
 > a) What is the angular acceleration of the flywheel? (-15,708 rad/s^2)
 > b) How much time elapses during the 40 revolutions? (0.02546s)
 
-First, we convert the angular velocity terms into radians: 
+First, we convert the angular velocity terms into radians per second: 
 $$
 \begin{align}
 \frac{600}{60}*2\pi = 20\pi = \omega_{0} \\
@@ -51,7 +51,7 @@ $$
 \begin{align}
 \omega_{t}^2  & = \omega_{0}^2 + 2\alpha d\theta \\
 \frac{\omega_{t}^2 - \omega_{0}^2}{2d\theta} & =\alpha \\
-\alpha=\frac{800^2\pi^2-1200^2\pi^2}{160\pi}  & =\left( \frac{800^2-1200^2}{160} \right)\pi \approx-15,708 \frac{\text{rad}}{m^2} = -43.63323130
+\alpha=\frac{(13.33^2-20^2)\pi^2}{160\pi}=\frac{(13.33^2-20^2)\pi}{160}\approx-4.365066824107 ~ \frac{rad}{s^2}
 \end{align}
 $$
 
@@ -60,7 +60,7 @@ $$
 \begin{align}
 \omega_{t}  & = \omega_{0} + \alpha t \\
 \frac{\omega_{t}-\omega_{0}}{\alpha}  & = t \\
-\frac{800-1200}{-43.63323130}  & \approx 9.1673~s
+\frac{13.33\pi-20\pi}{-4.365066824107}  & \approx 4.8004816~s
 \end{align}
 $$
 
@@ -82,7 +82,7 @@ $$
 \begin{align}
 v_{t} = r\omega_{t} \\
 \frac{v_{t}}{r} = \omega_{t} \\
-\frac{138.8}{30}  & \approx 4.629629630 \frac{\text{rad}}{s} = 29.09 rps
+\frac{138.888}{30}  & \approx 4.629629630 \frac{\text{rad}}{s} = 29.09 rps
 \end{align}
 $$
 
@@ -188,7 +188,7 @@ For a disk; with the same uniform board, we can assume that $\sigma$ is the same
 $$
 I_{a} = \frac{\sigma r^3}{2}
 $$
-Then, for circle $b$ with $r=2r$, then: 
+Then, for circle $b$ with $r=2r$, then if cut from the same material, then $\sigma$ should be constant across both; thus: 
 $$
 I_{b} = \frac{\sigma 8r^3}{2} = 8I_{a}
 $$
