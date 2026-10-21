@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-21T09:29:01.674-04:00
-edited_seconds: 760
+updated_at: 2026-10-21T09:49:13.875-04:00
+edited_seconds: 1080
 course: ESC103H1
 tags:
   - Tutorial
@@ -91,33 +91,69 @@ $$
 0 \\2\\3-2k
 \end{bmatrix}
 $$
-Then, solving the last line gives us: 
-$$
-\begin{align}
-1-kd-10k-1+k & =3-2k \\
-kd-10k+k & =3-2k \\
-kd-7k=3 \\
-kd-7k-3=0 \\
-d=\frac{7k+3}{k}
-\end{align}
-$$
 Note that if we define this matrix to be an upper triangular matrix; then $1-kd-10k=0$ as well, then
 $$
+\begin{bmatrix}
+2 & 5 & 1 \\
+0 & d-10 & -1 \\
+0 & 0 & -1+1k
+\end{bmatrix} = \begin{bmatrix}
+0 \\2\\3-2k
+\end{bmatrix}
+$$
+Then from the last line: 
+$$
 \begin{align}
-1-\frac{k(7k+3)}{k} - 10k  & = 0 \\
-1-7k+3-10 & =0 \\
- k& =-\frac{6}{7}
+-1 + k  & = 3-2k  \\
+3k & =4 \\
+k & =\frac{4}{3}
 \end{align}
 $$
-Then for $d$: 
+Note that we also say that $1-kd+10k=0$, then plugging this value in for $1-kd+10k=0$
 $$
-d=\frac{-6*3}{6}
+\begin{align}
+1-\frac{4}{3}d + \frac{10*4}{3}  & = 0 \\
+d & =-\left( -\frac{40}{3}-\frac{3}{3} \right) * \frac{3}{4} \\
+d & =\frac{43}{4}
+\end{align}
+
 $$
+
+
 
 > Question 5
 > Consider matrix $A$ given below: 
 
 $$\begin{bmatrix}a & 2 & 3 \\a & a & 4 \\a & a & a\end{bmatrix}$$
-For which three values of $a$ will elimination fail to product 3 non-zero pivots? 
+For which three values of $a$ will elimination fail to produce 3 non-zero pivots? 
 
-Consider if we try to eliminate this into it's $U$ matrix form. 
+Consider if we try to eliminate this into it's $U$ matrix form, then: 
+$$
+\begin{bmatrix}
+a & 2 & 3 \\
+a-ak & a-2k & 3-4k \\
+a-(a-ak)t & a-(a-2k)t & a-(3-4k)t
+\end{bmatrix}
+$$
+Note that for this to fail to produce three, non-zero pivots: 
+$$
+\begin{align}
+a & =0  & \text{Trivial Case}\\
+\end{align}
+$$
+Consider now the second row; where: 
+$$
+\begin{align}
+a-ak & =0 \implies a(1-k)=0 \implies k=1 \\
+a-2k & =0 \implies a=2 ~\text{works}
+\end{align}
+$$
+Consider now if we try to eliminate the third row using the first row; then: 
+$$
+\begin{align}
+a-ak = 0 \implies a(1-k)=0 \implies k=1\\
+a-2k=0 \to a-2=0 \to a =2\\
+a-3k=0 \to a=3
+\end{align}
+$$
+
