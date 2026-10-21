@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-20T18:40:40.738-04:00
-edited_seconds: 710
+updated_at: 2026-10-20T21:29:47.457-04:00
+edited_seconds: 770
 course:
 tags:
 "Lecture #": 0
@@ -117,5 +117,14 @@ $$
 $$
 Then, using N2L: 
 $$
-\tau = I\alpha
+\begin{align}
+\tau &  = I\alpha \\
+ & =50*40 = 2000 ~ \text{N}
+\end{align}
+
 $$
+
+> Question 11: 
+> ![[A6 - PHY180 Assignment 6-1792545985331.webp]]
+
+We first need to solve 
