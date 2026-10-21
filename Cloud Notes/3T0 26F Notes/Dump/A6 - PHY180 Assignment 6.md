@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-20T22:42:42.663-04:00
-edited_seconds: 1260
+updated_at: 2026-10-20T22:56:41.902-04:00
+edited_seconds: 1340
 course:
 tags:
 "Lecture #": 0
@@ -42,8 +42,8 @@ Next: N/A
 First, we convert the angular velocity terms into radians: 
 $$
 \begin{align}
-600*2\pi = 1200\pi & =\omega_{0}\\
-400*2\pi = 800\pi & = \omega _{t}
+\frac{600}{60}*2\pi = 20\pi = \omega_{0} \\
+\frac{400}{60} * 2\pi =13.33\pi =\omega _{1}
 \end{align}
 $$
 Where $d\theta =80\pi$, then: 
@@ -60,7 +60,7 @@ $$
 \begin{align}
 \omega_{t}  & = \omega_{0} + \alpha t \\
 \frac{\omega_{t}-\omega_{0}}{\alpha}  & = t \\
-\frac{800-1200}{-43.63323130}  & \approx 9.~s
+\frac{800-1200}{-43.63323130}  & \approx 9.1673~s
 \end{align}
 $$
 
@@ -75,12 +75,14 @@ $$
 > Question 6
 > ![[A6 - PHY180 Assignment 6-1792535262000.webp]]
 
+At it's peak, a tornado is 60.0m in diameter and carries 500km/h winds. What is it's angular velocity in radians per second?
+
 Assume that winds are tangential, measured at the edge of the tornado; thus $r=60m$ and $v_{t} = 500 \frac{km}{h} = 138.\bar{8} \frac{m}{s}$; Then: 
 $$
 \begin{align}
 v_{t} = r\omega_{t} \\
 \frac{v_{t}}{r} = \omega_{t} \\
-\frac{138.8}{30}  & \approx 4.629629630 \frac{\text{rad}}{s}
+\frac{138.8}{30}  & \approx 4.629629630 \frac{\text{rad}}{s} = 29.09 rps
 \end{align}
 $$
 
