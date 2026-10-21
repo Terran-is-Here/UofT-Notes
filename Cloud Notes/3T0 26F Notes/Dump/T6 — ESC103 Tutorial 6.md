@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-21T09:49:13.875-04:00
-edited_seconds: 1080
+updated_at: 2026-10-21T10:10:06.500-04:00
+edited_seconds: 1300
 course: ESC103H1
 tags:
   - Tutorial
@@ -52,7 +52,7 @@ tag:#ESC101H1 [week:7]
 > > 3. The $25$ planes in $\mathbb{R}^3$ meet in a line in R3 with the points included within that line;
 > > 	4. Or any solution of points within each plane would work (if all of them are colinear). 
 
-Question 4: 
+Question 4: * todo to redo (kinda wrong lwk) *
 > Consider the system of linear equations below: $$\begin{align}2x+5y+z & =0 \\4x+dy+z & =2 \\y-z & =3\end{align}$$
 > The objective is to determine the equivalent upper triangular system. 
 > 1. What is the upper triangular system for the value of $d$ in Part 1? 
@@ -131,8 +131,8 @@ Consider if we try to eliminate this into it's $U$ matrix form, then:
 $$
 \begin{bmatrix}
 a & 2 & 3 \\
-a-ak & a-2k & 3-4k \\
-a-(a-ak)t & a-(a-2k)t & a-(3-4k)t
+a-ak & a-2k & 4-3k \\
+a-(a-ak)t & a-(a-2k)t & a-(4-3k)t
 \end{bmatrix}
 $$
 Note that for this to fail to produce three, non-zero pivots: 
@@ -148,12 +148,49 @@ a-ak & =0 \implies a(1-k)=0 \implies k=1 \\
 a-2k & =0 \implies a=2 ~\text{works}
 \end{align}
 $$
-Consider now if we try to eliminate the third row using the first row; then: 
+Consider now if we try to eliminate the third row using the second row, then: 
 $$
-\begin{align}
-a-ak = 0 \implies a(1-k)=0 \implies k=1\\
-a-2k=0 \to a-2=0 \to a =2\\
-a-3k=0 \to a=3
-\end{align}
+\begin{bmatrix}
+a & 2 & 3 \\
+a & a & 4 \\
+0 & 0 & a-4
+\end{bmatrix}
+$$
+Thus here, $a=4$ also answers our original question; Note that $k=1$, then our above expression becomes: 
+$$
+\begin{bmatrix}
+a & 2 & 3 \\
+0 & a-2 & 1 \\
+a & a & a
+\end{bmatrix}
+$$
+Then to eliminate the last row: subtract the third row by the first and second row: 
+$$
+\begin{bmatrix}
+a & 2 & 3 \\
+0 & a-2 & 1 \\
+0 & a-2-(a-2)=0 & a-3-(1) = a-4
+\end{bmatrix}
 $$
 
+> Question 6.1 
+> Determine three elementary matrices $E_{1},E_{2},E_{3}$ that put matrix $A$ into $U$, where: 
+
+$$
+A = \begin{bmatrix}
+1 & 1 & 0\\4 & 6 & 1\\-2 & 2 & 0
+\end{bmatrix}
+$$
+Where $E_{3}E_{2}E_{1}A=U$
+Performing row operations; then we see that adding two row 1 to row 3, swapping tow 2 to the top, and 
+
+2. Solve for $E=E_3E_{2}E_{1}$
+3. Include $\vec{b}$ to produce the augmented matrix: 
+$$
+\left[\begin{array}{ccc|c}
+1 & 1 & 0 & 1 \\
+4 & 6 & 1 & 0 \\
+-2 & 2 & 0 & 0
+\end{array}\right]
+$$
+With the goal being to solve this system, using elimination to convert $A\vec{x}=\vec{b} \to U\vec{x}=\vec{c}$, determine $c\vec{c}$
