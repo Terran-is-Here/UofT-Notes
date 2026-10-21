@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-14T10:59:02.628-04:00
-edited_seconds: 520
+updated_at: 2026-10-21T09:29:01.674-04:00
+edited_seconds: 760
 course: ESC103H1
 tags:
   - Tutorial
@@ -58,3 +58,66 @@ Question 4:
 > 1. What is the upper triangular system for the value of $d$ in Part 1? 
 > 2. What value of $d$ produces a zero pivot in row 3? 
 > 3. Is there a solution to this system for the value of d in Part 3? 
+>
+> > Answer
+> > Rewriting this into a matrix: 
+> > 
+
+$$
+\begin{bmatrix}
+2 & 5 & 1 \\
+4 & d & 1 \\
+0 & 1 & -1
+\end{bmatrix} = \begin{bmatrix}
+0\\2\\3
+\end{bmatrix}
+$$
+Subtracting two row two from row three: 
+$$
+\begin{bmatrix}
+2 & 5 & 1 \\
+0 & d-10 & -1 \\
+0 & 1 & -1
+\end{bmatrix}=\begin{bmatrix}
+0\\2\\3
+\end{bmatrix}$$
+Then subtracting row 3 by some multiple row two: 
+$$
+\begin{bmatrix}
+2 & 5 & 1 \\
+0 & d-10 & -1 \\
+0 & 1-kd-10k & -1+1k
+\end{bmatrix} = \begin{bmatrix}
+0 \\2\\3-2k
+\end{bmatrix}
+$$
+Then, solving the last line gives us: 
+$$
+\begin{align}
+1-kd-10k-1+k & =3-2k \\
+kd-10k+k & =3-2k \\
+kd-7k=3 \\
+kd-7k-3=0 \\
+d=\frac{7k+3}{k}
+\end{align}
+$$
+Note that if we define this matrix to be an upper triangular matrix; then $1-kd-10k=0$ as well, then
+$$
+\begin{align}
+1-\frac{k(7k+3)}{k} - 10k  & = 0 \\
+1-7k+3-10 & =0 \\
+ k& =-\frac{6}{7}
+\end{align}
+$$
+Then for $d$: 
+$$
+d=\frac{-6*3}{6}
+$$
+
+> Question 5
+> Consider matrix $A$ given below: 
+
+$$\begin{bmatrix}a & 2 & 3 \\a & a & 4 \\a & a & a\end{bmatrix}$$
+For which three values of $a$ will elimination fail to product 3 non-zero pivots? 
+
+Consider if we try to eliminate this into it's $U$ matrix form. 
