@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-18T17:54:46.793-04:00
-edited_seconds: 730
+updated_at: 2026-10-22T16:18:39.649-04:00
+edited_seconds: 740
 course: PHY180H1
 tags:
   - PHY180H1
@@ -51,6 +51,8 @@ Where we define the term inside; $\sum_{j=1}^N m_{j}r_{j}^2$ as the *Moment of I
 > The moment of Inertia of a rotating object with discrete particles is defined as the following expression: 
 > $$I = \sum_{j=1}^Nm_{j}r_{j}^2$$
 > Where $I$ is a measure of the object's rotational inertia; that is to say how hard it is to change it's rotational velocity. 
+> > [!ila] In Lecture Addendum
+> > Note that the Moment of Inertia (whilst not being directly linked to) is also linked to the tendency for anything that is rotating to continue rotating (or, rotational inertia) 
 
 > [!axiom] Implications
 > For instance; take an object with two particles of mass $M$ some distance $r$ from the rotational center of an object. If we analyze the center of our object; then we get the following moment expression: 

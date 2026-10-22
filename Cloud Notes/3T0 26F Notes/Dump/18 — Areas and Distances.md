@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-22T14:00:17.027-04:00
-edited_seconds: 1210
+updated_at: 2026-10-22T16:07:55.528-04:00
+edited_seconds: 1220
 course: ESC194H1
 tags:
   - ESC194H1
@@ -165,7 +165,7 @@ $$
 x_{i} = 1 + i\Delta x = 1 + \frac{i}{n} = \frac{n+i}{n}
 $$
 $$
-x_{i-1}= 1 + \frac{2-i}{n}= \frac{n+1}{n}
+x_{i-1}= 1 + (i-1)\Delta x = 1 + \frac{i-1}{n} = \frac{n + i - 1}{n}
 $$
 
 Then the area can now be expressed as the following: 
