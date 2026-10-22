@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-22T13:10:14.731-04:00
-edited_seconds: 540
+updated_at: 2026-10-22T13:30:44.234-04:00
+edited_seconds: 790
 course: ESC194H1
 tags:
   - ESC194H1
@@ -18,6 +18,88 @@ Next: [[19 — The Definite Integral]]
 # Lecture Notes
 ## Sigma Notation (Continued) 
 This is a continuation from the previous lecture's section on Sigma Notation; please refer to that section here: [[17— Optimization, Antiderivatives and Sigma Notation#Sigma Notation|Sigma Notation (Pre-LEC)]] or [[17— Optimization, Antiderivatives and Sigma Notation#Sigma Notation (LEC)|Sigma Notation (LEC)]]. 
+Note the following summation results: 
+$$
+\begin{align}
+\sum_{i=1}^{N} i  & = \frac{n(n+1)}{2} \\
+\sum_{i=1}^{N} i^2  & = \frac{n(n+1)(2n+1)}{6} \\
+\sum_{i=1}^{N} i^3 &  = \left[ \frac{n(n+1)}{2} \right]^{2}
+\end{align}
+$$
+We will now prove the case for the second term by induction. We first take the base case, where $n=1$; then: 
+$$
+\sum_{i=1}^{1} i^2 = \frac{1(2)(3)}{6} = 1
+$$
+We now assume it works for some value $k$, then: 
+$$
+\sum_{i=1}^{K} i^2   = \frac{k(k+1)(2k+1)}{6}
+$$
+We now seek to show that this holds true for some value $n=k+1$; then: 
+$$
+\begin{align}
+\sum_{i=1}^{k+1} i^2  & = \sum_{i=1}^{k} i^2 + (k+1)^2 = \frac{k(k+1)(2k+1)}{6} + (k+1)^2 \\
+ & =\frac{k(k+1)(2k+1)}{6} + (k+1)^2 \\
+ & =\frac{k(k+1)(2k+1)+6(k+1)^2}{6} = (k+1) \frac{k(2k+1) + 6(k+1)}{6} \\
+\end{align}
+$$
+From here, the proof is trivial that you can get to the equation above, as we desired. We already proved this in the previous notes. 
+
+## Limits Involving Sums
+The proofs for these will be provided in the next term; but they have been put here as the following. 
+
+If we have a sum to sum number of terms $n$, we can state that as some value of $f(n)$; that is: 
+$$
+\sum_{i=1}^{N} a_{i} = f(n)
+$$
+We can now define the term of a infinite set / sum as the following: 
+$$
+\lim_{ n \to \infty } \sum_{i=1}^{N} a_{i}
+$$
+Where this now describes an infinite sum, that is we took the limit of $f(n)$ to infinity. For instance, we can take this as: 
+$$
+\lim_{ n \to \infty } \left[ \frac{5}{n}\sum_{i=1}^{N} \left( \frac{1}{n} \right)^2 \right]
+$$
+
+Note that for the above, we can pull out a term of $n^2$, then: 
+$$
+\begin{align}
+  & =\lim_{ n \to \infty } \left[ \frac{5}{n^3}\sum_{i=1}^{N} i^2 \right] \\
+  & =\lim_{ n \to \infty } \left[ \frac{5}{n^3}* \frac{n(n+1)(2n+1)}{6} \right] \\
+  & =\frac{5}{6}\lim_{ n \to \infty } \left[ \frac{(n+1)(2n+1)}{n^2}  = \frac{2n^2 + 3n + 1}{n^2} = 2 + \frac{3}{n} + \frac{1}{n^2}\right] \\
+  & =\frac{5}{3}  & \text{by using }\lim_{ n \to \infty } \frac{1}{n^r} = 0
+\end{align}
+$$
+
+## Integrals & The Area Problem
+The Area Problem arises from the question: How do we evaluate the area under some graph of the function? We can define the area of something as some $bh$ of a rectangle; where the areas of other polygons can be described as some function proportional to a rectangle. 
+
+Now the issue arises is that this works for flat, polygonal surfaces; it may be visibly apparent to how we apply this for smooth functions; or even smooth polygons (such as a circle).
+
+For instance, take the function $x^2, x\in[0,1]$; and we want to know what area the function takes within this interval. 
+
+We could define and take the area as the sum of the areas of some rectangles under the graph; where the base is some term $\Delta x$, and the height is some function of $f(x)$, where $x$ is dependent on $\Delta x$ (i.e. the width and the height). Taking $\Delta x=\frac{1}{4}$, we find that we can break up our function into four rectangles: 
+
+$$
+\begin{align}
+f\left( \frac{1}{4} \right), f\left( \frac{1}{2} \right), f\left( \frac{3}{2} \right), f(1)
+\end{align}
+$$
+Note that geometrically, this is a very vague / loose approximation of how things could be expressed. We could reduce $\Delta x$ into smaller and smaller values in order to more accurately model the area of a function under a graph. Specifically, we can define $\Delta x$ as some function relative to how many slices we want: 
+$$
+\Delta x = \frac{b-a}{n}
+$$
+Where $n$ is the number of "slices" or rectangles desired. 
+
+For our earlier example, where $\Delta x=0.25=\frac{1}{4}$, $n=4$, thus the width is some term $\Delta x$, and the height is the values of our function tested at our sample points. For our general case, we can express the width as a term $\frac{1}{n}$, and the height as the function evaluated at these points. 
+
+$$
+\begin{align}
+A_{f(x)}  & = \frac{1}{n}\sum_{i=1}^{N} \left( \frac{1}{n} \right)^2 \\
+ & =\frac{1}{n^3}\sum_{i=1}^{N} i \\
+ & =\frac{1}{n^3}*n()
+\end{align}
+$$
+
 
 
 ---
