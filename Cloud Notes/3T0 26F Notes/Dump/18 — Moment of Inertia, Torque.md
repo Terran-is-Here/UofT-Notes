@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-22T16:18:39.649-04:00
-edited_seconds: 740
+updated_at: 2026-10-22T16:54:25.192-04:00
+edited_seconds: 750
 course: PHY180H1
 tags:
   - PHY180H1
@@ -17,6 +17,7 @@ Next: [[19 —Newton's Second Law for Rotation, Rotational Energy]]
 > [[16 — Center of Mass and Rockets]]
 --- 
 # Lecture Notes
+No additional lecture notes were written in the making of this note; but please look at the corresponding in-lecture addendums. 
 
 ---
 # Pre-Lecture Notes

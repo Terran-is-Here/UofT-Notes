@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-22T16:42:42.716-04:00
-edited_seconds: 1370
+updated_at: 2026-10-22T16:46:56.866-04:00
+edited_seconds: 1390
 course: ESC194H1
 tags:
   - ESC194H1
@@ -16,7 +16,7 @@ Next: [[19 — The Definite Integral]]
 > Section 4.1 of the Stewart Textbook 
 --- 
 # Lecture Notes
-This section details with notes and topics directly tallked about in 
+This section details with notes and topics directly directly talked about in lecture. 
 ## Sigma Notation (Continued) 
 This is a continuation from the previous lecture's section on Sigma Notation; please refer to that section here: [[17— Optimization, Antiderivatives and Sigma Notation#Sigma Notation|Sigma Notation (Pre-LEC)]] or [[17— Optimization, Antiderivatives and Sigma Notation#Sigma Notation (LEC)|Sigma Notation (LEC)]]. 
 Note the following summation results: 
