@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-22T13:51:14.039-04:00
-edited_seconds: 1100
+updated_at: 2026-10-22T14:00:17.027-04:00
+edited_seconds: 1210
 course: ESC194H1
 tags:
   - ESC194H1
@@ -165,13 +165,29 @@ $$
 x_{i} = 1 + i\Delta x = 1 + \frac{i}{n} = \frac{n+i}{n}
 $$
 $$
-x_{i-1}= 1 + \frac{2-1}{n}= \frac{n+1}{n}
+x_{i-1}= 1 + \frac{2-i}{n}= \frac{n+1}{n}
 $$
 
 Then the area can now be expressed as the following: 
 $$
 \begin{align}
-A  & =\sum\Delta x_{i}f(x_{i}^*) = \sum_{1=1}^{N}  \frac{1}{n} \frac{1}{(x_{i}^*)}
+A  & =\sum\Delta x_{i}f(x_{i}^*) = \sum_{1=1}^{N}  \frac{1}{n} \frac{1}{(x_{i}^*)^2} \\
+ & =\sum_{1=1}^{N} \frac{1}{n} \frac{1}{x_{i}x_{i-1}} = \sum_{i=1}^{N} \frac{1}{n} \frac{n}{n+i-1} \frac{n}{{n+2}}
+\end{align}
+$$
+
+### Cos(x) Example
+Take the following example: 
+$$
+f(x) = \cos(x)~ 0 \leq x \leq b \leq \frac{\pi}{2}
+$$
+Take a uniform partition, that is $\Delta x_{i} = \frac{b}{n}$; then we can define $x_{i}^*$ as $x_{i}$ (the right endpoint); that is $x_{i}^* = \frac{ib}{n}$. 
+
+Therefore, taking the area: 
+$$
+\begin{align}
+A  & = \lim_{ n \to \infty } \sum_{i=1}^{N} \frac{\cos\left( \frac{ib}{h} \right)b}{h}  & \sum_{i=1}^{N} \cos(ix) = \frac{\left( \sin \frac{1}{2}nx \cos \frac{1}{2}(n+1)x \right)}{\sin \frac{1}{2}x}\\
+ & =
 \end{align}
 $$
 
