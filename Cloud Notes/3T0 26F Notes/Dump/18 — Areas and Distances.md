@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-22T16:07:55.528-04:00
-edited_seconds: 1220
+updated_at: 2026-10-22T16:42:42.716-04:00
+edited_seconds: 1370
 course: ESC194H1
 tags:
   - ESC194H1
@@ -16,6 +16,7 @@ Next: [[19 — The Definite Integral]]
 > Section 4.1 of the Stewart Textbook 
 --- 
 # Lecture Notes
+This section details with notes and topics directly tallked about in 
 ## Sigma Notation (Continued) 
 This is a continuation from the previous lecture's section on Sigma Notation; please refer to that section here: [[17— Optimization, Antiderivatives and Sigma Notation#Sigma Notation|Sigma Notation (Pre-LEC)]] or [[17— Optimization, Antiderivatives and Sigma Notation#Sigma Notation (LEC)|Sigma Notation (LEC)]]. 
 Note the following summation results: 
@@ -172,8 +173,16 @@ Then the area can now be expressed as the following:
 $$
 \begin{align}
 A  & =\sum\Delta x_{i}f(x_{i}^*) = \sum_{1=1}^{N}  \frac{1}{n} \frac{1}{(x_{i}^*)^2} \\
- & =\sum_{1=1}^{N} \frac{1}{n} \frac{1}{x_{i}x_{i-1}} = \sum_{i=1}^{N} \frac{1}{n} \frac{n}{n+i-1} \frac{n}{{n+2}}
+ & =\sum_{1=1}^{N} \frac{1}{n} \frac{1}{x_{i}x_{i-1}} = \sum_{i=1}^{N} \frac{1}{n} \frac{n}{n+i-1} \frac{n}{{n+i}} \\
+ & = \sum_{i=1}^{N}n \frac{1}{(n+i-1)} \frac{1}{(n+i)} = \sum_{i=1}^{N}n \left[ \frac{1}{n+i-1} - \frac{1}{n+i} \right] \tag{*}\\
+ & = n\left[ \frac{1}{n} + \frac{1}{n+1} + \frac{1}{n+2} + \dots + \frac{1}{2n-1} - \frac{1}{n+1}-\frac{1}{n+2}-\dots-\frac{1}{2n} \right] \\
+ & = n\left[ \frac{1}{n} - \frac{1}{2n} \right] = 1-\frac{1}{2} = \frac{1}{2} \\
+ & = \lim_{ n \to \infty } \left( \frac{1}{2} \right) = \frac{1}{2}
 \end{align}
+$$
+For $(*)$, this arises from the idea that: 
+$$
+\frac{1}{a(a+1)} = \frac{1}{a}-\frac{1}{(a+1)}
 $$
 
 ### Cos(x) Example
