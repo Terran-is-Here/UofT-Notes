@@ -11,7 +11,7 @@ The Proof-Based Calculus Course™
 Professors: 
 * Morgan Hooper (she/her) 
 	* morgan.hooper@utoronto.ca
-* James Davis ()
+* James Davis (he/him)
 	* james.davis@utoronto.ca
 Marking Scheme: 
 

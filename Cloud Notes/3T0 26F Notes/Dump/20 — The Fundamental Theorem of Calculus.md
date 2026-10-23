@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T21:47:49.056-04:00
-edited_seconds: 520
+updated_at: 2026-10-23T08:34:00.365-04:00
+edited_seconds: 540
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week: 7
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[19 — The Definite Integral]]
-Next: N/A 
+Next: [[21 — Indefinite Integrals and the Net Change Theorem]]
 > [!quote] Recommended Reading 
 > Section 4.3 (Stewart) 
 --- 
