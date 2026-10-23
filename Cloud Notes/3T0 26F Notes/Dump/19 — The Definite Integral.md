@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-18T22:47:59.609-04:00
-edited_seconds: 490
+updated_at: 2026-10-23T13:26:57.947-04:00
+edited_seconds: 740
 course: ESC194H1
 tags:
   - ESC194H1
@@ -15,8 +15,71 @@ Next: [[20 — The Fundamental Theorem of Calculus]]
 > [!quote] Recommended Reading 
 > Section 4.2 of the Stewart Textbook
 > [[17— Optimization, Antiderivatives and Sigma Notation]]
+
+> [!caution] Note
+> We already did a small portion of this section in the previous lecture, particularly with [[18 — Areas and Distances#Sampling Points]]. 
+
+
 --- 
 # Lecture Notes
+
+## Definite Integrals (LEC) 
+Recall that from the previous note that we can define the definite integral of a function between an interval as: 
+$$
+\lim_{ ||P|| \to 0 } \sum_{i=1}^{N} f(x^*_{i})\Delta x_{i}
+$$
+We can formally define this as the following: 
+
+> [!theorem] Reimann Sum Definition of a Definite Integral (LEC)
+> If $f$ is a function defined on a closed interval $[a,b]$, let $P$ be a partition of $[a,b]$ with partitions of points $x_{0},x_{1},x_{2},\dots x_{n}$, where $a<x_{1}<x_{2}<\dots<x_{n}=b$. 
+> 
+> We choose sampling points $x^{*}_{i}$ in a partition $[x_{i-1},x_{i}]$, and let $\Delta x_{i}=x_{i}-x_{i-1}$ (our partition width). Let $||P||=\text{max}(\Delta x_{i})$ (by definition of a norm). Then the definite integral of $f$ from $a$ to $b$ is defined as the following: 
+> $$\int _{a}^{b}f(x) \, dx = \lim_{ ||P|| \to 0 } \sum_{i=1}^{N} f(x^{*}_{i})\Delta x_{i}$$
+> **If** the limit on the right exists. If the limit *does* exist, then $f$ is called integrable in $[a,b]$. 
+> > In this notation:
+> > * $f(x)$ is called the integrand. 
+> > * $a,b$ are the lower and upper limits of integration respectively. 
+> >
+> > The process of evaluating this Integral is termed as *integration*.
+> 
+> > The term on the right is termed as the Reimann Sum; that is: 
+> > $$\sum_{i=1}^{N} f(x^{*}_{i})\Delta x_{i}$$
+> > Is the Reimann Sum of our function.
+
+Note that a Definite Integral **resolves as some number**. It is *independent* of whatever $x$ is (as it is the sum of the areas under the curve). If an area of the curve exists under the $x$ axis, we denote that area as negative, and the corresponding area of the function under the graph is the sum of all positive/negative areas. 
+
+Consider that our limit is *also* present within this definition of the Integral. To be rigorous, then we define now the precise definition of the Integral: 
+
+Take the following: 
+$$
+\int _{a}^{b}f(x) \, dx =I
+$$
+This implies that $\forall\epsilon>0,\,\exists\delta>0$ such that: 
+$$
+\left|I-\sum_{i=1}^{N} f(x^{*}_{i})\Delta x_{i}\right| < \epsilon
+$$
+For all partitions of $P$ if $[a,b]$ with $||P||<\delta$, and all possible choices of $x^{*_{i}}\in[x_{i-1},x_{i}]$. 
+### Example (Precise Integral Definition) 
+Take the following function: $f(x)=x^3, x\in[0,1]$. 
+
+Consider now the lower sum: $S_{n}^{L}$; that is we set up $x^{*}_{i}$ as the lower estimate. Consider now the $S_{n}^U$ as the upper sum, where our sampling point is equal to using sampling points as the higher estimate, then: 
+$$
+S_{n}^{L} \leq I \leq S_{n}^U
+$$
+We now need to find values for our lower sum and upper sum. 
+
+Finding the upper sum, we define a uniform partition of $\Delta x=\frac{1}{n}$, and $x^{*}_{i}=x_{i}=\frac{i}{n}$ (taking the upper bound), then: 
+
+$$
+\begin{align}
+S_{n}^U & =\sum_{i=1}^{N} (x_{i}^*)^3 \frac{1}{n} = \sum_{i=1}^{N} \frac{i^3}{n^4}  \\
+ & =\frac{1}{n^4}\sum_{i=1}^{N} i^{3} = \frac{1}{n^4}\left[ \frac{n(n+1)}{2} \right]^2  \\
+ & =\frac{(n^2+2n+1)}{4n^2}
+\end{align}
+$$
+
+
+
 
 ---
 # Pre-Lecture Notes
