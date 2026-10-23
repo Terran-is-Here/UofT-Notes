@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-23T13:46:49.514-04:00
-edited_seconds: 1130
+updated_at: 2026-10-23T14:00:01.132-04:00
+edited_seconds: 1360
 course: ESC194H1
 tags:
   - ESC194H1
@@ -115,7 +115,7 @@ We define the concept of Piecewise Continuity as the following:
 > Only a **finite** number of **jump** discontinuities exist. In this case, for the same closed interval, that function is **also integrable**. (In this case, we take the integral with respects to the bounds of either function as a piecewise expression). 
 
 Other discontinuity types *may* or may not be integrable. The following two definitions above however guarantee integrability. 
-## Calculating
+## Calculating Integrals
 Our definition for the definition of the Definite integral works for $x^{*}_{i}$ and $\Delta x$ will work for any means that we define them. For ease: 
 
 * Regular Partition: $\Delta x = \Delta x_{1} =\Delta x_{2} = \frac{b-a}{n}$
@@ -135,10 +135,43 @@ $$
  & =\lim_{ n \to \infty }\frac{3}{n}\left[  \sum_{i=1}^{N} \left[ \left( \frac{3i}{n} \right)^3 - 5\left( \frac{3i}{n} \right) \right] \right] \\
  & =\lim_{ n \to \infty } \frac{3}{n}\left[ \frac{27}{n^3}\sum_{i=1}^{N} i^3 - \frac{15}{n}\sum i \right] \\
  & =\lim_{ n \to \infty } \left[ \frac{81}{n^4}\left[ \frac{n(n+1)}{2} \right]^2 - \frac{45(n)(2n+1)}{2n^2} \right] \\
- & =\lim_{ n \to \infty } \left[ \frac{81}{4}\left( 1+\frac{1}{n} \right)^2 - \frac{45}{2}\left( 1+\frac{1}{n} \right) \right] \\
- & =\frac{81}{4} - 4
+ & =\lim_{ n \to \infty } \left[ \frac{81}{4}\left( 1+\frac{1}{n} \right)^2 - \frac{45}{2}\left( 1+\frac{1}{n} \right) \right]  & \text{Step *}\\
+ & =\frac{81}{4} - \frac{45}{2 }=-\frac{9}{4}
 \end{align}
 $$
+For Step \*, exercise is left to the reader as to the algebra behind this. 
+
+### Integral Properties
+Recall that an Integral is a *limit*. Thus all the limit laws apply as per usual (refer to them at [[07 — Limit Laws]]): 
+
+$$
+\begin{align}
+\int _{a}^{b}c \, dx  & = c(b-a) &  c \text{ is a constant} \\
+\int _{a}^{b}f(x)\pm g(x) \, dx  & =\int _{a}^{b}f(x) \, dx \pm\int _{a}^{b}g(x)\,dx \\
+\int _{a}^{b}cf(x) \, dx  & =c\int _{a}^{b}f(x)\,dx \\ 
+\int _{a}^{b}f(x) \, dx  & =\int _{a}^{z}f(x) \, dx + \int _{z}^{b}f(x) \, dx \tag{bound property}
+\end{align}
+$$
+They also have the following order properties. Letting $a\leq b$, and unless otherwise stated, $a\leq x\leq b$: 
+$$
+\begin{align}
+f(x)\geq 0, & \implies \int _{a}^{b}f(x)  \, dx \geq 0 \\
+f(x)\geq g(x), & \implies \int_{a}^{b}f(x)\,dx \geq \int _{a}^{b}g(x) \, dx    \\
+m \leq f(x) \leq M ,  & \implies m(b-a)\leq \int_{a}^{b}f(x)\,dx \leq M(b-a) \tag{note 1}\\
+\left|\int_{a}^{b}f(x)\,dx\right|  & \leq \int_{a}^{b}|f(x)|\,dx \tag{note 2}
+\end{align}
+$$
+* Note 1: This means that the area of the rectangle defined by the max value of the function, will always be greater than or equal to the area of the function, which will always be greater than or equal to the area of the rectangle defined by the smallest value of the function.
+	* This is a very powerful function, as you realize that when taking the limit, this allows us to use Squeeze Theorem to prove some integrals. 
+* Note 2: Arises from how signs are propagated within integrals: 
+$$
+\begin{align}
+|\int_{a}^{b}f(x)\,dx  & = |A_{1}-A_{2}| \\
+\int_{a}^{b}|f(x)|\,dx & =|A_{1}| + |A_{2|}
+\end{align}
+$$
+
+
 
 ---
 # Pre-Lecture Notes
