@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-23T11:34:09.712-04:00
-edited_seconds: 290
+updated_at: 2026-10-23T12:41:54.141-04:00
+edited_seconds: 310
 course: ESC194H1
 tags:
   - ESC194H1
@@ -55,6 +55,7 @@ $$
 \begin{align}
 \int cf(x) \, dx  & = c\int f(x) \,dx & \int [f(x) + g(x)] \,dx  & =\int f(x) \,dx + \int g(x) \, dx  \\
 \int k \, dx   & =kx + C & \int x^n \, dx   & =\frac{x^{n+1}}{n+1} + c \\
-
+\int \sin(x) \, dx  & =-\cos(x) +C & \int \cos(x) \,dx & =\sin(x)+C \\
+\int \sec^2(x) \, dx  & =\tan x + C & 
 \end{align}
 $$
