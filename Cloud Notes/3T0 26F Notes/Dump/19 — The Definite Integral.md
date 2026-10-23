@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-23T13:26:57.947-04:00
-edited_seconds: 740
+updated_at: 2026-10-23T13:46:49.514-04:00
+edited_seconds: 1130
 course: ESC194H1
 tags:
   - ESC194H1
@@ -78,8 +78,67 @@ S_{n}^U & =\sum_{i=1}^{N} (x_{i}^*)^3 \frac{1}{n} = \sum_{i=1}^{N} \frac{i^3}{n^
 \end{align}
 $$
 
+Choosing the under estimate / lower sum, we now use the same uniform partition, but we take the left hand endpoint, that is $x^{*}_{i }=x_{i-1} = \frac{i-1}{n}$;  then: 
+$$
+\begin{align}
+S_{n}^{L} & =\sum_{i=1}^{N} (x^{*}_{n})^{3} \frac{1}{n} =\sum_{i=1}^{N} \left[ \frac{i-1}{n} \right]^3 \frac{1}{n} \\
+ & =\sum_{i=0}^{N-1} \frac{i^3}{n^4} = \frac{1}{n^4}\sum_{i=0}^{N-1} i^3 \\
+ & =\frac{1}{n^4}\left[ \sum_{i=1}^{N} i^3-n^3 \right]  & \text{Subtracting the last term} \\
+ & =\frac{1}{n^{4}}\left[ \left( \frac{n(n+1)}{2} \right)^2 - n^{3} \right] = \frac{n^2+2n+1}{4n^2} - \frac{1}{n}
+\end{align}
+$$
+Then taking the distance between $S^{L}_{n}$ and $S^{U}_{n}$, taking the following: 
+$$
+|S_{n}^{L}-S_{n}^{U}|=\left|\frac{n^2+2n+1}{4n^2} - \frac{1}{n} - \frac{(n^2+2n+1)}{4n^2}\right| = \frac{1}{n}
+$$
+From our above definition, then $\delta=\frac{1}{n}=\implies\delta=\epsilon$, and then prove as usual.
 
+### Integration Bounds
+Consider now the following case: How do we consider this, when our upper bound is lower than our lower bound? 
+$$
+\int ^{1}_{3}f(x) \, dx =?
+$$
+In this case, if $a>b$ in $\int _{a}^{b} f(x)\, dx$, then this is equal to $-\int_{b}^{a}f(x)\,dx$ (since we traverse the $x$-axis backwards). 
 
+Consider as well if $a=b$; then: 
+$$\int _{a}^{a}f(x) \, dx =0$$
+
+## Existence of Integrals 
+The question still exists is that: How can we prove that the Reimann Sum limit exists? 
+
+Since the Reimann Sum partitions up our function into infinitely small partitions; then we know that as long as our function is *continuous* on an interval $[a,b]$, then our function is **guaranteed to be integrable** on $[a,b]$. (The proof of this is left as an exercise to the next term). 
+
+### Piecewise Continuity
+We define the concept of Piecewise Continuity as the following: 
+
+> [!theorem] Piecewise Continuity
+> Only a **finite** number of **jump** discontinuities exist. In this case, for the same closed interval, that function is **also integrable**. (In this case, we take the integral with respects to the bounds of either function as a piecewise expression). 
+
+Other discontinuity types *may* or may not be integrable. The following two definitions above however guarantee integrability. 
+## Calculating
+Our definition for the definition of the Definite integral works for $x^{*}_{i}$ and $\Delta x$ will work for any means that we define them. For ease: 
+
+* Regular Partition: $\Delta x = \Delta x_{1} =\Delta x_{2} = \frac{b-a}{n}$
+* $x^{*}_{i}$ as the *right-hand endpoint*: $x^{*}_{i}=a + i\Delta x = a+\frac{i(b-a)}{n}$. Where $a$ is the lower bound of the definite integral. 
+
+This lets us use a simpler definition of the Reimann sum for our calculations. 
+
+For instance, take the following: 
+$$
+\int _{0}^{3}(x^3-5x) \, dx 
+$$
+Setting up our Integral Definition, then: 
+
+$$
+\begin{align}
+\int _{0}^{3}(x^3-5x) \, dx   & =\lim_{ n \to \infty } \sum_{i=1}^{N} f\left( a+\frac{i(b-a)}{n} \right) \frac{b-a}{n} \\
+ & =\lim_{ n \to \infty }\frac{3}{n}\left[  \sum_{i=1}^{N} \left[ \left( \frac{3i}{n} \right)^3 - 5\left( \frac{3i}{n} \right) \right] \right] \\
+ & =\lim_{ n \to \infty } \frac{3}{n}\left[ \frac{27}{n^3}\sum_{i=1}^{N} i^3 - \frac{15}{n}\sum i \right] \\
+ & =\lim_{ n \to \infty } \left[ \frac{81}{n^4}\left[ \frac{n(n+1)}{2} \right]^2 - \frac{45(n)(2n+1)}{2n^2} \right] \\
+ & =\lim_{ n \to \infty } \left[ \frac{81}{4}\left( 1+\frac{1}{n} \right)^2 - \frac{45}{2}\left( 1+\frac{1}{n} \right) \right] \\
+ & =\frac{81}{4} - 4
+\end{align}
+$$
 
 ---
 # Pre-Lecture Notes
