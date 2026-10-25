@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-25T13:58:11.408-04:00
-edited_seconds: 620
+updated_at: 2026-10-25T14:01:54.353-04:00
+edited_seconds: 640
 course: PHY180H1
 tags:
   - PHY180H1
@@ -11,11 +11,12 @@ Created: October 18th 2026, 6:01:52 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[18 — Moment of Inertia, Torque]]
-Next:
+Next: [[20 — Rolling Without Slipping and Angular Momentum]]
 > [!quote] Recommended Reading 
 > University Physics Sec. 10.6 - 10.8 
 --- 
 # Lecture Notes
+No new and novel notes were written within this note. 
 
 ---
 # Pre-Lecture Notes
