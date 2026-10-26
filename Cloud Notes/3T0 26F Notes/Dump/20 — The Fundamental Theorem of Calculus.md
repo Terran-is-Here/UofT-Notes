@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T15:07:18.840-04:00
-edited_seconds: 600
+updated_at: 2026-10-26T15:33:37.783-04:00
+edited_seconds: 730
 course: ESC194H1
 tags:
   - ESC194H1
@@ -138,6 +138,30 @@ g'(x) = f(u(x))u'(x)
 $$
 That is, following from chain rule; as $f(u(x))$ is the equivalent term on the right; then $g(x) = \int f(u(x))dx \to g'(x)=f(u(x))u'(x)$; as the integrand is a function of $u(x)$, thus chain rule kicks in. 
 
+
+Additionally, if such the case as this exists (exercise 62 from 4.3)
+$$
+g(x) = \int _{\tan(x)}^{x^2} \frac{1}{\sqrt{ 2+t^4 }} \, dx 
+$$
+We can break this up into: 
+$$
+g(x) = \int_{\tan x}^{0} \frac{1}{\sqrt{ 2+t^4 }}\, dt + \int_{0}^{x^2} \frac{1}{\sqrt{ 2 +t^4 }}\,dt
+$$
+Following the discrete integral properties discussed in the previous note. Note that the bound for $0$ is arbitrary, as long as it is the same value in both; though $0$ often simplifies calculations. 
+
+For the above; then taking our FToC 1: 
+$$
+\begin{align}
+g(x)  & = \int_{\tan x}^{0} \frac{1}{\sqrt{ 2+t^4 }}\, dt + \int_{0}^{x^2} \frac{1}{\sqrt{ 2 +t^4 }}\,dt \\
+ & =-\int_{0}^{\tan x} \frac{1}{\sqrt{ 2+t^4 }}\, dt + \int_{0}^{x^2} \frac{1}{\sqrt{ 2 +t^4 }}\,dt \\
+\alpha & =\tan x, u=x^2 \implies d\alpha=\sec^2x, du=2x \\
+ & =-\int_{0}^{\alpha(x)}\frac{1}{\sqrt{ 2+t^4 }}\,dt + \int ^{u(x)}_{0}\frac{1}{\sqrt{ 2+t^4 }}\, dt \\
+g'(x) & =\frac{d}{d\alpha}\left[ -\int_{0}^{\alpha(x)}\frac{1}{\sqrt{ 2+t^4 }} \,dt \right] \frac{d\alpha}{dx} + \frac{d}{du}\left[ \int_{0}^{u(x)}\frac{1}{\sqrt{ 2+t^4 }}\,dt \right] \frac{du}{dx} \\
+ & =-\frac{1}{\sqrt{ 2+\alpha(x)^4 }} \frac{d\alpha}{dt} + \frac{1}{\sqrt{ 2+u(x)^4 }}\ \frac{du}{dx} \\
+ g'(x)& =-\frac{\sec^2x}{\sqrt{ 2 + \tan^4(x) }} + \frac{2x}{\sqrt{ 2+x^8 }}
+\end{align}
+$$
+
 ### FToC 2: 
 Retaking the Theorem: 
 > [!theorem] Fundamental Theorem of Calculus (Part 2): 
@@ -157,3 +181,9 @@ $$
 g(x) = \int_{a}^{b} f(x) \, dx  = \int_{a_{1}}^{a_{2}}g(x)\,dx + \int_{a_{2}}^{a_{3}}j(x)\,dx
 $$
 That is, you take the integral under each corresponding segment of the piecewise function. That is, the sum of the areas of a piecewise function is equivalent to the sum of the corresponding sections of each function conglomerated within the overall piecewise function expression. 
+
+Additionally, if we define $g(x)$ now as something similar to our function earlier that we used in FToC 1: 
+$$
+g(x) = \int_{a}^{x}f(t)\,dt
+$$
+Then $g(x)$ may also develop into it's corresponding piecewise function; with terms expanding from the concepts from above. 
