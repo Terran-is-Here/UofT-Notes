@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T18:33:58.509-04:00
-edited_seconds: 250
+updated_at: 2026-10-26T18:45:42.837-04:00
+edited_seconds: 360
 course:
 tags:
 "Lecture #": 20
@@ -38,13 +38,41 @@ Consider now an inclined plane, with an angle $\theta$ and a coefficient of stat
 Setting our $x$ and $y$ axis to be inline with the surface then: 
 For our $x$ forces: 
 * We have $mg\sin\theta$ (force of gravity) in the direction of movement, directly on the center of mass
-* We also have $f_{f}=f_{n}\mu_{s} = \mu_{s}mg\cos\theta$, acting on a distance $r$ directly opposite the direction of movement. 
+* We also have $f_{f}=f_{n}\mu_{s} = \mu_{s}mg\cos\theta$, acting on a distance $r$ directly opposite the direction of movement. Fir t
 For our $y$ forces: 
 * We have our normal force and force downwards from gravity, defined as $mg\cos\theta=F_{n}$. 
 
 Solving for the $x$ equilibrium, then: 
 $$
 \begin{align}
-\sum F_{x} & =mg\sin\theta - \mu_{s}mg\cos\theta = ma
+\sum F_{x} & =mg\sin\theta - f_{f}= ma \\
+ & =g\sin\theta - \frac{f_{f}}{m} = a
 \end{align}
 $$
+Solving for the torque/moment equilibrium, then: 
+$$
+\begin{align}
+\sum \tau = f_{f}r= I\alpha
+\end{align}
+$$
+Since $\alpha r = a_{t}$, then: 
+$$
+\begin{align}
+f_{f}r^{2}  & = Ia_{t} \\
+f_{f} & =\frac{Ia_{t}}{r^2}
+\end{align}
+$$
+We can plug this back in to our earlier equation, then: 
+$$
+\begin{align}
+g\sin\theta - \frac{Ia_{t}}{mr^2}  & = a_{t} \\
+g\sin\theta & =a_{t} + \frac{Ia_{t}}{mr^2} = \left( 1 + \frac{I}{mr^2} \right)a_{t} \\
+ \frac{g\sin\theta}{1 + \frac{I}{mr^2}}& =a_{t}  & I=\frac{mr^2}{2} \\
+  a_{t} & =\frac{g\sin\theta}{1 + \frac{mr^2}{2mr^2}} = \frac{g\sin\theta}{1.5} =\frac{2}{3}g\sin\theta
+\end{align}
+$$
+Then: 
+$$
+\alpha = \frac{2}{3r}g\sin\theta
+$$
+
