@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T17:30:34.400-04:00
-edited_seconds: 980
+updated_at: 2026-10-26T17:56:11.154-04:00
+edited_seconds: 1130
 course: ESC194H1
 tags:
   - ESC194H1
@@ -196,3 +196,18 @@ Thus, we find the corresponding substitution rule for Definite Integrals:
 
 Note that we need to update the interval of integration when we perform this operation (or in other words, we find the range of values outputted by the composed function within, then plug those in as the range of values): 
 $a,b \to g(a),g(b)$
+### Symmetry in Definite Integrals
+From the properties above, we can actually define two special identities pertaining to definite integrals where their bounds are symmetrical. Take the following: 
+$$
+\begin{align}
+\int_{-a}^{a}f(x)\,dx  & = \int ^{0}_{-a}f(x)\,dx + \int ^{a}_{0}f(x)\,dx \\
+ & =-\int ^{-a}_{0}f(x)\,dx + \int ^{a}_{0}f(x)\,dx
+\end{align}
+$$
+If we substitute $u=-x$ in our first term, then $du=-dx$. Note as well that when $x=-a,u=a$, thus: 
+$$
+\begin{align}
+ & =-\int_{0}^{-a}-f(-u)\,du + \int_{0}^{a}f(x) \, dx \\
+ & =\int_{0}^{-a}f(-u)\,du + \int ^{a}_{0}f(x)\,dx
+\end{align}
+$$
