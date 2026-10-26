@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T16:49:51.799-04:00
-edited_seconds: 760
+updated_at: 2026-10-26T19:34:28.815-04:00
+edited_seconds: 820
 course: ESC194H1
 tags:
   - ESC194H1
@@ -187,3 +187,30 @@ $$
 g(x) = \int_{a}^{x}f(t)\,dt
 $$
 Then $g(x)$ may also develop into it's corresponding piecewise function; with terms expanding from the concepts from above. 
+### Application
+For instance, take the following problem. Solve for this holding true $\forall x>0$, solve for $f(t)$ and $a$. S
+$$
+6 + \int_{a}^{x} \frac{f(t)}{t^2}\,dt = 2\sqrt{ x }
+$$
+Recall that from the FToC1 that $\frac{d}{dx}\int_{a}^{x}f(x)dx=f(x)$, then: 
+$$
+\begin{align}
+\frac{d}{dx}\left[ 6 + \int_{a}^{x} \frac{f(t)}{t^2}\,dt \right]  & = \frac{d}{dx}[2\sqrt{ x }] \\
+\frac{f(x)}{x^2}  & =\frac{1}{\sqrt{ x }} \\
+f(x)  & =x^{3/2}
+\end{align}
+$$
+Then, our expression from earlier becomes: 
+$$
+\begin{align}
+6 + \int_{a}^{x} \frac{1}{\sqrt{ t}}\,dt  & = 2\sqrt{ x }  & F(x) = 2\sqrt{ x } \\
+6 + F(x)-F(a) & =2\sqrt{ x } \\
+6 + 2\sqrt{ x } - 2\sqrt{ a } & =2\sqrt{ x } \\
+6  & =2\sqrt{ a } \\
+a & =3
+\end{align}
+$$
+Then, our expression from earlier becomes: 
+$$
+6 + \int_{9}^{x} \frac{1}{\sqrt{ t }}\,dt = 2\sqrt{ x }
+$$
