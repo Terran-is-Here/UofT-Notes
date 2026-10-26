@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T14:52:11.013-04:00
-edited_seconds: 580
+updated_at: 2026-10-26T15:07:18.840-04:00
+edited_seconds: 600
 course: ESC194H1
 tags:
   - ESC194H1
@@ -136,4 +136,24 @@ Then:
 $$
 g'(x) = f(u(x))u'(x)
 $$
-That is, following from chain rule; as $f(u(x))$ is the equivalent term on the right; then $g(x) = \int f(u(x))dx \to g'(x)=f(u(x))u'(x)$; as the integrand is a function of $u(x)$, thus chain rule kicks in
+That is, following from chain rule; as $f(u(x))$ is the equivalent term on the right; then $g(x) = \int f(u(x))dx \to g'(x)=f(u(x))u'(x)$; as the integrand is a function of $u(x)$, thus chain rule kicks in. 
+
+### FToC 2: 
+Retaking the Theorem: 
+> [!theorem] Fundamental Theorem of Calculus (Part 2): 
+> If $f$ is continuous on $[a,b]$, then: 
+> $$\int_{a}^b~f(x)~dx = F(b)-F(a)$$
+> Where $F$ is any antiderivative of $f$, that is $F'(x)=f(x)$
+
+Note that if $f(x)$ is some piecewise function, such as the following: 
+$$
+f(x) = \begin{cases}
+g(x): a_{1}\leq x<a_{2} \\
+j(x):a_{2}\leq x\leq a_{3}
+\end{cases}
+$$
+Then: 
+$$
+g(x) = \int_{a}^{b} f(x) \, dx  = \int_{a_{1}}^{a_{2}}g(x)\,dx + \int_{a_{2}}^{a_{3}}j(x)\,dx
+$$
+That is, you take the integral under each corresponding segment of the piecewise function. That is, the sum of the areas of a piecewise function is equivalent to the sum of the corresponding sections of each function conglomerated within the overall piecewise function expression. 
