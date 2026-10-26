@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-23T14:00:01.132-04:00
-edited_seconds: 1360
+updated_at: 2026-10-26T16:11:13.282-04:00
+edited_seconds: 1370
 course: ESC194H1
 tags:
   - ESC194H1
@@ -167,7 +167,7 @@ $$
 $$
 \begin{align}
 |\int_{a}^{b}f(x)\,dx  & = |A_{1}-A_{2}| \\
-\int_{a}^{b}|f(x)|\,dx & =|A_{1}| + |A_{2|}
+\int_{a}^{b}|f(x)|\,dx & =|A_{1}| + |A_{2}|
 \end{align}
 $$
 
