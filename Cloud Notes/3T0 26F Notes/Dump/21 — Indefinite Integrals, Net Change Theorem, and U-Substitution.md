@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T17:15:35.960-04:00
-edited_seconds: 730
+updated_at: 2026-10-26T17:30:34.400-04:00
+edited_seconds: 980
 course: ESC194H1
 tags:
   - ESC194H1
@@ -155,5 +155,44 @@ There exist many ways to plug in, some are simpler than others.
 
 Take now this more challenging example: 
 $$
-\int \sqrt{ 1+ }
+\int \sqrt{ 1+x^2 }* x^5\,dx
 $$
+Note that this may not be easy to solve at first glance. Let's try setting $u=1+x^2$, then the following: 
+$$
+\begin{align}
+u  & = 1+x^2 \\
+ & \implies u-1 = x^2 \implies (u-1)^2 = x^4 \\
+ & \implies du = 2x \,dx \implies x \, dx = \frac{1}{2}du 
+\end{align}
+$$
+Noting that $x^5 = x^4x$, then rewriting our expression from earlier: 
+$$
+\begin{align}
+ & =\int \sqrt{ 1 + x^2 } x^{5}\,dx \\
+ & =\int \sqrt{ u }*(u-1)^2 * \frac{1}{2}\,du \\
+ & =\frac{1}{2}\int u^{1/2} *(u-1)^{2}\,du = \frac{1}{2}\int u^{1/2}(u^{2} - 2u + 1)\,du \\
+ & =\frac{1}{2}\int u^{5/2} -2u^{3/2} + u^{1/2} \, du \\
+ & =\frac{1}{2}\left[ \frac{2u^{7/2}}{7} -\frac{4u^{5/2}}{5} + \frac{2u^{3/2}}{3} \right] +C\\
+ & =\frac{u^{7/2}}{7} + \frac{2u^{5/2}}{5} + \frac{u^{3/2}}{3} +C\\
+ & =\frac{(1+x^{2})^{7/2}}{7} + \frac{(1+x^{2})^{5/2}}{5} + \frac{(1+x^{2})^{3/2}}{3} +C
+\end{align}
+$$
+## U-Substitution and Definite Integrals
+Evaluating definite integrals through substitution steps above, then using the fundamental theorem as usual is possible. However, in some cases it may be more apt to perform substitution. 
+
+Recall how we defined U-Substitution for Indefinite Integrals: We substituted our variable $x$ with some term $u$, where $u$ is a function of $x$. Retaking our earlier definition: 
+$$
+\int_{a}^{b} f'(g(x))g'(x) \, dx = \left.F(g(x))\right|^b_{a} = F(g(b))-F(g(a)) \tag{from FToC 2}
+$$
+Note that here, we had $g(b),g(a)$ are our evaluation terms, thus this implies that: 
+$$
+\int ^{g(b)}_{g(a)}f(u)\,du = F(u)|^{g(b)}_{g(a)} = F(g(b))-F(g(a))
+$$
+Thus, we find the corresponding substitution rule for Definite Integrals: 
+
+> U-Sub Rule (Definite Integrals)
+> If $g'(x)$ is continuous in $[a,b]$, and $f(x)$ is continuous on the range of $u=g(x)$, then: 
+> $$\int_{a}^{b}f'(g(x))g'(x) \,dx = \int_{g(a)}^{g(b)}f(u)\,du$$
+
+Note that we need to update the interval of integration when we perform this operation (or in other words, we find the range of values outputted by the composed function within, then plug those in as the range of values): 
+$a,b \to g(a),g(b)$
