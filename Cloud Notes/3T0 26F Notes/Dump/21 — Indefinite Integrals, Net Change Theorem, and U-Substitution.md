@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T16:54:42.971-04:00
-edited_seconds: 430
+updated_at: 2026-10-26T17:15:35.960-04:00
+edited_seconds: 730
 course: ESC194H1
 tags:
   - ESC194H1
@@ -86,4 +86,74 @@ Recall that our Indefinite Integral formulas above solely solve for how we can f
 $$
 \int 2x\sqrt{ 2+x^2 } \, dx 
 $$
-There's nothing explicitly set out within our earlier expressions in terms as to how we can solve this. 
+There's nothing explicitly set out within our earlier expressions in terms as to how we can solve this. We will now introduce the Substitution Rule. 
+
+> Recall that from our definition of an Indefinite integral that: $\int f(x) \, dx = F(x) + C$
+> Recall from the Net Change theorem as well that $f(x) = F'(x)$; then: $\int F'(x)\,dx = F(x) + C$
+
+Now, take the following Integral, where $F'(x)=f(x)$
+$$
+\int F'(g(x))g'(x) \,dx = F(g(x)) + C
+$$
+Recall that from the chain rule; that:
+$$
+\begin{align}
+\frac{d}{dx}[F(g(x))+C] = F'(g(x))g'(x) 
+\end{align}
+$$
+Which satisfies our definition for an Indefinite Integral above, then setting $u=g(x)$, this can be written as: 
+$$
+F'(g(x))g'(x) = F'(u)du \implies \int F'(g(x))g'(x) \;dx = \int F'(u)\,du
+$$
+Since $F'(u)=f(u)$, then this can be finally expressed as: 
+$$
+\boxed{\int f'(g(x))g'(x)\,dx = \int f(u)\,du}
+$$
+Where $u=g(x),du=g'(x)$. This is The Substitution Rule. 
+
+> [!theorem] The Substitution Rule 
+> If $u=g(x)$ and is differentiable; where it's range is $I$, and if $f$ is continuous on an interval $I$, then: 
+> $$\int f'(g(x))g'(x) = \int f(u)\;du$$
+> Or in other words, The Substitution Rule implies to us that we can treat $dx,du,\dots$ as differentials if they take place after an integration symbol.
+> > The Substitution Role is the analogous "inverse operation" to function composition, however some function composition operations may be more applicable to be simplified in a different manner. 
+
+Often what happens is that we find for a corresponding pair / term of a function & it's corresponding $dx,du,\dots$ as some term of the differential that we are substituting with respects to. 
+### Application
+We can apply this in a trivial case to demonstrate it's application: 
+$$
+\begin{align}
+ & = \int x^{3}\cos(x^{4}+2) \, dx \\ \\
+ u& =x^4 + 2  \implies du = 4x^3 \,dx \to x^3 \,dx = \frac{1}{4}du \\
+  & =\int \frac{1}{4}\cos(u) \, du \\
+  & =\frac{1}{4}\int \cos(u) \,du = \frac{1}{4}\sin(u) + C \\
+  & =\frac{1}{4}\cos(x^4+2) + C
+\end{align}
+$$
+
+In a slightly more challenging case: 
+$$
+\begin{align}
+ & =\int \sqrt{ 2x+1 }\,dx \\
+ u & =2x+1 \to du = 2dx \to dx=\frac{1}{2}du \\
+  & =\int \frac{1}{2}\sqrt{ u } \, du \\
+  & =\frac{2}{6}u^{3/2}+C \\
+  & =\frac{2}{6}(2x+1)^{3/2} +C = \frac{1}{3}(2x+1)^{3/2}+C
+\end{align}
+$$
+The hardest part for $u$ substitution is trying to figure out what is the best term to substitute in as a term of $u$. For instance: 
+$$
+\begin{align}
+u =(2x+1)^{1/2}=  \sqrt{ 2x+1 } \implies u^2=2x+1 \\
+\frac{d}{dx}u^2 = \frac{d}{dx}2x + 1 \implies 2u\,du  = 2\,dx \implies u \,du = dx
+\end{align}
+$$
+Then, resubstituting in: 
+$$
+\int \sqrt{ 2x+1 }\,dx = \int u ^2 \,du = \frac{u^3}{3}+ C = \frac{1}{3}(2x+1)^{3/2}
+$$
+There exist many ways to plug in, some are simpler than others. 
+
+Take now this more challenging example: 
+$$
+\int \sqrt{ 1+ }
+$$
