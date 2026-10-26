@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-23T08:34:00.365-04:00
-edited_seconds: 540
+updated_at: 2026-10-26T14:52:11.013-04:00
+edited_seconds: 580
 course: ESC194H1
 tags:
   - ESC194H1
@@ -120,3 +120,20 @@ Then; we can see that a discrete integral can be calculated by taking the differ
 > $$\int_{a}^b~f(x)~dx = F(b)-F(a)$$
 > Where $F$ is any antiderivative of $f$, that is $F'(x)=f(x)$
 
+## Implications of FToC
+### FToC 1 
+Retaking the theorem: 
+> [!theorem] Fundamental Theorem of Calculus (Part 1)
+> If $f$ is continuous on $[a,b]$, then the function $g(x)$ defined by the following: 
+> $$g(x) = \int _{a}^{x}f(t) \, dt, ~~~ a\leq x\leq b $$
+> Here, $g(x)$ is continuous on $[a,b]$, and is differentiable on the corresponding open interval, where $g'(x)=f(x)$. 
+
+Note that in our integrand, if the following is true: 
+$$
+g(x) = \int _{a}^{u(x)}f(t) \, dt 
+$$
+Then: 
+$$
+g'(x) = f(u(x))u'(x)
+$$
+That is, following from chain rule; as $f(u(x))$ is the equivalent term on the right; then $g(x) = \int f(u(x))dx \to g'(x)=f(u(x))u'(x)$; as the integrand is a function of $u(x)$, thus chain rule kicks in
