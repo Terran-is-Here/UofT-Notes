@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T17:56:11.154-04:00
-edited_seconds: 1130
+updated_at: 2026-10-26T18:05:24.771-04:00
+edited_seconds: 1190
 course: ESC194H1
 tags:
   - ESC194H1
@@ -208,6 +208,23 @@ If we substitute $u=-x$ in our first term, then $du=-dx$. Note as well that when
 $$
 \begin{align}
  & =-\int_{0}^{-a}-f(-u)\,du + \int_{0}^{a}f(x) \, dx \\
- & =\int_{0}^{-a}f(-u)\,du + \int ^{a}_{0}f(x)\,dx
+ & =\int_{0}^{a}f(-u)\,du + \int ^{a}_{0}f(x)\,dx
 \end{align}
 $$
+If $f$ is even, that is $f(-u)=f(u)$, then: 
+$$
+\begin{align}
+ & =\int ^{a}_{0}f(-u)\,du + \int ^{a}_{0}f(x)\,dx =  \\
+ & =\int ^{a}_{0}f(u)\,du + \int ^{a}_{0}f(x)\,dx  = 2\int_{0}^{a}f(x)\,dx\tag{note 1}
+\end{align}
+$$
+* Note 1: Note that $f(u)\,du$ is in terms of what respects we are integrating our function with; irrespective of how we defined it earlier (i.e. this is our $x^{*}_{i}$ term and $\Delta x_{i}$ term) 
+Similarly, if $f$ is odd, that is $f(-u)=-f(u)$, then: 
+$$
+\begin{align}
+ & =\int ^{a}_{0}f(-u)\,du + \int ^{a}_{0}f(x)\,dx =  \\
+ & =-\int ^{a}_{0}f(u)\,du + \int ^{a}_{0}f(x)\,dx  = 0\int_{0}^{a}f(x)\,dx\tag{note 1}=0
+\end{align}
+$$
+![[21 — Indefinite Integrals, Net Change Theorem, and U-Substitution-1793052361062.webp|296]]
+Or, in a graphical representation: 
