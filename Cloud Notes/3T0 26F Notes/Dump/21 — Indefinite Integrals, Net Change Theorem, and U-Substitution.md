@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-23T12:41:54.141-04:00
-edited_seconds: 310
+updated_at: 2026-10-26T16:54:42.971-04:00
+edited_seconds: 430
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week: 8
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[20 — The Fundamental Theorem of Calculus]]
-Next: N/A 
+Next: [[22 — Areas Between Curves]]
 > [!quote] Recommended Reading 
 > Sections 4.4, 4.5 of the Stewart Textbook
 > [[17— Optimization, Antiderivatives and Sigma Notation]]
@@ -59,3 +59,31 @@ $$
 \int \sec^2(x) \, dx  & =\tan x + C & 
 \end{align}
 $$
+Note that this works for (arguably) trivial polynomials / expressions where no kinds of substitution are required. Some algebra may be required to manipulate a function to a form in which we can utilize these integration / antiderivatives within our expression. 
+## Net Change Theorem
+Recall the second Theorem in the Fundamental Theorem of Calculus: 
+$$
+g(x) = \int _{a}^{b}f(x) \, dx = F(b)-F(a)
+$$
+Where $F(x)$ is any antiderivative of $f(x)$, that is $F'(x)=f(x)$. Note that we can actually *backsubstitute this* back into our original expression, giving us the resulting Net Change theorem: 
+$$
+g(x) = \int_{a}^{b}F'(x) \,dx = F(b)-F(a)
+$$
+Or, in words: 
+> The area under the rate of change, is equal to the net change. 
+> That is, the integral of a rate of change is equal to the net change. 
+
+This has numerous applications, such as pertaining to real world scenarios: 
+$$
+g(x) = \int _{t_{1}}^{t_{2}}dV\,dt = V(t_{2})-V(t_{1}) = \Delta V_{t} \text{ (change in volume)}
+$$
+$$
+g(x) = \int_{t_{1}}^{t_{2}}dS\,dx = S(t_{2})-S(t_{1}) = \Delta S \text{ (change in position)}
+$$
+This is similar to how we define work-energy relations in physics, though not exactly. Integrating the rate of change of something to get the net change is a very powerful concept overall. 
+## U-Substitution / The Substitution Rule
+Recall that our Indefinite Integral formulas above solely solve for how we can find the antiderivatives of some trivial functions. Consider the case in which we have a function composing another function such as: 
+$$
+\int 2x\sqrt{ 2+x^2 } \, dx 
+$$
+There's nothing explicitly set out within our earlier expressions in terms as to how we can solve this. 

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T15:33:37.783-04:00
-edited_seconds: 730
+updated_at: 2026-10-26T16:49:51.799-04:00
+edited_seconds: 760
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week: 7
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[19 — The Definite Integral]]
-Next: [[21 — Indefinite Integrals and the Net Change Theorem]]
+Next: [[21 — Indefinite Integrals, Net Change Theorem, and U-Substitution]]
 > [!quote] Recommended Reading 
 > Section 4.3 (Stewart) 
 --- 
@@ -153,8 +153,8 @@ For the above; then taking our FToC 1:
 $$
 \begin{align}
 g(x)  & = \int_{\tan x}^{0} \frac{1}{\sqrt{ 2+t^4 }}\, dt + \int_{0}^{x^2} \frac{1}{\sqrt{ 2 +t^4 }}\,dt \\
- & =-\int_{0}^{\tan x} \frac{1}{\sqrt{ 2+t^4 }}\, dt + \int_{0}^{x^2} \frac{1}{\sqrt{ 2 +t^4 }}\,dt \\
-\alpha & =\tan x, u=x^2 \implies d\alpha=\sec^2x, du=2x \\
+ & =-\int_{0}^{\tan x} \frac{1}{\sqrt{ 2+t^4 }}\, dt + \int_{0}^{x^2} \frac{1}{\sqrt{ 2 +t^4 }}\,dt \\[1em]
+ & \text{let }\alpha(x) =\tan x, u(x)=x^2 \implies d\alpha=\sec^2x, du=2x \\  & \text{then sub in:}\\[1em]
  & =-\int_{0}^{\alpha(x)}\frac{1}{\sqrt{ 2+t^4 }}\,dt + \int ^{u(x)}_{0}\frac{1}{\sqrt{ 2+t^4 }}\, dt \\
 g'(x) & =\frac{d}{d\alpha}\left[ -\int_{0}^{\alpha(x)}\frac{1}{\sqrt{ 2+t^4 }} \,dt \right] \frac{d\alpha}{dx} + \frac{d}{du}\left[ \int_{0}^{u(x)}\frac{1}{\sqrt{ 2+t^4 }}\,dt \right] \frac{du}{dx} \\
  & =-\frac{1}{\sqrt{ 2+\alpha(x)^4 }} \frac{d\alpha}{dt} + \frac{1}{\sqrt{ 2+u(x)^4 }}\ \frac{du}{dx} \\
