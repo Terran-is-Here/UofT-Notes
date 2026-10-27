@@ -10,7 +10,7 @@ Week: 8
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[20 — Rolling Without Slipping and Angular Momentum]]
-Next: [[22 — Static Equilibrium]]
+Next: [[22 and 23 — Static Equilibrium and Elasticity]]
 > [!quote] Recommended Reading 
 > Sections 11.3, 11.4 of the University Physics Textbook. 
 > [[15 — Conservation of (Translational) Momentum, Collisions]]
