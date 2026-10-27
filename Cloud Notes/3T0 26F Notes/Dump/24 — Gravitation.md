@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T13:48:40.985-04:00
-edited_seconds: 280
+updated_at: 2026-10-27T14:09:08.445-04:00
+edited_seconds: 540
 course:
 tags:
 "Lecture #": 0
@@ -42,4 +42,50 @@ Note that this is true for any case in which we are trying to find the accelerat
 
 ## Generalized Gravitational Potential Energy 
 Recall that in an earlier note, we defined Gravitational Potential Energy (or more so, the change in it) as $\Delta U = mg(y_{t}-y_{0})$, where we assumed that the gravitational field strength would be held constant across the translation. 
+
+Recall that we defined Potential Energy as the negative of work, which was defined as the path integral of a force over a distance: 
+$$
+\Delta U = -W = -\int_{r_{0}}^{r_{1}}F\cdot dr
+$$
+Setting $F$ = $F_{g}$, then: 
+$$
+\begin{align}
+\Delta U & =-\int_{r_{0}}^{r_{1}} \frac{GM_{e}m}{r^{2}}dr \\
+ & =-GM_{e}m \int_{r_{0}}^{r_{1}} \frac{1}{r^{2}}dr \\
+ & =-GM_{e}m \left[ -\frac{1}{r} \right]_{r_{0}}^{r_{1}} \\
+ & =-GM_{e}m\left[ \frac{1}{r_{0}}-\frac{1}{r_{1}} \right] &
+\end{align}
+$$
+Since $\Delta U = U_{2}-U_{1}$, then: 
+> [!theorem] Generalized Gravitational Potential Energy
+> $$U_{n} = -\frac{GMm}{r_{n}}$$
+> Where $r_{n}$ is the radius from an origin, this gives the potential energy at a certain point. 
+> > Consider this as well as $gr$, where we multiply the Gravitational Field strength times a distance to get a term of voltage. 
+
+Note the negative sign, as $r_{n}$ decreases, the work done by gravity increases (or in other words, objects inherently want to fall down). Consider as well that $U_{n}=0$ doesn't inherently exist, and only exists in the following case: 
+$$
+U_{n} \to 0 \iff \lim_{ r_{n} \to \infty } -\frac{GMm}{r_{n}} =0
+$$
+### Escape Velocity
+Considering this now in the context of the conservation of energy, recall that we can define the total mechanical energy of a system as the sum of it's kinetic energy and the potential energy in the system. For our context, we will set the potential energy as the term we had defined earlier above. 
+
+Consider now the case for the *minimum* escape velocity of an object, that is the absolute minimum velocity of an object to get out of a planet's gravitational field. In this case, the gravitational potential energy would tend to 0, as well as our final velocity reaching 0, then: 
+
+$$
+\frac{1}{2}mv_{i}^{2} -\frac{GMm}{r_{n}}= \frac{1}{2}mv_{t}^{2} - \frac{GMm}{r_{n'}}
+$$
+Note that the terms on the left both evaluate to $0$ ($\lim_{ r_{n'} \to \infty }\frac{GM_{e}m}{r_{n'}}=0$), then: 
+$$
+\begin{align}
+\frac{1}{2}mv^{2}_{i} &  = \frac{GMm}{r_{n}} \\
+ & v_{i}=\sqrt{ \frac{2GM}{r_{n}} } = \sqrt{ \frac{2GM}{R} }
+\end{align}
+$$
+Where $v_{i}$ represents the escape velocity of the system. 
+### Boundness 
+Consider now our earlier implications for the above, we state that an object just barely escapes an object's gravitational field at an infinite radius when we set both the final kinetic and gravitational potential energies to 0. 
+
+Recall that Gravitational Potential Energy only results to becoming 0 when $r_{n}$ becomes infinitely large; thus we define the other two cases for an object: 
+
+
 
