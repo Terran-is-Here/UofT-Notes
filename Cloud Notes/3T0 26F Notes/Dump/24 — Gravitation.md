@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T13:27:26.853-04:00
-edited_seconds: 210
+updated_at: 2026-10-27T13:48:40.985-04:00
+edited_seconds: 280
 course:
 tags:
 "Lecture #": 0
@@ -37,3 +37,9 @@ mg &  = \frac{GmM_{E}}{r^{2}} \\
 g  & =\frac{GM_{E}}{r^{2}}
 \end{align}
 $$
+
+Note that this is true for any case in which we are trying to find the acceleration from gravity of an object within a single-object gravitational field; we can substitute $M_{E}$ and $r$  with values as we please to find the corresponding acceleration from gravity. Alternatively, you can describe this as the *gravitational field strength* at that point, in terms of $\frac{N}{kg}$.  
+
+## Generalized Gravitational Potential Energy 
+Recall that in an earlier note, we defined Gravitational Potential Energy (or more so, the change in it) as $\Delta U = mg(y_{t}-y_{0})$, where we assumed that the gravitational field strength would be held constant across the translation. 
+

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T22:31:10.386-04:00
-edited_seconds: 1210
+updated_at: 2026-10-27T13:42:52.879-04:00
+edited_seconds: 1220
 course: ESC194H1
 tags:
   - ESC194H1
@@ -226,5 +226,6 @@ $$
  & =-\int ^{a}_{0}f(u)\,du + \int ^{a}_{0}f(x)\,dx  = 0\int_{0}^{a}f(x)\,dx\tag{note 1}=0
 \end{align}
 $$
+* Note 1: Similar logic to the above applies. 
 ![[21 — Indefinite Integrals, Net Change Theorem, and U-Substitution-1793052361062.webp|296]]
 Or, in a graphical representation: 
