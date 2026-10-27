@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T11:26:48.819-04:00
-edited_seconds: 320
+updated_at: 2026-10-27T11:41:16.499-04:00
+edited_seconds: 350
 course:
 tags:
 "Lecture #": 0
@@ -23,6 +23,10 @@ Recall our definitions for Angular Momentum:
 $$
 L= rp \sin\theta = I\omega
 $$
+> Or, more generally: 
+> $$L = mv*r\sin\theta$$
+> Where $m$ represents the mass member, $v$ represents it's tangential velocity, and $r \sin\theta$ can be rewritten as some perpendicular distance $d$ from the centre of rotation: $$L=mvd$$
+
 Note that for the purposes of notation, we will consider the term of Angular Momentum as some variable $L$, and the corresponding moment of inertia as some variable $I$. Recall that we also defined that the net change in the angular momentum of a system is defined in terms of the net torque applied *onto* the system, that is: 
 $$
 \frac{dL}{dt} = \sum \tau
@@ -39,7 +43,9 @@ Recall, since $\tau=I\alpha, \frac{dL}{dt}=I \frac{d\omega}{dt} = I\alpha = \tau
 
 Recall that $I=\sum mr^2$, or rather $I=\int r^2dm$; if the radius of the rotating object decreases with respect to the masses, then $\omega$ proportionally increases (and vice versa). Consider this implication in the context of angular/rotational kinetic energy; where we have an initial and final rotational kinetic energy (e.g. from pulling weights closer, etc.)
 
+> [!caution] Note
 > Additionally since $I=\sum mr^{2}$, then if another object (e.g. a collision, etc) is added onto an object that is revolving, that too would be added onto the corresponding $I'$ term in the final/initial angular momentum. 
+
 $$
 \begin{align}
 K_{rot}  & = \frac{1}{2}I\omega^2 \\
@@ -59,3 +65,4 @@ $$
 \frac{K'_{rot}}{K_{rot}}=  \left( \frac{I}{I'} \right)
 $$
 
+## Gyroscopic Precession
