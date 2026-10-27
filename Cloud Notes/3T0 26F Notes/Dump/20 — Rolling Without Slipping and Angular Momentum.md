@@ -1,15 +1,20 @@
 ---
-updated_at: 2026-10-26T21:33:35.062-04:00
-edited_seconds: 520
-course:
+updated_at: 2026-10-26T21:57:36.278-04:00
+edited_seconds: 850
+course: PHY180H1
 tags:
+  - PHY180H1
 "Lecture #": 20
-Lecture Date: 2026-10-25
+Lecture Date: 2026-11-02
 Week:
+Created: October 25th 2026, 2:02:05 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[19 —Newton's Second Law for Rotation, Rotational Energy]]
 Next:
+> [!quote] Recommended Reading 
+> Section 11.1 - 11.2 of University Physics
+> [[14 — Momentum and Impulse]], [[15 — Conservation of Momentum, Collisions]]
 
 --- 
 # Lecture Notes
@@ -93,3 +98,67 @@ $$
 \end{align}
 $$
 
+That is; the higher the angle, the higher the corresponding required $\mu_{s}$ needed to stop an object from rolling without slipping. 
+### Rolling Down with Slipping 
+If in the case that our object *is* slipping, we can't use the equations that require $v_{p}=0$, as $v_{p}\neq0$. Taking the diagram from above once again: 
+![[20 — Rolling Without Slipping and Angular Momentum-1793054075124.png|410]]
+
+For our $x$ forces: 
+* We have $mg\sin\theta$ (force of gravity) in the direction of movement, directly on the center of mass
+* We also have $f_{f}=f_{n}\mu_{s} = \mu_{k}mg\cos\theta$, acting on a distance $r$ directly opposite the direction of movement. Fir t
+For our $y$ forces: 
+* We have our normal force and force downwards from gravity, defined as $mg\cos\theta=F_{n}$. 
+
+Thus for the $x$ equilibrium: 
+$$
+\begin{align}
+\sum F_{x}: mg\sin\theta - \mu_{k}mg\cos\theta  & = ma_{com} \\
+a_{com} & =g(\sin\theta-\mu_{k}\cos\theta)
+\end{align}
+$$
+
+And for the corresponding $\tau$ equilibrium: 
+$$
+\begin{align}
+\sum \tau & : \mu_{k}mg\cos\theta = I\alpha \\
+ & :r\mu_{k}mg\cos\theta  = \frac{mr^2}{2}\alpha \\
+ & :\frac{2\mu_{k}g\cos\theta}{r^{}} = \alpha
+\end{align}
+$$
+Note that, in contrast to Rolling Without Slipping, Rolling With Slipping has a term of $\mu_{k}$ involved in it's equations. 
+
+## Conservation of Energy
+Recall in an earlier note how we defined the total kinetic energy of an object as the sum of the translational kinetic energy and the rotational kinetic energy of an object :
+$$
+K = \frac{1}{2}mv^{2} + \frac{1}{2}I\omega^{2}
+$$
+If our object is rolling without slipping, then $v_{CM}=\omega r \to \frac{v_{CM}}{r}=\omega$, subbing it in, then: 
+$$
+\begin{align}
+K  & = \frac{1}{2}mv^{2} + \frac{1}{2}I\left( \frac{v}{r} \right)^2  \\
+ & =\frac{1}{2}mv^{2} + \frac{Iv^{2}}{2r^{2}}
+\end{align}
+$$
+And the corresponding mechanical energy formula, assuming that energy is conserved and is solely involved in a potential manner, then: 
+$$
+E_{T} = \frac{1}{2}mv^{2} + \frac{1}{2} \frac{Iv^{2}}{r^{2}} + mgh
+$$
+## Angular Momentum 
+Before we define Angular Momentum, recall how we defined the concept of momentum in a translational setting: 
+$$\vec{p} =m\vec{v}$$The Angular equivalent of Translational Angular Momentum is defined as the following: 
+$$
+\vec{I} = \vec{r}\times \vec{p}
+$$
+Therefore: 
+$$
+|I| = |r||p|\sin\theta
+$$
+Note that $p=r\omega$. Note that we can relate the change in angular momentum to a term of force: 
+$$
+\begin{align}
+\frac{d\vec{I}}{dt}  & = \vec{r} \times \frac{d\vec{p}}{dt} \\
+ & =\vec{r}\times \vec{F}  & \frac{d\vec{p}}{dt} = \vec{F} \text{ (from NSL)} \\
+\frac{d\vec{I}}{dt} & =\sum \vec{\tau}
+\end{align}
+$$
+That is, the net change in angular momentum over time, is equivalent to the net torque applied onto an object. 
