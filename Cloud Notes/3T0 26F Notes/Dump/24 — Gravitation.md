@@ -1,11 +1,12 @@
 ---
-updated_at: 2026-10-27T14:14:27.171-04:00
-edited_seconds: 630
-course:
+updated_at: 2026-10-27T16:08:20.382-04:00
+edited_seconds: 720
+course: PHY180H1
 tags:
-"Lecture #": 0
+  - PHY180H1
+"Lecture #": 24
 Lecture Date: 2026-10-27
-Week:
+Week: 9
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[22 and 23 — Static Equilibrium and Elasticity]]
@@ -66,6 +67,7 @@ Note the negative sign, as $r_{n}$ decreases, the work done by gravity increases
 $$
 U_{n} \to 0 \iff \lim_{ r_{n} \to \infty } -\frac{GMm}{r_{n}} =0
 $$
+This solves for the gravitational potential at one point, use conservation of energy as usual (as well as $\Delta U$) to solve for relevant $\Delta K$ terms. 
 ### Escape Velocity
 Considering this now in the context of the conservation of energy, recall that we can define the total mechanical energy of a system as the sum of it's kinetic energy and the potential energy in the system. For our context, we will set the potential energy as the term we had defined earlier above. 
 
@@ -82,6 +84,11 @@ $$
 \end{align}
 $$
 Where $v_{i}$ represents the escape velocity of the system. 
+
+> This actually has a very special implication when we rearrange this: 
+> $$\begin{align}v_{i} & =\sqrt{ \frac{2GM}{r} } \\v_{i}^{2}  & = \frac{2GM}{r} \\r & =\frac{2GM}{v_{i}^{2}}\end{align}$$
+> If we set the escape velocity to be $c$, we arrive at the following: $$r=\frac{2GM}{c^{2}}$$
+> Note that this indicates the *Schwarzschild* radius of a Schwarzschild black hole, where the escape velocity is exactly the speed of light. This essentially solves for the size[^1] of a black hole's event horizon. 
 ### Boundness 
 Consider now our earlier implications for the above, we state that an object just barely escapes an object's gravitational field at an infinite radius when we set both the final kinetic and gravitational potential energies to 0. 
 
@@ -101,3 +108,4 @@ Since we know that this $v_{t}$ reaches 0, at some value where our gravitational
 Note that we can solve for the maximum potential distance (if it exists) by setting $v_{t}=0$ and solving for $r_{n'}$. 
 
 
+[^1]: This is for an idealized, stationary, non-rotating black hole. 
