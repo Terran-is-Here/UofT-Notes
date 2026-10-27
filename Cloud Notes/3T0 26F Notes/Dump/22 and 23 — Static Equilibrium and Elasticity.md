@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T12:48:33.344-04:00
-edited_seconds: 280
+updated_at: 2026-10-27T13:08:31.161-04:00
+edited_seconds: 530
 course: PHY180H1
 tags:
   - PHY180H1
@@ -44,7 +44,7 @@ Note that for both cases, we can break it up into it's corresponding vectors (e.
 
 In terms of actually applying this in problems, use the equilibrium conditions above, solve for reactions and or distances if necessary, and always try to find the point of analysis that would most simplify the computation required for solving such a problem. 
 
-## Stress and Strain
+## Tensile Stress and Strain
 We now define the concept of Stress and Strain. 
 
 > Stress: 
@@ -65,3 +65,37 @@ Where $E$ is the Young's Modulus of the material, a material characteristic sign
 
 (This often leads to this function being defined more as some piecewise expression, if it were actually mathematically modelled. ): 
 $$\sigma(\epsilon) = \begin{cases}\dots \\\dots \\\dots\end{cases}$$
+### Bulk Stress and Strain
+Consider now the case that for a 3d object, a uniform pressure $\Delta p$ is applied across all surfaces present across the body, such as when being submerged in water. This would induce a change in the volume of that object, thus we can define the concept of Bulk Strain similarly to Tensile / Axial Strain: 
+$$\epsilon_{b} = \frac{\Delta V}{V_{0}}$$
+Similarly with a uniform applied pressure $\Delta P$ , we can now define the Bulk Modulus as the following: 
+$$
+B = \frac{\sigma_{B}}{\epsilon_{B}} = -\frac{\Delta P}{\frac{\Delta V}{V_{0}}} = -\Delta P\frac{V_{0}}{\Delta V}
+$$
+Note that the negative sign present there originates as a means to ensure that $B$ is always constant: If $\Delta P$ increases, $\Delta V$ will become a negative value. This essentially asks if the volume changes by a certain amount, how much does the pressure applied change in response? This is essentially analogous to $\sigma=\epsilon E$ earlier for Tensile/Compressive members. 
+
+The reciprocal of this is defined as the Compressibility of an object: 
+$$
+k=\frac{1}{B} = -\frac{\Delta V}{\Delta P*V_{0}}
+$$
+Where the units of this are in terms of a change in volume, with respects to a change in pressure. Compressibility is a measure of how much the volume of an object change, if the pressure applied on it changes. 
+
+### Shear Stress and Strain
+Consider now the case of Shear Deformation. Shear Deformation occurs when two *antiparallel* forces of **equal magnitude** are applied tangentially to opposite surfaces of a solid object (this means to transverse deformation, but shear deformation instead). 
+
+Shear deformation is defined by some gradual change of $\Delta x$ of the layers in the direction **tangent** to acting forces present; being applied over some original distance $L_{0}$. Thus we can define shear strain as the following: 
+$$
+\epsilon_{S} = \frac{\Delta x}{L_{0}}
+$$
+Similarly to our previous expressions, this is also related with Shear Stress. Stress is due to forces that act parallel to the surface, thus: 
+$$
+\sigma_{S}= \frac{F_{||}}{A}
+$$
+Where $F_{||}$ indicates forces that act parallel to our surface. These are also related in some proportionality constant in terms of the shear modulus: 
+$$
+S = \frac{\sigma_{S}}{\epsilon_{S}} = \frac{L_{0}F_{||}}{\Delta xA}
+$$
+![[22 and 23 — Static Equilibrium and Elasticity-1793120813452.webp|457]]
+Though really, it's kind of weird when you think about it, since this is heavily linked to the concept of a couple.
+> [!caution] Note
+> Apparently the ocn
