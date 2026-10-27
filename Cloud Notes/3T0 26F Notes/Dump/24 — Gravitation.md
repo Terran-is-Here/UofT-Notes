@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T14:09:08.445-04:00
-edited_seconds: 540
+updated_at: 2026-10-27T14:14:27.171-04:00
+edited_seconds: 630
 course:
 tags:
 "Lecture #": 0
@@ -9,7 +9,7 @@ Week:
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[22 and 23 — Static Equilibrium and Elasticity]]
-Next: N/A
+Next: [[25 — Orbital and Keplerian Mechanics]]
 > [!quote] Recommended Reading 
 > Sections 13.1 - 13.3 of University Physics
 
@@ -87,5 +87,17 @@ Consider now our earlier implications for the above, we state that an object jus
 
 Recall that Gravitational Potential Energy only results to becoming 0 when $r_{n}$ becomes infinitely large; thus we define the other two cases for an object: 
 
+If the kinetic energy of an object is not 0 when the gravitational potential energy is not 0, then our object fully escapes, and will not return. (Total Energy is Positive)
+
+If the total energy of the system is Negative, then:
+$$
+\begin{align}
+\frac{1}{2}mv_{t}^{2}-\frac{GMm}{r_{n'}} <0 \\
+\frac{1}{2}mv_{t}^{2}<\frac{GMm}{r_{n'}}
+\end{align}
+$$
+Since we know that this $v_{t}$ reaches 0, at some value where our gravitational potential energy *does not reach 0*, that is $\exists r_{n}$ that is finite, then we say that our object is gravitationally bound and would fall back into the potential energy well. 
+
+Note that we can solve for the maximum potential distance (if it exists) by setting $v_{t}=0$ and solving for $r_{n'}$. 
 
 
