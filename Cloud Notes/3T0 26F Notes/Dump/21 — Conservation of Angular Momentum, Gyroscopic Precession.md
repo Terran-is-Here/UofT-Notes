@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T22:52:19.577-04:00
-edited_seconds: 300
+updated_at: 2026-10-27T11:26:48.819-04:00
+edited_seconds: 320
 course:
 tags:
 "Lecture #": 0
@@ -38,6 +38,8 @@ Recall, since $\tau=I\alpha, \frac{dL}{dt}=I \frac{d\omega}{dt} = I\alpha = \tau
 > > $$I_{0}\omega_{0} = I_{t}\omega_{t}$$
 
 Recall that $I=\sum mr^2$, or rather $I=\int r^2dm$; if the radius of the rotating object decreases with respect to the masses, then $\omega$ proportionally increases (and vice versa). Consider this implication in the context of angular/rotational kinetic energy; where we have an initial and final rotational kinetic energy (e.g. from pulling weights closer, etc.)
+
+> Additionally since $I=\sum mr^{2}$, then if another object (e.g. a collision, etc) is added onto an object that is revolving, that too would be added onto the corresponding $I'$ term in the final/initial angular momentum. 
 $$
 \begin{align}
 K_{rot}  & = \frac{1}{2}I\omega^2 \\
@@ -56,3 +58,4 @@ That is, the corresponding rotational kinetic energy before and after a change i
 $$
 \frac{K'_{rot}}{K_{rot}}=  \left( \frac{I}{I'} \right)
 $$
+
