@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T13:08:31.161-04:00
-edited_seconds: 530
+updated_at: 2026-10-27T13:12:25.344-04:00
+edited_seconds: 570
 course: PHY180H1
 tags:
   - PHY180H1
@@ -10,7 +10,7 @@ Week: 8
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[21 — Conservation of Angular Momentum, Gyroscopic Precession]]
-Next: 
+Next: [[24 — Gravitation]]
 > [!quote] Recommended Reading 
 > Chapter 12 of the University Physics Textbook.
 > Your CIV102 Notes. 
@@ -98,4 +98,5 @@ $$
 ![[22 and 23 — Static Equilibrium and Elasticity-1793120813452.webp|457]]
 Though really, it's kind of weird when you think about it, since this is heavily linked to the concept of a couple.
 > [!caution] Note
-> Apparently the ocn
+> Apparently the concept of *complimentary shear stress* exists, to balance out and ensure that rotational equilibrium holds true? I have no idea how that goes into our calculations though, and will thus leave it for the In-Lecture Addendums to more properly explain. \[Aries\]
+
