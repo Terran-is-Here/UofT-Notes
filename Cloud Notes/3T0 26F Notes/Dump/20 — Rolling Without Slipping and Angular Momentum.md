@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T21:57:36.278-04:00
-edited_seconds: 850
+updated_at: 2026-10-26T22:04:31.609-04:00
+edited_seconds: 890
 course: PHY180H1
 tags:
   - PHY180H1
@@ -161,4 +161,16 @@ $$
 \frac{d\vec{I}}{dt} & =\sum \vec{\tau}
 \end{align}
 $$
-That is, the net change in angular momentum over time, is equivalent to the net torque applied onto an object. 
+That is, the net change in angular momentum over time, is equivalent to the net torque applied onto an object. For a system composed of multiple particles, the total angular momentum is equivalent to the total angular momentum of all particles present: 
+$$
+\begin{align}
+L = I_{1} + I_{2} + \dots + I_{n} = \sum_{i=1}^{N} I_{i}
+\end{align}
+$$
+If each particle is subject to a net torque, then: 
+$$
+\begin{align}
+\frac{d\vec{L}}{dt}  & = \sum \frac{d\vec{I}}{dt}  \\
+\frac{d\vec{L}}{dt} & =\sum_{i=1}^{N} \vec{\tau_{i}}
+\end{align}
+$$
