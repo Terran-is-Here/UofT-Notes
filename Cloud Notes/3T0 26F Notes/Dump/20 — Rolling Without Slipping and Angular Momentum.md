@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T18:45:42.837-04:00
-edited_seconds: 360
+updated_at: 2026-10-26T21:33:35.062-04:00
+edited_seconds: 520
 course:
 tags:
 "Lecture #": 20
@@ -74,5 +74,22 @@ $$
 Then: 
 $$
 \alpha = \frac{2}{3r}g\sin\theta
+$$
+Solving for the condition where the wheel does *not* slip, then we have to see that $f_{f}\leq \mu _s N$, retaking our earlier force of friction term: 
+$$
+\begin{align}
+f_{f}  & =\frac{I}{r^{2}}a_{t} \\
+ & =\frac{I}{r^{2}}\left( \frac{g\sin\theta}{1 + \frac{I}{mr^{2}}} \right)  & I=\frac{mr^{2}}{2} \\
+ & =\frac{I}{r^{2}}\left( \frac{g\sin\theta}{1.5} \right) = \frac{I}{r^{2}}\left( \frac{2}{3}g\sin\theta \right)
+\end{align}
+$$
+Plugging this into $f_{f}\leq \mu_{s}N$, then: 
+$$
+\begin{align}
+\frac{I}{r^{2}}\left( \frac{2}{3}g\sin\theta \right) & \leq \mu_{s}mg\cos\theta \\
+\frac{I}{r^{2}mg\cos\theta}\left( \frac{2}{3}g\sin\theta \right) & \leq \mu_{s} \\[1.5em]  I=\frac{mr^{2}}{2} \implies \frac{1}{2I}=\frac{1}{mr^{2}}\\[1.5em]
+\frac{I}{2Ig\cos\theta}* \frac{2}{3}g\sin\theta =\frac{1}{3}\tan\theta & \leq \mu_{s}
+
+\end{align}
 $$
 
