@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T11:41:16.499-04:00
-edited_seconds: 350
+updated_at: 2026-10-27T12:08:31.348-04:00
+edited_seconds: 470
 course:
 tags:
 "Lecture #": 0
@@ -66,3 +66,22 @@ $$
 $$
 
 ## Gyroscopic Precession
+Note that the conservation of angular momentum, when given that $I$ is constant, lets us derive a concept of "precession" for a rotating body. Let us assume a rotating body has a constant angular momentum $L=I\omega$. For the purposes of this derivation, we will refer to this graphic (since it is quite helpful for understanding where the derivation originates from): 
+![[21 — Conservation of Angular Momentum, Gyroscopic Precession-1793117084485.webp|320]]
+
+Let us now also assume that some applied gravitational torque is applied onto our object from it's center of mass (see [[16 — Center of Mass and Rockets]]), then we know the torque applied is given to us by the following. Let $\theta$ be the value for how "tipped" our object is (i.e. it's inclination), then: 
+$$
+\tau = rMg\sin\theta 
+$$
+Recall that $\frac{dL}{dt}=\sum \tau$, then
+$$
+dL = rMg\sin\theta\,dt
+$$
+We know that $dL$ will be applied orthogonal to $L$, and therefore will cause a rotation across a horizontal axis. We also affirm that in this context, the magnitude of $L$ is held constant, only it's direction will change. (or in other words, $\omega$ is held constant). 
+
+Therefore, with an applied $dL$, and a constant magnitude of $L$, since $dL\perp L$, then there will exist a form of circular precession for our object. We can note that the radius of precession will be defined by some $L\sin\theta$, and the corresponding tangential value of $L$ will be some value of $dL$, thus: 
+$$
+\begin{align}
+d\phi = \frac{dL}{L\sin\theta} = \frac{rMg\sin\theta}{L\sin\theta}\,dt = 
+\end{align}
+$$
