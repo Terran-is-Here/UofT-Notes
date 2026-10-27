@@ -14,7 +14,7 @@ Connected Notes:
 * [[12 — Potential Energy, Conservative and Non-Conservative Forces]]
 * [[13 — Conservation of Energy, Stability]]
 * [[14 — Momentum and Impulse]]
-* [[15 — Conservation of Momentum, Collisions]]
+* [[15 — Conservation of (Translational) Momentum, Collisions]]
 * [[16 — Center of Mass and Rockets]]
 ---
 Questions taken from [[hw5.pdf]]: 

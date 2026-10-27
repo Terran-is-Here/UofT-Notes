@@ -10,7 +10,7 @@ Week: 6
 Created: October 10th 2026, 9:57:06 pm
 ---
 Hub: [[PHY180 Hub]]
-Previous: [[15 — Conservation of Momentum, Collisions]]
+Previous: [[15 — Conservation of (Translational) Momentum, Collisions]]
 Next: [[17 — Rotational Kinematics, Rotational Variables]]
 > [!quote] Recommended Reading 
 > University Physics 9.6, 9.7

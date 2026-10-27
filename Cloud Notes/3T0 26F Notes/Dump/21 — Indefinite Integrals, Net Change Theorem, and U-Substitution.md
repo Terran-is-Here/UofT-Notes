@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T18:05:24.771-04:00
-edited_seconds: 1190
+updated_at: 2026-10-26T22:31:10.386-04:00
+edited_seconds: 1210
 course: ESC194H1
 tags:
   - ESC194H1
@@ -157,7 +157,7 @@ Take now this more challenging example:
 $$
 \int \sqrt{ 1+x^2 }* x^5\,dx
 $$
-Note that this may not be easy to solve at first glance. Let's try setting $u=1+x^2$, then the following: 
+Note that this may not be easy to solve at first glance. Let's try setting $u=1+x^2$, then the following become the result
 $$
 \begin{align}
 u  & = 1+x^2 \\
@@ -190,7 +190,7 @@ $$
 $$
 Thus, we find the corresponding substitution rule for Definite Integrals: 
 
-> U-Sub Rule (Definite Integrals)
+> [!theorem] Substitution Rule (Definite Integrals)
 > If $g'(x)$ is continuous in $[a,b]$, and $f(x)$ is continuous on the range of $u=g(x)$, then: 
 > $$\int_{a}^{b}f'(g(x))g'(x) \,dx = \int_{g(a)}^{g(b)}f(u)\,du$$
 

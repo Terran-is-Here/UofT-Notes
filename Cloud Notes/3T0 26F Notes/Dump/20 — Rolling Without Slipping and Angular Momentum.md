@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T22:04:31.609-04:00
-edited_seconds: 890
+updated_at: 2026-10-26T22:37:59.942-04:00
+edited_seconds: 1050
 course: PHY180H1
 tags:
   - PHY180H1
@@ -11,10 +11,10 @@ Created: October 25th 2026, 2:02:05 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[19 —Newton's Second Law for Rotation, Rotational Energy]]
-Next:
+Next: [[21 — Conservation of Angular Momentum, Gyroscopic Precession]]
 > [!quote] Recommended Reading 
 > Section 11.1 - 11.2 of University Physics
-> [[14 — Momentum and Impulse]], [[15 — Conservation of Momentum, Collisions]]
+> [[14 — Momentum and Impulse]], [[15 — Conservation of (Translational) Momentum, Collisions]]
 
 --- 
 # Lecture Notes
@@ -153,6 +153,12 @@ Therefore:
 $$
 |I| = |r||p|\sin\theta
 $$
+> [!caution] Note
+> Since $I=rp \sin\theta$, note that $p=mv_{t}$, and $v_{t}=\omega r$, then
+> $$I=rp=rm\omega r = \omega mr^2 = \omega I$$
+
+
+
 Note that $p=r\omega$. Note that we can relate the change in angular momentum to a term of force: 
 $$
 \begin{align}
@@ -174,3 +180,25 @@ $$
 \frac{d\vec{L}}{dt} & =\sum_{i=1}^{N} \vec{\tau_{i}}
 \end{align}
 $$
+### Rigid-Body Angular Momentum
+Consider now a rigid body composed of a set of mass segments, some $\Delta m_{i}$. These mass segments would be some distance $R_{i}$ from the rotational center; as well as having a position vector $\vec{r_{i}}$ from the origin of an arbitrary coordinate system. 
+
+Let us state that our object is rotating across the $z$ axis, that is it has some $+\omega$ around the $z$ axis, then we note that from our above definition, that given the velocity of the mass segment $\Delta m_{i}v_{i}$, then the following is it's corresponding rotational momentum: 
+$$
+I = r_{i}\Delta m_{i}v_{i}\sin\theta
+$$
+Note that by definition, the velocity of a particle is inherently (well, in this case, inherently) perpendicular with the axis of rotation, then $\theta=90\degree$ and thus $\sin\theta= 1$: 
+$$
+I = r_{i}\Delta m_{i}v_{i}
+$$
+Consider now that, for all mass segments present on a rotating rigid body, all mass segments that *do not inherently lie* on the axis of rotation, will have a corresponding mass-segment pair travelling in the opposite direction, which cancels out their corresponding angular momentum. This only applies if cylindrical symmetry applies. 
+
+Thus, we consider now the sum of all the angular momenta along the axis of rotation, then: 
+$$
+\begin{align}
+L  & = \sum_{i=1}^{N} r_{i}\Delta m_{i}v_{i} \\
+ & =\sum_{i=1}^{N} r_{i}\Delta m_{i}\omega r = \omega\sum_{i=1}^{N} \Delta m_{i}r_{i}^2 \\
+ & =\omega I
+\end{align}
+$$
+Since $\sum mr^2 =I$. 

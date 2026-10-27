@@ -11,7 +11,7 @@ Created: October 7th 2026, 11:22:24 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[13 — Conservation of Energy, Stability]]
-Next:[[15 — Conservation of Momentum, Collisions]]
+Next:[[15 — Conservation of (Translational) Momentum, Collisions]]
 > [!quote] Recommended Reading 
 > 9.1 - 9.3 (University Physics)
 --- 
