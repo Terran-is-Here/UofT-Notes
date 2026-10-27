@@ -1,15 +1,16 @@
 ---
-updated_at: 2026-10-27T12:08:31.348-04:00
-edited_seconds: 470
-course:
+updated_at: 2026-10-27T12:16:05.743-04:00
+edited_seconds: 570
+course: PHY180H1
 tags:
-"Lecture #": 0
+  - PHY180H1
+"Lecture #": 21
 Lecture Date: 2026-10-26
-Week:
+Week: 8
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[20 — Rolling Without Slipping and Angular Momentum]]
-Next: N/A
+Next: [[22 — Static Equilibrium]]
 > [!quote] Recommended Reading 
 > Sections 11.3, 11.4 of the University Physics Textbook. 
 > [[15 — Conservation of (Translational) Momentum, Collisions]]
@@ -82,6 +83,15 @@ We know that $dL$ will be applied orthogonal to $L$, and therefore will cause a 
 Therefore, with an applied $dL$, and a constant magnitude of $L$, since $dL\perp L$, then there will exist a form of circular precession for our object. We can note that the radius of precession will be defined by some $L\sin\theta$, and the corresponding tangential value of $L$ will be some value of $dL$, thus: 
 $$
 \begin{align}
-d\phi = \frac{dL}{L\sin\theta} = \frac{rMg\sin\theta}{L\sin\theta}\,dt = 
+d\phi  & = \frac{dL}{L\sin\theta} = \frac{rMg\sin\theta}{L\sin\theta}\,dt  \\
+ d\phi& =\frac{rMg}{L}\,dt  & \text{recall, }d\phi = \omega_{p}\text{ and } L=I\omega, \text{then} \\
+ \omega_{p} & =\frac{rMg}{I\omega}
 \end{align}
 $$
+Note that in this context, $\omega$ represents the rotational velocity of our gyroscope as is, and $\omega _p$ represents the rotational velocity of the procession of our rotating body. Note that the implications of this, is that: 
+1. $\omega_{p}\propto \frac{1}{\omega}$, that is if $\omega$ increases, $\omega _p$ decreases. If you spin something faster, it processes slower.
+2. Same applies for the Moment of Inertia above, if you make something harder to spin, it processes slower. 
+	1. Or in other words, $\omega_{p}\propto \frac{1}{L}$, where the increase in angular momentum of the system decreases the rate of procession. 
+3. Our term for $\omega_{p}$ is completely independent of what value $\theta$ we give (i.e. the angle of inclination). 
+> [!caution] Note
+> This derivation assumes $\omega_{p} \ll \omega$.
