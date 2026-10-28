@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T16:08:59.651-04:00
-edited_seconds: 310
+updated_at: 2026-10-28T19:24:44.067-04:00
+edited_seconds: 320
 course: PHY180H1
 tags:
   - PHY180H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[24 — Gravitation]]
-Next: N/A
+Next: [[26 — Tidal Forces, General Relativity]]
 > [!quote] Recommended Reading 
 > Sections 13.4, 13.5 of University Physics
 
