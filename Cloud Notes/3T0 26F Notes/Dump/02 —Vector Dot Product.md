@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-21T21:51:49.374-04:00
-edited_seconds: 890
+updated_at: 2026-10-28T13:23:00.843-04:00
+edited_seconds: 900
 course: ESC103H1
 tags:
   - ESC103H1
@@ -94,7 +94,7 @@ We can square this magnitude in order for us to represent it as a product of dot
 $$||\vec{a}-\vec{b}||^2 = (\vec{a}-\vec{b})\cdot(\vec{a}+\vec{b})$$
 Expand and collect like terms: 
 $$||\vec{a}-\vec{b}||^2 = \vec{a}\cdot \vec{a} + \vec{b}\cdot\vec{b}-2\vec{a}\cdot\vec{b}$$
-$$||\vec{a}-\vec{b}||^2 = ||\vec{a}||^2 + ||\\\vec{b}||^2-2\vec{a}\cdot \vec{b}$$
+$$||\vec{a}-\vec{b}||^2 = ||\vec{a}||^2 + ||\vec{b}||^2-2\vec{a}\cdot \vec{b}$$
 If we let $\vec{a}$ and $\vec{b}$ be some sides enclosing some angle $\theta$; then $c = \vec{a}-\vec{b}$. We can now define this situation as well through Cosine Law: 
 $$c^2 = a^2 +b^2 -2ab\cos \theta$$
 Then from here, we can see that: 
