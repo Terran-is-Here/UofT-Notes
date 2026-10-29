@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T18:50:05.096-04:00
-edited_seconds: 270
+updated_at: 2026-10-29T19:01:36.983-04:00
+edited_seconds: 330
 course: ESC194H1
 tags:
   - ESC194H1
@@ -57,8 +57,14 @@ V & =\int_{-r}^{r}A(x) \,dx \\
  & =\int_{-r}^{r}\pi(r^{2}-x^{2})\,dx \\
  & =\pi\int_{-r}^{r}(r^{2}-x^{2})\,dx  & \text{Integral of even function} \\
  & =2\pi\int_{0}^{r}(r^{2}-x^{2})\,dx \\
- & =2\pi\left[ \frac{1}{3}r^{3}-\frac{1}{3}x^{3} \right]_{0}^{r} \\
- & =2\pi
+ & =2\pi\left[ r^{2}x-\frac{1}{3}x^{3} \right]_{0}^{r} \\
+ & =2\pi\left[ r^{3}-\frac{1}{3}r^{3} \right] = \frac{4}{3}\pi r^{3}
 \end{align}
 $$
 
+## Revolving A Point 
+Consider now the case 
+
+$$
+R, \mathbb{R}, \mathbf{R}, \mathcal{R}, 
+$$
