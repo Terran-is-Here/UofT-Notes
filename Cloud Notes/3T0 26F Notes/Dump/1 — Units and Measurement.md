@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-09-11T20:24:27.360-04:00
-edited_seconds: 1330
+updated_at: 2026-10-28T19:52:12.592-04:00
+edited_seconds: 1340
 course: PHY180H1
 tags:
   - PHY180H1
@@ -132,7 +132,7 @@ These rules are already written within another document; but are left here. For 
 > [!axiom] Multiplication / Division
 > $$z=xy \lor z=\frac{x}{y}$$
 > In general, you add the *fractional* uncertainties of our units. 
-> $$\frac{u_{z}}{z} = \sqrt{\left(\frac{u_{x}}{x}\right) + \left(\frac{u_{y}}{y}\right) }$$
+> $$\frac{u_{z}}{z} = \sqrt{\left(\frac{u_{x}}{x}\right)^{2} + \left(\frac{u_{y}}{y}\right)^{2} }$$
 > Note that for constants; that is their uncertainty is 0; you can directly multiply the uncertainty by this constant (normally for unit conversions)
 
 > [!axiom] Power
