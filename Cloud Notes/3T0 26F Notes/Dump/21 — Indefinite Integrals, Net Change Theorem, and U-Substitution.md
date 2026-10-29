@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T13:42:52.879-04:00
-edited_seconds: 1220
+updated_at: 2026-10-29T17:30:56.882-04:00
+edited_seconds: 1230
 course: ESC194H1
 tags:
   - ESC194H1
@@ -65,7 +65,7 @@ Recall the second Theorem in the Fundamental Theorem of Calculus:
 $$
 g(x) = \int _{a}^{b}f(x) \, dx = F(b)-F(a)
 $$
-Where $F(x)$ is any antiderivative of $f(x)$, that is $F'(x)=f(x)$. Note that we can actually *backsubstitute this* back into our original expression, giving us the resulting Net Change theorem: 
+Where $F(x)$ is any antiderivative of $f(x)$, that is $F'(x)=f(x)$. Note that we can actually *back substitute this* back into our original expression, giving us the resulting Net Change theorem: 
 $$
 g(x) = \int_{a}^{b}F'(x) \,dx = F(b)-F(a)
 $$
