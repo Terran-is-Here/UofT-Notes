@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T18:09:58.635-04:00
-edited_seconds: 380
+updated_at: 2026-10-29T18:17:07.102-04:00
+edited_seconds: 460
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week: 8
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[21 — Indefinite Integrals, Net Change Theorem, and U-Substitution]]
-Next: N/A
+Next: [[23 — Volumes]]
 > [!quote] Recommended Reading 
 > Section 5.1 of the Stewart Textbook
 > [[19 — The Definite Integral]]
@@ -87,10 +87,18 @@ y + 1  & = \frac{1}{2}y^{2}-3 \\
 0 & =y^{2}-2y-8 = (y-4)(y+2)
 \end{align}
 $$
-Solutions are therefore $(5,4)$ and $(-1,-2)$; then we note that the values we are integrating to with respects to $y$ are $y=-2,4$, then setting $g(y)=y+1$ and $f(y)=\frac{1}{2}y^{2}$
+Solutions are therefore $(5,4)$ and $(-1,-2)$; then we note that the values we are integrating to with respects to $y$ are $y=-2,4$, 
+then setting $g(y)=y+1$ and $f(y)=\frac{1}{2}y^{2}-3$, then noticing that $g(y)>f(y)$, then: 
 $$
 \begin{align}
-A & =\int ^{4}_{-2}[f(y)-g(y)]\,dy \\
- & =\int ^{4}_{-2}[]
+A  & =\int_{a}^{b}[g(y)-f(y)]\,dy \\
+ & =\int_{-2}^{4}\left[ y+1 - \frac{1}{2}y^{2}+3 \right]\, dy \\
+ & = \int_{-2}^{4}\left[ -\frac{1}{2}y^{2} + y +4 \right]\,dy \\
+ & =\left[ -\frac{1}{6}y^{3} + \frac{1}{2}y^{2} + 4y \right]^{4}_{-2} \\
+ & =18
 \end{align}
 $$
+### Multiple Functions
+In the case in which we are bounding / finding the area under *multiple* functions, drawing a graph (or a sketch) is highly recommended in terms of actually finding the area enclosed by that graph. 
+
+In this context, we solve for the corresponding sub-intervals by considering which functions are we exactly taking the area of (i.e. solving for points of intersection if required, etc). 
