@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T17:45:41.117-04:00
-edited_seconds: 240
+updated_at: 2026-10-29T18:09:58.635-04:00
+edited_seconds: 380
 course: ESC194H1
 tags:
   - ESC194H1
@@ -39,6 +39,7 @@ $$
 > $$A=\int_{a}^{b}[f(x)-g(x)]\,dx$$
 > Where $y=f(x),y=g(x),x=a,x=b, x\in[a,b]$. 
 
+> Note that when the area is *enclosed* within two functions, in this context we're asking for the area within some two points of intersection of the functions involved. That is to say, the area being discussed is *entirely enclosed* between the two functions we have present. 
 ### Extension
 Consider now that our definition above only applies for cases where, $\forall x\in[a,b],f(x)\geq g(x)$. But what about the cases in which this is not always true? What if $g(x)\geq f(x)$ in some cases? How do we grapple with this? 
 
@@ -55,4 +56,41 @@ Then, generalizing this, we get:
 
 > Areas Between Curves (General Case)
 > $$A=\int_{a}^{b}|f(x)-g(x)|\,dx$$
-> 
+> Where $f(x),g(x)$ are in terms of $y$, and $a,b$ are in terms of $x$. 
+
+Note that by our definition above, we need to solve for the areas in terms of the sums of the corresponding intervals; that is to say we need to find values where $f(x)=g(x)$ (or, more accurately, locations where the corresponding inequalities change), then take the integrals of those subintervals, then sum up the total resulting area. 
+
+### Change of Variables
+Occasionally, it may be more apt to redefine and resolve functions in terms of $y$ and $x$, that is we integrate with respects to $y$, and have our functions have outputs of $x$: 
+$$
+\int_{a}^{b}[f(y)-g(y)]\,dy
+$$
+Where $x=f(y),x=g(y)$, $y=a,y=b$; or in other words, we solve for $x$ within our expressions. For instance, take the two following functions: 
+$$
+\begin{align}
+y & =x-1 \\
+y^{2} & =2x+6
+\end{align}
+$$
+Solving for $x$ we get the following expressions: 
+$$
+\begin{align}
+x & =y+1 \\
+x & =\frac{1}{2}y^{2} -3
+\end{align}
+$$
+Solving for points of intersection, we get the following: 
+$$
+\begin{align}
+y + 1  & = \frac{1}{2}y^{2}-3 \\
+2y + 2  & =y^{2} - 6 \\
+0 & =y^{2}-2y-8 = (y-4)(y+2)
+\end{align}
+$$
+Solutions are therefore $(5,4)$ and $(-1,-2)$; then we note that the values we are integrating to with respects to $y$ are $y=-2,4$, then setting $g(y)=y+1$ and $f(y)=\frac{1}{2}y^{2}$
+$$
+\begin{align}
+A & =\int ^{4}_{-2}[f(y)-g(y)]\,dy \\
+ & =\int ^{4}_{-2}[]
+\end{align}
+$$
