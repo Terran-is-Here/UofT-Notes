@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T22:05:35.038-04:00
-edited_seconds: 210
+updated_at: 2026-10-29T22:19:54.068-04:00
+edited_seconds: 410
 course: PHY180H1
 tags:
   - PHY180H1
@@ -46,4 +46,33 @@ Or in other words:
 $$
 F_\text{out}=F_\text{in} \times \frac{A_\text{Out}}{A_\text{In}}
 $$
-Our force is multiplied by the ratio between the output and input area respectively. We see now that if $A_\text{out}>A_\text{In}, F_\text{out}>F_\text{in}$; that is we effective
+Our force is multiplied by the ratio between the output and input area respectively. We see now that if $A_\text{out}>A_\text{In}, F_\text{out}>F_\text{in}$; that is we effectively increase the corresponding output force. 
+
+For instance, if our output piston is 5 times larger than our input cylinder, then for any applied force in our input cylinder; the corresponding output will be multiplied by 5. The inverse also holds true if we go in the opposite direction. 
+## Archimedes' Principle 
+Archimedes' Principle essentially deals with the concept of *buoyancy* within fluids; specifically it defines the concept of a Buoyant Force of a fluid. 
+
+To understand where Archimedes' Principle originates from, consider a mass member submerged in water *at rest*. This means that this object is supported by the liquid around it. Consider now if that object is removed; now the liquid that was originally displayed now takes up that spot; and too experiences this force to ensure $y$-equilibrium; thus we find that: 
+$$
+F_\text{B}=w_\text{fl}
+$$
+> [!theorem] Archimedes' Principle
+> The *buoyant force* on an object is equivalent to the weight of fluid it displaces; that is:
+> $$F_\text{B}=w_\text{fl}$$
+> Where $F_\text{B}$ represents the buoyant force, and $w_\text{fl}$ represents the weight of water it displaces. 
+
+Note that $w_\text{fl}$ can be expressed as some term of volume of water displaced by an object, times the density of the fluid: $w_\text{fl}=\rho V_\text{displaced}$. 
+### Floating
+* For something to float, we know that $F_{B}$ must at minimum exceed the weight of the object; that is $\rho _\text{f}V_\text{d}\geq\rho _\text{obj}V_\text{obj}g$. 
+
+We can now consider the concept of *defining* the fraction an object is submerged with respects to a fluid. Consider the following ratio: 
+$$
+\frac{V_\text{sub}}{V_\text{obj}}
+$$
+This intuitively gives us the ratio for how much an object is submerged over the volume of the object itself. Note that $V_\text{sub}=V_\text{fl}$, where this represents the volume of fluid we displace. Consider now that with volumes, we can now also compare the densities by $\rho=\frac{m}{V} \implies V=\frac{m}{\rho}$; then: 
+$$
+\text{Fraction Submerged}=\frac{V_\text{fl}}{V_\text{obj}} = \frac{\frac{m_\text{fl}}{\rho _\text{fl}}}{\frac{m_\text{obj}}{\rho _\text{obj}}} \implies \frac{V_\text{fl}}{V_\text{obj}} =\frac{\rho _\text{obj}}{\rho _\text{fl}} 
+$$
+Note that since our object is floating; we know that $m_\text{fl}=m_\text{obj}$ (as $y$ in equilibrium); thus we can take the last step in that equality chain. Note that this implies that as $\rho _\text{obj}$ increases, the amount submerged increases (which makes sense). 
+
+## Fluid Dynamics
