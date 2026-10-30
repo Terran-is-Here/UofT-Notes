@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T13:12:25.344-04:00
-edited_seconds: 570
+updated_at: 2026-10-29T20:07:29.451-04:00
+edited_seconds: 580
 course: PHY180H1
 tags:
   - PHY180H1
@@ -99,4 +99,7 @@ $$
 Though really, it's kind of weird when you think about it, since this is heavily linked to the concept of a couple.
 > [!caution] Note
 > Apparently the concept of *complimentary shear stress* exists, to balance out and ensure that rotational equilibrium holds true? I have no idea how that goes into our calculations though, and will thus leave it for the In-Lecture Addendums to more properly explain. \[Aries\]
+
+> [!caution] Note
+> Solids are also the sole state of matter able to withstand Shear Stress; other forms of matter simply yield and displace with regards to shear forces. 
 
