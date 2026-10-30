@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T22:53:06.742-04:00
-edited_seconds: 570
+updated_at: 2026-10-30T16:06:46.031-04:00
+edited_seconds: 600
 course: PHY180H1
 tags:
   - PHY180H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[27 — Fluids, Density, Pressure, Pascal's Principle]]
-Next: N/A
+Next: [[29 — Fluid Dynamics]]
 > [!quote] Recommended Reading 
 > Sections 14.3 - 14.5 of the University Physics Textbook. 
 
