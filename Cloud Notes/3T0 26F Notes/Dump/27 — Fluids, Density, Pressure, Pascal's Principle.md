@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T20:46:00.584-04:00
-edited_seconds: 470
+updated_at: 2026-10-29T21:05:27.111-04:00
+edited_seconds: 590
 course: PHY180H1
 tags:
   - PHY180H1
@@ -78,9 +78,30 @@ Note that we can describe $\Delta m$ from the volume of the corresponding mass m
 $$
 \begin{align}
 p(y + \Delta y)A - p(y)A +g\rho A\Delta y  & = 0 \\
-p(y+\Delta y)A - p(y)A & =-gpA\Delta y  & \text{Divide by } A\Delta y\\
-\frac{p(y+\Delta y) - p(y)}{\Delta y}  & =-gp \\
-\lim_{ \Delta y \to 0 } \frac{p(y+\Delta y) - p(y)}{\Delta y} = \frac{dp}{dy} & =-gp
+p(y+\Delta y)A - p(y)A & =-g\rho A\Delta y  & \text{Divide by } A\Delta y\\
+\frac{p(y+\Delta y) - p(y)}{\Delta y}  & =-g\rho \\
+\lim_{ \Delta y \to 0 } \frac{p(y+\Delta y) - p(y)}{\Delta y} = \frac{dp}{dy} & =-g\rho
 \end{align}
 $$
-That final result is pivotal; that is the rate of change of pressure in the fluid; is proportional to the fluid's density. 
+That final result is pivotal; that is the rate of change of pressure in the fluid; is proportional to the fluid's density times the gravity experienced by that fluid. 
+
+Consider now if density *is* constant in a fluid. Define the start of the container as the top, that is $y=0$, then we find that integrating from $0 \to -h$, where $h$ is the height of the container, then 
+$$
+\begin{align}
+dp  & = -g\rho \,dy \\
+\int_{p_{0}}^{p_{h}} dp & =\int _{0}^{-h}-g\rho \,dy \\
+p_{h}-p_{0} & =g\rho h \\
+p_{h} & =p_{0} +g\rho h
+\end{align}
+$$
+Which is the same result we derived earlier. 
+### Variant Height
+We now also need to consider the term $p_{0}$, as this is a factor of the pressure of the air. Recall from Grade 12 chemistry that we can describe pressure as a function of volume, moles of material, temperature, and a constant $R$: 
+$$
+pV = nRT
+$$
+This can be rewritten as the following: 
+$$
+p = \frac{\rho k_{b}T}{m}
+$$
+Where $k_{b}$ is Boltzmann's Constant, $k_{b}=1.38\times 10^{-23} \frac{J}{K}$. This is an equivalent rewriting of the ideal gas law, however it lets us set it related to some term of $\rho$. 
