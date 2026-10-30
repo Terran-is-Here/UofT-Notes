@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T21:25:42.491-04:00
-edited_seconds: 800
+updated_at: 2026-10-29T21:28:40.015-04:00
+edited_seconds: 820
 course: PHY180H1
 tags:
   - PHY180H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[26 — Tidal Forces, General Relativity]]
-Next: N/A
+Next: [[28 — Archimedes' Principle and Buoyancy]]
 > [!quote] Recommended Reading 
 > University Physics Section 14.1, 14.2
 > [[22 and 23 — Static Equilibrium and Elasticity]]
