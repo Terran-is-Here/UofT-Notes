@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[26 — Tidal Forces, General Relativity]]
-Next: [[28 — Archimedes' Principle and Buoyancy]]
+Next: [[28 — Pascal's and Archimedes' Principle and Buoyancy]]
 > [!quote] Recommended Reading 
 > University Physics Section 14.1, 14.2
 > [[22 and 23 — Static Equilibrium and Elasticity]]
