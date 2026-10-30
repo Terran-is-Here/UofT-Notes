@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T21:05:27.111-04:00
-edited_seconds: 590
+updated_at: 2026-10-29T21:25:42.491-04:00
+edited_seconds: 800
 course: PHY180H1
 tags:
   - PHY180H1
@@ -14,6 +14,11 @@ Next: N/A
 > [!quote] Recommended Reading 
 > University Physics Section 14.1, 14.2
 > [[22 and 23 — Static Equilibrium and Elasticity]]
+
+
+> [!caution] Todo: 
+> Properly write the section for measuring pressure.
+
 
 --- 
 # Lecture Notes
@@ -65,6 +70,12 @@ This is actually only usable if and only if the fluid has some constant density;
 
 Note however that the pressure at some certain height $h$ is applied across uniformly the container at that point; that is given a container; at some height $h$, the pressure experienced by the walls of that container are defined by our equation above, assuming that the density is uniform within the fluid. 
 
+### Measurement 
+Measuring pressure is often done with a pressure gauge, which measures it as a term with respects to the ambient atmospheric pressure (e.g, pressure gauges measure 1atm as 0). From this, we can define the concept of absolute pressure: 
+$$
+p_{abs}=p_{g}+p_{atm}
+$$
+That is, the absolute pressure of a rigid container, is defined as the sum of the gauge pressure and the ambient atmospheric pressure. $p_{abs}$ will always be above or (theoretially) equal to 0; due to gauges not directly accounting for the ambient atmospheric pressure. 
 ### Generalization
 Consider now that our above assumptions rely on the case on if and only if the density of a liquid is held constant with respects to the entire volume. Note that we also however know, that our liquid will be realistically be compressed by the liquid above it; thus gaining a slightly higher density. We should be able to find a generalized equation with respects to this however. 
 
@@ -85,6 +96,10 @@ p(y+\Delta y)A - p(y)A & =-g\rho A\Delta y  & \text{Divide by } A\Delta y\\
 $$
 That final result is pivotal; that is the rate of change of pressure in the fluid; is proportional to the fluid's density times the gravity experienced by that fluid. 
 
+> [!theorem] Hydrostatic Equilibrium
+> $$\frac{dp}{dy}=-g\rho$$
+> Where $\rho$ is the density of a fluid, and $g$ is the term of gravity. Note how this implies that if $dy$ is positive, then our pressure would decease (i.e. if we go upwards in a material/fluid, the pressure excerted by that fluid will decrease.)
+
 Consider now if density *is* constant in a fluid. Define the start of the container as the top, that is $y=0$, then we find that integrating from $0 \to -h$, where $h$ is the height of the container, then 
 $$
 \begin{align}
@@ -104,4 +119,22 @@ This can be rewritten as the following:
 $$
 p = \frac{\rho k_{b}T}{m}
 $$
-Where $k_{b}$ is Boltzmann's Constant, $k_{b}=1.38\times 10^{-23} \frac{J}{K}$. This is an equivalent rewriting of the ideal gas law, however it lets us set it related to some term of $\rho$. 
+Where $k_{b}$ is Boltzmann's Constant, $k_{b}=1.38\times 10^{-23} \frac{J}{K}$. This is an equivalent rewriting of the ideal gas law, however it lets us set it related to some term of $\rho$. Consider now that we can rewrite this to solve for a term of $\rho$: 
+$$
+\rho = p \frac{m}{k_{b}T}
+$$
+Recall our equation for hydrostatic equilibrium earlier; then we see that: 
+$$
+\begin{align}
+\frac{dp}{dt} & =-g \times p \frac{m}{k_{b}T} \\
+\frac{1}{p}\,dp  & =-\frac{gm}{k_{b}T}\,dy  & \alpha=\frac{gm}{k_{b}T} \text{ (as it is a constant)} \\
+\frac{1}{p}dp & =-\alpha\,dy \\
+\int_{p_{0}}^{p_{h}} \frac{1}{p}\,dp & =\int_{0}^{y}-\alpha\,dy \\
+[\ln(p)]^{p_{h}}_{p_{0}} & =-\alpha y \\
+\ln(p_{h})-\ln (p_{0})  & =-\alpha y \\
+\ln\left( \frac{p_{h}}{p_{0}} \right)  & =-\alpha y \\
+p_{h} & =p_{0}*e^{-\alpha y} = \frac{p_{0}}{e^{\alpha y}}  \\
+  & =p_{0}e^{-\frac{gm}{k_{b}T}}
+\end{align}
+$$
+Note that this implies that $p_{0}$ (or that is, atmospheric pressure) decreases by an exponential factor pertaining to height. Note that this also assumes $\bar{g},\bar{T}$ (that is, gravity is held constant and temperature is held constant; which is normally untrue in most cases.).
