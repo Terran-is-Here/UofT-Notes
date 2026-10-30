@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T22:19:54.068-04:00
-edited_seconds: 410
+updated_at: 2026-10-29T22:46:52.211-04:00
+edited_seconds: 560
 course: PHY180H1
 tags:
   - PHY180H1
@@ -76,3 +76,47 @@ $$
 Note that since our object is floating; we know that $m_\text{fl}=m_\text{obj}$ (as $y$ in equilibrium); thus we can take the last step in that equality chain. Note that this implies that as $\rho _\text{obj}$ increases, the amount submerged increases (which makes sense). 
 
 ## Fluid Dynamics
+The scope of this course does not fully tackle the nuances of fluid mechanics, however we note the concept of Flow Rate (and the concepts that immediately follow from it). 
+
+We define the concept of flow rate as the *volume of fluid* that passes through an area during a period of time; that is: 
+$$
+Q = \frac{dV}{dt}
+$$
+Note that for a pipe cross-section, we can define this in terms of $V=Ax$, where $x$ is inline the direction of flow, then: 
+$$
+Q = A \frac{dx}{dt} = Av
+$$
+Or in other words, the Flow Rate is proportional to the cross-sectional area the fluid is flowing through, times the flow velocity. Note that flow velocity does not necessarily imply a large flow rate. This equation can be applied across several regions of pipe if and only if continuity of flow is held. 
+
+> [!caution] Continuity of Flow
+> The same amount of fluid **must** flow past any point in the tube if and only if no other sources or sinks exist between two points in a pipe that would add or remove mass. 
+> 
+> In other words, the mass flow rate, and flow rate going in; must equal the mass flow rate / flow rate going out. 
+
+For our case; then: 
+$$
+\begin{align}
+Q_{1} & =Q_{2} \\
+A_{1}v_{1} &  =A_{2}v_{2}
+\end{align}
+$$
+* Consider the implications of this; we can see that if we have some constriction; some $A_{2}<A_{1}$; then we see that $1< \frac{A_{1}}{A_{2}}$; then $v_{2}>v_{1}$: 
+* We can trivially solve for the flow velocity at a certain point by simply comparing the ratio of the cross sections of flow, that is $v_{2}=v_{1} \left( \frac{A_{1}}{A_{2}} \right)$.  
+
+
+Note that Continuity of Flow also requires the mass flow rate to be constant across both ends of a pipe; assuming that it is a closed system. Recall that we can define mass as a term of density; then: 
+$$
+m = \rho V = \rho Ax
+$$
+Then the mass flow rate is given by: 
+$$
+\frac{dm}{dt} = \rho A \frac{dx}{dt} = \rho Av
+$$
+Then, following from continuity of flow, we see that: 
+$$
+\begin{align}
+\left( \frac{dm}{dt} \right)_{1}  & = \left( \frac{dm}{dt} \right)_{2} \\
+\rho_{1}A_{1}v_{1} & =\rho_{2}A_{2}v_{2}
+\end{align}
+$$
+Note that if $\rho_{1}=\rho_{2}$; then we see that this simplified back into our earlier expression in terms of flow rate. 

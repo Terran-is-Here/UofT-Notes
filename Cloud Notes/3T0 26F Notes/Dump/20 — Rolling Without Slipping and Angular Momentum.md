@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T22:37:59.942-04:00
-edited_seconds: 1050
+updated_at: 2026-10-29T22:37:20.614-04:00
+edited_seconds: 1090
 course: PHY180H1
 tags:
   - PHY180H1
@@ -80,10 +80,10 @@ Then:
 $$
 \alpha = \frac{2}{3r}g\sin\theta
 $$
-Solving for the condition where the wheel does *not* slip, then we have to see that $f_{f}\leq \mu _s N$, retaking our earlier force of friction term: 
+Solving for the condition where the wheel does *not* slip, then we have to see that $f_{f}\leq \mu _s N$, retaking our earlier force of friction term way above from our torque expression, we see that: 
 $$
 \begin{align}
-f_{f}  & =\frac{I}{r^{2}}a_{t} \\
+f_{f}  & =\frac{I}{r^{2}}a_{t}  & a_{t} = \frac{2}{3}g\sin\theta\\
  & =\frac{I}{r^{2}}\left( \frac{g\sin\theta}{1 + \frac{I}{mr^{2}}} \right)  & I=\frac{mr^{2}}{2} \\
  & =\frac{I}{r^{2}}\left( \frac{g\sin\theta}{1.5} \right) = \frac{I}{r^{2}}\left( \frac{2}{3}g\sin\theta \right)
 \end{align}
@@ -92,7 +92,7 @@ Plugging this into $f_{f}\leq \mu_{s}N$, then:
 $$
 \begin{align}
 \frac{I}{r^{2}}\left( \frac{2}{3}g\sin\theta \right) & \leq \mu_{s}mg\cos\theta \\
-\frac{I}{r^{2}mg\cos\theta}\left( \frac{2}{3}g\sin\theta \right) & \leq \mu_{s} \\[1.5em]  I=\frac{mr^{2}}{2} \implies \frac{1}{2I}=\frac{1}{mr^{2}}\\[1.5em]
+\frac{I}{r^{2}mg\cos\theta}\left( \frac{2}{3}g\sin\theta \right) & \leq \mu_{s} \\[1.5em]\text{ note that }  I=\frac{mr^{2}}{2} \implies \frac{1}{2I}=\frac{1}{mr^{2}}\\[1.5em]
 \frac{I}{2Ig\cos\theta}* \frac{2}{3}g\sin\theta =\frac{1}{3}\tan\theta & \leq \mu_{s}
 
 \end{align}
@@ -100,7 +100,7 @@ $$
 
 That is; the higher the angle, the higher the corresponding required $\mu_{s}$ needed to stop an object from rolling without slipping. 
 ### Rolling Down with Slipping 
-If in the case that our object *is* slipping, we can't use the equations that require $v_{p}=0$, as $v_{p}\neq0$. Taking the diagram from above once again: 
+If in the case that our object *is* slipping, we can't use the equations that require $v_{p}=0$, as $v_{p}\neq0$ (meaning that we can't directly relate the two terms above) Taking the diagram from above once again: 
 ![[20 — Rolling Without Slipping and Angular Momentum-1793054075124.png|410]]
 
 For our $x$ forces: 

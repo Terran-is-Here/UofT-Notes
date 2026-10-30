@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T16:08:20.382-04:00
-edited_seconds: 720
+updated_at: 2026-10-29T22:31:09.436-04:00
+edited_seconds: 770
 course: PHY180H1
 tags:
   - PHY180H1
@@ -61,7 +61,14 @@ Since $\Delta U = U_{2}-U_{1}$, then:
 > [!theorem] Generalized Gravitational Potential Energy
 > $$U_{n} = -\frac{GMm}{r_{n}}$$
 > Where $r_{n}$ is the radius from an origin, this gives the potential energy at a certain point. 
-> > Consider this as well as $gr$, where we multiply the Gravitational Field strength times a distance to get a term of voltage. 
+> > Consider this as well as $gr$, where we multiply the Gravitational Field strength times a distance to get a term of "voltage".  
+> 
+
+> [!caution] Note
+> You can actually generally describe the expression above as a term of Gravitational **Potential** if we remove the mass term: 
+> $$V_\text{G} = -\frac{GM}{r} = -gr$$
+> Where this is in terms of $\frac{J}{kg}$; taking the difference between two points gives us the corresponding potential energy required to move between those two locations on the field. 
+> > This provides a much simpler way to solve expressions, since you don't have to deal with the arithmetic of dealing with the mass until the end. 
 
 Note the negative sign, as $r_{n}$ decreases, the work done by gravity increases (or in other words, objects inherently want to fall down). Consider as well that $U_{n}=0$ doesn't inherently exist, and only exists in the following case: 
 $$
