@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T19:01:36.983-04:00
-edited_seconds: 330
+updated_at: 2026-11-01T12:08:08.937-05:00
+edited_seconds: 460
 course: ESC194H1
 tags:
   - ESC194H1
@@ -62,9 +62,21 @@ V & =\int_{-r}^{r}A(x) \,dx \\
 \end{align}
 $$
 
-## Revolving A Point 
-Consider now the case 
+## Rotational Volumes 
+Consider now the case in which we want to revolve a *region* around a line in order to obtain some concept of an *volume*; such as revolving the function $f(x)=\sqrt{ x }$ around the $x$ axis to get it's volume. 
 
+Consider now that in this case; whenever we revolve some function around an axis, the corresponding cross-sectional function $A(x)$ will be based in terms of a circle (as we are revolving it), thus $A(x) = \pi r(?)$, where $r(?)$ is the function that corresponds to the radius (or in other words, the region) of our original function. 
+
+For instance, given $f(x)=\sqrt{ x }$, let's say that we wanted to revolve it around the $x$ axis and solve for the corresponding volume in $[0,1]$; then we see that the corresponding term of radius will be some term of $\sqrt{ x }$, thus $A(x) = \pi(\sqrt{ x })^{2}= \pi x$, then $\int_{0}^{1}\pi x\,dx =\frac{\pi}{2}$. 
+
+### Multiple Functions
+Consider now the case in which we want to take the volume between two functions $f(x),g(x)$; that is the volume defined from the region enclosed between two functions. In these cases, (and generally, for multiple functions depending on which one is the upper bound / lower bound respectively), we can model this as a disk (or the subtraction of two corresponding circular cross-sections): 
 $$
-R, \mathbb{R}, \mathbf{R}, \mathcal{R}, 
+A(x) = \pi(\text{outer radius})^{2} - \pi(\text{inner radius})^{2}
 $$
+Where the outer radius and inner radius correspond to the functions $f(x),g(x)$ per region (as per the same ideas that we had in [[22 — Areas Between Curves#Areas Between Curves|Areas Between Curves]]). Note that if a volume is fully enclosed, then the integration bounds are defined with respects to the points of intersection of the function. 
+
+For instance, let's say we wanted to find the volume of the region **enclosed** by $f(x)=x$ and $g(x)=x^{2}$, rotated around the $x$ axis. We know elementarily that the points of intersection will be $(0,0),(1,1)$; thus our integration bounds will be $[0,1]$. 
+
+Consider now the region formed between $g(x)$ abd $f()$
+
