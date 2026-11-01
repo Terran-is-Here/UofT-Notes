@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T12:50:51.919-05:00
-edited_seconds: 750
+updated_at: 2026-11-01T14:00:38.739-05:00
+edited_seconds: 760
 course: ESC194H1
 tags:
   - ESC194H1
@@ -81,7 +81,7 @@ Where the outer radius and inner radius correspond to the functions $f(x),g(x)$ 
 
 For instance, let's say we wanted to find the volume of the region **enclosed** by $f(x)=x$ and $g(x)=x^{2}$, rotated around the $x$ axis. We know elementarily that the points of intersection will be $(0,0),(1,1)$; thus our integration bounds will be $[0,1]$. 
 
-Consider now the region formed between $g(x)$ and $f(x)$. We note that $f(x)\geq g(x)$ within $[0,1]$, then we can define the inner radius as based of $f(x)$, and the corresponding outer radius as being defined from $g(x)$. We know the corresponding radii are directly linked to our functions, thus: 
+Consider now the region formed between $g(x)$ and $f(x)$. We note that $f(x)\geq g(x)$ within $[0,1]$, then we can define the outer radius as based of $f(x)$, and the corresponding inner radius as being defined from $g(x)$. We know the corresponding radii are directly linked to our functions, thus: 
 
 $$
 \begin{align}

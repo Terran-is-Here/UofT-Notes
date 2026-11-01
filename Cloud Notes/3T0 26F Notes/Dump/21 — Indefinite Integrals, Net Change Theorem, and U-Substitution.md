@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T17:30:56.882-04:00
-edited_seconds: 1230
+updated_at: 2026-11-01T14:02:45.816-05:00
+edited_seconds: 1250
 course: ESC194H1
 tags:
   - ESC194H1
@@ -126,7 +126,7 @@ $$
  u& =x^4 + 2  \implies du = 4x^3 \,dx \to x^3 \,dx = \frac{1}{4}du \\
   & =\int \frac{1}{4}\cos(u) \, du \\
   & =\frac{1}{4}\int \cos(u) \,du = \frac{1}{4}\sin(u) + C \\
-  & =\frac{1}{4}\cos(x^4+2) + C
+  & =\frac{1}{4}\sin(x^4+2) + C
 \end{align}
 $$
 
@@ -174,7 +174,7 @@ $$
  & =\frac{1}{2}\int u^{5/2} -2u^{3/2} + u^{1/2} \, du \\
  & =\frac{1}{2}\left[ \frac{2u^{7/2}}{7} -\frac{4u^{5/2}}{5} + \frac{2u^{3/2}}{3} \right] +C\\
  & =\frac{u^{7/2}}{7} + \frac{2u^{5/2}}{5} + \frac{u^{3/2}}{3} +C\\
- & =\frac{(1+x^{2})^{7/2}}{7} + \frac{(1+x^{2})^{5/2}}{5} + \frac{(1+x^{2})^{3/2}}{3} +C
+ & =\frac{(1+x^{2})^{7/2}}{7} + \frac{2(1+x^{2})^{5/2}}{5} + \frac{(1+x^{2})^{3/2}}{3} +C
 \end{align}
 $$
 ## U-Substitution and Definite Integrals
