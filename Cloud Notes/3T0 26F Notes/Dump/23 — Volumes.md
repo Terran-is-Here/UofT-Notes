@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T12:47:54.107-05:00
-edited_seconds: 720
+updated_at: 2026-11-01T12:50:51.919-05:00
+edited_seconds: 750
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[22 — Areas Between Curves]]
-Next: N/A
+Next: [[24 — Volumes by Cylindrical Shells and Average Function Values]]
 > [!quote] Recommended Reading 
 > Section 5.2 of the Stewart Textbook. 
 --- 
@@ -113,6 +113,9 @@ $$
 Note that we are now integrating from some origin point (for convenience, set it when $A(x)=0$), towards $h$, then: 
 $$
 \begin{align}
- & =\int_{0}^{h}A(x) \,dx
+ & =\int_{0}^{h}A(x) \,dx \\
+ & =\int_{0}^{h}\left[ \frac{L^{2}x^{2}}{h^{2}} \right]\,dx = \left[ \frac{L^{2}x^{3}}{3h^{2}} \right]^{h}_{0} \\
+ & =\frac{L^{2}h^{3}}{3h^{2}} = \frac{L^{2}h}{3}
 \end{align}
 $$
+In fact, we can arbitrarily use any $A(x)$ as long as it can properly model the cross-section of the shape that we are attempting to understand the volume of. 

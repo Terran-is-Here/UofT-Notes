@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-10T21:28:45.211-04:00
-edited_seconds: 790
+updated_at: 2026-11-01T12:51:47.009-05:00
+edited_seconds: 800
 course: PHY180H1
 tags:
   - PHY180H1
@@ -85,7 +85,7 @@ Where the force is the force applied on an object over some time interval; integ
 
 ^39f602
 
-Note that we can redefine this in terms of an *average force*. Given some function $f(x)$, it's average can be defined as some integral: 
+Note that we can redefine this in terms of an *average force*. Given some function $f(x)$, it's average can be defined as some integral:  ^9a5975
 $$
 f_{av}(x) = \frac{1}{\Delta x}\int_{x_{0}}^{x_{1}}f(x) dx
 $$
