@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T14:29:20.662-05:00
-edited_seconds: 380
+updated_at: 2026-11-01T14:48:19.390-05:00
+edited_seconds: 650
 course: ESC194H1
 tags:
   - ESC194H1
@@ -24,7 +24,7 @@ Next: N/A
 Recall in our previous note that the methods that we have used to determine the volume of a function of area over an interval, as well as the volume of a function rotated on a line. The methods we developed for these either: 
 1. Requires us to inherently know the corresponding Area function being integrated (trivial)  
 2. Requires us to know and or write out an equation in terms of the axis of rotation (e.g. $y=x^{3}+2x^{2}+1x+10$ in terms of some $x=?$) (non-trivial) 
-3. Requires us to know the max-min behavior of a function in terms of it's smaller and larger radii (in the case of a washer) (non-trivial)
+3. Requires us to know the max-min behavior of a function in terms of it's smaller and larger radii (in the case of a washer) (slightly non-trivial)
 
 This section will introduce a new method that will allow us to (potentially) compute the volume of a revolved function in a simpler manner. 
 
@@ -50,6 +50,56 @@ We can define a solid $S$ to be the function $f(x)$ revolved around some axis, d
 $$
 \bar{x}_{i} = \frac{x_{i-1}+x_{i}}{2}
 $$
-And $\Delta x=\frac{b-a}{n}$; or assuming it is constant, then $\Delta x=(x_{i}-x_{i-1})$; then 
+And $\Delta x=\frac{b-a}{n}$; or assuming it is constant, then $\Delta x=(x_{i}-x_{i-1})$; then we see that this can be modelled as a set of hollow cylindrical shells, where the total volume of the function is given to us by the following: 
+$$
+V_{t} \approx \sum_{i=1}^{n} 2\pi \bar{x}_{i}f(\bar{x}_{i})\Delta x
+$$
+We know that this approximation improves as we take more and more subdivisions, then: 
+$$
+V = \lim_{ n \to \infty } \sum_{i=1}^{n} 2\pi \bar{x}_{i}f(\bar{x}_{i})\Delta x
+$$
+But we know this can be expressed as the following discrete integral: 
+$$
+V = \lim_{ n \to \infty } \sum_{i=1}^{n} 2\pi \bar{x}_{i}f(\bar{x}_{i})\Delta x = \int_{a}^{b}2\pi x \cdot f(x)\,dx
+$$
 
-We then note that we can model these subdivisions by some hollow cylindrical shell; with 
+Note that in this context, $2\pi x$ represents the circumference of an infinitesimal cylindrical shell, $f(x)$ represents the height and $dx$ represents the thickness, and $a,b$ represents the integration bounds of the function in terms of it's original axis.  
+
+### Application
+
+For instance, find the volume of the solid obtained by rotating around the y-axis the region bounded by $y=2x^{2}-x^{3}$, and $y=0$. 
+
+From our functions above, we know that the region bounded by our function is between $x\in[0,2]$, as $y=2x^{2}-x^{3} \to x^{2}(2-x)$. We can also identify that the leading term of *height* of the function will be $2x^{2}-x^{3}$, then: 
+
+$$
+\begin{align}
+V  & = \int_{0}^{2}2\pi x(2x^{2}-x^{3})\,dx \\
+ & =2\pi \int_{0}^{2}2x^{3}-x^{4}\,dx \\
+ & =2\pi\left[ \frac{2}{4}x^{4} - \frac{x^{5}}{5} \right]^{2}_{0} \\
+ & =2\pi\left[ \frac{x^{4}}{2} - \frac{x^{5}}{5} \right]^{2}_{0} \\
+ & =2\pi\left[ 8 - \frac{32}{5} \right] = \frac{16\pi}{5}
+\end{align}
+$$
+
+Note that the term of height of a function is the main thing we are trying to determine. 
+
+For instance find the volume of the solid obtained by rotating around the y axis the region between $y=x$ and $y=x^{2}$. 
+We know that the bounds of this function are $[0,1]$ from inspection, then we note that the circumference is some term $x$, height as some term $f(x) = (x-x^{2})$, then the volume is therefore given by the following: 
+$$
+\begin{align}
+V & = \int_{0}^{1}2\pi x(x-x^{2)})\,dx \\
+ & = 2\pi \int_{0}^{1}x(x-x^{2})\,dx \\
+ & =2\pi\left[ \frac{x^{3}}{3}-\frac{x^{4}}{4} \right]^{1}_{0} \\
+ & =2\pi\left[ \frac{1}{3}-\frac{1}{4} \right] = \frac{\pi}{6}
+\end{align}
+$$
+### Comparison
+> [!note] Note for Future Lagrange
+> Look at this se
+When considering the Method of Cylindrical Shells and Solids of Revolution, what arises is the question of which variable is more trivial to work with in terms of determining the volume of a rotated region / function? 
+
+The Method of Cylindrical Shells lets us define the volume through some $y=f(x)$, where the difficulty is comparing the corresponding functions that bound that region and determining which is always greater within an interval (that is, comparing by the y axis). 
+* In other words, MCS does its comparison by preserving the original region the function was defined in.
+
+Solids of Revolution lets us define the volume through some $x=f(y)$, where the difficulty is comparing the corresponding functions which bound the region and determining which is always greater within the interval to determine a term of radius (that is, by comparing directly inline with the axis of rotation). 
+* In other words, SoR does its comparison by directly comparing the functions in a plane normal to the axis of rotation. 
