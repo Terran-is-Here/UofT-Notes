@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T15:08:32.956-05:00
-edited_seconds: 840
+updated_at: 2026-11-01T15:14:04.274-05:00
+edited_seconds: 900
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[23 — Volumes]]
-Next: N/A
+Next: [[25 — Inverse Functions]]
 > [!quote] Recommended Reading 
 > Stewart Textbook 5.3, 5.5
 > We actually briefly mentioned the concept of the average value of a function in [[14 — Momentum and Impulse#^39f602|PHY180 (14) — Momentum and Impulse]]. 
@@ -142,9 +142,12 @@ Recall the Mean Value Theorem:
 > If $f$ is differentiable on the open interval $(a,b)$ **AND** continuous on the *closed* interval $[a,b]$, then there is *at least* one number $c\in(a,b)$, where: 
 > $$f'(c) = \frac{f(b)-f(a)}{b-a}$$
 
-Consider now we let $F(x)=\int_{a}^{x}f(x)\,dx$; then we have the following expression: 
+Consider now we let $F(x)=\int_{a}^{x}f(x)\,dx$. We know from [[20 — The Fundamental Theorem of Calculus#Fundamental Theorem of Calculus|FToC]] that $F'(x)=f(x)$, then $F'(c)=f(c)$, thus: 
 $$
 \begin{align}
-
+F'(c)  & = \frac{1}{b-a}\left( \int _{a}^{b}f(x)\,dx -\int_{a}^{a}f(x)\,dx\right) & \int_{a}^{a}f(x)=0 \\
+f(c)  & =\frac{1}{b-a}\int_{a}^{b}f(x)\,dx \\
+f(c)(b-a) & =\int_{a}^{b}f(x)\,dx
 \end{align}
 $$
+Which is what we intended to prove. 
