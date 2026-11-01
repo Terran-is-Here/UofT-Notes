@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T12:08:08.937-05:00
-edited_seconds: 460
+updated_at: 2026-11-01T12:18:30.095-05:00
+edited_seconds: 600
 course: ESC194H1
 tags:
   - ESC194H1
@@ -39,7 +39,7 @@ A_{s} = \lim_{ n \to \infty } \sum_{i=1}^{n} A(x^{*}_{i})\Delta x_{i}
 $$
 Where we see that this is actually simply a Reimann Sum of our function of area, thus we can define this using our familiar definite integral notation as the following. 
 
-> Areas & Definite Integrals
+> [!theorem] Areas & Definite Integrals
 > Let $S$ be a solid that lies between $x=a,b$. If the cross-sectional area of $S$ in the plane $P_{x}$ ($P_{x}\perp x$) is defined by some function $A(x)$, where $A(x)$ is continuous in $[a,b]$, then the volume of $S$ is defined as the definite integral of $A(x)$ between $a,b$, or in other words: 
 > $$V = \lim_{ N \to \infty } \sum_{i=1}^{N} A(x^{*}_{i})\Delta x_{i}=\int_{a}^{b}A(x)\,dx$$
 > Which makes intuitive sense if you think about it; it's simply the sum of the areas of infinitesimal slices of a 3d object. 
@@ -74,9 +74,30 @@ Consider now the case in which we want to take the volume between two functions 
 $$
 A(x) = \pi(\text{outer radius})^{2} - \pi(\text{inner radius})^{2}
 $$
-Where the outer radius and inner radius correspond to the functions $f(x),g(x)$ per region (as per the same ideas that we had in [[22 — Areas Between Curves#Areas Between Curves|Areas Between Curves]]). Note that if a volume is fully enclosed, then the integration bounds are defined with respects to the points of intersection of the function. 
+Where the outer radius and inner radius correspond to the functions $f(x),g(x)$ per region (as per the same ideas that we had in [[22 — Areas Between Curves#Areas Between Curves|Areas Between Curves]]). Note that if a volume is fully enclosed, **then the integration bounds are defined with respects to the points of intersection of the function** (as without it, it's not really an enclosed shape now is it?)
+
+> [!axiom] Idea
+> Another way to think of this, is that the corresponding functions which we are revolving around, define the "edges" of the 3d shape. 
 
 For instance, let's say we wanted to find the volume of the region **enclosed** by $f(x)=x$ and $g(x)=x^{2}$, rotated around the $x$ axis. We know elementarily that the points of intersection will be $(0,0),(1,1)$; thus our integration bounds will be $[0,1]$. 
 
-Consider now the region formed between $g(x)$ abd $f()$
+Consider now the region formed between $g(x)$ and $f(x)$. We note that $f(x)\geq g(x)$ within $[0,1]$, then we can define the inner radius as based of $f(x)$, and the corresponding outer radius as being defined from $g(x)$. We know the corresponding radii are directly linked to our functions, thus: 
+
+$$
+\begin{align}
+A(x)  & = \pi(x)^{2} - \pi(x^{2})^{2} \\
+ & =\pi(x^{2}-x^{4})
+\end{align}
+$$
+Then, integrating this: 
+$$
+\begin{align}
+ & =\int_{0}^{1}A(x)\,dx \\
+ & =\pi \int_{0}^{1}(x^{2}-x^{4})\,dx \\
+ & =\pi \left[ \frac{x^{3}}{3} - \frac{x^{5}}{5} \right]^{1}_{0} \\
+ & =\pi\left[ \frac{1}{3}-\frac{1}{5} \right] = \frac{2\pi}{15}
+\end{align}
+$$
+
+Note however, that the term that we define as our *radius* varies depending on the line of the axis of rotation that we choose, for instance; if we decide to take our axis of rotation
 
