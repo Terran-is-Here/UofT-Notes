@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T16:09:28.577-05:00
-edited_seconds: 240
+updated_at: 2026-11-01T16:15:16.804-05:00
+edited_seconds: 290
 course:
 tags:
 "Lecture #": 0
@@ -82,7 +82,28 @@ From here, the following system of equations arise:
 $$
 \begin{align}
 1x_{1} + 2x_{3} &  = -2 \\
-1x_{2} + 1x_{3}
+1x_{2} + 1x_{3} &  = 1
 \end{align}
 $$
-
+Letting $x_{3}=t$ (that is, $x_{3}$) is a free variable, then: 
+$$
+x_{1}=-2-2t\\
+x_{2}=1-t
+$$
+Or: 
+$$
+\begin{bmatrix}
+x_{1}\\x_{2}\\x_{3}
+\end{bmatrix} = \begin{bmatrix}
+-2\\1\\0
+\end{bmatrix} + \begin{bmatrix}
+-2\\-1\\1
+\end{bmatrix}t
+$$
+In other words, the solution space of this (note since it was equal to zero, this is it's nullity) is equivalent to a line. Or in other words, infinitely many solutions. 
+## Implications
+* Columns corresponding to leading ones correspond to leading/pivot variables. Other columns represent to free variables.
+* Number of leading ones (leading pivot variables) are equivalent to the number of **linearly independent** vectors that span column space; that is the number of leading ones represent $\text{rank}(a)$. 
+* If there exists a line where $0=1$, (that is, a row of zeros equalling a non-zero on the corresponding $\vec{b}$), our system is stated to be inconsistent; that is no solutions exist: 
+	* This means that either $\vec{b}\not\in$ the column space of $A$ (in terms of the column picture) 
+	* The planes in row picture do not ever intersect at **one point**. 

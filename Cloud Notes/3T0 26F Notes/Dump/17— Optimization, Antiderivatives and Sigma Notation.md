@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T12:10:23.948-04:00
-edited_seconds: 1860
+updated_at: 2026-11-01T16:21:00.632-05:00
+edited_seconds: 1870
 course: ESC194H1
 tags:
   - ESC194H1
@@ -94,7 +94,7 @@ f(x)  & = \frac{x}{\sqrt{ x }} + \frac{1}{\sqrt{ x }} = \sqrt{ x  }+x^{-1/2} & \
 F(x) & = \frac{2}{3}x^{3/2} + 2x^{1/2} +C
 \end{align}
 $$
-Since we know $F(1)=5$, then $F(1) = \frac{2}{3}+2+C = 5 \implies C=\frac{7}{3}$, then we can **fully specify** antiderivative: 
+Since we know $F(1)=5$, then $F(1) = \frac{2}{3}+2+C = 5 \implies C=\frac{7}{3}$, then we can **fully specify** the antiderivative: 
 $$
 F(x)=\frac{2}{3}x^{3/2} + 2x^{1/2} + \frac{7}{3}
 $$
