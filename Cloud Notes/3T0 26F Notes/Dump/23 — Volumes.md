@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T12:18:30.095-05:00
-edited_seconds: 600
+updated_at: 2026-11-01T12:47:54.107-05:00
+edited_seconds: 720
 course: ESC194H1
 tags:
   - ESC194H1
@@ -99,5 +99,20 @@ $$
 \end{align}
 $$
 
-Note however, that the term that we define as our *radius* varies depending on the line of the axis of rotation that we choose, for instance; if we decide to take our axis of rotation
+Note however, that the term that we define as our *radius* varies depending on the line of the axis of rotation that we choose, for instance; if we decide to take our axis of rotation around some other line, e.g. some line $y=2$, then the corresponding terms for radius change accordingly (i.e. $r=2-f^{*}(x)$). 
 
+## Cross-Sectional Area
+Note however that we have generally defined the concept of area within this note as the integral of a function of *area* with respects to a distance. Previously, we defined this in terms of a circle or a disk (in terms of rotation, for instance); but we can define this to be any arbitrary function within our context. 
+
+For instance, consider finding the volume of a *pyramid* with a square base with a side length of $L$, and a height of $h$. 
+
+We can consider trying to find the side area of some cross-sectional square within the triangle, some $s^{*}$. We see that as we traverse a distance of $x$ in the axis of $h$, $s\to L$, or in other words, $s^{*} = \frac{Lx}{h}$, where when $x=h,s^{*}=\frac{L}{2}$. (as we considered the purely vertical axis), Then the area of that cross-section is defined by $s^{2*}$, then: 
+$$
+A(x) = \frac{L^{2}x^{2}}{h^{2}}
+$$
+Note that we are now integrating from some origin point (for convenience, set it when $A(x)=0$), towards $h$, then: 
+$$
+\begin{align}
+ & =\int_{0}^{h}A(x) \,dx
+\end{align}
+$$
