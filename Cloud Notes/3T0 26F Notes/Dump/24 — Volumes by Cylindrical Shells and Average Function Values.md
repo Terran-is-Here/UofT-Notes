@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T14:48:19.390-05:00
-edited_seconds: 650
+updated_at: 2026-11-01T15:08:32.956-05:00
+edited_seconds: 840
 course: ESC194H1
 tags:
   - ESC194H1
@@ -94,12 +94,57 @@ V & = \int_{0}^{1}2\pi x(x-x^{2)})\,dx \\
 \end{align}
 $$
 ### Comparison
-> [!note] Note for Future Lagrange
-> Look at this se
+> [!caution] Note for Future Lagrange
+> Look at this section please! 
+
+
 When considering the Method of Cylindrical Shells and Solids of Revolution, what arises is the question of which variable is more trivial to work with in terms of determining the volume of a rotated region / function? 
 
 The Method of Cylindrical Shells lets us define the volume through some $y=f(x)$, where the difficulty is comparing the corresponding functions that bound that region and determining which is always greater within an interval (that is, comparing by the y axis). 
 * In other words, MCS does its comparison by preserving the original region the function was defined in.
+* In this context, we step with respects to $x$ (in a 2d context, moving left to right and summing the areas of the cylindrical shells)
 
 Solids of Revolution lets us define the volume through some $x=f(y)$, where the difficulty is comparing the corresponding functions which bound the region and determining which is always greater within the interval to determine a term of radius (that is, by comparing directly inline with the axis of rotation). 
 * In other words, SoR does its comparison by directly comparing the functions in a plane normal to the axis of rotation. 
+* In this context, we step with respects to $y$ (in a 2d context, moving from bottom to top, summing the areas of the cross-sections along that axis)
+## Average Function Value
+Consider the common case in which we need to take the average value of a function, we know that we can take the finite average of a set of values as the following: 
+$$
+\bar{x} = \frac{x_{1}+x_{2}+\dots+x_{i}}{i}
+$$
+Where $x_{1},x_{2},\dots x_{i}$ are values of the function. How about taking the average *value* of a function, some $f(x)$. An average implies we need to take some sample points, and we already have a developed framework for that.
+
+Consider a function $f(x)$ within the interval $[a,b]$. As we have done for multiple times within this unit, we know that we can divide this up into $n$ even segments by $\Delta x=\frac{b-a}{n}$; where $\Delta x$ is our even spacing. We can rearrange this equation to see that $n=\frac{b-a}{\Delta x}$. Considering that this splits up the function into $n$ partitions of $[x_{i-1},x_{i}]$, and $x^{*}_{i}\in[x_{i-1},x_{i}]$, then we can see our sample points as these $x^{*}_{i}$, thus: 
+$$
+\begin{align}
+\bar{f(x)}  & = \frac{\left( \sum_{i=1}^{n} f(x_{i}^{*}) \right)}{n} & n=\frac{b-a}{\Delta x} \\
+ & =\frac{\left( \Delta x\sum_{i=1}^{n} f(x^{*}_{i}) \right)}{b-a} \\
+ & =\frac{1}{b-a}\sum_{i=1}^{n} f(x^{*}_{i})\Delta x
+\end{align}
+$$
+We know that this approximation improves as we take the limit as $n\to \infty$, and we know that that is equivalent to the discrete integral $\int_{a}^{b}f(x)\,dx$, thus: 
+$$
+\bar{f(x)} = \frac{1}{b-a}\int_{a}^{b}f(x)\,dx
+$$
+> [!theorem] Average Function Value
+> $$\bar{f(x)}=\frac{1}{b-a}\int_{a}^{b}f(x)\,dx$$
+
+Note that this is actually a small part of the MVT for Integrals: 
+
+> [!theorem] Mean Value Theorem (Integrals) 
+> If $f(x)$ is continuous in $x\in[a,b]$, $\exists c\in[a,b]$ such that: 
+> $$f(c)=\bar{f}=\frac{1}{b-a}\int_{a}^{b}f(x)\,dx$$
+> That is,
+> $$f(c)(b-a)=\int_{a}^{b}f(x)\,dx$$
+### Proof
+Recall the Mean Value Theorem: 
+> [!theorem] MVT 
+> If $f$ is differentiable on the open interval $(a,b)$ **AND** continuous on the *closed* interval $[a,b]$, then there is *at least* one number $c\in(a,b)$, where: 
+> $$f'(c) = \frac{f(b)-f(a)}{b-a}$$
+
+Consider now we let $F(x)=\int_{a}^{x}f(x)\,dx$; then we have the following expression: 
+$$
+\begin{align}
+
+\end{align}
+$$
