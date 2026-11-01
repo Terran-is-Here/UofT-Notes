@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T15:41:50.797-05:00
-edited_seconds: 140
+updated_at: 2026-11-01T15:55:24.891-05:00
+edited_seconds: 160
 course: ESC103H1
 tags:
   - ESC103H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[12 — Elementary Row Operations]]
-Next:
+Next: [[14 — Gaussian Elimination]]
 
 --- 
 # Lecture Notes
@@ -29,4 +29,6 @@ After obtaining some upper-triangular matrix $U$, we can perform *backwards subs
 2. Each leading one **must** be to the right of all leading ones above it. 
 3. All other entries in the same column as a leading one must be 0. 
 
-To get a matrix $U\to R_{0}$, we perform another set of EROs; note that we often term the leading terms the "pivot points", and the non-leading terms as potential free variables. The number of leading pivot points represents the number of linearly independent vectors within the space (and by extension, the corresponding nullity).
+To get a matrix $U\to R_{0}$, we perform another set of EROs; note that we often term the leading terms the "pivot points", and the non-leading terms as potential free variables. The number of leading pivot points represents the number of linearly independent vectors within the space (and by extension, the corresponding nullity from the rank-nullity theorem).
+
+
