@@ -1,11 +1,11 @@
 ---
-updated_at: 2026-11-02T11:36:09.498-05:00
-edited_seconds: 1120
+updated_at: 2026-11-02T11:48:09.577-05:00
+edited_seconds: 1340
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 20
-Lecture Date: 2026-10-23
+Lecture Date: 2026-11-02
 Week: 7
 ---
 Hub: [[ESC194 Hub]]
@@ -80,8 +80,50 @@ Note that $h\to 0, u,v \to x$, as these are defined in terms of the interval of 
 $$
 f(x) \leq \lim_{ h \to 0 } \frac{1}{h}\int_{x}^{x+h}f(t)\,dt \leq f(x)
 $$
-Resubstituing back in that $\int_{x}^{x+h}f(t)\,dt = F(x+h)-F(x)$, then: 
+Resubstituting back in that $\int_{x}^{x+h}f(t)\,dt = F(x+h)-F(x)$, then we see that: 
+$$
+f(x) \leq \lim_{ h \to 0 } \frac{F(x+h)-F(x)}{h} = F'(x) \leq f(x)
+$$
+From Squeeze Theorem, then we see that $F'(x)=f(x)$; or in other words, the derivative of the integral gives the integrand; thus we arise at the more formal definition of the Fundamental Theorem of Calculus: 
 
+> Let $f$ be continuous in $[a,b]$, if $G$ is any antiderivative of $f$ on $[a,b]$, then: 
+> $$\int_{a}^{b}f(t)\,dt = G(b)-G(a)$$
+> This is the second half of the FTC. Note that this does *not* indicate how we can find the corresponding antiderivatives of our function. 
+
+### FTC 2
+To prove the statement we made above, consider the following expression: 
+$$
+F(x) = \int_{a}^{x}f(t)\,dt
+$$
+Where $F$ is an antiderivative of $f()$ on $[a,b]$. Note that if $G$ is also an antiderivative of $f$, then $F'=G'=f$. Note that in this case, then we know that these can only differ from some constant: $F(x)=G(x)+C$
+
+Recall that $F(a)=0$ from our integral properties, thus: $F(a)=G(a)+C=0$, then $C=-G(a)$, then we see that: 
+$$
+F(x) = G(x)-G(a)
+$$
+Then we can note that we can substitute this for any bounds; thus: 
+$$
+\int_{a}^{x}f(t)\,dt = G(x)-G(a)
+$$
+Where $x$ is any corresponding number. To apply this, for instance take the following: 
+$$
+\int_{1}^{4}x^{2}\,dx = \left[ \frac{1}{3}x^{3} \right]^{4}_{1} = \left( \frac{4^{3}}{3 } -\frac{1}{3} \right) = \frac{63}{3}=21
+$$
+
+## Examples of FTC2 
+Take the following integral: 
+$$
+\int_{0}^{\pi/2}\cos(x)\,dx
+$$
+Recall that $G(x)=\sin(x)$, then we see that: 
+$$
+\int_{0}^{\pi/2}\cos(x)\,dx = \sin \frac{\pi}{2}-\sin 0 = 1
+$$
+
+Alternatively, now take the following integral: 
+$$
+\int_{0}^{\pi/4}\sec ^{2}(t)\,dt = \tan(\frac{\pi}{4})-\tan(0) = 1
+$$
 
 
 

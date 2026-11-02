@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T14:02:45.816-05:00
-edited_seconds: 1250
+updated_at: 2026-11-02T11:55:48.533-05:00
+edited_seconds: 1320
 course: ESC194H1
 tags:
   - ESC194H1
@@ -16,6 +16,47 @@ Next: [[22 — Areas Between Curves]]
 > [[17— Optimization, Antiderivatives and Sigma Notation]]
 --- 
 # Lecture Notes
+> [!caution] Note
+> This was written partially on the same date as the previous lecture, though the timestamps have been kept to where they were (as this is a multi-day thing). Notes pertaining to the date will be written down in a separate section. 
+
+## Indefinite Integrals (LEC) 
+> Written: 11-02
+
+Recall that we defined the definite integral in the previous note as the difference of the corresponding antiderivatives: 
+$$
+\int_{a}^{b}f(x)\,dx = [F(x)]^{b}_{a}
+$$
+Note that sometimes we don't know the bounds yet; or we want to find a general solution that we can use for *any* bounds of integration. This is where the concept of an Indefinite integral arises. Recall that: 
+$$
+G(x) = F(x) + C
+$$
+Where $C$ is any arbitrary formula. Note that this maintains the earlier definition that we had in our formula earlier: 
+$$
+[G(x)]^{b}_{a} = G(b)+C - G(a)-C = G(b)-G(a) = [G(x)]^{b}_{a}
+$$
+Or that is: 
+$$
+[G(x)]^{b}_{a} = [G(x) + C]^{b}_{a}
+$$
+If we don't know our integration bounds, then we state that :
+$$
+\boxed{\int f(x)\,dx = F(x)+C}
+$$
+This is what we note as the concept of an indefinite integral. > 
+For instance: 
+> $$\int x\,dx = \frac{1}{2}x^{2} + C$$
+> Where $C$ is any arbitrary number; then this represents *not just one function*, but rather a *family of functions*, with the functions being vertically translated from each other. 
+
+Note that to find the corresponding antiderivatives, we simply reverse the derivative identity table that we have introduced in multiple notes a few days back. For instance: 
+$$
+\begin{align}
+ & = \int 2 + \tan ^{2}\theta \,d\theta \\
+ & = \int 1 + 1+ \tan ^{2}\theta \,d\theta = \int 1 + \sec ^{2}\theta \,d\theta \\
+ & =
+\end{align}
+$$
+
+
 
 ---
 # Pre-Lecture Notes
