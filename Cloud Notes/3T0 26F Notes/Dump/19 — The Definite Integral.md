@@ -190,6 +190,8 @@ We can define this more acutely:
 > > Where
 > > $$\Delta x=\frac{b-a}{n}, x_{i}=a + i\Delta x$$
 
+^13b41d
+
 Note that the summation term that we had on the right side there is termed the *Reimann sum*. Note that if a function falls below the $x$ axis in this context; we define the area under those rectangles as negative. 
 
 The following theorem thus follows this definition: 

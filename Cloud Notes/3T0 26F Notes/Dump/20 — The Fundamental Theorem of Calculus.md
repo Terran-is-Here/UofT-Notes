@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T09:33:14.860-05:00
-edited_seconds: 830
+updated_at: 2026-11-02T11:06:23.864-05:00
+edited_seconds: 840
 course: ESC194H1
 tags:
   - ESC194H1
@@ -15,6 +15,9 @@ Next: [[21 — Indefinite Integrals, Net Change Theorem, and U-Substitution]]
 > Section 4.3 (Stewart) 
 --- 
 # Lecture Notes
+## FTC (LEC) 
+Recall from Definite Integrals that we can define the concept *of* a definite integral as the limit of the Reimann sum in terms of the norm (see: [[19 — The Definite Integral#^13b41d|the formal definition]])
+
 
 ---
 # Pre-Lecture Notes
