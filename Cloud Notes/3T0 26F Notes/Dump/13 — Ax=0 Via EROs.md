@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T15:55:24.891-05:00
-edited_seconds: 160
+updated_at: 2026-11-02T12:13:06.405-05:00
+edited_seconds: 180
 course: ESC103H1
 tags:
   - ESC103H1
@@ -14,6 +14,13 @@ Next: [[14 — Gaussian Elimination]]
 
 --- 
 # Lecture Notes
+## Solving Systems
+Recall that we can solve a system of equations as a matrix, and that we can apply elementary row operations to solve such a system. Consider the following system of equations then: 
+$$
+\begin{align}
+x_{1} + 2x_{2} + x
+\end{align}
+$$
 
 ---
 # Pre-Lecture Notes

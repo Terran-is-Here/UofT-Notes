@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T11:55:48.533-05:00
-edited_seconds: 1320
+updated_at: 2026-11-02T12:08:04.386-05:00
+edited_seconds: 1360
 course: ESC194H1
 tags:
   - ESC194H1
@@ -52,10 +52,18 @@ $$
 \begin{align}
  & = \int 2 + \tan ^{2}\theta \,d\theta \\
  & = \int 1 + 1+ \tan ^{2}\theta \,d\theta = \int 1 + \sec ^{2}\theta \,d\theta \\
- & =
+ & =\theta + \tan\theta + C
 \end{align}
 $$
+### Example
+Take the following expression. Given $f'(x)=3x^{2} + 2x$, and $f(0)=5$, solve for $f(x)$.
+We know from the earlier expression that $f(x)$ by integrating that derivative, thus: 
+$$
+f(x) = x^{3} + x^{2} + C
+$$
+To solve for $c$, we simply evaluate at $f(0)$, thus we see that $C=5$, thus $f(x) = x^{3} + x^{2} + 5$. 
 
+> Continued: 11-05
 
 
 ---

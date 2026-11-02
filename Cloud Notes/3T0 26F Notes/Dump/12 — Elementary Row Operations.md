@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T15:35:47.039-05:00
-edited_seconds: 630
+updated_at: 2026-11-02T12:13:12.421-05:00
+edited_seconds: 650
 course: ESC103H1
 tags:
   - ESC103H1
@@ -11,7 +11,7 @@ Created: October 13th 2026, 5:17:25 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[11 — A-CR Matrix Factorization]]
-Next: [[13 — Ax=0 Via EROs ]]
+Next: [[13 — Ax=0 Via EROs]]
 
 --- 
 # Lecture Notes
