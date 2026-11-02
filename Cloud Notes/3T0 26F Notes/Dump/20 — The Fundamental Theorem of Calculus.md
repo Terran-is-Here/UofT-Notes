@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-26T19:34:28.815-04:00
-edited_seconds: 820
+updated_at: 2026-11-02T09:33:14.860-05:00
+edited_seconds: 830
 course: ESC194H1
 tags:
   - ESC194H1
@@ -207,7 +207,7 @@ $$
 6 + F(x)-F(a) & =2\sqrt{ x } \\
 6 + 2\sqrt{ x } - 2\sqrt{ a } & =2\sqrt{ x } \\
 6  & =2\sqrt{ a } \\
-a & =3
+a & =9
 \end{align}
 $$
 Then, our expression from earlier becomes: 

@@ -1,9 +1,10 @@
 ---
-updated_at: 2026-11-01T16:15:16.804-05:00
-edited_seconds: 290
-course:
+updated_at: 2026-11-02T10:00:37.407-05:00
+edited_seconds: 300
+course: ESC103H1
 tags:
-"Lecture #": 0
+  - ESC103H1
+"Lecture #": 14
 Lecture Date: 2026-11-01
 Week:
 ---
