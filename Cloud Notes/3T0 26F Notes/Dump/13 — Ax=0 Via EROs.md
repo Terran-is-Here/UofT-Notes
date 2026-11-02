@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T12:37:04.082-05:00
-edited_seconds: 320
+updated_at: 2026-11-02T12:38:33.791-05:00
+edited_seconds: 330
 course: ESC103H1
 tags:
   - ESC103H1
@@ -120,6 +120,10 @@ x_{1}\\x_{2}\\x_{3}
 $$
 Where this like represents the null space of $A$; or in other words, $\text{nullity}(A)=1$
 > Generally, we can see that the column *whithout a leading one* represents a free variable (as they aren't fully fixed to a certain desired value). 
+
+Note that $R$ is related to $R_{0}$. 
+
+
 ---
 # Pre-Lecture Notes
 

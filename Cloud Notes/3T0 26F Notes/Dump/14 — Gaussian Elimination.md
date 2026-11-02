@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T10:00:37.407-05:00
-edited_seconds: 310
+updated_at: 2026-11-02T12:48:57.422-05:00
+edited_seconds: 400
 course: ESC103H1
 tags:
   - ESC103H1
@@ -14,6 +14,56 @@ Next: N/A
 
 --- 
 # Lecture Notes
+## Gaussian Elimination (LEC) 
+Recall that Row Operations are actually simply matrix multiplication operations in disguise. Note the following: 
+$$
+A\vec{x}=\vec{b}
+$$
+Recall that when we perform a matrix operation on $A$, we are multiplying that by a ERO matrix, which is also applied on $\vec{b}$, thus we see that $\vec{b}$ experiences the **exact same** row operations as $A$ experiences: 
+$$
+E_{1}A\vec{x} = E_{1}\vec{b}
+$$
+From here, we define the concept of an augmented matrix, where we combine both $A$ and $\vec{b}$ in one matrix, as we know both change in the same way (with row operations, multiplications, etc.) 
+
+* We define the "forward step" , as we move from any matrix $A\vec{x}=\vec{b}$ to their corresponding upper triangular matrix form $U\vec{x}=\vec{c}$. 
+* We define the "backward step" as us moving from an upper triangular matrix, to a matrix in RREF; that is $R_{0}\vec{x}=\vec{d}$. 
+
+For instance, take the following matrices, and check if they are in RREF. 
+$$
+\begin{bmatrix}
+1 & 0 & 1 & 5 \\
+0 & 0 & 0 & 0 \\
+0 & 1 & 2 & 4
+\end{bmatrix}
+$$
+> Not in RREF, non-zero rows present, and they are not at the bottom. 
+
+$$
+\begin{bmatrix}
+2 & 1 & 5 & 2 \\
+0 & 1 & 1 & 2 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
+$$
+> Not in RREF, non-zero values present in column with leading one, and first row has a non-one leading value. 
+
+$$
+\begin{bmatrix}
+1 & 1 & 5 & 2 \\
+0 & 1 & 0 & 1 \\
+0 & 0 & 1 & 1
+\end{bmatrix}
+$$
+> Not in RREF, non-zero values present in column with leading one. 
+
+$$
+\begin{bmatrix}
+1 & 0 & 1 & 5 \\
+0 & 1 & 2 & 4 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
+$$
+> In RREF, satisfies all conditions. 
 
 ---
 # Pre-Lecture Notes
