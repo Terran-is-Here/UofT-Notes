@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-28T19:24:44.067-04:00
-edited_seconds: 320
+updated_at: 2026-11-02T17:34:03.111-05:00
+edited_seconds: 490
 course: PHY180H1
 tags:
   - PHY180H1
@@ -70,3 +70,22 @@ Thus, we can see that the energy within a rotating system's total is equal to so
 > This result also apparently applies to any two masses in circular orbits around their common center of mass, at a distance $r$ from each other, proof will be provided here when I get to doing this exercise. 
 
 
+## Kepler's First Law 
+Kepler's First Law states that every planet moves at an ellipse, where the sun (or rather, some mass $M \gg m$, where $M$ represents a star and $m$ represents the mass of the rotating body) located at one of the foci. 
+
+In terms of terminology: 
+* The Perihelion (generally, a Periapsis) represents the **closest** point in the orbit between some object and the main foci (i.e. $M$). 
+* The Aphelion (generally, an Apoapsis) represents the **farthest** point in the orbit between some object and the main foci (i.e. $M$). 
+
+The nature / shape of an ellipse is represented as a conic section as the equation below: 
+$$
+\boxed{\frac{\alpha}{r} = 1+e\cos \theta}
+$$
+Where $e$ defines the *eccentricity* of the orbit, and $r$ representing the distance from the main foci $M$ and our object orbiting it, some object with mass $m$. Note that from our definitions for boundness earlier (or, more specifically, the corresponding total energy of the system), we can derive some relationships for the corresponding values of eccentricity: 
+
+* If $E_{T}<0$, then we know that our system is bounded; thus $0\leq e<1$ (representing an ellipse/circular orbit). 
+* If $E_{T}=0$, then we know that our orbiting body has attained the **minimum escape velocity**, then $e=1$ (representing  a parabolic orbit)
+* If $E_{T}>0$, then we know that our orbiting body has more kinetic energy than the required minimum escape velocity, then $e>1$, where this represents a *hyperbolic* orbit. 
+
+### Hohmann Transfers
+Following Kepler's First law, 
