@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T11:06:23.864-05:00
-edited_seconds: 840
+updated_at: 2026-11-02T11:36:09.498-05:00
+edited_seconds: 1120
 course: ESC194H1
 tags:
   - ESC194H1
@@ -16,7 +16,73 @@ Next: [[21 — Indefinite Integrals, Net Change Theorem, and U-Substitution]]
 --- 
 # Lecture Notes
 ## FTC (LEC) 
-Recall from Definite Integrals that we can define the concept *of* a definite integral as the limit of the Reimann sum in terms of the norm (see: [[19 — The Definite Integral#^13b41d|the formal definition]])
+Recall from Definite Integrals that we can define the concept *of* a definite integral as the limit of the Reimann sum in terms of the norm (see: [[19 — The Definite Integral#^13b41d|the formal definition]]); from here, we can work towards the crucial theorem of the Fundamental Theorem of Calculus. 
+
+To begin with; let's define a familiar function from the pre-lecture notes: 
+$$
+f(x) = \int_{a}^{x}f(t)\,dt
+$$
+Where $f(x)$ represents the area of $f(t)$ from $[a,x]$; For instance, take the example of $\int_{0}^{x}t\,dt$. 
+
+Finding the area of this function from $[0,x]$, we realize that this represents the area of a triangle, with a base of $x$, and a height of x; thus $A=\frac{1}{2}x^{2}$; or in other words: 
+$$
+\int_{0}^{x}t\,dt = \frac{x^{2}}{2} =F(x)
+$$
+Consider that $F'(x)=x$; or in other words, this represents our integrand; or in other words, the outcome of an integral in this context is equivalent to the antiderivative of the integrand. We now seek to prove this in a general case. 
+
+### FTC 1
+> [!theorem] FTC 1 (LEC) 
+> Let $f$ be continuous on $[a,b]$, the function $F$ defined on $[a,b]$ by the following expression: 
+> $$F(t) = \int_{a}^{x}f(t)\,dt $$
+> This expression is continuous on $[a,b]$, differentiable on $(a,b)$, and has the derivative where $F'(x)=f(x)$, $\forall x\in(a,b)$
+
+Now, consider the following function: 
+$$
+F(x) = \int_{a}^{x}f(t)\,dt
+$$
+Consider, that for $h>0$, the following expression: 
+$$
+F(x+h)-F(x) = \int_{a}^{x+h}f(t)\,dt - \int_{a}^{x}f(t)\,dt
+$$
+Consider that this is equivalent to us taking the difference area of a function $f(x)$ between $x+h$ and $x$; where this approximates $hf(x)$, or in other words: 
+$$
+\frac{F(x+h)-F(x)}{h} \approx f(x)
+$$
+We can prove this by using the Squeeze Theorem in combination with the integral expression that we defined earlier above. 
+
+> *Proof*
+
+$\forall x,x+h \in(a,b)$, we have the following: 
+$$
+\begin{align}
+F(x+h)-F(x)  & = \int_{a}^{x+h}f(t)\,dt - \int_{a}^{x}f(t)\,dt \\
+ & =\int_{a}^{x}f(t)\,dt + \int_{x}^{x+h}f(t)\,dt - \int_{a}^{x}f(t)\,dt \\
+ & =\int_{x}^{x+h}f(t)\,dt
+\end{align}
+$$
+As long as $h\neq 0$; then we see that, considering $h>0$
+$$
+\begin{align}
+\frac{F(x+h)-F(x)}{h} = \frac{1}{h}\int_{x}^{x+h}f(t)\,dt
+\end{align}
+$$
+Considering now the EVT, that our function takes a value of $M,m$ (Maximum and Minimum in $(a,b)$). Define $f(u)=m$ and $f(V)=M$, where $u,V\in[x,x+h]$. 
+
+From one of our integral properties, we see that: 
+$$
+\begin{align}
+m(h)  & \leq \int_{x}^{x+h}f(t)\,dt \leq M(h) \\
+f(u)h  & \leq \int_{x}^{x+h}f(t)\,dt \leq f(V)h \\
+f(u) & \leq \frac{1}{h}\int_{x}^{x+h}f(t)\,dt \leq f(V)
+\end{align}
+$$
+Note that $h\to 0, u,v \to x$, as these are defined in terms of the interval of $[x,x+h]$; then we see that: 
+$$
+f(x) \leq \lim_{ h \to 0 } \frac{1}{h}\int_{x}^{x+h}f(t)\,dt \leq f(x)
+$$
+Resubstituing back in that $\int_{x}^{x+h}f(t)\,dt = F(x+h)-F(x)$, then: 
+
+
 
 
 ---
