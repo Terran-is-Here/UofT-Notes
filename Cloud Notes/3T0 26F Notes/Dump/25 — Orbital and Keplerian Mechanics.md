@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T17:34:03.111-05:00
-edited_seconds: 490
+updated_at: 2026-11-02T17:54:09.987-05:00
+edited_seconds: 600
 course: PHY180H1
 tags:
   - PHY180H1
@@ -77,7 +77,7 @@ In terms of terminology:
 * The Perihelion (generally, a Periapsis) represents the **closest** point in the orbit between some object and the main foci (i.e. $M$). 
 * The Aphelion (generally, an Apoapsis) represents the **farthest** point in the orbit between some object and the main foci (i.e. $M$). 
 
-The nature / shape of an ellipse is represented as a conic section as the equation below: 
+The nature / shape of an ellipse is represented as a conic section as the equation below, where this equation returns a set of *points* which satisfy this value. 
 $$
 \boxed{\frac{\alpha}{r} = 1+e\cos \theta}
 $$
@@ -88,4 +88,20 @@ Where $e$ defines the *eccentricity* of the orbit, and $r$ representing the dist
 * If $E_{T}>0$, then we know that our orbiting body has more kinetic energy than the required minimum escape velocity, then $e>1$, where this represents a *hyperbolic* orbit. 
 
 ### Hohmann Transfers
-Following Kepler's First law, 
+An interesting application of Kepler's First Law arises when we consider the concept of transferring from *one orbit* to another. Can we solve for the corresponding kinetic energies required to transfer from one orbit to another (and thus; the corresponding velocity injection that we need to make the orbital transfer?) 
+
+For the purposes of this note (as well as the textbook, since they neglect to do so): We can actually solve for the kinetic energy present in an ellipse as some function of the *semi-major axis* of the Ellipse: 
+
+$$
+E = -\frac{GMm}{2a}
+$$
+Where $a$ represents the semi-major axis. The semi-major axis represents *half* the distance between the Apoapsis and Periapsis of some rotating body, that is: 
+$$
+a=\frac{1}{2}(r_{1}+r_{2})
+$$
+Where $r_{1}$ represents an initial orbit, and $r_{2}$ represents the radius of another circular orbit. Note that if $r_{1}$ represents an initial orbit, then $r_{1}$ represents the Periapsis of the transfer orbit, and $r_{2}$ therefore represents the Apoapsis of the corresponding transfer orbit. 
+
+Then the equation above actually resolves as the following: 
+$$
+E = -GMm
+$$
