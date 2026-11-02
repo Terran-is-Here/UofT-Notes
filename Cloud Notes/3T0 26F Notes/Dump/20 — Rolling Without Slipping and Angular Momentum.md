@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T22:37:20.614-04:00
-edited_seconds: 1090
+updated_at: 2026-11-02T16:16:41.919-05:00
+edited_seconds: 1160
 course: PHY180H1
 tags:
   - PHY180H1
@@ -18,6 +18,27 @@ Next: [[21 — Conservation of Angular Momentum, Gyroscopic Precession]]
 
 --- 
 # Lecture Notes
+Lecture started up with a question: 
+
+> A 0.50kg basketball rolls around the ground at 1m/s. What is the total kinetic energy?
+
+Recall that $I=\frac{2}{3}MR^{2}$; (hollow sphere), then the total kinetic energy is given to us by the following: 
+$$
+\frac{1}{2}mv^{2} + \frac{1}{2}I\omega^{2}
+$$
+Recall, $v_{t} = \omega r \to \omega = \frac{v_{t}}{r}$, then: 
+$$
+\begin{align}
+ & =\frac{1}{2}mv^{2} + \frac{1}{2}\left( \frac{2}{3}Mr^{2} \right)\left( \frac{v^{2}}{r^{2}} \right) \\
+ & =\frac{1}{2}mv^{2} + \frac{1}{3}mv^{2} = \frac{5}{6}mv^{2} \\
+ & =\frac{5}{6}mv^{2} = \frac{5}{6}(0.5)(1) = \frac{5}{12}\approx 0.42\text{J}
+\end{align}
+
+$$
+
+
+## Rolling Without Slipping (LEC) 
+
 
 ---
 # Pre-Lecture Notes
