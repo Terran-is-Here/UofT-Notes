@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T16:16:41.919-05:00
-edited_seconds: 1160
+updated_at: 2026-11-02T16:38:51.929-05:00
+edited_seconds: 1300
 course: PHY180H1
 tags:
   - PHY180H1
@@ -38,6 +38,50 @@ $$
 
 
 ## Rolling Without Slipping (LEC) 
+Now we want to derive an expression for the acceleration due to rolling without slipping. 
+
+> What is $a$ of a sliding object down a ramp with an angle $\theta$ without friction? 
+
+We can trivially see that the acceleration would be some term $g\sin\theta$ (from inclined plane questions that we have done before). 
+
+> What is the acceleration of a *rolling* object down a ramp with an an angle $\theta$ with friction? 
+
+Consider the forces in the x-direction aligned with the corresponding plane of the incline, then we see that: 
+$$
+mg\sin\theta -f_{f} = ma
+$$
+
+Consider now the Torque. Let $I=[X]mr^{2}$, where $[X]$ is some dimensionless constant applied in terms of the Moment of Area; then considering the torque: 
+$$
+f_{f}r = I\alpha
+$$
+Let $\alpha = -\frac{a}{r}$ (in terms of our sign conventions, then) $r\alpha = -a$, then: 
+$$
+f_{f}r^{2} = -Ia
+$$
+Note that $f_{f} = \mu_s mg\cos\theta$, then solving for acceleration, then substituting for force of friction, then: 
+$$
+f_{f} = -\frac{Ia}{r^{2}}
+$$
+Then: 
+$$
+\begin{align}
+mg\sin\theta -\frac{Ia}{r^{2}}  & = ma \\
+mg\sin\theta- \frac{[X]mr^{2}a}{r^{2}}  & =ma \\
+g\sin\theta - [X]a & =ma \\
+g\sin\theta  & =(m+[X])a \\
+\frac{g\sin\theta}{(m+[X])}  & =a
+\end{align}
+$$
+Then, to solve for the angular acceleration, recall that $\alpha=-\frac{a}{r}$, then: 
+$$
+-\frac{g\sin\theta}{r(m+[X])} = \alpha
+$$
+> [!ila] In Lecture Addendum
+> By generalizing $I$ to any set of $[X]mr^{2}$ (as we know this is what normally arises dimensionally for it, where we obtain some value of $mr^{2}$ and some corresponding dimensionless constant $[X]$), then we see that this actually applies to significantly more equations than what we solved in the pre lecture notes. 
+> 
+> Note that in our notes, we have the Moment of Inertia for a solid  disk as $I=\frac{mr^{2}}{2}$, then we see $[X]=\frac{1}{2}$, then following the equation above, we arise at the same equation that we did previously: 
+> $$\frac{g\sin\theta}{1.5} = \frac{2g\sin\theta}{3}=a$$
 
 
 ---
@@ -99,7 +143,7 @@ g\sin\theta & =a_{t} + \frac{Ia_{t}}{mr^2} = \left( 1 + \frac{I}{mr^2} \right)a_
 $$
 Then: 
 $$
-\alpha = \frac{2}{3r}g\sin\theta
+\alpha = -\frac{2}{3r}g\sin\theta
 $$
 Solving for the condition where the wheel does *not* slip, then we have to see that $f_{f}\leq \mu _s N$, retaking our earlier force of friction term way above from our torque expression, we see that: 
 $$
