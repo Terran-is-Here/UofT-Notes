@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-03T17:24:22.223-05:00
-edited_seconds: 410
+updated_at: 2026-11-03T17:46:53.696-05:00
+edited_seconds: 610
 course: ESC103H1
 tags:
   - ESC103H1
@@ -77,6 +77,145 @@ $$
 2 & 3 & 1 & 19 
 \end{array} \right]
 $$
+Then, Using GE: 
+$$
+\begin{align}
+\left[\begin{array}{ccc|c} 
+4 & 1 & 2 & 18 \\
+4 & 4 & 2 & 30 \\
+2 & 3 & 1 & 19
+\end{array} \right] & :r_{2}-r_{1} \\
+\left[\begin{array}{ccc|c}
+4 & 1 & 2 & 18 \\
+0 & 3 & 0 & 12 \\
+2 & 3 & 1 & 19 
+\end{array} \right] & : r_{3}- \frac{1}{2}r_{1} \\
+\left[\begin{array}{ccc|c}
+4 & 1 & 2 & 18 \\
+0 & 3 & 0 & 12 \\
+0 & 2.5 & 0 & 10 
+\end{array} \right] & : \frac{1}{3}r_{2} \\
+\left[\begin{array}{ccc|c}
+ 4 & 1 & 2 & 18 \\
+ 0 & 1 & 0 & 4 \\
+ 0 & 2.5 & 0 & 10
+\end{array} \right] & : r_{3}-2.5r_{2} \\
+\left[\begin{array}{ccc|c} 
+4 & 1 & 2 & 18 \\
+0 & 1 & 0 & 4 \\
+0 & 0 & 0 & 0
+\end{array} \right] \\
+\left[\begin{array}{ccc|c} 
+4 & 0 & 2 & 14 \\
+0 & 1 & 0 & 4 \\
+0 & 0 & 0 & 0
+\end{array} \right] & : \frac{1}{4}r_{1} \\
+\left[\begin{array}{ccc|c}
+1 & 0 & \frac{1}{2} & \frac{14}{4}=\frac{7}{2} \\
+0 & 1 & 0 & 4 \\
+0 & 0 & 0 & 0 
+\end{array} \right]
+\end{align}
+$$
+Then we find that: 
+$$
+\begin{align}
+1x + \frac{1}{2}z = \frac{7}{2} \\
+y=4
+\end{align}
+$$
+Then, setting $z$ as a free variable; then: 
+$$
+\begin{align}
+x  & =\frac{7}{2}-\frac{1}{2}z \\
+y & =4 \\
+z & =z
+\end{align}
+$$
+Thus: 
+$$
+\begin{bmatrix}
+x\\y\\z
+\end{bmatrix} = \begin{bmatrix}
+\frac{7}{2\\4\\0}
+\end{bmatrix} + \begin{bmatrix}
+-\frac{1}{2}\\0\\1
+\end{bmatrix}z
+$$
+The *row* picture represents a line in $\mathbb{R}^{3}$ space. How about the column picture? Taking it up: 
+$$
+\begin{bmatrix}
+4\\4\\2
+\end{bmatrix}\left( \frac{7}{2}-\frac{1}{2}l \right) + \begin{bmatrix}
+1\\4\\2
+\end{bmatrix}4 + \begin{bmatrix}
+2\\2\\1
+\end{bmatrix}l = \begin{bmatrix}
+18\\30\\19
+\end{bmatrix}
+$$
+Where this equation works for any value of $l$. Expanding this, then: 
+$$
+\begin{bmatrix}
+4\\4\\2
+\end{bmatrix} \frac{7}{2} - \begin{bmatrix}
+2\\2\\1
+\end{bmatrix}z + \begin{bmatrix}
+1\\4\\2
+\end{bmatrix}4 + \begin{bmatrix}
+2\\2\\1
+\end{bmatrix}l = \begin{bmatrix}
+18\\30\\19
+\end{bmatrix}
+$$
+Note that the terms cancel out, thus: 
+$$
+\begin{bmatrix}
+4\\4\\2
+\end{bmatrix} \frac{7}{2} + \begin{bmatrix}
+1\\4\\2
+\end{bmatrix}4 = \begin{bmatrix}
+18\\30\\19
+\end{bmatrix}
+$$
+Where this satisfies any values; then note that this therefore also works for any value of $l$ (or $z$), then the set of solutions is infinite. 
+
+Consider now the following system of equations (now written in an augmented matrix): 
+$$
+\left[\begin{array}{ccc|c}
+4 & 1 & 2 & 18 \\
+4 & 4 & 2 & 30 \\
+2 & 3 & 1 & 15
+\end{array} \right]
+$$
+Then, performing GE: 
+$$
+\begin{align}
+\left[\begin{array}{ccc|c}
+4 & 1 & 2 & 18 \\
+2 & 2 & 1 & 15 \\
+2 & 3 & 1 & 15 
+\end{array} \right] & :r_{3}-r_{1} \\
+\left[\begin{array}{ccc|c}
+4 & 1 & 2 & 18 \\
+2 & 2 & 1 & 15 \\
+0 & 1 & 0 & 0 
+\end{array} \right] & : 2r_{2}-r_{1} \\
+\left[\begin{array}{ccc|c}
+ 4 & 1 & 2 & 18 \\
+ 0 & 3 & 0 & 12 \\
+ 0 & 1 & 0 & 0
+\end{array} \right]  & :r_{3}-\frac{1}{3}r_{2} \\
+\left[\begin{array}{ccc|c}
+4 & 1 & 2 & 18 \\
+0 & 3 & 0 & 12 \\
+0 & 0 & 0 & -4 
+\end{array} \right]
+\end{align}
+$$
+We can stop here, as we see that $0=-4$, which is impossible; thus we state that this system is inconsistent.
+* For the row picture, these three planes do not have one common point (or system of intersection). 
+* For the column picture, this represents that for some $\vec{b}$, this does not lie within the column space of some matrix $A$. 
 
 ---
 # Pre-Lecture Notes
