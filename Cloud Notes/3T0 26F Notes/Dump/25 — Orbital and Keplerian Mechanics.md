@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T22:12:19.585-05:00
-edited_seconds: 1410
+updated_at: 2026-11-02T22:19:40.055-05:00
+edited_seconds: 1490
 course: PHY180H1
 tags:
   - PHY180H1
@@ -200,4 +200,35 @@ Consider that *gravity* is a force (and or torque) that solely works radially in
 
 Consider now the angular path. For small displacements, the area between two small increments of time can be modelled as some triangle, where the height is equivalent to the orbital radius, and the height given by our term of velocity. 
 
-Note that $v_{\perp} =v\sin\theta$, therefore $\Delta d_{\perp}=v \Delta t \sin\theta$; then from our assumption above, we fin
+Note that $v_{\perp} =v\sin\theta$, therefore $\Delta d_{\perp}=v_{\perp} \Delta t \sin\theta$; then from our assumption above, we find that: 
+$$
+\begin{align}
+\Delta a = \frac{1}{2}r\Delta d_{\perp}  & = \frac{1}{2}rv_{\perp}\Delta t\sin\theta \\
+ & =\frac{1}{2m}mrv_{\perp} \sin\theta\Delta t  & mrv_{\perp} \sin\theta=L\\
+ & =\frac{L}{2m}\Delta t
+\end{align}
+$$
+Then we see that $\frac{\Delta a}{\Delta t} = \frac{L}{2m}$. If $L$ is held constant according to the Conservation of Angular Momentum, we find that the corresponding Areal Velocity **must** be held constant. 
+## Kepler's Third Law
+Kepler's Third Law states that: 
+> *"The square of the \[orbital\] period is proportional to the cube of the semi-major axis of the orbit*".
+
+Recall that we already defined the concept of the orbital period earlier in this note: 
+$$
+T = 2\pi \sqrt{ \frac{r^{3}}{GM} }
+$$
+Note that this was solved for the case in which our orbit was perfectly circular. In this case, note that the orbital path has the same distance in terms of the Apoapsis and the Periapsis, that is $r_{1}=r_{2} \implies a=\frac{1}{2}2r_{1}=r$, then we find that we can substitute this in lieu of $r$ giving us the following: 
+$$
+\begin{align}
+T  & = 2\pi  \sqrt{ \frac{r^{3}}{GM} } & r=a \\
+ & =2\pi \sqrt{ \frac{a^{3}}{GM} } \\
+ T^{2} & =\frac{4\pi^{2}a^{3}}{GM}&  \\
+\end{align}
+$$
+Rearranging, we find the expression below. Note that the term in front of $a^{3}$ is **constant**. From here, we could actually solve for $a$ trivially: 
+$$
+T^{2} = \frac{4\pi^{2}}{GM}a^{3}
+$$
+$$
+\boxed{\left[ \frac{GMT^{2}}{4\pi^{2}} \right]^{1/3}  = a = \frac{1}{2}(r_{1}+r_{2})}
+$$
