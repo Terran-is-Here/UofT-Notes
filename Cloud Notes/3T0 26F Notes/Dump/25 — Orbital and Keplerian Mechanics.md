@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T17:54:09.987-05:00
-edited_seconds: 600
+updated_at: 2026-11-02T17:58:00.570-05:00
+edited_seconds: 640
 course: PHY180H1
 tags:
   - PHY180H1
@@ -103,5 +103,14 @@ Where $r_{1}$ represents an initial orbit, and $r_{2}$ represents the radius of 
 
 Then the equation above actually resolves as the following: 
 $$
-E = -GMm
+E = -\frac{GMm}{r_{1}+r_{2}}
+$$
+That is, twice the semi-major axis of the transfer orbit; or the sum of the corresponding radii of the planned circular orbits derived within a transfer orbit. Note that this represents the *total energy* of the orbital system: 
+
+$$
+-\frac{GMm}{r_{1}+r_{2}} = U_{g} + E_{k}
+$$
+Recall that $U_{g} = -\frac{GMm}{r}$. In this context, $r$ would represent the initial orbital radius, then: 
+$$
+-\frac{GMm}{r_{1}+r_{2}}
 $$
