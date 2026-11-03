@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-03T09:04:47.996-05:00
-edited_seconds: 260
+updated_at: 2026-11-03T17:24:22.223-05:00
+edited_seconds: 410
 course: ESC103H1
 tags:
   - ESC103H1
@@ -14,6 +14,69 @@ Next: N/A
 
 --- 
 # Lecture Notes
+## Applying Gaussian
+Consider now the following expression: 
+$$
+\begin{align}
+3x+2y+3x = 20 \\
+4x+4y+2z=30 \\
+2x+3y+z=19
+\end{align}
+$$
+Performing gaussian Elimination: 
+$$
+\begin{align}
+\left[\begin{array}{ccc|c}
+3 & 2 & 3 & 20 \\
+4 & 4 & 2 & 30 \\
+2 & 3 & 1 & 19 
+\end{array} \right] & : r_{2}-2r_{3} \\
+\left[\begin{array}{ccc|c}
+3 & 2 & 3 & 20 \\
+0 & -2 & 0 & -8 \\
+2 & 3 & 1 & 19
+\end{array} \right]  & : \frac{1}{3}r_{1} \\
+\left[\begin{array}{ccc|c}
+ 1 & \frac{2}{3} & 1 & \frac{20}{3} \\
+ 0 & -2 & 0 & -8 \\
+ 2 & 3 & 1 & 19
+\end{array} \right] & : -\frac{1}{2}r_{2} \\
+\begin{array}{ccc|c}
+1 & \frac{2}{3} & 1 & \frac{20}{3} \\
+0 & 1 & 0 & 4 \\
+2 & 3 & 1 & 19
+\end{array} 
+\end{align}
+$$
+We know where we would go from here, but this would eventually result in the following matrix $A$, then: 
+$$
+\left[\begin{array}{ccc|c}
+ 1 & 0 & 0 & 3 \\
+ 0 & 1 & 0 & 4 \\
+ 0 & 0 & 1 & 1
+\end{array} \right]
+$$
+Then we see that: 
+$$
+\begin{align}
+x=3 \\
+y=4 \\
+z=1
+\end{align}
+$$
+This implies that: 
+* From the row picture, $(3,4,1)$ is the only point that lies on **all three planes**. 
+* From the column picture, this solution set corresponds to the required scalar coefficients required in a linear combination of our equation terms. 
+However, consider that we could perform other rows to both sides; as we maintain the equality in both sides; we thus need to simply find another plane which fits the same solutions. 
+
+Consider now the following system: 
+$$
+\left[\begin{array}{ccc|c}
+4 & 1 & 2 & 18 \\
+4 & 4 & 2 & 30 \\
+2 & 3 & 1 & 19 
+\end{array} \right]
+$$
 
 ---
 # Pre-Lecture Notes
