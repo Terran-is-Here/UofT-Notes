@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T12:48:57.422-05:00
-edited_seconds: 400
+updated_at: 2026-11-03T08:27:57.529-05:00
+edited_seconds: 410
 course: ESC103H1
 tags:
   - ESC103H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[13 — Ax=0 Via EROs]]
-Next: N/A
+Next: [[15 — Rank, Consistency and Dimensions]]
 
 --- 
 # Lecture Notes
