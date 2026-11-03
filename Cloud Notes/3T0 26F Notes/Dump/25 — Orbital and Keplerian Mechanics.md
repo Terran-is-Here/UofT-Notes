@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T21:43:17.396-05:00
-edited_seconds: 1300
+updated_at: 2026-11-02T22:12:19.585-05:00
+edited_seconds: 1410
 course: PHY180H1
 tags:
   - PHY180H1
@@ -178,3 +178,26 @@ $$
 > Note however that the Hohmann Transfer implicitly assumes $\Delta t \to0$; if it's not equal to zero, the expression above actually evaluates as a path integral in terms of that $g\Delta t$ term on the right there, and is outside the bounds of this course. 
 
 ## Kepler's Second Law 
+Kepler's Second Law states that: 
+> *"A planet sweeps out equal areas in equal times"*. 
+
+In other words, the areal velocity ($\frac{\Delta A}{\Delta t}$) is some constant value. For the proof / analysis of this concept, retake the concept of Angular Momentum, we find that: 
+
+$$
+\vec{L} = \vec{r}\times \vec{p}
+$$
+Consider now resolving $\vec{p}$ into two components: a $\vec{p}_{\perp}$ that is parallel to $\vec{r}$, and $\vec{p}_{t}$, which is tangential to $\vec{r}$; then: 
+$$
+\begin{align}
+\vec{L}  & = \vec{r} \times [\vec{p_{\perp}} + \vec{p}_{t}] \\
+ & =\vec{r} \times \vec{p_{\perp}} + \vec{r}\times \vec{p_{t}}  & \vec{r}\parallel \vec{p_{\perp}} \implies \vec{r}\times \vec{p_{\perp}} =0 \\
+ \vec{L}&  = rp_{t}\sin\theta  & \vec{r}\perp p_{t} \implies \theta=90 \\
+ \vec{L}  & = rmv_{t} 
+ 
+\end{align}
+$$
+Consider that *gravity* is a force (and or torque) that solely works radially inwards; thus we see that this has no effect on the angular momentum of the system. Then we see that the momentum is held constant by the conservation of angular momentum; thus $\bar{L}=L=$ some constant. 
+
+Consider now the angular path. For small displacements, the area between two small increments of time can be modelled as some triangle, where the height is equivalent to the orbital radius, and the height given by our term of velocity. 
+
+Note that $v_{\perp} =v\sin\theta$, therefore $\Delta d_{\perp}=v \Delta t \sin\theta$; then from our assumption above, we fin
