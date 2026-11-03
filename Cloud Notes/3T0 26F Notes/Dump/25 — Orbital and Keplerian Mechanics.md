@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T21:11:55.757-05:00
-edited_seconds: 960
+updated_at: 2026-11-02T21:26:55.028-05:00
+edited_seconds: 1210
 course: PHY180H1
 tags:
   - PHY180H1
@@ -93,7 +93,7 @@ An interesting application of Kepler's First Law arises when we consider the con
 For the purposes of this note (as well as the textbook, since they neglect to do so): We can actually solve for the kinetic energy present in an ellipse as some function of the *semi-major axis* of the Ellipse: 
 
 $$
-E = -\frac{GMm}{2a}
+\boxed{E = -\frac{GMm}{2a}}\tag{1.1}
 $$
 Where $a$ represents the semi-major axis. The semi-major axis represents *half* the distance between the Apoapsis and Periapsis of some rotating body, that is: 
 $$
@@ -138,9 +138,40 @@ $$
 $$
 We note that $\sqrt{ \frac{GM_{s}}{r_{1}} }=v_{i}$, then: 
 $$
-\Delta v = v_{i}\left[ \sqrt{ \frac{2r_{2}}{r_{1}+r_{1}} }-1 \right]
+\boxed{\Delta v = v_{i}\left[ \sqrt{ \frac{2r_{2}}{r_{1}+r_{2}} }-1 \right]}\tag{1.2}
 $$
+
+> [!theorem] Hohmann Transfer Velocity 
+> $$\Delta v = v_{i}\left[ \sqrt{ \frac{2r_{2}}{r_{1}+r_{2}} }-1 \right]$$
+> This equation represents the $\Delta v$ needed to **transfer** from an orbit with radius $r_{1}$ to an orbit with radius $r_{2}$ around some major foci $M$, where $v_{i}$ is the orbital velocity at the original $r_{1}$, that is: 
+> $$v_{i} = \sqrt{ \frac{GM}{r_{1}} }$$
+> Note that however, this does **not** solve for the corresponding second burn needed to circularize. You would need to take the difference of the corresponding final kinetic energy (given by) $(1.1)$ and the corresponding required orbital velocity for $r_{2}$. 
+
+We can test the equation above with an example. Calculate the transfer velocity between Earth and Mars. From the textbook, we get the following sets of astronomical data: 
+* $r_{e}$ = $149.6\times 10^{6}\,km$ --> $149.6 \times 10^{9} m$
+* $r_{m}=227.9 \times 10^{6}\,km$ --> $227.9 \times 10^{9}\,m$
+* $M_{s}=1.99 \times 10^{30}\,kg$ 
+
+Solving for the initial orbital velocity: 
+$$
+v_{1} =\sqrt{ \frac{6.67\times 10^{-11}\times 1.99\times 10^{30}}{149.6\times 10^{9}} } \approx 29786.78690 \frac{m}{s}
+$$
+Thus, solving for the equivalent transfer velocity: 
+$$
+\begin{align}
+\Delta v  & = v_{i}\left[ \sqrt{ \frac{2r_{2}}{r_{1}+r_{2}} }-1 \right] \\
+ & =v_{i}\left[ \sqrt{ \frac{2\times 227.9\times 10^{9}}{149.6\times 10^{9} + 227.9\times 10^{9}} }-1 \right] \\
+ & \approx v_{i}*0.098825381 \\
+ & \approx 29786.78690 * 0.098825381 \\
+ \Delta v& \approx 2944 \frac{m}{s}
+\end{align}
+$$
+
+
+
+
 > Note that we can actually go *one step further with this*. We know that we can relate $\Delta v$ with a rocket's fuel efficiency with the rocket equation, that is: 
 > $$\Delta v=u\ln\left( \frac{m_{f}}{m_{r}} \right)-g\Delta t$$
 > However, this comparison will be not accurate, as we know that at the scales of planetary orbits, $g$ is not constant, and rather some term $f(r)$ as a term of $\frac{GM_{s}}{r^{2}}$ (as a field strength). Theoretically from this however, you could solve for a term of $\Delta t$ with the equation above as the following expression: 
-> $$\frac{1}{g}\left( v_{i}\left[ \sqrt{ \frac{2r_{2}}{r_{1}+r_{1}} }-1 \right]-u\ln\left( \frac{m_{f}}{m_{r}} \right) \right)$$
+> $$-\frac{1}{g}\left( v_{i}\left[ \sqrt{ \frac{2r_{2}}{r_{1}+r_{2}} }-1 \right]-u\ln\left( \frac{m_{f}}{m_{r}} \right) \right)=\Delta t$$
+> 
