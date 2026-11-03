@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T17:58:00.570-05:00
-edited_seconds: 640
+updated_at: 2026-11-02T21:11:55.757-05:00
+edited_seconds: 960
 course: PHY180H1
 tags:
   - PHY180H1
@@ -112,5 +112,35 @@ $$
 $$
 Recall that $U_{g} = -\frac{GMm}{r}$. In this context, $r$ would represent the initial orbital radius, then: 
 $$
--\frac{GMm}{r_{1}+r_{2}}
+-\frac{GMm}{r_{1}+r_{2}} + \frac{GMm}{r_{1}} = \frac{1}{2}mv^{2}
 $$
+So far, we've been setting $M$ as some mass at the foci; considering that in the Solar System, this would be the Sun (particularly for interplanetary trajectories), then we can find the corresponding velocity to transfer from some arbitrary orbit $r_{1}$ to some orbit $r_{2}$ as the following: 
+$$
+\begin{align}
+-\frac{GM_{s}m}{r_{1}+r_{2}} + \frac{GM_{s}m}{r_{1}}   & = \frac{1}{2}mv^{2} \\
+2GM_{s}m\left[ \frac{1}{r_{1}}-\frac{1}{r_{1}+r_{2}} \right] & =mv^{2} \\
+\sqrt{ 2GM_{s} \left[ \frac{1}{r_{1}}-\frac{1}{r_{1}+r_{2}} \right] } & =v \\
+\sqrt{ 2GM_{s} \left[ \frac{r_{2}}{r_{1}(r_{1}+r_{2})} \right]} & =v \\
+\sqrt{ \frac{2GM_{s}r_{2}}{r_{1}(r_{1}+r_{2})} } & =v_{trans}
+\end{align}
+$$
+Note that this corresponds to the total velocity required to obtain this outer-most orbit. To find the corresponding change in velocity required, we compare this velocity with the orbital velocity in a (circular) orbit around $r_{1}$ maintained with respects to $M_{s}$
+$$
+v_{i} = \sqrt{ \frac{GM_{s}}{r_{1}} }
+$$
+Then: 
+$$
+\begin{align}
+\Delta v  & = v_{trans}-v_{i} \\
+ & =\sqrt{ \frac{2GM_{s}r_{2}}{r_{1}(r_{1}+r_{2})} } - \sqrt{ \frac{GM_{s}}{r_{1}} } \\
+ & =\sqrt{ \frac{GM_{s}}{r_{1}} }\left[ \sqrt{ \frac{2r_{2}}{(r_{1}+r_{2})} }-1 \right]
+\end{align}
+$$
+We note that $\sqrt{ \frac{GM_{s}}{r_{1}} }=v_{i}$, then: 
+$$
+\Delta v = v_{i}\left[ \sqrt{ \frac{2r_{2}}{r_{1}+r_{1}} }-1 \right]
+$$
+> Note that we can actually go *one step further with this*. We know that we can relate $\Delta v$ with a rocket's fuel efficiency with the rocket equation, that is: 
+> $$\Delta v=u\ln\left( \frac{m_{f}}{m_{r}} \right)-g\Delta t$$
+> However, this comparison will be not accurate, as we know that at the scales of planetary orbits, $g$ is not constant, and rather some term $f(r)$ as a term of $\frac{GM_{s}}{r^{2}}$ (as a field strength). Theoretically from this however, you could solve for a term of $\Delta t$ with the equation above as the following expression: 
+> $$\frac{1}{g}\left( v_{i}\left[ \sqrt{ \frac{2r_{2}}{r_{1}+r_{1}} }-1 \right]-u\ln\left( \frac{m_{f}}{m_{r}} \right) \right)$$
