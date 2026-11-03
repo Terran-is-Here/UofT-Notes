@@ -42,3 +42,14 @@ Reflection:
 * Wrote Stakeholder interpretations, based on first hand experience and the interview data gathered by Jeffrey. 
 	* I may have written it without full consideration of other secondary sources, which may be a source of weakness. 
 ##
+
+
+---
+## Alpha Release
+### Your Design Concepts
+* How many steps of iteration have your concept gone through? 
+* Have you discarded other ideas previously in the process of eventually deciding to utilize this concept for Alpha Release? 
+* What is the central idea of this design concept? 
+* What sets this concept apart from the other ideas that you have in this current showcase? 
+* Do your design concepts satisfy the corresponding requirements and evaluation criteria that you have set out when interpreting the design brief? 
+* 
