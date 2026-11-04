@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-03T17:46:53.696-05:00
-edited_seconds: 610
+updated_at: 2026-11-03T18:16:55.950-05:00
+edited_seconds: 620
 course: ESC103H1
 tags:
   - ESC103H1
@@ -240,4 +240,4 @@ r + n - r  & = n  \\
 \text{rank}(A)+\text{nullity}(A) & =n
 \end{align}
 $$
-Which is what we define as the Rank-Nullity Theorem as Desired.)
+Which is what we define as the Rank-Nullity Theorem as Desired.
