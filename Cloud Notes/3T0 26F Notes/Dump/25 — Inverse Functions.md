@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-01T15:16:12.455-05:00
-edited_seconds: 100
+updated_at: 2026-11-04T10:35:34.692-05:00
+edited_seconds: 110
 course: ESC194H1
 tags:
   - ESC194H1
