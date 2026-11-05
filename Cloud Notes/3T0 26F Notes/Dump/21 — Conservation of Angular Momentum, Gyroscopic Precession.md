@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-05T10:43:13.209-05:00
-edited_seconds: 620
+updated_at: 2026-11-05T11:01:02.500-05:00
+edited_seconds: 710
 course: PHY180H1
 tags:
   - PHY180H1
@@ -19,7 +19,14 @@ Next: [[22 and 23 — Static Equilibrium and Elasticity]]
 ## Conservation of Angular Momentum (LEC) 
 I won't fully write more into this section, but consider if the *direction* of a component of angular momentum of the system changes from it's initial conditions, then the corresponding value of that term's angular momentum changes. Recall that $L=r\times \omega$, then if the direction $\omega$ changes, $L$'s sign changes. Thus for CoAM to hold true, another component must take up an angular component. (e.g. flipping a spinning thing causes the thing that is holding it to spin, to also spin.)
 
+### Gyroscopic Precession
+Gyroscopic Precession arises from the concept of how gravity acts on a rotating object; that is it acts **directly onto the center of mass** of the corresponding object. Thus, given some $\vec{r}$ from a pivot / rotational center (i.e. where a gyroscope is rotating connected to), a torque is applied $\tau$, where the direction is governed by $\tau=r\times mg$ (depending on the direction, remember right hand rules). 
 
+In other words, precession arises from the conservation of momentum in one axis. Consider now that this torque rotates the entire rotational system around it. Consider now as well that this internal rotational system experiences no net torque on it's own, and thus conservation of angular momentum must hold. 
+
+To find out the corresponding terms pertaining to the angular velocity; consider now that the system has a term of $L$ from it's own internal rotation, as well as a term of $L$ arising from the torque applied by gravity across *another* rotational axis, the angular momentum of the overall system is the sum of these two angular momentum components. 
+
+Angular momentum is conserved in the rotational system, as the axis itself is shifted. 
 
 ---
 # Pre-Lecture Notes

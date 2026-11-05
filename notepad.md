@@ -12,5 +12,5 @@ $$
 Then: 
 $$
 0.04 * \frac{20\pi}{3} = 2*0.04*\omega'\\
-\frac{10\pi}{}
+\frac{10\pi}{3} = \omega'
 $$
