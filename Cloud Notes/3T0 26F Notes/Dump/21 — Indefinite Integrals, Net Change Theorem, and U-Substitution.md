@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-05T14:33:58.388-05:00
-edited_seconds: 1730
+updated_at: 2026-11-05T14:51:17.474-05:00
+edited_seconds: 1990
 course: ESC194H1
 tags:
   - ESC194H1
@@ -163,9 +163,91 @@ $$
 \int \frac{1}{2}u^{-1/2}\,du = \frac{1}{2}\int u^{-1/2} = u^{1/2}+C = \sqrt{ x^{2}+4 }+C
 $$
 
-Take the foll
+Take the following: 
+$$
+\int x \csc x^{2}\cot x^{2}
+$$
+Letting $u=x^{2}\to du \to 2xdx$, then: 
+$$
+\frac{1}{2}\int \csc u\cot u \,du = -\frac{1}{2}\csc u + C = -\frac{1}{2}\csc x^{2}+C
+$$
+> [!ila] Idea
+> Note that U-Sub often requires some form of pattern recognition; that is noting when a case where you *can* use u-sub exists. 
 
+### Definite Integrals 
+Consider the following expression: 
+$$
+\int_{0}^{1}x\sqrt{ x^{2}+1 }\,dx
+$$
+Consider taking U-sub, we see that $u=x^{2}+1 \to du =2xdx$, then: 
+$$
+\int \frac{1}{2}u^{1/2} = \frac{1}{2}\int u^{1/2}\,du = \frac{1}{3}u^{3/2} + C = \frac{(x^{2}+1)^{3/2}}{3}+C
+$$
+Then from here, we simply evaluate this from $0,1$. Note that with the change in variable, we can consider it with a change in the bounds in terms of that variable: 
+$$
+\int_{a}^{b}f(g(x))g'(x) = \int_{g(a)}^{g(b)}f(u)\,du
+$$
+This is known as the *change of variables* formula. This can be proved trivially: 
+Let $F'(x)=f(x)$, then note the following: 
+$$
+\int_{a}^{b}f(g(x))g'(x) \,dx = \int_{a}^{b}F'(g(x))g'(x)\,dx = [F(g(x))]^{b}_{a} \tag{from u-sub}
+$$
+Then: 
+$$
+= F(g(b))-F(g(a)) = [F(u)]^{g(b)}_{g(a)} = \int_{g(a)}^{g(b)}f(u)\,du
+$$
+### Examples
+Consider the following: 
+$$
+\int_{0}^{1}x\sqrt{ x^{2}+1 }\,dx
+$$
+Note that $u=x^{2 }+1$, then $u(0)=1,u(1)=2$, then: 
+$$
+\frac{1}{2}\int_{0}^{2}u^{-1/2}\,du = \frac{2\sqrt{ 2 }}{3} - \frac{1}{3}
+$$
+Note that **it is very important that you change the corresponding bounds**. 
+$$
+\int x^{2}(2x+1)^{4}\,dx
+$$
+Note the substitution of $u=2x+1$, then $du=2dx$ then $x=\frac{1}{2}(u-1)$, thus: 
+$$
+\frac{1}{4}\int(u-1)^{2}u^{4} \frac{1}{2}du = \frac{1}{8}\int(u-1)^{2}u^{4} \,du = \frac{1}{8}\int(u^{6}-2u^{5}+u^{4})\,du
+$$
+then: 
+$$
+=\frac{1}{8}\left[ \frac{u^{7}}{7} - \frac{2u^{6}}{6} + \frac{u^{5}}{5} \right] + C\\
+=\frac{1}{8}\left[ \frac{(2x+1)^{7}}{7} - \frac{(2x+1)^{6}}{3} + \frac{(2x+1)^{5}}{5} \right] +C
+$$
 
+Consider now the following expression: 
+$$
+\int_{1}^{3}2x\sqrt{ x-1 }\,dx
+$$
+Let $u(x) = x-1$, then $x=u+1$, then $du=dx$, then: 
+$$
+\int_{0}^{2}2(u+1)u^{1/2}\,du
+$$
+Then: 
+$$
+=2\int_{0}^{2}u^{3/2}+u^{1/2}\,du\dots
+$$
+You can solve this integral from here. 
+
+## Symmetry
+Definite integrals have the following properties relating to symmetry: 
+* If $f$ is odd on a symmetric interval, then $\int_{-a}^{a}f(x)\,dx = 0$
+* If $f$ is even on a symmetric interval, then $\int_{-a}^{a}f(x)\,dx = 2\int_{0}^{a}f(x)\,dx$ 
+### Examples
+For instance, take the following: 
+$$
+\int_{-\pi}^{\pi}\sin(x)\,dx = 0
+$$
+(As $\sin(x)$ is odd)
+Additionally: 
+$$
+\int_{\frac{\pi}{2}}^{\pi/2}\cos(x)\,dx = \int_{0}^{\pi/2}\cos(x)\,dx = 2
+$$
+As $\cos(x)$ is even. 
 
 ---
 # Pre-Lecture Notes

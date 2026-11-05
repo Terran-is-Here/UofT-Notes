@@ -1,11 +1,11 @@
 ---
-updated_at: 2026-10-29T18:17:07.102-04:00
-edited_seconds: 460
+updated_at: 2026-11-05T14:53:34.268-05:00
+edited_seconds: 490
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 22
-Lecture Date: 2026-11-05
+Lecture Date: 2026-11-06
 Week: 8
 ---
 Hub: [[ESC194 Hub]]
@@ -16,6 +16,20 @@ Next: [[23 — Volumes]]
 > [[19 — The Definite Integral]]
 --- 
 # Lecture Notes
+
+## Areas Between Curves (LEC)
+So far, we've been considering the area under a curve as the area between some function $f$ and some axis (either y, or x, etc.). We can generalize this to take the area between *two* curves. 
+
+Let $f(x),g(x)$ exist within a closed interval $x\in[a,b]$. We now want to find the area between these two curves. Let us do this by breaking up the x axis in terms of intervals, etc: 
+
+$$
+\Delta x = \frac{b-a}{n}
+$$
+Consider now that the height of a rectangle is given to us by $f(x)-g(x)$ (or in other words, the difference in the heights of the corresponding functions); thus the area is given to us by the following: 
+$$
+\Delta A_{i} =(f(x^{*}_{i})-g(x^{*}))
+$$
+
 
 ---
 # Pre-Lecture Notes
