@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-27T12:16:05.743-04:00
-edited_seconds: 570
+updated_at: 2026-11-05T10:43:13.209-05:00
+edited_seconds: 620
 course: PHY180H1
 tags:
   - PHY180H1
@@ -16,6 +16,10 @@ Next: [[22 and 23 — Static Equilibrium and Elasticity]]
 > [[15 — Conservation of (Translational) Momentum, Collisions]]
 --- 
 # Lecture Notes
+## Conservation of Angular Momentum (LEC) 
+I won't fully write more into this section, but consider if the *direction* of a component of angular momentum of the system changes from it's initial conditions, then the corresponding value of that term's angular momentum changes. Recall that $L=r\times \omega$, then if the direction $\omega$ changes, $L$'s sign changes. Thus for CoAM to hold true, another component must take up an angular component. (e.g. flipping a spinning thing causes the thing that is holding it to spin, to also spin.)
+
+
 
 ---
 # Pre-Lecture Notes

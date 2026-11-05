@@ -1,28 +1,16 @@
 $$
-\begin{align}
-\int(3x^4)^8 * x^3 \,dx
-\end{align}
+I_{0} = \frac{1}{2}Mr^{2 }= \frac{1}{2}(2)(0.2)^{2} = 0.04
 $$
+$\omega= \frac{20\pi}{3}$ rad/s, then 
 $$
-u=3x^{4}, du=12x^{3}\,dx \implies \frac{du}{12}=x^{3}dx
+I_{0}\omega_{0} = I'\omega'
 $$
+Consider now the disk dropped ontop: 
 $$
-\begin{align}
- & =\int u^{8} * \frac{1}{12} \,du \\
- &  =\frac{1}{12}\int u^{8} \,du \\
- &  = \frac{1}{12} \frac{u^9}{9} + C  \\
- &  =\frac{(3x^{4})^{9}}{108} + C \dots
-\end{align}
+I_{d} = mR^{2} = 0.04^{2}
 $$
-
-
+Then: 
 $$
-\int 6561x^{35}\,dx
-$$
-
-$$
-\begin{align}
-\int_{a}^{b} f'(g(x))g'(x)\,dx = f(g(b))-f(g(a))  \\
-\int_{g(a)}^{g(b)}f(u)\,du =f(g(b))-f(g(a))
-\end{align}
+0.04 * \frac{20\pi}{3} = 2*0.04*\omega'\\
+\frac{10\pi}{}
 $$
