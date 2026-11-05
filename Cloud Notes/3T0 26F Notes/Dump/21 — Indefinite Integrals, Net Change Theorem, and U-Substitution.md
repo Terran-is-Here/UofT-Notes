@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-05T14:13:42.375-05:00
-edited_seconds: 1380
+updated_at: 2026-11-05T14:33:58.388-05:00
+edited_seconds: 1730
 course: ESC194H1
 tags:
   - ESC194H1
@@ -80,8 +80,91 @@ v(t) = t^{2} -2t - 3
 $$
 Consider an object as a function of time, and this represents velocity; then we note $v(t) = s'(t)$, or that is $v(t) = \frac{ds}{dt}$, then: 
 $$
-\int_{2}^{4}
+\int_{2}^{4}v(t)\,dt = \Delta s
 $$
+Substituing in, then: 
+$$
+\int_{2}^{4}[t^{2}-2t-3]\,dt = \left[ \frac{t^{3}}{3}-t^{2}-3t \right]^{4}_{2} = \frac{2}{3} =\Delta s
+$$
+
+Consider now the following function. Consider a charged particle undergoing acceleration in a field: 
+$$
+a(t) = 3-t
+$$
+Note that $a=v'(t)=s''(t)$, then. $s(0)=0$, and $s(3)=-1$. Integrating $a(t_{0})$ twice gives us x(t), which is: 
+$$
+x(t) = -\frac{t^{3}}{6} + \frac{3}{2}t^{2} + C_{1}t + C_{2}
+$$
+Note that with $s(0)=0 \implies C_{2}=0$, and $s(3) \implies C_{1}=-4$, thus the expression is: 
+$$
+x(t) = -\frac{1}{6}t^{3} + \frac{3}{2}t^{2} -4t 
+$$
+Consider now, how far has our particle travelled in total? Consider now the pure distance; then: 
+$$
+\Delta x = \int_{0}^{6}|v(t)|\,dt
+$$
+As $v(t) = -\frac{1}{2}t^{2}+3t - 4=\frac{dx}{dt}$ then: 
+$$
+\begin{align}
+=\int_{0}^{6}|-\frac{1}{2}(t-2)(t-4)|\,dx
+\end{align}
+$$
+(Function was simply factored). Due to the absolute function present inside, we have to take this in terms of the intervals $t=2,t=4$, as well as the corresponding intervals to find the resultant signs we integrate with respects to: 
+* $t=2,v=0 \implies x=-\frac{4}{3}$
+* $t=4, v=0 \implies x=-\frac{2}{3}$
+* $t\in(0,2), v<0$
+* $t\in(2,4), v>0$
+* $t\in(4,6), v<0$
+Thus, breaking up the interval into three based on our intervals, then: 
+$$
+\Delta x = [-x(t)]^{2}_{0} + [x(t)]^{4}_{2} + [-x(t)]^{6}_{4} = \frac{22}{3}
+$$
+
+## Substitution Rule (LEC) 
+The Substitution Rule is equivalent to reversing the means that we do the chain rule, that is, recall that: 
+$$
+\frac{d}{dx}f(g(x)) = f'(g(x))g'(x)
+$$
+Then, in reverse: 
+$$
+\int f'(g(x))g'(x) \,dx = f(g(x))
+$$
+We let $g(x)=u$, then $du = g'(x)dx$, then: 
+$$
+\int f(u)\,du = F(u)+C \to F(g(x))+C
+$$
+As taking the chain rule of $F(u) \to F'(u)du = F'(g(x))g'(x)$, as expected. 
+### Examples 
+$$
+\int(x^{3} +2)^{2}x^{2}\,dx
+$$
+Note that $x^{3}+2 =u$, then we see that $du = 3x^{2}dx$, then $\frac{du}{3}=x^{2}dx$, then: 
+$$
+\begin{align}
+\int u^{2} \frac{1}{3}du = \frac{1}{3}\int u^{2}\,du = \frac{1}{3}\left[ \frac{1}{3}u^{3} \right]+C = \frac{(x^{3}+2)^{3}}{9} + C
+\end{align}
+$$
+
+Or: take the following: 
+$$
+\int \cos ^{3}x\sin x\,dx
+$$
+Note that $u=\cos x,du=-\sin x\,dx$, then: 
+$$
+\int-u^{3}\,du = -\frac{u^{4}}{4}+C = - \frac{\cos^4(x)}{4} + C
+$$
+
+take the following: 
+$$
+\int \frac{x}{\sqrt{ x^{2}+4 }} \,dx
+$$
+Note that $u=x^{2}+4 \to du=2xdx$, then: 
+$$
+\int \frac{1}{2}u^{-1/2}\,du = \frac{1}{2}\int u^{-1/2} = u^{1/2}+C = \sqrt{ x^{2}+4 }+C
+$$
+
+Take the foll
+
 
 
 ---
