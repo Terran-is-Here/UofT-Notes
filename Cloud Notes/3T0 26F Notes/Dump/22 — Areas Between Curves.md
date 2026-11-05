@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-05T14:53:34.268-05:00
-edited_seconds: 490
+updated_at: 2026-11-05T16:11:11.459-05:00
+edited_seconds: 530
 course: ESC194H1
 tags:
   - ESC194H1
@@ -27,8 +27,19 @@ $$
 $$
 Consider now that the height of a rectangle is given to us by $f(x)-g(x)$ (or in other words, the difference in the heights of the corresponding functions); thus the area is given to us by the following: 
 $$
-\Delta A_{i} =(f(x^{*}_{i})-g(x^{*}))
+\Delta A_{i} =(f(x^{*}_{i})-g(x^{*}_{i}))\Delta x_{i}
 $$
+We know that summing this up from a to b gives us the sum, and taking the limit of sums gives us a better approximation: 
+$$
+\lim_{ ||P|| \to 0 } \sum_{i=1}^{N} (f(x^{*}_{i})-g(x^{*}_{i}))\Delta x_{i} = \int_{a}^{b}f(x)-g(x)\,dx
+$$
+Where we note this is the Reimann Sum of $f(x)-g(x)$, thus taking the limit gives us the following definite integral. Note that this is true if and only if $f(x)>g(x),x\in[a,b]$. 
+
+Note that we can break this up as a set of sums, then: 
+$$
+\int_{a}^{b}f(x)\,dx - \int_{a}^{b}g(x)\,dx
+$$
+Where this represents the difference between two areas under their corresponding curves. 
 
 
 ---
