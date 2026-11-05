@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T12:08:04.386-05:00
-edited_seconds: 1360
+updated_at: 2026-11-05T14:13:42.375-05:00
+edited_seconds: 1380
 course: ESC194H1
 tags:
   - ESC194H1
@@ -64,6 +64,24 @@ $$
 To solve for $c$, we simply evaluate at $f(0)$, thus we see that $C=5$, thus $f(x) = x^{3} + x^{2} + 5$. 
 
 > Continued: 11-05
+## Net Change (LEC) 
+Consider the following expression: 
+$$
+\int_{a}^{b}f(x)\,dx = \int_{a}^{b}F'(x) \,dx
+$$
+We can express this as: 
+$$
+=\int_{a}^{b} \frac{df}{dx}dx \to \sum df
+$$
+(Note we don't fully cancel out the differentials, but this represents us with a central idea: The integral is equivalent to the net change of the function over such an interval). For instance: 
+
+$$
+v(t) = t^{2} -2t - 3
+$$
+Consider an object as a function of time, and this represents velocity; then we note $v(t) = s'(t)$, or that is $v(t) = \frac{ds}{dt}$, then: 
+$$
+\int_{2}^{4}
+$$
 
 
 ---
