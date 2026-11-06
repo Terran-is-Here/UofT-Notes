@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-05T16:11:11.459-05:00
-edited_seconds: 530
+updated_at: 2026-11-06T13:26:43.173-05:00
+edited_seconds: 750
 course: ESC194H1
 tags:
   - ESC194H1
@@ -40,7 +40,59 @@ $$
 \int_{a}^{b}f(x)\,dx - \int_{a}^{b}g(x)\,dx
 $$
 Where this represents the difference between two areas under their corresponding curves. 
+### Examples
+Consider now the following two expressions: 
+* $f(x)=4-x^{2}$, $g(x) = x+2$
+What is the area trapped within these two curves? Solving for the points of intersection, we see that $2-x^{2}-x = 0 \implies x= 1, -2$ (as $-x^{2}-x+2 \to -x(x-1)(x+2)$)
 
+Then the integral will be bounded from $-2,1$. Consider now that $f(x)>g(x), x\in[-2,1]$, then: 
+$$
+\begin{align}
+\int_{-2}^{1}[4-x^{2}-x-2]\,dx  & =  \int_{-2}^{1}[-x^{2}-x+2]\,dx \\
+ & = \left[ -\frac{x^{3}}{3} - \frac{x^{2}}{2} + 2x \right]^1_{-2} = \frac{9}{2}
+\end{align}
+$$
+
+Consider now the following expressions: 
+* $f^{*}(x) = f(x)-4 = -x^{2}$
+* $g^{*}(x) = g(x)-4 = x-2$, 
+Where these are simply our functions vertically shifted down; then we see that this simply resolves to the same area, as: 
+$$
+\int_{-2}^{1}[f(x)-4-g(x)+4]\,dx = \int_{-2}^{1}[f(x)-g(x)]\,dx = \frac{9}{2}
+$$
+As the terms in the constants cancel out; this is true for any constant. 
+
+Consider now the following functions: 
+* $y=\frac{2x}{\pi}$
+* $y=\sin(x)$
+What is the area trapped between these two functions? First, note that this represents two areas. Consider now the points of intersection: 
+* $(0,0),\left( -\frac{\pi}{2},-1 \right), (\frac{\pi}{2},1)$. 
+Note that for the interval of $-\frac{\pi}{2},0$, $\frac{2x}{\pi}$ is grater than $\sin \pi$, and the opposite is true for the interval between $\frac{0,\pi}{2}$. We then consider this as breaking down the following set of integrals: 
+
+$$
+\begin{align}
+A & =\int_{-\frac{\pi}{2}}^{0}\left[ \frac{2x}{\pi}-\sin x \right]\,dx + \int_{0}^{\pi/2}\left[ \sin(x)-\frac{2x}{\pi} \right]\,dx \\
+ & =\left[ \frac{x^{2}}{\pi}+\cos x \right]^{0}_{-\frac{\pi}{2}} + \left[ -\cos(x)-\frac{x^{2}}{\pi}  \right]^{\pi/2}_{0} \\
+ & =2-\frac{\pi}{2}
+\end{align}
+$$
+We can also consider this as the following: 
+$$
+\int_{a}^{b}|f(x)-g(x)|\,dx
+$$
+As we broke it up into intervals, we can express it in terms of calculations as the following expression. 
+### Change of Variables
+To ease the analysis, we can simply change the variable in which we are integrating with respects to. For instance, consider the following two functions: 
+* $x=g(y)=y^{2}-4y$
+* $x=f(y)=2y-y^{2}$
+Consider the points of intersection; then where $x,y$ are equal; then these are $(0,0),(-3,3)$. Thus we integrate from $0,3$ on the y axis; then: 
+$$
+\begin{align}
+A & =\int_{0}^{3} 2y-y^{2}  - (y^{2}-4y)\,dy \\
+ & =\int_{0}^{3}2y - y^{2} - y^{2} + 4y \,dy = \int_{0}^{3}-2y^{2} + 6y \,dy \\
+ & =\left[ -\frac{2}{3}y^{3} + 3y^{2} \right]^3 _{0} = 9
+\end{align}
+$$
 
 ---
 # Pre-Lecture Notes

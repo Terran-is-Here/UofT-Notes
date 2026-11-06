@@ -1,11 +1,11 @@
 ---
-updated_at: 2026-11-01T14:00:38.739-05:00
-edited_seconds: 760
+updated_at: 2026-11-06T13:30:51.515-05:00
+edited_seconds: 790
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 23
-Lecture Date: 2026-10-29
+Lecture Date: 2026-11-06
 Week:
 ---
 Hub: [[ESC194 Hub]]
@@ -15,6 +15,17 @@ Next: [[24 — Volumes by Cylindrical Shells and Average Function Values]]
 > Section 5.2 of the Stewart Textbook. 
 --- 
 # Lecture Notes
+## Volumes (LEC) 
+Consider a 3d shape $S$ with a fixed cross-sectional area $A$. Consider now taking some slice of $\Delta x$ of this 3d shape, where this is associated by some cross-sectional area, then we see that:
+$$V_{i} = A\Delta x_{i}$$
+Consider now that the volume of such a shape is equivalent to summing all of these terms up, and consider that this approximation improves as $||\Delta x|| \to 0$, then we see that: 
+$$
+\int_{a}^{b}A(x)\,dx
+$$
+Where $A(x)$ corresponds to a function of the cross-section of a function. Consider this like an extrude in CAD 
+
+
+
 
 ---
 # Pre-Lecture Notes
