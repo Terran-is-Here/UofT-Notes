@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-06T13:50:28.856-05:00
-edited_seconds: 1100
+updated_at: 2026-11-06T13:58:40.808-05:00
+edited_seconds: 1230
 course: ESC194H1
 tags:
   - ESC194H1
@@ -86,7 +86,33 @@ $$
 ## Solids of Revolution (LEC) 
 We consider the concept of a *solid of rotation*, where we rotate some region $\mathcal{R}$ around some axis. Consider if we rotated this around an axis, then we can express this as a cylinder with a cross-section proportional to a circle, with a radius given by our function at some point, that is: 
 $$
-A
+A_{i} = \pi f(x_{i})^{2}
+$$
+Taking the volume is simply taking the integral of this with respects to $x$ (or our axis of choice), then: 
+$$
+V = \pi \int_{a}^{b}f(x)^{2}\,dx
+$$
+Note that this assumes that our surface is a *perfect* disk; thus we notate this as the *disk method* around the x axis. 
+
+### Example
+> Consider the following. Take the area of a cone. Let the apex be on $x=0$, and the height of the cone being some term $h$, then let the radius at the bottom be defined as some term $r$. 
+
+From this, we can see that $y=\frac{r}{h}x$ (from a line), then simply integrate this using the disk method: 
+$$
+\begin{align}
+V & = \pi \int_{0}^{h}\left( \frac{r}{h}x \right)^{2}\,dx \\
+ & =\frac{\pi r^{2}}{h^{2}}\int_{0}^{h}x^{2}\,dx =\frac{\pi r^{2}}{h^{2}}\left[ \frac{x^{3}}{3} \right]^{h}_{0} =\frac{1}{3}\pi r^{2}h
+\end{align}
+$$
+
+> Consider the curve of $y=2-x^{2}$, $x\in[0,2]$. 
+
+Note that at $x=\sqrt{ x }$, this dips below the $x$ axis. Note that this does not matter as $y\to y^{2}$ in our expression, then the sign disappears, thus: 
+$$
+\begin{align}
+V & =\int_{0}^{2}(2-x^{2})^{2}\,dx = \int_{0}^{2}4-4x^{2}+x^{4}\,dx \\
+ & =\left[ 4x - \frac{4}{3}x^{3} + \frac{x^{5}}{5} \right]_{0}^{2} = \frac{\pi 56}{15}
+\end{align}
 $$
 
 
