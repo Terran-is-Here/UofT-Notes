@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-06T13:30:51.515-05:00
-edited_seconds: 790
+updated_at: 2026-11-06T13:50:28.856-05:00
+edited_seconds: 1100
 course: ESC194H1
 tags:
   - ESC194H1
@@ -24,7 +24,70 @@ $$
 $$
 Where $A(x)$ corresponds to a function of the cross-section of a function. Consider this like an extrude in CAD 
 
+### Example(s)
+> Consider now taking the area of a square pyramid; with a square base with a width of $r$, and of height $h$. Consider now, what is the corresponding area of $A$ as some function of $x \to r$? We can take square slices, but we need to figure out what the corresponding side length is! 
 
+Consider that as $x\to h$, $\ell=r$, then $\ell=\frac{rx}{h}$. (Or as the rise over run of that value), then: 
+$$
+A(x) = \ell^{2} = \left[ \frac{rx}{h} \right]^{2}
+$$
+Then integrating with respects to the following, we see that: 
+$$
+\begin{align}
+V  & =\int_{0}^{h}\left[ \frac{rx}{h} \right]^{2}\,dx \\
+ & = \int_{0}^{h} \frac{r^{2}x^{2}}{h^{2}}\,dx = \frac{r^{2}}{h^{2}}\int_{0}^{h}x^{2}\,dx \\
+ & =\frac{r^{2}}{h^{2}}\left[ \frac{x^{3}}{3} \right]^{h}_{0} =\frac{r^{2}}{h^{2}}\left[ \frac{h^{3}}{3} \right] = \frac{hr^{2}}{3}
+\end{align}
+$$
+
+> Consider now the following example, calculate the volume of a sphere. 
+
+Since we are taking the volume of a sphere, we know that we can define the cross-section as some area of a circle, that is some $\pi r^{2}$, how do we define $r$? 
+If our sphere has a radius of $R$, and let it lie on an $x$ axis then from Pythagorean Theorem, we see that $r=\sqrt{ R^{2}-x^{2} }$, then: 
+
+$$
+A(x) =\pi(R^{2}-x^{2}) = \pi R^{2} - x^{2}
+$$
+Integrating, then: 
+$$
+\begin{align}
+V & =\int_{-R}^{R}\pi R^{2}-x^{2}\,dx \\
+ & =\left[ \pi R^{2}x - \frac{x^{3}}{3} \right]_{-R}^{R} = \frac{4}{3}\pi R^{3}
+\end{align}
+$$
+
+> Consider now the more interesting example: 
+> Take the area of a Tetrahedron.
+
+The height of a tetrahedron can be defined as some term of $h$ (i.e. a d4), Then consider that the area of the triangle below is represented by an equilateral triangle, then: 
+
+$$
+b^{2} = a^{2}-\left( \frac{a}{2} \right)^{2} \implies b=\frac{a\sqrt{ 3 }}{2}
+$$
+Then, considering the vertical cross-section from some value $h$ to $\frac{a\sqrt{ 3 }}{2}$; The line from the vertical $h$ to $x = \frac{a\sqrt{ 3 }}{2}$ represents the corresponding height of the rectangles, then: 
+
+$$
+P = h\left( 1- \frac{x}{\frac{a\sqrt{ 3 }}{2}} \right)
+$$
+This represents the height of our triangle. Considering now the width back in our x-axis view, then: 
+$$
+W = a\left( 1-\frac{x}{\frac{a\sqrt{ 3 }}{2}} \right)
+$$
+Then, recall that the area of a triangle is half the base times height, then: 
+$$
+\begin{align}
+V & =\int_{0}^{a\sqrt{ 3 }/2} \frac{1}{2}PW \,dx \\
+ & =\int_{0}^{a\sqrt{ 3 }/2} \frac{1}{2}a\left( 1-\frac{x}{\frac{a\sqrt{ 3 }}{2}} \right)h\left( 1-\frac{x}{\frac{a\sqrt{ 3 }}{2}} \right)\,dx \\
+ & =\frac{1}{2}ah \int_{0}^{a\sqrt{ 3 }/2}\left( 1-\frac{x}{\frac{a\sqrt{ 3 }}{2}} \right)^{2}\,dx \\
+ & =\frac{1}{2}ah \int_{0}^{a\sqrt{ 3 }/2}\left( 1+\frac{4}{\sqrt{ 3 }a}x + \frac{4}{3a^{2}}x^{2} \right)\,dx \\
+ &  =\frac{1}{2}ah \left[ x + \frac{2}{\sqrt{ 3 }a}x^{2} + \frac{4}{9a^{2}}x^{3} \right]_{0}^{a\sqrt{ 3 }/2} = \frac{a^{2}h\sqrt{ 3 }}{12}
+\end{align}
+$$
+## Solids of Revolution (LEC) 
+We consider the concept of a *solid of rotation*, where we rotate some region $\mathcal{R}$ around some axis. Consider if we rotated this around an axis, then we can express this as a cylinder with a cross-section proportional to a circle, with a radius given by our function at some point, that is: 
+$$
+A
+$$
 
 
 ---
