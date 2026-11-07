@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-07T12:13:37.831-05:00
-edited_seconds: 1320
+updated_at: 2026-11-07T12:25:17.530-05:00
+edited_seconds: 1340
 course: PHY180H1
 tags:
   - PHY180H1
@@ -68,14 +68,14 @@ $$
 \begin{align}
 mg\sin\theta -\frac{Ia}{r^{2}}  & = ma \\
 mg\sin\theta- \frac{[X]mr^{2}a}{r^{2}}  & =ma \\
-g\sin\theta - [X]a & =ma \\
-g\sin\theta  & =(m+[X])a \\
-\frac{g\sin\theta}{(m+[X])}  & =a
+g\sin\theta - [X]a & =a \\
+g\sin\theta  & =(1+[X])a \\
+\frac{g\sin\theta}{(1+[X])}  & =a
 \end{align}
 $$
 Then, to solve for the angular acceleration, recall that $\alpha=-\frac{a}{r}$, then: 
 $$
--\frac{g\sin\theta}{r(m+[X])} = \alpha
+-\frac{g\sin\theta}{r(1+[X])} = \alpha
 $$
 > [!ila] In Lecture Addendum
 > By generalizing $I$ to any set of $[X]mr^{2}$ (as we know this is what normally arises dimensionally for it, where we obtain some value of $mr^{2}$ and some corresponding dimensionless constant $[X]$), then we see that this actually applies to significantly more equations than what we solved in the pre lecture notes. 
@@ -87,9 +87,9 @@ Since we now know $a$; we can back substitute to solve for $\mu$:
 $$
 \begin{align}
 \mu mg\cos\theta  & = \frac{Ia}{r^{2}}  \\
-\mu mg\cos\theta  & =\frac{[X]mr^{2}}{r^{2}}\left( \frac{g\sin\theta}{(m+[x])} \right) \\
- \mu \cos\theta & =\frac{[X]\sin\theta}{m+[x]} \\
- \mu & =\frac{[X]\tan\theta}{m+[X]}
+\mu mg\cos\theta  & =\frac{[X]mr^{2}}{r^{2}}\left( \frac{g\sin\theta}{(1+[x])} \right) \\
+ \mu \cos\theta & =\frac{[X]\sin\theta}{1+[x]} \\
+ \mu & =\frac{[X]\tan\theta}{1+[X]}
 \end{align}
 
 $$
