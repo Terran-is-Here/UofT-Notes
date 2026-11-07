@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T20:07:29.451-04:00
-edited_seconds: 580
+updated_at: 2026-11-06T16:39:48.334-05:00
+edited_seconds: 600
 course: PHY180H1
 tags:
   - PHY180H1
@@ -19,6 +19,14 @@ Next: [[24 — Gravitation]]
 > This note is the combination of the entire chapter, since most of this is concepts discussed from CIV102 anyways. 
 --- 
 # Lecture Notes
+## Center of Mass & Base of Support
+Recall that from an earlier mass, the CoM is defined as the average of the mass-distance relation: 
+$$
+x_{com}=\frac{1}{M}\int x\,dm
+$$
+In terms of tipping and the base of support; the base of support is equivalent to the area of contact with the flat surface on the floor. 
+
+If the CoM lies over the flat base, then our object will not tip over. If an object is outside the Base of Support; then this will tip over 
 
 ---
 # Pre-Lecture Notes
