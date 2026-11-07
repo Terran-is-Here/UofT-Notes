@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T16:38:51.929-05:00
-edited_seconds: 1300
+updated_at: 2026-11-07T12:13:37.831-05:00
+edited_seconds: 1320
 course: PHY180H1
 tags:
   - PHY180H1
@@ -82,7 +82,17 @@ $$
 > 
 > Note that in our notes, we have the Moment of Inertia for a solid  disk as $I=\frac{mr^{2}}{2}$, then we see $[X]=\frac{1}{2}$, then following the equation above, we arise at the same equation that we did previously: 
 > $$\frac{g\sin\theta}{1.5} = \frac{2g\sin\theta}{3}=a$$
+### Extension
+Since we now know $a$; we can back substitute to solve for $\mu$: 
+$$
+\begin{align}
+\mu mg\cos\theta  & = \frac{Ia}{r^{2}}  \\
+\mu mg\cos\theta  & =\frac{[X]mr^{2}}{r^{2}}\left( \frac{g\sin\theta}{(m+[x])} \right) \\
+ \mu \cos\theta & =\frac{[X]\sin\theta}{m+[x]} \\
+ \mu & =\frac{[X]\tan\theta}{m+[X]}
+\end{align}
 
+$$
 
 ---
 # Pre-Lecture Notes
