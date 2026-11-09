@@ -1,11 +1,11 @@
 ---
-updated_at: 2026-11-01T15:14:04.274-05:00
-edited_seconds: 900
+updated_at: 2026-11-09T11:09:12.301-05:00
+edited_seconds: 930
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 24
-Lecture Date: 2026-11-01
+Lecture Date: 2026-11-09
 Week:
 ---
 Hub: [[ESC194 Hub]]
@@ -17,6 +17,11 @@ Next: [[25 — Inverse Functions]]
 > 
 --- 
 # Lecture Notes
+## Volumes of Rotation (Continued)
+> Continued from the previous lecture from a Volume of Rotation. 
+
+
+
 
 ---
 # Pre-Lecture Notes
