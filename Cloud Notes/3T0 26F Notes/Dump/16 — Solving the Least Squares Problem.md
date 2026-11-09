@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-09T12:50:48.415-05:00
-edited_seconds: 170
+updated_at: 2026-11-09T13:15:14.613-05:00
+edited_seconds: 190
 course: ESC103H1
 tags:
   - ESC103H1
@@ -137,4 +137,4 @@ $$
 0 & 0 & 1 
 \end{array} \right]
 $$
-Note the inconsistencies at the bottom. This implies that we *cannot directly fit all three points on the line*
+Note the inconsistencies at the bottom. This implies that we *cannot directly fit all three points on the line* (which makes sense) The approach we then take, is how to minimize the distances between the points on the line, and a line of best fit.
