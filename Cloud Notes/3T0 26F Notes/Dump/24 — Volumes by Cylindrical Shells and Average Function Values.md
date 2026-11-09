@@ -1,12 +1,12 @@
 ---
-updated_at: 2026-11-09T11:09:12.301-05:00
-edited_seconds: 930
+updated_at: 2026-11-09T11:30:17.771-05:00
+edited_seconds: 1150
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 24
 Lecture Date: 2026-11-09
-Week:
+Week: -18
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[23 — Volumes]]
@@ -20,8 +20,79 @@ Next: [[25 — Inverse Functions]]
 ## Volumes of Rotation (Continued)
 > Continued from the previous lecture from a Volume of Rotation. 
 
+Recall that a Volume of Rotation is equivalent to taking the following integral: 
+$$
+\int_{a}^{b}\pi(f(x))^{2}\,dx
+$$
+> Note that $f(x) \mapsto y$, where $y$ represents our corresponding axis of rotation. If we are revolving around some term $x$ instead; we instead consider rewriting this in terms of $y$. 
+
+Where $f(x)$ effectively represents the radius of some infinitesimally small circle that we want to take, that is it represents some tiny disk $dA=\pi(f(x))^{2}$; then the integral is simply taking up the sum of all of these volumes from the axis. In other words, this represents us taking the volume through a method of **disks**. 
+
+> [!theorem] Disk Method of Volumes of Rotation
+> $$\boxed{\int_{a}^{b}\pi(f(x))^{2}\,dx}$$
+> Where $f(x)$ represents the distance of the function from the rotational axis $x$. 
+
+Consider now that if we wanted to rotate a function as a region between two curves. Recall that we bounded these two between functions based on the corresponding comparisons between the functions (i.e. $f(x)>g(x)$, $f(x)<g(x)$, etc.) We can picture taking the volume of this corresponding rotated shape across an axis; as taking the **area of a disk with a hole in the middle**. 
+
+In this case, the area associated with a disk is equivalent to taking the area of the outer disk minus the area of the inner disk. Assuming that $g(x)>f(x)$, then: 
+$$
+A = \pi f(x)^{2} - \pi g(x)^{2}
+$$
+We can consider taking the volume of such a shape as the following Reimann sum: 
+$$
+V \approx \sum_{i=1}^{n}\pi(f(x)^{2}-g(x)^{2})\Delta x
+$$
+Or, when taking the limit as $||P|| \to  0$, then: 
+$$
+V=\int_{a}^{b}\pi[f(x)^{2}-g(x)^{2}]dx
+$$
+Where this represents the **washer method** across the $x$ axis. 
+
+> Washer Method of Volumes of Rotation
+> $$\boxed{\int_{a}^{b}\pi\left[f(x)^{2}-g(x)^{2}\right]\,dx}$$
+> Where $f(x)>g(x) \forall x\in[a,b]$. This corresponds to the washer method of a Volume of Rotation using the $x$ axis as the axis of rotation. 
+
+### Example
+Consider the two following functions: 
+* $y=x^{2}$
+* $y=x$
+Points of intersection are at $0,1$, then we note that $x>x^{2}$ for this bound; then drawing a rectangle, we see that the height is equivalent to $x-x^{2}$, then taaking the integral: 
+$$V_{x}=\int_{0}^{1}\pi[x^{2}-x^{4}]\,dx = \pi\left[ \frac{x^{3}}{3}-\frac{x^{5}}{5} \right]^{1}_{0} = \frac{2\pi}{15}$$
+Consider now revolving this across the $y$ axis, then using the same bound, then we see that $\sqrt{ y }=x, y=x$, then: 
+$$
+V_{y}=\int_{0}^{1}\pi[\sqrt{ y }^{2}-y^{2}]\,dy = \pi\left[ \frac{y^{2}}{2}-\frac{y^{3}}{3} \right]^1_{0} = \frac{\pi}{6}
+$$
+
+### Rotation Across Other Axis's
+Consider now the case in which we rotate across another axis of rotation besides the x or y axis. For instance, let's rotate the function $f$ along some axis $y=k$. In this case, the formula still holds true; our term for radius simply increases proportionally: 
+
+$$
+V=\int_{a}^{b}\pi(f(x)-k)^{2} \,dx
+$$
+Note that $f(x)-k$ simply corresponds to the distance from $f(x)$ to $k$. 
+
+> Consider now this case when we are taking a volume of rotation by some region. 
+
+Consider that $g(x)>g(x)$ in the interval of $x\in[a,b]$, and that we are rotating this along some axis $y=k$. We define the Volume of Revolution as the following in this case then: 
+$$
+V = \int_{a}^{b}\pi |(f(x)-k)^{2}-(g(x)-k)^{2}|\,dx
+$$
+With the absolute values simply solving this in terms of a proper volume. Note that this description requires that $k<f,g$ or $k>f,g$ (that is to say, the axis can never be in the region itself). 
 
 
+#### Example
+Consider now the same example from above, but we rotate it along some axis $y=k=-2$: 
+* $y=x^{2}$
+* $y=x$
+
+Thus, taking the integral, then noting that $x^{2}<x$, then: 
+$$
+\begin{align}
+V  & = \int_{0}^{1}\pi|(x+2)^{2} - (x^{2}-2)^{2}|\,dx \\
+ & =\pi\int_{0}^{1}|x^{2}+4x + 4 - x^{4} + 4x^{2}  -4|   \,dx \\
+ & =\pi \int_{0}^{1}|-x^{4} -3x^{2}
+\end{align}
+$$
 
 ---
 # Pre-Lecture Notes
