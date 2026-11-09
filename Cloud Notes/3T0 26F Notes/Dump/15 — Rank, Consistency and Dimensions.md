@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-09T12:33:05.254-05:00
-edited_seconds: 840
+updated_at: 2026-11-09T12:38:27.502-05:00
+edited_seconds: 870
 course: ESC103H1
 tags:
   - ESC103H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[14 — Gaussian Elimination]]
-Next: N/A
+Next: [[16 — Solving the Least Squares Problem]]
 
 --- 
 # Lecture Notes
@@ -244,6 +244,14 @@ Then comparing with our values, then:
    This implies that, for some set of vectors in $\mathbb{R}^{m}$ if $\text{rank}(R) \implies \mathbb{R}^{r}$, then $\mathbb{R}^{r} < \mathbb{R}^{m}$, that is, the corresponding column space spanned by our matrix is less than the dimension of the space that our vectors exist in. 
 	   In terms of RREF, This implies that, there exists at least *one* zero row. 
    Thus, this implies that there may exist values in $\mathbb{R}^{m}$ which may not be in the space defined by $\mathbb{R}^{r}$, that is there *may* exist inconsistent solutions. 
+
+Then: 
+
+|                                                  | $r=n$ Unique Solution                                | $r<n$ Infinitely Many Solutions                            |
+| ------------------------------------------------ | ---------------------------------------------------- | ---------------------------------------------------------- |
+| $r =m$<br>Solutions are always consistent        | One unique solution exists.                          | Infinitely many consistent solutions exist.                |
+| $r<m$<br>Solutions may not always be consistent. | No solution exists<br>OR one unique solution exists. | No solution exists.<br>OR, infinitely many solution exist. |
+
 
 ## Determining Systems 
 We can relate the type of system, with the corresponding properties of some matrix $A$. Note that $\text{rank}(A)$ can be defined as: 
