@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-09T11:50:02.227-05:00
-edited_seconds: 1460
+updated_at: 2026-11-09T12:08:15.945-05:00
+edited_seconds: 1610
 course: ESC194H1
 tags:
   - ESC194H1
@@ -157,14 +157,35 @@ Consider now the following example:
 * $y=2$
 Revolve this region around the $x$ axis. For this case, we can do it by the washer method. But for the sake of exercise, we will do it by the shell method. 
 
-Noting that the points of intersections are at $\sqrt{ 3 },-\sqrt{ 3 }$, then we also note that since we are integrating with respects to the $y$ axis, then our bounds are $11,2$
+Noting that the points of intersections are at $\sqrt{ 3 },-\sqrt{ 3 }$, then we also note that since we are integrating with respects to the $y$ axis, then our bounds are $1,2$. Then we note that the height is equivalent to the top and bottom of a hyperbola, thus: 
 $$
 \begin{align}
-V & =\int_{1}^{2}
+V & =\int_{1}^{2}2\pi y(\sqrt{ y^{2}-1 } + \sqrt{ y^{2}-1 })\,dy  & u=y^{2}-1 \to du=2y\,dy \\
+ & = \int_{0}^{3}2\pi * \frac{1}{2}(2u^{1/2})\,du  \\
+ & = 2\pi\int_{0}^{3}u^{1/2}\,du\\
+ & =2\pi\left[ \frac{2}{3}u^{3/2} \right]^{3}_{0} = 4\pi \sqrt{ 3 }
 \end{align}
 $$
 
+### Rotation Across Other Axis's 
+Consider now rotating our shape around some other axis, then taking the same two functions: 
+* $y=x^{2}$
+* $y=\sqrt{ x }$
+Let us take the axis of rotation around some other axis, that is $x=k$, then we note that the height does *not* change, then: 
 
+$$
+V=\int_{0}^{1}(\sqrt{ x }-x^{2})*2\pi(x-k)\,dx
+$$
+Recall that $x-k$ represents the now larger diameter of our cylinder; scaling proportionally; whilst the height term of $\sqrt{ x-x^{2} }$ remains the same; thus evaluating the integral gives us :
+$$
+\begin{align}
+V & =2\pi\int_{0}^{1}( x^{3/2}-x^{3}-kx^{1/2}+kx^{2})\,dx \\
+ & =\pi\left[ \frac{2x^{5/2}}{5} - \frac{x^{4}}{4} - \frac{2kx^{3/2}}{3} + \frac{kx^{3}}{3} \right]^{1}_{0} \\
+ & =\frac{3\pi}{10}-\frac{2\pi k}{3}
+\end{align}
+$$
+
+Note that in this example; our volume would *increase* if $k$ is negative, as it increases our diameter. Note that we also have to define this with respects to us in another axis...
 
 ---
 # Pre-Lecture Notes
