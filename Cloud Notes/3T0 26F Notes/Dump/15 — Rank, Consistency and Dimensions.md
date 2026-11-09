@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-03T18:16:55.950-05:00
-edited_seconds: 620
+updated_at: 2026-11-09T12:33:05.254-05:00
+edited_seconds: 840
 course: ESC103H1
 tags:
   - ESC103H1
@@ -216,6 +216,40 @@ $$
 We can stop here, as we see that $0=-4$, which is impossible; thus we state that this system is inconsistent.
 * For the row picture, these three planes do not have one common point (or system of intersection). 
 * For the column picture, this represents that for some $\vec{b}$, this does not lie within the column space of some matrix $A$. 
+
+### Implications
+Thus, we find that when we use Gaussian Elimination to solve some $A\vec{x}=\vec{b}$, we have three possible outcomes: 
+1. A unique solution exists: There exists only one solution to our system (thus, no free variables exist, thus every variable is a leading variable). 
+	1. In row picture, a singular point serves as the solution. 
+2. Infinitely many solutions exist: There exists infinite solutions to our system (at least one free variable exists) 
+	1. In row picture, some line or hyperplane expresses the possible set of solutions. 
+3. No solutions: There exists an inconsistency, such as $0=C$, where $C$ is some number; in which case then there exists no solution.
+	1. In row picture, this means that our planes do not inherently ever collide with each other. 
+In this case, we often consider $1,2$ as consistent systems, whilst the third case is termed as an inconsistent system. In this case, how do we inherently know the system that we have? We realize this by performing RREF, and noting the $\text{rank}(A)$. 
+
+In this case, note that if we factor our matrix to some $CR$, then $\text{rank}(R)$ represents the following with respects to some $A$ as $m\times n$ matrix: 
+* $m$ represents the number of rows, and the number of equations. 
+* $n$ represents the number of columns, or the number of variables. 
+
+Then comparing with our values, then: 
+1. $\text{rank}(R)=n$
+   This implies that there exists the same number of pivot variables as the number of variables present. Then we see that there exists only **one unique** consistent system.
+   Or in other words, all column vectors are linearly independent. 
+2. $\text{rank}(R)<n$
+   This implies that there exist some *free* variables present (at least one). Then we see that there exists **infinite, consistent** solutions to a potential system. 
+   Or in other words, the set of column vectors are linearly dependent.
+3. $\text{rank}(R)=m$
+   This implies that, for some set of vectors in $\mathbb{R}^{m}$, there exists $\text{rank}(R)$ linearly independent basis vectors present; that is $\text{rank}(R)\implies \mathbb{R}^{r}$ column space. If $\mathbb{R}^{r}=\mathbb{R}^{m}$, then our space fully spans the space that the vectors are present in; thus all solutions are consistent. 
+4. $\text{rank}(R)<m$
+   This implies that, for some set of vectors in $\mathbb{R}^{m}$ if $\text{rank}(R) \implies \mathbb{R}^{r}$, then $\mathbb{R}^{r} < \mathbb{R}^{m}$, that is, the corresponding column space spanned by our matrix is less than the dimension of the space that our vectors exist in. 
+	   In terms of RREF, This implies that, there exists at least *one* zero row. 
+   Thus, this implies that there may exist values in $\mathbb{R}^{m}$ which may not be in the space defined by $\mathbb{R}^{r}$, that is there *may* exist inconsistent solutions. 
+
+## Determining Systems 
+We can relate the type of system, with the corresponding properties of some matrix $A$. Note that $\text{rank}(A)$ can be defined as: 
+1. The amount of linearly independent column vectors in A. 
+	1. The dimension of the column space.
+2. The number of pivot / leading variables. 
 
 ---
 # Pre-Lecture Notes
