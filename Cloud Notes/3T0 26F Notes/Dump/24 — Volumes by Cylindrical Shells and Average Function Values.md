@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-09T11:30:17.771-05:00
-edited_seconds: 1150
+updated_at: 2026-11-09T11:50:02.227-05:00
+edited_seconds: 1460
 course: ESC194H1
 tags:
   - ESC194H1
@@ -89,10 +89,82 @@ Thus, taking the integral, then noting that $x^{2}<x$, then:
 $$
 \begin{align}
 V  & = \int_{0}^{1}\pi|(x+2)^{2} - (x^{2}-2)^{2}|\,dx \\
- & =\pi\int_{0}^{1}|x^{2}+4x + 4 - x^{4} + 4x^{2}  -4|   \,dx \\
- & =\pi \int_{0}^{1}|-x^{4} -3x^{2}
+ & =\pi\int_{0}^{1}|x^{2}+4x + 4 - x^{4} -4x^{2}  -4|   \,dx \\
+ & =\pi \int_{0}^{1}|-x^{4} -3x^{2} + 4x|\,dx = \pi\left[ -\frac{x^{5}}{5} - x^{3}+2x^{2} \right]^{1}_{0} \\
+ & =\frac{4}{5}\pi
 \end{align}
 $$
+Note that this volume is larger than our previous case, as the effective radius of our washer correspondingly increases. 
+
+## Volumes by Cylindrical Shells (LEC)
+Consider that there may exist cases where solving for the volume via an axis of rotation may be annoying. For instance, taking the rotation of some region of some $f(x)$ around the $y$ axis. Note that this requires us to explicitly solve our function to be in terms of $y$, which may be non-trivial / difficult to perform. 
+
+That is, using the washer method horizontally using the rectangles from the axis of rotation may be difficult. The Method of Cylindrical Shells lets us define our rectangles with respect to the original axis of the function, then simply revolving it around the axis as per usual. 
+
+Recall that we can define the area of a rectangle under some function as some $f(x^{*}_{i})\Delta x$. Revolving this rectangle around gives us some value in terms of a shell. Then the volume of this corresponding shell is given to us by the following: 
+
+$$
+V_{i}=f(x^{*}_{i})\Delta x \times 2\pi x^{*}_{i}
+$$
+
+Note that in this equation, the term on the left simply gives us the area, while the term of the right performs a revolve extrude around this area to take the volume; then noting that we can sum up the areas as a Reimann sum, then: 
+$$
+V_{i}\approx \sum_{i=1}^{n}2\pi x^{*}_{i}f(x^{*}_{i})\Delta x_{i} = \int_{a}^{b}2\pi xf(x)\,dx
+$$
+### Regions
+Consider the following two functions that enclose some region, where $f(x)>g(x)$ within $x\in[a,b]$. 
+* $f(x) = \dots$
+* $g(x) = \dots$
+
+When we draw our rectangles, then the corresponding area of the rectangle is given as a function of the height, and the width, thus: 
+$$
+A_{i} = (f(x^{*}_{i})-g(x^{*}_{i}))\Delta x
+$$
+Thus the integral is given as the following: 
+> [!theorem] Shell Method Of a Region about the $y$ axis
+> $$V = \int_{a}^{b}2\pi x(f(x)-g(x))\,dx$$
+> Note that the corresponding term is taken if we take it about the $x$ axis: 
+> > $$V = \int_{a}^{b}2\pi y(f(y)-g(y))\,dy$$
+
+
+Note that this allows us to integrate with respects to $x$, when we are revolving with respects to $y$. In this case, if we want to rotate across the $x$ axis, we integrate with respects to $y$ instead. A good way to differentiate between Volumes of Rotation and Volumes of Cylindrical Shells, as comparing it between a method of *cross-sections* (VoR), and a method of cylinder sections going outwards from our axis of rotation (VoCS). 
+
+### Example
+Consider now the following: 
+* $F(y)=x^{2}$
+* $G(y)=\sqrt{ x }$ 
+Revolve this around $y$, then we note that $x^{2}<\sqrt{ y }$, and that they intersects at $0,1$, thus: 
+$$
+\begin{align}
+V & =\int_{0}^{1}2\pi x(\sqrt{ x }-x^{2})\,dx \\
+ & =2\pi \int_{0}^{1}x^{3/2}-x^{3}\,dx \\
+ & =2\pi \left[  \frac{2x^{5/2}}{5} - \frac{x^{4}}{4} \right]^{1}_{0} = \frac{3\pi}{10}
+\end{align}
+$$
+
+Performing this through the Washer Method: $\sqrt{ y }=x$, and $y^{2}=x$, then noting that within the interval, $y^{2}<\sqrt{ y }$, then: 
+$$
+\begin{align}
+V & =\int_{0}^{1}\pi(\sqrt{ y }^{2}-y^{4})\,dy \\
+ & =\pi \int_{0}^{1}(y-y^{4})\,dy \\
+ & =\pi\left[ \frac{y^{2}}{2}-\frac{y^{5}}{5} \right]^{1}_{0}=\frac{3\pi}{10}
+\end{align}
+$$
+
+
+Consider now the following example: 
+* $y^{2}-x^{2}=1$ --> $y=\sqrt{ 1+x^{2} }$ or $x = \pm \sqrt{ y^{2}-1 }$
+* $y=2$
+Revolve this region around the $x$ axis. For this case, we can do it by the washer method. But for the sake of exercise, we will do it by the shell method. 
+
+Noting that the points of intersections are at $\sqrt{ 3 },-\sqrt{ 3 }$, then we also note that since we are integrating with respects to the $y$ axis, then our bounds are $11,2$
+$$
+\begin{align}
+V & =\int_{1}^{2}
+\end{align}
+$$
+
+
 
 ---
 # Pre-Lecture Notes
