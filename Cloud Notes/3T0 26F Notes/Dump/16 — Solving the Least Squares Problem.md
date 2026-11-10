@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-09T13:15:14.613-05:00
-edited_seconds: 190
+updated_at: 2026-11-10T17:29:05.997-05:00
+edited_seconds: 300
 course: ESC103H1
 tags:
   - ESC103H1
@@ -138,3 +138,75 @@ $$
 \end{array} \right]
 $$
 Note the inconsistencies at the bottom. This implies that we *cannot directly fit all three points on the line* (which makes sense) The approach we then take, is how to minimize the distances between the points on the line, and a line of best fit.
+
+It is very common to have a dataset of points that we believe follows some kind of curve (a "model"), but due to certain "errors" within our data, the associated system directly may be unsolvable. 
+
+Consider the case where we break up our system above into it's column picture, we see that this simply states that *the value for $b$* is outside the column space of our matrix: 
+$$
+\begin{bmatrix}
+1\\1\\1
+\end{bmatrix}a+ \begin{bmatrix}
+-1\\2\\3
+\end{bmatrix}b = \begin{bmatrix}
+6\\0\\2
+\end{bmatrix}
+$$
+Our goal is to find some vector $y_\text{ls}$ (or rather, $Ac_\text{ls}$ such that it is *closest* to our $y$ (or in other words, some $\vec{y_\text{ls}}$ that is closest to $\begin{bmatrix}6\\0\\2\end{bmatrix}$ in our equation above for instance). 
+
+Before solving the Problem of Least Squares, we find that for some vector $\vec{y}$, and the corresponding least-squares $\vec{y_\text{ls}}$, the corresponding residual vector (some error vector, some $\vec{e}$) being the following: 
+$$
+\vec{e} = \vec{y} - A\vec{c_\text{ls}}
+$$
+
+Or in other words, we want to find some $\vec{y_\text{ls}}=A\vec{c_\text{ls}}$, where this is equivalent to the *orthogonal projection* in some way of $\vec{y}$ onto the column space of $\vec{A}$. That is: 
+
+$$
+\vec{e} = \vec{y} - \vec{y_\text{ls}} = \begin{bmatrix}
+y^{\text{data}}_{1}-y^{\text{model}}_{1} \\
+y^{\text{data}}_{2}-y^{\text{model}}_{2} \\
+y^{\text{data}}_{3}-y^{\text{model}}_{3}
+\end{bmatrix}
+$$
+Consider now then what would be the magnitude of this error term? Then: 
+$$
+||\vec{e}||^{2} = (y^{\text{data}}_{1}-y^{\text{model}}_{1})^{2} + (y^{\text{data}}_{2}-y^{\text{model}}_{2})^{2}
+$$
+Or, alternatively: 
+$$
+||\vec{e}||^{2} = \sum_{i}(y^{\text{data}}_{i}-y^{\text{model}}_{i})^{2}
+$$
+And the concept is that, we want to *minimize* this term, thus minimizing the corresponding square. 
+## Solving Least Squares
+Our goal is therefore: 
+> Find some $\vec{c_\text{ls}}$ such that $\vec{e}=\vec{y}-A\vec{c_\text{ls}}$ is orthogonal to the column space to $A$. 
+
+Consider the matrix $A$ as the following: 
+$$
+A = \begin{bmatrix}
+\vdots & \vdots & \vdots & \vdots \\
+a_{1} & a_{2} & \dots & a_{i} \\
+\vdots & \vdots & \vdots & \vdots
+\end{bmatrix}
+$$
+Taking it's transpose, then: 
+$$
+A^{T} = \begin{bmatrix}
+\dots & a_{1}^{T} & \dots \\
+\dots & a_{2}^{T} & \dots \\
+\dots & \vdots& \dots \\
+\dots & a_{i}^{T} & \dots
+\end{bmatrix}
+$$
+If $\vec{e}$ is orthogonal to $A$'s column space, then for all $c\cdot a_{i}=0$. Then: 
+$$
+A^{T}e = \vec{0}
+$$
+
+Thus, doing some algebra from our earlier definition of $e$, then: 
+$$
+\begin{align}
+A^{T}\vec{e}  & = \vec{0} \\
+A^{T}(\vec{y}-A\vec{c_\text{ls}})  & =\vec{0} \\
+A^{T}\vec{y} -A^{T}A\vec{c_\text{lls}}
+\end{align}
+$$
