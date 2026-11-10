@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-10T17:29:05.997-05:00
-edited_seconds: 300
+updated_at: 2026-11-10T18:19:59.002-05:00
+edited_seconds: 570
 course: ESC103H1
 tags:
   - ESC103H1
@@ -188,7 +188,7 @@ a_{1} & a_{2} & \dots & a_{i} \\
 \vdots & \vdots & \vdots & \vdots
 \end{bmatrix}
 $$
-Taking it's transpose, then: 
+Taking it's transpose, then $a_{1}\cdot \vec{e}=0$, 
 $$
 A^{T} = \begin{bmatrix}
 \dots & a_{1}^{T} & \dots \\
@@ -207,6 +207,126 @@ $$
 \begin{align}
 A^{T}\vec{e}  & = \vec{0} \\
 A^{T}(\vec{y}-A\vec{c_\text{ls}})  & =\vec{0} \\
-A^{T}\vec{y} -A^{T}A\vec{c_\text{lls}}
+A^{T}\vec{y} -A^{T}A\vec{c_\text{ls}} & =0 \\
+A^{T}\vec{y} & =A^{T}A\vec{c_\text{ls}}
 \end{align}
 $$
+Letting $A^{*}=A^{T}A$, and $y^{*}=A^{T}\vec{y}$, then we see that: 
+$$
+A^{*}\vec{c_\text{ls}} = y^{*}
+$$
+Where we note that this is simply another matrix vector system that we can *solve*. Taking our example above from earlier: 
+
+$$
+\begin{bmatrix}
+1 & -1 \\
+1 & 2 \\
+1 & 3
+\end{bmatrix}\begin{bmatrix}
+a\\b
+\end{bmatrix}
+=\begin{bmatrix}
+6 \\0\\2
+\end{bmatrix}
+$$
+Turning this into $A^{*}$, then: 
+$$
+A^{*} = \begin{bmatrix}
+1 & 1 & 1 \\
+-1 & 2 & 3
+\end{bmatrix}\begin{bmatrix}
+1 & -1 \\
+1 & 2 \\
+1 & 3
+\end{bmatrix} = \begin{bmatrix}
+3 & 4 \\
+4 & 14
+\end{bmatrix}
+$$
+And turning $y^{*}$, then: 
+$$
+y^{*} = A^{T}\vec{y} = \begin{bmatrix}
+1 & 1 & 1 \\
+-1 & 2 & 3
+\end{bmatrix}
+\begin{bmatrix}
+6 \\0\\2
+\end{bmatrix} = \begin{bmatrix}
+8\\0
+\end{bmatrix}
+$$
+Thus our system now becomes: 
+$$
+\begin{bmatrix}
+3 & 4 \\
+4 & 14
+\end{bmatrix}\begin{bmatrix}
+a^{*} \\
+b^{*}
+\end{bmatrix} = \begin{bmatrix}
+8\\0
+\end{bmatrix}
+$$
+Where $a^{*},b^{*}$ represent the coefficients in a line of best fit, in other words these represent $\vec{c_\text{ls}}$. Solving this then: 
+$$
+\begin{align}
+\left[\begin{array}{cc|c}
+3 & 4 & 8 \\
+4 & 14 & 0 
+\end{array} \right] & :3r_{2}-4r_{1} \\
+\left[\begin{array}{cc|c}
+3 & 4 & 8 \\
+0 & 26 & -32 
+\end{array} \right] & :13r_{1}-2r_{2} \\
+\left[\begin{array}{cc|c}
+39 & 0 & 168 \\
+0 & 26 & -32
+\end{array} \right]  & :\text{simplifying...} \\
+\left[\begin{array}{cc|c}
+1 & 0 & \frac{168}{39} \\
+0 & 1 & -\frac{16}{13}
+\end{array} \right]
+\end{align}
+$$
+
+Or in other words, $a^{*}\approx 4.308$ and $b^{*} \approx -1.231$, in other words our line of best fit will be: 
+$$
+y = 4.308 - 1.321x
+$$
+Consider now however, how is *this* the line of best fit? Returning back to our earlier definition of the error consider a point within our data. For our case, consider the 2nd point within our data set, that is: 
+
+$$
+x_{2},y_{2}^{\text{data}} = 
+$$
+And compare it with a point within our line of best fit: 
+$$
+x_{2},x_{2}^{\text{model}}
+$$
+Taking the distance between these points ( $|y_{2}^{\text{data}}-y^{\text{model}}_{2}|$) in other words the Residual. 
+
+Note that since the process of least squares finds some error vector orthogonal to the column space of $A$, which lets us minimize the magnitude of $||\vec{e}||$, or rather $\sqrt{ \sum e^{ ^{2}_{i} } }$, where there represent the sum of the corresponding errors. 
+
+### Generalization
+We can generalize this for the following. If we have some data such as the following points: 
+* $(x_{1},y_{1})\dots,(x_{m},y_{m})$
+And we wanted to fit it into some function of the following, such as: 
+$$c_{1}f_{1}(x) + c_{2}f_{2}(x) +\dots+c_{n}f_{n}(x)$$
+where $f_{n}(x)$ represents some function of $x$ (where these can be defined arbitrarily). With our data above, we can define it as the following system: 
+
+$$
+\begin{bmatrix}
+f_{1}(x_{1}) & f_{2}(x_{1}) & \dots & f_{n}(x_{1}) \\
+f_{1}(x_{2}) & f_{2}(x_{2}) & \dots & f_{n}(x_{2}) \\
+\vdots & \vdots &  & \vdots \\
+f_{1}(x_{m}) & f_{2}(x_{m}) & \dots & f_{n}(x_{m})
+\end{bmatrix}
+\begin{bmatrix}
+c_{1}\\c_{2}\\\vdots\\c_{n}
+\end{bmatrix} = \begin{bmatrix}
+y_{1}\\y_{2}\\\vdots\\y_{m}
+\end{bmatrix}
+$$
+In a perfect world, this would be consistent, and we would have a system which lets us perfectly fit our data. But if it is inconsistent, we turn this into the following form: 
+$$
+A\vec{c} = \vec{y} \implies A^{T}\vec{A}c_\text{ls} = A^{T}\vec{y}$$
+Where $\vec{c_\text{ls}}$ represents the corresponding terms of the coefficients present. 
