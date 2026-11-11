@@ -11,7 +11,7 @@ Created: November 11th 2026, 1:38:25 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[25 — Inverse Functions]]
-Next: [[27 —  The Natural Exponentiaal ]]
+Next: [[27 —  The Natural Exponential]]
 > [!quote] Recommended Reading 
 > Section 6.2\* of Stewart. 
 > Not to be confused with Section 6.2 normally. 

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-19T17:47:48.007-04:00
-edited_seconds: 350
+updated_at: 2026-11-11T17:11:04.752-05:00
+edited_seconds: 360
 course: ESC180H1
 tags:
   - ESC180H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: 
 Previous: 
-Next:
+Next: [[ uhh — ESC180 Lecture 24 — Sorting Algorithms  ]]
 
 --- 
 # Lecture Notes
