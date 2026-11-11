@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-11T08:51:36.448-05:00
-edited_seconds: 400
+updated_at: 2026-11-11T09:32:23.454-05:00
+edited_seconds: 410
 course: ESC194H1
 tags:
   - ESC194H1
@@ -59,6 +59,6 @@ Consider now that if $f(b)\to c$, then $f^{-1}(c)=b$. Conversely, consider that 
 $$
 \begin{align}
 f'^{-1}(x)  & `= \lim_{ \gamma \to b } \frac{b - \gamma}{f(b) - f(\gamma)} \\
- & =\lim_{ \gamma \to b } \frac{1}{\frac{f(b)-f(\gamma)}{b-\gamma}}
+ & =\lim_{ \gamma \to b } \frac{1}{\frac{f(b)-f(\gamma)}{b-\gamma}} & 
 \end{align}
 $$
