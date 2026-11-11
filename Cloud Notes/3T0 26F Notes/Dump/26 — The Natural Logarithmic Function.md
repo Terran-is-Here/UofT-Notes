@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-11T13:52:58.461-05:00
-edited_seconds: 200
+updated_at: 2026-11-11T15:05:32.633-05:00
+edited_seconds: 430
 course: ESC194H1
 tags:
   - ESC194H1
@@ -34,37 +34,50 @@ $$
 $$
 Which is a *very useful expression for evaluating some properties of the natural logarithmic function.* 
 ### Properties of Ln(x) 
-> The textbook actually goes into a series of proofs pertaining to the nature of this function! 
+The textbook actually goes into a series of proofs pertaining to the nature of this function. For the purposes of this section, let $a,x$ and any other variables be positive numbers, and let $r$ be a rational number. 
 
-> Prove that $\ln(xy) = \ln(x) + \ln (y)$. 
+> [!theorem]- Property 1: 
+> $$\ln(xy)=  \ln(x) + \ln(y)$$
+> > [!axiom]- *Proof.*
+> > To prove this, first consider a function with any positive number $a$ that is some $\ln (ax)$, then taking the derivative of this gives us the following: 
+> > $$\frac{d}{dx}\ln(ax) = \frac{1}{ax} \frac{d}{dx}(ax) = \frac{1}{ax}a = \frac{1}{x}$$
+> > We note that $\ln (x)$ and $\ln(ax)$ share the same derivative, thus $\ln(ax)$ must differ by some **constant value**, that is: 
+> > $$\ln (ax) = \ln(x) + C$$
+> > Note that if $x=1$; then $\int_{1}^{1} \frac{1}{x}dx = 0$, and thus $\ln(1)=0$, then we get the following: 
+> > $$\ln(a) = C$$
+> > Thus we find that: 
+> > $$\ln(ax) = \ln(x) + \ln(a)$$
+> > Note that $a$ is any arbitrary positive number, substituting $a=y$ gets us our desired result. 
 
-To prove this, first consider a function with any positive number $a$ that is some $\ln (ax)$, then taking the derivative of this gives us the following: 
+> [!theorem]- Property 2: 
+> $$\ln\left( \frac{x}{y} \right)=\ln x-\ln y$$
+> > [!axiom]- *Proof.*
+> > Consider the earlier property that we proved earlier, that $\ln(ax) = \ln(x) + \ln(a)$. 
+> > Taking $a=\frac{1}{y}$ then gives us the following if we consider the following expression: 
+> > $$\begin{align}\ln(ay) &  = \ln (a) + \ln (y) \\\implies a=\frac{1}{y}  & \implies \\\ln\left( \frac{1}{y}y \right) & = \ln\left( \frac{1}{y} \right) + \ln y & \ln(1) = 0 \\0  & = \ln\left( \frac{1}{y} \right) + \ln(y) \\-\ln(y)  & =\ln\left( \frac{1}{y} \right)\end{align}$$
+> > Then retaking our expression from earlier: 
+> > $$\begin{align}\ln\left( \frac{x}{y} \right)  & + \ln(x)-\ln\left( \frac{1}{y} \right) \\& =\ln(x) - \ln (y)\end{align}$$
+> > As desired from earlier. 
 
-$$
-\frac{d}{dx}\ln(ax) = \frac{1}{ax} \frac{d}{dx}(ax) = \frac{1}{ax}a = \frac{1}{x}
-$$
-We note that $\ln (x)$ and $\ln(ax)$ share the same derivative, thus $\ln(ax)$ must differ by some **constant value**, that is: 
-$$
-\ln (ax) = \ln(x) + C
-$$
-Note that if $x=1$; then $\int_{1}^{1} \frac{1}{x}dx = 0$, and thus $\ln(1)=0$, then we get the following: 
-$$
-\ln(a) = C
-$$
-Thus we find that: 
-$$
-\ln(ax) = \ln(x) + \ln(a)
-$$
-Note that $a$ is any arbitrary positive number, substituting $a=y$ gets us our desired result. 
+> [!theorem]- Property 3 
+> $$\ln(x^{r})=r\ln x$$
+> > [!axiom]- Proof
+> > Consider the case of what this is implying: 
+> >$$\ln(x^{r} = \underset{r \text{ times}}{a\times a\times a\times a})$$
+> >Note that from our first property, we can extend it to an arbitrary length: $$\ln(abc) = \ln(a) + \ln(b) + \ln (c)$$
+> > > Corollary
+> > > Take $\ln(abc)$, then let $d=ab$, thus $\ln(dc) = \ln(d) + \ln(c) =\ln(ab) + \ln(c) =\ln(a)+\ln(b)+\ln (c)$
+> > 
+> > From this corollary, we can see that this is equivalent to our expression from above, then
+> > $$\ln(x^{r}) = \underbrace{\ln(x) + \ln(x) + \dots + \ln(x)}_{r\text{ times}} = r\ln(x)$$
+> > As is desired. 
 
-> Prove that $\ln\left( \frac{x}{y} \right) =\ln x -\ln y$
+From the properties above, we can now also solve for the corresponding *limit* properties of the function which are listed below: 
 
-Consider the earlier property that we proved earlier, that $\ln(ax) = \ln(x) + \ln(a)$, taking $a=\frac{1}{y}$ then gives us the following if we consider the following expression" 
-$$
-\begin{align}
-\ln(ay) &  = \ln (a) + \ln (y) \\
-\implies a=\frac{1}{y}  & \implies \\
-\ln\left( \frac{1}{y}y \right) & = \ln\left( \frac{1}{y} \right) + \ln y & \ln(1) = 9 \\
-0 = \ln
-\end{align}
-$$
+> $$\lim_{ x \to \infty }\ln(x) = \infty\\\lim_{ n \to ^{+}0 } \ln(x)=-\infty$$
+
+> Proof of Limit Property 1
+> Consider $x=2^{n}$, noting that $x\to \infty$ when $n \to \infty$, thus: 
+> $$\lim_{ x \to \infty } \ln(x) = \lim_{ n \to \infty } \ln(2^{n}) = \lim_{ n \to \infty } n\ln(2) \implies \ln(2)\lim_{ n \to \infty }n$$
+> Thus from this, we see that this would diverge into infinity. 
+> 
