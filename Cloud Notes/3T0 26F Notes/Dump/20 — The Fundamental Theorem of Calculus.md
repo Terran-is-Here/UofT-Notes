@@ -136,6 +136,9 @@ For the purposes of readability; the two tenets of FToC have been placed here:
 > [!theorem] Fundamental Theorem of Calculus 
 > 1. If $g(x) = \int _a^x~f(x)~dx,~g'(x)=f(x)$. Or in other words, $\frac{d}{dx}\int_{a}^xf(x)~dx = f(x)$
 > 2. $\int_{a}^b f(x)~dx = F(b)-F(a)$, where $F'(x)=f(x)$. 
+
+^d40ade
+
 ### FToC: Special Case
 The first segment of the Fundamental Theorem of Calculus deals with functions with the following form: 
 $$

@@ -1,16 +1,16 @@
 ---
-updated_at: 2026-11-11T09:32:23.454-05:00
-edited_seconds: 410
+updated_at: 2026-11-11T13:39:19.454-05:00
+edited_seconds: 560
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 25
-Lecture Date: 2026-11-01
+Lecture Date: 2026-11-12
 Week:
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[24 — Volumes by Cylindrical Shells and Average Function Values]]
-Next: N/A
+Next: [[26 — The Natural Logarithmic Function]]
 > [!quote] Recommended Reading 
 > Stewart Textbook Section 6.1 
 --- 
@@ -53,12 +53,27 @@ f^{-1}(x) = \lim_{ h \to 0 } \frac{f^{-1}(x+h)-f^{-1}(x)}{h}
 $$
 For our case for now, let's define $x+h=c$, then we note that if $h \to 0, c\to x$
 $$
-f^{'-1}(x) = \lim_{ x \to c } \frac{f^{-1}(c)-f^{-1}(x)}{c-x}
+f^{'-1}(x) = \lim_{ c \to x } \frac{f^{-1}(c)-f^{-1}(x)}{c-x}
 $$
-Consider now that if $f(b)\to c$, then $f^{-1}(c)=b$. Conversely, consider that if $f(\gamma) \to x$, then $f^{-1}(x) \to \gamma$. Consider now as well that as $x \to c$, $f^{-1}(x) \to f^{-1}(c)$, which means that $\gamma \to b$, thus: 
+Consider now that if $f(b)\to c$, then $f^{-1}(c)=b$. Conversely, consider that if $f(\gamma) \to x$, then $f^{-1}(x) \to \gamma$. Consider now as well that as $c \to x$, $f^{-1}(c) \to f^{-1}(x)$, which means that $b \to \gamma$, thus: 
 $$
 \begin{align}
-f'^{-1}(x)  & `= \lim_{ \gamma \to b } \frac{b - \gamma}{f(b) - f(\gamma)} \\
+f'^{-1}(x)  & = \lim_{ \gamma \to b } \frac{b - \gamma}{f(b) - f(\gamma)} \\
  & =\lim_{ \gamma \to b } \frac{1}{\frac{f(b)-f(\gamma)}{b-\gamma}} & 
 \end{align}
 $$
+Note that the term in the denominator is equivalent to $f'(b)$, which means that: 
+$$
+\begin{align}
+f'^{-1}(x) = \frac{1}{f'(b) }
+\end{align}
+$$
+Recall that if $b = f^{-1}(c) = b$, and if $c \to x$, then this becomes:
+$$
+f'^{-1}(x) = \frac{1}{f'(f^{-1}(x))}
+$$
+
+> Note that this could also be derived from the chain rule. If we know that some function $f(y) = x$ is differentiable, and that $f^{-1}(x)=y$ exists, then we note that: 
+> $$\begin{align}f'(y) \frac{dy}{dx}  & = 1 & \text{from } f(y) = x \\f'(y) & =\frac{1}{\frac{dx}{dy}} & \frac{dx}{dy}= f'(f^{-1}(x)) \\& =\frac{1}{f'(f^{-1}(x))}\end{align}$$
+> Note that we resubstituted back in our term above, as we note that $\frac{dx}{dy}=f'(y)$, and $y$ can be rewritten as some function of $x$ from our inverse function expression from above.
+
