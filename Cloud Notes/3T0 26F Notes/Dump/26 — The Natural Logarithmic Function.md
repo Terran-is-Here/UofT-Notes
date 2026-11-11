@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-11T15:42:46.413-05:00
-edited_seconds: 760
+updated_at: 2026-11-11T16:10:12.442-05:00
+edited_seconds: 870
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,7 +11,7 @@ Created: November 11th 2026, 1:38:25 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[25 — Inverse Functions]]
-Next:
+Next: [[27 —  The Natural Exponentiaal ]]
 > [!quote] Recommended Reading 
 > Section 6.2\* of Stewart. 
 > Not to be confused with Section 6.2 normally. 
@@ -120,8 +120,16 @@ $$
 $$
 Expanding this out fully: 
 $$
-
+\begin{align}
+\ln y  & = \ln(x^{3/4}\sqrt{ x^{2}+1 }) - \ln((3x+2)^{3}) \\
+   & =\frac{3}{4}\ln x + \frac{1}{2}\ln(x^{2}+1) - 3\ln(3x+2) \\
+\frac{d}{dx}\ln y & =\frac{d}{dx}\left[\frac{3}{4}\ln x + \frac{1}{2}\ln(x^{2}+1) - 3\ln(3x+2)\right] \\
+\frac{1}{y} \frac{dy}{dx} & =\frac{3}{4x} + \frac{1}{2(x^{2}+1) } - \frac{3}{3x+2} \\
+\frac{dy}{dx} & = y\left[ \frac{3}{4x} + \frac{1}{2(x^{2}+1)} - \frac{3}{3x+2} \right]  \\
+ & =\left( \frac{x^{3/4}\sqrt{ x^{2}+1 }}{(3x+2)^{3}} \right)\left[ \frac{3}{4x} + \frac{1}{2(x^{2}+1)} - \frac{3}{3x+2} \right]
+\end{align}
 $$
+The expansion from here is tedious, but most of the conceptual work has been finished. Note that when we perform differentiation in this method, we 
 
 ## Logarithmic Integration
 Consider now the function $f(x)$ as the following expression: 
