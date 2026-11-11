@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-11T13:47:51.117-05:00
-edited_seconds: 160
+updated_at: 2026-11-11T13:52:58.461-05:00
+edited_seconds: 200
 course: ESC194H1
 tags:
   - ESC194H1
@@ -36,7 +36,7 @@ Which is a *very useful expression for evaluating some properties of the natural
 ### Properties of Ln(x) 
 > The textbook actually goes into a series of proofs pertaining to the nature of this function! 
 
-> Prove that $\ln(xy) = \ln(x) + \ln (y)$
+> Prove that $\ln(xy) = \ln(x) + \ln (y)$. 
 
 To prove this, first consider a function with any positive number $a$ that is some $\ln (ax)$, then taking the derivative of this gives us the following: 
 
@@ -47,4 +47,24 @@ We note that $\ln (x)$ and $\ln(ax)$ share the same derivative, thus $\ln(ax)$ m
 $$
 \ln (ax) = \ln(x) + C
 $$
-Note that if $x=$
+Note that if $x=1$; then $\int_{1}^{1} \frac{1}{x}dx = 0$, and thus $\ln(1)=0$, then we get the following: 
+$$
+\ln(a) = C
+$$
+Thus we find that: 
+$$
+\ln(ax) = \ln(x) + \ln(a)
+$$
+Note that $a$ is any arbitrary positive number, substituting $a=y$ gets us our desired result. 
+
+> Prove that $\ln\left( \frac{x}{y} \right) =\ln x -\ln y$
+
+Consider the earlier property that we proved earlier, that $\ln(ax) = \ln(x) + \ln(a)$, taking $a=\frac{1}{y}$ then gives us the following if we consider the following expression" 
+$$
+\begin{align}
+\ln(ay) &  = \ln (a) + \ln (y) \\
+\implies a=\frac{1}{y}  & \implies \\
+\ln\left( \frac{1}{y}y \right) & = \ln\left( \frac{1}{y} \right) + \ln y & \ln(1) = 9 \\
+0 = \ln
+\end{align}
+$$
