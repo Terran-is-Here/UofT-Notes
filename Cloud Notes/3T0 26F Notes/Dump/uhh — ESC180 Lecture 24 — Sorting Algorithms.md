@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-11T17:26:57.977-05:00
-edited_seconds: 300
+updated_at: 2026-11-11T17:46:52.033-05:00
+edited_seconds: 620
 course:
 tags:
 "Lecture #": 0
@@ -51,8 +51,9 @@ def bubblesort(L)
 ```
 
 Note that now, this sorting algorithm has a *best case* run time complexity of $O(n)$, as we simply only need to iterate through the length of the list. This sorting algorithm however now has a *worst-case* run complexity of $O(n^{2})$. 
+* If we measure our time complexity with respects to **how many times the code within the loop runs** (as we did in lecture), then the best case time complexity is actually still $O(n)$ (as we still have to compare all elements at least once). 
 
-To define / find this runtime complexity, consider that we analyze this function using the comparison within as our measurement, that is: 
+To define / find this runtime complexity, consider that we analyze this function using the **loop within** as our measurement, that is: 
 ```python
 def bubblesort(L)
 	loops = 0 
@@ -61,8 +62,41 @@ def bubblesort(L)
 		hasSwapped = False 
 		for i in range(len(L)-1-loops): 
 			if L[i] > L[i+1]:               # \
-				L[i+1], L[i] = l[i], L[i+1] # | c 
+				L[i+1], L[i] = l[i], L[i+1] #  > Let this take some time c
 				hasSwapped = True           # /
 				continue 
 		loops += 1 
+```
+If our list is in it's worst case, then we note that our `hasSwapped` term will not ever tick early. 
+* For our for loop, this runs for `k` times, where `k` is some function of `k`
+```python
+		for i in range(len(L)-1-loops): 
+			if L[i] > L[i+1]:               # \
+				L[i+1], L[i] = l[i], L[i+1] #  > Let this take some time c, and uses some term of looks n 
+				hasSwapped = True           # /
+				continue 
+```
+* Note that the loop within will run progressively less times, that is for the iterations it goes from n-1, n-2, n-3 ... 3, 2, 1 times
+
+Thus we find that the inner number of the inner loop iterations is simply the sum of the arithmetic sequence: 
+$$
+\frac{n(n-1)}{2} \to \frac{n^{2}}{2}-\frac{n}{2}
+$$
+The runtime of this function / sorting algorithm is therefore $O(n^{2})$ for some large $n^{2}$. 
+## Insertion Sort
+Insertion Sort basically operates with the principle of finding the largest value within the set, and simply moving it to the end of the list; then we simply take the next value. We note that this value is going to be sorted, and thus sort the corresponding sublist. 
+
+```python
+def insertionSort(L): 
+	
+	for k in range(1,len(L)):  #unsorted values
+		val = L[k] #value attempting to insert 
+		loc = k-1 #initialize location to be some value before; where val could go
+		while val < L[loc] and loc >= 0: #If this is true; then value needs to move towards the right by one space
+			L[loc+1] = L[loc]
+			loc -= 1 #checking next term of our value should be swapped 
+		
+		#val should go at some loc-1, then
+		L[loc-1] = val #inserting value at the right location
+	
 ```
