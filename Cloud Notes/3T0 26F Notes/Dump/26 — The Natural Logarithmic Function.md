@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-11T15:05:32.633-05:00
-edited_seconds: 430
+updated_at: 2026-11-11T15:24:05.110-05:00
+edited_seconds: 650
 course: ESC194H1
 tags:
   - ESC194H1
@@ -80,4 +80,69 @@ From the properties above, we can now also solve for the corresponding *limit* p
 > Consider $x=2^{n}$, noting that $x\to \infty$ when $n \to \infty$, thus: 
 > $$\lim_{ x \to \infty } \ln(x) = \lim_{ n \to \infty } \ln(2^{n}) = \lim_{ n \to \infty } n\ln(2) \implies \ln(2)\lim_{ n \to \infty }n$$
 > Thus from this, we see that this would diverge into infinity. 
-> 
+
+> Proof of Limit Property 2
+> Consider $x=\frac{1}{n}$, where $x\to 0^{+}$ when $n \to \infty$, then: 
+> $$\lim_{ x \to ^{+}0 } \ln(x) = \lim_{ n \to \infty } \ln\left( \frac{1}{n} \right) = -\lim_{ n \to \infty } \ln(n) = -\infty$$
+> Note that last step relied on the statement that we derived in the earlier section (that is, the limit of a natural logarithm diverges into infinity when taking the limit). 
+
+Consider as well the derivative properties of some $\ln (x)$: 
+> Let $f(x) = \ln(x)$, then $\forall x>0$
+> $$f'(x)=\frac{df}{dx} = \frac{1}{x}>0$$
+> $$\frac{d^{2}f}{dx^{2}}=f''(x) = -\frac{1}{x^{2}}<0$$
+> Which means that, for all values of $x\in[0,\infty)$, our parent function is *increasing* over an interval whilst being concave down. 
+
+### Euler's Number
+Note that $\ln(x)$ is continuous within a closed interval, and that it ranges from $-\infty,\infty$ within the interval of $[0^{+}, \infty)$. Thus from the Intermediate Value Theorem, there exists some value $c$ where $\ln(c) = 1$. This value is actually $e$, Euler's Number: 
+$$
+e \approx 2.718
+$$
+## Logarithmic Differentiation
+Recall that $f(x)=\ln(x) \implies f'(x) = \frac{1}{x}$. From chain rule, then: 
+$$
+\frac{d}{dx}\ln(u) = \frac{1}{u} \frac{du}{dx}
+$$
+Or in Lagrange's Notation, we find that: 
+$$
+\frac{d}{dx}\ln(g(x)) = \frac{g'(x)}{g(x)}
+$$
+This is a very powerful tool of notation when combining this with our properties from above; we find that we can turn a complex expression of products and exponents into a simpler set of products and addition equations instead, something that we can analyze much more easier. 
+
+## Logarithmic Differentiation 
+Consider now the function $f(x)$ as the following expression: 
+$$
+f(x) = \ln|x|
+$$
+Note that then, this is defined as the following expression: 
+$$
+f(x) = \begin{cases}
+\ln x &:x\geq  0 \\
+\ln(-x)  & : x<0
+\end{cases}
+$$
+Thus, differentiating this gives us the following: 
+$$
+f'(x) = \begin{cases}
+\frac{1}{x} : x\geq 0  \\
+\frac{1}{x}: x < 0 
+\end{cases}
+$$
+Note that since it's equivalent to $\frac{1}{x}$ in both, we find that: 
+$$
+\frac{d}{dx}\ln|x| = \frac{1}{x}
+$$
+Thus; 
+$$
+\boxed{\int \frac{1}{x}\,dx = \ln|x| + C}
+$$
+This has **major** implications for integration: We can now integrate functions which are now reciprocals! 
+### Application
+> A trivial example, consider the following integral: 
+> $$\int_{1}^{e} \frac{\ln x}{x}\,dx$$
+
+Using our properties and u-substitution, we find that:
+$$\begin{align}&=\int_{1}^{e} \frac{\ln x}{x}\,dx & u = \ln x \implies du = \frac{1}{x}dx \\&=\int_{0}^{1}u\,du = \left[ \frac{u^{2}}{2} \right]^{1}_{0} = \frac{1}{2}\end{align}$$
+
+> A more interesting example, consider the following integral: 
+> $$\int \tan x \,dx$$
+
