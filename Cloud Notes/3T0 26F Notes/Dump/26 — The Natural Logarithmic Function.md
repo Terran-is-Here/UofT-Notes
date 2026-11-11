@@ -1,12 +1,13 @@
 ---
-updated_at: 2026-11-11T15:24:05.110-05:00
-edited_seconds: 650
+updated_at: 2026-11-11T15:42:46.413-05:00
+edited_seconds: 760
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 26
 Lecture Date: 2026-11-13
 Week:
+Created: November 11th 2026, 1:38:25 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[25 — Inverse Functions]]
@@ -108,7 +109,21 @@ $$
 $$
 This is a very powerful tool of notation when combining this with our properties from above; we find that we can turn a complex expression of products and exponents into a simpler set of products and addition equations instead, something that we can analyze much more easier. 
 
-## Logarithmic Differentiation 
+Consider as well that we can take the logarithm on both sides of an expression; and take a derivative as per usual. Since $\ln$ makes it much easier to calculate some derivatives due to it's properties, we can also use it to simplify the derivative of an overall function. For instance, take the following function: 
+
+$$
+y = \frac{x^{3/4}\sqrt{ x^{2}+1 }}{(3x+2)^{3}}
+$$
+Taking the logarithm on both sides, we find that: 
+$$
+\ln y = \ln\left( \frac{x^{3/4}\sqrt{ x^{2}+1 }}{(3x+2)^{3}} \right)
+$$
+Expanding this out fully: 
+$$
+
+$$
+
+## Logarithmic Integration
 Consider now the function $f(x)$ as the following expression: 
 $$
 f(x) = \ln|x|
@@ -145,4 +160,19 @@ $$\begin{align}&=\int_{1}^{e} \frac{\ln x}{x}\,dx & u = \ln x \implies du = \fra
 
 > A more interesting example, consider the following integral: 
 > $$\int \tan x \,dx$$
+
+Expanding out that tangent expression: 
+$$
+\int \frac{\sin x}{\cos x}\,dx
+$$
+Thus: 
+$$
+\begin{align}
+ & =\int \frac{\sin x}{\cos x}\,dx  & u = \cos x \implies du = -\sin x \,dx \\
+ & =\int-\frac{1}{u}\,du = -\int \frac{1}{u}\,du \\
+ & = -\ln|u| + C  \\
+ & =-\ln|\cos x| + C  & \text{using log rules}\\
+ & =\ln \left| \frac{1}{\cos x}\right|+C = \ln|\sec x| +C  \\
+\end{align}
+$$
 
