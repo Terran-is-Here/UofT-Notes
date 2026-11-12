@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-11T13:39:19.454-05:00
-edited_seconds: 560
+updated_at: 2026-11-12T14:06:09.243-05:00
+edited_seconds: 570
 course: ESC194H1
 tags:
   - ESC194H1
@@ -15,6 +15,7 @@ Next: [[26 — The Natural Logarithmic Function]]
 > Stewart Textbook Section 6.1 
 --- 
 # Lecture Notes
+
 
 ---
 # Pre-Lecture Notes

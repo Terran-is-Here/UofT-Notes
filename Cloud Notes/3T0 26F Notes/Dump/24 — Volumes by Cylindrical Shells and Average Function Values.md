@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-09T12:08:15.945-05:00
-edited_seconds: 1610
+updated_at: 2026-11-12T14:21:32.160-05:00
+edited_seconds: 1730
 course: ESC194H1
 tags:
   - ESC194H1
@@ -186,6 +186,62 @@ V & =2\pi\int_{0}^{1}( x^{3/2}-x^{3}-kx^{1/2}+kx^{2})\,dx \\
 $$
 
 Note that in this example; our volume would *increase* if $k$ is negative, as it increases our diameter. Note that we also have to define this with respects to us in another axis...
+## Average Value of a Function (LEC) 
+> [!ila] In Lecture Addendum
+> This section was written on November 12th. 
+
+Recall the definition of an average: 
+$$
+a_{avg} = \frac{a_{1}+a_{2}+\dots+a_{n}}{n} = \frac{\sum ^{n}_{j=1} a_{j}}{n}
+$$
+Consider now if we wanted to take the average value of a function. we would basically be taking sample points of our function: 
+
+$$
+f_{avg} \approx \frac{f(x^{*}_{1})+ f(x^{*}_{2}) + \dots + f(x^{*}_{i})}{n}
+$$
+Where $n$ represents the number of contiguous slices. Using the similar notation from our Reimann sum that is $\Delta x = \frac{b-a}{n}$; or rather $n =\frac{b-a}{\Delta x}$, thus: 
+$$
+f_{avg} \approx \frac{[f(x^{*}_{1})+ f(x^{*}_{2}) + \dots + f(x^{*}_{i})]\Delta x}{(b-a)}
+$$
+Rewriting this, we see that: 
+$$
+f_{avg} \approx \frac{1}{b-a} \sum_{i=1}^{n} f(x^{*}_{i})\Delta x
+$$
+Noting this approximation improves as we take the limit as $n\to \infty$, then: 
+$$
+f_{avg} =\lim_{ n \to \infty } \frac{1}{b-a} \sum_{i=1}^{n} f(x^{*}_{i})\Delta x = \frac{1}{b-a}\int_{a}^{b}f(t)\,dt
+$$
+Thus: 
+$$
+f_{avg} \equiv \frac{1}{b-a}\int_{a}^{b}f(t)\,dt
+$$
+### Example
+For instance, take the following function: $f(x) = x^{2}$ on the interval of $[0,3]$, thus: 
+$$
+f_{avg} = \frac{1}{3}\int_{0}^{3}x^{2}\,dx = \frac{1}{3}\left[ \frac{x^{3}}{3} \right]^{3}_{0} = 3
+$$
+## Integral MVT (LEC) 
+From the ideas above, we derive the version of the Mean Value Theorem for Integrals: 
+
+> if $f$ is continuous on an interval $[a,b]$, $\exists c\in[a,b]$, such that: 
+> $f(c) = f_{avg}$
+> That is, there exists some point $c$ in an interval, where our function attains the average value: 
+
+$$
+f(c)*(b-a) = \int_{a}^{b}f(t)\,dt
+$$
+We can prove this through the application of the Mean Value Theorem that we have already discussed previously! Consider the following function:
+$$F(x) = \int_{a}^{x}f(x)\,dx$$
+We know that, from the Fundamental Theorem of Calculus, that $F'(x) = f(x)$, thus, using the Mean value Theorem: 
+
+$$
+\begin{align}
+F'(c)  & = \frac{f(b)-f(a)}{b-a} \\
+f(c) & =\frac{1}{b-a}\left[ \int_{a}^{b}f(t)\,dt - \int_{a}^{a}f(u)\,du \right]  \\
+f(c)(b-a)  & =\int_{a}^{b}f(t)\,dt
+\end{align}
+$$
+
 
 ---
 # Pre-Lecture Notes
