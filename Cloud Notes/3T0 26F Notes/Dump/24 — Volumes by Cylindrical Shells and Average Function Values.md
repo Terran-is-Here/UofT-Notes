@@ -1,6 +1,6 @@
 ---
 updated_at: 2026-11-12T14:21:32.160-05:00
-edited_seconds: 1730
+edited_seconds: 1740
 course: ESC194H1
 tags:
   - ESC194H1
@@ -238,9 +238,11 @@ $$
 \begin{align}
 F'(c)  & = \frac{f(b)-f(a)}{b-a} \\
 f(c) & =\frac{1}{b-a}\left[ \int_{a}^{b}f(t)\,dt - \int_{a}^{a}f(u)\,du \right]  \\
-f(c)(b-a)  & =\int_{a}^{b}f(t)\,dt
+f(c)(b-a)  & =\int_{a}^{b}f(t)\,dt \\
+\text{or, }f(c) & =\frac{1}{b-a}\int_{a}^{b}f(t)\,dt = f_{avg}
 \end{align}
 $$
+Which proves our statement above as desired. 
 
 
 ---

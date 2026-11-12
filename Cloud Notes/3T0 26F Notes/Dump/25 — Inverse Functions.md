@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-12T14:06:09.243-05:00
-edited_seconds: 570
+updated_at: 2026-11-12T14:41:50.507-05:00
+edited_seconds: 800
 course: ESC194H1
 tags:
   - ESC194H1
@@ -15,6 +15,55 @@ Next: [[26 — The Natural Logarithmic Function]]
 > Stewart Textbook Section 6.1 
 --- 
 # Lecture Notes
+## Inverse Functions (LEC) 
+Before we define an Inverse Function, we need to show that a function is bijective ("one-to-one")
+> A function $f(x)$ is said to be bijective if $f(x_{1})=f(x_{2}) \implies x_{1}=x_{2}$. Or in other words, $f(x_{1})\neq f(x_{2}) \implies x_{1}\neq x_{2}$
+
+This can be done graphically by the application of a horizontal line test; that is simply slicing some line $y=a$ , and showing that for some $f(x)=y$, there exists solely one value of $x$ that satisfies this possibility. 
+
+From this, we can define the concept of an *inverse function* as the following. 
+> Let $f$ be a one-to-one / bijective function with a domain $A$ and a range $B$; thus $A\mapsto B$ for $f$. 
+> Then it's *inverse function* $f^{-1}$ has a domain of $B$ with a range of $A$, that is $B\mapsto A$, and is defined as $f^{-1}(y) = x \iff f(x) =y$. 
+
+Thus, we find that: 
+$$
+\begin{align}
+f^{-1}(f(x)) = x \\
+f(f^{-1}(x)) = x
+\end{align}
+$$
+Note that for notation wise, we will notate this as attaching this directly onto the term (which should be obvious). 
+
+To find an inverse, first swap the $y=f^{-1}(x)$; such that is $f(y)=x$. In other words, swap $y=x$ then return values at the end. 
+* $f(x)=x^{3} \implies f^{-1}(x) = x^{1/3}$
+* $f(x)=\sqrt{ x } \implies \forall x\in[0,\infty), f^{-1}(x) = x^{2}$
+
+Graphically, since $f(a)=b \implies (a,b) \lor(a,f(a)$. Note that $f'(b)=a$ by definition, thus representing the ordered pair $(b,a)$. In other words, we change the values of our points across the line $y=x$. 
+### Example
+Consider the following function: 
+$g(x) = \sqrt{ 2x+1 }$, where $x\geq -\frac{1}{2}$. 
+
+Consider showing bijectivity, then: 
+$$
+\begin{align}
+g(x_{1}) &  = g(x_{2}) \\
+\sqrt{ 2x_{1} +1}  & = \sqrt{ 2x_{2} }+1 \\
+\implies x_{1} & =x_{2}
+\end{align}
+$$
+Thus an inverse exists, thus: 
+$$
+y=g^{-1}(x)
+$$
+ Thus: 
+$$
+ \begin{align}
+ g(y)=\sqrt{ 2y+1 } = x \\
+ y=\frac{x^{2}-1}{2}=g^{-1}(x)
+ \end{align}
+$$
+Note that this applies $\forall x\geq0$. 
+
 
 
 ---
