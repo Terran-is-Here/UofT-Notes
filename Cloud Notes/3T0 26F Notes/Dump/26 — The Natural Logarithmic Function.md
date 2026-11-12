@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-11T16:10:12.442-05:00
-edited_seconds: 870
+updated_at: 2026-11-12T09:37:52.650-05:00
+edited_seconds: 880
 course: ESC194H1
 tags:
   - ESC194H1
@@ -129,7 +129,7 @@ $$
  & =\left( \frac{x^{3/4}\sqrt{ x^{2}+1 }}{(3x+2)^{3}} \right)\left[ \frac{3}{4x} + \frac{1}{2(x^{2}+1)} - \frac{3}{3x+2} \right]
 \end{align}
 $$
-The expansion from here is tedious, but most of the conceptual work has been finished. Note that when we perform differentiation in this method, we 
+The expansion from here is tedious, but most of the conceptual work has been finished. Note that when we perform differentiation in this method, we often have to take some term of chain rule on the left side; then correspondingly back substituting the original expression onto our derivative. 
 
 ## Logarithmic Integration
 Consider now the function $f(x)$ as the following expression: 
