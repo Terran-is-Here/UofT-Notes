@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-12T10:04:14.737-05:00
-edited_seconds: 200
+updated_at: 2026-11-12T10:13:10.951-05:00
+edited_seconds: 290
 course: ESC194H1
 tags:
   - ESC194H1
@@ -50,3 +50,21 @@ $$
 \ln(\exp(x)) = x
 $$
 Note that the above applies for all values within the range of $\ln(x)$, whereas the one below applies for all values within the range of $\exp(x)$. Note that $\ln(x)$ is not inherently defined for negative numbers. From these properties above, we can actually build an expression for the natural exponent. 
+
+Take the following expression: 
+$$
+\begin{align}
+\ln(e^{r}) = r\ln(e)  & = r \\
+\ln(e^{r}) = r  & \implies \exp(r) = e^{r}
+\end{align}
+$$
+Letting $r$ be any rational number; then: 
+$$
+\exp(x) = e^{x} \iff \ln(e^{x}) = x
+$$
+Thus the cancellation equations above become: 
+$$
+e^{\ln x} = x\\ \ln(e^{x}) =x
+$$
+### Differentiating
+Consider now, what would be the derivative of $e^{x}$? Let $f(x) =y= e^{x}$, then we note that $f^{-1}(y)=\ln(y)=x$ as per our differentiation formulas. 

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T22:31:09.436-04:00
-edited_seconds: 770
+updated_at: 2026-11-12T10:14:26.413-05:00
+edited_seconds: 800
 course: PHY180H1
 tags:
   - PHY180H1
@@ -16,6 +16,8 @@ Next: [[25 — Orbital and Keplerian Mechanics]]
 
 --- 
 # Lecture Notes
+## Universal Gravitation
+Note that the force of gravity only primarily operates on two objects which are fully spherically symmetrical (as the masses can be modelled as being fully concentrated at their center). 
 
 ---
 # Pre-Lecture Notes
