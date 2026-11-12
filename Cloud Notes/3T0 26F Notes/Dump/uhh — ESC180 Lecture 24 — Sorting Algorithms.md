@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-11T17:46:52.033-05:00
-edited_seconds: 620
+updated_at: 2026-11-11T17:59:51.349-05:00
+edited_seconds: 740
 course:
 tags:
 "Lecture #": 0
@@ -84,19 +84,32 @@ $$
 $$
 The runtime of this function / sorting algorithm is therefore $O(n^{2})$ for some large $n^{2}$. 
 ## Insertion Sort
-Insertion Sort basically operates with the principle of finding the largest value within the set, and simply moving it to the end of the list; then we simply take the next value. We note that this value is going to be sorted, and thus sort the corresponding sublist. 
+Insertion Sort basically operates with the principle of finding the largest value within the set, and simply moving it to the end of the list; then we simply take the next value. We note that this value is going to be sorted, and thus sort the corresponding sub list. In practice, this means that we create a "semi-sorted" list, where the sublist within is relatively sorted to itself.  
 
 ```python
 def insertionSort(L): 
 	
 	for k in range(1,len(L)):  #unsorted values
-		val = L[k] #value attempting to insert 
+		val = L[k] #value attempting to insert into our semi-sorted list...
 		loc = k-1 #initialize location to be some value before; where val could go
-		while val < L[loc] and loc >= 0: #If this is true; then value needs to move towards the right by one space
-			L[loc+1] = L[loc]
+		while val < L[loc] and loc >= 0: #If this is true; then value needs to move towards the left by one space
+			L[loc+1] = L[loc] #shift elements to the right by one to make space 
 			loc -= 1 #checking next term of our value should be swapped 
 		
-		#val should go at some loc-1, then
-		L[loc-1] = val #inserting value at the right location
+		#val should go at some loc+1 to the right, then
+		L[loc+1] = val #inserting value at the right location
 	
 ```
+* Consider that `k` gives us the start of the unsorted list, and `loc` simply lets us shift the values to eventually sort the sorted value into the list. 
+
+Consider now, what is the runtime complexity of *insertion sort*? We can define our metric of time as the amount of times that the inner-most loop literates. 
+* The while loop occurs per every "right shift" where we shift elements towards the right; 
+
+> For the best case scenario, where the list becomes fully sorted; then the while loop only runs *once* (to evaluate if `val < L[loc]`). This runs for every for loop iteration, which runs n-1 times, which means $O(n)$ for the best case scenario. 
+
+> For the worst case scenario, where the list is in a reverse sorting order: 
+> Then our while loop within runs when we have to perform multiple right shifts to make room for our value; thus our while loop runs for some $k$ times, where this corresponds to the length of the semi-sorted region of our list. 
+> 
+> Considering this in terms of the number of outer for loop iterations: 
+> $$k=1,2,\dots,n-1$$
+> Which is also another arithmetic sequence, then this is equivalent to $\frac{n(n-1)}{2}$, meaning that $O(n^{2})$. 
