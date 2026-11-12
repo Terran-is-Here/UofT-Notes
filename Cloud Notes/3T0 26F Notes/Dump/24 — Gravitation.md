@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-12T10:44:36.696-05:00
-edited_seconds: 920
+updated_at: 2026-11-12T11:09:54.766-05:00
+edited_seconds: 930
 course: PHY180H1
 tags:
   - PHY180H1
@@ -49,7 +49,7 @@ Note that this has many interesting affects when we consider gravitation near a 
 > Based on Gauss's law: only the masses within the orbital radius $r$ counts pertaining to the analysis of the force of gravity. 
 > Assuming that an object has a constant density; then for some radius less than the radius of the body, we find that: 
 > $$F_{G} = \frac{GM_{r}}{r^{3}} = \frac{G\rho\left( \frac{4}{3}\pi r^{3} \right)}{r^{2}} = \frac{4\pi}{3}G\rho r$$
-### Gravitation Near Earth
+### Gravitation Near Earth2
 Consider now the case when we are near a gravitational body, such as Earth, where $F_{g}=mg$, then considering that Newton's Law of Universal Gravitation also holds true, we find that, setting $m_{1}=m$, and $m_{2}=M_{E}$, then: 
 $$
 \begin{align}
