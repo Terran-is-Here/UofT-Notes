@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-12T14:41:50.507-05:00
-edited_seconds: 800
+updated_at: 2026-11-12T14:55:10.989-05:00
+edited_seconds: 960
 course: ESC194H1
 tags:
   - ESC194H1
@@ -63,7 +63,53 @@ $$
  \end{align}
 $$
 Note that this applies $\forall x\geq0$. 
+### Increasing and Decreasing Functions
+Bijectivity actually follows partially from the following theorem: 
+> If a function $f$ is an *increasing* or *decreasing* function, then $f$ is bijective, and thus has an inverse. 
 
+This is proven by the following. 
+
+> Let $f(x)$ be an increasing function, then $x_{1}<x_{2} \implies f(x_{1})<f(x_{2})$. 
+> From Trichotomy [[02 — The Real Number System]], then this implies that $x_{1}\neq x_{2} \implies f(x_{1})\neq f(x_{2})$, which is 
+
+Note that to prove this, we simply take the derivative and show that a function's first derivative is always positive (or negative) across an interval. 
+
+Take the following example: 
+$$
+f(x) = x^{3} \implies \frac{df}{dx} = 3x^{2} \implies \frac{d^{2}f}{dx^{2} } = 6x
+$$
+Note that this function has *a* location where $f'=0$. Recall that increasing or decreasing means the implication that the order of the points corresponds to the order of the function *evaluated* at those points. 
+
+Take the following example: 
+$$
+f(x) = 5x^{7}+3x^{3} - 7 \implies \frac{df}{dx} = 35x^{6} + 9x^{2}
+$$
+Thus, $\forall x\in(-\infty,\infty), \frac{df}{dx}\geq0$, thus an inverse exists, simply setting $y=f^{-1}(x)$, $f(y)=x$ and solve as per usual. Note that solving for the inverse functions may be difficult. 
+
+## Inverse Function Derivatives (LEC) 
+
+> [!theorem] 
+> Let $f$ be a bijective function defined on an interval $I$. If $f$ is continuous on $I$, then $f^{-1}$ is also continuous. 
+> > Proof available in Page A47 of the Stewart Textbook
+
+For the purposes of this section, let $g(x)= f^{-1}(x)$, thus $f(g(x)) = x$. Consider differentiating both sides, thus: 
+
+$$
+\begin{align}
+\frac{d}{dx}(f(g(x))) & =\frac{d}{dx}x \\
+f'(g(x))g'(x)  & =1 & f'(g(x)) \neq 0 \\
+g'(x)  & =\frac{1}{f'(g(x))} 
+\end{align}
+$$
+Or, in alternative notations: 
+$$
+\begin{align}
+\frac{dy}{dx} = \frac{1}{\frac{dx}{dy}} \\
+f'^{-1}(x) = \frac{1}{f'(f^{-1}(x))}
+\end{align}
+$$
+
+Consider that graphically, taking the derivative is equivalent to us taking some $\frac{\Delta y}{\Delta x}$. If our functions are equivalently flipped across some mirror $y=x$, then it follows that $f'(x)=\frac{\Delta x}{\Delta y}$ as per the slope, or in other words, the inverse of the slope. 
 
 
 ---
