@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-12T10:14:26.413-05:00
-edited_seconds: 800
+updated_at: 2026-11-12T10:44:36.696-05:00
+edited_seconds: 920
 course: PHY180H1
 tags:
   - PHY180H1
@@ -19,6 +19,18 @@ Next: [[25 — Orbital and Keplerian Mechanics]]
 ## Universal Gravitation
 Note that the force of gravity only primarily operates on two objects which are fully spherically symmetrical (as the masses can be modelled as being fully concentrated at their center). 
 
+### Weightlessness
+Consider the following: At what velocity would you need to drive around a circular body to become weightless? Note that this means that the Normal Force tends to 0, and since we are moving around a rotating body; then we find the following expression for the FBD: 
+
+$$
+F_{N} - mg = -\frac{mv_{t}^{2}}{r}
+$$
+thus: 
+$$
+mg = \frac{mv^{2}}{r} \to \sqrt{ gr } = v
+$$
+Note that if we extend this out with defining $mg$ as some $F_{g} = \frac{Gm_{1}m_{2}}{r^{2}}$, this would solve for a general case of a perfectly circular orbit's orbital velocity.
+
 ---
 # Pre-Lecture Notes
 ## Newtonian Gravitation
@@ -32,6 +44,11 @@ Newton's Law of Universal Gravitation can be described as the generalization(\*)
 > Where $\hat{r}$ is a unit vector that points from some object $A$ to some object $B$, or vice versa. (This is an extension of NTL). 
 
 Note that this has many interesting affects when we consider gravitation near a local body, and or with terms of one body present. 
+
+> [!ila] In-Lecture Addendum
+> Based on Gauss's law: only the masses within the orbital radius $r$ counts pertaining to the analysis of the force of gravity. 
+> Assuming that an object has a constant density; then for some radius less than the radius of the body, we find that: 
+> $$F_{G} = \frac{GM_{r}}{r^{3}} = \frac{G\rho\left( \frac{4}{3}\pi r^{3} \right)}{r^{2}} = \frac{4\pi}{3}G\rho r$$
 ### Gravitation Near Earth
 Consider now the case when we are near a gravitational body, such as Earth, where $F_{g}=mg$, then considering that Newton's Law of Universal Gravitation also holds true, we find that, setting $m_{1}=m$, and $m_{2}=M_{E}$, then: 
 $$
