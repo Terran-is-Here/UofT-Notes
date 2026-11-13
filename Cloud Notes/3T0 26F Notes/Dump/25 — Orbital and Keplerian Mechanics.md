@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-02T22:19:40.055-05:00
-edited_seconds: 1490
+updated_at: 2026-11-13T16:44:40.717-05:00
+edited_seconds: 1500
 course: PHY180H1
 tags:
   - PHY180H1
@@ -17,6 +17,7 @@ Next: [[26 — Tidal Forces, General Relativity]]
 
 --- 
 # Lecture Notes
+N/A, see previous noteset. 
 
 ---
 # Pre-Lecture Notes
