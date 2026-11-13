@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-12T14:55:10.989-05:00
-edited_seconds: 960
+updated_at: 2026-11-13T13:17:20.897-05:00
+edited_seconds: 1070
 course: ESC194H1
 tags:
   - ESC194H1
@@ -110,6 +110,32 @@ f'^{-1}(x) = \frac{1}{f'(f^{-1}(x))}
 $$
 
 Consider that graphically, taking the derivative is equivalent to us taking some $\frac{\Delta y}{\Delta x}$. If our functions are equivalently flipped across some mirror $y=x$, then it follows that $f'(x)=\frac{\Delta x}{\Delta y}$ as per the slope, or in other words, the inverse of the slope. 
+> Note that solving this in terms of our expression, $f'(f^{-1}(x))$ , the inside function simply solves for the value to plug into our derivative. 
+
+### Examples
+Consider the following expression: 
+$$f(x) = x^{3} \iff f^{-1}(x) = x^{1/3}$$
+Solving for $f'(x)$ gives us $3x^{2}$, noting that $f'(2)=12$ and $f(2) = 8$, thus: 
+$$
+f^{'-1}(8) = \frac{1}{f'(2)} = \frac{1}{12}
+$$
+Using alternative notation: 
+$$
+\begin{align}
+y=f(x) = x^{3} \\
+\frac{dy}{dx}=y' = 3x^{2} \\
+\text{let }x=y^{1/3} \implies \frac{dx}{dy} = \frac{1}{3}y^{-2/3} \implies  \frac{1}{3x^{2}} = \frac{1}{\frac{dy}{dx}}
+\end{align}
+$$
+As expected. 
+
+Consider now the following expression: 
+$$f(x) = \frac{1}{x}, \forall x\in(0,\infty)\\f'(x) = -\frac{1}{x^{2}}$$
+Note that this implies the function is always decreasing, hence we can find an inverse: 
+$$
+f(y) = \frac{1}{y} = x \implies y =\frac{1}{x} = f^{-1}(x)
+$$
+
 
 
 ---

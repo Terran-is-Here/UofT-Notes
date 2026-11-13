@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-13T08:36:05.938-05:00
-edited_seconds: 890
+updated_at: 2026-11-13T13:26:40.009-05:00
+edited_seconds: 1030
 course: ESC194H1
 tags:
   - ESC194H1
@@ -17,6 +17,37 @@ Next: [[27 —  The Natural Exponential]]
 > Not to be confused with Section 6.2 normally. 
 --- 
 # Lecture Notes
+## ln(x) (LEC)
+We start with a definition: 
+> [!theorem] Logarithmic Function Definition
+> A logarithmic function is a *non-constant* differentiable function $f$, defined for $x\in \{ \mathbb{R},(0,\infty) \}$ such that for all $a>0$ and $b>0$, $f(a\cdot b) = f(a)+f(b)$. 
+
+From this definition, we actually see that: 
+> $$f(1) = 0$$
+> > *Proof*
+> > $$f(1*1) = f(1) + f(1) \implies f(1) = 2f(1) \implies f(1) = 0$$
+
+> $$f\left( \frac{1}{x} \right)= -f(x)$$
+> *Proof*
+> > $$0 = f(1) = f\left( x\cdot \frac{1}{x} \right) = f(x) + f\left( \frac{1}{x} \right) \implies -f(x) = f\left( \frac{1}{x} \right)$$
+
+> $$f\left( \frac{x}{y} \right) = f(x)-f(y)$$
+> *Proof*
+> > $$f\left( \frac{x}{y} \right) = f\left( x * \frac{1}{y} \right) = f(x) + f\left( \frac{1}{y} \right) \implies f\left( \frac{x}{y} \right) = f(x) - f(y)$$
+
+> Property 4
+> $$f'(x) = \frac{1}{x}f'(1)$$
+> *Proof*
+> > Consider the following expression, taking this from the limit definition, then: 
+
+$$
+\begin{align}
+f'(x) & =\lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h} &   \text{let }x=1 \\
+& =\lim_{ h \to 0 } \frac{f\left( 1+\frac{h}{x} \right)-f(1)}{h} & \text{let } k = \frac{h}{k} \\
+& =\lim_{ h \to 0 } \frac{f\left( 1+\frac{h}{x} \right)-f(1)}{\frac{x*h}{x}} \\
+& =\frac{1}{x}\lim_{ k \to 0 } \frac{f(1+k)-f(1)}{}
+\end{align}
+$$
 
 ---
 # Pre-Lecture Notes

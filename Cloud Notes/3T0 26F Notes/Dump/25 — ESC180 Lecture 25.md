@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-13T12:45:25.948-05:00
-edited_seconds: 350
+updated_at: 2026-11-13T13:08:18.533-05:00
+edited_seconds: 360
 course:
 tags:
   - ESC180H1
@@ -29,6 +29,8 @@ matrix_man_relatedness = {"i": 3, "am": 3, "a": 2, "sick": 1, "spiteful": 1, "an
 > Consider, when processing a sentence, we can simply make a dictionary counting the number of words present within that string. Then, we can simply iterate over the keys within that dictionary, and increment corresponding values within the dictionary. This should theoretically ensure $O(n)$ computational complexity. 
 > > A naïve solution where you simply iterate per word, and then count all the rest of the words and increment accordingly, would be the one that forces a $O(n^{2})$ time complexity wise. 
 > > As for every $n$ word, you loop over the $n-1$ words present within a sentence, meaning a time complexity of $n^{2}-n$ or $O(n^{2})$. 
+> 
+> > With further thought, this would still be $O(n^{2})$, albeit with slight optimizations we are simply iterating over a sparse dictionary. 
 
 
 
