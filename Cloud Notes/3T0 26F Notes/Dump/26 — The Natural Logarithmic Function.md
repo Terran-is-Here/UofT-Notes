@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-13T13:26:40.009-05:00
-edited_seconds: 1030
+updated_at: 2026-11-13T13:47:37.540-05:00
+edited_seconds: 1350
 course: ESC194H1
 tags:
   - ESC194H1
@@ -17,7 +17,7 @@ Next: [[27 —  The Natural Exponential]]
 > Not to be confused with Section 6.2 normally. 
 --- 
 # Lecture Notes
-## ln(x) (LEC)
+## Logarithmic Functions 
 We start with a definition: 
 > [!theorem] Logarithmic Function Definition
 > A logarithmic function is a *non-constant* differentiable function $f$, defined for $x\in \{ \mathbb{R},(0,\infty) \}$ such that for all $a>0$ and $b>0$, $f(a\cdot b) = f(a)+f(b)$. 
@@ -45,9 +45,46 @@ $$
 f'(x) & =\lim_{ h \to 0 } \frac{f(x+h)-f(x)}{h} &   \text{let }x=1 \\
 & =\lim_{ h \to 0 } \frac{f\left( 1+\frac{h}{x} \right)-f(1)}{h} & \text{let } k = \frac{h}{k} \\
 & =\lim_{ h \to 0 } \frac{f\left( 1+\frac{h}{x} \right)-f(1)}{\frac{x*h}{x}} \\
-& =\frac{1}{x}\lim_{ k \to 0 } \frac{f(1+k)-f(1)}{}
+& =\frac{1}{x}\lim_{ k \to 0 } \frac{f(1+k)-f(1)}{k}  & \text{Choose }f'(1) = 1 \\
+f'(x)& = \frac{1}{x}f'(1)
 \end{align}
 $$
+From our work above we actually find that using FToC, that: 
+$$
+f(x) = \int_{1}^{x} \frac{1}{t}\,dt = \ln(x)
+$$
+Note that our definition for what $f'(1)$ is actually determines what our logarithm's base is. 
+### Properties
+1. Note that $\frac{d}{dx}\ln(x) = \frac{1}{x}$. Since our function is defined for $x>0$, then our derivative is always increasing. 
+2. Note that $\ln(x)$ is continuous due to it's differentiability. 
+3. $\forall x>1, \ln(x) >0$ (From the concept that this is the area under the graph of $\frac{1}{x}$ from $(1,x)$). 
+	1. For $0<x<1$, $\ln(x)<0$ from our integral property above as well.
+4. $\ln(a\cdot b) = \ln(a) +  \ln(b)$ (From our defining statement, though we can prove it too.): 
+   $$\frac{d}{dx}\ln(x), \frac{d}{dx}\ln(ax) \to \frac{1}{ax}a = \frac{1}{x}$$
+   Noting that the derivative of $\ln(ax)$ and $\ln(x)$ share the same constant we note that taking the antiderivative gives us that: 
+   $$\ln(ax) = \ln(x) + c\\x=1 \implies \ln(a) = \ln(1) + c \implies \ln(a) = C\\ \implies \ln(ax) = \ln (a) + \ln(x)$$
+5. Rational Power Property $$\ln(x^{p/q}) = \frac{p}{q}\ln x$$
+   Consider that $\ln(x^{3}) = \ln(x) + \ln(x) + \ln(x) = 3\ln(x)$. Consider now that $\ln(x) = \ln(x^{1/3}) + \ln(x^{1/3})+\ln(x^{1/3}) \implies \ln(x^{1/3}) = \frac{1}{3}\ln(x)$. 
+   Thus, applying the chain rule:
+   $$\frac{d}{dx}\ln(x^{p/q}) \to \frac{1}{x^{p/q}}* \frac{p}{1}x^{p/q-1} = \frac{\frac{p}{q}*1}{x} = \frac{d}{dx}\left[ \frac{p}{1}\ln(x) \right]$$
+   Noting that they share the same antiderivative, we see that:
+   $$\ln(x^{p/q}) = \frac{p}{q}\ln(x) + C$$
+   Noting that $x=1$ implies $C=0$, thus $\ln(x^{p/q}) = \frac{p}{q} \ln(x)$. 
+6. The *range* of $\ln(x)$ is $-\infty,+\infty$
+   The proof for this can be done by first, imposing that $M>0$. Taking this M as a very large value, we can use a variant of $\epsilon-\delta$ to prove this, that is to show that :
+   $\ln(x) >M$ for $x>x_{d}$. Taking the proof, note that:
+   $$\ln(2) = \int_{1}^{2} \frac{dt}{t}>0$$
+   Taking the property that for some $n$ in the real number, we can see that $n\ln(2) > M$. Thus we can set that $x_{d}=2^{n}$. Thus we see that: 
+   $$\ln(x) > M \iff x>x_{d}=2^{n}$$
+   When $n > \frac{M}{\ln2}$. Thus we find that $\lim_{ n \to \infty }\ln(x)=\infty$. 
+	1. It is an exercise to the reader is to show that $\lim_{ x \to ^{+}0 }\ln(x) = -\infty$. 
+7. From IVT, we can see that for some number $e$, $\ln(e) = 1$.
+   Or in other words, $$\ln(e) = \int_{1}^{e} \frac{dt}{t} = 1$$
+8. $$\ln(e^{p/q}) = \frac{p}{q}\ln(e) = \frac{p}{q}$$
+   (As per our earlier properties) 
+9. The convention is normally is $\ln(x) = \log_{e}(x)$.
+10. Our function is concave down, but constantly increasing:
+    $$$
 
 ---
 # Pre-Lecture Notes
