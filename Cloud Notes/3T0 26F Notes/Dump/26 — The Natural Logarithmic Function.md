@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-12T09:37:52.650-05:00
-edited_seconds: 880
+updated_at: 2026-11-13T08:36:05.938-05:00
+edited_seconds: 890
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week:
 Created: November 11th 2026, 1:38:25 pm
 ---
 Hub: [[ESC194 Hub]]
-Previous: [[25 — Inverse Functions]]
+Previous: [[25 — Inverse Functions]] 
 Next: [[27 —  The Natural Exponential]]
 > [!quote] Recommended Reading 
 > Section 6.2\* of Stewart. 
