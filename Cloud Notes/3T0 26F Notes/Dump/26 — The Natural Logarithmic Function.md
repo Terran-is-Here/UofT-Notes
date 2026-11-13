@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-13T13:47:37.540-05:00
-edited_seconds: 1350
+updated_at: 2026-11-13T13:57:18.553-05:00
+edited_seconds: 1490
 course: ESC194H1
 tags:
   - ESC194H1
@@ -84,7 +84,53 @@ Note that our definition for what $f'(1)$ is actually determines what our logari
    (As per our earlier properties) 
 9. The convention is normally is $\ln(x) = \log_{e}(x)$.
 10. Our function is concave down, but constantly increasing:
-    $$$
+    $$\begin{align}
+	\ln(x)' &= \frac{1}{x} > 0 &\forall x>0 \text{ per definition}\\
+	\ln(x)''& = -\frac{1}{x^{}} < 0 
+	\end{align}$$
+
+### Differentiation
+For extending this in terms of the chain rule, we see that: 
+$$
+\frac{d}{dx}\ln(u) = \frac{\frac{1}{u}du}{dx}
+$$
+As per our usual definitions, note that our $\ln(x)$ requires $x>0$, thus the domain of the corresponding function must comply with this as it's range. For instance, $\ln(1-2x^{2})$, then it's derivative is equivalent to: 
+$$
+\begin{align}
+f(x)  & = \ln(1-2x^{2}) \\
+f'(x) & =\frac{-4x}{1-2x^{2}}
+\end{align}
+$$
+Noting that the restriction of this function are $1-2x^{2}>0$, or in other words, $-\frac{1}{\sqrt{ 2 }}<x< \frac{1}{\sqrt{ 2 }}$ is the domain of our function; noting that $f'(x)=0 \implies x=0$ as a local maximum. 
+
+Consider now the following logarithm: 
+$$
+f(x) = \ln|x|
+$$
+Consider as it is an even function, and is equivalent to the following in terms of a piecewise function: 
+$$
+f(x) = \begin{cases}
+\ln(x) & : x>0  \\
+\ln(-x) & :x<0
+\end{cases}
+$$
+Taking the derivative, we find that: 
+$$
+f'(x) = \begin{cases}
+\frac{1}{x} & : x>0  \\
+\frac{1}{-x}*-1 = \frac{1}{x} & : x<0
+\end{cases}
+$$
+That is, $f(x) = \ln|x| \implies f'(x) = \frac{1}{x}$, noting that the integral of this function as per our FToC gives us that: 
+$$
+\int_{1}^{x} \frac{1}{x}dx = \ln|x| +C
+$$
+### Examples
+For instance, take the following expression: 
+$$
+f(x) = \ln|1-2x^{2}|
+$$
+Note that this allows us now to see that we can allow arguments which would normally result in a negative. For instance, for $x^{2}> \frac{1}{2}$, then we get $\ln(2x^{2}-1)$, taking the derivative, we get the same one as earlier; taking a form very similarly shaped to an asymptote graph with two vertical asymptotes present at the same restrictions that we have defined earlier. 
 
 ---
 # Pre-Lecture Notes
