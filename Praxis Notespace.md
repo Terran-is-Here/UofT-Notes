@@ -53,3 +53,11 @@ Reflection:
 * What sets this concept apart from the other ideas that you have in this current showcase? 
 * Do your design concepts satisfy the corresponding requirements and evaluation criteria that you have set out when interpreting the design brief? 
 * 
+
+
+---
+## Post-Alpha
+* Something that I learned about our process during Alpha Release Assessments was that we often lacked a sensible structure pertaining to who goes where; presentations would often get messy as we lacked the foresight to actually plan out the structure of the table that we are presenting, which may be a tad bit suboptimal for most people. 
+* Pertaining to our concepts, we should have iterated more on potential solutions to the wall mounting problem. How many possible alternatives could have existed for attaching a potential solution onto a wall emplacement which would be removable? Perhaps an adhesive would be a more apt solution after all, versus a suction cup mechanism for our processes. 
+* In terms of an important next step for our team based on observations from Alpha, the likely next step is for us to iterate further on the solutions that we have worked on so far, as well as further diverging onto other solutions within the process as is usual. I would significantly want to work more on the nature of the structure in which we perform our presentations on however, that is how we organize our thoughts and etc. 
+	* I would also like to vastly improve the focus of the work that we do, in terms of the fact that one of our members often lacks involvement, and the other is every so often present during meetings, which may be suboptimal. 
