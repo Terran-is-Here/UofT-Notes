@@ -1,14 +1,15 @@
 ---
-updated_at: 2026-11-11T17:59:51.349-05:00
-edited_seconds: 740
-course:
+updated_at: 2026-11-13T12:10:59.567-05:00
+edited_seconds: 760
+course: ESC180H1
 tags:
+  - ESC180H1
 "Lecture #": 0
 Lecture Date: 2026-11-11
 Week:
 ---
 Hub: 
-Previous: 
+Previous: [[25 — ESC180 Lecture 25]]
 Next:
 
 > I for the life of me DO NOT CARE for taking notes in things, but it would be helpful.
@@ -16,7 +17,7 @@ Next:
 --- 
 # Lecture Notes
 
-## Insertion Sot
+## Insertion Sort
 Insertion sort works by simply going through the list, swapping it to the highest value; then sorting the smaller value of the list. Note that this has a worst asymptotic time complexity of $O(n^{2})$, where $n$ represents the length of the list (regardless of the *format* of the list, that is this is how well it operates regardless of what kind of list is passed into it.)
 
 ## Bubble Sort
