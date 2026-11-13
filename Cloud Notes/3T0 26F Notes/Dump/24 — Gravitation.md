@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-12T14:01:43.022-05:00
-edited_seconds: 940
+updated_at: 2026-11-13T16:24:35.153-05:00
+edited_seconds: 1030
 course: PHY180H1
 tags:
   - PHY180H1
@@ -30,6 +30,39 @@ $$
 mg = \frac{mv^{2}}{r} \to \sqrt{ gr } = v
 $$
 Note that if we extend this out with defining $mg$ as some $F_{g} = \frac{Gm_{1}m_{2}}{r^{2}}$, this would solve for a general case of a perfectly circular orbit's orbital velocity.
+
+## Potential Energy (LEC)
+Note that we define Gravitational Energy as the following, where we set $\gamma$ to be the height of our object above the earth's surface. 
+$$
+U_{g} = \frac{GMm}{r_{e}+\gamma}
+$$
+Multiplying by $\frac{1}{r_{e}}$ in numerator and denominator shows us that: 
+$$
+\begin{align}
+U_{g} &  = \frac{GMm}{r_{e}}\left( \frac{1}{1 + \frac{\gamma}{r_{e}}} \right) & \text{set } \epsilon = \frac{\gamma}{r_{e}}
+\end{align}
+$$
+Then we find that: 
+$$
+\begin{align}
+g = \frac{GM_{e}}{r_{e}^{2}} = 9.8
+\end{align}
+$$
+Then we find that: 
+$$
+\frac{GM_{e}}{r_{e}}= gr_{e}
+$$
+Thus: 
+$$
+\begin{align}
+U_{g} & =gr_{e}m \left( \frac{1}{1+\epsilon} \right) \frac{1-\epsilon}{1-\epsilon} \\
+ & =gr_{e}m \left( \frac{1-\epsilon}{1-\epsilon^{2}} \right)  & \epsilon^{2} \to \text{very small}\\ 
+ & \approx gr_{e}m (1-\epsilon) \\
+ & \approx gr_{e}m\left( 1-\frac{\gamma}{r_{e}} \right) = gr_{e}m - gr\gamma_{0} \\
+ &  \\
+ & 
+\end{align}
+$$
 
 ---
 # Pre-Lecture Notes
