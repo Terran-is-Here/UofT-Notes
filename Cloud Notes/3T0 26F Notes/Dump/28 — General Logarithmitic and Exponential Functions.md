@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-15T18:29:15.727-05:00
-edited_seconds: 190
+updated_at: 2026-11-15T18:47:28.261-05:00
+edited_seconds: 450
 course:
 tags:
 "Lecture #": 0
@@ -37,10 +37,80 @@ From here, we derive the definition of the general Exponential:
 
 Consider now that this allows us to extend some of the exponent laws that we derived earlier. 
 
-> Property 1
+> [!theorem] Property 1
 > $$b^{x+y}=b^{x}b^{y}$$
-> > Proof 
+> > [!axiom]- Proof 
 > > Consider that with our definition, we find that: $$b^{x+y} = e^{(x+y)\ln(b)} = e^{x\ln(b) + y\ln(b)} = e^{\ln(b^{x}) + \ln(b^{y})} = e^{\ln(b^{x}b^{y})} = b^{x}b^{y}$$
 
-> Property 2 
-> $$b^{x-y} = br$$
+> [!theorem] Property 2
+> $$b^{x-y} = \frac{b^{x}}{b^{y}}$$
+> > [!axiom]- Proof 
+> > Consider that with our definition we find that:
+> > $$e^{(x-y)\ln(b)}=e^{x\ln(b)-y\ln(b)} = \frac{e^{\ln(b^{x})}}{e^{\ln(b^{y})}} = \frac{b^{x}}{b^{y}}$$
+> > As was desired. 
+
+> [!theorem] Property 3
+> $$(b^{x})^{y} = b^{xy}$$
+> > [!axiom]- Proof 
+> > Consider that with our definition, we find that: 
+> > $$(b^{x})^{y}= e^{y\ln(b^{x})} = e^{xy\ln(b)} = b^{xy}$$
+> > As is desired. 
+
+> [!theorem] Property 4
+> $$(ab)^{x}=  a^{x}b^{x}$$
+> > [!axiom]- Proof 
+> > Consider that with our definition, we find that: 
+> > $$ab^{x} = e^{x\ln ab} = e^{x(\ln(a)+\ln(b))} = e^{x\ln (a) + x\ln(b)} = a^{x}b^{x}$$ As is desired. 
+
+## Differentiation
+From our definition above: 
+$$
+b^{x} = e^{x\ln(b)}
+$$
+We correspondingly find the associated derivative of our function as: 
+$$
+\frac{d}{dx}b^{x} = \frac{d}{dx}e^{x\ln(b)} = \ln(b)e^{x\ln(b)} = b^{x}\ln(b)
+$$
+> Derivative of the General Exponential
+> $$\frac{d}{dx}b^{x} = b^{x}\ln(b)$$
+
+Note that this gives us another way to see the perspective of the derivative of $e^{x}$, $\frac{d}{dx}e^{x} = e^{x}\ln(e) = e^{x}$, from the property that $\ln(e) = 1$. 
+### Integration
+Corresponding from the derivative of the General Exponential, we find that: 
+$$
+\int b^{x}\,dx = \frac{b^{x}}{\ln(b)} + C
+$$
+### General Power Rule
+Consider now that we defined $b^{x}$ for any arbitrary $x$, thus we can now prove the power rule for any value of $x$: 
+
+$$
+\begin{align}
+y  & =x^{n} \\
+\ln|y| & =n\ln|x|  & \text{use logarithmic differentiation} \\
+\frac{y'}{y} & =\frac{n}{x} & \frac{d}{dx}\ln|f(x)|=  \frac{1}{x}dx \\
+y^{'}  & =\frac{ny}{x} = \frac{nx^{n}}{x} =nx^{n-1} \\
+\end{align}
+$$
+As is defined for the general power rule; we can now use it for any value of $x$. 
+
+## General Logarithms
+Similarly, we note that if $f(x)=b^{x}$, $b>0,b\neq1$, we find that $b^{x}$ is bijective, thus an inverse exists and is defined as the logarithmic function with respects to base $b$ as the following: 
+
+$$
+\boxed{\log_{b}y =x \iff y = b^{x}}
+$$
+Noting that the cancellation equations thus become: 
+$$
+b^{\log_{b}y}= y\\
+\log_{b}(b^{y}) = y
+$$
+The laws of this function are similar to the function above; and can be found with the same cancellation equations as above. 
+
+### Change of Base
+We note that we can now express a logarithm as a term of a change of base from the following expression: 
+$$
+\begin{align}
+b^{y} & =x & \text{take ln}  \\
+\ln(b^{y})  & =\ln(x)
+\end{align}
+$$
