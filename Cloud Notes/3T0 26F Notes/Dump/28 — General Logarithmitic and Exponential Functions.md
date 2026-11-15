@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-15T18:08:42.168-05:00
-edited_seconds: 110
+updated_at: 2026-11-15T18:29:15.727-05:00
+edited_seconds: 190
 course:
 tags:
 "Lecture #": 0
@@ -30,4 +30,17 @@ Thus, we find that:
 $$
 b^{r} = e^{r\ln(b)} = e^{\ln(b^{r})}
 $$
-From here, we derive the definition 
+From here, we derive the definition of the general Exponential: 
+> [!theorem] General Exponential
+> We let the following be the notation that we shall use for the definition of a General Exponential as the following: 
+> $$b^{r} = e^{r\ln(b)}$$
+
+Consider now that this allows us to extend some of the exponent laws that we derived earlier. 
+
+> Property 1
+> $$b^{x+y}=b^{x}b^{y}$$
+> > Proof 
+> > Consider that with our definition, we find that: $$b^{x+y} = e^{(x+y)\ln(b)} = e^{x\ln(b) + y\ln(b)} = e^{\ln(b^{x}) + \ln(b^{y})} = e^{\ln(b^{x}b^{y})} = b^{x}b^{y}$$
+
+> Property 2 
+> $$b^{x-y} = br$$

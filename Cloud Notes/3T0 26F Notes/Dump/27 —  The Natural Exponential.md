@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-13T08:45:19.885-05:00
-edited_seconds: 410
+updated_at: 2026-11-15T18:28:31.525-05:00
+edited_seconds: 500
 course: ESC194H1
 tags:
   - ESC194H1
@@ -55,6 +55,15 @@ Thus the cancellation equations above become:
 $$
 e^{\ln x} = x\\ \ln(e^{x}) =x
 $$
+
+### Properties
+Natural Exponentials also share the following properties: 
+* $e^{x+y}=e^{x}e^{y}$
+  Proven by taking note that $\ln(e^{x}e^{y}) = \ln (e^{x})+\ln(e^{y})  =x+y \implies=e^{x+y}$, as is desired. 
+* $e^{x-y} = \frac{e^{x}}{e^{y}}$
+  Proven by taking note that $\ln(e^{x}e^{-y}) = \ln\left( \frac{e^{x}}{e^{y}} \right) = \ln(e^{x})-\ln(e^{y}) = x-y \implies e^{x-y}=\frac{e^{x}}{e^{y}}$
+* $(e^{x})^{y} = e^{xy}$
+  Proven by taking note that $\ln((e^{x})^{y})=y\ln(e^{x}) = xy \implies e^{xy}=(e^{x})^{y}$, as was desired. 
 ### Differentiating
 Consider now, what would be the derivative of $e^{x}$? Let $f(x) =y= e^{x}$, then we note that $f^{-1}(y)=\ln(y)=x$ as per our differentiation formulas. 
 
