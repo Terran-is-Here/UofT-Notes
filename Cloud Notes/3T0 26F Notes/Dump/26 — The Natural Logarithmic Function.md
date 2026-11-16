@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-13T13:57:18.553-05:00
-edited_seconds: 1490
+updated_at: 2026-11-16T11:29:59.762-05:00
+edited_seconds: 1740
 course: ESC194H1
 tags:
   - ESC194H1
@@ -92,7 +92,7 @@ Note that our definition for what $f'(1)$ is actually determines what our logari
 ### Differentiation
 For extending this in terms of the chain rule, we see that: 
 $$
-\frac{d}{dx}\ln(u) = \frac{\frac{1}{u}du}{dx}
+\frac{d}{dx}\ln(u) = \frac{1}{u } \frac{du}{dx}
 $$
 As per our usual definitions, note that our $\ln(x)$ requires $x>0$, thus the domain of the corresponding function must comply with this as it's range. For instance, $\ln(1-2x^{2})$, then it's derivative is equivalent to: 
 $$
@@ -131,6 +131,107 @@ $$
 f(x) = \ln|1-2x^{2}|
 $$
 Note that this allows us now to see that we can allow arguments which would normally result in a negative. For instance, for $x^{2}> \frac{1}{2}$, then we get $\ln(2x^{2}-1)$, taking the derivative, we get the same one as earlier; taking a form very similarly shaped to an asymptote graph with two vertical asymptotes present at the same restrictions that we have defined earlier. 
+
+ new lecture marker
+## Graphing
+Consider now the following expression: 
+$$
+f(x) = \ln\left( \frac{1+x}{1-x} \right) = \ln(1+x) - \ln(1-x)
+$$
+Differentiating, we are thus given: 
+$$
+f'(x) = \frac{1}{1+x} - \frac{1}{1-x} = \frac{2}{1-x^{2}}
+$$
+Differentiating again, we are thus given: 
+$$
+f''(x) = \frac{4x}{(1-x^{2})^{2}}
+$$
+Looking at the domain of our function, we note that $\frac{1+x}{1-x}>0$, thus we find that: 
+$$
+\begin{align}
+1+x>0 \land 1-x>0   \implies x>-1 \land 1<x \implies x\in()-1,1)\\
+1+x <0 \land 1-x <0 \implies x<1 \land 1<x \text{ (impossible) }
+\end{align}
+$$
+Thus, $x\in (-1,1)$ as our domain; Noting from our terms above, we see that for $x$ within this interval, our function will be always positive. We note that our function is also an *odd* function. 
+
+Noting that from the second derivative, we note a change in concavity at $x=0$, where we have a concave down region at $x\in(-1,0)$, and a concave up region at $x\in(0,1)$, noting that $f''(0) = 0 \implies x=0$ is a point of inflection. 
+
+Checking for any asymptotes: 
+$$
+\lim_{ x \to 1^{-} } f'(x) = \infty = \lim_{ x \to -1^{+} } f'(x) = \infty
+$$
+Thus, we have a vertical asymptote at $x=-1$ and $x=1$. 
+## Integrating 
+We note the following properties following from how we define the derivative of the natural logarithm: 
+$$
+\frac{d}{dx}\ln|x| = \frac{1}{x} \implies \int \frac{1}{x}\,dx = \ln|x| + C
+$$
+From chain rule, we see that: 
+$$
+\frac{d}{du} \ln|u| = \frac{1}{u} \frac{du}{dx} \implies \int \frac{1}{u}du = \ln|u|+C
+$$
+Or conversely: 
+$$
+\int \frac{g'(x)}{g(x)}dx = \ln(g(x)) + C
+$$
+### Examples
+For instance: 
+$$
+\int \frac{6x+5}{3x^{2}+5x -1}\,dx = \ln|3x^{2}+5x-1| + C
+$$
+
+Take the following example: 
+$$
+\begin{align}
+ & =\int \frac{\ln(x)^{2}}{x}\,dx  & u=\ln(x) \implies du = \frac{1}{x}dx \\
+ & =\int u^{2}du = \frac{1}{3}u^{3} + C = \frac{1}{3}\ln(x)^{3}+C
+\end{align}
+$$
+
+Take the following: 
+$$
+\begin{align}
+ & = \int \tan(x) \,dx  = \int \frac{\sin x}{\cos x}dx & \text{let} u = \cos x \implies du = -\sin(x)dx \\
+ & = \int -\frac{1}{u} du = -\ln|u| +C = -\ln|\cos(x)| +C
+\end{align}
+$$
+Take the following: 
+$$
+\begin{align}
+ & \int \sec(x)\,dx = \int \sec x * \frac{\sec x + \tan x}{\sec x + \tan x} \,dx \\
+ & =\int \frac{\sec x\tan x + \sec ^{2}x}{\sec x + \tan x} dx & u = \sec x + \tan x \implies du = \sec x\tan x + \sec ^{2}x \\
+ & = \int \frac{1}{u}du = \ln|u| +C \\
+ \int \sec(x)\,dx & = \ln|\sec x + \tan x| +C
+\end{align}
+$$
+
+## Misc
+Consider the following sequence: 
+$$
+g(x) = g_{1}(x) * g_{2}(x) * \dots *g_{n}(x)
+$$
+Where our function is equivalent to a sequence of $n$ functions multiplied together. Note that if we take the logarithm of both sides, this becomes a problem of a sum of the logarithms: 
+$$
+\ln|g(x)| = \ln|g_{1}(x)| + \ln|g_{2}(x)|+\dots + \ln|g_{n}(x)|
+$$
+Differentiating this is now trivial: 
+$$
+\begin{align}
+\frac{g'(x)}{g(x)} & = \frac{g'_{1}(x)}{g_{1}(x)} + \frac{g'_{2}(x)}{g_{2}(x)} +\dots + \frac{g'_{n}(x)}{g_{n}(x)} \\
+ g'(x)& =g(x) \left[\frac{g'_{1}(x)}{g_{1}(x)} + \frac{g'_{2}(x)}{g_{2}(x)} +\dots + \frac{g'_{n}(x)}{g_{n}(x)}\right]
+\end{align}
+$$
+
+For instance, take the following function: 
+$$
+g(x) = \frac{x^{4}(x-1)}{(x+2)(x^{2}+1)}
+$$
+Taking the logarithm, we find that: 
+$$
+g'(x) = \left( \frac{x^{4}(x-1)}{(x+2)(x^{2}+1)} \right)\left( \frac{4x^{3}}{x^{4} } + \frac{1}{x-1} - \frac{1}{x-2} -\frac{2x}{x^{2+1}} \right)
+$$
+
 
 ---
 # Pre-Lecture Notes

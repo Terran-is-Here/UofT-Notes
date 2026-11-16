@@ -17,6 +17,8 @@ Next: [[28 — General Logarithmitic and Exponential Functions]]
 
 --- 
 # Lecture Notes
+## Natural Exponentials (LEC)
+
 
 ---
 # Pre-Lecture Notes
