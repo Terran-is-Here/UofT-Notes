@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-16T13:14:04.755-05:00
-edited_seconds: 570
+updated_at: 2026-11-16T13:23:21.952-05:00
+edited_seconds: 580
 course:
 tags:
 "Lecture #": 0
@@ -174,4 +174,9 @@ y_{n+1}^{IEM}  & = y_{n} + \frac{\Delta t}{2}[f(t_{n},y_{n}) + f(t_{n+1},y_{t+1}
 \end{align}
 $$
 This lets us use the same number of steps for higher accuracy. 
+
+
+$$
+(f^{-1}(x))' = \frac{1}{f'(f^{-1}(x))}
+$$
 
