@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-16T12:51:20.694-05:00
-edited_seconds: 480
+updated_at: 2026-11-16T13:14:04.755-05:00
+edited_seconds: 570
 course:
 tags:
 "Lecture #": 0
@@ -138,5 +138,40 @@ Note that the formula we used to go from $(t_{n},y_{n}) \to (t_{n+1},y_{n+1})$ i
 To reduce error: 
 * Theoretically, we can simply use smaller and smaller time steps to reduce the potential error experienced. 
 	* Or in other words, if $t \in [a,b]$, we take a greater value of time intervals $n$, since $\Delta t = \frac{b-a}{n}$, increasing n decreases the corresponding term of t. 
-* 
+	* This increases the amount of computations that we use though.
+* We could also take the average slope between the two points
+This second approach leads us to the Improved Euler's Method
+
+### Improved Euler's Method 
+When we are stepping our system forwards: 
+$$
+\begin{align}
+t_{n+1}  & = t_{n} + \Delta t \\
+y_{n+1}  & = y_{n}   + \Delta ts
+\end{align}
+$$
+Previously, we set $s$ to be evaluated at our initial point, that is $s \to (t_{n},y_{n})$.
+
+Improved Euler's Method instead sets this as the average of **two** slopes: 
+$$
+\begin{align}
+S_{L}  & = \text{slope estimate at } (t_{n},y_{n}) \\
+S_{R}  & = \text{ slope estimate at } (t_{n+1},y_{n+1})
+\end{align}
+$$
+But, note how this requires us to know the second point first! We actually need to use Euler's Method **first** to get the first guess for our slope estimate; then we find the average slope. We know that the average slope should be a more approximate estimate to where our point should be. 
+
+Note that we can actually repeat using the Improved Euler's Method to get a more accurate slope! We can repeat this formula for as many steps as we want. 
+
+We define the algorithm as the following: 
+$$
+\begin{align}
+t_{n+1}  & = t_{n} + \Delta t \\
+ & \text{ Euler's Method  gives us:} \\
+y_{n+1}^{EM}  & = y_{n} + \Delta tf(t_{n},y_{n}) \\
+ & \text{We plug this into EM again for IEM:} \\
+y_{n+1}^{IEM}  & = y_{n} + \frac{\Delta t}{2}[f(t_{n},y_{n}) + f(t_{n+1},y_{t+1})]
+\end{align}
+$$
+This lets us use the same number of steps for higher accuracy. 
 
