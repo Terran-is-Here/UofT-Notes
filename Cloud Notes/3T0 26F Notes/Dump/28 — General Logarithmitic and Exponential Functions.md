@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-15T18:47:28.261-05:00
-edited_seconds: 450
+updated_at: 2026-11-15T19:01:06.439-05:00
+edited_seconds: 630
 course:
 tags:
 "Lecture #": 0
@@ -9,7 +9,7 @@ Week:
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[27 —  The Natural Exponential]]
-Next: N/A
+Next: [[29 — Inverse Trigonometric Functions]]
 
 > [!quote] Recommended Reading 
 > Section 6.4\* of the Stewart Textbook. 
@@ -111,6 +111,40 @@ We note that we can now express a logarithm as a term of a change of base from t
 $$
 \begin{align}
 b^{y} & =x & \text{take ln}  \\
-\ln(b^{y})  & =\ln(x)
+\ln(b^{y})  & =\ln(x) \\
+y\ln(b)  & =\ln(x) \\
+y  & =\frac{\ln(x)}{\ln(b)}
 \end{align}
 $$
+Thus, we can find the corresponding term in the exponent by taking the quotient between the natural logarithms of the bases present in the expression. Consider now using our alternative notation, thus we see that: 
+$$
+\begin{align}
+b^{y} & =x \\
+\log_{b}(b^{y}) = y\log_{b}(b) = y   &= \log_{b}(x)  \\
+\frac{\ln(x)}{\ln(b)} & =\log_{b}(x)
+\end{align}
+$$
+As we can back substitute in the identity we found earlier back into our expression.
+## Deriving the Value of $e$
+Recall that if $f(x) = \ln(x)$, then $f'(x) = \frac{1}{x}$, where $f'(1)=1$, using this as a limit, we find that: 
+
+$$
+\begin{align}
+f'(1)  & = \lim_{ h \to 0 } \frac{f(1+h)-f(1)}{h} = \lim_{ x \to 0 }  \frac{f(1+x) - f(1)}{x} & f(x) = \ln(x) \\
+ & =\lim_{ x \to 0 }  \frac{\ln(1+x)-\ln(1)}{x} \\
+ & =\lim_{ x \to 0 }  \frac{\ln(1+x)}{x} = \lim_{ x \to 0 }  \frac{1}{x}\ln(1+x)  \\
+ & =\lim_{ x \to 0 } \ln((1+x)^{1/x})=1
+\end{align}
+$$
+Noting this, we find now that: 
+$$
+\begin{align}
+e = e^{1}  & = e^{\lim_{ x \to 0 } \ln(1+x)^{1/x}} \\
+ & =\lim_{ x \to 0 } e^{\ln(1+x)^{1/x}} = \lim_{ x \to 0 } (1+x)^{1/x} = e
+\end{align}
+$$
+Alternatively, set $n=\frac{1}{x}$, then $x= \frac{1}{n}$, and as $x \to 0, n \to \infty$, resulting in the more familiar limit below: 
+$$
+e = \lim_{ n \to \infty } \left( 1 + \frac{1}{n} \right)^{n}
+$$
+. 
