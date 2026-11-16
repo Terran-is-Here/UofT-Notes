@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-16T11:50:37.041-05:00
-edited_seconds: 810
+updated_at: 2026-11-16T12:05:38.478-05:00
+edited_seconds: 930
 course: ESC194H1
 tags:
   - ESC194H1
@@ -104,7 +104,39 @@ f''(x)  & = x^{2}e^{-x}(x-6)(x-2) \\
 $$
 Thus, $x=6$ and $x=2$ is a point of inflection. Following this information, we can now graph our function as desired. 
 
+### Application
+We can use exponentials when modelling some real-world scenarios, for instance in terms of the metabolism of the concentration of a piece of medication: 
+$$
+c(t) = At^{p}e^{-kt} 
+$$
+Holding true for $k>0$
+## Integration
+From our derivative property above, we note that: 
+$$
+\int e^{x}\,dx = e^{x} +C
+$$
+And from chain rule, then: 
+$$
+\int e^{g(x)}g'(x) \,dx = e^{g(x)}+C
+$$
+For instance; 
+$$
+\begin{align}
+ & =\int \frac{xe^{ax^{2}}}{e^{ax^{2}}+1}\,dx & u=e^{ax^{2}}+1, du=2axe^{ax^{2}}\,dx \\
+ & =\int \frac{1}{2au} \,du = \frac{1}{2a} \int \frac{1}{u}\,du \\
+ & = \frac{1}{2a} \ln|e^{ax^{2}}+1| + C
+\end{align}
+$$
 
+Take the following example: 
+$$
+\begin{align}
+ & = \int_{0}^{\sqrt{ 2\ln 3 }} xe^{-x^{2}/2}\,dx   & u=e^{-x^{2}/2} \implies du = -xe^{-x^{2}/2}\,dx \\
+ & x=0 \to u=0 \\
+ & x =\sqrt{ 2\ln3 } \to u=-\ln 3 \\
+ & =-\int_{0}^{-\ln 3}  e^{u} = -[e^{u}]_{0}^{-\ln(3)} = \left[ 1-\frac{1}{3} \right] = \frac{2}{3 }
+\end{align}
+$$
 
 ---
 # Pre-Lecture Notes
