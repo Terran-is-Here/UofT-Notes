@@ -42,9 +42,10 @@ $$
 y & =\ln(x) \\
 e^{y}  & = x \\
  \\
-\frac{d}{dx}e^{y} & = \frac{d}{dx}x \\
-[e^{y}]'  \frac{dy}{dx} & = 1 \\
-\frac{dy}{dx} & = \frac{1}{[e^{y}]'} & e^{y} = e^{\ln(x)} \\
-\frac{dy}{dx} & = \frac{1}{[e^{\ln(x)}]'}
+\frac{d}{dy}\ln(x)  & =\frac{d}{dy}y  \\
+\frac{1}{x} \frac{dx}{dy} & = 1 \\
+\frac{dx}{dy}  & = x \\
+\frac{dx}{dy} & = e^{y}  &  \text{note that } \frac{dx}{dy} = [e^{y}]' \\
+[e^{y}]'  & =e^{y}
 \end{align}
 $$
