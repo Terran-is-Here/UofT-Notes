@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-10T18:19:59.002-05:00
-edited_seconds: 570
+updated_at: 2026-11-16T12:11:50.330-05:00
+edited_seconds: 590
 course: ESC103H1
 tags:
   - ESC103H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[15 — Rank, Consistency and Dimensions]]
-Next: N/A
+Next: [[17 — Numerical Solutions to First Order Differential Equations]]
 
 > [!ila] Lecture Goals
 > Apply Linear Algebra to the simplest statistical model present: Linear Regression. 
