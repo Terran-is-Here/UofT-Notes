@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-16T16:36:22.793-05:00
-edited_seconds: 230
+updated_at: 2026-11-16T16:40:30.260-05:00
+edited_seconds: 240
 course: PHY180H1
 tags:
   - PHY180H1
@@ -56,7 +56,10 @@ Consider now the force of gravity:
 $$
 F_{g} = m_{g}g
 $$
-Where $m_{g}$ is equivalent to the gravitational mass, where this represents the scaling factor for **how much gravity affects us**. In free fall, we often set $F_{g} = m_{a}$, and terms cancel out. In other words, we set $m_{i} = m_{g}$. 
+Where $m_{g}$ is equivalent to the gravitational mass, where this represents the scaling factor for **how much gravity affects us**. In free fall, we often set $F_{g} = m_{a}$, and terms cancel out. In other words, we set $m_{i} = m_{g}$
+
+### Rockets
+Consider a rocket going upwards at some acceleration of $a=9.8 \frac{m}{s}$. From an observer within this non-inertial reference frame, this "fictional force" appears like the force of gravity. In other words, you cannot tell locally i
 
 ---
 # Pre-Lecture Notes
