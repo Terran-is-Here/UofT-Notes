@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-15T18:28:31.525-05:00
-edited_seconds: 500
+updated_at: 2026-11-16T11:50:37.041-05:00
+edited_seconds: 810
 course: ESC194H1
 tags:
   - ESC194H1
@@ -18,6 +18,92 @@ Next: [[28 — General Logarithmitic and Exponential Functions]]
 --- 
 # Lecture Notes
 ## Natural Exponentials (LEC)
+Consider the following expression, that we have already defined earlier on: 
+$$
+e^{p/q} \implies \ln(e^{p/q}) = \frac{p}{q}
+$$
+Consider that we wanted the case previously when we defined CORA in which irrational numbers are also a part of the real numbers, that is $\exists q\in \mathbb{R}$, where: 
+$$
+\ln q = \pi \implies q = e^{\pi}
+$$
+Thus we define the following convention: 
+> If $z$ is an irrational number, then $e^{z}$ is the unique number, where $\ln e^{z}=z$. 
+
+We also define the following convention: 
+$$
+\exp(x) \equiv e^{x}, \forall x\in \mathbb{R}
+$$
+This is known as the natural exponential function. 
+### Properties
+1. $\ln e^{x}=x$, where $x\in \mathbb{R}$ (from the concept of inverse functions.) 
+2. Consider from the graph and the domain of $\ln(x)$, $\ln(x) \forall x>0$, then we find that the range of $e^{x}$ is for all values greater than 0 for all x present in it's domain. 
+	1. $e^{x}>0$
+3. $e^{0}=1$, as $\ln(1)=0$ (inverse function concept). 
+4. $\lim_{ x \to -\infty }e^{x}=0$ (from the graph of $e^{x})$.
+	1. Consider that $\ln((x))$ has a vertical asymptote at the $x$ axis, thus our exponential would have one in the $y$ axis. 
+5. $e^{\ln(x)}=x$ (inverse function concept) 
+6. $e^{a+b}=e^{a}e^{b}$ (Derived from Logarithms, see Properties below.)
+7. $e^{-b} = \frac{1}{e^{b}}$ (derived from logarithms)
+
+## Differentiation 
+We separate one of the more important properties of the exponential function: 
+$$
+\frac{d}{dx}e^{x} = e^{x}
+$$
+As: 
+$$
+\begin{align}
+\ln e^{x}  & = x \\
+\frac{d}{dx}\ln(e^{x}) & = \frac{d}{dx} x \\
+\frac{1}{e^{x}}* (e^{x})'  & = 1 \\
+\implies (e^{x})'   & =e^{x}
+\end{align}
+$$
+
+We also consider that with chain rule, we thus find that: 
+$$
+\frac{d}{du}e^{u} = e^{u} \frac{du}{dx}
+$$
+For instance: 
+$$
+\frac{d}{dx} e^{kx} = ke^{kx}
+$$
+### Examples 
+Take the following expression: 
+$$
+f(x) = x^{4}e^{-x}
+$$
+If we wanted to graph it, we note that the domain is defined for all $x$, where $f \geq 0$ for all $x$ present. Taking the first and second derivative to gain the properties of the graph, we find that: 
+
+$$
+\begin{align}
+f'(x)  & = 4x^{3}e^{-x} + x^{4}(-1)e^{-x} = x^{3}e^{-x}(4-x) \\
+ & \implies f'(x) = 0, x=0,4 \\
+ & \implies f'<0  \iff x > 4 \\
+ & \implies f' > 0 \iff 0<x<4 \\
+ & \iff f' < 0 \iff x<0
+\end{align}
+$$
+Thus, we find that: 
+$$
+\begin{align}
+f(4)  & = 256e^{-4} \approx 4.7 &  \text{local max} \\
+f(0)  & = 0  & \text{ local min}
+\end{align}
+$$
+
+Taking the second derivative: 
+$$
+\begin{align}
+f''(x)  & = x^{2}e^{-x}(x-6)(x-2) \\
+ & \implies f'' = 0 \iff x=0,2,6  \\
+ & \implies f'' > 0 \iff x>6   & \implies \text{concave up}\\
+ & \implies f'' < 0 \iff 2<x<6  & \implies \text{concave down}\\
+ & \implies f'' > 0 \iff x <  & \implies \text{concave up}
+\end{align}
+$$
+Thus, $x=6$ and $x=2$ is a point of inflection. Following this information, we can now graph our function as desired. 
+
 
 
 ---
