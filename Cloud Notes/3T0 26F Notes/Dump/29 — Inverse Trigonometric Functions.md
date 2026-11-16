@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-15T19:03:30.228-05:00
-edited_seconds: 100
+updated_at: 2026-11-15T19:30:49.744-05:00
+edited_seconds: 110
 course:
 tags:
 "Lecture #": 0
@@ -17,3 +17,4 @@ Next:
 
 ---
 # Pre-Lecture Notes
+## Inverse 
