@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-16T13:23:21.952-05:00
-edited_seconds: 580
+updated_at: 2026-11-17T17:16:58.533-05:00
+edited_seconds: 590
 course:
 tags:
 "Lecture #": 0
@@ -9,7 +9,7 @@ Week:
 ---
 Hub: [[16 — Solving the Least Squares Problem]]
 Previous: [[16 — Solving the Least Squares Problem]]
-Next: N/A
+Next: [[18— Numerical Solutions to Second Order Differential Equations]]
 
 > [!quote] Recommended Reading 
 > Derive and apply Euler's Method (EM) and Improve Euler's Method (IEM) for solving a first order differential equation. 
