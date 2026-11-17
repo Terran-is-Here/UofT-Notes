@@ -71,3 +71,9 @@ Reflection:
 	* Increasing the amount of Synchronous work sessions that we have, even virtually. 
 	* Improving the communication that we have between time members, and slotting more time to discuss and critique each of our sections. 
 	* Mainly encouraging more of a stance of tearing our own work apart to improve it, sometimes tearing things down is the way you have to imrpove a piece of writing for the better. 
+---
+
+
+|     |     |
+| --- | --- |
+|     |     |
