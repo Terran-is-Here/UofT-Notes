@@ -67,3 +67,7 @@ Reflection:
 	* We often split up work in an inefficient manner; simply noting down references to prove claims that we made, without fully iterating on such claims with further thought and interpretation (that is, considering them as fact without regarding the potential target audience that we wanted to discuss). 
 	* We failed to consider any potential counterclaims within our document if applicable; and we often failed to (and or only at the last moment) decided to start poking holes at our own project; not throughout the process. 
 	* Our sections were often split up when we worked on them, but we therefore often had a more disjointed piece of finalized work pertaining to how things eventually went down. 
+* In terms of team observations / improving collaborative writing: 
+	* Increasing the amount of Synchronous work sessions that we have, even virtually. 
+	* Improving the communication that we have between time members, and slotting more time to discuss and critique each of our sections. 
+	* Mainly encouraging more of a stance of tearing our own work apart to improve it, sometimes tearing things down is the way you have to imrpove a piece of writing for the better. 
