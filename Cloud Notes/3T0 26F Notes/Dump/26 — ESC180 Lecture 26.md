@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-16T17:36:58.914-05:00
-edited_seconds: 270
+updated_at: 2026-11-16T17:39:16.641-05:00
+edited_seconds: 280
 course:
 tags:
 "Lecture #": 0
@@ -95,5 +95,8 @@ def num_sentences(text):
 	text = text.replace("?", ".")
 	#... for all [punctuation
 	return len(text.split(".")-1)
+
+def num_letters(text): 
+	num_letters: 
 ```
 ## Recursion 
