@@ -61,3 +61,9 @@ Reflection:
 * Pertaining to our concepts, we should have iterated more on potential solutions to the wall mounting problem. How many possible alternatives could have existed for attaching a potential solution onto a wall emplacement which would be removable? Perhaps an adhesive would be a more apt solution after all, versus a suction cup mechanism for our processes. 
 * In terms of an important next step for our team based on observations from Alpha, the likely next step is for us to iterate further on the solutions that we have worked on so far, as well as further diverging onto other solutions within the process as is usual. I would significantly want to work more on the nature of the structure in which we perform our presentations on however, that is how we organize our thoughts and etc. 
 	* I would also like to vastly improve the focus of the work that we do, in terms of the fact that one of our members often lacks involvement, and the other is every so often present during meetings, which may be suboptimal. 
+--- 
+## Lecture
+* In terms of observations
+	* We often split up work in an inefficient manner; simply noting down references to prove claims that we made, without fully iterating on such claims with further thought and interpretation (that is, considering them as fact without regarding the potential target audience that we wanted to discuss). 
+	* We failed to consider any potential counterclaims within our document if applicable; and we often failed to (and or only at the last moment) decided to start poking holes at our own project; not throughout the process. 
+	* Our sections were often split up when we worked on them, but we therefore often had a more disjointed piece of finalized work pertaining to how things eventually went down. 
