@@ -1,14 +1,15 @@
 ---
-updated_at: 2026-11-17T17:37:08.599-05:00
-edited_seconds: 300
-course:
+updated_at: 2026-11-17T17:43:17.391-05:00
+edited_seconds: 360
+course: ESC103H1
 tags:
-"Lecture #": 0
+  - ESC103H1
+"Lecture #": 18
 Lecture Date: 2026-11-17
 Week:
 ---
-Hub: 
-Previous: 
+Hub: [[ESC103 Hub]]
+Previous: [[17 — Numerical Solutions to First Order Differential Equations]]
 Next:
 
 --- 
@@ -159,12 +160,28 @@ $$
 Thus, performing a single step of Euler's Method, we find that: 
 $$
 \begin{bmatrix}
-x_{n+1}\\y_{n+1}
+x_{n+1}^{EM}\\y_{n+1}^{EM}
 \end{bmatrix}= \begin{bmatrix}
 x_{n}\\y_{n}
 \end{bmatrix} + \Delta t \begin{bmatrix}
--\frac{k}{m} & -\frac{b}{m}\\1\\0
+-\frac{k}{m} & -\frac{b}{m}\\1 & 0
 \end{bmatrix} \begin{bmatrix}
-
+x_{n}\\y_{n}
 \end{bmatrix}
+$$
+Similarly, now performing Improved Euler's Method after: 
+$$
+\begin{bmatrix}
+x^{IEM}_{n+1}\\y^{IEM}_{n+1}
+\end{bmatrix} = \begin{bmatrix}
+x_{n}\\y_{n} 
+\end{bmatrix} + \frac{\Delta t}{2}\left( \begin{bmatrix}
+-\frac{k}{m} & -\frac{b}{m}\\1 & 0
+\end{bmatrix}\begin{bmatrix}
+x_{n}\\y_{n}
+\end{bmatrix} + \begin{bmatrix}
+-\frac{k}{m} & -\frac{b}{m}\\1 & 0
+\end{bmatrix}\begin{bmatrix}
+x_{n+1}^{IEM}\\y_{n+1}^{IEM}
+\end{bmatrix}\right)
 $$
