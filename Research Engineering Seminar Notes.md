@@ -107,6 +107,8 @@ Professor Interests:
 		* These are often spread out though across people, as to not have all the same opportunity go to the same person.
 	* For ESROP Global: 
 		* Application is submitted by mid December on our end, will be read over Christmas Break, shortlists would be found, then corresponding interviews will occur. 
+		* In terms of Accommodation funding: 
+		  Asking host institution to provide funding (varies) (funding in terms of free housing / cheap housing) 
 	* Supervisors do not inherently need to be affiliated with Engineering! 
 		* Could be physics, etc. 
 	* If funding is not provided, preferably don't work on it. 
@@ -132,4 +134,23 @@ Professor Interests:
 		* Structure what the 4 month term should look like (i.e. how much time on literature review, how defined is the research topic, working with a very clear instruction). 
 		* If there is a good supervisor present.
 		* How the end of the research experience should look like? (e.g. should I give a report? UNRD - Undergraduate Research Day) 
-		* 
+	* Pertaining to interest: 
+		* Proposing own research / supporting their? 
+		* In general, be careful! Don't propose for the sake of proposing! 
+	* Pertaining to response time (duration of time from first contact --> student agreement)
+		* Time varies heavily as per usual. .
+	* Letters of Recommendation: 
+		* It shouldn't hurt, but it isn't directly expected either. 
+	* For first contact
+		* Do we send everything or not? 
+		* Send CV and Transcript if applicable 
+		* Professor expectations? 
+			* You *just* got into university! You don't really have any experience at all! But you just need to be very willing to learn something new! 
+
+* Timespans
+	* How much of the summer is expected to be used for it? 
+	* Something negotiated with the supervisor present. Some kind of expectations and that kind of deal! 
+	* For scholarships, Minimum for 16 week minimum or 12 week, varies 
+
+
+* ESROP Global: 
