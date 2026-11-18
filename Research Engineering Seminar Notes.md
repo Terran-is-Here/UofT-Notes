@@ -82,6 +82,7 @@ Professor Interests:
 * In terms of the CV / Cover Letter: 
 	* Attention to Detail, Initiative, Leadership
 	* Grades to a *lesser degree*
+**Use your School Email (it's professional!)**
 
 ### Questioning and Answering
 * In terms of professors in Teaching / Research Streams: 
@@ -100,3 +101,35 @@ Professor Interests:
 * ESROP: 
 	* (ExOp) From another university, is UofT funding guaranteed? 
 		* i.e. matching (UofT covers 4,500\$, supervisor asks 4,500\$ for supervisor. This **has** to be covered by the corresponding supervisor.) 
+	* Funding before contacting professors: 
+		* goes hand in hand (should approach professors with "hey do you want to write an ESROP application together?" )
+	* Can apply to multiple scholarships to coordinate
+		* These are often spread out though across people, as to not have all the same opportunity go to the same person.
+	* For ESROP Global: 
+		* Application is submitted by mid December on our end, will be read over Christmas Break, shortlists would be found, then corresponding interviews will occur. 
+	* Supervisors do not inherently need to be affiliated with Engineering! 
+		* Could be physics, etc. 
+	* If funding is not provided, preferably don't work on it. 
+		* I mean hopefully you should be able to find finding. 
+
+
+~ 50% of ESROP UofT is given to First Years (though unknown what's the exact numbers) 
+
+* Showing interest
+	* Read their recent work! This gives a sense on how their research is going, and what remaining research gaps exist (as well as how we would be able to contribute) 
+	* Don't be someone that presumes knowledge without knowing. 
+
+* Application Structures
+	* For ESROP Global, this is more of a unique system (directly sending to a host institution, requires logistics of travelling)
+	* Looking at experiences for locality
+		* that is, supervisor letter, etc, pertaining to what the nature of their research is, etc. 
+
+* What research positions actually feel like in terms of time / hours? 
+	* Typically, for summer, this is a full time position (9AM - 5PM) 
+		* Research normally *does not stop* at 5PM. Establish this with the supervisor! 
+* Negotiating with Supervisors / Important information
+	* In the summer research context: 
+		* Structure what the 4 month term should look like (i.e. how much time on literature review, how defined is the research topic, working with a very clear instruction). 
+		* If there is a good supervisor present.
+		* How the end of the research experience should look like? (e.g. should I give a report? UNRD - Undergraduate Research Day) 
+		* 
