@@ -146,6 +146,10 @@ Professor Interests:
 		* Send CV and Transcript if applicable 
 		* Professor expectations? 
 			* You *just* got into university! You don't really have any experience at all! But you just need to be very willing to learn something new! 
+		* Note that you are in ENGSCI! 
+			* That means something you numb nuts! That's still something alot! 
+	* Professor opening: 
+		* Should we apply for a general field of courses? Yes! It doesn't mean they're advertising, but etc.
 
 * Timespans
 	* How much of the summer is expected to be used for it? 
