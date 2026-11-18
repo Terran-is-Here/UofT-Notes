@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-16T17:39:16.641-05:00
-edited_seconds: 280
+updated_at: 2026-11-18T17:29:57.612-05:00
+edited_seconds: 370
 course:
 tags:
 "Lecture #": 0
@@ -100,3 +100,27 @@ def num_letters(text):
 	num_letters: 
 ```
 ## Recursion 
+### Factorials 
+Recall that we can define the factorial as the following: 
+$$
+n! = n * (n-1)!
+$$
+We can write this as the following segment of code: 
+```python
+def factorial(n): 
+	if n == 0: 
+		return 1 
+	return n*factorial(n-1) 
+```
+Note that this function calls itself, where we define a base case to ensure that we don't end up with a case of infinite recursion. 
+
+### Fibonacci 
+Note that we can define the following in terms of the Fibonacci Sequence: 
+```python
+def fib(n): 
+	if n == 1 or n == 2: 
+		return 1
+	return fib(n-1) + fib(n-2)
+```
+
+### Checking Even
