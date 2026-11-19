@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-19T12:11:47.978-05:00
-edited_seconds: 820
+updated_at: 2026-11-19T12:24:38.352-05:00
+edited_seconds: 990
 course: ESC194H1
 tags:
   - ESC194H1
@@ -107,7 +107,7 @@ $$
 \frac{dy}{dx} & = \frac{\cos(y)}{\tan(y)} = \frac{\cos(y)}{\frac{\sin(y)}{\cos(y)}} = \frac{\cos ^{2}(y)}{\sin(y)} \\
 \sin(y)  & = \sqrt{ 1-\cos ^{2}(y) }  = \sqrt{ 1- \frac{1}{x^{2}} } \\
 \frac{dy}{dx} & =\frac{1}{x^{2}\sqrt{ 1-\frac{1}{x^{2}} } } = \frac{1}{x^{2}\sqrt{ \frac{x^{2}-1}{x^{2}} }}  \\
-[\sec ^{-1}(x)]' & =\frac{1}{\frac{x^{2}}{|x|}\sqrt{ x^{2}-1 }} = \frac{1}{x\sqrt{ x^{2}-1 }}
+[\sec ^{-1}(x)]' & =\frac{1}{\frac{x^{2}}{|x|}\sqrt{ x^{2}-1 }} = \frac{1}{x\sqrt{ x^{2}-1 }}  & |x| \geq 1 \implies |x| = x
 \end{align}
 $$
 Note that upon observation, it appears that this is simply the negative of our earlier expression above. We cannot equate them however, as both have different corresponding ranges that they map to. 
@@ -152,7 +152,36 @@ $$
 Note that now, our expressions above now let us define another set of integration expressions: 
 $$
 \begin{align}
-\int \frac{1}{\sqrt{ 1-t^{2} }}\,dt  & = \sin ^{-1}(x) + C & \int -\frac{1}{t\sqrt{ t^{2}-1 }} \,dt = \csc ^{-1}(x) + C \\
-\int -\frac{1}{\sqrt{ 1-t^{2} }}dt & = \cos ^{-1}(x) + C & \int \frac{1}{t\sqrt{ t^{2}-1 }} \,dt
+\int \frac{1}{\sqrt{ 1-t^{2} }}\,dt  & = \sin ^{-1}(x) + C & \int \frac{-1}{t\sqrt{ t^{2}-1 }} \,dt  & = \csc ^{-1}(x) + C \\
+\int \frac{-1}{\sqrt{ 1-t^{2} }}dt & = \cos ^{-1}(x) + C & \int \frac{1}{t\sqrt{ t^{2}-1 }} \,dt  & =\sec ^{-1}(x) + C \\
+\int \frac{1}{1+t^{2}}\,dt & = \tan ^{-1}(x) + C & \int \frac{-1}{1+t^{2}}\,dt  & = \cot ^{-1}(x) +C
 \end{align}
+$$
+Note that U-substitution as per usual can be used to rewrite an expression into one of these equations.
+### Examples
+Find the expression for the following: 
+$$
+\int \frac{x}{x^{4}-9}\,dx
+$$
+Set $u=x^{2}$, then  $u^{2}=x^{4}$, and $du=2xdx$, thus: 
+$$
+\begin{align}
+\int \frac{x}{u^{2}-9} \frac{dx}{2x} = \frac{1}{2}\int \frac{1}{u^{2}-9} \,dx
+\end{align}
+$$
+Consider now that we have to now solve that expression on the right, which we don't currently have a closed form solution to at the moment. We first now want to solve the following as a corollary: 
+$$
+\int \frac{1}{x^{2}-a^{2}}\,dx
+$$
+Letting $u =\frac{x}{a}$, then $a^{2}=\frac{x^{2}}{u^{2}}$ and $x^{2}= (ua)^{2}$, and $du = \frac{1}{a}dx$
+$$
+\begin{align}
+  & \int \frac{a}{u^{2}a^{2} - \frac{x^{2}}{u^{2}}}du \\
+\frac{1}{a^{2}}\int \frac{a}{u^{2} - \frac{x^{2}}{u^{2}a^{2}}}\,du  & =\frac{1}{a}\int \frac{1}{u^{2}-\frac{x^{2}}{x^{2}}} = \frac{1}{a}\int \frac{1}{u^{2}-1} \\
+\int \frac{1}{x^{2}-a^{2}}\,dx & =\frac{1}{a}\tan ^{-1}(u) + C = \frac{1}{a}\tan ^{-1}\left( \frac{x}{a} \right)+C
+\end{align}
+$$
+Retaking our earlier expression then we see that $a=3$; thus: 
+$$
+\frac{1}{2}\left[ \frac{1}{3}\tan ^{-1}\left( \frac{x}{3} \right) \right] +C = \frac{1}{6}\tan ^{-1}\left( \frac{x}{3} \right)+C
 $$
