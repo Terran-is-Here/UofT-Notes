@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-11-16T12:05:38.478-05:00
-edited_seconds: 930
+updated_at: 2026-11-19T14:16:05.508-05:00
+edited_seconds: 1040
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 17
 Lecture Date: 2026-11-16
 Week:
-Created:  November 11th 2026, 4:28:52 pm
+Created: November 11th 2026, 4:28:52 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous:  [[26 — The Natural Logarithmic Function]]
@@ -165,6 +165,48 @@ $$
  & =-\int_{0}^{-\ln 3}  e^{u} = -[e^{u}]_{0}^{-\ln(3)} = \left[ 1-\frac{1}{3} \right] = \frac{2}{3 }
 \end{align}
 $$
+## Example
+Show that: 
+$$
+e^{x}>1 +x \iff x>0
+$$
+Consider that: 
+$$
+e^{x} = 1 + \int_{0}^{x}e^{t}dt = 1 + e^{x}-1 = e^{x}
+$$
+Note that $e^{x}>1$, as if $x>0$: 
+* $e^{0}=1$
+* $\frac{d}{dx}e^{x} = e^{x} >0 \iff x>0$, thus function is increasing; thus it is always greater than one. 
+
+Consider now that: 
+$$
+\begin{align}
+1 + \int_{0}^{x} e^{t}\,dt >  \int_{0}^{x}1\,dt= 1+x \\
+\implies e^{t}>1+x
+\end{align}
+$$
+Consider now that: 
+$$
+e^{x} = 1 + \int_{0}^{x} e^{t}\,dt > 1 + \int_{0}^{x} (1+t) \,dt = 1 + x + \frac{x^{2}}{2}
+$$
+Then: 
+
+$$
+e^{x} > 1 + x  + \frac{x^{2}}{2}
+$$
+Consider now that we can repeat this again, thus: 
+$$
+e^{x} = 1 + \int_{0}^{x} e^{t}\,dt > 1 + \int_{0}^{x}1 + t + \frac{t^{2}}{2} = 1 + x + \frac{x^{2}}{2} + \frac{x^{3}}{6}
+$$
+Thus: 
+$$
+e^{x} > 1 + x + \frac{x^{2}}{2} + \frac{x^{3}}{6}
+$$
+By induction, we can see that: 
+$$
+e^{x} > 1 + x + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \dots +\frac{x^{n}}{n!}
+$$
+
 
 ---
 # Pre-Lecture Notes

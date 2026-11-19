@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-11-18T23:23:22.572-05:00
-edited_seconds: 650
+updated_at: 2026-11-19T14:22:16.352-05:00
+edited_seconds: 760
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 0
 Lecture Date: 2026-11-19
 Week:
-Created:  November 15th 2026, 6:00:40 pm
+Created: November 15th 2026, 6:00:40 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[27 —  The Natural Exponential]]
@@ -17,6 +17,42 @@ Next: [[29 — Inverse Trigonometric Functions]]
 > Section 6.4\* of the Stewart Textbook. 
 --- 
 # Lecture Notes
+## General Exponentials (LEC) 
+Recall our Logarithm Properties: 
+$$
+\ln x^{p/q} = \frac{p}{q}\ln x
+$$
+Raising this to the exponent, we find that: 
+$$
+e^{\ln x^{p/q}} = e^{p/q*\ln(x)} = x^{p/q}
+$$
+We now define the following: 
+> [!theorem] Definition of General Exponents
+> $$x^{z} = e^{z\ln x}$$
+> Where $x>0$, and $z$ is irrational. 
+
+For instance: 
+$$
+3^{\sqrt{ 2 }} = e^{\sqrt{ 2 }\ln 3}
+$$
+
+Due to being defined in terms of our $e$ (natural exponential) we find that this follows the same similar properties as previous exponent laws, and will not be rewritten for the sake of brevity. 
+
+### General Power Rule (LEC)
+From here, we can actually start defining the power rule in a general context. Recall that previously, we only stated it for rational numbers. We will now generalize it for any number in $\mathbb{R}$. 
+
+$$
+\frac{d}{dx}x^{r} = rx^{r-1}
+$$
+The proof is: 
+$$
+\begin{align}
+x^{r}  & = e^{r\ln x} \\
+\frac{d}{dx} e^{r\ln x} = e^{r\ln x} \frac{r}{x}
+\end{align}
+$$
+
+
 
 ---
 # Pre-Lecture Notes

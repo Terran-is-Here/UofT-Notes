@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-10-13T09:48:56.915-04:00
-edited_seconds: 1770
+updated_at: 2026-11-19T14:07:12.721-05:00
+edited_seconds: 1780
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 8
 Lecture Date: 2026-09-23
 Week: 3
-Created:  September 23rd 2026, 4:21:26 pm
+Created: September 23rd 2026, 4:21:26 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[07 — Limit Laws]]
@@ -223,10 +223,9 @@ Note that $f(x) = f_{1}\circ f_{2} \circ f_{3}$, where:
 * $f_{2} = x^2 +1$
 * $f_{3} \cos(x)$
 Note that $f_{1},f_{2},f_{3}$ are continuous over it's entire domain (except for $f_{1}$ at $x=0$ as per our above theorem); then: 
+
 $$
-
 D = \{ x \in \mathbb{R} | \cos^2(x) + 1 \neq 0 \}
-
 $$
 Note that $\nexists\cos^2(x) < 0$, then this implies that $D=\{ x \in \mathbb{R} \}$. 
 
