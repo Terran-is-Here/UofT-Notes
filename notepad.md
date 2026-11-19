@@ -49,3 +49,11 @@ e^{y}  & = x \\
 [e^{y}]'  & =e^{y}
 \end{align}
 $$
+
+---
+$$
+\begin{align}
+\cot(y) = \frac{\cos(y)}{\sin(y)} \\
+\frac{dy}{dx} = \frac{-\sin ^{2}(y) - \cos ^{2}(y)}{\sin ^{2}(y)} = -\frac{1}{\sin ^}
+\end{align}
+$$
