@@ -7,6 +7,7 @@ tags:
 "Lecture #": 9
 Lecture Date: 2026-09-29
 Week: 5
+Created:  September 29th 2026, 9:16:07 am
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[08 — Teamwork]]

@@ -7,7 +7,7 @@ tags:
 "Lecture #": 12
 Lecture Date: 2026-10-19
 Week: 7
-Created: October 13th 2026, 5:17:25 pm
+Created:  October 13th 2026, 5:17:25 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[11 — A-CR Matrix Factorization]]
@@ -21,8 +21,11 @@ Recall that from [[10 — Matrix Multiplication]], we can multiply both sides of
 
 ## Upper Triangular Matrix
 For a square system (i.e. $n\times n$ matrices), an upper triangular matrix is defined as the following: 
+
 $$U=\begin{bmatrix}u_{11} & u_{12} & u_{13} \\0 & u_{22} & u_{23} \\0 & 0 & u_{33}\end{bmatrix}$$
+
 Where all terms to the bottom left of the main diagonal of a matrix are defined as being equal to 0. Note that this form is useful, as in the case where we are solving a $A\vec{x}=\vec{0}$, we can easily solve this into our system of equations: 
+
 $$U\vec{x}=\vec{b}=\begin{bmatrix}u_{11} & u_{12} & u_{13} \\0 & u_{22} & u_{23} \\0 & 0 & u_{33}\end{bmatrix}\begin{bmatrix}
 x_{1}\\x_{2}\\x_{3}
 \end{bmatrix}=\begin{bmatrix}
@@ -33,6 +36,7 @@ $$
 
 \underbrace{E_{k}\dots E_{2}E_{1}A}_{\vec{U}}\vec{x}=
 \underbrace{Ek\dots E_{2}E_{1}\vec{b}}_{\vec{C}}
+
 $$
 Or otherwise, we transform from $A\vec{x}=\vec{b}$ to $\vec{U}\vec{x}=\vec{C}$, where $\{ E_{k},E_{k-1},\dots E_{1} \}$ are the set of elementary row operations as matrices multiplied onto our matrix $A$. 
 ## Elementary Row Operations (LEC)
@@ -45,8 +49,10 @@ c & d\\a & b
 \end{bmatrix}$$
 Note that we can see this if we rearrange an Identity matrix: 
 $$
+
 \begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix} \to \begin{bmatrix}0 & 1 \\1 & 0\end{bmatrix} = E_{1}$$
 Then, we can see that: 
+
 $$
 \begin{bmatrix}
 0 & 1\\1 & 0
@@ -56,6 +62,7 @@ a & b\\c & d
 c & d\\a & b
 \end{bmatrix}
 $$
+
 Where we have now changed the rows of our $2\times{2}$ matrix. 
 
 > Scalar Multiplication to a specific Row 
@@ -66,12 +73,17 @@ ka & kb \\
 c & d
 \end{bmatrix}
 $$
+
 From the identity matrix, we can see that: 
+
 $$
 \begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix} \to \begin{bmatrix}k & 0 \\0 & 1\end{bmatrix}= E_{2}
 $$
+
 Then: 
+
 $$\begin{bmatrix}k & 0 \\0 & 1\end{bmatrix}\begin{bmatrix}a&b\\c&d\end{bmatrix} = \begin{bmatrix}ka & kb \\c & d\end{bmatrix}$$
+
 As desired. 
 
 > Adding a row to another row
@@ -83,7 +95,9 @@ a & b\\c & d
 a & b\\c+ka & d+kb
 \end{bmatrix}
 $$
+
 We can also take this from the identity matrix. 
+
 $$
 \begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix} \to \begin{bmatrix}1 & 0 \\k & 1\end{bmatrix} = E_{3}
 $$
@@ -95,13 +109,16 @@ a & b\\c & d
 a & b\\c+ka & d+kb
 \end{bmatrix}
 $$
+
 In summary, an Elementary Matrix is the matrix obtained by performing one of the three row operations *on the identity* matrix. Multiplying a matrix $A$ by $E_{n}$ is equivalent to performing the Elementary Row Operation *directly onto* $A$. 
 
 ### Application
 To go from a matrix $A \to U$, we could perform a series of row operations on $A$ (as row operations is just multiplying $A$ by a series of $E$ matrices). For instance: 
+
 $$
 A = \begin{bmatrix}1 & 2 & 3 \\1 & 4 & 8 \\0 & 2 & 5\end{bmatrix}
 $$
+
 And if we wanted to find the null space; that is $A\vec{x}=\vec{0}$; we can multiply this by a series of row operations. From here, then: 
 
 $$
@@ -111,7 +128,9 @@ $$
 0 & 0 & 1
 \end{bmatrix}\begin{bmatrix}1 & 2 & 3 \\1 & 4 & 8 \\0 & 2 & 5\end{bmatrix} = \begin{bmatrix}1 & 2 & 3 \\0 & 2 & 5 \\0 & 2 & 5\end{bmatrix}
 $$
+
 Then: 
+
 $$
 \begin{bmatrix}
 1 & 0 & 0 \\
@@ -121,7 +140,9 @@ $$
 1 & 2 & 3\\0 & 2 & 5\\0 & 0 & 0
 \end{bmatrix}
 $$
+
 Or conversely: 
+
 $$
 \underbrace{\begin{bmatrix}
 1 & 0 & 0 \\
@@ -134,6 +155,7 @@ $$
 0 & 0 & 1
 \end{bmatrix}}_{E_{2}}\begin{bmatrix}1 & 2 & 3 \\1 & 4 & 8 \\0 & 2 & 5\end{bmatrix}  = \vec{0}
 $$
+
 Note that $E_{2},E_{1}$ are the row operations that we performed 
 
 ---
@@ -146,6 +168,7 @@ Elementary Row Operations can be generally defined as one of the three following
 Note that we did this partially in terms of our $\mathbf{A=CR}$ factorization in terms of $\mathbf{R}$, although it is not exactly the same. To begin with, we will formally define the concept of an Identity Matrix: 
 ### Identity Matrix
 Identity Matrices are defined by the term $I$, and are solely defined by the **diagonal entries** being a term of $1$, and the rest being 0: 
+
 $$
 I = \begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix} = \begin{bmatrix}1 & 0 & 0 \\0 & 1 & 0 \\0 & 0 & 1\end{bmatrix} = \begin{bmatrix}
 1 & 0 & 0 & \dots & 0 \\
@@ -155,17 +178,23 @@ I = \begin{bmatrix}1 & 0 \\0 & 1\end{bmatrix} = \begin{bmatrix}1 & 0 & 0 \\0 & 1
 0 & 0 & 0 & \dots & 1
 \end{bmatrix}
 $$
+
 Note that $I$ follows the concept that for any matrix $A$, $AI=A$. 
 ### Row Operations
 The Identity Matrix forms the basis in which we actually define the matrices of our row operations. 
 
 > Exchanging two rows: $$\begin{bmatrix}1 & 0 & 0 \\0 & 0 & 1 \\0 & 1 & 0\end{bmatrix}$$
+>
 > This is the equivalent of changing row 2 and row 3 with eachother, for instance: $$\begin{bmatrix}1 & 0 & 0 \\0 & 0 & 1 \\0 & 1 & 0\end{bmatrix}\begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix} = \begin{bmatrix}a & b & c\\g & h & i\\d & e & f\end{bmatrix}$$
 
 > Scalar Row Multiplication: 
+>
 > $$\begin{bmatrix}1 & 0 & 0 \\0 & k & 0 \\0 & 0 & 1\end{bmatrix}$$
+>
 > Equivalent to multiplying row $2$ by some constant $k$.
 
 > Row Adding Operation
+>
 > $$\begin{bmatrix}1 & 0 & 0 \\0 & 1 & 0 \\0 & k & 1\end{bmatrix}$$
+>
 > Adds $k$ row 2s to row 3. 

@@ -8,7 +8,7 @@ tags:
 Lecture Date: 2026-09-21
 Week: 3
 created:
-Created: September 21st 2026, 5:11:54 pm
+Created:  September 21st 2026, 5:11:54 pm
 ---
 Hub: [[ESC180 Hub]]
 Previous: [[5 — ESC180 Lecture 5]]

@@ -8,6 +8,7 @@ tags:
 "Tutorial #": 6
 Lecture Date: 2026-10-21
 Week: 8
+Created:  October 14th 2026, 9:58:28 am
 ---
 Hub: [[ESC103 Hub]]
 Connected Notes: [[T5 — ESC103 Tutorial 5]]
@@ -17,16 +18,22 @@ tag:#ESC101H1 [week:7]
 --- 
 
 > Question 1
+>
 > Consider the system of linear equations given below: $$\begin{align} 2x+3y & =1 \\10x+9y  & =11\end{align}$$
 
 > [!ila]- In Tutorial Addendum - Gaussian Elimination
 > We can put the following system into the following matrix: 
+>
 > $$\begin{bmatrix}2 & 3 \\10 & 9\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}1\\11\end{bmatrix}$$
+>
 > We want to transform our matrix $\mathbf{A}$ into  upper triangular matrix; note that we can do this by multiplying by $\begin{bmatrix}1 & 0\\-5 & 1\end{bmatrix}$: $$\begin{align}\begin{bmatrix}1 & 0\\-5 & 1\end{bmatrix}\begin{bmatrix}2 & 3\\ 10 & 9\end{bmatrix} \begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}1 & 0\\-5 & 1\end{bmatrix}\begin{bmatrix}1\\11\end{bmatrix} \\\begin{bmatrix}2 & 3 \\0 & -6\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}1\\6\end{bmatrix} \\\implies \begin{bmatrix}2\\0\end{bmatrix}x + \begin{bmatrix}3\\-6\end{bmatrix}y = \begin{bmatrix}1\\6\end{bmatrix} \\\implies \begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}2\\-1\end{bmatrix}\end{align}$$
+> >
 > > This is an example of Elementary Row Operations, where we multiply by some matrix with the same rank. 
 
 > [!theorem] Question 2
+>
 > Consider the system of linear equations given below: $$\begin{align}ax+by=f \\cx+dy = g\end{align}$$
+>
 > We will assume that the first pivot $a\neq0$.
 > 1. Elimination produces *what formula* for the second pivot? 
 > 2. What condition must hold for the second pivot to be nonzero? 
@@ -34,12 +41,18 @@ tag:#ESC101H1 [week:7]
 > 
 > > [!caution]- Answer
 > > Gaussian Elimination provides the following: 
-> > $$\begin{bmatrix}a & b \\c & d\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}f\\g\end{bmatrix}$$For some value $t$ where $c-ta=0$; then note that $t=\frac{c}{a}$; 
-> > $$\begin{bmatrix}a & b \\0 & d-bt\end{bmatrix} \begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}f \\g - ft\end{bmatrix}$$The second pivot is then defined by some $d-bt$; where $t \neq 0$. 
+> >
+> > $$\begin{bmatrix}a & b \\c & d\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}f\\g\end{bmatrix}$$
+For some value $t$ where $c-ta=0$; then note that $t=\frac{c}{a}$; 
+> >
+> > $$\begin{bmatrix}a & b \\0 & d-bt\end{bmatrix} \begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}f \\g - ft\end{bmatrix}$$
+The second pivot is then defined by some $d-bt$; where $t \neq 0$. 
 > > For the second pivot to be nonzero, $d>bt$ or $d <bt$, but $d \neq bt$. 
 > > 
 > > Plugging in $t=\frac{c}{a}$; then: 
+> >
 > > $$\begin{bmatrix}a & b \\0 & d-\frac{bc}{a}\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix} = \begin{bmatrix}f\\g-\frac{fc}{a}\end{bmatrix}$$
+> >
 > > Then: $$\begin{align}\left( d-\frac{bc}{a} \right)y = g-\frac{fc}{a} \\y = \frac{\left( g-\frac{fc}{a} \right)}{d-\frac{bc}{a}} -= \frac{ga-fc}{da-bc}\end{align} $$
 
 > Question 3
@@ -53,7 +66,9 @@ tag:#ESC101H1 [week:7]
 > > 	4. Or any solution of points within each plane would work (if all of them are colinear). 
 
 Question 4: * todo to redo (kinda wrong lwk) *
+
 > Consider the system of linear equations below: $$\begin{align}2x+5y+z & =0 \\4x+dy+z & =2 \\y-z & =3\end{align}$$
+>
 > The objective is to determine the equivalent upper triangular system. 
 > 1. What is the upper triangular system for the value of $d$ in Part 1? 
 > 2. What value of $d$ produces a zero pivot in row 3? 
@@ -72,7 +87,9 @@ $$
 0\\2\\3
 \end{bmatrix}
 $$
+
 Subtracting two row two from row three: 
+
 $$
 \begin{bmatrix}
 2 & 5 & 1 \\
@@ -83,6 +100,7 @@ $$
 \end{bmatrix}$$
 Then subtracting row 3 by some multiple row two: 
 $$
+
 \begin{bmatrix}
 2 & 5 & 1 \\
 0 & d-10 & -1 \\
@@ -90,9 +108,11 @@ $$
 \end{bmatrix} = \begin{bmatrix}
 0 \\2\\3-2k
 \end{bmatrix}
+
 $$
 Note that if we define this matrix to be an upper triangular matrix; then $1-kd-10k=0$ as well, then
 $$
+
 \begin{bmatrix}
 2 & 5 & 1 \\
 0 & d-10 & -1 \\
@@ -100,17 +120,21 @@ $$
 \end{bmatrix} = \begin{bmatrix}
 0 \\2\\3-2k
 \end{bmatrix}
+
 $$
 Then from the last line: 
 $$
+
 \begin{align}
 -1 + k  & = 3-2k  \\
 3k & =4 \\
 k & =\frac{4}{3}
 \end{align}
+
 $$
 Note that we also say that $1-kd+10k=0$, then plugging this value in for $1-kd+10k=0$
 $$
+
 \begin{align}
 1-\frac{4}{3}d + \frac{10*4}{3}  & = 0 \\
 d & =-\left( -\frac{40}{3}-\frac{3}{3} \right) * \frac{3}{4} \\
@@ -129,61 +153,76 @@ For which three values of $a$ will elimination fail to produce 3 non-zero pivots
 
 Consider if we try to eliminate this into it's $U$ matrix form, then: 
 $$
+
 \begin{bmatrix}
 a & 2 & 3 \\
 a-ak & a-2k & 4-3k \\
 a-(a-ak)t & a-(a-2k)t & a-(4-3k)t
 \end{bmatrix}
+
 $$
 Note that for this to fail to produce three, non-zero pivots: 
 $$
+
 \begin{align}
 a & =0  & \text{Trivial Case}\\
 \end{align}
+
 $$
 Consider now the second row; where: 
 $$
+
 \begin{align}
 a-ak & =0 \implies a(1-k)=0 \implies k=1 \\
 a-2k & =0 \implies a=2 ~\text{works}
 \end{align}
+
 $$
 Consider now if we try to eliminate the third row using the second row, then: 
 $$
+
 \begin{bmatrix}
 a & 2 & 3 \\
 a & a & 4 \\
 0 & 0 & a-4
 \end{bmatrix}
+
 $$
 Thus here, $a=4$ also answers our original question; Note that $k=1$, then our above expression becomes: 
 $$
+
 \begin{bmatrix}
 a & 2 & 3 \\
 0 & a-2 & 1 \\
 a & a & a
 \end{bmatrix}
+
 $$
 Then to eliminate the last row: subtract the third row by the first and second row: 
 $$
+
 \begin{bmatrix}
 a & 2 & 3 \\
 0 & a-2 & 1 \\
 0 & a-2-(a-2)=0 & a-3-(1) = a-4
 \end{bmatrix}
+
 $$
 
 > Question 6.1 
 > Determine three elementary matrices $E_{1},E_{2},E_{3}$ that put matrix $A$ into $U$, where: 
 
 $$
+
 A = \begin{bmatrix}
 1 & 1 & 0\\4 & 6 & 1\\-2 & 2 & 0
 \end{bmatrix}
+
 $$
 Where $E_{3}E_{2}E_{1}A=U$
 Performing row operations; then we see that: 
 $$
+
 \begin{bmatrix}
 1 & 1 & 0 \\
 4 & 6 & 1 \\
@@ -201,34 +240,42 @@ $$
 0 & 2 & 1 \\
 0 & 0 & -2
 \end{bmatrix}
+
 $$
 Where, we subtract row 2 by 4 row 1, add row 3 with 2 row 1, then subtract 2 row 2 with row 3, then: 
 $$
+
 E_{1}=\begin{bmatrix}
 1 & 0 & 0 \\
 -4 & 1 & 0 \\
 0 & 0 & 1
 \end{bmatrix}
+
 $$
 $$
+
 E_{2}=
 \begin{bmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 2 & 0 & 1
 \end{bmatrix}
+
 $$
 $$
+
 E_{3}=\begin{bmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & -2 & 1
 \end{bmatrix}
+
 $$
 
 2. Solve for $E=E_3E_{2}E_{1}$
 Solving for the elementary matrix, then: 
 $$
+
 E = \begin{bmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
@@ -238,9 +285,11 @@ E = \begin{bmatrix}
 \end{bmatrix}\begin{bmatrix}
 1 & 0 & 0\\-4 & 1 & 0\\0 & 0 & 1
 \end{bmatrix}
+
 $$
 Performing matrix multiplication on the first pair: 
 $$
+
 E = \begin{bmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
@@ -254,19 +303,23 @@ E = \begin{bmatrix}
 -4 & 1 & 0 \\
 10 & -2 & 1
 \end{bmatrix}
+
 $$
 
 
 3. Include $\vec{b}$ to produce the augmented matrix: 
 $$
+
 \left[\begin{array}{ccc|c}
 1 & 1 & 0 & 1 \\
 4 & 6 & 1 & 0 \\
 -2 & 2 & 0 & 0
 \end{array}\right]
+
 $$
 With the goal being to solve this system, using elimination to convert $A\vec{x}=\vec{b} \to U\vec{x}=\vec{c}$, determine $\vec{c}$. Solving this system; then we can multiply by $E$ on both sides: 
 $$
+
 \begin{bmatrix}
 1 & 0 & 0 \\
 -4 & 1 & 0 \\
@@ -282,6 +335,7 @@ $$
 \end{bmatrix}\begin{bmatrix}
 1 \\0 \\0
 \end{bmatrix}
+
 $$
 Note that the first part will resolve to our vector $u$, then we can just simply multiply the right side; giving us $\begin{bmatrix}1\\-4\\10\end{bmatrix}$.
 
@@ -291,15 +345,18 @@ Note that the first part will resolve to our vector $u$, then we can just simply
 > Question 7
 > Consider the following planes: 
 $$
+
 \begin{align}
 \pi_{1}: x-3y-z & =0 \\
 \pi_{2}: x-3y-z & =12
 \end{align}
+
 $$
 These planes are parallel because their normal vectors are parallel. 
 
 1. Give a vector equation for all points on each plane using the form: 
 $$
+
 \begin{bmatrix}
 x \\y\\z
 \end{bmatrix} = \begin{bmatrix}
@@ -309,9 +366,11 @@ x \\y\\z
 \end{bmatrix} y + \begin{bmatrix}
 ?\\0\\1
 \end{bmatrix}z
+
 $$
 For plane 1, we can rearrange this as $x=3y+z$; then setting $y,z$ as the free variables, then: 
 $$
+
 \begin{bmatrix}
 x \\y\\z
 \end{bmatrix} = \begin{bmatrix}
@@ -323,6 +382,7 @@ x \\y\\z
 \end{bmatrix}z
 		$$
 For plane 2, we can rearrange $x = 3y+z+12$, then setting $y,z$ as the free variables, then 
+
 $$
 \begin{bmatrix}
 x \\y\\z

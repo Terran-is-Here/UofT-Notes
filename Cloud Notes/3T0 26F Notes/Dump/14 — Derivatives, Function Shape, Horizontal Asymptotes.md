@@ -7,7 +7,7 @@ tags:
 "Lecture #": 14
 Lecture Date: 2026-10-09
 Week: 5
-Created: October 5th 2026, 1:58:37 pm
+Created:  October 5th 2026, 1:58:37 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[13 — Mean Value Theorem, Linear Approximations and Differentials]]
@@ -29,17 +29,22 @@ If $f$ is also continuous on $[a,b]$, the above statements are extended to inclu
 
 ### Application
 Let $f(x) = \sqrt{ 1-x^2 }$ if $f(x)$ is cont on $[-1,1]$; then: 
+
 $$f'(x) = \frac{1}{2\sqrt{ 1-x^2 }}-2x = -\frac{x}{2\sqrt{ 1-x^2 }}$$
+
 Then note that $f(x)$ is only differentiable on $(-1,1)$; which is a subset of $[-1,1]$. 
 
 Note that: 
+
 $$
 \begin{align}f(x) &= y \\y&=\sqrt{ 1-x^2 } \\y^2 &=1-x^2 \\y^2+x^2&=1\end{align}$$
 From our derivative; we can see that we know that our denominator will always be positive; thus the sign changes for values where our numerator changes, thus: 
 $$
+
 \begin{align}
 f'(x)=\frac{-x}{2\sqrt{ 1-x^2 }}>0, x\in(-1,0) \implies f(x)\text{ is increasing on } [-1,0]\\
 f'(x) = \frac{-x}{2\sqrt{ 1-x^2 }} <0, x\in(0,1)\implies f(x)\text{ is increasing on } [0,+1]\end{align}
+
 $$
 
 ## First Derivative Test / 1DT
@@ -54,10 +59,12 @@ We define the following as the first derivative test:
 ### Application
 Take the following: 
 $$
+
 \begin{align}
 f(x) &= 3x^4 -8x^3 +6x^2 \\
 f'(x) &= 12x^3 -24x^2 +12x = 12x(x-1)^2
 \end{align}
+
 $$
 Note that $f'(x)=0,x=0,1$, $f(x)$ is continuous on $\mathbb{R}$, and $0,1$ are the only critical points. We now need to find the intervals where $f(x)$ is increasing; or in other words where $f'(x)>0\lor f'(x)<0$. We do this by considering different intervals between our critical points. 
 * $(-\infty,0) \implies f'(x)<0$ (Decreasing)
@@ -79,28 +86,34 @@ This leads us to the second derivative test:
 
 ## Example 
 $$
+
 \begin{align}
 f(x) &= x^3-2x^2 \\
 f'(x) &= 3x^2 -4x = x(3x-4) & f'(x) = 0, x=0, \frac{4}{3}, x\in \mathbb{R}
 \end{align}
+
 $$
 Taking the second derivative test: 
 $$
+
 \begin{align}
 f''(x)&=6x-4 & \\
 f''(0) &= -4<0 \implies \text{function is concave down } \\
 f''\left( \frac{4}{3} \right) &= 4>0 \implies \text{function is concave up here}
 \end{align}
+
 $$
 From the second derivative test, $f(0)$ is a maximum, and $f\left( \frac{4}{3} \right)$ is a local minimum. 
 
 ### Test Failure
 $$
+
 \begin{align}
 f(x) &= x^3 \\
 f'(x) &= 3x^2  \implies f(x)=0, x=0\\
 f''(x) &=6x 
 \end{align}
+
 $$
 Note that at $x=0, f''(0) =0$, meaning that the second derivative test *fails* (since it's only defined for $>$ or $<$). In other words, the second derivative test does *not* tell us anything new. Going back to the first derivative test we now know that $f'(x) =3x^2 > 0 \forall x\in \mathbb{R}$, therefore there exists to max or minimum value at $f(0)$. 
 
@@ -155,19 +168,25 @@ Where a point $P$ in $y=f(x)$ is called an inflection point **if** there's a cha
 ## Infinite Limits 
 We now introduce the concept of an *infinite limit*, or more accurately a limit to infinity as the notation below: 
 $$
+
 \lim_{ x \to \infty } f(x) = L
+
 $$
 In terms of our [[06 — Precise Limit Definition#Epsilon-Delta Definition|Epsilon-Delta Definition]] of a limit: 
 $$
+
 \begin{align}\lim_{ x \to \infty } f(x) &= L\\\forall\epsilon&>0, \exists N \text{ s.t. } \\x>N &\implies |f(x)-L| < \epsilon\end{align}
+
 $$
 Once again, using our knowledge on $\epsilon-\delta$, that we want to write $N$ as some term of $\epsilon$ (or more accurately, choose some $N=?\epsilon$ such that we can back-substitute back to $|f(x)-L|<\epsilon$). Graphically, what this means is that for some arbitrarily large value of $x$ larger than $N$, we can progressively bound it to a smaller and smaller $\epsilon$. This is also defined in terms to negative infinity: 
 $$
+
 \begin{align}
 \lim_{ x \to -\infty } f(x) & =L  \\
 \exists\epsilon&>0,\exists N\text{ s.t.} \\
 x<N &\implies |f(x)-L| < \epsilon
 \end{align}
+
 $$
 
 > [!ila] Application
@@ -181,10 +200,12 @@ $$
 ## Precise Infinite Limit
 Combining our definitions above; then we can show that a limit diverges to infinity by the following precise definition: 
 $$
+
 \begin{align}
 \lim_{ x \to \infty } f(x) = \infty \\
 \forall M, \exists N \text{ s.t.} \\
 x>N \implies f(x) > M
 \end{align}
+
 $$
 The negative definition also exists for this; follow the same logic to write $N$ as some term of $M$. 

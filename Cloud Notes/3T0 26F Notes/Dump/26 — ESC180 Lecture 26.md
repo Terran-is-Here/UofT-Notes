@@ -1,11 +1,12 @@
 ---
-updated_at: 2026-11-18T17:29:57.612-05:00
+updated_at: 2026-11-19T12:46:13.045-05:00
 edited_seconds: 370
 course:
 tags:
 "Lecture #": 0
 Lecture Date: 2026-11-16
 Week:
+Created: November 16th 2026, 5:14:29 pm
 ---
 Hub: 
 Previous: [[25 — ESC180 Lecture 25]]
@@ -102,9 +103,11 @@ def num_letters(text):
 ## Recursion 
 ### Factorials 
 Recall that we can define the factorial as the following: 
+
 $$
 n! = n * (n-1)!
 $$
+
 We can write this as the following segment of code: 
 ```python
 def factorial(n): 

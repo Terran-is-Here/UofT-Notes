@@ -8,7 +8,7 @@ tags:
 Lecture Date: 2026-09-25
 Week: 3
 created:
-Created: September 21st 2026, 2:49:20 pm
+Created:  September 21st 2026, 2:49:20 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[7 — 1st and 2nd Laws of Newton]]
@@ -47,5 +47,7 @@ This section will detail the commonly seen forces present in classical mechanics
 > Friction will be more properly defined in later notes. 
 
 > Spring Force
+>
 > The force applied by a spring (or more generally, the restorative force by any material in the linear-elastic regimen) can be generally applied by Hooke's Law: $$F_{E} = -k\Delta x$$
+>
 > Note the negative sign, this force is a restorative force opposite the direction of displacement.

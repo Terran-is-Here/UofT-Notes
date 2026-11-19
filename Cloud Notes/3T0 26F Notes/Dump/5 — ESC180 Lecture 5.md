@@ -8,7 +8,7 @@ tags:
 Lecture Date: 2026-09-14
 Week: 2
 created:
-Created: September 14th 2026, 5:11:35 pm
+Created:  September 14th 2026, 5:11:35 pm
 ---
 Hub: [[ESC180 Hub]]
 Previous: N/A (was lazy)

@@ -7,6 +7,7 @@ tags:
 "Lecture #": 2
 Date: 2026-09-11
 Week: 1
+Created:  September 8th 2026, 10:11:49 am
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: N/A

@@ -7,7 +7,7 @@ tags:
 "Lecture #": 10
 Lecture Date: 2026-10-01
 Week: 4
-Created: September 26th 2026, 5:14:39 pm
+Created:  September 26th 2026, 5:14:39 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[09 — Derivatives and Rates of Change]]
@@ -34,7 +34,9 @@ F'(x) &= \frac{x^m(0) - (1)(mx^{m-1})}{(x^m)^2} \\
 ## Differentiation Formulas 
 Retaking the limit-based definition of the limit: 
 $$
+
 f'(x) = \frac{df(x)}{dx}= \lim_{ h \to 0 }  \frac{f(x+h) - f(x)}{h}
+
 $$
 As we saw from the previous section, taking the derivative solely from this limit definition *is* possible, however it takes a significant amount of effort and time to do. We can create some quick definitions to solve for the derivatives of some simple functions without having to invoke this definition directly. 
 
@@ -48,6 +50,7 @@ As we saw from the previous section, taking the derivative solely from this limi
 > Let $f(x) = x^n$, then $f'(x) = nx^{n-1}$. 
 > *Proof:* 
 $$
+
 \begin{align}
 f(x) &= a_{1}x^n + a_{2}x^{n-1} + \dots + a_n \\
 f(x+h) & = a_{1}(x+h)^n + a_{2}(x+h)^{n-1} + \dots + a_{n}  \\
@@ -60,6 +63,7 @@ f(x+h) -f(x) & = a_{1}x^n + na_{1}x^{n-1}h +\binom{n}{2}a_{1}x^{n-2}h^2 + \dots 
 &=\lim_{ h \to 0 } na_{1}x^{n-1} + \binom{n}{2}a_{1}x^{n-2}h^1 + \dots a_{1}h^{n-1} + (n-1)a_{2}x^{n-2} + \dots \binom{n-1}{2}a_{2}x^{n-3}h^1 + \dots a_{n-1} \\
 &= na_{1}x^{n-1} + (n-1)a_{2}x^{n-2} + \dots+a_{n-1}
 \end{align}
+
 $$
 Note that this arises from binomial expansion theorem. 
 
@@ -67,6 +71,7 @@ Note that this arises from binomial expansion theorem.
 > Let $F(x) = f(x)g(x)$, then $F'(x) = f(x)g'(x) = f'(x)g(x)$
 > Proof: 
 $$
+
 \begin{align}
 F'(x)&= \lim_{ h \to 0 } \frac{F(x+h)-F(x)}{h} = \lim_{ h \to 0 } \frac{f(x+h)g(x+h)-f(x)g(x)}{h} \\
 &= \lim_{ h \to 0 } \frac{f(x+h)g(x+h) - f(x+h)g(x) +f(x+h)g(x) - f(x)g(x)}{h} &\text{Add/subtract term of  } f(x+h)g(x)\\
@@ -74,6 +79,7 @@ F'(x)&= \lim_{ h \to 0 } \frac{F(x+h)-F(x)}{h} = \lim_{ h \to 0 } \frac{f(x+h)g(
 &= \lim_{ h \to 0 } \left[f(x+h) \frac{g(x+h)-g(x)}{h}\right] + \lim_{ h \to 0 } \left[g(x) \frac{f(x+h) - f(x)}{h}\right] \\
 &=f(x)g'(x) + g(x)f'(x)
 \end{align}
+
 $$
 
 > Quotient Rule 
@@ -81,6 +87,7 @@ $$
 > Proof: 
 
 $$
+
 \begin{align}
 F'(x) &= \lim_{ h \to 0 } \left[ \frac{f(x+h)}{g(x+h)}-\frac{f(x)}{g(x)} \right] \frac{1}{h} \\
 &= \lim_{ h \to 0 } \left[ \frac{f(x+h)g(x)-f(x)g(x+h)}{g(x+h)g(x)h} \right]  \\
@@ -91,6 +98,7 @@ F'(x) &= \lim_{ h \to 0 } \left[ \frac{f(x+h)}{g(x+h)}-\frac{f(x)}{g(x)} \right]
 &=\lim_{ h \to 0 } \left[ \frac{f'(x)g(x)}{g(x+h)g(x)} \right] - \lim_{ h \to 0 } \left[ \frac{g'(x)f(x)}{g(x+h)g(x)} \right] \\
 F'(x)&= \frac{f'(x)g(x)}{g(x)^2} - \frac{g'(x)f(x)}{g(x)^2} = \frac{f'(x)g(x)-g'(x)f(x)}{g(x)^2}
 \end{align}
+
 $$
 
 
@@ -98,9 +106,11 @@ $$
 ## Applied Rates of Change
 In general for the sciences, the concept of a derivative generally extends to some instantaneous rate of change. For instance, for physics, this can be seen with the relationship that acceleration, velocity, and displacement have from each other (taking from [[4 — 1D Kinematics#Integration and Differentiation|PHY180 (4) - 1D Kinematics\Integration & Differentiation]]): 
 $$
+
 \begin{align}
 v(t) &= \frac{ds(t)}{dt} =s'(t)\\ 
 a(t) = \frac{dv(t)}{dt} &= \frac{d^2s(t)}{dt^2} = s''(t)
 \end{align}
+
 $$
 Although, by extension, these segments are therefore the antiderivatives of each other: 

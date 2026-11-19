@@ -8,7 +8,7 @@ tags:
 "Tutorial #": 2
 Lecture Date: 2026-09-22
 Week: 3
-Created: September 22nd 2026, 4:06:58 pm
+Created:  September 22nd 2026, 4:06:58 pm
 ---
 Hub: [[ESC194 Hub]]
 Connected Notes: 

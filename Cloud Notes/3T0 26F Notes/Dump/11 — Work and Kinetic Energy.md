@@ -8,7 +8,7 @@ tags:
 "Lecture #": 11
 Lecture Date: 2026-10-02
 Week: 4
-Created: September 23rd 2026, 10:02:18 pm
+Created:  September 23rd 2026, 10:02:18 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[10 — Drag Force and Terminal Velocity]]
@@ -20,33 +20,45 @@ Next: [[12 — Potential Energy, Conservative and Non-Conservative Forces]]
 # Lecture Notes
 ## Kinetic Friction 
 Recall, Kinetic Friction always acts opposite in the direction of travel, meaning that kinetic friction always performs some form of negative work: 
+
 $$
 W_{f} = -f_{k}\Delta d
 $$
+
 ## Work Done by Gravity
 Recall that the force of gravity is normally constant near the Earth, therefore $F_{g}=mg$. We can roughly define the work done by gravity as: 
+
 $$
 \begin{align}
 W_{g} = -mg\Delta h && \Delta h = h_{t}- h_{0}
 \end{align}
 
 $$
+
 Where $\Delta h$ is defined as positive upwards / negative downwards as per usual. Note that this implies that $W_{g}$ is a state function, where the path to $h_{t}$ from $h_{0}$ does not matter. 
 ## Loop Question
 Given a roller coaster with a loop below at radius $R$, at what height $h$ should a cart with mass $m$ be released to ensure that it maintains contact all throughout the loop? 
 
 > Take the analysis of the rollercoaster at the top of the loop; then we get the scenario where: 
+>
 > $$\Sigma F_{y} = F_{N}+F_{G} = \frac{mv^2}{R}$$
+>
 > We want to solve for the minimal speed, that is when $F_{N}=0$, yet when our cart still remains on our track; that is: $$\begin{align}\Sigma F_{y}= F_{G} &= \frac{mv_{min}^2}{R}\\mg&= \frac{mv_{min}^2}{R}\\v_{min}^2 &= Rg\end{align}$$Note at this point that the equivalent energy in terms of the work that gravity has done to our cart is some term of $mg(h-2R)$. Recall that $W=\Delta E_{K}$, and since $E_{K_{0}} = 0$, then all of our energy at this point is in the term defined by $v^2_{min}$: $$\begin{align}mg(h-2R) &= \frac{1}{2}mv_{min}^2  \\mg(h-2R) &= \frac{1}{2}mRg \\h &= 2.5R\end{align}$$
+
 # Pre-Lecture Notes
 ## Work 
 Work is generally defined as the integral of the path of a force with respect to it's displacement. To begin, we can define the definition of an infinitesimally small amount of work: 
+
 $$dW = \vec{F} \cdot d\vec{r} = |\vec{F}||d\vec{r}|\cos\theta$$
+
 Note, $\vec{r}$ is the terms of our relative path length, and $\vec{F}$ is the terms of force applied onto our object. Work is generally defined as a term of $[N\cdot m] =[J]$. 
+
 $$W_{AB} = \underset{\text{path AB}}{\int }\vec{F}\cdot d\vec{r}$$
+
 Where $\vec{F}$ could vary along the path, and where $d\vec{r}$ can also vary along the general path length. 
 ### Constant Forces & Work
 Note that if $\vec{F} = \bar{F} = F$, that is force is some constant value; the above integral evaluates as the following: 
+
 $$
 \begin{align}
 W_{AB} &= \underset{\text{Path AB}}{\int}\vec{F} \cdot d\vec{r}  = \underset{\text{Path AB}}{\int}dW\\
@@ -55,37 +67,51 @@ W_{AB} &= \underset{\text{Path AB}}{\int}\vec{F} \cdot d\vec{r}  = \underset{\te
 &= |\vec{F}||\vec{r}_{b} - \vec{r}_{a}|\cos\theta
 \end{align}
 $$
+
 With $\vec{r}_{b}-\vec{r}_{a}$ of the path of $AB$, this generally approximates the vector $\vec{d}$; therefore
+
 $$
 W=|\vec{F}||\vec{d}|\cos\theta
 $$
+
 Or, without vector notation: 
+
 $$
 W=Fd\cos\theta = \vec{F}\cdot \vec{d}
 $$
+
 > [!ila] In Lecture Addendum
 > Note that the term of $\cos\theta$ implies something interesting: Work can be 0, negative, or positive *depending on the value of $\cos\theta$*. 
 > * If work is negative, then our direction of force is opposite the direction of displacement. 
 > * If work is 0, then our direction of force is perpendicular to the direction of work. 
 ### Non-Constant Forces & Work 
 In general for non-constant forces which vary over some distance; it may help to show them as a function of their components. Recall that we defined force in the direction of it's path as the following: 
+
 $$
 dW = \vec{F}\cdot d\vec{r}
 $$
+
 If we take this to it's component form; then: 
+
 $$
 dW = F_{x}dx + F_{y}dy + F_{z}dz
 $$
+
 Where $F_{x},F_{y},F_{z}$ are the relative components of some force vector $F$. 
 Note then that if we are given the formula for some work; we can sub in and differentiate corresponding statements of $x,y,z\to dx,dy,dz$ to sub into this equation. We normally want to get these all to some evaluable term e.g. $dx$ to take the definite integral of. 
 ### Hooke's Law & Elastic Energy
 Hooke's Law is defined as the following: 
+
 $$
 F_{E} = -kx
 $$
+
 Where $k$ is some material component (in terms of $\frac{F}{D}$ or commonly, $\frac{N}{m}$), and $x$ is some displacement from the baseline. Note that this is a linear force (so we can use our simplified integral). If we wanted to solve for the linear elastic energy present in a spring; recall our definition from above: 
+
 $$\begin{align}W_{AB} = \underset{\text{path AB}}{\int }\vec{F}\cdot d\vec{r} \\\end{align}$$
+
 In this case, $\vec{F} = -kx$ assuming that our object starts from $x=0$ (in terms of equilibrium), and $d\vec{r}$ is equivalent to the path length, or *displacement* experienced by our spring, some term $dx$, therefore: 
+
 $$
 \begin{align}
 W_{E} &= \int_{A}^B-kx\ dx \\
@@ -106,6 +132,7 @@ Note however that $v$, like other values, are based off a certain reference fram
 ## Work-Energy Theorem 
 The Work-Energy Theorem states that the Net Work of a system is equivalent to a change in it's kinetic energy. Let us retake the definition of work to show how this is true: 
 $$
+
 \begin{align}
 dW &= \vec{F} \cdot d\vec{r} & \text{Note, }\vec{F} = m\frac{d\vec{v}}{dt} \\
 &= m\frac{d\vec{v}}{dt} \cdot d\vec{r} & \\
@@ -113,9 +140,11 @@ dW &= \vec{F} \cdot d\vec{r} & \text{Note, }\vec{F} = m\frac{d\vec{v}}{dt} \\
 &=md\vec{v} \cdot d\vec{v} & md\vec{v} \to m\vec{v} \\
 &=m\vec{v}\cdot d\vec{v}
 \end{align}
+
 $$
 Note that for $m\vec{v}\cdot d\vec{v}$, then this can be rewritten as the sum of $mv_{x}dv_{x} + mv_{y}dv_{y} + mv_{z}dv_{z}$ as per the definition of the dot product (assuming that $d\vec{v} = \begin{bmatrix}dv_{x}\\dv_{y}\\dv_{z}\end{bmatrix}$)
 $$
+
 \begin{align}
 dW &= mv_{x}dv_{x} + mv_{y}dv_{y} + mv_{z}dv_{z} = m\left[v_{x}dv_{x} + v_{y}dv_{y} + v_{z}dv_{z}\right] \\
 W_{net}=\int_{A}^BdW &= \int_{A}^Bm\left[v_{x}dv_{x} + v_{y}dv_{y} + v_{z}dv_{z}\right] \\
@@ -123,6 +152,7 @@ W_{net}=\int_{A}^BdW &= \int_{A}^Bm\left[v_{x}dv_{x} + v_{y}dv_{y} + v_{z}dv_{z}
 &= \left[\frac{m}{2}v_{x}^2 + \frac{m}{2}v_{y}^2 +\frac{m}{2}v_{z}^2\right]^B_{A} = \left[ \frac{m}{2}v^2 \right]^B_{A} &v_{x}^2 + v_{y}^2 +v_{z}^2 = v^2 \text{ (for vectors in } \mathbb{R}^3\text{)}\\
 W_{net}&=K_{B}-K_{A} = \Delta K
 \end{align}
+
 $$
 What this means is that for instance, if Work is *negative*, then the kinetic energy of our object will proportionally decrease. What this also means if that *if* our velocity does not change; the net work done on the system will also be 0. 
 ## Power 
@@ -138,6 +168,7 @@ This is often notated in the term of a $W$ (Watt), where $1W = \frac{1J}{s}$; $W
 
 Note that if $P$ is constant for some time interval $dt$, then we can say that: 
 $$
+
 \begin{align}
 Pdt &= dW \\
 \int Pdt &= \int dW  \\ \\

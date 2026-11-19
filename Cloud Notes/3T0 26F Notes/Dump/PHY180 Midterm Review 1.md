@@ -8,6 +8,7 @@ tags:
 "Lecture #": 11
 Lecture Date: 2026-09-29
 Week: 4
+Created:  September 29th 2026, 7:23:19 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: N/A 

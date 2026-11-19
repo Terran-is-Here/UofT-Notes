@@ -7,6 +7,7 @@ tags:
 "Lecture #": 0
 Date: 2026-09-10
 Week:
+Created:  September 9th 2026, 5:25:53 pm
 ---
 Hub: [[ESC180 Hub]]
 Previous: N/A

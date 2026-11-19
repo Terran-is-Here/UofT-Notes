@@ -1,3 +1,6 @@
+---
+Created:  September 18th 2026, 11:47:19 am
+---
 **Related Lecture Note: [[4 — Arguments and Definitions (Continued)]]**
 > [!note] Prompt
 > Lorem Ipsum Here

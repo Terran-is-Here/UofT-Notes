@@ -8,7 +8,7 @@ tags:
 Lecture Date: 2026-09-24
 Week:
 created:
-Created: September 18th 2026, 10:28:45 pm
+Created:  September 18th 2026, 10:28:45 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[6 — Uniform Circular Motion]]
@@ -46,7 +46,9 @@ NFL also generally defines the concept of Inertial Reference Frames:
 ## Newton's Second Law
 Newton's Second law states that: 
 > [!theorem] NSL: 
+>
 > The acceleration on a system is directly proportional to the force applied and inversely proportional to the mass of the system. That is: $$\vec{a} = \frac{\vec{F_{N}}}{m}$$
+>
 > Where $\vec{a}$ is acceleration, $\vec{F_{N}}$ is the force applied, and $m$ is the mass of the system. This is more often written as: $$F_{N} = m \vec{a}$$
 
 Note that since $\vec{F_{N}}$ is some vector, we can also break it down into components. 
@@ -55,21 +57,28 @@ Note however that Newton actually defined his second law in terms of Momentum:
 > The instantaneous rate at which a body's momentum changes is equal to the net force acting on the body: 
 
 That is; $$F_{N} = \frac{d\vec{p}}{dt}$$
+
 Momentum for now can be generally defined as $$\vec{p} = m\vec{v}$$
+
 Note that with this definition, then our above descriptor for Force via momentum simplifies. Assume that $m$ remains as some constant; then: 
+
 $$
 F_{N} = \frac{d(m\vec{v})}{dt} = m \frac{d\vec{v}}{dt} = m\vec{a}
 $$
+
 ## Weight
 Weight is generally defined as the following: 
+
 $$
 W_{m} = mg
 $$
+
 Where $m$ is the mass of an object, and $g$ is the gravitational pull of the Earth, though more generally defined as the gravitational acceleration derived from some other formula. For instance, assuming Newtonian Mechanics, this evaluates as: 
 
 $$
 W_{m} = m *\left[\frac{GM}{r^2}\right]
 $$
+
 Where $G$ is the gravitational constant of $\frac{6.67*10^{-11}Nm^2}{kg^2}$ and $M$ is the mass of the main body of gravity within the system, and $r$ is some term representing the distance of the body of analysis from the center of mass of the gravitational body.
 
 

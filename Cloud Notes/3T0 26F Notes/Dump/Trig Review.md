@@ -7,6 +7,7 @@ tags:
 "Lecture #": 0
 Date: 2026-09-07
 Week: 0
+Created:  September 7th 2026, 7:14:05 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: N/A

@@ -7,6 +7,7 @@ tags:
 "Lecture #": 0
 Date': 2026-09-10
 custom-width: 30
+Created:  September 5th 2026, 10:36:01 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: N/A
@@ -26,7 +27,9 @@ Physics (the field) deals with describing the interactions of energy, matter, sp
 ### Order of Magnitude
 Source: pg. 8 (1.1)
 > Let $x$ be a measured value; then it's corresponding Order of Magnitude is defined by the equation below. 
+>
 > $$\text{OoM} = \text{round}\left(\log_{10}(x)\right)$$
+>
 > Where the corresponding logarithmic equation within is rounded to the nearest whole integer. 
 
 
@@ -104,18 +107,24 @@ Distributions are meant to be described; and our goal in labs are to reduce unce
 * Uncertainty is around half of the trailing digit (if no other options are available for uncertainty)
 
 A distribution can be generally defined by the Gaussian Distribution: 
+
 $$Ae^{\frac{-(x-\bar{x})^2}{2\rho}}$$
+
 Where $\bar{x}$ is the mean, and $\rho$ is the standard deviation.
 
 > The mean can be found by: 
+
 $$\bar{x}=\frac{1}{N}\sum^n_{{i=1}} x_{i}$$
+
 > Or in other words: the mean is defined as the average of the entire dataset. 
 
 
 While the standard deviation can be found by: 
+
 $$
 \sigma = \sqrt{ \frac{1}{N-1}\sum^n_{i=1}\left(x_{i}-\bar{x}_{est}\right)^2 }
 $$
+
 Note that $N-1$ is defined by the degrees of freedom; we lose a degree of freedom when we use the data set to actually calculate the mean. If we know the mean independently; this is divided by solely N instead. 
 
 $\sigma$ is equivalent to the uncertainty present in every instance of data within this dataset! 
@@ -124,29 +133,45 @@ $\sigma$ is equivalent to the uncertainty present in every instance of data with
 These rules are already written within another document; but are left here. For the purposes of this section, let $x,y$ be equal to independent measurements. 
 
 > [!axiom] Addition/Subtraction
+>
 > $$z = x+y \lor z=x-y$$
+>
 > With this, uncertainty of $z$ is defined by: 
+>
 > $$u_{z} = \sqrt{ u_{x}^2 + u_{y}^2  }$$
+>
 > We linearly add our uncertainties. 
 
 > [!axiom] Multiplication / Division
+>
 > $$z=xy \lor z=\frac{x}{y}$$
+>
 > In general, you add the *fractional* uncertainties of our units. 
+>
 > $$\frac{u_{z}}{z} = \sqrt{\left(\frac{u_{x}}{x}\right)^{2} + \left(\frac{u_{y}}{y}\right)^{2} }$$
+>
 > Note that for constants; that is their uncertainty is 0; you can directly multiply the uncertainty by this constant (normally for unit conversions)
 
 > [!axiom] Power
+>
 > $$z = x^n$$
+>
 > $$\frac{u_{z}}{z} = n* \frac{u_{x}}{x}$$
+>
 > Or that is; you multiply the fractional uncertainty of the term being exponentiated by the degree of the exponent. 
 
 In terms of uncertainty of the *mean* with the same uncertainty (that is, it is always represented by the same $u_{x}$): 
+
 $$\bar{x} = \frac{\sum^n_{i=1}x_{1}}{N} = \frac{x_{sum}}{N} = \frac{1}{N} * x_{sum}$$
 
 In general, you can describe the uncertainty of the sum as: 
-$$u_{sum} = \sqrt{ \sum^N_{i=1} u_{xi}^2  } = \sqrt{ Nu_{x}^2 } = \sqrt{ N } * u_{x}$$ 
+
+$$u_{sum} = \sqrt{ \sum^N_{i=1} u_{xi}^2  } = \sqrt{ Nu_{x}^2 } = \sqrt{ N } * u_{x}$$
+ 
 And the mean can be appropriately scaled as dividing the above equation by $\frac{1}{N}$ as defined by our multiplication rules. 
+
 $$\bar{x} = \frac{x_{sum}}{N} \implies u_{\bar{x}} = \frac{\sqrt{ N }u_{x}}{N} = u_{\bar{x}} = \frac{u_{x}}{\sqrt{ N }}$$
+
 ### Significant Figure Rules 
 For this course: 
 1. No rounding before the final answer. 

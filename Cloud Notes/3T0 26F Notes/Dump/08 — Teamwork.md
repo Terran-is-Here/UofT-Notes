@@ -7,6 +7,7 @@ tags:
 "Lecture #": 8
 Lecture Date: 2026-09-28
 Week: 4
+Created:  September 28th 2026, 1:12:56 pm
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[07 — Engineering Arguments (continued)]]

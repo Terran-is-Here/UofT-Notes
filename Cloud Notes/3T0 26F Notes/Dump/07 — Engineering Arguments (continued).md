@@ -7,7 +7,7 @@ tags:
 "Lecture #": 7
 Lecture Date: 2026-09-25
 Week: 3
-Created: September 25th 2026, 11:23:03 am
+Created:  September 25th 2026, 11:23:03 am
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[06 — Design For X]]

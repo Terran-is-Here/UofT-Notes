@@ -7,6 +7,7 @@ tags:
 "Lecture #": 13
 Lecture Date: 2026-11-02
 Week:
+Created:  November 1st 2026, 3:35:46 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[12 — Elementary Row Operations]]
@@ -16,6 +17,7 @@ Next: [[14 — Gaussian Elimination]]
 # Lecture Notes
 ## Solving Systems
 Recall that we can solve a system of equations as a matrix, and that we can apply elementary row operations to solve such a system. Consider the following system of equations then: 
+
 $$
 \begin{align}
 x_{1} + 2x_{2} + x_{3}  & =0 \\
@@ -23,7 +25,9 @@ x_{1} + 2x_{2} + x_{3}  & =0 \\
 3x_{1} + 6x_{2} + 4x_{3} & =0
 \end{align}
 $$
+
 Or, as a matrix: 
+
 $$
 \begin{bmatrix}
 1 & 2 & 1 \\
@@ -37,7 +41,9 @@ x_{1}\\x_{2}\\x_{3}
 0\\0\\0
 \end{bmatrix}
 $$
+
 Recall, we can solve this in terms of $A=CR$, then from here we can solve $R\vec{x}=0$ as previously: 
+
 $$
 \begin{bmatrix}1 & 2 & 1 \\2 & 4 & 5 \\3 & 6 & 4\end{bmatrix} = \begin{bmatrix}
 1 & 1 \\
@@ -50,6 +56,7 @@ $$
 $$
 
 We can actually instead use elementary row operations to solve such a system instead. We intend to use EROs to get to $R_{0}$ (something very similar to $R$), we can do this trivially: 
+
 $$
 \begin{align}
 \begin{bmatrix}
@@ -94,6 +101,7 @@ RREF (Reduced-Row Echelon Form) Matrices follow the properties below:
 4. Any and all rows fully compromised of 0s are collected at the bottom of the matrix. 
 
 Then with our above matrix, note that since we are solving for it equals to $0$, then we find that: 
+
 $$
 \begin{bmatrix}
 1 & 2 & 0 \\
@@ -105,12 +113,16 @@ x_{1}\\x_{2}\\x_{3}
 0\\0\\0
 \end{bmatrix}
 $$
+
 Then this is equivalent to: 
+
 $$
 x_{1}+2x_{2} = 0\\
 x_{3}=0
 $$
+
 Then setting $x_{2}$ as the free variable, then: 
+
 $$
 \begin{bmatrix}
 x_{1}\\x_{2}\\x_{3}
@@ -118,6 +130,7 @@ x_{1}\\x_{2}\\x_{3}
 -2\\1\\0
 \end{bmatrix}x_{2}
 $$
+
 Where this like represents the null space of $A$; or in other words, $\text{nullity}(A)=1$
 > Generally, we can see that the column *whithout a leading one* represents a free variable (as they aren't fully fixed to a certain desired value). 
 

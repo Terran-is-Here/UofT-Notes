@@ -7,7 +7,7 @@ tags:
 "Lecture #": 8
 Lecture Date: 2026-09-23
 Week: 3
-Created: September 23rd 2026, 4:21:26 pm
+Created:  September 23rd 2026, 4:21:26 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[07 — Limit Laws]]
@@ -18,6 +18,7 @@ Next: [[08-1 — Intermediate Value Theorem]], [[09 — Derivatives and Rates of
 # Lecture Notes
 ## Substitution Limits
 There are limits in which you can directly substitute a value into a function to evaluate the limit. These normally arise during *rational inequalities* in which a denominator causes a division by 0 when the limit is taken. For instance: 
+
 $$
 \begin{align}
 \lim_{ x \to 3 } \left(\frac{x^2-x-6}{x-3}\right) &=?&\text{Note that we can't distribute, limit would cause div by 0:}\\
@@ -27,10 +28,13 @@ $$
 
 Another example: 
 $$
+
 \lim_{ x \to 5 } \frac{\sqrt{ x+4 }-3}{(x-5)}
+
 $$
 At this point, we can't use any of our rules. Let's try rationalizing the numerator by multiplying it by it's conjugate: 
 $$
+
 \begin{align}
 \lim_{ x \to 5 } \frac{\sqrt{ x+4 }-3}{(x-5)} *\frac{\sqrt{ x+4 }+3}{\sqrt{ x+4 }+3} \\
 =\lim_{ x \to 5 } \frac{x+4-9}{(x-5)(\sqrt{ x+4 }+3)} \\
@@ -38,10 +42,12 @@ $$
 =\lim_{ x \to 5 } \frac{1}{\sqrt{ x+4 }+3} \\
 = \frac{1}{6}
 \end{align}
+
 $$
 
 Final Example: 
 $$
+
 \begin{align}
 &f(x) = \begin{cases}
 \sqrt{x^2-3}: x>2 \\
@@ -49,13 +55,16 @@ $$
 \end{cases}\\
 \text{find }\lim_{ x \to 2 } &f(x)  \\
 \end{align}
+
 $$
 In this case, approach via one-sided limits: 
 $$
+
 \begin{align}
 \lim_{ x \to 2^+ } f(x) = \lim_{ x \to 2^+ }\sqrt{ x^2-3 } = 1 && \lim_{ x \to 2^- }(5-2x) = 1  \\
 \lim_{ x \to 2^+ }f(x) &= \lim_{ x \to 2^- } = 1 \implies\lim_{ x \to 2 } f(x) = 1    
 \end{align}
+
 $$
 ## Squeeze Theorem 
 Note that this was taken up in a previous note already, that is [[07 — Limit Laws#Squeeze Theorem|in Limit Laws (07) - Squeeze Theorem]]. For purposes of completeness, they will be positioned here again (as they were mentioned in this lecture): 
@@ -67,16 +76,20 @@ Note that this was taken up in a previous note already, that is [[07 — Limit L
 ### Example 
 Evaluate the following: 
 $$
+
 \lim_{ x \to 0 } x^2\cos\left( \frac{1}{x^2} \right) =? 
+
 $$
 Note that our cos term is undefined when we evaluate $x\to 0$, therefore we need to consider using the squeeze theorem for this. Take the squeeze theorem: 
 $$
+
 \begin{align}
 h(x) &\leq f(x) \leq g(x) && \text{Let } f(x) = \cos\left( \frac{1}{x^2} \right) \\
 h(x) &\leq \cos\left( \frac{1}{x^2} \right) \leq g(x) && \text{Note that }\cos(\theta) \mapsto[-1,1] \therefore \\
 -1 &\leq \cos\left( \frac{1}{x^2} \right) \leq 1 && \text{Multiply by } x^2 \\
 -x^2 &\leq x^2\cos\left( \frac{1}{x^2} \right) \leq x^2 && \text{Note that } \lim_{ x \to 0 } x^2 = 0&&\text{Also applies to }\lim_{ x \to 0 } -x^2 = 0 \\
 \end{align}
+
 $$
 
 Then, following from the Squeeze Theorem, then: 
@@ -126,25 +139,31 @@ We say that a function is continuous on an interval if it is continuous on every
 
 Consider the case when $c>2 \lor c<-2$ is defined as: 
 $$
+
 \begin{align}
 \lim_{ x \to c } \sqrt{ x^2-4 } = \sqrt{ \lim_{ x \to c } x^2-4 } = \sqrt{ c^2-4 } && \text{Note, }\sqrt{ c^2-4 } = f(c) \\
 \therefore, \text{f(x) is continous if } x<-2\lor x>2 
 \end{align}
+
 $$
 Consider now the case at our endpoints that are defined at $c=2$ and $c=-2$: 
 $$
+
 \begin{align}
 x=-2 \implies c&=-2 \\
 \lim_{ x \to -2^- } \sqrt{ x^2-4 } = \sqrt{ \lim_{ x \to -2^- }x^2-4 }  = \sqrt{ (-2)^2-4 } &= 0 = f(-2) \\
 \therefore f(x)\text{ is continuous at -2 (from the left)}
 \end{align}
+
 $$
 $$
+
 \begin{align}
 x=2 \implies c&=2 \\
 \lim_{ x \to 2^+ } \sqrt{ x^2-4 } = \sqrt{ \lim_{ x \to -2^+ }x^2-4 }  = \sqrt{ (2)^2-4 } &= 0 = f(2) \\
 \therefore f(x)\text{ is continuous at 2 (from the right)}
 \end{align}
+
 $$
 From this, we show that from all these cases, that $f(x)$ is continuous for our entire interval $x\in (-\infty,-2]\cup[2,\infty)$ 
 ## Continuity Rules 
@@ -160,12 +179,14 @@ We have the following theorems that can help for simplifying these rules:
 For instance, the product rule: 
 *Proof:* If $f,g$ continuous at $x=c$, their product will also be continuous at $c$
 $$
+
 \begin{align}
 &f(x),g(x)\text{ are continuous at }x=c \\
 &\implies \lim_{ x \to c } f(x) = f(c) &\lim_{ x \to c } g(x)=g(c) \\
 &\implies \lim_{ x \to c } f(x)g(x) = \lim_{ x \to c } f(x) * \lim_{ x \to c } g(x) & \text{From the Product Law of Limits}\\
 &= f(c)g(c)
 \end{align}
+
 $$
 
 *Corollary:* Consider this extended to some interval, that is $f,g,$ are continuous on an interval. 
@@ -193,7 +214,9 @@ This can be extended:
 ### Example
 Consider: 
 $$
+
 f(x) = \frac{1}{\cos^2(x)+1}
+
 $$
 Note that $f(x) = f_{1}\circ f_{2} \circ f_{3}$, where: 
 * $f_{1} = \frac{1}{x}$
@@ -201,7 +224,9 @@ Note that $f(x) = f_{1}\circ f_{2} \circ f_{3}$, where:
 * $f_{3} \cos(x)$
 Note that $f_{1},f_{2},f_{3}$ are continuous over it's entire domain (except for $f_{1}$ at $x=0$ as per our above theorem); then: 
 $$
+
 D = \{ x \in \mathbb{R} | \cos^2(x) + 1 \neq 0 \}
+
 $$
 Note that $\nexists\cos^2(x) < 0$, then this implies that $D=\{ x \in \mathbb{R} \}$. 
 
@@ -209,10 +234,13 @@ Consider a case when our function is composed of functions with discontinuities:
 ![[08 — Continuity-1790610668792.webp|284]]
 Let us try checking if a function of $h(x)=f(f(x))is$ continuous at some value $x=0$. Let's first evaluate it at $f(0)$: 
 $$
+
 h(0) = f(f(0)) = f(2) = 2
+
 $$
 Now, consider it's limits from left and right of $x=0$: 
 $$
+
 \begin{align}
 \lim_{ x \to 0^+ }h(x)  &= \lim_{ x \to 0^+ } f(f(x)) & \text{ Consider approaching from the right, then} \lim_{ x \to 0^+ } f(x) = 2 \\
 &= f(2) = 2 \\
@@ -220,6 +248,7 @@ $$
 &= f(2) = 2 \\ 
 \lim_{ x \to 0^+ }h(x) = \lim_{ x \to 0^- } h(x) = 2 &= h(x) & \therefore \text{, our function is continuous at }x=0.
 \end{align}
+
 $$
 
 
@@ -246,19 +275,27 @@ This has some interesting properties. Given two continuous functions $f$ and $g$
 Note that Polynomials are continuous in all of it's domain, that is $x\in \mathbb{R}$ for any polynomial. This arises from our [[07 — Limit Laws|Limit Laws]]: 
 Given the following polynomial: 
 $$
+
 f(x) = c_{1}x^n + c_{2}x^{n-1} + \dots + c_{n}x^0
+
 $$
 Taking the limit of this for some arbitrary value $a \in x$, then: 
 $$
+
 \lim_{ x \to a } f(x) = \lim_{ x \to a } c_{1}x^n + c_{2}x^{n-1} + \dots + c_{n}x^0
+
 $$
 Recall that: 
 $$
+
 \lim_{ x \to a } c_{1} = c_{1}
+
 $$
 And 
 $$
+
 \lim_{  x \to a } x^n = a^n \iff n\in \mathbb{N}
+
 $$
 Since both of these are continuous, and that a polynomial is the sum of these polynomial functions, then it arises that any polynomial is continuous along it's entire domain. 
 

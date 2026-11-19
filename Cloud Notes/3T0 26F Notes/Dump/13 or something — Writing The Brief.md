@@ -7,6 +7,7 @@ tags:
 "Lecture #": 10
 Lecture Date: 2026-10-06
 Week: 5
+Created:  October 6th 2026, 9:10:57 am
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[09 — The Framing Strand]]

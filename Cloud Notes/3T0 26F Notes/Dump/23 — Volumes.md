@@ -7,6 +7,7 @@ tags:
 "Lecture #": 23
 Lecture Date: 2026-11-06
 Week:
+Created:  October 29th 2026, 6:17:19 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[22 — Areas Between Curves]]
@@ -17,21 +18,28 @@ Next: [[24 — Volumes by Cylindrical Shells and Average Function Values]]
 # Lecture Notes
 ## Volumes (LEC) 
 Consider a 3d shape $S$ with a fixed cross-sectional area $A$. Consider now taking some slice of $\Delta x$ of this 3d shape, where this is associated by some cross-sectional area, then we see that:
+
 $$V_{i} = A\Delta x_{i}$$
+
 Consider now that the volume of such a shape is equivalent to summing all of these terms up, and consider that this approximation improves as $||\Delta x|| \to 0$, then we see that: 
+
 $$
 \int_{a}^{b}A(x)\,dx
 $$
+
 Where $A(x)$ corresponds to a function of the cross-section of a function. Consider this like an extrude in CAD 
 
 ### Example(s)
 > Consider now taking the area of a square pyramid; with a square base with a width of $r$, and of height $h$. Consider now, what is the corresponding area of $A$ as some function of $x \to r$? We can take square slices, but we need to figure out what the corresponding side length is! 
 
 Consider that as $x\to h$, $\ell=r$, then $\ell=\frac{rx}{h}$. (Or as the rise over run of that value), then: 
+
 $$
 A(x) = \ell^{2} = \left[ \frac{rx}{h} \right]^{2}
 $$
+
 Then integrating with respects to the following, we see that: 
+
 $$
 \begin{align}
 V  & =\int_{0}^{h}\left[ \frac{rx}{h} \right]^{2}\,dx \\
@@ -48,7 +56,9 @@ If our sphere has a radius of $R$, and let it lie on an $x$ axis then from Pytha
 $$
 A(x) =\pi(R^{2}-x^{2}) = \pi R^{2} - x^{2}
 $$
+
 Integrating, then: 
+
 $$
 \begin{align}
 V & =\int_{-R}^{R}\pi R^{2}-x^{2}\,dx \\
@@ -64,16 +74,21 @@ The height of a tetrahedron can be defined as some term of $h$ (i.e. a d4), Then
 $$
 b^{2} = a^{2}-\left( \frac{a}{2} \right)^{2} \implies b=\frac{a\sqrt{ 3 }}{2}
 $$
+
 Then, considering the vertical cross-section from some value $h$ to $\frac{a\sqrt{ 3 }}{2}$; The line from the vertical $h$ to $x = \frac{a\sqrt{ 3 }}{2}$ represents the corresponding height of the rectangles, then: 
 
 $$
 P = h\left( 1- \frac{x}{\frac{a\sqrt{ 3 }}{2}} \right)
 $$
+
 This represents the height of our triangle. Considering now the width back in our x-axis view, then: 
+
 $$
 W = a\left( 1-\frac{x}{\frac{a\sqrt{ 3 }}{2}} \right)
 $$
+
 Then, recall that the area of a triangle is half the base times height, then: 
+
 $$
 \begin{align}
 V & =\int_{0}^{a\sqrt{ 3 }/2} \frac{1}{2}PW \,dx \\
@@ -83,21 +98,27 @@ V & =\int_{0}^{a\sqrt{ 3 }/2} \frac{1}{2}PW \,dx \\
  &  =\frac{1}{2}ah \left[ x + \frac{2}{\sqrt{ 3 }a}x^{2} + \frac{4}{9a^{2}}x^{3} \right]_{0}^{a\sqrt{ 3 }/2} = \frac{a^{2}h\sqrt{ 3 }}{12}
 \end{align}
 $$
+
 ## Solids of Revolution (LEC) 
 We consider the concept of a *solid of rotation*, where we rotate some region $\mathcal{R}$ around some axis. Consider if we rotated this around an axis, then we can express this as a cylinder with a cross-section proportional to a circle, with a radius given by our function at some point, that is: 
+
 $$
 A_{i} = \pi f(x_{i})^{2}
 $$
+
 Taking the volume is simply taking the integral of this with respects to $x$ (or our axis of choice), then: 
+
 $$
 V = \pi \int_{a}^{b}f(x)^{2}\,dx
 $$
+
 Note that this assumes that our surface is a *perfect* disk; thus we notate this as the *disk method* around the x axis. 
 
 ### Example
 > Consider the following. Take the area of a cone. Let the apex be on $x=0$, and the height of the cone being some term $h$, then let the radius at the bottom be defined as some term $r$. 
 
 From this, we can see that $y=\frac{r}{h}x$ (from a line), then simply integrate this using the disk method: 
+
 $$
 \begin{align}
 V & = \pi \int_{0}^{h}\left( \frac{r}{h}x \right)^{2}\,dx \\
@@ -108,6 +129,7 @@ $$
 > Consider the curve of $y=2-x^{2}$, $x\in[0,2]$. 
 
 Note that at $x=\sqrt{ x }$, this dips below the $x$ axis. Note that this does not matter as $y\to y^{2}$ in our expression, then the sign disappears, thus: 
+
 $$
 \begin{align}
 V & =\int_{0}^{2}(2-x^{2})^{2}\,dx = \int_{0}^{2}4-4x^{2}+x^{4}\,dx \\
@@ -115,33 +137,40 @@ V & =\int_{0}^{2}(2-x^{2})^{2}\,dx = \int_{0}^{2}4-4x^{2}+x^{4}\,dx \\
 \end{align}
 $$
 
-
 ---
 # Pre-Lecture Notes
 ## Volumes
 Recall that within [[18 — Areas and Distances]], we were forced to confront the idea of taking the area of some function under a curve. The question then arises, surely we can draw a parallel to this, and taking the volume of some $3d$ shape right? 
 
 We now consider the simple concept of a **cylinder**, a 3d object which takes a constant area $A$ at some base plane $b_{1}$, and has some height $h$, on a plane perpendicular to $b_{2}$, then we can intuitively say that: 
+
 $$
 V = Ah
 $$
+
 where $A$ is the area in $b_{1}$, and $b_{2}$ is it's corresponding height.
 
 Consider now if an object $S$ is not a cylinder, that is $A$ varies as a function of $h$. We can intuitively think that we can approximate the area by splitting up $S$ into sections, then approximating those sections by a cylinder, that is: 
+
 $$
 A_{S} = \sum_{i=1}^{N} A(h)\Delta h
 $$
+
 Letting $x$ be defined as the term for $h$, and defining that our shape goes from some interval $x\in[a,b]$, then we note that dividing $S$ into $n$ slabs of $\Delta x$, progressively slicing smaller and smaller and taking some sample points $x^{*}_{i}$ within sub partitions (slices) $x^{*}_{i}\in[x_{i-1},x_{i}]$. 
 
 We note that this approximation gets more and more accurate as $\lim_{ n \to \infty }$, then we have: 
+
 $$
 A_{s} = \lim_{ n \to \infty } \sum_{i=1}^{n} A(x^{*}_{i})\Delta x_{i}
 $$
+
 Where we see that this is actually simply a Reimann Sum of our function of area, thus we can define this using our familiar definite integral notation as the following. 
 
 > [!theorem] Areas & Definite Integrals
 > Let $S$ be a solid that lies between $x=a,b$. If the cross-sectional area of $S$ in the plane $P_{x}$ ($P_{x}\perp x$) is defined by some function $A(x)$, where $A(x)$ is continuous in $[a,b]$, then the volume of $S$ is defined as the definite integral of $A(x)$ between $a,b$, or in other words: 
+>
 > $$V = \lim_{ N \to \infty } \sum_{i=1}^{N} A(x^{*}_{i})\Delta x_{i}=\int_{a}^{b}A(x)\,dx$$
+>
 > Which makes intuitive sense if you think about it; it's simply the sum of the areas of infinitesimal slices of a 3d object. 
 
 ### Application
@@ -171,9 +200,11 @@ For instance, given $f(x)=\sqrt{ x }$, let's say that we wanted to revolve it ar
 
 ### Multiple Functions
 Consider now the case in which we want to take the volume between two functions $f(x),g(x)$; that is the volume defined from the region enclosed between two functions. In these cases, (and generally, for multiple functions depending on which one is the upper bound / lower bound respectively), we can model this as a disk (or the subtraction of two corresponding circular cross-sections): 
+
 $$
 A(x) = \pi(\text{outer radius})^{2} - \pi(\text{inner radius})^{2}
 $$
+
 Where the outer radius and inner radius correspond to the functions $f(x),g(x)$ per region (as per the same ideas that we had in [[22 — Areas Between Curves#Areas Between Curves|Areas Between Curves]]). Note that if a volume is fully enclosed, **then the integration bounds are defined with respects to the points of intersection of the function** (as without it, it's not really an enclosed shape now is it?)
 
 > [!axiom] Idea
@@ -189,7 +220,9 @@ A(x)  & = \pi(x)^{2} - \pi(x^{2})^{2} \\
  & =\pi(x^{2}-x^{4})
 \end{align}
 $$
+
 Then, integrating this: 
+
 $$
 \begin{align}
  & =\int_{0}^{1}A(x)\,dx \\
@@ -207,10 +240,13 @@ Note however that we have generally defined the concept of area within this note
 For instance, consider finding the volume of a *pyramid* with a square base with a side length of $L$, and a height of $h$. 
 
 We can consider trying to find the side area of some cross-sectional square within the triangle, some $s^{*}$. We see that as we traverse a distance of $x$ in the axis of $h$, $s\to L$, or in other words, $s^{*} = \frac{Lx}{h}$, where when $x=h,s^{*}=\frac{L}{2}$. (as we considered the purely vertical axis), Then the area of that cross-section is defined by $s^{2*}$, then: 
+
 $$
 A(x) = \frac{L^{2}x^{2}}{h^{2}}
 $$
+
 Note that we are now integrating from some origin point (for convenience, set it when $A(x)=0$), towards $h$, then: 
+
 $$
 \begin{align}
  & =\int_{0}^{h}A(x) \,dx \\
@@ -218,4 +254,5 @@ $$
  & =\frac{L^{2}h^{3}}{3h^{2}} = \frac{L^{2}h}{3}
 \end{align}
 $$
+
 In fact, we can arbitrarily use any $A(x)$ as long as it can properly model the cross-section of the shape that we are attempting to understand the volume of. 

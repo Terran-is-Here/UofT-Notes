@@ -7,6 +7,7 @@ tags:
 "Lecture #": 0
 Lecture Date: 2026-11-11
 Week:
+Created:  November 11th 2026, 5:11:02 pm
 ---
 Hub: 
 Previous: [[25 — ESC180 Lecture 25]]
@@ -80,9 +81,11 @@ If our list is in it's worst case, then we note that our `hasSwapped` term will 
 * Note that the loop within will run progressively less times, that is for the iterations it goes from n-1, n-2, n-3 ... 3, 2, 1 times
 
 Thus we find that the inner number of the inner loop iterations is simply the sum of the arithmetic sequence: 
+
 $$
 \frac{n(n-1)}{2} \to \frac{n^{2}}{2}-\frac{n}{2}
 $$
+
 The runtime of this function / sorting algorithm is therefore $O(n^{2})$ for some large $n^{2}$. 
 ## Insertion Sort
 Insertion Sort basically operates with the principle of finding the largest value within the set, and simply moving it to the end of the list; then we simply take the next value. We note that this value is going to be sorted, and thus sort the corresponding sub list. In practice, this means that we create a "semi-sorted" list, where the sublist within is relatively sorted to itself.  
@@ -112,5 +115,7 @@ Consider now, what is the runtime complexity of *insertion sort*? We can define 
 > Then our while loop within runs when we have to perform multiple right shifts to make room for our value; thus our while loop runs for some $k$ times, where this corresponds to the length of the semi-sorted region of our list. 
 > 
 > Considering this in terms of the number of outer for loop iterations: 
+>
 > $$k=1,2,\dots,n-1$$
+>
 > Which is also another arithmetic sequence, then this is equivalent to $\frac{n(n-1)}{2}$, meaning that $O(n^{2})$. 

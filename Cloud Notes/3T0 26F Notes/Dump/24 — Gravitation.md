@@ -7,6 +7,7 @@ tags:
 "Lecture #": 24
 Lecture Date: 2026-10-27
 Week: 9
+Created:  October 27th 2026, 1:12:26 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[22 and 23 — Static Equilibrium and Elasticity]]
@@ -25,34 +26,46 @@ Consider the following: At what velocity would you need to drive around a circul
 $$
 F_{N} - mg = -\frac{mv_{t}^{2}}{r}
 $$
+
 thus: 
+
 $$
 mg = \frac{mv^{2}}{r} \to \sqrt{ gr } = v
 $$
+
 Note that if we extend this out with defining $mg$ as some $F_{g} = \frac{Gm_{1}m_{2}}{r^{2}}$, this would solve for a general case of a perfectly circular orbit's orbital velocity.
 
 ## Potential Energy (LEC)
 Note that we define Gravitational Energy as the following, where we set $\gamma$ to be the height of our object above the earth's surface. 
+
 $$
 U_{g} = \frac{GMm}{r_{e}+\gamma}
 $$
+
 Multiplying by $\frac{1}{r_{e}}$ in numerator and denominator shows us that: 
+
 $$
 \begin{align}
 U_{g} &  = \frac{GMm}{r_{e}}\left( \frac{1}{1 + \frac{\gamma}{r_{e}}} \right) & \text{set } \epsilon = \frac{\gamma}{r_{e}}
 \end{align}
 $$
+
 Then we find that: 
+
 $$
 \begin{align}
 g = \frac{GM_{e}}{r_{e}^{2}} = 9.8
 \end{align}
 $$
+
 Then we find that: 
+
 $$
 \frac{GM_{e}}{r_{e}}= gr_{e}
 $$
+
 Thus: 
+
 $$
 \begin{align}
 U_{g} & =gr_{e}m \left( \frac{1}{1+\epsilon} \right) \frac{1-\epsilon}{1-\epsilon} \\
@@ -71,9 +84,13 @@ Newton's Law of Universal Gravitation can be described as the generalization(\*)
 
 > [!theorem] Newton's Law of Universal Gravitation
 > Let $F_{G}$ be the force of **gravity**, then: 
+>
 > $$F_{G} = \frac{Gm_{1}m_{2}}{r^2}$$
+>
 > Where $G=6.67\times 10^{-11}N*m^2*kg^{-2}$. Note that in a vector notation: 
+>
 > $$\vec{F_{G}}=\frac{Gm_{1}m_{2}}{r^{2}}\hat{r}$$
+>
 > Where $\hat{r}$ is a unit vector that points from some object $A$ to some object $B$, or vice versa. (This is an extension of NTL). 
 
 Note that this has many interesting affects when we consider gravitation near a local body, and or with terms of one body present. 
@@ -81,9 +98,12 @@ Note that this has many interesting affects when we consider gravitation near a 
 > [!ila] In-Lecture Addendum
 > Based on Gauss's law: only the masses within the orbital radius $r$ counts pertaining to the analysis of the force of gravity. 
 > Assuming that an object has a constant density; then for some radius less than the radius of the body, we find that: 
+>
 > $$F_{G} = \frac{GM_{r}}{r^{3}} = \frac{G\rho\left( \frac{4}{3}\pi r^{3} \right)}{r^{2}} = \frac{4\pi}{3}G\rho r$$
+
 ### Gravitation Near Earth
 Consider now the case when we are near a gravitational body, such as Earth, where $F_{g}=mg$, then considering that Newton's Law of Universal Gravitation also holds true, we find that, setting $m_{1}=m$, and $m_{2}=M_{E}$, then: 
+
 $$
 \begin{align}
 mg &  = \frac{GmM_{E}}{r^{2}} \\
@@ -97,10 +117,13 @@ Note that this is true for any case in which we are trying to find the accelerat
 Recall that in an earlier note, we defined Gravitational Potential Energy (or more so, the change in it) as $\Delta U = mg(y_{t}-y_{0})$, where we assumed that the gravitational field strength would be held constant across the translation. 
 
 Recall that we defined Potential Energy as the negative of work, which was defined as the path integral of a force over a distance: 
+
 $$
 \Delta U = -W = -\int_{r_{0}}^{r_{1}}F\cdot dr
 $$
+
 Setting $F$ = $F_{g}$, then: 
+
 $$
 \begin{align}
 \Delta U & =-\int_{r_{0}}^{r_{1}} \frac{GM_{e}m}{r^{2}}dr \\
@@ -109,23 +132,30 @@ $$
  & =-GM_{e}m\left[ \frac{1}{r_{0}}-\frac{1}{r_{1}} \right] &
 \end{align}
 $$
+
 Since $\Delta U = U_{2}-U_{1}$, then: 
 > [!theorem] Generalized Gravitational Potential Energy
+>
 > $$U_{n} = -\frac{GMm}{r_{n}}$$
+>
 > Where $r_{n}$ is the radius from an origin, this gives the potential energy at a certain point. 
 > > Consider this as well as $gr$, where we multiply the Gravitational Field strength times a distance to get a term of "voltage".  
 > 
 
 > [!caution] Note
 > You can actually generally describe the expression above as a term of Gravitational **Potential** if we remove the mass term: 
+>
 > $$V_\text{G} = -\frac{GM}{r} = -gr$$
+>
 > Where this is in terms of $\frac{J}{kg}$; taking the difference between two points gives us the corresponding potential energy required to move between those two locations on the field. 
 > > This provides a much simpler way to solve expressions, since you don't have to deal with the arithmetic of dealing with the mass until the end. 
 
 Note the negative sign, as $r_{n}$ decreases, the work done by gravity increases (or in other words, objects inherently want to fall down). Consider as well that $U_{n}=0$ doesn't inherently exist, and only exists in the following case: 
+
 $$
 U_{n} \to 0 \iff \lim_{ r_{n} \to \infty } -\frac{GMm}{r_{n}} =0
 $$
+
 This solves for the gravitational potential at one point, use conservation of energy as usual (as well as $\Delta U$) to solve for relevant $\Delta K$ terms. 
 ### Escape Velocity
 Considering this now in the context of the conservation of energy, recall that we can define the total mechanical energy of a system as the sum of it's kinetic energy and the potential energy in the system. For our context, we will set the potential energy as the term we had defined earlier above. 
@@ -135,18 +165,24 @@ Consider now the case for the *minimum* escape velocity of an object, that is th
 $$
 \frac{1}{2}mv_{i}^{2} -\frac{GMm}{r_{n}}= \frac{1}{2}mv_{t}^{2} - \frac{GMm}{r_{n'}}
 $$
+
 Note that the terms on the left both evaluate to $0$ ($\lim_{ r_{n'} \to \infty }\frac{GM_{e}m}{r_{n'}}=0$), then: 
+
 $$
 \begin{align}
 \frac{1}{2}mv^{2}_{i} &  = \frac{GMm}{r_{n}} \\
  & v_{i}=\sqrt{ \frac{2GM}{r_{n}} } = \sqrt{ \frac{2GM}{R} }
 \end{align}
 $$
+
 Where $v_{i}$ represents the escape velocity of the system. 
 
 > This actually has a very special implication when we rearrange this: 
+>
 > $$\begin{align}v_{i} & =\sqrt{ \frac{2GM}{r} } \\v_{i}^{2}  & = \frac{2GM}{r} \\r & =\frac{2GM}{v_{i}^{2}}\end{align}$$
+>
 > If we set the escape velocity to be $c$, we arrive at the following: $$r=\frac{2GM}{c^{2}}$$
+>
 > Note that this indicates the *Schwarzschild* radius of a Schwarzschild black hole, where the escape velocity is exactly the speed of light. This essentially solves for the size[^1] of a black hole's event horizon. 
 ### Boundness 
 Consider now our earlier implications for the above, we state that an object just barely escapes an object's gravitational field at an infinite radius when we set both the final kinetic and gravitational potential energies to 0. 
@@ -156,12 +192,14 @@ Recall that Gravitational Potential Energy only results to becoming 0 when $r_{n
 If the kinetic energy of an object is not 0 when the gravitational potential energy is not 0, then our object fully escapes, and will not return. (Total Energy is Positive)
 
 If the total energy of the system is Negative, then:
+
 $$
 \begin{align}
 \frac{1}{2}mv_{t}^{2}-\frac{GMm}{r_{n'}} <0 \\
 \frac{1}{2}mv_{t}^{2}<\frac{GMm}{r_{n'}}
 \end{align}
 $$
+
 Since we know that this $v_{t}$ reaches 0, at some value where our gravitational potential energy *does not reach 0*, that is $\exists r_{n}$ that is finite, then we say that our object is gravitationally bound and would fall back into the potential energy well. 
 
 Note that we can solve for the maximum potential distance (if it exists) by setting $v_{t}=0$ and solving for $r_{n'}$. 

@@ -7,6 +7,7 @@ tags:
 "Lecture #": 15
 Lecture Date: 2026-11-03
 Week:
+Created:  November 3rd 2026, 8:27:55 am
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[14 — Gaussian Elimination]]
@@ -16,6 +17,7 @@ Next: [[16 — Solving the Least Squares Problem]]
 # Lecture Notes
 ## Applying Gaussian
 Consider now the following expression: 
+
 $$
 \begin{align}
 3x+2y+3x = 20 \\
@@ -23,7 +25,9 @@ $$
 2x+3y+z=19
 \end{align}
 $$
+
 Performing gaussian Elimination: 
+
 $$
 \begin{align}
 \left[\begin{array}{ccc|c}
@@ -48,7 +52,9 @@ $$
 \end{array} 
 \end{align}
 $$
+
 We know where we would go from here, but this would eventually result in the following matrix $A$, then: 
+
 $$
 \left[\begin{array}{ccc|c}
  1 & 0 & 0 & 3 \\
@@ -56,7 +62,9 @@ $$
  0 & 0 & 1 & 1
 \end{array} \right]
 $$
+
 Then we see that: 
+
 $$
 \begin{align}
 x=3 \\
@@ -64,12 +72,14 @@ y=4 \\
 z=1
 \end{align}
 $$
+
 This implies that: 
 * From the row picture, $(3,4,1)$ is the only point that lies on **all three planes**. 
 * From the column picture, this solution set corresponds to the required scalar coefficients required in a linear combination of our equation terms. 
 However, consider that we could perform other rows to both sides; as we maintain the equality in both sides; we thus need to simply find another plane which fits the same solutions. 
 
 Consider now the following system: 
+
 $$
 \left[\begin{array}{ccc|c}
 4 & 1 & 2 & 18 \\
@@ -77,7 +87,9 @@ $$
 2 & 3 & 1 & 19 
 \end{array} \right]
 $$
+
 Then, Using GE: 
+
 $$
 \begin{align}
 \left[\begin{array}{ccc|c} 
@@ -117,14 +129,18 @@ $$
 \end{array} \right]
 \end{align}
 $$
+
 Then we find that: 
+
 $$
 \begin{align}
 1x + \frac{1}{2}z = \frac{7}{2} \\
 y=4
 \end{align}
 $$
+
 Then, setting $z$ as a free variable; then: 
+
 $$
 \begin{align}
 x  & =\frac{7}{2}-\frac{1}{2}z \\
@@ -132,7 +148,9 @@ y & =4 \\
 z & =z
 \end{align}
 $$
+
 Thus: 
+
 $$
 \begin{bmatrix}
 x\\y\\z
@@ -142,7 +160,9 @@ x\\y\\z
 -\frac{1}{2}\\0\\1
 \end{bmatrix}z
 $$
+
 The *row* picture represents a line in $\mathbb{R}^{3}$ space. How about the column picture? Taking it up: 
+
 $$
 \begin{bmatrix}
 4\\4\\2
@@ -154,7 +174,9 @@ $$
 18\\30\\19
 \end{bmatrix}
 $$
+
 Where this equation works for any value of $l$. Expanding this, then: 
+
 $$
 \begin{bmatrix}
 4\\4\\2
@@ -168,7 +190,9 @@ $$
 18\\30\\19
 \end{bmatrix}
 $$
+
 Note that the terms cancel out, thus: 
+
 $$
 \begin{bmatrix}
 4\\4\\2
@@ -178,9 +202,11 @@ $$
 18\\30\\19
 \end{bmatrix}
 $$
+
 Where this satisfies any values; then note that this therefore also works for any value of $l$ (or $z$), then the set of solutions is infinite. 
 
 Consider now the following system of equations (now written in an augmented matrix): 
+
 $$
 \left[\begin{array}{ccc|c}
 4 & 1 & 2 & 18 \\
@@ -188,7 +214,9 @@ $$
 2 & 3 & 1 & 15
 \end{array} \right]
 $$
+
 Then, performing GE: 
+
 $$
 \begin{align}
 \left[\begin{array}{ccc|c}
@@ -213,6 +241,7 @@ $$
 \end{array} \right]
 \end{align}
 $$
+
 We can stop here, as we see that $0=-4$, which is impossible; thus we state that this system is inconsistent.
 * For the row picture, these three planes do not have one common point (or system of intersection). 
 * For the column picture, this represents that for some $\vec{b}$, this does not lie within the column space of some matrix $A$. 
@@ -276,10 +305,12 @@ Consider that we can also extend this to our previously defined concept of $\tex
 
 ### Rank-Nullity
 Consider that for a matrix $A$ of some size $m\times n$, we can see that for some given rank, this corresponds to the number of linearly independent vectors present in $A$, and thus the corresponding amount of pivot variables; that is $\text{rank}(A)=r$. For this system then, the corresponding number of free variables is given to us by the expression of $n-r$; and we note this corresponds to the nullity of a system; thus: 
+
 $$
 \begin{align}
 r + n - r  & = n  \\
 \text{rank}(A)+\text{nullity}(A) & =n
 \end{align}
 $$
+
 Which is what we define as the Rank-Nullity Theorem as Desired.

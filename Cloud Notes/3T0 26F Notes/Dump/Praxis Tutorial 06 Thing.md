@@ -1,3 +1,6 @@
+---
+Created:  October 6th 2026, 12:48:07 pm
+---
 
 > [!note] Prompt
 > Why did you select the opportunity that you did? 

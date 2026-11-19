@@ -6,6 +6,7 @@ tags:
 "Lecture #": 0
 Lecture Date: 2026-10-20
 Week:
+Created:  October 20th 2026, 1:28:07 pm
 ---
 Hub: [[PHY180 Hub]]
 Connected Notes: 
@@ -40,13 +41,16 @@ Next: N/A
 > b) How much time elapses during the 40 revolutions? (0.02546s)
 
 First, we convert the angular velocity terms into radians per second: 
+
 $$
 \begin{align}
 \frac{600}{60}*2\pi = 20\pi = \omega_{0} \\
 \frac{400}{60} * 2\pi =13.33\pi =\omega _{1}
 \end{align}
 $$
+
 Where $d\theta =80\pi$, then: 
+
 $$
 \begin{align}
 \omega_{t}^2  & = \omega_{0}^2 + 2\alpha d\theta \\
@@ -56,6 +60,7 @@ $$
 $$
 
 For the second part, plugging this into $a$ and solving for $t$ in a constant angular acceleration equation gives us: 
+
 $$
 \begin{align}
 \omega_{t}  & = \omega_{0} + \alpha t \\
@@ -68,6 +73,7 @@ $$
 > ![[A6 - PHY180 Assignment 6-1792535102194.webp]]
 
 The angle can be found by integrating this graph; which can be seen as the area of a triangle, thus 
+
 $$
 \theta = \frac{\left( \frac{400}{60}*8 \right)}{2} \approx 26.\bar{6}  *2\pi = 167.551~\text{rad}
 $$
@@ -78,6 +84,7 @@ $$
 At it's peak, a tornado is 60.0m in diameter and carries 500km/h winds. What is it's angular velocity in radians per second?
 
 Assume that winds are tangential, measured at the edge of the tornado; thus $r=60m$ and $v_{t} = 500 \frac{km}{h} = 138.\bar{8} \frac{m}{s}$; Then: 
+
 $$
 \begin{align}
 v_{t} = r\omega_{t} \\
@@ -90,6 +97,7 @@ $$
 > ![[A6 - PHY180 Assignment 6-1792535486821.webp]]
 
 Recall that we define rotational kinetic energy by substituting mass with $I$ and $v$ with $\omega$; then: 
+
 $$
 \begin{align}
 K  & = \frac{1}{2}I\omega^2 \\
@@ -102,6 +110,7 @@ $$
 > ![[A6 - PHY180 Assignment 6-1792535665158.webp]]
 
 Using the torque equation; then we can solve for $t$, set all of the values to be scalar values; then: 
+
 $$
 \begin{align}
 \tau &  = rF_{t}\sin\theta \\
@@ -114,10 +123,13 @@ $$
 > ![[A6 - PHY180 Assignment 6-1792535803914.webp]]
 
 Assuming that a constant acceleration was applied; we can solve for $\alpha$ from $\frac{d\omega}{dt}$; that is: 
+
 $$
 \alpha = \frac{200}{5} = 40 \frac{\text{ rad}}{s}
 $$
+
 Then, using N2L: 
+
 $$
 \begin{align}
 \tau &  = I\alpha \\
@@ -130,27 +142,34 @@ $$
 > ![[A6 - PHY180 Assignment 6-1792545985331.webp]]
 
 Consider the forces present at $m_{1}$; that is: 
+
 $$
 \begin{align}
 \sum F = m_{1}g - F_{t_{1}} = m_{1}a \\
 F_{t_{1}} = m_{1}g-m_{1}a = m_{1}(g-a)
 \end{align}
 $$
+
 Consider now the forces present around $m_{2}$, that is: 
+
 $$
 \begin{align}
 \sum F = F_{2t} = m_{2}a = 2m_{1}a \\
 F_{2t} = 2m_{1}a
 \end{align}
 $$
+
 Consider now that both of these rope forces are acting on the pulley on the radius. Note that with the RHL convention on signs; , $\alpha r$ is actually pointing towards an acceleration towards the left, which is negative. In our case; we have to say that $a_{t}=-\alpha r$
+
 $$
 \begin{align}
 \sum \tau  & = rF_{t2} - rF_{t1 } = I\alpha  & a_{t} = \alpha r \\
 -\frac{r(F_{t_{2}}-F_{t_{1}})}{I} & =\alpha
 \end{align}
 $$
+
 Then: 
+
 $$
 \begin{align}
 -\frac{r^2(F_{t_{2}}-F_{t_{1}})}{I}  & = a_{t} \\
@@ -166,52 +185,67 @@ $$
 > ![[A6 - PHY180 Assignment 6-1792549265699.webp]]
 
 Recall that we defined Work as the force applied over a rotational quadrant; that is an angle measure: 
+
 $$
 dw= F\cdot d\theta
 $$
+
 Recall that $dP = \frac{dw}{dt}$, then $dP = \tau\cdot \frac{d\theta}{dt} = \tau\cdot \omega$, then with the applied forces present: 
+
 $$
 \begin{align}
 dP  & = -1*0.2*20\pi = -12.5663W
 \end{align}
 $$
+
 Thus, to ensure that the wheel has to keep rotating at a constant rate, then $dP_{potter}=12.5663J$
 
 > Question 13
 > ![[A6 - PHY180 Assignment 6-1792549561437.webp]]
 
 Consider for Circle A: 
+
 $$
 \sum \tau = F_{a}r = I_{a}\alpha \implies \frac{F_{a}r}{I_{a}} = \alpha_{a}
 $$
+
 For a disk; with the same uniform board, we can assume that $\sigma$ is the same; then: 
+
 $$
 I_{a} = \frac{\sigma r^3}{2}
 $$
+
 Then, for circle $b$ with $r=2r$, then if cut from the same material, then $\sigma$ should be constant across both; thus: 
+
 $$
 I_{b} = \frac{\sigma 8r^3}{2} = 8I_{a}
 $$
+
 Then:
+
 $$
 \begin{align}
 \sum\tau = 2F_{a}2r  & = 8I_{a}\alpha _{b} \\
 \alpha_{b}=\frac{F_{a}r}{2I_{a}} = \frac{1}{2}\alpha_{a}
 \end{align}
 $$
+
 Then $\alpha_{a}=2\alpha_{b}$; thus the answer is B. 
 
 > Question 14
 > ![[A6 - PHY180 Assignment 6-1792550097711.webp]]
 
 Using equilibrium on $m_{2}$: 
+
 $$
 \begin{align}
 \sum F : m_{2}g - F_{t}  & = m_{2}a \\
 F_{t} & =m_{2}g-m_{2}a
 \end{align}
 $$
+
 Let downwards be positive, then $+\alpha\to+x$; Taking the net torque: 
+
 $$
 \begin{align}
 \sum \tau  & = F_{t}r = I\alpha \\
@@ -222,4 +256,3 @@ r^2m_{2}g  & =Ia + r^2m_{2}a \\
 \frac{r^2m_{2}g}{I + r^2m_{2}} & =a = \frac{(0.2^2)(2.5)(9.8)}{0.05 + 0.2^2*2.5} ={6}.5\bar{3}  \frac{m}{s^2}
 \end{align}
 $$
-

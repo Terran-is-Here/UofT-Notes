@@ -7,7 +7,7 @@ tags:
 "Lecture #": 12
 Lecture Date: 2026-10-05
 Week: 5
-Created: September 27th 2026, 10:01:18 pm
+Created:  September 27th 2026, 10:01:18 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[11 — Work and Kinetic Energy]]
@@ -22,26 +22,37 @@ Conservation of Energy, if you recall, is simply the relation that $E_{0}=E_{t}$
 ---
 # Pre-Lecture Notes
 ## Gravitational Potential Energy
-The concept of gravitational potential energy is roughly defined as: $$mgh = E_{PG}$$where $m$ stands for mass, $g$ stands for gravity and $h$ stands for the height of the body. 
+
+The concept of gravitational potential energy is roughly defined as: $$mgh = E_{PG}$$
+where $m$ stands for mass, $g$ stands for gravity and $h$ stands for the height of the body. 
 
 Taking a $1d$ kinematic example; when we shoot a ball from the surface upwards with a speed of $v$, then it's corresponding energy is defined as: 
+
 $$
 E_{T}= \frac{1}{2}mv^2
 $$
+
 When it reaches the *top* of it's trajectory, all of it's energy is defined as
+
 $$
 E_{T} = E_{PG}= mgh
 $$
+
 Note that since gravity works *against* the direction of upwards motion; then we can say that it did negative work on our object. Taking $E_{PG0}$ as the gravitational potential energy at $t=0$, and $E_{PGt}$ at $t=t$ at the apex; then: 
+
 $$
 \Delta E_{PG} = E_{PGt} - E_{PG0} = -W
 $$
+
 Recall that we defined $W=\Delta E_{K}$, then $\Delta E_{PG} = -\Delta E_{EK}$ or $\Delta E_{EK} = -\Delta E_{PG}$; that is to say that the change of kinetic energy is equal to the negative gravitational potential energy. This applies for any potential energy: 
 
 > [!theorem] Potential Energy
+>
 > $$\Delta E_{P} = -\Delta E_{K}$$
+>
 > Where $\Delta E_{P}$ is any potential energy, and $\Delta E_{K}$ is the change in kinetic energy. 
 > > In the textbook, potential energy is normally notated as some $\Delta U$. This is the convention we will share for the remainder of this note packet.
+> >
 > $$\Delta U = -\Delta E_{K} = -W$$
 
 Note that for Gravitational Potential Energy, whatever we define $h$ as, is arbitrary. We normally define it as the surface, or any medium that makes it convenient for the sake of analysis. 
@@ -51,9 +62,13 @@ Note that for Gravitational Potential Energy, whatever we define $h$ as, is arbi
 
 > [!axiom] Potential Energy Integration
 > Recall that we defined work as the following: 
+>
 > $$W = \int_{A}^B\vec{F}\cdot d\vec{r}$$
+>
 > But from our earlier definition above; then: 
+>
 > $$\Delta U = -W = -\underset{\text{Path AB}}{\int_{A}^B}\vec{F}\cdot d\vec{r}$$
+>
 > Note that since $\Delta U$ is some value based off an integral, during the cases where we have an indefinite integral; our $+C$ value represents the initial potential energy already present within the system. 
 
 ## Potential Energy
@@ -61,13 +76,16 @@ Generally for any potential energy, at least from how we define it, the differen
 
 > Elastic Potential Energy
 > Recall in [[11 — Work and Kinetic Energy#Hooke's Law & Elastic Energy|PHY180 (11) - Hooke's Law]] that we derived the work from Hooke's law from the following: 
+>
 > $$\begin{align}dW &= \int_{A}^B \vec{F}\cdot d\vec{v} \\&= \int_{A}^B-kx \cdot dx = \left[-\frac{1}{2}kx^2\right]^B_{A} \\W_{E}&=-\frac{1}{2}k(x_{B}^2-x_{A}^2)\end{align}$$Then: $$\begin{align}\Delta U_{E} &= -W_{E} = \frac{1}{2}k(x_{B}^2-x_{A}^2) & \text{ Setting } x_{A} = 0 \text{ for starting position} \\&= \frac{1}{2}kx^2\end{align}$$
 
 ### Multiple Potential Energies
 Given cases in which multiple potential energies exist, assuming energy conservation exists, then the following will always hold true: 
+
 $$
 E_{K} + \Sigma U =E_{M} \text{ Where } E_{M} \text{ is our system's total energy.}
 $$
+
 $E_{M}$ can be defined from a case by case basis. For instance, take the following example from the textbook: 
 
 > Assume that a spring system is affected by gravity. Assume that this spring at it's initial position is also in it's equilibrium position, that is $x=0$ in $\frac{1}{2}kx^2$. Then: 
@@ -75,12 +93,16 @@ $E_{M}$ can be defined from a case by case basis. For instance, take the followi
 > > Denote this point $y_{A}$. At this point, $E_{K}=0$.
 > 
 > From here, note at the lowest point of this spring / it's maximum deformation (some value $y_{B}$), $E_{K}$ is momentarily 0 at this point, as our object's velocity drops to 0. Then: 
+>
 > $$E_{KA}+ U_{A} = E_{KB} + U_{B}$$
+>
 > Since $E_{KA},E_{KB} = 0$, and $U_{A}=0$ (as $y=0$), and $U_{B} = U_{E} + U_{G}$, then: $$\begin{align}0 &= U_{E} + U_{G} \\0 &= \frac{1}{2}ky_{B}^2 + mgy_{B} \\y_{B} &=-\frac{2mg}{k}\end{align}$$
+>
 > Where $y_{b}$ would then be the value of the maximum stretch deformation of our spring. 
 
 ## Conservative and Non-Conservative Forces
 Recall that our earlier definition of Work: 
+
 $$\begin{align}
 dW&=\vec{F}\cdot d\vec{r}\\
 W&=\underset{\text{Path AB}}{\int_{A}^B}\vec{F}\cdot d\vec{r}
@@ -109,10 +131,12 @@ Where our integral is a path integral of all possible paths taken. We now define
 
 The question then arises; how *can* we define if a force is conservative or not? The core concept (at least the one defined by the textbook) is that our function is an exact differential. Recall that we defined work as the following: 
 $$
+
 \begin{align}
 dW &= \vec{F} \cdot d\vec{r} \\
 dW&=F_{x}dr_{x} + F_{y}dr_{y} + F_{z}dr_{z}
 \end{align}
+
 $$
 Where we can expand it into a corresponding multivariable differential. 
 > [!theorem] Equivalent Differential
@@ -141,16 +165,20 @@ This can be shown in the following examples:
 > What is the magnitude of the force at $x=y=1$? 
 > Solve for the corresponding force values by taking the integrals with respects to $\partial y$ and $\partial x$ respectively: 
 $$
+
 \begin{align}
 \int \frac{\partial F_{x}}{\partial y} &= \int 4xy \ \partial y \\
 F_{x} &=2xy^2 +F_{x}(y)
 \end{align}
+
 $$
 $$
+
 \begin{align}
 \int \frac{\partial F_{y}}{\partial x} &= \int 4xy \ \partial x \\
 F_{y} &= 2x^2y + F_{y}(x)
 \end{align}
+
 $$
 
 From our above position, we know that when $y=x=0$, $F=0$, which means that $F_{x}(y)=F_{y}(x)=0$, therefore our force vector is represented by the following: 
@@ -159,21 +187,27 @@ At $x=y=1$, this resolves to a vector $\begin{bmatrix}2\\2\end{bmatrix}$; whose 
 ## Differentiating Potential Energy
 Another implication of potential energy; since we defined it as negatively proportional to work, and work is the integral of a force and some distance: 
 $$
+
 U=-W = -\int \vec{F}\cdot d\vec{r}
+
 $$
 Therefore, differentiating $U$ with respects to displacement gives us an infinitesimal amount of  potential energy with respects of a force applied: 
 $$
+
 \begin{align}
 U&=-\int \vec{F}\cdot d\vec{r} \\
 dU&= -\vec{F}\cdot d\vec{r} & \text{Let } d\vec{r}=dl\text{ where } l \text{ is a infinitesimal displacement}\\
 -\frac{dU}{d\vec{r}}=-\frac{dU}{dl}&=\vec{F}
 \end{align}
+
 $$
 For multidimensional forces, such as ones in $\mathbb{R}^2$, then this can be expanded as: 
 $$
+
 \vec{F} =- \left( \frac{\partial U}{\partial x} \right)\hat{i} - \left( \frac{\partial U}{\partial y} \right)\hat{j} = -\begin{bmatrix}
 \frac{\partial U}{\partial x} \\
 \frac{\partial U}{\partial y} 
 \end{bmatrix}
+
 $$
 

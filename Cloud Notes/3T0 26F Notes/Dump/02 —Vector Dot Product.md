@@ -8,6 +8,7 @@ tags:
 "Lecture #": 2
 Date: 2026-09-10
 Week: 2
+Created:  September 8th 2026, 3:26:22 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[01 — Vector Review]]
@@ -23,57 +24,76 @@ Note that we don't really define the *starting points* of vectors. A vector with
 ## Cauchy-Schwarz-Bunakowsky Inequality
 The CSB Inequality states that: 
 >[!theorem] CSB Inequality
+>
 >$$|\vec{a}\cdot \vec{b}| \leq ||\vec{a}|| *||\vec{b}||$$
 
 We can show this through the following algebra; retake the definition of the Dot Product: 
+
 $$\vec{a} \cdot \vec{b} = ||\vec{a}||*||\vec{b}||\cos\theta$$
+
 Note that $\cos\theta$ will always range between $0\leq|\cos\theta|\leq{1}$, leading us to the CSB inequality: 
+
 $$|\vec{a}\cdot \vec{b}| = ||\vec{a}|| *||\vec{b}|| * |\cos\theta| \implies |\vec{a}\cdot \vec{b}| \leq ||\vec{a}|| * ||\vec{b}||$$
+
 A direct algebraic proof can be found in [[02 — The Real Number System#^041361|The Real Number System (ESC194 Note)]]
 
 ## Triangle Inequality
 > [!abstract] Triangle Inequality 
 > Let $\vec{a}$ and $\vec{b}$ denote two vectors; whose sum is $\vec{a} + \vec{b} = \vec{c}$. Ergo: 
+>
 > $$||\vec{a}|| + ||\vec{b}|| \geq ||\vec{a} + \vec{b}||$$
 
 We can show this through the following: Recall how $||\vec{a}||^2 =\vec{a}\cdot \vec{a}$; then: 
+
 $$||\vec{a}\cdot \vec{b}|| = \sqrt{ (\vec{a}+\vec{b}) \cdot(\vec{a}+\vec{b}) }$$
+
 Expanding: 
+
 $$
 ||\vec{a}\cdot \vec{b}|| = \sqrt{ \vec{a}\cdot \vec{a} + \vec{b}\cdot \vec{b} + 2\vec{a}\vec{b} }
 $$
 
 Adding and removing a term of $2||\vec{a}||||\vec{b}||$: 
+
 $$
 ||\vec{a}\cdot \vec{b}|| = \sqrt{ \vec{a}\cdot \vec{a} + \vec{b}\cdot \vec{b} +2||\vec{a}||||\vec{b}|| -2||\vec{a}||||\vec{b}||+ 2\vec{a}\cdot \vec{b} }
 $$
+
 We can simplify this: 
+
 $$
 ||\vec{a}\cdot \vec{b}|| = \sqrt{ (||\vec{a}|| + ||\vec{b}||)^2 + 2(\vec{a}\cdot \vec{b} - |\vec{a}||\vec{b}|) }
 $$
+
 Recall from the CSB Theorem that our term on the right will always be negative, ergo triangle inequality holds. 
 
 # Pre-Lecture Notes
 
 ## Dot Product / Scalar Product
 The Dot Product of two vectors is defined as the following equation below. Let $\vec{a}$ and $\vec{b}$ be vectors; their dot product is defined as: 
+
 $$\vec{a}\cdot \vec{b} = ||\vec{a}||*||\vec{b}||\cos(\theta)$$
+
 Where $\theta$ is the angle between the vectors. The Dot Product is generally used as a concept to measure how much these two vectors are roughly pointing in the same direction. If two vectors are orthogonal to each other, the Dot Product resolves to zero. 
 
 Algebraically; the Dot Product is defined as the respective sum of their components. Take two $n$-dimensional vectors: 
+
 $$
 \vec{a} = \begin{bmatrix}
 a_{1}&a_{2}&a_{3}&\dots&a_{n}
 \end{bmatrix}
 $$
+
 $$
 \vec{b}=\begin{bmatrix}
 b_{1}&b_{2}&b_{3}&\dots&b_{n}
 \end{bmatrix}
 $$
+
 $$
 \vec{a}\cdot \vec{b} = \sum^n_{i=1}a_{i}b_{i}
 $$
+
 Note that if $\vec{a} = \vec{b}$; this simplifies to $\vec{a}\cdot \vec{a}=||\vec{a}||^2$. That is; for any magnitude squared; we can resolve it into a dot-product with itself. 
 ### Properties
 The Dot Product operation is: 
@@ -87,17 +107,27 @@ The Dot Product operation is:
 
 ## Geometric Interpretation
 Taken two vectors $\vec{a}$, $\vec{b}$, let's try to find the Magnitude of the difference between them ($||\vec{a}-\vec{b}||$): 
+
 $$
 ||\vec{a}-\vec{b}|| = ?
 $$
+
 We can square this magnitude in order for us to represent it as a product of dot products: 
+
 $$||\vec{a}-\vec{b}||^2 = (\vec{a}-\vec{b})\cdot(\vec{a}+\vec{b})$$
+
 Expand and collect like terms: 
+
 $$||\vec{a}-\vec{b}||^2 = \vec{a}\cdot \vec{a} + \vec{b}\cdot\vec{b}-2\vec{a}\cdot\vec{b}$$
+
 $$||\vec{a}-\vec{b}||^2 = ||\vec{a}||^2 + ||\vec{b}||^2-2\vec{a}\cdot \vec{b}$$
+
 If we let $\vec{a}$ and $\vec{b}$ be some sides enclosing some angle $\theta$; then $c = \vec{a}-\vec{b}$. We can now define this situation as well through Cosine Law: 
+
 $$c^2 = a^2 +b^2 -2ab\cos \theta$$
+
 Then from here, we can see that: 
+
 $$\vec{a} \cdot \vec{b} = |\vec{a}||\vec{b}|\cos\theta$$
 
 ### Implications
@@ -110,11 +140,13 @@ The Triangle Inequality is a useful identity that arises out of the way Vector a
 > [!abstract] Triangle Inequality Theorem
 > Let $a$, $b$ and $c$ denote the side lengths of the 3 distinct sides of a triangle. The sum of two sides of the triangle will always be greater than or equal to the last remaining side.
 > Can be mathematically expressed as: 
+>
 > $$a + b \geq c$$
 
 For the case of our vectors; we can adapt this to instead take the vectors present. Note that $\vec{c} = \vec{a} + \vec{b}$; ergo:
 > [!abstract] Triangle Inequality Theorem
 > Let $\vec{a}$ and $\vec{b}$ denote two vectors; whose sum is $\vec{a} + \vec{b} = \vec{c}$. Ergo: 
+>
 > $$||\vec{a}|| + ||\vec{b}|| \geq ||\vec{a} + \vec{b}||$$
 
 A proof of this is available on [[02 — The Real Number System#Triangle Inequality Theorem| The Calculus Page that Proves it]]. 

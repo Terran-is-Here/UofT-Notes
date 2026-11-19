@@ -7,7 +7,7 @@ tags:
 "Lecture #": 13
 Lecture Date: 2026-10-08
 Week: 5
-Created: October 5th 2026, 5:32:52 pm
+Created:  October 5th 2026, 5:32:52 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[12 — Potential Energy, Conservative and Non-Conservative Forces]], [[12.1 — Multivariable Calculus (PHY180)]]

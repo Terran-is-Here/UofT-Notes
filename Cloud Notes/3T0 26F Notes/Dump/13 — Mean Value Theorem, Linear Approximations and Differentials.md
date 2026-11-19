@@ -7,7 +7,7 @@ tags:
 "Lecture #": 13
 Lecture Date: 2026-10-04
 Week: 5
-Created: October 4th 2026, 6:51:22 pm
+Created:  October 4th 2026, 6:51:22 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[12 — Related Rates, Min and Max Values]]
@@ -19,6 +19,7 @@ Next: [[14 — Derivatives, Function Shape, Horizontal Asymptotes]]
 ## Mean Value Theorem (LEC) 
 The mean value theorem is the following: 
 > If $f$ is differentiable on the open interval $(a,b)$ **AND** continuous on the *closed* interval $[a,b]$, then there is *at least* one number $c\in(a,b)$, where: 
+>
 > $$f'(c) = \frac{f(b)-f(a)}{b-a}$$
 
 To prove this, we need Rolle's Theorem: 
@@ -38,8 +39,9 @@ To prove this, we need Rolle's Theorem:
 Now we can move MVT: 
 
 > Take the following equation: $$g(x) = f(x) - \left[ \frac{f(b)-f(a)}{b-a}(x-a) +f(a) \right]$$
+>
 > Note that the term in the brackets is equivalent to some line from $(a,f(a)) \to (b,f(b))$. Then this represents to us the distance between some $f(x)$ and the line between it's endpoints. 
-> 
+>
 > Note that $g(a)=g(b)=0$, and $g(x)$ is continuous and differentiable on $f(x)$ being continuous and differentiable; then $g(x)$ continuous on $[a,b]$ and differentiable on $(a,b)$. Then $g(x)$ satisfies the criteria for Rolle's Theorem. Then there is at least one $g(c),c\in(a,b), g'(c)=0$. $$g'(x) = f'(x) - \left( \frac{f(b)-f(a)}{b-a} \right)$$We know from Rolle that $\exists c, g'(c) = 0$, therefore: $$\begin{align}g'(c) = f'(c) - \left( \frac{f(b)-f(a)}{b-a} \right) = 0 \\\boxed{f'(c) = \frac{f(b)-f(a)}{b-a}}\end{align}$$
 
 ## Application
@@ -49,8 +51,10 @@ Take the following example:
 > Let $h(t)$ be the position of Runner 1, Let $g(t)$ be the position of Runner 2. Then we can define that: 
 
 $$f(t) = h(t)-g(t)$$
+
 Note from this, that we want to show some time $t_{0}$ where $g'(t_{0}) = h'(t_{0}) \implies f'(t)=0$ from above if differentiated. 
 Note that, at the beginning of the race, $h(0)=g(0)=0$, and $f(0)=0$. At the end of the race, $h(T) = g(T)\implies f(T)=0$. Since $f(0)=f(T)=0$, we can apply Rolle's Theorem (letting $h,t$ are continuous.). From RT, $\exists t_{0}\in(0,T) \implies f'(t_{0})=0$. Note that: 
+
 $$
 \begin{align}
 f'(t) = h'(t) - g'(t) \\

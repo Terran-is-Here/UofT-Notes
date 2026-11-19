@@ -7,6 +7,7 @@ tags:
 "Lecture #": 17
 Lecture Date: 2026-10-19
 Week: 7
+Created:  October 8th 2026, 10:28:28 am
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[15 — Summary of Curve Sketching]], [[16 — Linear Approximation and Differentials]]
@@ -34,24 +35,31 @@ For instance:
 > Consider that using logic, we can bound the intervals of values that $\ell$ could take; (or even $h$) within some closed bound. From here, we could use the closed interval method to also analyze the function. 
 
 We can intuitively define the following terms: 
+
 $$
 \begin{align}
 A_{ext}  & = \ell h   =240 \\
 A_{int} & =(\ell-2)(h-3) 
 \end{align}
 $$
+
 We want to maximize $A_{int}$, we can define $\ell$ as $\ell=\frac{240}{h}$; then: 
+
 $$
 \begin{align}
 A_{int}  & = \left( \frac{240}{h}  - 2\right)(h-3)  \\
  & =240  - \frac{3(240)}{h} -2h+6 =-\frac{720}{h} -2h + 246
  \end{align}
 $$
+
 Differentiating this to find possible maximums: 
+
 $$
 A'_{int}=\frac{720}{h^2} - 2 = 0
 $$
+
 Then: 
+
 $$
 \begin{align}
 A'_{int} = \frac{720}{h^2} =2 \\
@@ -60,57 +68,73 @@ A'_{int} = \frac{720}{h^2} =2 \\
  h  & =\pm \sqrt{ 360 }=6\sqrt{ 10 } \approx 19~cm
 \end{align}
 $$
+
 We can plug in this value for $h$ into our original term (note that we did not consider the negative root, as it did not make sense). Note that we also did not consider $h=0$, as it would both not make sense, and it is also not included in the domain of the original function being differentiated. 
 
 We also take a note to see that our term for $h$ has to be bounded from $[3,77]$; thus from here we could bound and determine the end points over the closed interval method. We know that $6\sqrt{ 10 }$ would be our maximum point for this case; then taking the original area expression, then: 
+
 $$
 \begin{align}
 240  & = \ell*6\sqrt{ 10 } \\
 \ell  & = 4\sqrt{ 10 }
 \end{align}
 $$
+
 ## Antiderivatives (LEC) 
 Recall how we define the concept of the derivative as the instantaneous rate of change (or slope) of the function given at a certain point. Antiderivatives ask us to think about if, given how a function changes (it's slope), can I work backwards to find the shape of the original function? 
 
 We define antiderivatives as the following: 
 > [!theorem] Antiderivative (LEC) 
 > A function $F(x)$ is called **an** antiderivative for $f$ on an open interval $I$ if: 
+>
 > $$F'(x) = f(x)~ \forall x\in I$$
+> >
 > > [!caution] Note
 > > Antiderivatives are not unique; as for any Antiderivative, we can add some arbitrary constant at the end; as this would still satisfy our definition of the antiderivative of a function. 
 > 
 
 For instance for the above definition: $$f(x)=x^2 \implies F(x) = \frac{1}{3}x^3$$
+
 Note that we can define this in terms of a trigonometric function. 
 
 Consider now finding the antiderivative of the function below with the additional following information: 
+
 $$
 f(x) = \frac{x+1}{\sqrt{ x }}~,F(1)=5
 $$
+
 Taking the antiderivative of this; then: 
+
 $$
 \begin{align}
 f(x)  & = \frac{x}{\sqrt{ x }} + \frac{1}{\sqrt{ x }} = \sqrt{ x  }+x^{-1/2} & \text{Taking inverse power rule...} \\
 F(x) & = \frac{2}{3}x^{3/2} + 2x^{1/2} +C
 \end{align}
 $$
+
 Since we know $F(1)=5$, then $F(1) = \frac{2}{3}+2+C = 5 \implies C=\frac{7}{3}$, then we can **fully specify** the antiderivative: 
+
 $$
 F(x)=\frac{2}{3}x^{3/2} + 2x^{1/2} + \frac{7}{3}
 $$
+
 This expression is fully specified. Note that $F(1)$ is considered a (boundary condition), as it defines the behavior of our function at a certain point. 
 ### Higher Derivatives
 Considering now higher derivatives; then: 
+
 $$
 f''(x) = 20x^3 + 12x^2 + 4
 $$
+
 What is the original function? Taking the reverse power rule twice, then: 
+
 $$
 \begin{align}
 f'(x)  & = 5x^4 + 4x^3 + 4x + C_{1} \\
 f(x) & =x^5 + x^4 + 2x^2 +C_{1}x + C_{2} 
 \end{align}
 $$
+
 Note that from here, we have two unknown constants. We actually need the boundary conditions for $f'(x)$ and $f(x)$ at a certain points $C_{1},C_{2}$. 
 ## Sigma Notation (LEC) 
 > [!quote] Recommended Reading 
@@ -118,7 +142,9 @@ Note that from here, we have two unknown constants. We actually need the boundar
 
 > Sigma Notation
 > If $a_{m}, a_{m+1},\dots,a_{n}$ are eal numbers, and $m,n$, where $m\leq n$, then we denote the following: 
+>
 > $$S=\sum_{i=m}^n a_{i}=a_{m} + a_{{m+1}} + \dots+a_{n} $$
+>
 > In this context, we consider $i$ as the index of summation. 
 
 Summations can be represented in multiple ways; since we have control as to how a sum is being indexed, we can manipulate our definition of $i$ in order to represent sums in a more usable method. For instance, take the following function: 
@@ -126,10 +152,13 @@ Summations can be represented in multiple ways; since we have control as to how 
 $$
 \sum_{i=2}^n i^3 = 2^3 + 3^3 + \dots + (n-1)^3 + n^3
 $$
+
 Consider; we could also define this as the following: 
+
 $$
 \sum_{j=1}^{n-1} (j+1)^3 = 2^3 + 3^3 +\dots + n^3
 $$
+
 That is, we can manipulate the bounds of the sum, as long as the corresponding function is adjusted with respects to a term. The following theorems are useful for working with sums: 
 
 $$
@@ -144,7 +173,6 @@ $$
 \sum_{i=m}^ni^4  & =\frac{n(n+1)(2n+1)(3n^2+3n-1)}{30 (?)} \tag{1.9}
 \end{align}
 $$
-
 
 ---
 # Pre-Lecture Notes
@@ -170,7 +198,9 @@ Often however; we have cases where we have *two* equations to optimize; one equa
 Antiderivatives are effectively the inverse of differentiation, and are defined as the following expression below: 
 > [!theorem] Antiderivatives
 > If $F$ is an antiderivative of $f$, then: 
+>
 > $$F' = f$$
+>
 > That is, the derivative of an antiderivative of some function $f$ returns back that same function $f$. 
 
 Note that the concept of taking an antiderivative also has an added component to it, a component that partially arises from the Mean Value Theorem. Recall that in [[13 — Mean Value Theorem, Linear Approximations and Differentials#^4698a8|Mean Value Theorem (13) > Corollary 1.1]] that $f'(x)=0, \forall x\in(a,b) \implies f(x)=C$; then: 
@@ -201,26 +231,34 @@ Note what Theorem 1.1 indicates: Taking the antiderivative of a function results
 Antiderivative Formulas / Expressions arise from the concept that Antiderivatives differentiate back into their original function. 
 
 > [!theorem] Power Rule 
+>
 > From $f(x) = x^n, f'(x)=nx^{n-1}$ Then the antiderivative of $f(x)=x^n$ is:$$f(x) = x^n, \int f(x) dx = \frac{x^{n+1}}{n+1} + C$$
+>
 > Note this is only true if and only if $n\neq -1$. 
 > > In this case, $f(x)=x^{-1}, F(x) = \ln|x| +C$. 
 
 > [!theorem] Differentiation Rules 
 > The Sum Rule natively applies with antidifferentiation, as well as the constant rule. 
 > > Constant Rule:
+> >
 > > $$f(x)=c, F(x) = cx + C$$
 
 > [!theorem] Trigonometric Rules
 > Essentially reverse the direction of your differentiation of the trig functions. 
+>
 > $$\begin{array}{cc|c}\text{ Function} && \text{Corresponding Antiderivative} \\\cos(x) &  & \sin(x) \\\sin(x) &  & -\cos(x) \\\sec^2(x) &  & \tan(x) \\\sec(x)\tan(x) &  & \sec(x)\end{array}$$
+>
 > That is, you know that the derivative of $\sin$ is $\cos$, therefore the antiderivative of $\cos$ is $\sin$. Same logic applies for the rest; since the **antiderivative when differentiated returns the original function**. 
 
 ## Sigma Notation
 Sigma Notation is the discrete version of its more well known sibling, ($\int$) the one for Integration. Sigma notation is defined as the following: 
+
 $$
 \sum _{x=m}^na_{i} = \underbrace{a_{m} + a_{m+1}  + a_{m+2} + \dots + a_{n}}_{\text{Some set of numbers (can be from a function)}}
 $$
+
 From this definition, we can derive some very useful theorems for analysis. The following below are trivial theorems and the proof is left as an exercise to the reader.  
+
 $$
 \begin{align}
 \sum_{x=1}^n 1 &= n \tag{Theorem 2.1} \\
@@ -229,31 +267,39 @@ $$
 \sum^n_{x=m}a_{i}-b_{i} & = \sum_{x=m}^na_{i} - \sum ^n_{x=m}b_{i} \tag{Theorem 2.4} 
 \end{align}
 $$
+
 We will now detail some more theorems which may be useful for analysis. 
 
 > [!theorem] *Theorem 2.5*
 > Prove the following formula for the sum of the first $n$ integers: 
+>
 > > $$\sum^n_{i=1}i = \frac{n(n+1)}{2}$$
-> 
+> >
 > > [!caution]- *Proof*
+> >
 > > Define the sum of this statement as some value $S$, that is $S=1+2+3+\dots+n-1+n$. Writing them in ascending and descending order gives us: $$\begin{align}S &= 1+2+3+\dots+n-1+n \\S &= n + n-1 + n-2 + \dots + 3+2+1 \\\end{align}$$
+> >
 > > Summing these up gives us the following: $$\begin{align}2S &=\underbrace{ (n+1) + (n+1) + \dots +(n+1)}_{n \text{ times}} \\\sum _{i=1}^n= S &= \frac{n(n+1)}{2}\end{align}$$
 
 > [!theorem] *Theorem 2.6*
 > Prove the following formula for the sum of the *squares* of the first $n$ integers. 
+>
 > > $$\sum^n_{i=1}i^2 = 1 + 2^2 + 3^3 + \dots + n^2 = \frac{n(n+1)(2n+1)}{6}$$
-> 
+> >
 > > [!caution]- Proof 
 > > We will prove this through Induction.
 > > * We will first show that $n=1$ holds true for the formula $\frac{n(n+1)(2n+1)}{6} = 1*2*3 =1$, which holds.
 > > * We now assume that this holds true for some $n=k$, that is $\frac{k(k+1)(2k+1)}{6}$. 
-> > 
+> >
 > > We now need to prove this for $n=k+1$: $$\begin{align}\sum_{i=1}^{k+1}i^2 &= \underbrace{1^2 + 2^2 + \dots + k^2}_{\text{Equivalent to }n=k} + (k+1)^2\\&=\frac{k(k+1)(2k+1)+6(k+1)^2}{6}  \\&= (k+1) \frac{k(2k+1)+6(k+1)}{6} \\&=(k+1)\frac{2k^2+k+6k+6}{6} \\&=(k+1)\frac{2k^2+7k+6}{6}  \\&=(k+1)\frac{(2k+3)(k+2)}{6}  \\&=\frac{(k+1)((k+1)+1)(2(k+1)+1)}{6}\end{align}$$
+> >
 > > Therefore, this identity holds. 
 
 > Theorem 2.7 
 > Prove the following formula for the sum of the *cubes* of the first $n$ integers. 
+>
 > $$\sum^n_{i=1}i^3 = \left[ \frac{n(n+1)}{2} \right]^2$$
+> >
 > > Proof 
 > > Left as an exercise to the reader. 
 

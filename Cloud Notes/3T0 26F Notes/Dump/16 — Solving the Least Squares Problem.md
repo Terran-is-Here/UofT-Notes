@@ -7,6 +7,7 @@ tags:
 "Lecture #": 16
 Lecture Date: 2026-11-09
 Week:
+Created:  November 9th 2026, 12:38:24 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[15 — Rank, Consistency and Dimensions]]
@@ -22,13 +23,16 @@ To take the Transpose of some Matrix, we simply take the transpose of the corres
 > In terms of an actual full matrix, consider this as simply flipping the matrix across the main diagonal.
 
 For instance; 
+
 $$
 A=\begin{bmatrix}
 1 & 2  & -1 \\
 0 & 5 & 6
 \end{bmatrix}
 $$
+
 Then: 
+
 $$
 A^{T} = \begin{bmatrix}
 1 & 0 \\
@@ -36,6 +40,7 @@ A^{T} = \begin{bmatrix}
 -1 & 6
 \end{bmatrix}
 $$
+
 A Matrix Transpose has the following rules: 
 * $(A^{T})^{T} = A$
 * $(cA)^{T} = cA^{T}$, where $c$ is a scalar. 
@@ -55,10 +60,13 @@ That is, we want to relate our $x$ to our $y$ by some function of $x \to y$. Sta
 * $(x_{2},y_{2})=(2,0)$
 * $(x_{3},y_{3})=(3,2)$
 We want to solve for a function which goes through all *three* of these points. For this case, lets assume that we want to model this in the form of a quadratic function, that is some: 
+
 $$
 y=a+bx + cx^{2}
 $$
+
 Noting that this now becomes a system of equations if we plug in our points into our quadratic formula, 
+
 $$
 \begin{align}
 6 & =a -b+c \\
@@ -66,7 +74,9 @@ $$
 2  & =a + 3b + 9c
 \end{align}
 $$
+
 Then, noting this can be rewritten as the following system, then: 
+
 $$
 \begin{bmatrix}
 1 & x_{1} & x_{1}^{2} \\
@@ -78,7 +88,9 @@ a\\b\\c
 y_{1}\\ y_{2}\\y_{3}
 \end{bmatrix}
 $$
+
 Plugging in our values, then: 
+
 $$
 \begin{bmatrix}
 1 & -1 & 1 \\
@@ -90,7 +102,9 @@ $$
 6\\0\\2
 \end{bmatrix}
 $$
+
 Solving the corresponding system gives us the following: 
+
 $$
 \left[\begin{array}{ccc|c}
 1 & 0 & 0 & 2 \\
@@ -98,14 +112,18 @@ $$
 0 & 0 & 0 & 1 
 \end{array} \right]
 $$
+
 Then our function is the following: 
+
 $$
 y=2-3x-x^{2}
 $$
+
 Where this goes through *all three* points. Note however that when we do this, we directly overfit (as we exactly fit our points), and the corresponding equation does not make resultant sense. 
 
 ### Linear Regression
 Consider now, what if we want to linearly regress a line through all 3 points? Retaking our equation of a line and plugging it for all three points: 
+
 $$
 \begin{bmatrix}
 1 & x_{1} \\
@@ -117,7 +135,9 @@ a \\b
 y_{1}\\y_{2}\\y_{3}
 \end{bmatrix}
 $$
+
 Plugging in our values once more: 
+
 $$
 \begin{bmatrix}
 1 & -1 \\
@@ -129,7 +149,9 @@ a\\b
 6\\0 \\2
 \end{bmatrix}
 $$
+
 Preforming Gaussian Elimination gives us the following system:
+
 $$
 \left[\begin{array}{cc|c}
 1 & 0 & 4 \\
@@ -137,11 +159,13 @@ $$
 0 & 0 & 1 
 \end{array} \right]
 $$
+
 Note the inconsistencies at the bottom. This implies that we *cannot directly fit all three points on the line* (which makes sense) The approach we then take, is how to minimize the distances between the points on the line, and a line of best fit.
 
 It is very common to have a dataset of points that we believe follows some kind of curve (a "model"), but due to certain "errors" within our data, the associated system directly may be unsolvable. 
 
 Consider the case where we break up our system above into it's column picture, we see that this simply states that *the value for $b$* is outside the column space of our matrix: 
+
 $$
 \begin{bmatrix}
 1\\1\\1
@@ -151,9 +175,11 @@ $$
 6\\0\\2
 \end{bmatrix}
 $$
+
 Our goal is to find some vector $y_\text{ls}$ (or rather, $Ac_\text{ls}$ such that it is *closest* to our $y$ (or in other words, some $\vec{y_\text{ls}}$ that is closest to $\begin{bmatrix}6\\0\\2\end{bmatrix}$ in our equation above for instance). 
 
 Before solving the Problem of Least Squares, we find that for some vector $\vec{y}$, and the corresponding least-squares $\vec{y_\text{ls}}$, the corresponding residual vector (some error vector, some $\vec{e}$) being the following: 
+
 $$
 \vec{e} = \vec{y} - A\vec{c_\text{ls}}
 $$
@@ -167,20 +193,26 @@ y^{\text{data}}_{2}-y^{\text{model}}_{2} \\
 y^{\text{data}}_{3}-y^{\text{model}}_{3}
 \end{bmatrix}
 $$
+
 Consider now then what would be the magnitude of this error term? Then: 
+
 $$
 ||\vec{e}||^{2} = (y^{\text{data}}_{1}-y^{\text{model}}_{1})^{2} + (y^{\text{data}}_{2}-y^{\text{model}}_{2})^{2}
 $$
+
 Or, alternatively: 
+
 $$
 ||\vec{e}||^{2} = \sum_{i}(y^{\text{data}}_{i}-y^{\text{model}}_{i})^{2}
 $$
+
 And the concept is that, we want to *minimize* this term, thus minimizing the corresponding square. 
 ## Solving Least Squares
 Our goal is therefore: 
 > Find some $\vec{c_\text{ls}}$ such that $\vec{e}=\vec{y}-A\vec{c_\text{ls}}$ is orthogonal to the column space to $A$. 
 
 Consider the matrix $A$ as the following: 
+
 $$
 A = \begin{bmatrix}
 \vdots & \vdots & \vdots & \vdots \\
@@ -188,7 +220,9 @@ a_{1} & a_{2} & \dots & a_{i} \\
 \vdots & \vdots & \vdots & \vdots
 \end{bmatrix}
 $$
+
 Taking it's transpose, then $a_{1}\cdot \vec{e}=0$, 
+
 $$
 A^{T} = \begin{bmatrix}
 \dots & a_{1}^{T} & \dots \\
@@ -197,12 +231,15 @@ A^{T} = \begin{bmatrix}
 \dots & a_{i}^{T} & \dots
 \end{bmatrix}
 $$
+
 If $\vec{e}$ is orthogonal to $A$'s column space, then for all $c\cdot a_{i}=0$. Then: 
+
 $$
 A^{T}e = \vec{0}
 $$
 
 Thus, doing some algebra from our earlier definition of $e$, then: 
+
 $$
 \begin{align}
 A^{T}\vec{e}  & = \vec{0} \\
@@ -211,10 +248,13 @@ A^{T}\vec{y} -A^{T}A\vec{c_\text{ls}} & =0 \\
 A^{T}\vec{y} & =A^{T}A\vec{c_\text{ls}}
 \end{align}
 $$
+
 Letting $A^{*}=A^{T}A$, and $y^{*}=A^{T}\vec{y}$, then we see that: 
+
 $$
 A^{*}\vec{c_\text{ls}} = y^{*}
 $$
+
 Where we note that this is simply another matrix vector system that we can *solve*. Taking our example above from earlier: 
 
 $$
@@ -229,7 +269,9 @@ a\\b
 6 \\0\\2
 \end{bmatrix}
 $$
+
 Turning this into $A^{*}$, then: 
+
 $$
 A^{*} = \begin{bmatrix}
 1 & 1 & 1 \\
@@ -243,7 +285,9 @@ A^{*} = \begin{bmatrix}
 4 & 14
 \end{bmatrix}
 $$
+
 And turning $y^{*}$, then: 
+
 $$
 y^{*} = A^{T}\vec{y} = \begin{bmatrix}
 1 & 1 & 1 \\
@@ -255,7 +299,9 @@ y^{*} = A^{T}\vec{y} = \begin{bmatrix}
 8\\0
 \end{bmatrix}
 $$
+
 Thus our system now becomes: 
+
 $$
 \begin{bmatrix}
 3 & 4 \\
@@ -267,7 +313,9 @@ b^{*}
 8\\0
 \end{bmatrix}
 $$
+
 Where $a^{*},b^{*}$ represent the coefficients in a line of best fit, in other words these represent $\vec{c_\text{ls}}$. Solving this then: 
+
 $$
 \begin{align}
 \left[\begin{array}{cc|c}
@@ -290,18 +338,23 @@ $$
 $$
 
 Or in other words, $a^{*}\approx 4.308$ and $b^{*} \approx -1.231$, in other words our line of best fit will be: 
+
 $$
 y = 4.308 - 1.321x
 $$
+
 Consider now however, how is *this* the line of best fit? Returning back to our earlier definition of the error consider a point within our data. For our case, consider the 2nd point within our data set, that is: 
 
 $$
 x_{2},y_{2}^{\text{data}} = 
 $$
+
 And compare it with a point within our line of best fit: 
+
 $$
 x_{2},x_{2}^{\text{model}}
 $$
+
 Taking the distance between these points ( $|y_{2}^{\text{data}}-y^{\text{model}}_{2}|$) in other words the Residual. 
 
 Note that since the process of least squares finds some error vector orthogonal to the column space of $A$, which lets us minimize the magnitude of $||\vec{e}||$, or rather $\sqrt{ \sum e^{ ^{2}_{i} } }$, where there represent the sum of the corresponding errors. 
@@ -310,7 +363,9 @@ Note that since the process of least squares finds some error vector orthogonal 
 We can generalize this for the following. If we have some data such as the following points: 
 * $(x_{1},y_{1})\dots,(x_{m},y_{m})$
 And we wanted to fit it into some function of the following, such as: 
+
 $$c_{1}f_{1}(x) + c_{2}f_{2}(x) +\dots+c_{n}f_{n}(x)$$
+
 where $f_{n}(x)$ represents some function of $x$ (where these can be defined arbitrarily). With our data above, we can define it as the following system: 
 
 $$
@@ -326,7 +381,9 @@ c_{1}\\c_{2}\\\vdots\\c_{n}
 y_{1}\\y_{2}\\\vdots\\y_{m}
 \end{bmatrix}
 $$
+
 In a perfect world, this would be consistent, and we would have a system which lets us perfectly fit our data. But if it is inconsistent, we turn this into the following form: 
+
 $$
 A\vec{c} = \vec{y} \implies A^{T}\vec{A}c_\text{ls} = A^{T}\vec{y}$$
 Where $\vec{c_\text{ls}}$ represents the corresponding terms of the coefficients present. 

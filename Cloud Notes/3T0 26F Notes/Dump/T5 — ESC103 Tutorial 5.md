@@ -7,6 +7,7 @@ tags:
 "Tutorial #": 0
 Lecture Date: 2026-09-22
 Week:
+Created:  October 14th 2026, 9:11:19 am
 ---
 Hub: [[ESC103 Hub]]
 Connected Notes: [[T4- ESC103 Tutorial 4]]
@@ -22,7 +23,9 @@ tag:#ESC103H1 [week:6]
 > * $\begin{bmatrix}1 & 2\\0 & 1\end{bmatrix}\begin{bmatrix}1 & 3\\0 & 1\end{bmatrix}\begin{bmatrix}1 & 4\\0 & 1\end{bmatrix}$
 > 
 > > [!caution]- Answer
+> >
 > > * $$\begin{align}(\begin{bmatrix}1 & 1\end{bmatrix}\begin{bmatrix}1\\1\end{bmatrix})\begin{bmatrix}1 & 1 & 1\end{bmatrix} = \begin{bmatrix}2\end{bmatrix}\begin{bmatrix}1 & 1 &1\end{bmatrix} = \begin{bmatrix}2 & 2 & 2\end{bmatrix} \\\begin{bmatrix}1 & 1\end{bmatrix}\begin{bmatrix}1\\1\end{bmatrix} \begin{bmatrix}1 & 1 & 1\end{bmatrix} = \begin{bmatrix}1 & 1\end{bmatrix} \begin{bmatrix}1 & 1 & 1 \\1& 1 & 1\end{bmatrix} = \begin{bmatrix}2 & 2 & 2\end{bmatrix}\end{align}$$
+> >
 > > * $$\begin{align}\begin{bmatrix}1 & 2\\0 & 1\end{bmatrix}\begin{bmatrix}1 & 3\\0 & 1\end{bmatrix}\begin{bmatrix}1 & 4\\0 & 1\end{bmatrix} = \begin{bmatrix}1 & 5 \\0 & 1\end{bmatrix}\begin{bmatrix}1 & 4\\0 & 1\end{bmatrix} = \begin{bmatrix}1 & 9 \\0 & 1\end{bmatrix} \\\begin{bmatrix}1 & 2\\0 & 1\end{bmatrix}\begin{bmatrix}1 & 3\\0 & 1\end{bmatrix}\begin{bmatrix}1 & 4\\0 & 1\end{bmatrix} = \begin{bmatrix}1 & 2\\0 &1\end{bmatrix}\begin{bmatrix}1  & 7\\0 & 1\end{bmatrix} = \begin{bmatrix}1 & 9 \\0 & 1\end{bmatrix}\end{align}$$
 
 > [!theorem] Question 2
@@ -31,7 +34,9 @@ tag:#ESC103H1 [week:6]
 > 2. Construct matrix $R$. Note: If $C$ has $r$ columns, then $R$ must have $r$ rows. 
 > 
 > > [!caution]- Answer
+> >
 > > 1. $$C = \begin{bmatrix}2 & 1 & 0\\1 & 0 & 0\\3 & 0 & 1\end{bmatrix}$$
+> >
 > > 2. $$R = \begin{bmatrix}1 & -1 & 0 & 2 & 0 \\0 & 0 & 1 & 2 & 0 \\0 & 0 & 0 & 0 & 1\end{bmatrix}$$
 
 > [!theorem] Question 3

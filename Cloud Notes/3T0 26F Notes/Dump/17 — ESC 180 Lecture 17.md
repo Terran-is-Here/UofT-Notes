@@ -7,6 +7,7 @@ tags:
 "Lecture #": 17
 Lecture Date: 2026-10-19
 Week:
+Created:  October 19th 2026, 5:12:52 pm
 ---
 Hub: 
 Previous: 

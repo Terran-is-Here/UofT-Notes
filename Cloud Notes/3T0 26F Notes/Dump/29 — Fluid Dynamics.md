@@ -7,6 +7,7 @@ tags:
 "Lecture #": 29
 Lecture Date: 2026-10-30
 Week:
+Created:  October 30th 2026, 4:06:52 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[28 — Pascal's and Archimedes' Principle and Buoyancy]]

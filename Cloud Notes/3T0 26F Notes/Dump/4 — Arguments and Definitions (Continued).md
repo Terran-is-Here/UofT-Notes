@@ -8,7 +8,7 @@ tags:
 Lecture Date: 2026-09-18
 Week: 2
 created:
-Created: September 18th 2026, 11:19:19 am
+Created:  September 18th 2026, 11:19:19 am
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[03 — The Requirements Framework]]

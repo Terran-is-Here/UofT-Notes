@@ -8,6 +8,7 @@ tags:
 "Tutorial #": 4
 Lecture Date: 2026-09-22
 Week: 5
+Created:  October 7th 2026, 9:05:55 am
 ---
 Hub: [[ESC103 Hub]]
 Connected Notes: [[T3 — ESC103 Tutorial 3]]
@@ -56,17 +57,25 @@ tag:#ESC103H1 [week:5]
 > [!theorem] Question 4: 
 > If two matrices are $\mathbf{A,B}$ $5\times2$ matrices which have independent columns, then $\mathbf{A}+\mathbf{B}$ will also have independent columns. True or false? 
 > > [!caution]- Answer
+> >
 > > False. Take the following two matrices: $$\begin{bmatrix}1 & 0 \\0 & 0\\0 & 0\\0 & 0\\0 & 1\end{bmatrix} + \begin{bmatrix}0 & 1 \\0 & 0\\0 & 0\\0 & 0\\1 & 0\end{bmatrix} = \begin{bmatrix}1 & 1 \\0 & 0\\0 & 0\\0 & 0\\1 & 1\end{bmatrix}$$
+> >
 > > Thus, this statement is false. Note that we simply swapped the columns of $\mathbf{A}$ in $\mathbf{B}$, that is $\mathbf{A}=\begin{bmatrix}c_{1}&c_{2}\end{bmatrix}$, $\mathbf{B}=\begin{bmatrix}c_{2}&c_{1}\end{bmatrix}$, then $\mathbf{A+B} =\begin{bmatrix}c_{1}+c_{2} & c_{1}+c_{2}\end{bmatrix}$. 
 
 > [!theorem] Question 5: 
+>
 > 1. Solve this system of equations $\mathbf{S}\vec{y}=\vec{c}$ for the unknowns in $\vec{y}$ in terms of the constants in $\vec{c}$ by taking advantage of the triangular structure of matrix $\mathbf{S}$: $$\mathbf{S}\vec{y} = \begin{bmatrix}1 & 0 & 0 \\1 & 1 & 0 \\1 & 1 & 1\end{bmatrix}\begin{bmatrix}y_{1}\\y_{2}\\y_{3}\end{bmatrix} = \vec{c} =\begin{bmatrix}c_{1}\\c_{2}\\c_{3}\end{bmatrix}$$
+>
 > 2. Express the solution in part 1 for $\vec{y}$ as a matrix $\mathbf{T}$ times the vector $\vec{c}$. 
 > 3. The matrix $\mathbf{T}$ is called the inverse of $\mathbf{S}$, Are the columns of $\mathbf{S}$ independent or dependent? 
 > 
 > > [!caution]- Answer: 
+> >
 > > 1. Solving via Row picture gives us $$\begin{align}1y_{1}+0y_{2}+0y_{3} = c_{1} \to y_{1}&=c_{1} \\1y_{1}+1y_{2}+0y_{3} = c_{2} \to y_{2}&=c_{2}-c_{1} \\1y_{1}+1y_{2}+1y_{3} = c_{3} \to y_{1}&=c_{3}-c_{2}\end{align}$$
+> >
 > >    Thus: $$\vec{y}=\begin{bmatrix}c_{1} \\c_{2}-c_{1} \\c_{3}-c_{2}\end{bmatrix}$$
+> >
 > > 2. As some matrix $\mathbf{T}$, we need to solve for the inverse, that is: $$\begin{align}\mathbf{T}\vec{c}&=\vec{y} \\\mathbf{T}\begin{bmatrix}c_{1}\\c_{2}\\ c_{3}\end{bmatrix} &= \begin{bmatrix}c_{1} \\c_{2}-c_{1} \\c_{3}-c_{2}\end{bmatrix} \\\text{ Through inspection, }\mathbf{T} &= \begin{bmatrix}1 & 0 & 0 \\-1 & 1 & 0 \\0 & -1 & 1\end{bmatrix}\end{align}$$
+> >
 > > 3. The columns of $\mathbf{S}$ are linearly independent. $\mathbf{S}$ can only have an inverse matrix $\mathbf{T}$ if and only if $\mathbf{S}$'s column vectors are independent. 
 

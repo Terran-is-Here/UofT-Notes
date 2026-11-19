@@ -8,7 +8,7 @@ tags:
 Lecture Date: 2026-09-21
 Week: 3
 created:
-Created: September 21st 2026, 1:12:28 pm
+Created:  September 21st 2026, 1:12:28 pm
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[4 — Arguments and Definitions (Continued)]]

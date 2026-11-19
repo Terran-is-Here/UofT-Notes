@@ -9,6 +9,7 @@ tags:
 Lecture Date: 2026-09-18
 Week: 2
 created:
+Created:  September 18th 2026, 9:14:49 am
 ---
 Hub: [[CIV102 Hub]]
 Previous: N/A

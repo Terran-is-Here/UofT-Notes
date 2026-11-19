@@ -7,6 +7,7 @@ tags:
 "Lecture #": -15
 Lecture Date: 2026-10-07
 Week:
+Created:  October 7th 2026, 5:07:12 pm
 ---
 Hub: [[ESC180 Hub]]
 Previous: [[10 — ESC180 Lecture 10]]

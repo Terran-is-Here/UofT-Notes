@@ -7,6 +7,7 @@ tags:
 "Lecture #": 8
 Lecture Date: 2026-09-25
 Week: 3
+Created:  September 25th 2026, 12:10:56 pm
 ---
 Hub: [[ESC180 Hub]]
 Previous: [[6 —ESC180 Lecture 6]]

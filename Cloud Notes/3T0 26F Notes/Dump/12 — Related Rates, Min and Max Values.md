@@ -7,7 +7,7 @@ tags:
 "Lecture #": 12
 Lecture Date: 2026-10-04
 Week: 5
-Created: October 4th 2026, 6:14:03 pm
+Created:  October 4th 2026, 6:14:03 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[11 — Trigonometric, Chain and Implicit Differentiation]]
@@ -23,10 +23,13 @@ Take an example:
 I'd draw a diagram but I don't have a diagram drawing software. Note that the lighthouse is *always* 3km from the shore. Then, from the closest point of the shore, the distance between the lighthouse's closest point and the beam is some value $x$. 
 
 This question basically asks, can we relate the rate of rotation with the velocity of the beam. Note that: 
+
 $$
 \tan\theta = \frac{x}{3}
 $$
+
 Differentiating this with respects to $t$; then: 
+
 $$
 \begin{align}
 \frac{d}{dt}\tan\theta = \frac{d}{dt} \frac{x}{3} \\
@@ -34,13 +37,17 @@ $$
 \frac{dx}{dt} &= 3\sec^2\theta  \frac{d\theta}{dt}
 \end{align}
 $$
+
 Note that the beam revolves at 4 revolutions per minute. Note that this is equivalent to $\frac{8\pi}{min}=\frac{d\theta}{dt}$: Then we can evaluate this at the point of interest (which in our case is when the beam is is one 1km from the closest point of the shore), that is our point of interest is $x=1$:
+
 $$
 \begin{align}
 \frac{dx}{dt}|_{x=1} = 3\sec^2(\theta|_{x=1})8\pi
 \end{align}
 $$
+
 To evaluate our $\theta|_{x=1}$ recall that $\sec^2\theta = \tan^2\theta+1$; and $\tan\theta$ at $\theta=1$ means $\tan\theta=\frac{1}{3}$; then we can see that: 
+
 $$
 \begin{align}
 \frac{dx}{dt}|_{x=1} &= 3\left( \frac{1}{3}^2+1 \right)8\pi \\
@@ -82,14 +89,20 @@ Assume that $f(x) < M$ on $[a,b]$, then define $g(x)=\frac{1}{M-f(x)}$. If $f(x)
 
 Then, $0<g(x)<K$ where $K$ is some bound on $g(x),x\in AB$. This implies that: 
 $$
+
 g(x) = \frac{1}{M-f(x)} \leq K
+
 $$
 Rearranging: 
 $$
+
 \frac{1}{K}\leq M-f(x)
+
 $$
 $$
+
 f(x)\leq M-\frac{1}{K}
+
 $$
 Note that this contradicts our concept, that the LUB of $f(x)$ is $M$, but here, f(x)'s LUB is $M-\frac{1}{k}$. Therefore, $f(x)$ must take on it's maximum $M$ somewhere on $[a,b]$. 
 
@@ -142,14 +155,18 @@ Given a continuous function on a *closed* interval $[a,b]$, to find absolute ext
 ## Related Rates
 Related rates are an extension of the concept of the [[11 — Trigonometric, Chain and Implicit Differentiation#Chain Rule|Chain Rule]]. For instance, the volume of a sphere is defined as the following: 
 $$
+
 V(r) = \frac{4}{3}\pi r^3
+
 $$
 If, in some case, we are given some term $\frac{dr}{dt}$'s value; we can solve for a corresponding term of $\frac{dv}{dt}$; 
 $$
+
 \begin{align}
 \frac{dV}{dt} &= \frac{d\left( \frac{4}{3}\pi r^3 \right)}{dr} \frac{dr}{dt} \\
 \frac{dV}{dt}&=4\pi r^2 * \frac{dr}{dt}
 \end{align}
+
 $$
 Note that terms should only be substituted *after* we have appropriately differentiated some of our terms; for instance if $\frac{dr}{dt}=C$, then this should only be substituted when $\frac{dV}{dr}$ has been differentiated. 
 ## Maximum and Minimum Values 

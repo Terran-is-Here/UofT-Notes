@@ -7,6 +7,7 @@ tags:
 "Lecture #": 9
 Lecture Date: 2026-09-28
 Week:
+Created:  September 28th 2026, 5:16:38 pm
 ---
 Hub:  N/A 
 Previous: [[8 — ESC180 Lecture 8]]
@@ -16,11 +17,13 @@ Next: [[10 — ESC180 Lecture 10]]
 # Lecture Notes
 ## Factorials 
 Recall the definition of a factorial: 
+
 $$
 \begin{align}
 n! = n *(n-1)!
 \end{align}
 $$
+
 We haven't fully learned the concept of a Recursive function *just* yet, so we can implement this as the following loop: 
 ```python
 def fact(n): 

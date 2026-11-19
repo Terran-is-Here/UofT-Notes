@@ -8,6 +8,7 @@ tags:
 Lecture Date: 2026-09-14
 Week:
 created:
+Created:  September 14th 2026, 1:10:16 pm
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[1 — The Praxis Design Framework, PRA01 Debrief]]

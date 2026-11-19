@@ -7,6 +7,7 @@ tags:
 "Lecture #": 14
 Lecture Date: 2026-11-01
 Week:
+Created:  November 1st 2026, 3:55:41 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[13 — Ax=0 Via EROs]]
@@ -16,19 +17,24 @@ Next: [[15 — Rank, Consistency and Dimensions]]
 # Lecture Notes
 ## Gaussian Elimination (LEC) 
 Recall that Row Operations are actually simply matrix multiplication operations in disguise. Note the following: 
+
 $$
 A\vec{x}=\vec{b}
 $$
+
 Recall that when we perform a matrix operation on $A$, we are multiplying that by a ERO matrix, which is also applied on $\vec{b}$, thus we see that $\vec{b}$ experiences the **exact same** row operations as $A$ experiences: 
+
 $$
 E_{1}A\vec{x} = E_{1}\vec{b}
 $$
+
 From here, we define the concept of an augmented matrix, where we combine both $A$ and $\vec{b}$ in one matrix, as we know both change in the same way (with row operations, multiplications, etc.) 
 
 * We define the "forward step" , as we move from any matrix $A\vec{x}=\vec{b}$ to their corresponding upper triangular matrix form $U\vec{x}=\vec{c}$. 
 * We define the "backward step" as us moving from an upper triangular matrix, to a matrix in RREF; that is $R_{0}\vec{x}=\vec{d}$. 
 
 For instance, take the following matrices, and check if they are in RREF. 
+
 $$
 \begin{bmatrix}
 1 & 0 & 1 & 5 \\
@@ -36,6 +42,7 @@ $$
 0 & 1 & 2 & 4
 \end{bmatrix}
 $$
+
 > Not in RREF, non-zero rows present, and they are not at the bottom. 
 
 $$
@@ -45,6 +52,7 @@ $$
 0 & 0 & 0 & 0
 \end{bmatrix}
 $$
+
 > Not in RREF, non-zero values present in column with leading one, and first row has a non-one leading value. 
 
 $$
@@ -54,6 +62,7 @@ $$
 0 & 0 & 1 & 1
 \end{bmatrix}
 $$
+
 > Not in RREF, non-zero values present in column with leading one. 
 
 $$
@@ -63,6 +72,7 @@ $$
 0 & 0 & 0 & 0
 \end{bmatrix}
 $$
+
 > In RREF, satisfies all conditions. 
 
 ---
@@ -78,6 +88,7 @@ A matrix $A$ is said to be in RREF (Row-Reduced Echelon Form) if it is in REF an
 4. All entries in the column containing a leading 1 are zero. 
 
 In terms of Gaussian Elimination, we rewrite a matrix-vector multiplication into a form we term as an Augmented Matrix; that is given $A\vec{x}=\vec{b}$, the augmented matrix is written as $[A|\vec{b}]$. For instance, take the following matrix: 
+
 $$
 \begin{bmatrix}
 1 & 3 & 5 \\
@@ -91,7 +102,9 @@ x_{1}\\x_{2}\\x_{3}
 1\\-1\\1
 \end{bmatrix}
 $$
+
 In an augmented matrix, this is expressed as: 
+
 $$
 \left[\begin{array}{ccc|c}
 1 & 3 & 5 & 1 \\
@@ -99,7 +112,9 @@ $$
 1 & 3 & 5 & 1
 \end{array}\right]
 $$
+
 Since we perform the same $E_{u}$ / EROs to both sides of a Matrix-Vector Multiplication (see our previous notes), then we can simply perform them on this augmented matrix on both sides. If we wanted to get this into REF, then: 
+
 $$
 \begin{align}
  & \to \left[\begin{array}{ccc|c}
@@ -129,19 +144,25 @@ $$
    \end{array} \right] & r_{1}:r_{1}-3r_{2}
 \end{align}
 $$
+
 From here, the following system of equations arise: 
+
 $$
 \begin{align}
 1x_{1} + 2x_{3} &  = -2 \\
 1x_{2} + 1x_{3} &  = 1
 \end{align}
 $$
+
 Letting $x_{3}=t$ (that is, $x_{3}$) is a free variable, then: 
+
 $$
 x_{1}=-2-2t\\
 x_{2}=1-t
 $$
+
 Or: 
+
 $$
 \begin{bmatrix}
 x_{1}\\x_{2}\\x_{3}
@@ -151,6 +172,7 @@ x_{1}\\x_{2}\\x_{3}
 -2\\-1\\1
 \end{bmatrix}t
 $$
+
 In other words, the solution space of this (note since it was equal to zero, this is it's nullity) is equivalent to a line. Or in other words, infinitely many solutions. 
 ## Implications
 * Columns corresponding to leading ones correspond to leading/pivot variables. Other columns represent to free variables.

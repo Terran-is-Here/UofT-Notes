@@ -7,6 +7,7 @@ tags:
 "Lecture #": 2
 Date: 2026-09-10
 Week: 1
+Created:  September 9th 2026, 8:51:34 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[1 — Units and Measurement]]
@@ -33,21 +34,28 @@ Vectors are generally notated with an arrow atop; e.g. $\vec{a}$. Note that you 
 
 ## Displacement
 Displacement is generally defined as $\Delta p$; and is notated as a vector (often $\vec{D}$). A vector's magnitude can be notated by inputting the absolute value notation around a vector: 
+
 $$
 |\vec{D}| = D
 $$
+
 ## 1D Vector Algebra
 Define two vectors as $\vec{a}$ and $\vec{b}$; whose magnitudes are defined by $A$ and $B$ respectively: 
+
 $$
 A = |\vec{a}|
 $$
+
 $$
 B = |\vec{b}|
 $$
+
 Vectors can be scaled off each other via scalars; for instance: $\vec{a} = 0.75\vec{b}$. This equation is considered a *vector equation*; as both sides of the equation are vectors. Note that $\vec{a}$ would be parallel to $\vec{b}$ in this case; with their magnitude appropriately scaled: 
+
 $$
 A = |b|B
 $$
+
 The sum of a series of vectors is normally notated as the Resultant (normally notated by $\vec{r}$ and $R=|\vec{r}|$). 
 
 Note that for $n$ dimensional vectors; it may be more apt to define a *direction* with a magnitude rather than a pure vector. Recall that unit vectors are vectors with a magnitude of $1$; and are notated with a little hat symbol (e.g. $\hat{l}$). 
@@ -56,9 +64,11 @@ Note that for $n$ dimensional vectors; it may be more apt to define a *direction
 In general; we have used a rectangular (cartesian) $xy$ ($\mathbb{R}^2$) system. Points can be defined using two values $(x,y)$. 
 
 Vectors can also use the Cartesian system in order to define their own magnitude; with each value in the respective pair representing one of their dimensional components. We can also represent them as a vector *sum* of their components. 
+
 $$
 \vec{A} = \vec{A}_{x}+ \vec{A}_{y}
 $$
+
 Where $\vec{A}_{}x$ and $\vec{A}_{y}$ are the vector's orthogonal projections onto their respective axis. We can notate these using the unit vectors of the axes: 
 * x = $\hat{i}$
 * y = $\hat{j}$
@@ -66,13 +76,17 @@ Where $\vec{A}_{}x$ and $\vec{A}_{y}$ are the vector's orthogonal projections on
 
 Thus we can define the equation above as: 
 > [!axiom] Vector Equation (Component) 
+>
 > $$\vec{A} = A_{x}\hat{i}+ A_{y}\hat{j}$$
+
 Where $A_{x}$ and $A_{y}$ are the scalar components of $\vec{A}$. 
 
 We can also define $A_{x}$ and $A_{y}$ through the difference of the points present at the origin ($x_{0},y_{0}$) and it's endpoint $x_{a}, y_{a}$: 
+
 $$
 A_{x} = x_{a} - x_{0}
 $$
+
 $$
 A_{y} = y_{a} - y_{0}
 $$
@@ -81,27 +95,35 @@ Adding two vectors together in this format is equivalent to adding up their resp
 
 ### Generalized Dimensions
 For a $3D$ vector; we also have to account for the $z$ axis of the vector. We can define our vector in component form by extending it to our third dimension; letting $\hat{k}$ be the unit vector in the positive $z$ axis: 
+
 $$
 \vec{A} = A_{x}\hat{i}+ A_{y}\hat{j} + A_{z}\hat{k}
 $$
 
 ### Magnitude and Angle 
 Note that $A_{x}, A_{y}, A$ all form a right angle triangle; with $A$ as the longest side; therefore: 
+
 $$
 A^2 = A_{x}^2 + A_{y}^2 \implies A = \sqrt{ A_{x}^2 + A_{y}^2 }$$
 Magnitude is generalized to an $n$-dimensional vector as: 
 $$||\vec{a}|| = \sqrt{ \sum^n_{{i=1}}a_{i}^2 }$$
 We can also find the angle it makes with the $+x$ axis towards the vector (counter clockwise): 
 $$
+
 \tan \theta_{A} = \left(\frac{A_{y}}{A_{x}}\right) \implies \theta_{A} = \cot\left(\frac{A_{y}}{A_{x}}\right)
+
 $$
 
 From viewing our vectors as a right-angle triangle; we can now also define them as a function of a vector's magnitude and angle: 
 $$
+
 A_{x} = A\cos \theta_{A}
+
 $$
 $$
+
 A_{y} = A\sin\theta_{A}
+
 $$
 ### Polar Coordinates
 Polar Coordinates are an alternate means of describing a vector/point. We normally use the Polar Coordinate System when we are dealing with rotational systems. 
@@ -117,11 +139,15 @@ $$P=\begin{cases}x = r\cos\theta \\y=r\sin \theta\end{cases} = (r,\theta)$$
 ## Vector Operations & Algebra
 Recall earlier how we described that we can actually manipulate vectors with scalars; we can extend this towards their vector component representations. For some scalar $S$: 
 $$
+
 S\vec{A} = SA_{x}\hat{i}+ SA_{y}\hat{j} + SA_{z}\hat{k}
+
 $$
 Note that we can also actually modify this some more; a vector can be mathematically be defined to be antiparallel if it is equivalent to it's negative version (or; it's additive inverse where $\vec{A} + (-\vec{A}) = \vec{0}$): 
 $$
+
 -\vec{A} = -A_{x}\hat{i}- A_{y}\hat{j} - A_{z}\hat{k}
+
 $$
 
 > [!axiom] Definition of $\vec{0}$: 
@@ -147,14 +173,17 @@ $$|\vec{a} \times \vec{b}| = |\vec{a}||\vec{b}|\sin \theta$$
 
 In terms of a component form; there's many different definitions; however we can use the following: 
 $$
+
 \vec{a} \times \vec{b} = \det\begin{bmatrix}
 \hat{i} & \hat{j} & \hat{k} \\
 a_{x} & a_{y} & a_{z} \\
 b_{x} & b_{y} & b_{z}
 \end{bmatrix}
+
 $$
 This derives the normal definition of a Cross Product while keeping it memorable. This can be broken up via Cofactor expansion (laplace expansion) 
 $$
+
 \vec{a}\times \vec{b} = \hat{i} \det \begin{bmatrix}
 a_{y} & a_{z} \\
 b_{y} & b_{z}
@@ -167,11 +196,14 @@ b_{x}& b_{z}
 a_{x} & a_{y} \\
 b_{x} & b_{y}
 \end{bmatrix}
+
 $$
 
 Or; even shorter: 
 $$
+
 \vec{a}\times \vec{b} = \hat{i}\text{ minor}(1,1) - \hat{j} \text{ minor}(1,2) + \hat{k}\text{ minor}(1,3)
+
 $$
 Recall that a determinant of a 2x2 matrix is calculated from the following: 
 $$\det\begin{bmatrix}

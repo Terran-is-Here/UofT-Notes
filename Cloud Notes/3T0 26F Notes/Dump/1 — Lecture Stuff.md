@@ -7,6 +7,7 @@ tags:
 "Lecture #": 0
 Date: 2026-09-10
 Week:
+Created:  September 10th 2026, 3:08:43 pm
 ---
 Hub: [[CIV102 Hub]]
 Previous: N/A 

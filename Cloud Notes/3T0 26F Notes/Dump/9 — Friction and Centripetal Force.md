@@ -8,6 +8,7 @@ tags:
 Lecture Date: 2026-09-28
 Week: 4
 created:
+Created:  September 22nd 2026, 10:47:56 am
 ---
 Hub: [[PHY180 Hub]]
 Previous:  [[8 — 3rd Law of Newton, FBDs]]
@@ -26,17 +27,22 @@ Next: [[10 — Drag Force and Terminal Velocity]]
 Given the 2d system of the following: 
 ![[9 — Friction and Centripetal Force-1790628165756.webp]]
 Can we use this to solve for gravity? First, solve for the centripetal force; given by: 
+
 $$
 F_{C} = \frac{mv^2}{r}
 $$
+
 Note that $F_{C} = \cos\theta F_{T}$, then: 
+
 $$
 \begin{align}
 F_{T}&= \frac{F_{C}}{\cos\theta} \\
 &=\frac{mv^2}{r\cos\theta}
 \end{align}
 $$
+
 Note that $F_{y} = \sin \theta F_{T}$, note that assuming this is a static system at that moment, then this is equivalent to some $mg$: 
+
 $$
 \begin{align}
 mg &= \sin\theta F_{T} \\
@@ -48,6 +54,7 @@ g &= \tan\theta * \frac{v^2}{r} & \text{Note, }\tan\theta = \frac{y}{r} \\
 g&=\boxed{\frac{4\pi^2y}{T^2}}
 \end{align}
 $$
+
 Note that this is the equation that will be applied within our Lab on 09/30. 
 ## Friction
 See the corresponding ILA blocks within Force of Friction. 
@@ -58,28 +65,39 @@ See the corresponding ILA blocks within Force of Friction.
 ## Force of Friction
 The Force of Friction is generally defined as a force *opposite* the direction of acceleration (or, from [[7 — 1st and 2nd Laws of Newton#Newton's First Law|Newton's First Law]], the net acceleration). There exists two definitions of friction: Static and Kinetic Friction: 
 > [!theorem] Static Friction
+>
 > $$F_{S} \leq \mu_{s}N$$
+>
 > Note that this inequality exists, as Static Friction can only provide friction up to this amount. Once this is exceeded, our object now has some velocity, meaning that our object is no longer static. Therefore, we can also denote: 
+>
 > $$\text{max}(F_{S}) = \mu_{s}$$
 
 > [!theorem] Kinetic Friction
+>
 > Kinetic Friction is defined as the following: $$F_{K} = \mu_{k}N$$
+>
 > Note that this only exists if and only if our object has a speed greater than 0, that is at that instantaneous moment.
 
 Recall that friction forces are reaction forces *which always point against the direction of motion*. 
 > [!ILA] ILA
-> $$\mu_{k},\mu_{s}$$ 
+>
+> $$\mu_{k},\mu_{s}$$
+ 
 > These are obtained via experimentation and are normally found within data tables. 
 
 ## Centripetal Force
 Centripetal force is the extension of the concept of Centripetal Acceleration into the world of dynamics; with it generally defined as: 
+
 $$
 F_{C} = ma_{c} = \frac{mv^2}{r} = mr\omega^2
 $$
+
 Note that the second definition is the extension of $v_{a} = r\omega$ into acceleration. Note that this implies that: 
+
 $$
 F_{C} = \frac{mv^2}{r} \implies r = \frac{mv^2}{F_{C}}
 $$
+
 That is, a ever increasing centripetal force decreases the effective radius for a given object travelling at a certain velocity. Centripetal Force is *however* not a force on it's own, rather it is provided by other forces (such as $F_{F},F_{N},F_{T}$); or in other words; it is often equivalent to the net force of the corresponding rotational system.  
 
 ### Banked Curves
