@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-19T10:35:47.127-05:00
-edited_seconds: 1080
+updated_at: 2026-11-19T10:52:49.715-05:00
+edited_seconds: 1090
 course: PHY180H1
 tags:
   - PHY180H1
@@ -59,7 +59,10 @@ Measured pressure is defined as the following:
 $$
 p_{gauge} = p_{abs} -p_{atm}
 $$
-As we mainly want to only see the difference between the actual absolute pressure, and the atmospheric pressure present. Note that $P_{abs} \approx P$  for most cases in terms of how people refer to it, and that $p_{atm} \approx 101.3 kPa$ 
+As we mainly want to only see the difference between the actual absolute pressure, and the atmospheric pressure present. Note that $P_{abs} \approx P$  for most cases in terms of how people refer to it, and that $p_{atm} \approx 101.3 kPa$. 
+
+> [!ila] In Lecture Note
+> For measuring cases with vacuum measurements, consider that $p_{0}=0$ at some mercury measuring cells, and the height displaced upward is lets us find the pressure at height = 0. 
 
 ---
 # Pre-Lecture Notes
