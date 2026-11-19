@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC194 Hub]]
 Previous:  [[26 — The Natural Logarithmic Function]]
-Next: [[28 — General Logarithmitic and Exponential Functions]]
+Next: [[28 — General Logarithmic and Exponential Functions]]
 > [!quote] Recommended Reading 
 > Section 6.3\* of the Stewart Textbook (not 6.3, 6.3\*). 
 > [[25 — Inverse Functions]]
