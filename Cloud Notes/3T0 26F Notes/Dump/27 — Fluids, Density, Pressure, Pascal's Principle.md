@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-19T10:27:25.506-05:00
-edited_seconds: 1000
+updated_at: 2026-11-19T10:35:47.127-05:00
+edited_seconds: 1080
 course: PHY180H1
 tags:
   - PHY180H1
@@ -49,7 +49,17 @@ P_{1} - P_{1} - dP  & =\rho dxg  \\
 \end{align}
 $$
 Note that this is going upwards from the depth, that is $dx$ (or rather, $dy$) is in terms of going upwards, then we see that the gradient decreases. 
+> [!ila] Note 
+> Note that recall that to force for the pressure at some certain depth; it is defined purely off the density and depth: 
+> $$p_{h} = p_{0} +\rho hg$$
+> The amount does not inherently matter (consider that since water applies pressure throughout the vessel, the walls would also provide a corresponding reaction force.)
 
+## Measuring Pressure
+Measured pressure is defined as the following: 
+$$
+p_{gauge} = p_{abs} -p_{atm}
+$$
+As we mainly want to only see the difference between the actual absolute pressure, and the atmospheric pressure present. Note that $P_{abs} \approx P$  for most cases in terms of how people refer to it, and that $p_{atm} \approx 101.3 kPa$ 
 
 ---
 # Pre-Lecture Notes
