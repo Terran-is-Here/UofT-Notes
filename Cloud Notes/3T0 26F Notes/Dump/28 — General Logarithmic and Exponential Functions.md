@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-19T14:22:16.352-05:00
-edited_seconds: 760
+updated_at: 2026-11-19T14:42:55.101-05:00
+edited_seconds: 1050
 course: ESC194H1
 tags:
   - ESC194H1
@@ -38,7 +38,7 @@ $$
 
 Due to being defined in terms of our $e$ (natural exponential) we find that this follows the same similar properties as previous exponent laws, and will not be rewritten for the sake of brevity. 
 
-### General Power Rule (LEC)
+### General Power Rule & Differentiating (LEC)
 From here, we can actually start defining the power rule in a general context. Recall that previously, we only stated it for rational numbers. We will now generalize it for any number in $\mathbb{R}$. 
 
 $$
@@ -48,9 +48,133 @@ The proof is:
 $$
 \begin{align}
 x^{r}  & = e^{r\ln x} \\
-\frac{d}{dx} e^{r\ln x} = e^{r\ln x} \frac{r}{x}
+\frac{d}{dx} e^{r\ln x} = e^{r\ln x} \frac{r}{x} =x^{r} * \frac{r}{x}  & = rx^{r-1}
 \end{align}
 $$
+As desired. Chain rule can also be expressed as the following: 
+$$
+u^{r} = ru^{r-1} \frac{du}{dx}
+$$
+Where the companion integrals can now be expressed as: 
+$$
+\int x^{r} \,dx = \frac{x^{r+1}}{r+1} + C \iff r\neq -1, x>0
+$$
+#### Examples
+Consider now the following example: 
+$$
+\begin{align}
+I & = \int \frac{x}{(x^{2}+1)^{\sqrt{ 2 }}}\,dx  & u=x^{2}+1, du=2x \\
+ & = \frac{1}{2}\int \frac{1}{u^{\sqrt{ 2 }}} = \frac{1}{2}\left[ \frac{1}{1-\sqrt{ 2 }}u^{1-\sqrt{ 2 }} \right] + C
+\end{align}
+$$
+
+Consider now: 
+$$
+f(x) = x^{x}, f'(x) = ?
+$$
+Note: 
+$$
+\begin{align}
+x^{x}  & = e^{x\ln x} \\
+\frac{d}{dx}e^{x\ln x} & = e^{x \ln x} \left( x  * \frac{1}{x} + \ln(x) \right) = x^{x}(1+\ln(x))
+\end{align}
+$$
+### General Bases
+Noting that from our definition, if we have some arbitrary base, then: 
+$$
+p^{x} = e^{x\ln p}
+$$
+Then: 
+$$
+\frac{d}{dx}e^{x\ln p} = e^{x \ln p} \ln p = p^{x}\ln p
+$$
+### Chain Rule 
+Note as well that with chain rule, then: 
+$$
+\frac{d}{dx}p^{u} = \frac{d}{dx}e^{u\ln p} = p^{u}\ln p \frac{du}{dx}
+$$
+For instance: 
+$$
+\frac{d}{dx} 2^{3x^{2}} = 2^{3x^{2}}\ln(2)6x
+$$
+
+Consider now the following example: 
+$$
+y = 2^{1/(x-1)}
+$$
+Differentiating this: 
+$$
+\begin{align}
+e^{\ln 2 / (x-1)} \\
+\frac{d}{dx}e^{\ln 2 / (x-1)} = e^{\ln 2 / (x-1)} \frac{\ln 2 (-1)}{(x-1)^{2}} = -2^{1/(x-1)} \frac{\ln_{2}}{(x-1)^{2}}
+\end{align}
+$$
+
+### Integrating
+We can integrate by taking the inverse of our differentiation formula, as is expected: 
+$$
+\int p^{x}\,dx = \frac{p^{x}}{\ln p} + C \iff p\neq 1, p>0
+$$
+#### Examples
+For instance, take the following: 
+$$
+\begin{align}
+S  & = \int 3x^{2}7^{-5x^{3}}\,dx  & u = -5x^{3}, du=-15x^{2}\,dx \\
+ & =\int -\frac{1}{5}7^{u} = -\frac{1}{5}\int 7^{u}\,du  \\
+ & = -\frac{1}{5}\left[ \frac{7^{u}}{\ln(u)} \right] + C = -\frac{7^{-5x^{3}}}{5 \ln(7)}+C
+\end{align}
+$$
+## General Logarithms
+We can extend the concept of a Logarithm from the following: 
+$$
+f(x) = \frac{\ln x}{\ln p}, g(x) = p^{x}
+$$
+Note that $f(g(x))$ gives us the following: 
+$$
+f(g(x)) = \frac{x \ln p}{\ln p} = x
+$$
+And: 
+$$
+g(f(x)) = p^{\ln(x)/\ln(p)} = e^{\ln(p) * \ln(x)/\ln (p)} = e^{\ln(x)} = x
+$$
+Thus we define: 
+$$
+\log_{p}(x) = \frac{\ln(x)}{\ln(p)}
+$$
+Where $p>0, p\neq 1$ as per usual, where: 
+$$
+\log_{p} p^{x} = x
+$$
+### Examples
+For instance, consider the following: 
+$$
+\log_{10} 100 = \frac{\ln(10^{2})}{\ln(10)} = 2
+$$
+ as expected.
+
+$$
+\ln_{2}(32) = \frac{\ln(2^{5})}{\ln(2)} = \frac{5\ln{2}}{\ln2} = 5
+$$
+as expected. 
+
+### Derivative
+We define the derivative of the general Logarithmic Function as the following: 
+$$
+\begin{align}
+\frac{d}{dx}\log_{p}(x) = \frac{d}{dx} \frac{\ln x}{\ln p} = \frac{1}{x\ln p}
+\end{align}
+$$
+Note that for arbitrary values of $p$, this defines the base. Recall that we originally defined the logarithm function as the integral of $\int \frac{1}{x}$ from $1 \to x$. 
+### Chain Rule 
+We can define the chain rule as the following from our above definition: 
+$$
+\frac{d}{dx}\log_{p}(u) = \frac{1}{u \ln(p)} \frac{du}{dx}
+$$
+For instance: 
+$$
+\frac{d}{dx}\log_{7}(2x^{3}-x) = \frac{1}{(2x^{3}-x)\ln_{7}}(6x^{2}-1)
+$$
+## Estimating the Value of $e$
 
 
 
