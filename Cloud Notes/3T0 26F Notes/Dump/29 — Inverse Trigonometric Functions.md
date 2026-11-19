@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-19T12:58:45.807-05:00
-edited_seconds: 1110
+updated_at: 2026-11-19T14:58:05.581-05:00
+edited_seconds: 1200
 course: ESC194H1
 tags:
   - ESC194H1
@@ -16,6 +16,34 @@ Next: N/A
 > Section 6.6 of the Stewart Textbook. 
 --- 
 # Lecture Notes
+
+## Inverse Trigonometric Functions (LEC) 
+Recall how Trigonometric Functions are periodic, meaning that inherently if $x\in \mathbb{R}$, they do not pass the vertical line test. To ensure that our trigonometric functions are bijective, we restrict their domain to a certain set of values to ensure that they remain $1:1$. 
+
+For $\sin(x)$, we can turn it into a bijective function if $x\in\left[ -\frac{\pi}{2}, \frac{\pi}{2} \right] \mapsto[-1,1]$. Thus: 
+
+$$
+\sin ^{-1}(x)=y \iff x\in[-1,1] \mapsto y\in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]
+$$
+
+By definition for functions and their inverses: 
+$$
+\sin(\sin ^{-1}(x)) = x \iff x\in [-1,1]\\
+\sin ^{-1}(\sin(x)) = x  \iff x\in\left[ -\frac{\pi}{2}, \frac{\pi}{2} \right]
+$$
+Note that $\sin(x) =y \iff x\in(-\infty,\infty)$ if we don't have an inherent inverse. For instance, take the following: 
+$$
+\begin{align}
+\sin ^{-1}\left( \sin\left( 6 * \frac{1}{4}\pi \right) \right) &  = ? &  \sin\left( \frac{25}{4}\pi  \right) = \sin \frac{\pi}{4} \\
+\sin ^{-1}\left( \sin\left( \frac{\pi}{4} \right) \right)  = \sin ^{-1}\left( \frac{1}{\sqrt{ 2 }} \right)&  = \frac{\pi}{4} & \frac{1}{\sqrt{ 2 }} \in [-1,1]
+\end{align}
+$$
+Consider now the following: 
+$$
+\begin{align}
+\sin(\sin ^{-1}(3))  & = DNE & 3
+\end{align}
+$$
 
 ---
 # Pre-Lecture Notes
@@ -217,6 +245,7 @@ $$
 $$
 
 Retaking our earlier expression, then we can see that with a bit of work we can finish it using this identity: 
+
 $$
 \begin{align}
 \frac{1}{2}\int \frac{1}{u^{2}+9} = \frac{1}{2}\left[ \frac{1}{3} \tan ^{-1}\left( \frac{u}{3} \right) \right] + C \\

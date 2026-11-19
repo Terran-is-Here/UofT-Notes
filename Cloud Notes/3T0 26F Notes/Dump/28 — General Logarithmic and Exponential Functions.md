@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-19T14:42:55.101-05:00
-edited_seconds: 1050
+updated_at: 2026-11-19T14:50:43.029-05:00
+edited_seconds: 1200
 course: ESC194H1
 tags:
   - ESC194H1
@@ -175,6 +175,43 @@ $$
 \frac{d}{dx}\log_{7}(2x^{3}-x) = \frac{1}{(2x^{3}-x)\ln_{7}}(6x^{2}-1)
 $$
 ## Estimating the Value of $e$
+Recall that: 
+$$
+\ln(x) = \int_{1}^{x} \frac{1}{t}\,dt
+$$
+by definition. Let $x=1 + \frac{1}{n}$, thus: 
+$$
+\begin{align}
+\ln\left( 1 + \frac{1}{n} \right)  & = \int_{1}^{1 + 1/n} \frac{1}{t} \,dt < \int_{1}^{1+1/n}1 \,dt & \frac{1}{t} < \frac{1}{1} \implies \int_{a}^{b} \frac{1}{t}\,dt < \int_{a}^{b} 1 \,dt \\
+ \ln\left( 1+\frac{1}{n} \right)& =\int_{1}^{1+1/n} \frac{1}{t} \,dt < \frac{1}{n} \\[1.5em]
+ e^{\ln(1+1/n)} & < e^{1/n} \\
+ \left( 1 + \frac{1}{n} \right)^{n}  & < e
+\end{align}
+$$
+Consider now that: 
+$$
+\begin{align}
+\ln\left( 1+\frac{1}{n} \right)  & = \int_{1}^{1+1/n} \frac{1}{t}\,dt > \int_{1}^{1+1/n} \frac{1}{1+\frac{1}{n}}\,dt  & \frac{1}{t} < \frac{1}{1+\frac{1}{n}}  \\
+ & =\ln\left( 1+\frac{1}{n} \right) > \frac{1}{n+1} \\
+ & =1+\frac{1}{n}> e^{1/(n+1)}  \\
+ & =\left( 1+\frac{1}{n} \right)^{n+1} > e
+\end{align}
+$$
+We see now that: 
+$$
+\left( 1+\frac{1}{n} \right)^{n} <e < \left( 1+\frac{1}{n} \right)^{n+1}
+$$
+Consider testing values of $n$: 
+* $n=1 \implies 2 < e < 4$
+* $n=2 \implies 2.25 < e < 3.375$
+* $n  = 3 \implies 2.59 < e < 2.85$
+* $n=10^{6} \implies 2.718280 < e < 2.1718283$
+* Note how as $n \to \infty$, this approximation approaches $e$, or in other words: 
+
+$$
+\lim_{ n \to \infty }  \left( 1+\frac{1}{n} \right)^{n} = e
+$$
+
 
 
 
