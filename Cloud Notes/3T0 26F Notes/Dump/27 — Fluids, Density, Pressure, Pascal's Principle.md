@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-10-29T21:28:40.015-04:00
-edited_seconds: 820
+updated_at: 2026-11-19T10:27:25.506-05:00
+edited_seconds: 1000
 course: PHY180H1
 tags:
   - PHY180H1
@@ -22,6 +22,34 @@ Next: [[28 — Pascal's and Archimedes' Principle and Buoyancy]]
 
 --- 
 # Lecture Notes
+## Water
+Note that water is actually *less dense* as it's temperature decreases (to a certain range). 
+
+## Hydrostatic Equilibrium (LEC)
+Consider a beaker with some fluid in it. Consider some region of the fluid within a cube shape, some $dF$ with side lengths of $dx$ then note that: 
+$$
+dx^{3} = dF
+$$
+Note that gravity acts downwards on the fluid element $dF$, and there exists inward pressure on this $dF$ on all 6 square faces. By symmetry, we can see that the inward forces on all vertical surfaces sum to 0, whilst the forces at the top and bottom may differ. Taking into account the $y$ vertical equilibrium, and that this object has some $dM$, then: 
+$$
+\begin{align}
+P_{bottom} - dMg - P_{top}  & = 0 \\
+P_{bottom} =dMg+P_{top}
+\end{align}
+$$
+
+Or in other words, for some $dF$, the pressure from the bottom will be greater than the pressure pressing from the top. Note that we can relate this directly into a force: 
+$$
+\begin{align}
+P_{1}dx^{2 }- P_{2}dx^{2}  & = \rho dx^{3}g \\
+P_{1} - P_{2}  & = \rho dxg  & P_{2} = P_{1} + dP\\ 
+P_{1} - P_{1} - dP  & =\rho dxg  \\
+-dP  & =\rho dxg \\
+\frac{dP}{dx} & = -\rho g
+\end{align}
+$$
+Note that this is going upwards from the depth, that is $dx$ (or rather, $dy$) is in terms of going upwards, then we see that the gradient decreases. 
+
 
 ---
 # Pre-Lecture Notes
