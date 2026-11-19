@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-11-19T12:24:38.352-05:00
-edited_seconds: 990
+updated_at: 2026-11-19T12:58:45.807-05:00
+edited_seconds: 1110
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 29
 Lecture Date: 2026-11-15
 Week:
-Created:  November 15th 2026, 7:01:04 pm
+Created: November 15th 2026, 7:01:04 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[28 — General Logarithmic and Exponential Functions]]
@@ -47,7 +47,7 @@ $$
 \end{align}
 $$
 
-Similarly, we can find the corresponding derivative of the inverse for $\cos ^{-1}(x)$. Note that $\cos ^{-1}(x) \iff x\in(0,\pi)$ in terms of it's domain to maintain bijectivity. 
+Similarly, we can find the corresponding derivative of the inverse for $\cos ^{-1}(x)$. Note that $\cos (x) \iff x\in(0,\pi) \mapsto[-1,1] \implies \cos ^{-1}(x) \iff x\in[-1,1]$ in terms of it's domain to maintain bijectivity. 
 
 $$
 \begin{align}
@@ -107,7 +107,7 @@ $$
 \frac{dy}{dx} & = -\frac{1}{\cot(y)\csc(y)}= -\frac{1}{\frac{\cos(y)}{\sin(y)} \frac{1}{\sin(y)}} = \frac{-\sin ^{2}(y)}{\cos(y)} \\
  & =-\frac{1}{x^{2}\cos(y)} & \cos(y) & = \sqrt{ 1-\sin ^{2}(y) } = \sqrt{ 1-\frac{1}{x^{2}} } \\
 & =-\frac{1}{x^{2}\sqrt{ 1-\frac{1}{x^{2}} }} = -\frac{1}{x^{2}\sqrt{ \frac{x^{2}-1}{x^{2}} }} = -\frac{1}{\frac{x^{2}}{|x|}\sqrt{ x^{2}-1 }}  \\
-& =\frac{-1}{x\sqrt{ x^{2}-1 }}  &  & |x|>1 \implies |x| = 1
+& =\frac{-1}{x\sqrt{ x^{2}-1 }}  &  & |x|>1 \implies |x| = x
 \end{align}
 $$
 
@@ -165,7 +165,7 @@ $$
 \end{align}
 $$
 
-Note the patterns in this expression, the sine and cosine inverse derivatives are negatives of each other, and the tangent inverse derivatives are the inverses of each other as well. 
+Note the patterns in this expression, the sine and cosine inverse derivatives are negatives of each other, and the tangent inverse derivatives are the negatives of each other as well. 
 
 Note that as per usual, chain rule applies within this setting: 
 
@@ -178,9 +178,9 @@ Note that now, our expressions above now let us define another set of integratio
 
 $$
 \begin{align}
-\int \frac{1}{\sqrt{ 1-t^{2} }}\,dt  & = \sin ^{-1}(x) + C & \int \frac{-1}{t\sqrt{ t^{2}-1 }} \,dt  & = \csc ^{-1}(x) + C \\
-\int \frac{-1}{\sqrt{ 1-t^{2} }}dt & = \cos ^{-1}(x) + C & \int \frac{1}{t\sqrt{ t^{2}-1 }} \,dt  & =\sec ^{-1}(x) + C \\
-\int \frac{1}{1+t^{2}}\,dt & = \tan ^{-1}(x) + C & \int \frac{-1}{1+t^{2}}\,dt  & = \cot ^{-1}(x) +C
+\int \frac{1}{\sqrt{ 1-t^{2} }}\,dt  & = \sin ^{-1}(t) + C & \int \frac{-1}{t\sqrt{ t^{2}-1 }} \,dt  & = \csc ^{-1}(t) + C \\
+\int \frac{-1}{\sqrt{ 1-t^{2} }}dt & = \cos ^{-1}(t) + C & \int \frac{1}{t\sqrt{ t^{2}-1 }} \,dt  & =\sec ^{-1}(t) + C \\
+\int \frac{1}{1+t^{2}}\,dt & = \tan ^{-1}(t) + C & \int \frac{-1}{1+t^{2}}\,dt  & = \cot ^{-1}(t) +C
 \end{align}
 $$
 
@@ -189,35 +189,37 @@ Note that U-substitution as per usual can be used to rewrite an expression into 
 Find the expression for the following: 
 
 $$
-\int \frac{x}{x^{4}-9}\,dx
+\int \frac{x}{x^{4}+9}\,dx
 $$
 
 Set $u=x^{2}$, then  $u^{2}=x^{4}$, and $du=2xdx$, thus: 
 
 $$
 \begin{align}
-\int \frac{x}{u^{2}-9} \frac{dx}{2x} = \frac{1}{2}\int \frac{1}{u^{2}-9} \,dx
+\int \frac{x}{u^{2}+9} \frac{dx}{2x} = \frac{1}{2}\int \frac{1}{u^{2}+9} \,dx
 \end{align}
 $$
 
 Consider now that we have to now solve that expression on the right, which we don't currently have a closed form solution to at the moment. We first now want to solve the following as a corollary: 
 
 $$
-\int \frac{1}{x^{2}-a^{2}}\,dx
+\int \frac{1}{x^{2}+a^{2}}\,dx
 $$
 
 Letting $u =\frac{x}{a}$, then $a^{2}=\frac{x^{2}}{u^{2}}$ and $x^{2}= (ua)^{2}$, and $du = \frac{1}{a}dx$
 
 $$
 \begin{align}
-  & \int \frac{a}{u^{2}a^{2} - \frac{x^{2}}{u^{2}}}du \\
-\frac{1}{a^{2}}\int \frac{a}{u^{2} - \frac{x^{2}}{u^{2}a^{2}}}\,du  & =\frac{1}{a}\int \frac{1}{u^{2}-\frac{x^{2}}{x^{2}}} = \frac{1}{a}\int \frac{1}{u^{2}-1} \\
-\int \frac{1}{x^{2}-a^{2}}\,dx & =\frac{1}{a}\tan ^{-1}(u) + C = \frac{1}{a}\tan ^{-1}\left( \frac{x}{a} \right)+C
+  & \int \frac{a}{u^{2}a^{2} + \frac{x^{2}}{u^{2}}}du \\
+\frac{1}{a^{2}}\int \frac{a}{u^{2} + \frac{x^{2}}{u^{2}a^{2}}}\,du  & =\frac{1}{a}\int \frac{1}{u^{2}+\frac{x^{2}}{x^{2}}} = \frac{1}{a}\int \frac{1}{u^{2}+1} \\
+\int \frac{1}{x^{2}+a^{2}}\,dx & =\frac{1}{a}\tan ^{-1}(u) + C = \frac{1}{a}\tan ^{-1}\left( \frac{x}{a} \right)+C
 \end{align}
 $$
 
-Retaking our earlier expression then we see that $a=3$; thus: 
-
+Retaking our earlier expression, then we can see that with a bit of work we can finish it using this identity: 
 $$
-\frac{1}{2}\left[ \frac{1}{3}\tan ^{-1}\left( \frac{x}{3} \right) \right] +C = \frac{1}{6}\tan ^{-1}\left( \frac{x}{3} \right)+C
+\begin{align}
+\frac{1}{2}\int \frac{1}{u^{2}+9} = \frac{1}{2}\left[ \frac{1}{3} \tan ^{-1}\left( \frac{u}{3} \right) \right] + C \\
+  = \frac{1}{6}\tan ^{-1}\left( \frac{x^{2}}{3} \right)+C
+\end{align}
 $$
