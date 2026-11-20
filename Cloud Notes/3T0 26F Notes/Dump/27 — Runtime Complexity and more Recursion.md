@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-20T12:51:30.848-05:00
-edited_seconds: 520
+updated_at: 2026-11-20T12:53:36.827-05:00
+edited_seconds: 530
 course:
 tags:
   - ESC180H1
@@ -139,6 +139,6 @@ def power_square(base,exp): #assuming exp = 2^(k+1)
 	 half_power = power_square(base,exp//2) # Multiply by half the corresponding power, recursive call, then square back to combine
 	 return half_power * half_power
 ```
-Note that this operation individually takes $O(1)$ time (ideally, with floats). Consider however that the call tree now scales by $\frac{1}{2^{k}}$, where we halve it each time. 
+Note that this operation individually takes $O(1)$ time (ideally, with floats). Consider however that the call tree now scales by $\frac{1}{2^{k}}$, where we halve it each time. Note that the number of calls within this call tree now approaches some $O(\log(n))$
 
 [^1]: Slicing is an $O(n)$ time complexity operation normally.

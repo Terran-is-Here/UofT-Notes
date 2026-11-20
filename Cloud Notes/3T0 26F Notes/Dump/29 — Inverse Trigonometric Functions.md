@@ -44,6 +44,8 @@ $$
 \sin(\sin ^{-1}(3))  & = DNE 
 \end{align}
 $$
+We also note that $\sin ^{-1}(x)$ is a fu
+
 
 ---
 # Pre-Lecture Notes
