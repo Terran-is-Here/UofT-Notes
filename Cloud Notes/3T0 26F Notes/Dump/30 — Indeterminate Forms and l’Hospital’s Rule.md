@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-20T13:52:25.784-05:00
-edited_seconds: 990
+updated_at: 2026-11-20T13:58:47.677-05:00
+edited_seconds: 1110
 course:
 tags:
   - ESC180H1
@@ -105,7 +105,35 @@ G(r) = 0  & = [g(b)-g(a)]f'(r) - g'(r)[f(b)-f(a)] \\
  \frac{f'(r)}{g'(r)} & = \frac{f(b)-f(a)}{g(b)-g(a)}
 \end{align}
 $$
-Note that $$
+Note that: 
+$$
+g'(c) = \frac{g(b)-g(a)}{b-a} \implies g'(x) \neq0 \implies g(b)-g(a) \neq0
+$$
+From this theorem, we can now prove LHoR. 
+### l\`Hospital's Rule 
+Consider the following, as $x\to c^{+}$, where: 
+$$
+\begin{align}
+\lim_{ x \to c^{+} } f(x) \to 0 \\
+\lim_{ x \to c^{+} } g(x) \to 0
+\end{align}
+$$
+Where we note that $\frac{f'(x)}{g'(x)} \to L$. We want to prove that $\frac{f(x)}{g(x)} \to L$
+
+Consider the interval where $[c,c+h]$, where we can apply the Cauchy MVT: 
+$$
+\begin{align}
+x\in [c,c+h]  & \implies \exists c_{2} \in [c,c+h] \text{ s.t.} & \text{from cauchy MVT} \\
+\frac{f'(c_{2})}{g'(c_{2})}  & = \frac{f(c+h)-f(c)}{g(c+h)-g(c)}  & g(c)=f(c) = 0\\
+\frac{f'(c_{2})}{g'(c_{2})}  & =\frac{f(c+h)}{g(c+h)} & \text{taking } \lim_{ h \to 0 }  \\
+\lim_{ h \to 0 }   & \implies \lim_{ c_{2} \to c }  \implies \\
+\lim_{ h \to 0 } \frac{f'(c_{2})}{g'(c_{2})}  & = \frac{f'(c)}{g'(c)} = \lim_{ h \to 0 } \frac{f(c+h)}{g(c+h)} = \lim_{ x \to c^{+} } \frac{f(c)}{g(c)}\\ \\
+\implies \lim_{ x \to c^{+} } \frac{f(x)}{g(x)} & =\frac{f'(c)}{g'(c)} =L
+
+
+\end{align}
+$$
+Note to extend this to infinity, then we simply set $x=\frac{1}{t}$, then $\lim_{ t \to 0 }$, and then solve from there as per usual. 
 
 
 ---
