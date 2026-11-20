@@ -3,6 +3,7 @@ updated_at: 2026-11-20T12:12:39.625-05:00
 edited_seconds: 700
 course:
 tags:
+  - ESC180H1
 "Lecture #": 0
 Lecture Date: 2026-11-20
 Week:
@@ -14,8 +15,10 @@ Next:
 > Section 6.8 of the Stewart Textbook
 > [[13 — Mean Value Theorem, Linear Approximations and Differentials#Cauchy's Mean Value Theorem]] (as we use it for the proof of l\`Hospital's rule). 
 
+
 --- 
 # Lecture Notes
+
 
 ---
 # Pre-Lecture Notes

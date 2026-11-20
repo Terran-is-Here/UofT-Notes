@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-20T11:19:54.271-05:00
-edited_seconds: 1230
+updated_at: 2026-11-20T13:32:30.350-05:00
+edited_seconds: 1460
 course: ESC194H1
 tags:
   - ESC194H1
@@ -44,8 +44,119 @@ $$
 \sin(\sin ^{-1}(3))  & = DNE 
 \end{align}
 $$
-We also note that $\sin ^{-1}(x)$ is a fu
+We also note that $\sin ^{-1}(x)$ is a function with *odd* symmetry, that is $\sin ^{-1}(-x) = -\sin ^{-1}(x)$
 
+### Triangles & Derivative
+> [!ila] In Lecture Addendum
+> Finding the corresponding derivative of our inverse trig functions is equivalent to us noting down some right angle triangle, as our inverse functions give us the angle at some point of that right angle triangle. 
+
+Consider that: 
+$$
+\sin\theta = y \implies \theta = \sin ^{-1}(y)
+$$
+In other words, the inverse sine is equivalent to the angle present within a right angle triangle, 
+
+Letting $\sin\theta = x$, then we find that this represents a triangle with a hypotenuse of $1$, and a side length opposite the angle of a term $x$. Correspondingly, we can find the last corresponding side as $\sqrt{ 1-x^{2} }$. Thus we find that: 
+
+$$
+\begin{align}
+\cos(\sin ^{-1}(x))  & = \sqrt{ 1-x^{2} } \\
+\tan(\sin ^{-1}(x))  & = \frac{x}{\sqrt{ 1-x^{2} }} \\
+\sec(\sin ^{-1}(x))  & = \frac{1}{\sqrt{ 1-x^{2} }} \\
+\cot(\sin ^{-1}(x)) &  = \frac{\sqrt{ 1-x^{2} }}{x} \\
+\csc(\sin ^{-1}(x)) & = \frac{1}{x}
+\end{align}
+$$
+From here, we can take the derivative of our Trigonometric Functions! For instance: 
+$$
+\begin{align}
+\frac{d}{dx}\sin(\sin ^{-1}(x))  & = \frac{d}{dx}x \\
+\cos(\sin ^{-1}(x))[\sin ^{-1}(x)]' = 1 \\
+[\sin ^{-1}(x)]'  & = \frac{1}{\sqrt{ 1-x^{2} }} \iff x\in(-1,1)
+\end{align}
+$$
+Note that with chain rule, we find that: 
+$$
+[\sin ^{-1}(u)] = \frac{1}{\sqrt{ 1-u^{2} }} u'
+$$
+### Integrals
+Consider now that from here, we can define the following integrals: 
+$$
+\int \frac{1}{\sqrt{ a^{2}-x^{2} }} = \sin ^{-1}\left( \frac{x}{a} \right) +C
+$$
+We can prove this by seeing that $u=\frac{x}{a}$, thus $a=\frac{x}{u}$, thus: 
+$$
+\begin{align}
+ & \int \frac{1}{\sqrt{ a^{2}-x^{2} }}\,dx & u = \frac{x}{a} \implies a du=dx \\
+ & \int \frac{a}{\sqrt{ a^{2}-a^{2}u^{2} }}\,du = \int \frac{1}{\sqrt{ 1-u^{2} }}\,du \\
+ & = \sin ^{-1}(u) + C = \sin ^{-1}\left( \frac{x}{a} \right)+C
+\end{align}
+$$
+
+
+### Tangents
+Consider now the inverse tangent: 
+$$
+\begin{align}
+ & \tan(x), x\in\left( -\frac{\pi}{2}, \frac{\pi}{2} \right) \mapsto (-\infty.\infty) \\
+ & \tan ^{-1}(x) = x\in(-\infty,\infty) \mapsto \left( -\frac{\pi}{2}, \frac{\pi}{2} \right)
+\end{align}
+$$
+Thus we can find the following relations: 
+$$
+\begin{align}
+  \tan(\tan ^{-1}(x)) = x  & \iff x\in(-\infty,\infty) \\
+   \tan(\tan ^{-1}(x))  &  \iff x\in\left( -\frac{\pi}{2}, \frac{\pi}{2} \right)
+\end{align}
+$$
+For instance: 
+$$
+\tan ^{-1}\left( \tan \frac{7}{5}\pi \right) = \tan ^{-1}\left( \tan\left( \pi + \frac{2}{5}\pi \right) \right) = \frac{2}{5}\pi 
+$$
+Note that $\tan(x)$ has a period of $\pi$, not $\frac{\pi}{2}$ as per the previous functions. Thus, noting that if we set $\theta = \tan ^{-1}$ we have that: 
+* Adjacent side length is $1$, opposite side length is some term $b$, and our hypotenuse is some term $\sqrt{ 1+x^{2} }$ as per PTheorem. 
+
+Thus, we find the following relations: 
+$$
+\begin{align}
+\tan(\tan ^{-1}(x))  & = x & \cot(\tan ^{-1}(x))  & = \frac{1}{x} \\
+\sin(\tan ^{-1}(x))  & =\frac{x}{\sqrt{ 1+x^{2} }} & \csc(\tan ^{-1}(x)) &= \frac{\sqrt{ 1+x^{2} }}{x} \\
+\cos(\tan ^{-1}(x)) & = \frac{1}{\sqrt{ 1+x^{2} }}  & \sec(\tan ^{-1}(x))  & = \sqrt{ 1+x^{2} }
+\end{align}
+$$
+We can thus find our derivatives using this set of identities, for isntance: 
+$$
+\begin{align}
+\frac{d}{dx}\tan(\tan ^{-1}(x)) & =\frac{d}{dx} x \\
+\sec ^{2}(\tan ^{-1}(x))[\tan ^{-1}(x)]'  & = 1 \\
+ [\tan ^{-1}(x)]'& =\frac{1}{1+x^{2}}
+\end{align}
+$$
+This is a very useful derivative, as taking the antiderivative gives us the following integral: 
+$$
+\int \frac{1}{a^{2}+x^{2}}dx = \frac{1}{a}\tan ^{-1}\left( \frac{x}{a} \right)+C
+$$
+### Examples
+Take the following integral: 
+$$
+\begin{align}
+ & =\int \frac{1}{16+9x^{2}} \,dx & u = 3x, du=3dx \\
+ &= \frac{1}{3}\int \frac{1}{4^{2}+u^{2}}\,du  \\
+ &= \frac{1}{3}\left( \frac{1}{4}\tan ^{-1}\left( \frac{u}{4} \right) \right) +C \\
+ &= \frac{1}{12}\tan ^{-1}\left( \frac{3}{4}x \right) + C
+\end{align}
+$$
+
+Take the following derivative for instance:
+$$
+\begin{align}
+\frac{d}{dx} \sec ^{-1}(x)  & = \frac{1}{|x|\sqrt{ x^{2}-1 }}
+\end{align}
+$$
+Thus we obtain the following integral: 
+$$
+\int \frac{1}{x\sqrt{ x^{2}-a^{2} }}\,dx = \frac{1}{a}\sec ^{-1}\left( \frac{\left| x\right|}{a} \right)+C
+$$
 
 ---
 # Pre-Lecture Notes
@@ -137,7 +248,7 @@ $$
 \frac{dy}{dx} & = -\frac{1}{\cot(y)\csc(y)}= -\frac{1}{\frac{\cos(y)}{\sin(y)} \frac{1}{\sin(y)}} = \frac{-\sin ^{2}(y)}{\cos(y)} \\
  & =-\frac{1}{x^{2}\cos(y)} & \cos(y) & = \sqrt{ 1-\sin ^{2}(y) } = \sqrt{ 1-\frac{1}{x^{2}} } \\
 & =-\frac{1}{x^{2}\sqrt{ 1-\frac{1}{x^{2}} }} = -\frac{1}{x^{2}\sqrt{ \frac{x^{2}-1}{x^{2}} }} = -\frac{1}{\frac{x^{2}}{|x|}\sqrt{ x^{2}-1 }}  \\
-& =\frac{-1}{x\sqrt{ x^{2}-1 }}  &  & |x|>1 \implies |x| = x
+& =\frac{-1}{|x|\sqrt{ x^{2}-1 }}  &  & |x|>1 \implies |x| = x
 \end{align}
 $$
 
@@ -153,7 +264,7 @@ $$
 \frac{dy}{dx} & = \frac{\cos(y)}{\tan(y)} = \frac{\cos(y)}{\frac{\sin(y)}{\cos(y)}} = \frac{\cos ^{2}(y)}{\sin(y)} \\
 \sin(y)  & = \sqrt{ 1-\cos ^{2}(y) }  = \sqrt{ 1- \frac{1}{x^{2}} } \\
 \frac{dy}{dx} & =\frac{1}{x^{2}\sqrt{ 1-\frac{1}{x^{2}} } } = \frac{1}{x^{2}\sqrt{ \frac{x^{2}-1}{x^{2}} }}  \\
-[\sec ^{-1}(x)]' & =\frac{1}{\frac{x^{2}}{|x|}\sqrt{ x^{2}-1 }} = \frac{1}{x\sqrt{ x^{2}-1 }}  & |x| \geq 1 \implies |x| = x
+[\sec ^{-1}(x)]' & =\frac{1}{\frac{x^{2}}{|x|}\sqrt{ x^{2}-1 }} = \frac{1}{|x|\sqrt{ x^{2}-1 }}  & |x| \geq 1 \implies |x| = x
 \end{align}
 $$
 
