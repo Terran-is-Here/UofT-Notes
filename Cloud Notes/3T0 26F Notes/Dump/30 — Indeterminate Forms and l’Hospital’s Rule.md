@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-20T11:58:38.154-05:00
-edited_seconds: 680
+updated_at: 2026-11-20T12:12:39.625-05:00
+edited_seconds: 700
 course:
 tags:
 "Lecture #": 0
@@ -115,4 +115,7 @@ $$
 \lim_{ x \to a } \frac{f(x)}{g(x)} = \lim_{ x \to a } \frac{f'(x)}{g'(x)} = \text{L}
 $$
 #### Extension
-Consider now we can extend this if $x \to \infty$, we can express this as $x \to \frac{1}{t}$, where Et-
+Consider now we can extend this if $x \to \infty$, we can express this as $x \to \frac{1}{t}$, where $t\to 0$, where this is finite value, thus: 
+$$
+\lim_{ x \to \infty } \frac{f(x)}{g(x)} = \lim_{ x \to \infty } \frac{f'(x)}{g(x)} \iff\lim_{ t \to 0 }  \frac{f\left( \frac{1}{t} \right)}{g\left( \frac{1}{t} \right)} = \lim_{ t \to 0 } \frac{f'\left( \frac{1}{t} \right)}{g'\left( \frac{1}{t} \right)} = L
+$$

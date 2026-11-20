@@ -1,5 +1,5 @@
 ---
-updated_at: 2026-11-16T17:14:28.988-05:00
+updated_at: 2026-11-20T12:14:15.657-05:00
 edited_seconds: 370
 course:
 tags:
@@ -7,11 +7,11 @@ tags:
 "Lecture #": 0
 Lecture Date: 2026-11-13
 Week:
-Created:  November 13th 2026, 12:11:24 pm
+Created: November 13th 2026, 12:11:24 pm
 ---
-Hub: 
+Hub: [[ESC180 Hub]]
 Previous: [[uhh — ESC180 Lecture 24 — Sorting Algorithms]]
-Next: [[26 — ESC180 Lecture 26]]
+Next: [[26 — ESC180 Lecture 26 — Recursive Functions]]
 
 --- 
 # Lecture Notes

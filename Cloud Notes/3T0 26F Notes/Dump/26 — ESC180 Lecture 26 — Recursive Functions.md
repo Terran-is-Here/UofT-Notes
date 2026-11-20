@@ -1,16 +1,17 @@
 ---
-updated_at: 2026-11-19T12:46:13.045-05:00
-edited_seconds: 370
+updated_at: 2026-11-20T12:13:40.388-05:00
+edited_seconds: 390
 course:
 tags:
+  - ESC180H1
 "Lecture #": 0
 Lecture Date: 2026-11-16
 Week:
 Created: November 16th 2026, 5:14:29 pm
 ---
-Hub: 
+Hub: [[ESC180 Hub]]
 Previous: [[25 — ESC180 Lecture 25]]
-Next:
+Next: [[27 — Runtime Complexity and more Recursion]]
 
 --- 
 # Lecture Notes
