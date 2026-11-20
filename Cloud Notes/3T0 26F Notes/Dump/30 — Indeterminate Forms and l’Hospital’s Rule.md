@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-20T11:50:52.014-05:00
-edited_seconds: 520
+updated_at: 2026-11-20T11:58:38.154-05:00
+edited_seconds: 680
 course:
 tags:
 "Lecture #": 0
@@ -98,6 +98,21 @@ $$
 \exists c  & \in (a,x) \text{ s.t.} \\
 \frac{F'(c)}{G'(c)} & = \frac{F(x)-F(a)}{G(x)-G(a)} = \frac{F(x)}{G(x)} \\[2em]
  & \text{note, } x\to a^{+} \implies c \to a^{+} \\
- & 
+\lim_{ c \to a^{+} }  \frac{F'(c)}{G'(c)} & = \lim_{ x \to a^{+} }  \frac{F(x)}{G(x)}  \implies \lim_{ c \to a^{+} }  \frac{f'(c)}{g'(c)} = \lim_{ x \to a^{+} }  \frac{f(x)}{g(x)} =L
 \end{align}
 $$
+Similarly, defining $x<a$ where $F,A$ are now continuous on $[x,a]$, and therefore differentiable in $(x,a)$, then we find that the right hand limits also hold: 
+$$
+\begin{align}
+   & \exists c\in(x,a) \text{ s.t } \\
+\frac{F'(c)}{G'(c)} & = \frac{F(a)-F(x)}{G(a)-G(x)} = \frac{F(x)}{G(x)} \\[1.5em]
+x\to a^{-}  & \implies c \to a^{-} \\
+\implies \lim_{ c \to a^{-} } \frac{F'(c)}{G'(c)} = \lim_{ x \to a^{-} } \frac{F(x)}{G(x)} &  \implies \lim_{ c \to a^{-} } \frac{f'(c)}{g'(c)} = \lim_{ x \to a^{-} } \frac{f(x)}{g(x)}
+\end{align}
+$$
+Noting that the right and left hand limits are equal, we thus find that: 
+$$
+\lim_{ x \to a } \frac{f(x)}{g(x)} = \lim_{ x \to a } \frac{f'(x)}{g'(x)} = \text{L}
+$$
+#### Extension
+Consider now we can extend this if $x \to \infty$, we can express this as $x \to \frac{1}{t}$, where Et-
