@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-20T12:12:39.625-05:00
-edited_seconds: 700
+updated_at: 2026-11-20T13:52:25.784-05:00
+edited_seconds: 990
 course:
 tags:
   - ESC180H1
@@ -8,16 +8,104 @@ tags:
 Lecture Date: 2026-11-20
 Week:
 ---
-Hub: 
-Previous: 
+Hub: [[ESC180 Hub]]
+Previous: [[29 — Inverse Trigonometric Functions]]
 Next:
 > [!quote] Recommended Reading 
 > Section 6.8 of the Stewart Textbook
 > [[13 — Mean Value Theorem, Linear Approximations and Differentials#Cauchy's Mean Value Theorem]] (as we use it for the proof of l\`Hospital's rule). 
 
+> [!caution] Note
+> This note's pre-lecture notes have not been fully written at the time that we got to this lecture in the sequence. 
+> L\`Hospital's Rule is notated as  LHoR for this note (the apostrophe and escaping the formatting was annoying) 
 
 --- 
 # Lecture Notes
+## LHoR (LEC) 
+Take the following example of a limit that we had proved earlier: 
+$$
+\lim_{ x \to 0 } \frac{\sin x}{x} =?
+$$
+We previously proved this through a geometric argument, but what if we didn't know that method? We note that this evaluates to $\to \frac{0}{0}$ as we take the limit. From here, we can actually use LHoR.
+
+### LHoR (0/0)
+> [!theorem] LHoR ($\frac{0}{0}$)
+> If $f(x) \to0$, $g(x) \to0$ as $x\to \pm \infty$, or $x\to c$, or $x \to c^{\pm}$, then: 
+> $$\lim_{ x \to c }  \frac{f'(x)}{g'(x)} = L \implies  \lim_{ x \to c }  \frac{f(x)}{g(x)} =L$$
+
+Retaking our earlier expression then: 
+$$
+\lim_{ x \to 0 }  \frac{\sin x}{x} =?
+$$
+Letting $f(x) = \sin x \implies f'(x) = \cos(x)$, then $g(x) = x \implies g'(x) = 1$, then: 
+$$
+\lim_{ x \to 0 }  \frac{\cos(x)}{1} = 1 \implies \lim_{ x \to 0 }  \frac{\sin x}{x} = 1
+$$
+
+Consider now as well the following expression: 
+$$
+\begin{align}
+\lim_{ x \to 0 }  \frac{\sin x}{\sqrt{ x }}  & \to 0  & \frac{d}{dx}\sin x = \cos x, \frac{d}{dx}\sqrt{ x} = \frac{1}{2\sqrt{ x }} \\
+\lim_{ x \to 0 } 2\sqrt{ x }\sin x & = 0 \\
+\lim_{ x \to 0 } 2\sqrt{ x }\sin x &  = 0 \implies \lim_{ x \to 0 } \frac{\sin x}{\sqrt{ x }} = 0
+\end{align}
+$$
+Consider now the following expression: 
+$$
+\begin{align}
+\lim_{ x \to 0 }  \frac{e^{x}-x-1}{3x^{2}}  & \to  \frac{0}{0}  & \frac{d}{dx}(e^{x}-x-1) = e^{x}-1, \frac{d}{dx}(3x^{2}) = 6x \\
+\lim_{ x \to 0 }  \frac{e^{x}-1}{6x}  & \to \frac{0}{0} & \frac{d}{dx}(e^{x}-1) = e^{x}, \frac{d}{dx}(6x) = 6 \\
+\lim_{ x \to 0 }  \frac{e^{x}}{6} = \frac{1}{6} \\
+\lim_{ x \to 0 }  \frac{e^{x}}{6} =\frac{1}{6} \implies \lim_{ x \to 0 }  \frac{e^{x}-1}{6x} = \frac{1}{6} \implies \lim_{ x \to 0 }  \frac{e^{x}-x-1}{3x^{2}} = \frac{1}{6}
+\end{align}
+$$
+
+Note that there are ways where this could go wrong, such as the following: 
+$$
+\begin{align}
+\lim_{ x \to 0 }  \frac{x^{3}+x}{2+x-2\cos x}  & \to \frac{0}{0} & \frac{d}{dx}(x^{3}+x) = 3x^{2}+1, \frac{d}{dx}(2+x-2\cos(x)) = 1+2\sin x\\
+\lim_{ x \to 0 } \frac{3x^{2}+1}{1+2\sin x}  & = \frac{1}{1} = 1 & \lim_{ x \to 0 } \frac{3x^{2}+1}{1+2\sin x} = 1 \implies \lim_{ x \to 0 }  \frac{x^{3}+x}{2+x-2x\cos(x)} = 1
+\end{align}
+$$
+This one went right, but now consider the following case: 
+$$
+\begin{align}
+\lim_{ x \to 0 } \frac{6x}{2\cos x}  & = \frac{0}{0} \\
+\lim_{ x \to 0 }  \frac{6}{-2\sin x}  & = \pm \infty  & \text{wrong, l`Hospital Rule only works on Indeterminates.}\\
+\lim_{ x \to 0 } \frac{0}{-2\cos x}
+\end{align}
+$$
+### Proof — Cauchy MVT (LEC) 
+Before we prove LHoR, we need to prove the Cauchy MVT first: 
+
+The Cauchy MVT is very similar to the base MVT, in fact we use Rolle's Theorem to generalize it to a ratio of any functions. 
+> Given two functions $f,g$  differentiable on $(a,b)$, and continuous on $[a,b]$, and $g' \neq0$ on $(a,b)$, then there must exist some number $r$ such that: 
+> $$\frac{f'(r)}{g'(r)}= \frac{f(b)-f(a)}{g(b)-g(a)}$$
+
+To prove this, consider Rolle's Theorem: 
+$$
+\begin{align}
+\text{if } G(a) = G(b) = 0,  \\
+\exists r\in(a,b) \to G'(r) = 0
+\end{align}
+$$
+Let's define the following function $G(x)$
+$$
+G(x) = [g(b)-g(a)][f(x)-f(a)] - [g(x)-g(a)][f(b)-f(a)]\\
+G(b)=G(a)=0
+$$
+Then simply differentiating this, then: 
+$$
+G'(x) = [g(b)-g(a)]f'(x) - g'(x)[f(b)-f(a)]
+$$
+We know that Rolle's Theorem applies onto this, then:
+$$
+\begin{align}
+G(r) = 0  & = [g(b)-g(a)]f'(r) - g'(r)[f(b)-f(a)] \\
+ \frac{f'(r)}{g'(r)} & = \frac{f(b)-f(a)}{g(b)-g(a)}
+\end{align}
+$$
+Note that $$
 
 
 ---
@@ -44,7 +132,7 @@ l\`Hospital's Rule (noted from here as LHoR) is defined as the following:
 > Or in other words, we have the following expression that evaluates into an indeterminate form as the ones that we have had above. 
 > $$\lim_{ x \to a } \frac{f(x)}{g(x)} \to\frac{0}{0} \lor \lim_{ x \to a } \frac{f(x)}{g(x)} \to \frac{\infty}{\infty}$$
 > Then we define that:
-> $$\lim_{ x \to a } \frac{f(x)}{g(x)} = \lim_{ x \to a } \frac{f'(x)}{g'(x)}$$
+> $$\lim_{ x \to a } \frac{f'(x)}{g'(x)} = L \implies \lim_{ x \to a } \frac{f(x)}{g(x)} = L$$
 > If the limit on the right side exists. 
 
 In other words, it states that given a ratio of functions which, when the limit is taken, that they fall into an indeterminate form of $\frac{\infty}{\infty}$ or $\frac{0}{0}$, the limit of that ratio of functions is equal to the limit of the ratio of the derivatives of those functions. 
