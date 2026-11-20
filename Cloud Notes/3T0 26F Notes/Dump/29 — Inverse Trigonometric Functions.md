@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-19T14:58:05.581-05:00
-edited_seconds: 1200
+updated_at: 2026-11-20T11:19:54.271-05:00
+edited_seconds: 1230
 course: ESC194H1
 tags:
   - ESC194H1
@@ -11,7 +11,7 @@ Created: November 15th 2026, 7:01:04 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[28 — General Logarithmic and Exponential Functions]]
-Next: N/A
+Next: [[30 — Indeterminate Forms and l’Hospital’s Rule]]
 > [!quote] Recommended Reading 
 > Section 6.6 of the Stewart Textbook. 
 --- 
@@ -41,7 +41,7 @@ $$
 Consider now the following: 
 $$
 \begin{align}
-\sin(\sin ^{-1}(3))  & = DNE & 3
+\sin(\sin ^{-1}(3))  & = DNE 
 \end{align}
 $$
 

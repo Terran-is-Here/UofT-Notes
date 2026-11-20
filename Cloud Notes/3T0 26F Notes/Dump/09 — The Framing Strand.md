@@ -11,7 +11,7 @@ Created:  September 29th 2026, 9:16:07 am
 ---
 Hub: [[ESC101 Hub (Praxis)]]
 Previous: [[08 — Teamwork]]
-Next: [[13 or something — Writing The Brief]]
+Next: [[26 or something - Pugh Charts]]
 
 --- 
 # Lecture Notes
