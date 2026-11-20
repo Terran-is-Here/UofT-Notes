@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-10-30T16:06:46.031-04:00
-edited_seconds: 600
+updated_at: 2026-11-20T16:21:46.434-05:00
+edited_seconds: 630
 course: PHY180H1
 tags:
   - PHY180H1
 "Lecture #": 28
 Lecture Date: 2026-11-20
 Week:
-Created:  October 29th 2026, 9:28:53 pm
+Created: October 29th 2026, 9:28:53 pm
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[27 — Fluids, Density, Pressure, Pascal's Principle]]
@@ -17,6 +17,14 @@ Next: [[29 — Fluid Dynamics]]
 
 --- 
 # Lecture Notes
+## Archimedes Principle Extended
+Consider the net vertical Y force of an object submerged with some density, we find that this is given by: 
+$$
+F_{net} = \rho_{fluid}Vg - \rho_{object}Vg  \implies F_{net} = Vg(\rho_{fluid}-\rho_{object})
+$$
+Note that if $\rho_{fluid}>\rho_{object}$, our object experiences a positive buoyant force. if $\rho_{fluid}=\rho_{object}$, then our object is neutrally buoyant. If $\rho_{fluid}<\rho_{object}$, then our object simply sinks (accelerates downwards). 
+
+
 
 ---
 # Pre-Lecture Notes
@@ -75,6 +83,10 @@ $$
 > $$F_\text{B}=w_\text{fl}$$
 >
 > Where $F_\text{B}$ represents the buoyant force, and $w_\text{fl}$ represents the weight of water it displaces. 
+> > In other words, this can be found as: 
+> > $$F_{b} = \rho_{fluid}V_{displaced}g$$
+> > Or without subscripts: 
+> > $$F_{b} = \rho Vg$$
 
 Note that $w_\text{fl}$ can be expressed as some term of volume of water displaced by an object, times the density of the fluid: $w_\text{fl}=\rho V_\text{displaced}$. 
 ### Floating
