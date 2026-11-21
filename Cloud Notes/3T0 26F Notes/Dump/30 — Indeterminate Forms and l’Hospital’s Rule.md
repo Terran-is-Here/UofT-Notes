@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-20T13:58:47.677-05:00
-edited_seconds: 1110
+updated_at: 2026-11-21T16:08:39.340-05:00
+edited_seconds: 1130
 course:
 tags:
   - ESC180H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC180 Hub]]
 Previous: [[29 — Inverse Trigonometric Functions]]
-Next:
+Next: [[31 —Differentials and Seperable Equations]]
 > [!quote] Recommended Reading 
 > Section 6.8 of the Stewart Textbook
 > [[13 — Mean Value Theorem, Linear Approximations and Differentials#Cauchy's Mean Value Theorem]] (as we use it for the proof of l\`Hospital's rule). 
