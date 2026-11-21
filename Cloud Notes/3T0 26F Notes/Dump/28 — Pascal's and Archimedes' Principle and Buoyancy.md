@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-20T16:21:46.434-05:00
-edited_seconds: 630
+updated_at: 2026-11-21T15:58:28.972-05:00
+edited_seconds: 650
 course: PHY180H1
 tags:
   - PHY180H1
@@ -9,7 +9,7 @@ Lecture Date: 2026-11-20
 Week:
 Created: October 29th 2026, 9:28:53 pm
 ---
-Hub: [[PHY180 Hub]]
+[Hub: [[PHY180 Hub]]
 Previous: [[27 — Fluids, Density, Pressure, Pascal's Principle]]
 Next: [[29 — Fluid Dynamics]]
 > [!quote] Recommended Reading 
