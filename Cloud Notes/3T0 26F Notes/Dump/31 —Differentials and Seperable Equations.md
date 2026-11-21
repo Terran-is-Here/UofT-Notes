@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-21T16:18:27.975-05:00
-edited_seconds: 170
+updated_at: 2026-11-21T16:39:05.549-05:00
+edited_seconds: 310
 course: ESC194H1
 tags:
   - ESC194H1
@@ -29,4 +29,33 @@ $$
 $$
 Where $P(t)$ is some function of the population of a group at some time $t$. What this differential equation essentially states, is that a function's derivative, is proportional to the original function, as well as some factor of $k$. 
 
-If we wanted to solve this analytically, what we want to find is essentially some function, whose derivative is some constant multiple of itself. A solution to this rapidly emerges: Our e
+$$
+\begin{align}
+P(t)  & = Ce^{kt} \\
+\frac{dp}{dt} & = kC^{kt} = kP
+\end{align}
+$$
+As expected. Noting that if we set $P(0)$, we obtain that $C = P(0) = C_{0}$, or in other words, the original population, thus: 
+$$
+\frac{dP}{dt} = kP\\
+P = C_{0}e^{kt}
+$$
+Where this is a valid solution to our differential. Explicit solutions to differential equations are not always possible, and sometimes these have to be solved numerically (as per in the ESC103 notes that we had earlier). 
+
+### Equilibrium 
+Consider that our earlier model for the population growth told us that population would grow exponentially with time; which is clearly untrue with the physical states of the world normally. 
+
+This leads to us consider the more "accurate" population modelling equation known as the Logistic Population Growth function: 
+$$
+\frac{dP}{dt} = kP\left( 1 - \frac{P}{M} \right) 
+$$
+where $k=cM$, $M$ represents the logistic capacity, and $P$ represents the current population. 
+
+We note how $P(t)=0,M$ are valid solutions, as this resolves to the right side evaluating to some term of 0: 
+$$
+\begin{align}
+\frac{dP}{dt}  & = k(0)\left( 1-\frac{0}{M} \right) = 0 \\
+\frac{dP}{dt} & = k(M)(1-1) = 0
+\end{align}
+$$
+These cases imply that at these values, the rate of change is 0; or in other words, the original function does not change in value. Constant solutions to diff
