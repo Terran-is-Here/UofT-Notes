@@ -1,14 +1,15 @@
 ---
-updated_at: 2026-11-22T13:02:47.661-05:00
-edited_seconds: 210
-course:
+updated_at: 2026-11-22T13:09:32.669-05:00
+edited_seconds: 220
+course: ESC194H1
 tags:
-"Lecture #": 0
+  - ESC194H1
+"Lecture #": 34
 Lecture Date: 2026-11-22
 Week:
 ---
-Hub: 
-Previous: 
+Hub: [[ESC194 Hub]]
+Previous: [[33 — Linear Equations]]
 Next:
 > [!quote] Recommended Reading 
 > Stewart Section 5, (???), [[25 — Inverse Functions]]
