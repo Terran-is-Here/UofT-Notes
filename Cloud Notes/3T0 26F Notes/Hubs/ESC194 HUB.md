@@ -23,9 +23,11 @@ Marking Scheme:
 Note that no calculators are allowed within any test; quiz; or examination. 
 * **Note that for Tests/Quizzes; using a pencil bars you from attaining a regrade.**
 ### All ESC194 Notes
-```query
-tag:#ESC194H1 -tag:Hub
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Note Name",
+  file.frontmatter["Lecture Date"] AS "Lecture Date",
+  Week AS "Week"
+FROM #ESC194H1 AND -#Hub
+SORT file.name ASC
 ```
-
-
-

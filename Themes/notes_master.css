@@ -1,0 +1,22 @@
+.navigation {
+    table-layout: fixed;
+    width: 100%; 
+}
+
+table.navigation > tr > td > div.content {
+    text-align: center;
+}
+
+.callout[data-callout="definition"] {
+    --callout-color: 171, 255, 248;
+    --callout-icon: notepad-text;
+}   
+
+table {
+	min-width: 100%;
+    table-layout:fixed;
+}
+
+.nav-file-title, .nav-folder-title, .nav-file-title-content {
+    white-space: normal;
+}

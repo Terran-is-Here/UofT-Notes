@@ -1,8 +1,4 @@
----
-Created: November 19th 2026, 12:27:59 pm
-updated_at: 2026-11-19T12:40:45.712-05:00
-edited_seconds: 10
----
+
 # Lagrange's Archives of the program that claims your soul™
 ---
 Hello! This GitHub repository serves as my online drive for my Engineering Science notes at University of Toronto. I do not give a guarantee for the quality of these notes, as these were predominantly for my own use. As of time of writing, I currently do not have any plans to make a finalized "revised" note set for use, however that might change in the future when I finally get some free time to think about it. 
@@ -28,6 +24,10 @@ As of time of writing (2026-11-19), I have **not** included some of the related 
 * The "Templates" folder contains the templates that I use to create my notes. 
 
 ## Other Information
-idk i'll get to writing this later
+### Plugins & Themes
+* The hub notes within this note normally use the CSS snippets present within the Themes folder of this repository's root? (should be). These styles format and color some of the sections of this note, so it may look a bit broken without it. 
+* **The note hub pages use the dataview plugin** (for it's querying). Please install it, or convert it into Obsidian's own query format. honestly choose your poison. 
+* 
+
 ### General
 * You *could* write out edits and statements in a PR, and I *could* look at editing them, though this is mainly for my personal use, so please do not expect rapid edits. 

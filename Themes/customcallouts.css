@@ -1,0 +1,18 @@
+.callout[data-callout="axiom"] {
+	    --callout-color: #fd79ff;
+        --callout-icon: lucide-scroll-text;
+}
+
+.callout[data-callout="theorem"] {
+	    --callout-color: #ffffff;
+        --callout-icon: lucide-scroll-text;
+}
+
+.callout[data-callout="in-lecture-addendum"], .callout[data-callout="ila"] {
+	    --callout-color: #CEFF1F;
+        --callout-icon: lucide-scroll-text;
+        -callout-border-color:#FF1FC0;
+        --callout-border-width: 3px;
+        --callout-border-opacity: 0.5
+}
+
