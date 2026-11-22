@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-21T22:02:57.703-05:00
-edited_seconds: 520
+updated_at: 2026-11-21T22:23:33.164-05:00
+edited_seconds: 880
 course:
 tags:
   - esc
@@ -95,7 +95,7 @@ Note that this indicates that for every $t_{h}$, our mass effectively halves. Th
 ### Temperature and Interest
 The textbook introduces two more expressions here, which have been left as more examples of Exponential Decay: 
 
-> Newton's Law of Cooling
+> [!ila]- Newton's Law of Cooling
 > The rate of cooling of an object is proportional to the temperature difference between the object and it's surroundings, if the temperature difference is not too large. In terms of a differential, we find that: 
 > $$\frac{dT}{dt} = k(T-T_{s})$$
 > Where $T_{s}$ represents the temperature of the environment, and $T$ represents the temperature at some time $t$, that is $T(t)$. 
@@ -103,14 +103,54 @@ The textbook introduces two more expressions here, which have been left as more 
 > We can let $y(t) = T(t) - T_{s}$, and thus: 
 > $$\frac{dy}{dt} = ky$$
 > We note that this is similar to our earlier expressions, so we know $y(t)$ is some exponential. We note that at $y(0) = T(0)-T_{s}$, thus we find that: 
-> $$y(t) = (T(0)-T_{s})e^{kt}$$
+> $$y(t) = (T(0)-T_{s})e^{kt} = T(t) - T_{s}$$
 > > Using a textbook example, 
 > > Given that $T_{s} = 44$, $T(0)=72$, and $T(30)=61$, we find that: 
+> > $$\begin{align}y(t)  & = (72-44)e^{kt} = 28e^{kt} \\y(30) & = T(30) - 44 = 61-44 = 17 = 28e^{30k} \\\frac{1}{30} \ln\left( \frac{17}{28} \right)  & =k \\k  & \approx -0.016633\end{align}$$
+> > Thus our expression becomes: 
+> > $$y(t) =28e^{-0.016633t}$$
+> > Recalling that we defined $y(t) = T(t)-T_{s}$, then $T(t) = 44 + 28e^{-0.016633t}$. Noting that $t\to \infty$, $T(t) \to T_{s}$, which is to be expected. 
 
+> [!ila]- Continuous Compounding Interest
+> Recall the definition of compounding interest back in your old mathematics classes: 
+> $$A_{t} = A_{0}\left( 1 + \frac{r}{n} \right)^{nt}$$
+> Where $n$ corresponds to the amount of times interest accrues per year $t$, where the overall interest is defined as $\frac{r}{n}$. Consider the case in which we continuously take more and more terms of interest, then we find that: 
+> $$\begin{align}A(t)  & = \lim_{ n \to \infty } A_{0}\left( 1+\frac{r}{n} \right)^{nt}  \\& =A_{0} \lim_{ n \to \infty } \left( 1+\frac{r}{n} \right)^{nt} & b = \frac{n}{r} , n\to \infty, b\to \infty, n = br \\& =A_{0}\lim_{ b \to \infty } \left( 1+\frac{1}{b} \right)^{brt} \\& =A_{0} \lim_{ b \to \infty } \left( \left( 1+\frac{1}{b} \right)^{b} \right)^{rt}  \\& =A_{0} \left( \lim_{ b \to \infty } \left( 1+\frac{1}{b} \right)^{b} \right)^{rt} & \lim_{ n \to \infty } \left( 1+\frac{1}{n} \right)^{n} = e \\& =A_{0}e^{rt}\end{align}$$
+> Note that $\frac{dA}{dt} = rA_{0}e^{rt} = rA(t)$. 
+
+
+## Population Growth (continued)
+Continued from the previous section of this note, we note the following differential equations pertaining to various population models: 
 $$
 \begin{align}
-y(t)  & = (72-44)e^{kt} = 28e^{kt} \\
-y(30) & = T(30) - 44 = 61-44 = 17 = 28e^{30t}
+\frac{dP}{dt} & = kP & \text{law of natural growth} \\
+\frac{dP}{dt}  & = kP\left( 1-\frac{P}{M} \right) & \text{logistic differential} \\
+\frac{dP}{dt} & =kP\left( 1-\frac{P}{M} \right)-c & \text{logistic differential with harvesting} \\
+\frac{dP}{dt}  & = kP\left( 1-\frac{P}{M} \right)\left( 1-\frac{m}{P} \right) & \text{logistic differential with MVP}
+\end{align}
+$$
+Noting that: 
+* For the law of natural growth, the solution of $P(t) = P_{0}e^{kt}$ is valid. 
+* For logistic growth with harvesting, we note that $c$ would be equivalent to some constant term of harvesting present. 
+* For logistic growth with respects to a minimum viable population, we note that if $P<m$, $\frac{m}{P}>1$, thus our corresponding population will shrink. 
+
+For the purposes of this section, we will consider analysing the Logistic Growth Formula: 
+$$
+\frac{dP}{dt} = kP\left( 1-\frac{P}{M} \right)
+$$
+Noting that the term on the right, $P\left( 1-\frac{P}{M} \right)$ is purely some function of $P$, then we note that this is a Separable equation, thus: 
+$$
+\begin{align}
+\frac{1}{P\left( 1-\frac{P}{M} \right)}dP  & = k\,dt \\
+\int \frac{1}{P\left( 1-\frac{P}{M} \right)}\,dP & = \int k \,dt \\
+\int \frac{M}{P(M-P)} \,dP = \int \frac{1}{P}-\frac{1}{M-P}dP = \ln|P| - \ln|M-P|  & = kt +C  \\
+\ln(M-P)-\ln(P)  & = -kt-C \\
+\ln \left| \frac{P}{M-P} \right| & = -kt-C \\
+\left| \frac{M-P}{P}\right|  & =e^{-kt-C}= e^{-kt}e^{-C} & e^{-C}=A\\
+\frac{M-P}{P}  & = e^{-kt}A
 
 \end{align}
 $$
+
+
+
