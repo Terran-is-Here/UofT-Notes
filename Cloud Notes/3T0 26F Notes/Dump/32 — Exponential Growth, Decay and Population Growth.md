@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-21T22:39:04.139-05:00
-edited_seconds: 940
+updated_at: 2026-11-22T11:55:35.567-05:00
+edited_seconds: 950
 course: ESC194H1
 tags:
   - ESC194H1
@@ -10,7 +10,7 @@ Week: 11
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[31 —Differentials and Separable Equations]]
-Next:
+Next: [[33 — Linear Equations]]
 > [!quote] Recommended Reading 
 > Sections 6.5 and 9.4 of the Stewart Textbook
 --- 
