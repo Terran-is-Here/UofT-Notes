@@ -22,12 +22,16 @@ Marking Scheme:
 | Final Examination | 50%                      | TBD                                                                                       |                                                                                 |
 Note that no calculators are allowed within any test; quiz; or examination. 
 * **Note that for Tests/Quizzes; using a pencil bars you from attaining a regrade.**
-### All ESC194 Notes
+### All Calculus I Notes
 ```dataview
 TABLE WITHOUT ID
   file.link AS "Note Name",
+  padleft(string(file.frontmatter["Lecture #"]), 2, "0") AS "Lecture/Note #",
   file.frontmatter["Lecture Date"] AS "Lecture Date",
-  Week AS "Week"
+  padleft(string(Week), 2, "0") AS "Week"
 FROM #ESC194H1 AND -#Hub
-SORT file.name ASC
+SORT file.frontmatter["Lecture #"] DESC, file.name ASC
 ```
+
+
+

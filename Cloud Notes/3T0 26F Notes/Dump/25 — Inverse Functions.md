@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-11-13T13:17:20.897-05:00
+updated_at: 2026-11-21T22:38:12.353-05:00
 edited_seconds: 1070
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 25
 Lecture Date: 2026-11-12
-Week:
-Created:  November 1st 2026, 3:14:07 pm
+Week: 9
+Created: November 1st 2026, 3:14:07 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[24 — Volumes by Cylindrical Shells and Average Function Values]]

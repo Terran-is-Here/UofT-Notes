@@ -1,12 +1,12 @@
 ---
-updated_at: 2026-11-21T21:05:51.680-05:00
-edited_seconds: 1130
+updated_at: 2026-11-21T22:38:39.547-05:00
+edited_seconds: 1140
 course:
 tags:
   - ESC180H1
-"Lecture #": 0
-Lecture Date: 2026-11-20
-Week:
+"Lecture #": 30
+Lecture Date: 2026-11-23
+Week: 11
 Created: November 20th 2026, 11:19:57 am
 ---
 Hub: [[ESC180 Hub]]

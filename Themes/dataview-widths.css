@@ -1,0 +1,35 @@
+.wide-topic-table .table-view-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* Column 1 = Lecture # */
+.wide-topic-table .table-view-table th:nth-child(1),
+.wide-topic-table .table-view-table td:nth-child(1) {
+  width: 12%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Column 2 = Note Name */
+.wide-topic-table .table-view-table th:nth-child(2),
+.wide-topic-table .table-view-table td:nth-child(2) {
+  width: 55%;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Column 3 = Lecture Date */
+.wide-topic-table .table-view-table th:nth-child(3),
+.wide-topic-table .table-view-table td:nth-child(3) {
+  width: 21%;
+  white-space: nowrap;
+}
+
+/* Column 4 = Week */
+.wide-topic-table .table-view-table th:nth-child(4),
+.wide-topic-table .table-view-table td:nth-child(4) {
+  width: 12%;
+  text-align: center;
+  white-space: nowrap;
+}

@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-11-02T11:48:09.577-05:00
-edited_seconds: 1340
+updated_at: 2026-11-21T22:37:53.493-05:00
+edited_seconds: 1350
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 20
-Lecture Date: 2026-11-02
+Lecture Date: 2026-10-23
 Week: 7
-Created:  October 19th 2026, 8:41:19 pm
+Created: October 19th 2026, 8:41:19 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[19 — The Definite Integral]]

@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-11-16T11:29:59.762-05:00
-edited_seconds: 1740
+updated_at: 2026-11-21T22:38:14.768-05:00
+edited_seconds: 1750
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 26
 Lecture Date: 2026-11-13
-Week:
-Created:  November 11th 2026, 1:38:25 pm
+Week: 9
+Created: November 11th 2026, 1:38:25 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[25 — Inverse Functions]] 

@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-10-16T09:28:52.614-04:00
+updated_at: 2026-11-21T22:36:34.317-05:00
 edited_seconds: 830
 course: ESC194H1
 tags:
   - ESC194H1
-"Lecture #": 10
+"Lecture #": 9
 Lecture Date: 2026-10-01
 Week: 4
-Created:  September 26th 2026, 4:17:02 pm
+Created: September 26th 2026, 4:17:02 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[08 — Continuity]], [[08-1 — Intermediate Value Theorem]]

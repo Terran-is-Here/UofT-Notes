@@ -34,6 +34,12 @@ Mark Breakdown:
 * Syllabus: [[PHY180_Syllabus_Fall 2026.pdf]]
 * Textbook [[university-physics-volume-1_-_WEB.pdf|University Physics Vol.1]]
 ### All Classical Mechanics Notes
-```query
-tag:#PHY180H1 -tag:Hub
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Note Name",
+  padleft(string(file.frontmatter["Lecture #"]), 2, "0") AS "Lecture/Note #",
+  file.frontmatter["Lecture Date"] AS "Lecture Date",
+  padleft(string(Week), 2, "0") AS "Week"
+FROM #PHY180H1  AND -#Hub
+SORT file.frontmatter["Lecture #"] DESC, file.name ASC
 ```

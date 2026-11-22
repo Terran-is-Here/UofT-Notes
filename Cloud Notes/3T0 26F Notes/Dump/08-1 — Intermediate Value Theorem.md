@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-10-06T16:16:14.886-04:00
-edited_seconds: 370
+updated_at: 2026-11-21T22:36:30.788-05:00
+edited_seconds: 380
 course: ESC194H1
 tags:
   - ESC194H1
-"Lecture #": 10
+"Lecture #": 8
 Lecture Date: 2026-10-01
 Week: 4
-Created:  October 1st 2026, 1:04:15 pm
+Created: October 1st 2026, 1:04:15 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[08 — Continuity]]

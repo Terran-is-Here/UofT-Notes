@@ -1,12 +1,12 @@
 ---
-updated_at: 2026-11-21T22:23:33.164-05:00
-edited_seconds: 880
-course:
+updated_at: 2026-11-21T22:39:04.139-05:00
+edited_seconds: 940
+course: ESC194H1
 tags:
-  - esc
-"Lecture #": 0
-Lecture Date: 2026-11-21
-Week:
+  - ESC194H1
+"Lecture #": 32
+Lecture Date: 2026-11-27
+Week: 11
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[31 —Differentials and Separable Equations]]
@@ -147,10 +147,21 @@ $$
 \ln(M-P)-\ln(P)  & = -kt-C \\
 \ln \left| \frac{P}{M-P} \right| & = -kt-C \\
 \left| \frac{M-P}{P}\right|  & =e^{-kt-C}= e^{-kt}e^{-C} & e^{-C}=A\\
-\frac{M-P}{P}  & = e^{-kt}A
-
+\frac{M-P}{P}  & = e^{-kt}A\end{align}
+$$
+If we set $t=0$, we find that $A=\frac{M-P_{0}}{P_{0}}$, where $P(0) = P_{0}$, or in other words, the starting population. Solving for P, we then get: 
+$$
+\begin{align}
+M-P(t) & = e^{-kt}AP(t) \\
+M & = Ae^{-kt}P(t) + P(t) = (Ae^{-kt}+1)P(t) \\
+\frac{M}{1 + Ae^{-kt}}  & =P(t)
 \end{align}
 $$
+Plugging in $A$, we then find the logistic population expression: 
+$$
+\frac{M}{1 + \frac{M-P_{0}}{P_{0}}e^{-kt}} = P(t)
+$$
+Note that normally we simply keep $A$ as $\frac{M-P_{0}}{P_{0}}$ just to make our expressions easier to work with. 
 
 
 

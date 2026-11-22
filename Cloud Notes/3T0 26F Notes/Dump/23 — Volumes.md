@@ -1,13 +1,13 @@
 ---
-updated_at: 2026-11-06T13:58:40.808-05:00
-edited_seconds: 1230
+updated_at: 2026-11-21T22:38:04.609-05:00
+edited_seconds: 1240
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 23
 Lecture Date: 2026-11-06
-Week:
-Created:  October 29th 2026, 6:17:19 pm
+Week: 8
+Created: October 29th 2026, 6:17:19 pm
 ---
 Hub: [[ESC194 Hub]]
 Previous: [[22 — Areas Between Curves]]

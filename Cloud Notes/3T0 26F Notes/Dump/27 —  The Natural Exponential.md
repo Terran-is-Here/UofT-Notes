@@ -1,12 +1,12 @@
 ---
-updated_at: 2026-11-19T14:16:05.508-05:00
-edited_seconds: 1040
+updated_at: 2026-11-21T22:38:25.548-05:00
+edited_seconds: 1050
 course: ESC194H1
 tags:
   - ESC194H1
-"Lecture #": 17
+"Lecture #": 27
 Lecture Date: 2026-11-16
-Week:
+Week: 10
 Created: November 11th 2026, 4:28:52 pm
 ---
 Hub: [[ESC194 Hub]]
