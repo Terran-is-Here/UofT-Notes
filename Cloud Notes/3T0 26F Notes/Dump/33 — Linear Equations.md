@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-22T12:42:17.397-05:00
-edited_seconds: 550
+updated_at: 2026-11-22T12:50:22.482-05:00
+edited_seconds: 680
 course: ESC194H1
 tags:
   - ESC194H1
@@ -125,7 +125,7 @@ Thus, with our expression in this form, we note now that to simply solve a linea
 >
 > And then from here, you can solve for $y$ by solving for the integral as per usual. 
 
-### Example
+### Example(s)
 Consider the following differential: 
 $$
 \frac{dy}{dx} + 3x^{2}y = 6x^{2}
@@ -136,4 +136,53 @@ $$
 I(x) & =e^{\int 3x^{2}\,dx}= e^{x^{3}}
 \end{align}
 $$
-(Note that we don't have a $e^{C}$ term present, as from our earlier algebra, this expression is actually $I(x)=$)
+> (Note that we don't have a $e^{C}$ term present **for the integration factor**, as from our earlier algebra, this expression is actually $I(x)=\frac{e^{\int P(x)\,dx}}{e^{C}}$, taking the corresponding antiderivative and adding the $+C$ term at the end cancels out.) 
+
+Plugging this into our expression, then: 
+$$
+\begin{align}
+e^{x^{3}}\left( y'+3x^{2}y \right)  & = e^{x^{3}}6x^{2} \\
+e^{x^{3}}y' + e^{x^{3}}3x^{2}y & = e^{x^{3}}6x^{2} \\
+\frac{d}{dx}(e^{x^{3}}y)  & =e^{x^{3}}6x^{2} \\
+\int \frac{d}{dx}( e^{x^{3}}y)\,dx & =\int e^{x^{3}}6x^{2}\,dx \\
+e^{x^{3}}y & =2e^{x^{3}} + C \\
+y  & = 2 + \frac{C}{e^{x^{3}}}
+\end{align}
+$$
+
+Consider now the following IVP: 
+$$
+x^{2}y' + xy = 1, x>0, y(1)=2
+$$
+Noting that we want to get to some $y' +P(x)y = Q(x)$, we divide by $x^{2}$ on both sides: 
+$$
+\begin{align}
+\frac{1}{x^{2}}(x^{2}y' + xy) & = \frac{1}{x^{2}} \\
+y' + \frac{1}{x}y & = \frac{1}{x^{2}}
+\end{align}
+$$
+Finding our integration factor: 
+$$
+I(x) = e^{\int 1/x\,dx} = e^{\ln(x)} = x
+$$
+Multiplying on both sides, then: 
+$$
+\begin{align}
+xy' + y  & = \frac{1}{x} \\
+(xy)'  & = \frac{1}{x} \\
+\int(xy)'\,dx & = \int \frac{1}{x}\,dx \\
+xy & = \ln|x|+C \\
+y  & = \frac{\ln|x|+C}{x}
+\end{align}
+$$
+Noting that from our initial value, that $y(1)=2$, thus: 
+$$
+\begin{align}
+y(1)=2=\frac{\ln|1|+C}{1} \implies C=2
+\end{align}
+
+$$
+Thus our solution becomes: 
+$$
+y = \frac{\ln|x|+2}{x}
+$$
