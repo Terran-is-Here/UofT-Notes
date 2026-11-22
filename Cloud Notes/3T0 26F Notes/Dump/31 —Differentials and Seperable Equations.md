@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-21T17:08:22.926-05:00
-edited_seconds: 580
+updated_at: 2026-11-21T17:22:18.469-05:00
+edited_seconds: 750
 course: ESC194H1
 tags:
   - ESC194H1
@@ -131,4 +131,62 @@ $$
 y = \frac{1 + \frac{1}{3}e^{t}}{1-\frac{1}{3}e^{t}}, y' = \frac{\frac{2}{3}e^{t}}{\left( 1-\frac{1}{3}e^{t} \right)^{2}}
 $$
 ## Separable Equations 
-Consider that we have considered functions from a
+Consider that we have considered functions from a general standpoint. In terms of attempting to solve them, we introduce the first family of differential functions that we can solve. 
+
+Consider the following expression: 
+$$
+\frac{dy}{dx} = f(x)g(y)
+$$
+Where we note this is a Separable Differential equation, where $\frac{dy}{dx}$ can be expressed / factored into two functions of some $f(x)$ and $g(y)$. Consider that if $g(y)\neq 0$, then we can also express this in terms of some $h(y) = \frac{1}{g(y)}$, thus: 
+$$
+\frac{dy}{dx} = \frac{f(x)}{g(y)}
+$$
+If we want to solve this, we can rearrange in terms of their differentials, and integrate from there: 
+$$
+\begin{align}
+g(y) \, dy  & = f(x)\,dx \\
+\int g(y)\,dy & = \int f(x)\,dx
+\end{align}
+$$
+Where this often provides us a solution. Note that this does not always result in an explicit expression, but a usable one nonetheless. We can actually work backwards from that definition above: 
+$$
+\begin{align}
+\frac{d}{dx}\int g(y)\,dy & = \frac{d}{dx}\int f(x)\,dx \\
+g(y) \frac{dy}{dx}& = f(x) \\
+\frac{dy}{dx}  & = \frac{f(x)}{g(y)}
+\end{align}
+$$
+### Examples
+We introduce a trivial case: 
+$$
+\begin{align}
+\frac{dy}{dx} & = \frac{x^{2}}{y^{2}} \\
+y^{2}dy & = x^{2}dx \\
+\int y^{2}\,dy & = \int x^{2}\,dx \\
+\frac{y^{3}}{3}  & = \frac{x^{3}}{3}+C \\
+y  & = \sqrt[3]{ x^{3}+3C } = (x^{3}+3C)^{1/3}
+\end{align}
+$$
+Noting that this satisfies our earlier expression, as: 
+$$
+\frac{dy}{dx}= \frac{1}{3}(x^{3}+3C)^{-2/3}*3x^{2} = \frac{x^{2}}{(x^{3}+3C)^{2/3}}
+$$
+And this satisfies our expression as expected. Consider now the following Differential expression: 
+$$
+\begin{align}
+\frac{dy}{dx}  & = \frac{6x^{2}}{2y + \cos y} \\
+(2y + \cos y)dy & = 6x^{2}dx \\
+\int 2y + \cos y \,dy  & = \int 6x^{2}dx \\
+y^{2} + \sin y  & = 2x^{3} + C
+\end{align}
+$$
+Note that we can't inherently solve this now explicitly with respects to $y$, but we can show this is a valid solution by performing implicit differentiation: 
+$$
+\begin{align}
+\frac{d}{dx}(y^{2} + \sin y)  & = \frac{d}{dx}(2x^{3}+C) \\
+2y* \frac{dy}{dx} + \cos y \frac{dy}{dx} & = 6x \\
+(2y + \cos y)\frac{dy}{dx} & =6x \\
+\frac{dy}{dx} & =\frac{6x}{2y + \cos y}
+\end{align}
+$$
+Which is as expected. 
