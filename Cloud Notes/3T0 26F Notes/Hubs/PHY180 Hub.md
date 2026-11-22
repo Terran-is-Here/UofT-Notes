@@ -1,3 +1,9 @@
+---
+course: PHY180H1
+updated_at: 2026-11-21T22:45:21.655-05:00
+edited_seconds: 10
+---
+
 # Classical Mechanics Hub 
 "Everything in physics that isn't Quantum nor Chemistry".
 

@@ -1,3 +1,9 @@
+---
+updated_at: 2026-11-21T22:45:05.035-05:00
+edited_seconds: 10
+course: ESC194H1
+---
+
 # Calculus 101 Hub 
 The Proof-Based Calculus Course™
 ### Materials 
