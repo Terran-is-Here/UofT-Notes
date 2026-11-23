@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-22T19:30:44.091-05:00
-edited_seconds: 430
+updated_at: 2026-11-22T20:50:15.378-05:00
+edited_seconds: 690
 course: PHY180H1
 tags:
   - PHY180H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[PHY180 Hub]]
 Previous: [[29 — Fluid Dynamics]]
-Next: N/A
+Next: [[31 — SHM Analysis and Pendulums]]
 > [!quote] Recommended Reading 
 > University Physics, 15.1—15.2 
 > [[31 —Differentials and Separable Equations]] from ESC194 is also a good idea. 
@@ -52,10 +52,20 @@ From here, we actually derive the Equations of Simple Harmonic Motion:
 > $$\frac{d^{2}x}{dt^{2}}=-Cx$$
 > We note that $x$ is a function of position based on some time, and that the solution to this differential is: 
 > $$x=A\cos(\omega t+\phi)$$
-> Where $\omega = \frac{2\pi}{t}$ where $\omega$ represents the **angular frequency** of our system. Differentiating, we find that: 
+> Where $\omega = \frac{2\pi}{T}$ where $\omega$ represents the **angular frequency** of our system. Differentiating, we find that: 
 > $$\begin{align}\frac{dx}{dt}  & =  -A\omega \sin(\omega t+\phi) \\\frac{d^{2}x}{dt^{2}}  & = -A\omega^{2}\cos(\omega t+\phi)\end{align}$$
 > Noting that if $x$ is some function of position, then $\frac{dx}{dt}$ and $\frac{d^{2}x}{dt^{2}}$ correspond to functions of velocity and acceleration. As such, the corresponding values in front of our expression correspond to the max velocity and acceleration of our system respectively: 
 > $$\begin{align}a_{max}  & = A\omega^{2} \\v_{max} & =A\omega\end{align}$$
+> And $A$ itself is equivalent to the maximum deflection present within the spring. 
+
+> Extending further into ODEs
+> Note that with the expressions above, and with our differential, we can actually derive expressions for the Amplitude of our system from the initial conditions of our system (an IVP). Consider if we are given some value $a(0)$ and $v(0)$: 
+
+$$
+\begin{align}
+
+\end{align}
+$$
 
 Plugging this into our differential, we find that: 
 $$
@@ -76,4 +86,39 @@ ma  & = -kx \\
 \implies \omega  & =\sqrt{ \frac{k}{m} }
 \end{align}
 $$
+## Total SHM Energy
+Consider now if we were asked the question: what is the energy of a simple harmonic oscillator? Consider the case in which a SHM is located on a frictionless table. We note that their potential energy would thus be defined as being based on the elastic potential energy present.
+$$
+W = \int -kx\,dx = \left\{-\frac{1}{2}kx^{2}\right|_{x_{1}}^{x_{2}} = -\Delta U
+$$
+Setting $x_{1}=0$ (as the equilibrium position), and $x_{2}=x$ (the displacement), then: 
+$$
+\frac{1}{2}kx^{2} = U
+$$
+Conversely, we know that the energy of our spring will also have a term of kinetic energy, thus: 
+$$
+\frac{1}{2}mv^{2} = K
+$$
+Solving for the total energy, and noting that $v=\frac{dx}{dt}$, and that our differential is in terms of Hooke's Law, then:, $\frac{d^{2}x}{dt^{2}} = -\frac{k}{m}x \implies \omega^{2}=\frac{k}{m}$
+$$
+\begin{align}
+E_{T}  & = \frac{1}{2}kx^{2} + \frac{1}{2}mv^{2} \\
+ & =\frac{1}{2}k(A\cos(\omega t + \phi))^{2} + \frac{1}{2}m(-A\omega \sin (\omega t+\phi))^{2} \\
+ & =\frac{1}{2}kA^{2}\cos ^{2}(\omega t+\phi) + \frac{1}{2}mA^{2}\omega^{2}\sin ^{2}(\omega t+\phi) & \omega^{2} = \frac{k}{m} \\
+ & =\frac{1}{2}kA^{2}\cos ^{2}(\omega t+\phi) + \frac{1}{2}\cancel{ m }A^{2} \frac{k}{\cancel{ m }}\sin ^{2}(\omega t+\phi) \\
+ & = \frac{1}{2}kA^{2}(\cancel{ \cos ^{2}(\omega t+\phi) + \sin ^{2}(\omega t+\phi) }) & \cos ^{2}(x) + \sin ^{2}(x) = 1 \\
+ E_{T}& = \frac{1}{2}kA^{2} 
+\end{align}
+$$
+Note that this implies that, for a spring on a flat table, the corresponding value for the total energy is defined in terms of the maximum amplitude of the spring, as well as the spring constant. This implies that the spring energy of the system is actually constant! 
 
+Because of this, we can now actually solve for the corresponding velocity of our object at any given point $x$: 
+$$
+\begin{align}
+ \cancel{ \frac{1}{2} }kx^{2} + \cancel{ \frac{1}{2} }mv^{2}  & =\cancel{ \frac{1}{2} }kA^{2} \\
+ kx^{2} + mv^{2} & = kA^{2} \\
+ mv^{2} & = k(A^{2}-x^{2}) \\
+ \left| v \right| & = \sqrt{ \frac{k}{m}(A^{2}-x^{2}) }
+\end{align}
+$$
+Note that this expression fails to exist if $A^{2}<x^{2}$, as this resolves in an imaginary number. 
