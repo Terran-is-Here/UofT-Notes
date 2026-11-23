@@ -27,7 +27,7 @@ As of time of writing (2026-11-19), I have **not** included some of the related 
 ### Plugins & Themes
 * The hub notes within this note normally use the CSS snippets present within the Themes folder of this repository's root? (should be). These styles format and color some of the sections of this note, so it may look a bit broken without it. 
 * **The note hub pages use the dataview plugin** (for it's querying). Please install it, or convert it into Obsidian's own query format. honestly choose your poison. 
-* 
+* I highly recommend using the [obsidian-git](https://community.obsidian.md/plugins/obsidian-git) plugin for integrating git version control into your note-spaces, as well as syncing things up with this one. It's kind of a pain to set up for the first time if you aren't used to git, though to be fair. you're here. so you should know what you're doing. 
 
 ### General
 * You *could* write out edits and statements in a PR, and I *could* look at editing them, though this is mainly for my personal use, so please do not expect rapid edits. 
