@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-23T11:56:52.364-05:00
-edited_seconds: 1150
+updated_at: 2026-11-23T12:28:40.103-05:00
+edited_seconds: 1170
 course: ESC194H1
 tags:
   - ESC194H1
@@ -137,6 +137,16 @@ $$
 \end{align}
 $$
 Then we can simply solve for the corresponding results of this integral. 
+
+Note that we can prove this by using the identity below: 
+$$
+\begin{align}
+\int f(y)\,dy  & = \int g(x)\,dx \\
+\frac{d}{dx}\int f(y)\,dy & = \frac{d}{dx}\int g(x)\,dx \\
+f(y) \frac{dy}{dx} & = g(x) \\
+\frac{dy}{dx} & =\frac{g(x)}{f(y)}
+\end{align}
+$$
 
 
 ---
