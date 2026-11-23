@@ -9,12 +9,15 @@ None mandatory; however the following pre-reading resources are recommended:
 * Linear Algebra Textbook: [[Nicholson-OpenLAWA-2018B.pdf]]
 **The main source of course documents / notes for this course will be the OneNote shared thingy. You know what it is.**
 
-### ESC103 Note Hubs
-```query
-tag:#ESC103H1 tag:Hub
-```
+
 ### All ESC103 Notes
-```query
-tag:#ESC103H1
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Note Name",
+  padleft(string(file.frontmatter["Lecture #"]), 2, "0") AS "Lecture/Note #",
+  file.frontmatter["Lecture Date"] AS "Lecture Date",
+  padleft(string(Week), 2, "0") AS "Week"
+FROM #ESC103H1  AND -#Hub
+SORT file.frontmatter["Lecture #"] DESC, file.name ASC
 ```
 

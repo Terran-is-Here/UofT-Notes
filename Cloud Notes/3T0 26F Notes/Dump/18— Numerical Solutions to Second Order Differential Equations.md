@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-19T12:46:12.759-05:00
-edited_seconds: 380
+updated_at: 2026-11-23T12:11:21.218-05:00
+edited_seconds: 390
 course: ESC103H1
 tags:
   - ESC103H1
@@ -11,7 +11,7 @@ Created: November 17th 2026, 5:16:55 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[17 — Numerical Solutions to First Order Differential Equations]]
-Next:
+Next: [[19 — Boundary Value Problems]]
 
 --- 
 # Lecture Notes
