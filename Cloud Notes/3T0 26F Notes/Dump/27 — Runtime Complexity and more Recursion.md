@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-23T17:11:49.230-05:00
-edited_seconds: 540
+updated_at: 2026-11-23T17:13:07.125-05:00
+edited_seconds: 550
 course:
 tags:
   - ESC180H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC180 Hub]]
 Previous: [[26 — ESC180 Lecture 26 — Recursive Functions]]
-Next: [[28 — ]]
+Next: [[28 — More Recursion]]
 
 --- 
 # Lecture Notes
