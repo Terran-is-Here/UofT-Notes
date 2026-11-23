@@ -1,9 +1,9 @@
 ---
-updated_at: 2026-11-21T22:38:39.547-05:00
-edited_seconds: 1140
-course:
+updated_at: 2026-11-23T11:20:26.039-05:00
+edited_seconds: 1320
+course: ESC194H1
 tags:
-  - ESC180H1
+  - ESC194H1
 "Lecture #": 30
 Lecture Date: 2026-11-23
 Week: 11
@@ -155,7 +155,7 @@ x\in [c,c+h]  & \implies \exists c_{2} \in [c,c+h] \text{ s.t.} & \text{from cau
 \frac{f'(c_{2})}{g'(c_{2})}  & = \frac{f(c+h)-f(c)}{g(c+h)-g(c)}  & g(c)=f(c) = 0\\
 \frac{f'(c_{2})}{g'(c_{2})}  & =\frac{f(c+h)}{g(c+h)} & \text{taking } \lim_{ h \to 0 }  \\
 \lim_{ h \to 0 }   & \implies \lim_{ c_{2} \to c }  \implies \\
-\lim_{ h \to 0 } \frac{f'(c_{2})}{g'(c_{2})}  & = \frac{f'(c)}{g'(c)} = \lim_{ h \to 0 } \frac{f(c+h)}{g(c+h)} = \lim_{ x \to c^{+} } \frac{f(c)}{g(c)}\\ \\
+\lim_{ h \to 0 } \frac{f'(c_{2})}{g'(c_{2})}  & = \frac{f'(c)}{g'(c)} = \lim_{ h \to 0 } \frac{f(c+h)}{g(c+h)} = \lim_{ x \to c^{+} } \frac{f(c)}{g(c)}\\
 \implies \lim_{ x \to c^{+} } \frac{f(x)}{g(x)} & =\frac{f'(c)}{g'(c)} =L
 
 
@@ -163,6 +163,59 @@ x\in [c,c+h]  & \implies \exists c_{2} \in [c,c+h] \text{ s.t.} & \text{from cau
 $$
 
 Note to extend this to infinity, then we simply set $x=\frac{1}{t}$, then $\lim_{ t \to 0 }$, and then solve from there as per usual. 
+## LHoR For Infinities
+> [!caution] Note
+> From this point afterwards, this was written on 11-23. 
+
+Consider the case of LHoR in the case of $\frac{\infty}{\infty}$, we can prove it by taking the following: 
+
+Consider that if $f(x),g(x) \to \pm \infty$, as $x\to \pm \infty$ or $x\to c$ or $x \to c^{\pm}$ then: 
+If $$\frac{f'(x)}{g'(x)} \to L$$
+$$\implies \frac{f(x)}{g(x)} \to L$$
+The proof of this extension of LHoR is left as a proof to the next term. 
+### Example
+For instance, take the following: 
+$$
+\begin{align}
+\lim_{ x \to \infty } \frac{\ln x}{x} = \frac{\infty}{\infty} \\
+\lim_{ x \to \infty } \frac{\frac{1}{x}}{1}  & = 0 & \implies \lim_{ x \to \infty } \frac{\ln x}{x} = 0
+\end{align}
+$$
+Consider, why couldn't we simply take the reciprocal, then: 
+$$
+\begin{align}
+\lim_{ x \to \infty }  \frac{\frac{1}{x}}{\frac{1}{\ln x}} = \frac{0}{0} \\
+\lim_{ x \to \infty } \frac{-\frac{1}{x^{2}}}{x} = 
+\end{align}
+$$
+
+Consider now the following case: 
+$$
+\begin{align}
+\lim_{ x \to \infty }  \frac{x^{3}}{e^{x}} = \frac{\infty}{\infty} \\
+\lim_{ x \to \infty } \frac{3x^{2}}{e^{x}}= \frac{\infty}{\infty}
+\end{align}
+$$
+Note that here, we have to effectively perform LHoR three times. We will introduce the following notation to express this: 
+$$
+\lim_{ x \to \infty } \frac{x^{3}}{e^{x}} \stackrel{*}{=} \lim_{ x \to \infty }  \frac{3x^{2}}{e^{x}} \stackrel{*}{=} \lim_{ x \to \infty }  \frac{6x}{e^{x}} \stackrel{*}{=} \lim_{ x \to \infty } \frac{6}{e^{x}} = 0
+$$
+Where the $\stackrel{*}{=}$  indicator means that we use LHoR. The above result actually gives us the following: 
+
+> Generally: 
+> $$\lim_{ x \to \infty } \frac{x^{m}}{e^{x}} = 0$$
+> For $m >0$ and $m$ being an integer. 
+
+## Other Indeterminate Forms 
+Consider now the following expression: 
+$$
+\lim_{ x \to 0^{+} } x^{x} =0^{0}
+$$
+What do we do in this case? we can express this as the exponential of the logarithm, that is: 
+$$
+\lim_{ x \to 0^{+} } x^{x} = \lim_{ x \to 0^{+} } e^{x\ln(x)}
+$$
+
 
 
 ---
