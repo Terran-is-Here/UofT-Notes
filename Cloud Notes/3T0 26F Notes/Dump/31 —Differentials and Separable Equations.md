@@ -1,11 +1,11 @@
 ---
-updated_at: 2026-11-23T11:41:07.798-05:00
-edited_seconds: 940
+updated_at: 2026-11-23T11:56:52.364-05:00
+edited_seconds: 1150
 course: ESC194H1
 tags:
   - ESC194H1
 "Lecture #": 31
-Lecture Date: 2026-11-26
+Lecture Date: 2026-11-23
 Week: 11
 Created: November 21st 2026, 4:08:52 pm
 ---
@@ -49,21 +49,94 @@ Differential equations are defined as the following:
 
 A trivial case could be: 
 $$
-\frac{dy}{dx} = ky
+\frac{dy}{dx} = ky\tag{1st order ODE}
 $$
 Where this corresponds to exponential growth (the solution is $y$. We also have Newton's Second Law: 
 $$
-F = ma = m \frac{d^{2}x}{dt^{2}}
+F = ma = m \frac{d^{2}x}{dt^{2}}\tag{2nd order ODE}
 $$
 However, things could also get more complicated in terms of other differentials, such as Faraday's Law: 
 $$
-\nabla \times \vec{E} = -\frac{\vec{B}}{dt}
+\nabla \times \vec{E} = -\frac{\vec{B}}{dt}\tag{1st order PDE}
 $$
-Where this is a 3D equation system of differentials. We also have Gauss's Law: 
+Where this is a 3D equation system of differentials. We also have (whatever this was???)
 $$
-pC_{p} \frac{dT}{dt}
+pC_{p} \frac{dT}{dt} = u \frac{dp}{dx} + \frac{d}{dy}\left( k \frac{dT}{dy} \right) + \mu\left( \frac{du}{dy} \right)^{2}\tag{2nd order PDE}
 $$
-= u dp
+
+Stepping back to things we can deal with, we have two categories of Differential Equation: 
+* An Ordinary Differential Equation (ODE), where there exists **one** independent variable. 
+* A Partial Differential Equation(PDE), where there exists more than one independent variable. 
+
+We also have the concept of the *order* of the differential equation, where the order is equivalent to the highest degree derivative taken. (or when there are derivatives of derivatives). 
+
+We also have the concept if a differential is linear or non-linear, based on the **exponents present on the corresponding derivatives**. Non-linear differentials are non-trivial to solve, at least for our position. 
+
+The idea of Differential Equations, is that we want to find some function, some solution to our differential equations.
+
+> [!ila] Solutions
+> A function is a solution to a differential equation  if, substitution of the function and it's derivatives leads to an identity. 
+
+### Solutions to DE (Example) 
+For instance, consider the following differential equation: 
+$$
+\frac{dy}{dx} -\frac{y}{x} = 2x+\frac{4}{x}
+$$
+This is a first order, linear, differential. We suggest that: 
+$$
+y(x) = 2x^{2} + 7x - 4
+$$
+Substituting this back in, and taking the derivative: 
+$$
+y'(x) = 4x + 7
+$$
+Then: 
+$$
+\begin{align}
+4x + 7 -2x - 7 + \frac{4}{x}  & = 2x + \frac{4}{x} \\
+2x + \frac{4}{x} & = 2x + \frac{4}{x}
+\end{align}
+$$
+
+We also have the following trivial differential: 
+$$
+\frac{dy}{dx} = f(x) \implies y = F(x) = \int f(x) \implies y=F(x) + C
+$$
+As: 
+$$
+\frac{dy}{dx} = \frac{d}{dx}(F(x) +C) = f(x) =f(x)
+$$
+as desired. Note that the constants that arise within differential equations often arise from the starting parameters of some function (or in other words, the initial value of these functions). We then define the following: 
+
+> [!theorem] General Solution
+> A general solution to a DE is an $n$-parameter *family* of solutions, if they include all solutions of the Differential Equation. 
+> $n$ corresponds to the order of the differential equation (normally, though not always). 
+
+> [!theorem] Solution to Initial Value Problems (Constants) 
+> A Solution to an Initial Value Problem is when constants are assigned to particular values of our solution. There exists generally two types of sources where these can originate: 
+> * Initial Value Problems (given $f(0)$ of the primary variable, and the corresponding derivatives)
+> 	* These normally have solutions? 
+> * Boundary Value Problems (given the primary variable's value at some boundaries of time, and or the corresponding derivatives). 
+> 	* These can sometimes not have an analytic solution that we can solve. 
+
+## Separable Equations (LEC) 
+We can express a first order differential equation as the following: 
+$$
+\frac{dy}{dx} = F(x,y)
+$$
+Note that in the case where, $f(x,y)$ can be factored into a function of $x$ and a function of $y$; where: 
+$$
+F(x,y) = g(x)f(y) \lor \frac{g(x)}{f(y)}
+$$
+This allows us to separate our functions of $x$ and $y$ within our differential: 
+$$
+\begin{align}
+\frac{dy}{dx}  & = \frac{g(x)}{f(y)} \\
+\implies f(y)\,dy & = g(x)\,dx \\
+\int f(y)\,dy & = \int g(x)\,dx
+\end{align}
+$$
+Then we can simply solve for the corresponding results of this integral. 
 
 
 ---
