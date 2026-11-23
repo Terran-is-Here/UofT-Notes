@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-22T20:50:15.378-05:00
-edited_seconds: 690
+updated_at: 2026-11-22T21:07:51.609-05:00
+edited_seconds: 810
 course: PHY180H1
 tags:
   - PHY180H1
@@ -58,14 +58,13 @@ From here, we actually derive the Equations of Simple Harmonic Motion:
 > $$\begin{align}a_{max}  & = A\omega^{2} \\v_{max} & =A\omega\end{align}$$
 > And $A$ itself is equivalent to the maximum deflection present within the spring. 
 
-> Extending further into ODEs
-> Note that with the expressions above, and with our differential, we can actually derive expressions for the Amplitude of our system from the initial conditions of our system (an IVP). Consider if we are given some value $a(0)$ and $v(0)$: 
-
-$$
-\begin{align}
-
-\end{align}
-$$
+> [!caution]- Extending further into ODEs
+> Note that with the expressions above, and with our differential, we can actually derive expressions for the Amplitude of our system from the initial conditions of our system (an IVP). Consider if we are given some value $x(0)$ and $v(0)$: 
+> $$\begin{align}x(0)  & = A\cos(\phi) \\v(0)  & = -A\omega\sin(\phi) \to \frac{v(0)}{\omega} = -A\sin \phi\end{align}$$
+> Then we can see that:
+> $$\begin{align}x(0)^{2} + \left( \frac{v(0)}{\omega} \right)^{2}  &  = A^{2}\cos ^{2}(\phi) + A^{2}\sin ^{2} \\& =A^{2}(\cancel{ \cos ^{2}(\phi) + \sin ^{2}(\phi) }) & \cos ^{2}(\phi) + \sin ^{2}(\phi) = 1 \\x(0)^{2} + \left( \frac{v(0)}{\omega} \right)^{2} & = A^{2} \\\sqrt{ x(0)^{2} + \left( \frac{v(0)}{\omega} \right)^{2} }  & =A\end{align}$$
+> Consider as well that: 
+> $$\begin{align}\frac{\frac{v(0)}{\omega}}{x(0)}  & = \frac{-A\sin \phi}{A\cos \phi} \\\frac{v(0)}{\omega x(0)} & =-\tan \phi \\-\frac{v(0)}{\omega x(0)}  & =\tan \phi\end{align}$$
 
 Plugging this into our differential, we find that: 
 $$
