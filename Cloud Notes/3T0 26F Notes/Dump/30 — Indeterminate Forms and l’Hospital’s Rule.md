@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-23T11:20:26.039-05:00
-edited_seconds: 1320
+updated_at: 2026-11-23T11:33:22.090-05:00
+edited_seconds: 1570
 course: ESC194H1
 tags:
   - ESC194H1
@@ -215,6 +215,56 @@ What do we do in this case? we can express this as the exponential of the logari
 $$
 \lim_{ x \to 0^{+} } x^{x} = \lim_{ x \to 0^{+} } e^{x\ln(x)}
 $$
+In this case, then we simply analyze the exponent: 
+$$
+\begin{align}
+\lim_{ x \to 0^{+} } x^{x} & = \lim_{ x \to 0^{+} } e^{x\ln x}  \\
+ & =e^{\lim_{ x \to 0^{}+ } x\ln x} \tag{1.1}\\
+ & \implies \lim_{ x \to 0^{+} } x\ln x \\
+ & =\lim_{ x \to 0^{+} } \frac{\ln x}{\frac{1}{x}}\stackrel{*}{=}\lim_{ x \to 0^{+} } \frac{\frac{1}{x}}{-\frac{1}{x^{2}}} = \lim_{ x \to 0^{+} } x = 0 \\
+ & \implies \lim_{ x \to 0^{+} } e^{x\ln x} = e^{0} = 1
+\end{align}
+$$
+* Note, that for $(1.1)$, we note that we can simply pull the limit into the exponential function, then evaluate from there. 
+Then: 
+$$
+\lim_{ x \to 0^{+} } x^{x} = 1
+$$
+
+Consider now the following expression: 
+$$
+\lim_{ x \to \infty } (x+2)^{2/\ln(x)} = \infty^{0}
+$$
+Then exponentiating it, we find that: 
+$$
+\begin{align}
+\lim_{ x \to \infty } (x+2)^{2/\ln(x)}  & = \lim_{ x \to \infty }  e^{\ln(x+2)^{2/\ln(x)}} \\
+ & = \lim_{ x \to \infty } e^{\frac{2}{\ln(x)}\ln(x+2)} \\
+ & \implies \lim_{ x \to \infty } \frac{2\ln (x+2)}{\ln(x)} \\
+ & \stackrel{*}{=}\lim_{ x \to \infty }  \frac{\frac{2}{x+2}}{\frac{1}{x}} = \lim_{ x \to \infty } \frac{2x}{x+2}=\frac{\infty}{\infty} \\
+ & \stackrel{*}{=}\lim_{ x \to \infty }  \frac{2}{1} = 2 \\
+ & \implies \lim_{ x \to \infty } e^{\frac{2}{\ln((x))}\ln(x+2)} = e^{2} \\
+ & \implies \lim_{ x \to \infty } (x+2)^{2/\ln (x)} = e^{2}
+\end{align}
+$$
+
+Consider now the following problem: 
+
+$$
+\lim_{ x \to \infty } \left[ \sin\left( \frac{\pi}{x} + \frac{\pi}{2} \right) \right]^{x} = 1^{\infty}
+$$
+Then, taking the exponent, then: 
+$$
+\begin{align}
+\lim_{ x \to \infty } \left[ \sin\left( \frac{\pi}{x}+\frac{\pi}{2} \right) \right]^{x}  & = \lim_{ x \to \infty } e^{\ln\left[ \sin\left(  \frac{\pi}{x} + \pi/2 \right)^{x} \right]} \\
+ & \implies \lim_{ x \to \infty } x\ln\left[ \sin\left( \frac{\pi}{x} + \frac{\pi}{2} \right) \right] \\
+ & = \lim_{ x \to \infty } \frac{\ln\left[ \sin\left( \frac{\pi}{x} + \frac{\pi}{2} \right) \right]}{\frac{1}{x}} = \frac{0}{0} \\
+ & \stackrel{*}{=}\lim_{ x \to \infty }  \frac{\frac{\cos\left( \frac{\pi}{x} + \frac{\pi}{2} \right) \frac{\pi}{x}}{\sin\left( \frac{\pi}{x}+\frac{\pi}{2} \right)}}{\frac{-1}{x^{2}}} \\
+ & = \lim_{ x \to \infty }  \frac{\cos\left( \frac{\pi}{x}+\frac{\pi}{2} \right)* \frac{\pi}{x}} {\sin\left( \frac{\pi}{x} + \frac{\pi}{2} \right)* -\frac{1}{x^{2}}} = \frac{0\pi}{1} = 0 \\
+ & \implies \lim_{ n \to \infty } \left[ \sin\left( \frac{\pi}{x} + \frac{\pi}{2} \right) \right]^{x } =e^{0} = 1
+\end{align}
+$$
+
 
 
 

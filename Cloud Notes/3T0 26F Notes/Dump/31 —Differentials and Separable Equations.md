@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-21T22:38:49.614-05:00
-edited_seconds: 870
+updated_at: 2026-11-23T11:41:07.798-05:00
+edited_seconds: 940
 course: ESC194H1
 tags:
   - ESC194H1
@@ -18,6 +18,53 @@ Next: [[32 — Exponential Growth, Decay and Population Growth]]
 > Also, refer to [[18— Numerical Solutions to Second Order Differential Equations]] and [[17 — Numerical Solutions to First Order Differential Equations]] from ESC103, as these also pertain to differentials. 
 --- 
 # Lecture Notes
+## Introduction
+Recall that velocity is equivalent to the first derivative of position, and acceleration being the second derivative of position, that is: 
+$$
+\begin{align}
+v  & = \frac{dx}{dt}  \\
+a  & =\frac{dv}{dt} = \frac{d^{2}x}{dt^{2}}
+\end{align}
+$$
+
+In many field of engineering, what normally happens is that a function is often defined in terms of how other characteristics present within the equation change. For instance, consider the temperature within a Fusion Reactor: 
+
+$$
+\frac{dT}{dt} \propto P_{in}-P_{out}
+$$
+Where the more power is input, the rate of the change of temperature increases; if less power is input, then the rate of change of the temperature decreases. Consider, that intuitively, this would also depend on the inherent temperature of our plasma, where: 
+$$
+\frac{dT}{dt} \propto AT^{-3/2} - BT^{1/2} - C \frac{dT}{dx} + P^{fus}(T)
+$$
+Where:
+* $AT^{-3/2}$ corresponds to resistive heating
+* $Bt^{1/2}$ corresponds to bremsstrahlung. 
+* $C \frac{dT}{dx}$ corresponds to fusion heating, 
+* $P^{fus}(T)$ corresponds to the power from fusion
+Note how all of these are correlated to real terms and properties, however the solution to this is complicated. This is an example of a Differential Equation. 
+## Differential Equations (LEC)
+Differential equations are defined as the following: 
+> [!theorem] Differential Equations (LEC) 
+> A Differential Equation (DE) is an equation which contains an unknown function and one or more of it's derivatives. 
+
+A trivial case could be: 
+$$
+\frac{dy}{dx} = ky
+$$
+Where this corresponds to exponential growth (the solution is $y$. We also have Newton's Second Law: 
+$$
+F = ma = m \frac{d^{2}x}{dt^{2}}
+$$
+However, things could also get more complicated in terms of other differentials, such as Faraday's Law: 
+$$
+\nabla \times \vec{E} = -\frac{\vec{B}}{dt}
+$$
+Where this is a 3D equation system of differentials. We also have Gauss's Law: 
+$$
+pC_{p} \frac{dT}{dt}
+$$
+= u dp
+
 
 ---
 # Pre-Lecture Notes
