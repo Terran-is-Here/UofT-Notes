@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-22T18:55:15.588-05:00
-edited_seconds: 620
+updated_at: 2026-11-23T16:23:14.943-05:00
+edited_seconds: 650
 course: PHY180H1
 tags:
   - PHY180H1
@@ -68,7 +68,7 @@ dK  & = \frac{1}{2}mv_{2}^{2} - \frac{1}{2}mv_{1}^{2}  & \text{from conservation
 \end{align}
 $$
 
-And the corresponding change in the gravitationalpotential energy of the fluid: 
+And the corresponding change in the gravitational potential energy of the fluid: 
 
 $$
 \begin{align}
@@ -97,6 +97,8 @@ Noting that in this system, conservation of energy is preserved, and that our ch
 >
 > Where $p$ corresponds to the pressure at some point, $h$ represents the height above some origin, and $v$ corresponds to the flow velocity of the fluid. 
 
+> [!ila] In Lecture Addendum
+> Note that for Bernoulli's Equation, this **assumes a frictionless fluid**. In other words, Conservation of Energy MUST hold true. 
 ### Application
 We can easily see the ramifications of Bernoulli's Equation in the following cases:
 
