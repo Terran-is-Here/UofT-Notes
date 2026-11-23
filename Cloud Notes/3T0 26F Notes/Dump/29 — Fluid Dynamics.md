@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-23T16:23:14.943-05:00
-edited_seconds: 650
+updated_at: 2026-11-23T16:35:38.442-05:00
+edited_seconds: 670
 course: PHY180H1
 tags:
   - PHY180H1
@@ -18,6 +18,8 @@ Next: [[30 — Simple Harmonic Motion]]
 
 --- 
 # Lecture Notes
+## Entrainment 
+With a higher pressure on the outside of a fluid stream, high velocity fluid forces other fluids into such a stream, in a process known as Entrainment. 
 
 ---
 # Pre-Lecture Notes
