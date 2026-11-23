@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-23T12:46:19.322-05:00
-edited_seconds: 470
+updated_at: 2026-11-23T12:56:12.115-05:00
+edited_seconds: 600
 course: ESC103H1
 tags:
   - ESC103H1
@@ -122,4 +122,35 @@ $$
 y_{1}' \approx \frac{y_{2}-y_{0}}{2\Delta x} \tag{using central difference method}
 $$
 
+> For our $y''$ term: 
 
+To find $y''_{1}$ is the same as asking for the slope of the slope present within this function. Then we can find the slope between $y_{0},y_{1}$ and $y_{1},y_{2}$, then: 
+* Let the slope of $y_{0},y_{1}$ be $y'_{L}$, 
+* The slope of $y_{1},y_{2}$ be $y'_{R}$, 
+Then we find that: 
+
+$$
+\begin{align}
+y''_{1}  & \approx \frac{y'_{R}-y'_{L}}{\Delta x} \\
+ & \approx \frac{1}{\Delta x}\left[ \frac{y_{2}-y_{1}}{\Delta x} -\frac{y_{1}-y_{0}}{\Delta x} \right] \\
+ & = \frac{y_{2} - 2y_{1} + y_{0}}{(\Delta x)^{2}}
+\end{align}
+$$
+![[19 — Boundary Value Problems-1795456212939.webp|344]]
+
+Noting that we have turned all of our terms into algebraic expressions, then retaking our differential equation: 
+$$
+\begin{align}
+y''_{1} + 2y_{1}' + 10y_{1}  & = 0 \\
+\frac{y_{2} - 2y_{1} + y_{0}}{(\Delta x)^{2}} + 2*\left[ \frac{y_{2}-y_{0}}{2\Delta x} \right] + 10y_{1}  & = 0 \\
+\frac{y_{2} - 2y_{1} + y_{0}}{(\Delta x)^{2}} + \frac{y_{2}-y_{0}}{\Delta x} + 10y_{1}  & = 0 \\
+\left[ \frac{1}{(\Delta x)^{2}} - \frac{1}{\Delta x} \right]y_{0} + \left[ -\frac{2}{(\Delta x)^{2}} + 10 \right]y_{1} + \left[ \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} \right]y_{2}  & = 0 \\
+\vdots \\
+\text{some algebraic solution for }y_{1}
+\end{align}
+$$
+Note how this relies entirely on how our neighbors are defined! But note how this is a low accuracy approximation. We have to increase our term of $n$. 
+
+Consider if $n=3$, then we know our endpoints, but we now have two points in between where we don't know their value: 
+![[19 — Boundary Value Problems-1795456567052.webp]]
+Consider that we have turned our earlier expression into a linear expression. Consider now as well that we now have a system of **two differentials** that we need to solve. 
