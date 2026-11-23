@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC180 Hub]]
 Previous: [[26 — ESC180 Lecture 26 — Recursive Functions]]
-Next: [[28 — More Recursion]]
+Next: [[28 — Even More Recursion]]
 
 --- 
 # Lecture Notes
