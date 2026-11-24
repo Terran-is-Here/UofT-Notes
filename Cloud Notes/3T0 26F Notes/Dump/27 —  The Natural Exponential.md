@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-21T22:38:25.548-05:00
-edited_seconds: 1050
+updated_at: 2026-11-24T13:41:19.476-05:00
+edited_seconds: 1060
 course: ESC194H1
 tags:
   - ESC194H1
@@ -206,7 +206,8 @@ By induction, we can see that:
 $$
 e^{x} > 1 + x + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \dots +\frac{x^{n}}{n!}
 $$
-
+> [!ila] Note
+> This originates from the concept that order is preserved when taking the integral of a set of functions. 
 
 ---
 # Pre-Lecture Notes
