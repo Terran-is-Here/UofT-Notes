@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-23T12:56:12.115-05:00
-edited_seconds: 600
+updated_at: 2026-11-24T17:26:26.303-05:00
+edited_seconds: 790
 course: ESC103H1
 tags:
   - ESC103H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[18— Numerical Solutions to Second Order Differential Equations]]
-Next:
+Next: [[20 — Inverse Matrixes]]
 > [!quote] Recommended Reading 
 > [[17— Optimization, Antiderivatives and Sigma Notation]], [[19 — The Definite Integral]]
 
@@ -154,3 +154,41 @@ Note how this relies entirely on how our neighbors are defined! But note how thi
 Consider if $n=3$, then we know our endpoints, but we now have two points in between where we don't know their value: 
 ![[19 — Boundary Value Problems-1795456567052.webp]]
 Consider that we have turned our earlier expression into a linear expression. Consider now as well that we now have a system of **two differentials** that we need to solve. 
+
+### More Complex
+Then for our first point, we find that our system is thus: 
+$$
+x=x_{1}, \left[ \frac{1}{(\Delta x)^{2}} - \frac{1}{\Delta x} \right]y_{0} + \left[ \frac{2}{-(\Delta x)^{2}}+ 10 \right]y_{1} + \left[ \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} \right]y_{2} = 0
+$$
+Noting that in this case, we don't know what our term of $y_{1},y_{2}$ are. 
+$$
+x=x_{2}, \left[ \frac{1}{(\Delta x)^{2}} - \frac{1}{\Delta x} \right]y_{1} + \left[ \frac{2}{-(\Delta x)^{2}}+ 10 \right]y_{2} + \left[ \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} \right]y_{3} = 0
+$$
+Noting that now, we have two systems of equations, and that we now solve for our values. We can solve this for $n$ intervals as the following expression, where we have $n-1$ unknowns and $n-1$ equations ($(n-1)\times(n-1)$ matrix): 
+
+Thus: 
+$$
+\begin{align}
+x=x_{1} & \implies\left[ \frac{1}{(\Delta x)^{2}} - \frac{1}{\Delta x} \right]y_{0} + \left[ \frac{2}{-(\Delta x)^{2}}+ 10 \right]y_{1} + \left[ \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} \right]y_{2} = 0\\
+x=x_{2}, & \implies \left[ \frac{1}{(\Delta x)^{2}} - \frac{1}{\Delta x} \right]y_{1} + \left[ \frac{2}{-(\Delta x)^{2}}+ 10 \right]y_{2} + \left[ \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} \right]y_{3} = 0 
+\end{align}
+$$
+Writing it out in a system, then: 
+$$
+\begin{bmatrix}
+-\frac{2}{(\Delta x)^{2}}+10 & \frac{1}{\Delta x^{2}}+\frac{1}{\Delta x} & 0 & 0 & \dots \\
+\frac{1}{\Delta x^{2}}-\frac{1}{\Delta x} & -\frac{2}{(\Delta x)^{2}}+10 & \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} & 0 & \dots \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+\dots & \dots & \dots & \dots & \frac{1}{(\Delta x)^{2}} - \frac{1}{\Delta x} - \frac{2}{(\Delta x)^{2}}+10
+\end{bmatrix}
+\begin{bmatrix}
+y_{1}\\y_{2}\\ \vdots \\y_{n-1}
+\end{bmatrix} = 
+\begin{bmatrix}
+\left[ \frac{1}{\Delta x} - \frac{1}{(\Delta x)}^{2} \right]y_{0} \\
+0 \\ \vdots \\
+-\left[ \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} \right]y_{n}
+\end{bmatrix}
+$$
+
+

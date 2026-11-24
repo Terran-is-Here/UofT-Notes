@@ -11,7 +11,7 @@ Created: November 17th 2026, 5:16:55 pm
 ---
 Hub: [[ESC103 Hub]]
 Previous: [[17 — Numerical Solutions to First Order Differential Equations]]
-Next: [[19 — Boundary Value Problems]]
+Next: [[19,20 — Boundary Value Problems]]
 
 --- 
 # Lecture Notes
