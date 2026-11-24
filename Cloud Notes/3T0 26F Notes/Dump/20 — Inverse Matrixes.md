@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-24T17:49:31.563-05:00
-edited_seconds: 190
+updated_at: 2026-11-24T18:00:43.258-05:00
+edited_seconds: 290
 course: ESC103H1
 tags:
   - ESC103H1
@@ -79,3 +79,13 @@ The question then arises, can we have some $T^{-1}=Q$? Some inverse transformati
 > $$Q(T(\vec{u})) = \vec{u} = T(Q(\vec{u}))$$
 > If some $Q$ exists, then we note that $Q$ is the inverse of $T$, and $T$ is a inversible matrix, defined by the following notation: 
 > $$Q = T^{-1}$$
+
+Note that we also have the additional requirement for a linear transformation to be invertible; it must be: 
+1. Injective: 
+   If, for some vector $T(\vec{u}) \mapsto \vec{v}$, and for some $T(\vec{w}) \mapsto \vec{v}$, then $\vec{u}=\vec{w}$. In other words, if two vectors map to the same vector, then they must be the same vector. 
+   
+   Recall that we pragmatically already saw this in [[11 — A-CR Matrix Factorization]], such as $A\vec{x}=\vec{b}$, where solutions are unique if and only if $T(\vec{x})$ is injective 
+2. Surjective: 
+   For some linear transformation $T$, $T$ reaches all vectors in the target space, that is:$$\text{surjective}\iff T(\vec{a}):\mathbb{R}^{n} \mapsto \mathbb{R}^{n}$$
+   Then this implies that this linear transformation reaches **all** of $\mathbb{R}^{n}$. Or, in the converse, a function is not surjective if it does not reach all of $\mathbb{R}^{n}$. 
+   In terms of a geometric interpretation, then for some $A\vec{x}=\vec{b}$, the column space of $A$ with respects to the dimension $\mathbb{R}^{n}$ of $\vec{x}$, then the column space of $A$ does not reach all of $\mathbb{R}^{n}$. 
