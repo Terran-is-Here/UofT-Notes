@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-23T17:51:44.598-05:00
-edited_seconds: 590
+updated_at: 2026-11-23T17:57:13.709-05:00
+edited_seconds: 620
 course: ESC180H1
 tags:
   - ESC180H1
@@ -186,3 +186,12 @@ def power_rec_fast(x,n):
 ```
 
 Where this calls itself twice per call. In this case, the tree in terms of a vertical manner is simply us dividing by two, where we eventually make $2^{k-1}=n$ calls at the end for our value of $n$, thus this gives us $O(n)$ time complexity in the end. 
+
+We can actually implement this even slower: 
+```python
+def power2_slow(n): 
+	if n == 1: 
+		return 2
+	return power2_slow(n-1)+power2_slow(n-1)
+```
+This makes us take the geometric sequence, where this actually takes $O(2^{n})$ time complexity.
