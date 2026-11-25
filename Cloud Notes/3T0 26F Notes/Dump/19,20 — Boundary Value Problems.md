@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-24T17:26:26.303-05:00
-edited_seconds: 790
+updated_at: 2026-11-25T11:17:31.576-05:00
+edited_seconds: 800
 course: ESC103H1
 tags:
   - ESC103H1
@@ -175,20 +175,20 @@ x=x_{2}, & \implies \left[ \frac{1}{(\Delta x)^{2}} - \frac{1}{\Delta x} \right]
 $$
 Writing it out in a system, then: 
 $$
-\begin{bmatrix}
--\frac{2}{(\Delta x)^{2}}+10 & \frac{1}{\Delta x^{2}}+\frac{1}{\Delta x} & 0 & 0 & \dots \\
-\frac{1}{\Delta x^{2}}-\frac{1}{\Delta x} & -\frac{2}{(\Delta x)^{2}}+10 & \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} & 0 & \dots \\
-\vdots & \vdots & \vdots & \ddots & \vdots \\
-\dots & \dots & \dots & \dots & \frac{1}{(\Delta x)^{2}} - \frac{1}{\Delta x} - \frac{2}{(\Delta x)^{2}}+10
-\end{bmatrix}
-\begin{bmatrix}
-y_{1}\\y_{2}\\ \vdots \\y_{n-1}
-\end{bmatrix} = 
-\begin{bmatrix}
-\left[ \frac{1}{\Delta x} - \frac{1}{(\Delta x)}^{2} \right]y_{0} \\
-0 \\ \vdots \\
--\left[ \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} \right]y_{n}
-\end{bmatrix}
+	\begin{bmatrix}
+	-\frac{2}{(\Delta x)^{2}}+10 & \frac{1}{\Delta x^{2}}+\frac{1}{\Delta x} & 0 & 0 & \dots \\
+	\frac{1}{\Delta x^{2}}-\frac{1}{\Delta x} & -\frac{2}{(\Delta x)^{2}}+10 & \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} & 0 & \dots \\
+	\vdots & \vdots & \vdots & \ddots & \vdots \\
+	\dots & \dots & \dots & \dots & \frac{1}{(\Delta x)^{2}} - \frac{1}{\Delta x} - \frac{2}{(\Delta x)^{2}}+10
+	\end{bmatrix}
+	\begin{bmatrix}
+	y_{1}\\y_{2}\\ \vdots \\y_{n-1}
+	\end{bmatrix} = 
+	\begin{bmatrix}
+	\left[ \frac{1}{\Delta x} - \frac{1}{(\Delta x)}^{2} \right]y_{0} \\
+	0 \\ \vdots \\
+	-\left[ \frac{1}{(\Delta x)^{2}} + \frac{1}{\Delta x} \right]y_{n}
+	\end{bmatrix}
 $$
 
 
