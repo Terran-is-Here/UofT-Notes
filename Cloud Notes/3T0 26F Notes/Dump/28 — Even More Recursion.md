@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-23T17:57:13.709-05:00
-edited_seconds: 620
+updated_at: 2026-11-25T17:12:31.135-05:00
+edited_seconds: 630
 course: ESC180H1
 tags:
   - ESC180H1
@@ -10,7 +10,7 @@ Week:
 ---
 Hub: [[ESC180 Hub]]
 Previous: [[27 — Runtime Complexity and more Recursion]]
-Next:
+Next: [[29 — Mergesort]]
 
 --- 
 # Lecture Notes
