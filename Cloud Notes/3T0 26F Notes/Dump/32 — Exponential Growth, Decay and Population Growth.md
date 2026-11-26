@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-22T11:55:35.567-05:00
-edited_seconds: 950
+updated_at: 2026-11-26T14:43:51.612-05:00
+edited_seconds: 1140
 course: ESC194H1
 tags:
   - ESC194H1
@@ -15,6 +15,68 @@ Next: [[33 — Linear Equations]]
 > Sections 6.5 and 9.4 of the Stewart Textbook
 --- 
 # Lecture Notes
+## Exponential Growth
+Consider the following: 
+$$
+\frac{df}{dt} = kf(t)
+$$
+Where the rate of change of a function, is equivalent to the value of the function multiplied by some factor of time: 
+$$
+\frac{1}{f} \frac{df}{dt} = k \implies k = \frac{d}{dt}\ln(f) \implies kt + C^{*} = \ln f
+$$
+Then: 
+
+$$
+f = e^{kt+C^{*}} = e^{C^{*}}e^{kt} = Ce^{kt}
+$$
+Where we let $C = e^{C^{*}}$. 
+
+Note that: 
+* $f(0) = C$, that is $C$ is equivalent to our initial value. 
+* $k$ represents the growth constant of our expression.
+For instance, take the following this example: 
+### Examples
+> Assume that in 1900, there were 1000 rabbits in Australia. Given a population growth rate of $1.3$, then: 
+
+$$
+\frac{dP}{dt} = 1.3P
+$$
+How many rabbits are there today? 
+$$
+P = 1000 * e^{1.3*126} = 1.37\times 10^{74} \text{ rabbits}
+$$
+### Doubling Time
+Note that another way we can express a population growth function is in terms of the time to double: 
+$$
+\begin{align}
+2P_{0}  & = P_{0}e^{kt_{2}} \\
+2 & = e^{kt_{2}} \\
+\ln(2) & = kt_{2} \\
+\frac{\ln(2)}{k}= t_{2}
+\end{align}
+$$
+For instance, consider that $k=0.011$ Thus: 
+$$
+\frac{\ln(2)}{0.011} = t_{2} = 63\text{ years to double population}
+$$
+### Radioactive Decay
+Additionally, we also have: 
+
+$$
+\frac{dN}{dt} = -kP
+$$
+Where this is always decreasing, integrating gives us: 
+$$
+N(t) = N(0)e^{-kt}
+$$
+For a Half Life: 
+$$
+\begin{align}
+\frac{1}{2}N(0)  & = N(0) e^{-kt_{h}} \\
+t_{2} & = \frac{\ln(2)}{k}
+\end{align}
+$$
+
 
 ---
 # Pre-Lecture Notes

@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-26T14:22:57.415-05:00
-edited_seconds: 1420
+updated_at: 2026-11-26T14:32:04.550-05:00
+edited_seconds: 1550
 course: ESC194H1
 tags:
   - ESC194H1
@@ -203,8 +203,36 @@ I & = 10- \frac{A}{10}e^{ ^{-2t} }  & I(0)  = 9 \\
 \therefore I  & =10(1-e^{-2t})
 \end{align}
 $$
+## Orthogonal Trajectories (LEC) 
+Consider a family of functions, or of curves $f(x)$. An orthogonal trajectory to $f(x)$, would be a line that intersects all of these curves, where the point of intersection is orthogonal. Thus, considering this set, then: 
 
-
+$$
+f' = -\frac{1}{g'}
+$$
+For some family of $f'$ and $g'$ of functions. For instance: 
+$$
+y^{2} = kx^{3}
+$$
+First finding $y'$, then: 
+$$
+\begin{align}
+2yy' & = 3kx^{2} \implies y' = \frac{3kx^{2}}{2y} \\
+ \implies k = \frac{y^{2}}{x^{3}}  & \implies y' = \frac{3y}{2x}
+\end{align}
+$$
+Thus, our orthogonal trajectories are given by: 
+$$
+\begin{align}
+y'  & = -\frac{2x}{3y} \\
+\int 3y\,dy & = \int-2x \,dx \\
+\frac{3y^{2}}{2} & = -x^{2} +C
+\end{align}
+$$
+Or: 
+$$
+\frac{3y^{2}}{2} +x^{2} = C \implies 3y^{2} + 2x^{2}  = 2C
+$$
+Where this is a family of Ellipses. 
 
 
 ---
