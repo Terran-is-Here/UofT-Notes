@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-26T14:43:51.612-05:00
-edited_seconds: 1140
+updated_at: 2026-11-26T14:54:50.444-05:00
+edited_seconds: 1270
 course: ESC194H1
 tags:
   - ESC194H1
@@ -76,6 +76,63 @@ $$
 t_{2} & = \frac{\ln(2)}{k}
 \end{align}
 $$
+#### Example
+Consider that you had some material mass $m$ starting out at 10 years ago. Let $t=0$, and: 
+$$
+\begin{align}
+4 = N_{0}e^{-k_{9}} \\
+3 = N_{0}e^{-k_{10}}
+\end{align}
+$$
+Then: 
+$$
+\frac{4}{3}=e^{-k(9-10)} = e^{k} \implies k =\ln\left( \frac{4}{3} \right) \approx 0.288
+$$
+Then: 
+$$
+\begin{align}
+4 = N_{0}e^{k9} \implies N_{0} = 53.3
+\end{align}
+$$
+Then, solving for the half life: 
+$$
+t_{h} = \frac{\ln(2)}{0.288} = 2.4\text{ years}
+$$
+### Compound Interest
+Consider the concept of compound interest. Note that for Annual interest: 
+$$
+V(t) = V(0)(1+i)^{t}
+$$
+Where this represents the final value after a set of time, $V(0)$ represents the initial value, and $i$ represents the interest rate. For a semi-annual system, then: 
+
+$$
+V(t) = V(0) \left( 1 +\frac{i}{2} \right)^{2t}
+$$
+Generalizing this for any amount of times that we collect interest: 
+$$
+V(t) = V(0)\left( 1 + \frac{i}{n} \right)^{nt}
+$$
+Rewriting $V(0)=P$, then: 
+$$
+\begin{align}
+V(t) = P\left( 1+\frac{i}{n} \right)^{nt}
+\end{align}
+$$
+Consider what happens when we take continuous interest, that is we take the limit of $n\to \infty$, then:
+$$
+\begin{align}
+V(t) &  = \lim_{ n \to \infty } P\left( 1 + \frac{i}{n} \right)^{nt}  & b=\frac{n}{i} \implies n=bi \\
+ & = P\lim_{ b \to \infty } \left( \left( 1+\frac{1}{b} \right)^{b} \right)^{it}  \\
+ & =P\left( \lim_{ b \to \infty } \left( 1+\frac{1}{n} \right)^{b} \right)^{it} & \lim_{ n \to \infty } \left( 1+\frac{1}{n} \right)^{n} = e \\
+ & =Pe^{it}
+\end{align}
+$$
+Applying this: 
+$$
+V(400) = 0.01e^{0.05*400} \approx 5\text{ million}
+$$
+
+
 
 
 ---
