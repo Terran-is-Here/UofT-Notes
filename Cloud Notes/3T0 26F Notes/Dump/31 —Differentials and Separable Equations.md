@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-23T12:28:40.103-05:00
-edited_seconds: 1170
+updated_at: 2026-11-26T14:22:57.415-05:00
+edited_seconds: 1420
 course: ESC194H1
 tags:
   - ESC194H1
@@ -138,15 +138,73 @@ $$
 $$
 Then we can simply solve for the corresponding results of this integral. 
 
-Note that we can prove this by using the identity below: 
+Logically, consider the following: 
 $$
 \begin{align}
-\int f(y)\,dy  & = \int g(x)\,dx \\
-\frac{d}{dx}\int f(y)\,dy & = \frac{d}{dx}\int g(x)\,dx \\
-f(y) \frac{dy}{dx} & = g(x) \\
-\frac{dy}{dx} & =\frac{g(x)}{f(y)}
+h(y) \frac{dy}{dx} & = g(x) \\
+\int h(y) \frac{\,dy}{dx}\,dx &  = \int g(x)\,dx & \frac{d}{dy}H(y) = h(x) \implies \frac{d}{dx}H(y) = h(y) \frac{dy}{dx}  \\
+\therefore  \int h(y) \frac{dy}{dx}\,dx &  = \int \frac{d}{dx}H(y)\,dx = H(y)= \int \frac{dH(y)}{dy}\,dy \\
+ & =\int h(y)\,dy
+
 \end{align}
 $$
+### Examples 
+> [!caution] Note
+>  This section was written during 11-26's Lecture. 
+
+Consider the following IVP: 
+$$
+\begin{align}
+\frac{dy}{dx} & =\frac{1}{2}e^{x}y^{2} & y(0)= -1
+\end{align}
+$$
+Solving it: 
+$$
+\begin{align}
+\frac{1}{y^{2}}dy & = e^{x}dx \\
+\int \frac{2}{y^{2}}\,dy & =\int e^{x}\,dx \\
+-\frac{2}{y}   & =e^{x}+C \\
+y  & = -\frac{2}{e^{x}+C}  & y(0) = 1 \\
+1  & =-\frac{2}{1+C} \implies C = -1 \\
+y  & =-\frac{2}{e^{x+1}}
+\end{align}
+$$
+#### Circuits
+Considering Electric Circuits now, with a resistor. Recall that Ohm's Law gives us: 
+$$
+V = RI
+$$
+Where this is representing the Resistance and the current of an object. For an inductor: 
+$$
+V = L \frac{dI}{dt}
+$$
+Where the voltage drop depends on the change in current. Recall that Kirchioff's Law gives us that: 
+$$
+RI + L \frac{dI}{dt} = E(t)
+$$
+Where $E(t)$ is the voltage supplied at a certain time, thus: 
+$$
+V = L \frac{dI}{dt} + RI
+$$
+Where $I(0) = 0$, noting that this is our dependent variable: 
+$$
+\frac{dI}{dt} = \frac{V-RI}{L}  \implies dI* \frac{L}{V-RI} = dt
+$$
+Thus, let $R=10\Omega$, $L=5$, $v=100$, then: 
+$$
+\begin{align}
+\frac{L}{V-RI} \,dI & =dt \\
+\int \frac{5}{100-10I}\,dI & = \int dt \\
+5\left( -\frac{1}{10} \right)\ln(100-10I)  & = t + C \\
+\left| 100-10I\right|  & = e^{-2(t+c)} \\
+100 - 10I &  = \pm e^{-2c}e^{-2t} & A=e^{-2c} \\
+I & = 10- \frac{A}{10}e^{ ^{-2t} }  & I(0)  = 9 \\
+0 & = 10-\frac{A}{10}  \implies A=100\\
+\therefore I  & =10(1-e^{-2t})
+\end{align}
+$$
+
+
 
 
 ---
