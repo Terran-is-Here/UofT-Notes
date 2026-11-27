@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-27T16:31:10.943-05:00
-edited_seconds: 680
+updated_at: 2026-11-27T16:52:30.822-05:00
+edited_seconds: 980
 course: PHY180H1
 tags:
   - PHY180H1
@@ -88,11 +88,51 @@ $$
 d & =\frac{h\rho}{\rho_{w}}
 \end{align}
 $$
-If ew have some vertical displacement downwards, this will be represented by :
+If we have some vertical displacement downwards, this will be represented by :
 $$
 V_{displaced} = A(d+y)
 $$
-And thus the $$
+And thus the $F$ net is given by the following: 
+$$
+\begin{align}
+m \ddot{y} & = mg - F_{B} \\
+ & =mg - \rho_{w} V_{displaced}g \\
+ & =mg  - \rho_{w} A(d+y)g \\
+ & =mg - \rho_{w}A\left( \frac{h\rho}{\rho_{w}} + y \right)g \\
+ & = mg-\frac{\cancel{ \rho_{w} }Ah\rho}{\cancel{ \rho _{w} }}g - \rho_{w}Ayg  & m=\rho Ah\\
+ & = \rho Ahg - Ah\rho g - \rho_{w}Ayg \\
+\rho \cancel{ A }h \ddot{y} & = \cancel{ \rho A hg-A h\rho g  }- \rho_{w}\cancel{ A }yg \\
+\rho h \ddot{y} & = -\rho_{w}yg \\
+\ddot{y} & = -\frac{\rho_{w}g}{\rho h}y
+\end{align}
+$$
+Then: 
+$$
+\begin{align}
+y  & = A\cos(\omega t + \phi) \\
+\omega & =\sqrt{ \frac{\rho_{w}g}{\rho h} }
+\end{align}
+$$
+### Example
+Luke and Leia have a combined mass of $120kg$ and both grasp a rope of length $30m$ and is attached to a beam above. That beam is halfway across a $10m$ horizontal gap. If they start from rest and swing down and up, just reaching the other side, how long does this take? 
+
+Recall that: 
+$$
+\ddot{y} = -\frac{L}{g}y
+$$
+You have to assume that simple harmonic motion **holds** for this. Note that: 
+$$
+T = 2\pi \sqrt{ \frac{L}{g} }
+$$
+Where this represents some term of time, then to swing from one side to another, will take half the period (as we go from one side to another), then: 
+$$
+\begin{align}
+T_{ans} & = \pi \sqrt{ \frac{L}{g} } \\
+ & = \pi \sqrt{ \frac{30}{9.8} } \approx 5.5\text{s}
+\end{align}
+$$
+
+
 
 ---
 # Pre-Lecture Notes
