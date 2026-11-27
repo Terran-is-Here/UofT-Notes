@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-23T10:43:48.258-05:00
-edited_seconds: 500
+updated_at: 2026-11-27T16:31:10.943-05:00
+edited_seconds: 680
 course: PHY180H1
 tags:
   - PHY180H1
@@ -15,6 +15,84 @@ Next: [[32 — Damped and Forced Oscillations]]
 > University Physics Sections 15.3 to 15.4
 --- 
 # Lecture Notes
+## Notation
+We will refer to the corresponding time derivatives of position with dots (using Newton's Notation): 
+$$
+\begin{align}
+\dot{x} = \frac{dx}{dt} \\
+\ddot{x} = \frac{d^{2}x}{dt^{2}}
+\end{align}
+$$
+The idea is that we want to rearrange an expression to: 
+$$
+\ddot{x} = -Cx \implies \omega=\sqrt{ C }
+$$
+(Which is what we had previously). 
+## Vertical Spring (LEC) 
+Consider a vertical spring, with a force constant $k$ hanging from the ceiling. A mass $m$ is attached to the bottom of the spring, what is the equation of motion of the mass? 
+
+Let $y=0$ be equivalent to the equilibrium position. Let there be a mass $m$ applied, where this moves the spring some distance $y_{d}$, thus taking the force in terms of this system being in equilibrium, letting downwards be positive, then: 
+
+$$
+\begin{align}
+m\ddot{y} = -ky + mg 
+\end{align}
+$$
+Note we can't easily solve this, let $u= y - \frac{mg}{k}$, then: $y=u+ \frac{mg}{k}$ Note that with this substitution, $\dot{u} = \dot{y}, \ddot{u} = \ddot{y}$, thus: 
+
+$$
+\begin{align}
+m\ddot{u}   & = -k\left( u + \frac{mg}{k} \right) + mg  \\
+m\ddot{u}  & = -\frac{k}{m}u \\
+\implies  u & =A\cos(\omega t + \phi) \\
+\implies \omega & = \sqrt{ \frac{k}{m} } \\
+y & = \frac{mg}{k} + A\cos(\omega t +\phi)
+\end{align}
+$$
+Note that in this case, this means that our system oscillates around some value $\frac{mg}{k}$ in  terms of initial displacement. 
+
+## Pendulum (LEC)
+Consider a Pendulum with a point mass present, assuming that the string is of a length $L$, and the mass has some value $m$, with some force of $g$, then the torque applied by gravity is offered by the tangential component to the piece of rope applied; inline with the direction of pendulum. 
+
+Thus, noting that this is provided to us by some value $mg\sin\theta$, then this applies some torque at some distance $L$. Note that if $\theta \approx$ small, then $\sin\theta \to \theta$ , thus: 
+
+$$
+\begin{align}
+mg\theta L  & = I\alpha \\
+I \ddot{\theta} & = mg\theta L & I = mL^{2} \\
+\ddot{\theta} & = \frac{mg\theta L}{mL^{2}} \\
+\ddot{\theta} & = \frac{g}{L}\theta \\
+\implies  \omega  & = \sqrt{ \frac{g}{L} } \\
+\implies \theta & = A\cos(\omega t+\phi)
+\end{align}
+$$
+## Cork in Water 
+Consider a Cylindrical Cork of mass $m$, density $\rho$, cross-sectional area $A$, and height $h$. If you displace it some initial distance and release it, it will bob up and down. What is the equation of motion of the cork? 
+
+Recall that the Buoyancy force is given by some volume displaced: 
+$$
+Ad=V_{disp}
+$$
+And the entire cork's volume is given by 
+$$
+V_{total} = VH
+$$
+Noting that the forces applied are given by the Buoyant Force and the Force of Gravity. Noting that in equilibrium: 
+$$
+F_{b} = mg
+$$
+And for our cork, $m= \rho V_{total}$, and thus: 
+$$
+\begin{align}
+\rho_{w}\cancel{ A }d\cancel{ g }  & = \rho \cancel{ A }h\cancel{ g } \\
+d & =\frac{h\rho}{\rho_{w}}
+\end{align}
+$$
+If ew have some vertical displacement downwards, this will be represented by :
+$$
+V_{displaced} = A(d+y)
+$$
+And thus the $$
 
 ---
 # Pre-Lecture Notes
