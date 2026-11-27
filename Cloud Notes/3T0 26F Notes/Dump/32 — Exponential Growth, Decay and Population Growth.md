@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-26T14:54:50.444-05:00
-edited_seconds: 1270
+updated_at: 2026-11-27T13:22:50.028-05:00
+edited_seconds: 1390
 course: ESC194H1
 tags:
   - ESC194H1
@@ -130,6 +130,50 @@ $$
 Applying this: 
 $$
 V(400) = 0.01e^{0.05*400} \approx 5\text{ million}
+$$
+
+
+### Drug Metabolism
+> [!caution] Note
+> This section was written during the 11-27 class.
+
+Consider the case of drug metabolism, where the rate of elimination is proportional to the concentration of such a substance; where: 
+
+$$
+C_{0}e^{-kt}
+$$
+Is our corresponding expression. Note that we have two levels generally for some drug that we want to deal with: 
+* The Therapeutic Level (little effect) 
+* The Toxicity Level (when it becomes toxic)
+
+## Models of Population Growth (LEC)
+Recall that in our previous attempt to model the population of a set of Rabbits within Australia, we had an absurdly large number. Recall that we defined the growth as: 
+$$
+\frac{df}{dt} = kf(t)
+$$
+Or more specifically for population: 
+$$
+\frac{dP}{dt} = kP, P=P_{0}e^{kt}
+$$
+### Logistic Population Growth
+We now introduce the concept of Logistic Population Growth: 
+$$
+\frac{dP}{dt} = kP\left( 1-\frac{P}{M} \right)
+$$
+Where $M$ represents the max concentration of our system. Note that if $P>M$, then this results in our population shrinking. Solving for this as a separable equation, then: 
+$$
+\begin{align}
+\int \frac{1}{P\left( 1-\frac{P}{M} \right)}\,dP k& = \int dt \\
+\int \frac{1}{P} \,dp+ \int \frac{1}{M-P}\,dp  & = k\int dt \\
+\ln|P| - \ln|M-P| & = kt +C\\
+\ln \left| \frac{P}{M-P}\right|  & = kt+C \\
+\frac{P}{M-P}& =e^{kt+C} \\
+\frac{M-P}{P}  & = Ae^{-kt} & A=\pm e^{-C}
+\end{align}
+$$
+Note that for some $P_{0} \ll M$, then: 
+$$
+A \approx \frac{M}{P_{0}} \gg1 \implies P \approx P_{0}e^{kt}
 $$
 
 

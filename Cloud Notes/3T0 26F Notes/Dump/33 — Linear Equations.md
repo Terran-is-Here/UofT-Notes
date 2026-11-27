@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-22T12:50:22.482-05:00
-edited_seconds: 680
+updated_at: 2026-11-27T13:32:59.141-05:00
+edited_seconds: 770
 course: ESC194H1
 tags:
   - ESC194H1
@@ -17,6 +17,53 @@ Next: [[34 — Complex Numbers]]
 
 --- 
 # Lecture Notes
+## Linear Equations (LEC) 
+A linear equation is generally any equation that can be written within this form: 
+
+$$
+y' + p(x)y = q(x)
+$$
+We notate this as a first order differential equation, where we required that $p(x),q(x)$ are continuous on some interval $I$. For instance, take the following expression: 
+$$
+xy' + y = x^{2}  \implies y' + \frac{1}{x}y = x
+$$
+Consider taking the derivative of $(xy)'$ then we see that $xy' + y$, then: 
+$$
+(xy)' = x^{2}
+$$
+To solve this, simply integrate both sides: 
+$$
+\begin{align}
+xy & = \frac{x^{3}}{3} + C \\
+y & = \frac{x^{2}}{3} + \frac{C}{x}
+\end{align}
+$$
+To generalize this, we generally find an integrating factor, where this simply solves to being the derivative of the expression on the right side. 
+### Integrating Factor (LEC) 
+We will define the following function as the Integration Factor:
+$$
+H(x) = \int p(x)\,dx 
+$$
+Where we note that we set $C=0$ , as we simply want to find one solution / expression. Taking the derivative of the following shows us that: 
+$$
+\begin{align}
+\frac{d}{dx} e^{H(x)} = e^{H(x)} \frac{d}{dx}H(x) = e^{H(x)}p(x)
+\end{align}
+$$
+Then we note that: 
+$$
+\begin{align}
+\frac{d}{dx}(ye^{H(x)})  & = y'e^{H(x)} + ye^{H(x)}p(x) \\
+ & = e^{H(x)}(y' + p(x)y)
+\end{align}
+$$
+Where $e^{h(x)}$ is our integrating factor, t hen: 
+$$
+\begin{align}
+\frac{d}{dx}(y)
+\end{align}
+$$
+
 
 ---
 # Pre-Lecture Notes
