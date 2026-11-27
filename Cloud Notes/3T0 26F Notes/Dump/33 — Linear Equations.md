@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-27T13:32:59.141-05:00
-edited_seconds: 770
+updated_at: 2026-11-27T13:52:32.575-05:00
+edited_seconds: 1100
 course: ESC194H1
 tags:
   - ESC194H1
@@ -60,10 +60,85 @@ $$
 Where $e^{h(x)}$ is our integrating factor, t hen: 
 $$
 \begin{align}
-\frac{d}{dx}(y)
+\frac{d}{dx}(ye^{H(x)})  & = e^{H(x)}q(x) \\
+ye^{H(x)} & =\int e^{H(x)}q(x)\,dx + C
+ \\
+y & = \frac{1}{e^{H(x)}}\left( \int e^{H(x)}q(x)\,dx + C \right)\end{align}
+$$
+Where this gives us the solution for $y$. From here, we can solve for $C$ if we have some set of initial values. Take the following example: 
+
+### Examples 
+Take the following: 
+$$
+y' + 2y = 4
+$$
+Finding our integrating factor: 
+$$
+H(x) \int2x \,dx = 2x \implies \text{IF} = e^{2x}
+$$
+Then: 
+$$
+\begin{align}
+e^{2x}y' + 2e^{2x}y & = e^{2x}4 \\
+(e^{2x}y)'  & = e^{2x}4 \\
+e^{2x}y & =\int e^{2x}4 \,dx + C \\
+e^{2x}y  & = 2e^{2x} + C \\
+y & = 2 + \frac{C}{e^{2x}}
+\end{align}
+$$
+Consider now the following: 
+### Newton's Law of Cooling (LEC)
+Newton's Law of Cooling states that an object's change in temperature, is proportional to the difference between the temperature of the object, and the temperature of the surroundings.
+Then: 
+$$
+\frac{dT}{dt} = -k(T-\tau) 
+$$
+Then: 
+
+$$
+\begin{align}
+\frac{dT}{dt}  & = -kT + k\tau \\
+
 \end{align}
 $$
 
+See the picture future me .
+
+### More Examples
+Consider the following Initial Value Problem: 
+Solving for our factor of integration, then: 
+
+
+$$
+\begin{align}
+y' + \frac{2}{x}y  & =  5x^{2} \\
+p(x) = \frac{2}{x}, q(x) = 5x^{2} \implies \text{IF}  = e^{\ln(x^{2})} = x^{2} \\
+H(x) = \int \frac{2}{x}\,dx = \ln (x^{2}) \\
+x^{2}y' +2xy  & = 5x^{4} \\
+x^{2}y = 5 \int x^{4}\,dx  \\
+x^{2}y  & = x^{5} +C \\
+y & = x^{3} + \frac{C}{x^{2}} \\
+y(1) = 0 \iff C = -1
+\end{align}
+$$
+
+### Logistic Equation with Active Predation
+Note the Logistic Equation: 
+$$
+\frac{dP}{dt} = kP\left( 1-\frac{P}{M} \right)
+$$
+Note how this is not a linear system, as we have some function of $P^{2}$, meaning that this is inherently not a linear equation. Let us substitute that $z=\frac{1}{P}$, then: 
+$$
+\begin{align}
+k=\frac{1}{P}  & \implies P =\frac{1}{z} \\
+\frac{dP}{dt} & = -\frac{1}{z^{2}} \frac{dz}{dt} \\
+\implies -\frac{1}{z^{2}} \frac{dz}{dt}  & = \frac{k}{z}\left( 1- \frac{1}{zm} \right) \\
+\frac{dz}{dt} & = -kz + \frac{k}{m} \\
+\frac{dz}{dt} - kz & = \frac{k}{m} &  \int k\,dt = kt \implies \text{IF} = e^{kt} \\
+z & =e^{-kt}\left( \int e^{kt} \frac{K}{M}\,dt + C \right) \\
+z & = \frac{1}{M}t + \frac{C}{e^kt}
+\end{align}
+$$
 
 ---
 # Pre-Lecture Notes
