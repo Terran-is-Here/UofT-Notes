@@ -1,6 +1,6 @@
 ---
-updated_at: 2026-11-27T13:52:32.575-05:00
-edited_seconds: 1100
+updated_at: 2026-11-27T13:55:00.610-05:00
+edited_seconds: 1150
 course: ESC194H1
 tags:
   - ESC194H1
@@ -136,7 +136,10 @@ k=\frac{1}{P}  & \implies P =\frac{1}{z} \\
 \frac{dz}{dt} & = -kz + \frac{k}{m} \\
 \frac{dz}{dt} - kz & = \frac{k}{m} &  \int k\,dt = kt \implies \text{IF} = e^{kt} \\
 z & =e^{-kt}\left( \int e^{kt} \frac{K}{M}\,dt + C \right) \\
-z & = \frac{1}{M}t + \frac{C}{e^kt}
+z & = \frac{1}{M}t + \frac{C}{e{kt}} = \frac{t}{M} + \frac{C}{e^{kt}} & P = \frac{1}{z} \\
+ P & = \frac{1}{z} = \frac{M}{1 + MCe^{-kt}} \\
+P(t=0)  & = P_{0}  \\
+P  & = \frac{M}{1 + Ae^{-kt}}, A=  \frac{M-P_{0}}{P_{0}}
 \end{align}
 $$
 
